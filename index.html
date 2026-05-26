@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Web3 运维 / SRE / 稳定性岗位招聘看板（每日更新）</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Inter, Segoe UI, sans-serif;
+    background: #fafafa;
+    color: #111;
+    line-height: 1.5;
+    padding: 20px 24px 60px;
+  }
+  header { margin-bottom: 16px; }
+  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .subtitle { color: #666; font-size: 13px; margin: 0; }
+  .meta { color: #888; font-size: 12px; margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .updated-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9;
+    border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600;
+  }
+  .updated-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: #2e7d32; }
+  .updated-pill.stale { background: #fff3e0; color: #b54a00; border-color: #ffe0b2; }
+  .updated-pill.stale .dot { background: #e65100; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 12px 14px; }
+  .stat .num { font-size: 22px; font-weight: 600; }
+  .stat .lbl { font-size: 12px; color: #777; margin-top: 2px; }
+  .stat.new .num { color: #b71c1c; }
+
+  .controls {
+    background: #fff; border: 1px solid #eee; border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 14px;
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+  }
+  .group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .group > label { font-size: 12px; color: #555; font-weight: 500; }
+  .chip {
+    border: 1px solid #ddd; background: #fff; color: #333;
+    padding: 4px 10px; border-radius: 999px; font-size: 12px;
+    cursor: pointer; user-select: none; transition: all 0.12s ease;
+  }
+  .chip:hover { border-color: #999; }
+  .chip.active { background: #111; color: #fff; border-color: #111; }
+  .chip.new-chip.active { background: #b71c1c; border-color: #b71c1c; }
+  .search {
+    flex: 1; min-width: 180px; border: 1px solid #ddd; border-radius: 8px;
+    padding: 7px 10px; font-size: 13px;
+  }
+  .search:focus { outline: 2px solid #c8c8ff; border-color: #99f; }
+
+  table {
+    width: 100%; border-collapse: collapse; background: #fff;
+    border: 1px solid #eee; border-radius: 10px; overflow: hidden; font-size: 13px;
+  }
+  thead th {
+    text-align: left; background: #f3f3f3; color: #444; font-weight: 600;
+    padding: 9px 12px; border-bottom: 1px solid #e7e7e7; cursor: pointer;
+    white-space: nowrap; font-size: 12px;
+  }
+  thead th .arrow { color: #aaa; margin-left: 4px; font-size: 10px; }
+  tbody td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+  tbody tr:hover { background: #fcfcfc; }
+  tbody tr.is-new { background: #fff9f9; }
+  tbody tr.is-new:hover { background: #fff2f2; }
+  .company { font-weight: 600; color: #111; }
+  .pos { color: #111; font-weight: 500; }
+  .new-tag {
+    display: inline-block; background: #b71c1c; color: #fff; font-size: 10px;
+    font-weight: 700; border-radius: 4px; padding: 1px 5px; margin-left: 6px;
+    vertical-align: middle; letter-spacing: 0.03em;
+  }
+  .badge {
+    display: inline-block; border-radius: 6px; font-size: 11px; padding: 2px 7px;
+    line-height: 1.5; margin-right: 4px; font-weight: 500;
+  }
+  .cat-exchange { background: #fff3e0; color: #b54a00; }
+  .cat-chain    { background: #e3f2fd; color: #0b549d; }
+  .cat-defi     { background: #f3e5f5; color: #6a1b9a; }
+  .cat-infra    { background: #e8f5e9; color: #1b5e20; }
+  .cat-other    { background: #eceff1; color: #455a64; }
+  .lvl-head     { background: #ffebee; color: #b71c1c; }
+  .lvl-senior   { background: #fff8e1; color: #ad6800; }
+  .lvl-mid      { background: #e0f7fa; color: #006064; }
+  .salary { color: #1b5e20; font-weight: 500; white-space: nowrap; }
+  .req { color: #555; font-size: 12px; max-width: 360px; }
+  a.link { color: #0b549d; text-decoration: none; font-size: 12px; word-break: break-all; }
+  a.link:hover { text-decoration: underline; }
+  .empty { text-align: center; color: #888; padding: 30px; font-size: 13px; }
+
+  .footer-note { margin-top: 16px; color: #888; font-size: 12px; line-height: 1.7; }
+  .footer-note strong { color: #555; }
+  details { margin-top: 14px; }
+  details summary { cursor: pointer; font-size: 13px; color: #555; padding: 6px 0; }
+  .changelog { margin: 6px 0 0 0; padding-left: 0; list-style: none; font-size: 12px; color: #555; }
+  .changelog li { margin: 4px 0; padding: 6px 10px; background: #fff; border: 1px solid #eee; border-radius: 8px; }
+  .changelog .cl-date { font-weight: 600; color: #111; margin-right: 8px; }
+  .changelog .cl-add { color: #1b5e20; font-weight: 600; }
+  .changelog .cl-rm { color: #b71c1c; font-weight: 600; }
+  .sources { margin: 6px 0 0 0; padding-left: 18px; font-size: 12px; color: #666; }
+  .sources li { margin: 2px 0; }
+  .sources a { color: #0b549d; text-decoration: none; }
+  .sources a:hover { text-decoration: underline; }
+  .load-error { background: #ffebee; border: 1px solid #ef9a9a; color: #b71c1c;
+    padding: 12px 14px; border-radius: 10px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Web3 行业 · 运维 / SRE / 稳定性岗位招聘看板</h1>
+  <p class="subtitle">聚焦头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施的运维、SRE、稳定性、运维负责人方向公开招聘</p>
+  <p class="meta">
+    <span id="updated-pill" class="updated-pill"><span class="dot"></span><span id="updated-text">加载中…</span></span>
+    <span>共 <span id="meta-count">—</span> 个岗位</span>
+    <span id="new-count-meta"></span>
+  </p>
+</header>
+
+<div id="load-error" class="load-error" style="display:none">
+  ⚠️ 未能加载 <code>data.js</code> 数据文件。请确认 <code>data.js</code> 与本页面在同一目录下，并直接用浏览器打开 <code>index.html</code>。
+</div>
+
+<div class="stats" id="stats">
+  <div class="stat new"><div class="num" id="s-new">0</div><div class="lbl">今日新增</div></div>
+  <div class="stat"><div class="num" id="s-total">0</div><div class="lbl">岗位总数</div></div>
+  <div class="stat"><div class="num" id="s-head">0</div><div class="lbl">负责人 / 总监</div></div>
+  <div class="stat"><div class="num" id="s-senior">0</div><div class="lbl">资深 / Staff</div></div>
+  <div class="stat"><div class="num" id="s-mid">0</div><div class="lbl">中级</div></div>
+  <div class="stat"><div class="num" id="s-cn">0</div><div class="lbl">中文区岗位</div></div>
+  <div class="stat"><div class="num" id="s-remote">0</div><div class="lbl">支持远程</div></div>
+</div>
+
+<div class="controls">
+  <div class="group" id="g-new">
+    <span class="chip new-chip" id="chip-new">🆕 仅看今日新增</span>
+  </div>
+  <div class="group" id="g-cat"><label>类别：</label></div>
+  <div class="group" id="g-lvl"><label>级别：</label></div>
+  <div class="group" id="g-region"><label>地区：</label></div>
+  <input class="search" id="search" placeholder="搜索公司 / 岗位 / 技能关键字..." />
+</div>
+
+<table id="tbl">
+  <thead>
+    <tr>
+      <th data-key="company">公司 <span class="arrow">↕</span></th>
+      <th data-key="category">类别 <span class="arrow">↕</span></th>
+      <th data-key="position">岗位 <span class="arrow">↕</span></th>
+      <th data-key="level">级别 <span class="arrow">↕</span></th>
+      <th data-key="location">地点 <span class="arrow">↕</span></th>
+      <th data-key="salary">薪资 (USD/年) <span class="arrow">↕</span></th>
+      <th data-key="requirements">要点</th>
+      <th data-key="link">链接</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+<div class="empty" id="empty" style="display:none">未匹配到任何岗位，请放宽筛选条件。</div>
+
+<details open>
+  <summary>📋 更新日志（每日自动维护）</summary>
+  <ul class="changelog" id="changelog"></ul>
+</details>
+
+<div class="footer-note">
+  <strong>说明：</strong><span id="snapshot-note"></span>
+  岗位会随时间变化，建议点击链接到原始 JD 页面进一步确认。<br>
+  <strong>筛选逻辑：</strong>多类别 / 多级别 / 多地区均为"或"关系；搜索框是全字段模糊匹配；"今日新增"指 <code>firstSeen</code> 等于最近更新日期的岗位。
+</div>
+
+<details>
+  <summary>查看主要数据来源 (点击展开)</summary>
+  <ul class="sources">
+    <li><a href="https://jobs.lever.co/binance" target="_blank">Binance 官方招聘 (Lever)</a></li>
+    <li><a href="https://www.coinbase.com/careers/positions?location=remote" target="_blank">Coinbase Remote Positions</a></li>
+    <li><a href="https://www.bybit.com/en/promo/global/careers" target="_blank">Bybit Careers</a></li>
+    <li><a href="https://www.okx.com/en-us/join-us" target="_blank">OKX Careers</a></li>
+    <li><a href="https://jobs.ashbyhq.com/kraken.com" target="_blank">Kraken Ashby 招聘系统</a></li>
+    <li><a href="https://jobs.solana.com/jobs" target="_blank">Solana Foundation 招聘</a></li>
+    <li><a href="https://jobs.ashbyhq.com/ethereum-foundation" target="_blank">Ethereum Foundation 招聘</a></li>
+    <li><a href="https://job-boards.greenhouse.io/aptoslabs" target="_blank">Aptos Labs Careers</a></li>
+    <li><a href="https://jobs.lever.co/offchainlabs" target="_blank">Offchain Labs (Arbitrum)</a></li>
+    <li><a href="https://consensys.io/open-roles/" target="_blank">Consensys / MetaMask 招聘</a></li>
+    <li><a href="https://jobs.ashbyhq.com/uniswap" target="_blank">Uniswap Labs Careers</a></li>
+    <li><a href="https://jobs.ashbyhq.com/phantom" target="_blank">Phantom Wallet Careers</a></li>
+    <li><a href="https://www.alchemy.com/careers" target="_blank">Alchemy Careers</a></li>
+    <li><a href="https://jobs.ashbyhq.com/quicknode" target="_blank">QuickNode Careers</a></li>
+    <li><a href="https://www.blockdaemon.com/careers" target="_blank">Blockdaemon Careers</a></li>
+    <li><a href="https://www.chainalysis.com/careers/job-openings/" target="_blank">Chainalysis 招聘</a></li>
+    <li><a href="https://boards.greenhouse.io/fireblocks" target="_blank">Fireblocks Greenhouse</a></li>
+    <li><a href="https://www.v2ex.com/go/cv" target="_blank">V2EX 招聘版</a></li>
+    <li><a href="https://web3.career/" target="_blank">Web3.career</a></li>
+    <li><a href="https://cryptojobslist.com/" target="_blank">CryptoJobsList</a></li>
+    <li><a href="https://learnblockchain.cn/jobs" target="_blank">登链社区招聘</a></li>
+  </ul>
+</details>
+
+<!-- 数据源：由每日更新程序维护 -->
+<script src="data.js"></script>
+<script>
+(function () {
+  const DATA = window.WEB3_JOBS_DATA;
+  if (!DATA || !Array.isArray(DATA.jobs)) {
+    document.getElementById("load-error").style.display = "block";
+    return;
+  }
+  const data = DATA.jobs;
+  const lastUpdated = DATA.lastUpdated || "";
+
+  // 生成稳定 id（兼容旧数据没有 id 的情况）
+  const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  data.forEach(d => { if (!d.id) d.id = slug(d.company) + "__" + slug(d.position); });
+  const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
+
+  const catLabels = { exchange:"交易所", chain:"公链/L2", defi:"钱包/DeFi", infra:"节点/RPC基础设施", other:"合规/托管/其他" };
+  const lvlLabels = { head:"负责人/总监", senior:"资深/Staff", mid:"中级" };
+  const regionLabels = { remote:"远程", cn:"中文区", hk:"香港", sg:"新加坡", us:"美国", eu:"欧洲", dubai:"迪拜", asia:"亚洲其他" };
+
+  const state = { cats:new Set(), lvls:new Set(), regions:new Set(), newOnly:false, search:"", sortKey:null, sortDir:1 };
+
+  function buildChips(containerId, options, stateSet) {
+    const c = document.getElementById(containerId);
+    for (const [key, label] of Object.entries(options)) {
+      const el = document.createElement("span");
+      el.className = "chip";
+      el.textContent = label;
+      el.onclick = () => {
+        if (stateSet.has(key)) stateSet.delete(key); else stateSet.add(key);
+        el.classList.toggle("active");
+        render();
+      };
+      c.appendChild(el);
+    }
+  }
+  buildChips("g-cat", catLabels, state.cats);
+  buildChips("g-lvl", lvlLabels, state.lvls);
+  buildChips("g-region", regionLabels, state.regions);
+
+  document.getElementById("chip-new").onclick = function () {
+    state.newOnly = !state.newOnly;
+    this.classList.toggle("active");
+    render();
+  };
+  document.getElementById("search").addEventListener("input", e => {
+    state.search = e.target.value.trim().toLowerCase();
+    render();
+  });
+  document.querySelectorAll("thead th").forEach(th => {
+    th.addEventListener("click", () => {
+      const k = th.dataset.key;
+      if (!k || k === "link" || k === "requirements") return;
+      if (state.sortKey === k) state.sortDir = -state.sortDir;
+      else { state.sortKey = k; state.sortDir = 1; }
+      render();
+    });
+  });
+
+  function matches(row) {
+    if (state.newOnly && !isNew(row)) return false;
+    if (state.cats.size && !state.cats.has(row.category)) return false;
+    if (state.lvls.size && !state.lvls.has(row.level)) return false;
+    if (state.regions.size) {
+      let ok = false;
+      for (const r of (row.region || [])) if (state.regions.has(r)) { ok = true; break; }
+      if (!ok) return false;
+    }
+    if (state.search) {
+      const blob = (row.company + " " + row.position + " " + row.location + " " + row.requirements + " " + row.salary).toLowerCase();
+      if (!blob.includes(state.search)) return false;
+    }
+    return true;
+  }
+
+  function render() {
+    let rows = data.filter(matches);
+    if (state.sortKey) {
+      const k = state.sortKey, dir = state.sortDir;
+      rows.sort((a, b) => {
+        let av = a[k], bv = b[k];
+        if (k === "salary") { av = a.salaryNum || 0; bv = b.salaryNum || 0; }
+        if (typeof av === "string") av = av.toLowerCase();
+        if (typeof bv === "string") bv = bv.toLowerCase();
+        if (av < bv) return -1 * dir;
+        if (av > bv) return 1 * dir;
+        return 0;
+      });
+    } else {
+      // 默认：新增置顶
+      rows = rows.slice().sort((a, b) => (isNew(b) ? 1 : 0) - (isNew(a) ? 1 : 0));
+    }
+
+    const tbody = document.getElementById("tbody");
+    tbody.innerHTML = "";
+    for (const r of rows) {
+      const tr = document.createElement("tr");
+      if (isNew(r)) tr.className = "is-new";
+      tr.innerHTML = `
+        <td><div class="company">${r.company}</div></td>
+        <td><span class="badge cat-${r.category}">${catLabels[r.category] || r.category}</span></td>
+        <td><div class="pos">${r.position}${isNew(r) ? '<span class="new-tag">NEW</span>' : ''}</div></td>
+        <td><span class="badge lvl-${r.level}">${lvlLabels[r.level] || r.level}</span></td>
+        <td>${r.location}</td>
+        <td class="salary">${r.salary}</td>
+        <td class="req">${r.requirements}</td>
+        <td><a class="link" href="${r.link}" target="_blank" rel="noopener">查看 JD →</a></td>
+      `;
+      tbody.appendChild(tr);
+    }
+    document.getElementById("empty").style.display = rows.length ? "none" : "block";
+
+    const newCount = data.filter(isNew).length;
+    document.getElementById("s-new").textContent = newCount;
+    document.getElementById("s-total").textContent = data.length;
+    document.getElementById("s-head").textContent = data.filter(d => d.level === "head").length;
+    document.getElementById("s-senior").textContent = data.filter(d => d.level === "senior").length;
+    document.getElementById("s-mid").textContent = data.filter(d => d.level === "mid").length;
+    document.getElementById("s-cn").textContent = data.filter(d => (d.region||[]).includes("cn") || (d.region||[]).includes("hk")).length;
+    document.getElementById("s-remote").textContent = data.filter(d => (d.region||[]).includes("remote")).length;
+    document.getElementById("meta-count").textContent = data.length;
+    document.getElementById("new-count-meta").textContent = newCount ? `· 今日新增 ${newCount} 个` : "";
+  }
+
+  // 顶部更新状态
+  function renderHeader() {
+    const pill = document.getElementById("updated-pill");
+    const txt = document.getElementById("updated-text");
+    if (lastUpdated) {
+      const today = new Date().toISOString().slice(0, 10);
+      const fresh = lastUpdated === today;
+      pill.className = "updated-pill" + (fresh ? "" : " stale");
+      txt.textContent = (fresh ? "今日已更新" : "最近更新") + "：" + lastUpdated;
+    } else {
+      txt.textContent = "更新时间未知";
+    }
+    document.getElementById("snapshot-note").textContent = DATA.snapshotNote || "";
+
+    const cl = document.getElementById("changelog");
+    cl.innerHTML = "";
+    (DATA.changelog || []).forEach(c => {
+      const li = document.createElement("li");
+      const add = c.added ? `<span class="cl-add">+${c.added}</span> ` : "";
+      const rm = c.removed ? `<span class="cl-rm">-${c.removed}</span> ` : "";
+      li.innerHTML = `<span class="cl-date">${c.date}</span>${add}${rm}${c.note || ""}`;
+      cl.appendChild(li);
+    });
+  }
+
+  renderHeader();
+  render();
+})();
+</script>
+</body>
+</html>

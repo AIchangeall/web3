@@ -1,0 +1,779 @@
+// ============================================================================
+//  Web3 运维 / SRE / 稳定性岗位数据源（机器可维护，JSON 风格）
+//  本文件由每日更新程序自动维护；前端 index.html 通过 <script src> 加载。
+//  结构: { lastUpdated, snapshotNote, changelog[], jobs[] }
+//  每个 job: id?/company/category/position/level/location/region[]/salary/
+//            salaryNum/requirements/link/firstSeen/lastSeen
+//  约定: 新岗位 firstSeen=当日(即被标 NEW); 每次扫描把仍在招岗位的 lastSeen 改为当日。
+// ============================================================================
+window.WEB3_JOBS_DATA = {
+  "lastUpdated": "2026-05-26",
+  "snapshotNote": "基于公开渠道（公司官网 / Lever / Ashby / Greenhouse / LinkedIn / V2EX / Web3.career / CryptoJobsList / 登链社区）抓取整理。薪资为公开 JD 或 Levels.fyi / Glassdoor 聚合估算，仅供参考。",
+  "changelog": [
+    {
+      "date": "2026-05-26",
+      "added": 7,
+      "removed": 0,
+      "note": "首次联网更新：新增 7 个近一周发布的岗位（Copper / Bloxstaking / Bitpanda / Auros / Binance / Reown / Triton One）。"
+    },
+    {
+      "date": "2026-05-26",
+      "added": 39,
+      "removed": 0,
+      "note": "初始建库：迁移历史看板 web3-sre-hiring.html 全部岗位，拆分数据与界面，接入每日更新流程。"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "Copper.co",
+      "category": "other",
+      "position": "Principal Site Reliability Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "$140K–$180K",
+      "salaryNum": 160000,
+      "requirements": "机构级数字资产托管平台稳定性；高可用与容量规划；K8s；可观测性；带架构方向；约一周前发布。",
+      "link": "https://web3.career/reliability-jobs",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Bloxstaking (ssv.network)",
+      "category": "infra",
+      "position": "Senior Site Reliability Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$82K–$112K",
+      "salaryNum": 97000,
+      "requirements": "以太坊质押 / 分布式验证者基础设施稳定性；节点监控；K8s；on-call；约一周前发布。",
+      "link": "https://web3.career/reliability-jobs",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Bitpanda",
+      "category": "exchange",
+      "position": "Senior DevOps Engineer",
+      "level": "senior",
+      "location": "维也纳, 奥地利",
+      "region": [
+        "eu"
+      ],
+      "salary": "$90K–$106K",
+      "salaryNum": 98000,
+      "requirements": "欧洲合规交易所；CI/CD；AWS；K8s；基础设施自动化；约一周前发布。",
+      "link": "https://web3.career/devops-jobs",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Auros",
+      "category": "other",
+      "position": "Senior DevOps Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "约 $87K",
+      "salaryNum": 87000,
+      "requirements": "加密做市 / 量化交易基础设施；低延迟系统运维；自动化部署；监控告警；约一周前发布。",
+      "link": "https://web3.career/devops-jobs",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Binance",
+      "category": "exchange",
+      "position": "Senior DevOps Engineer, Blockchain Kubernetes",
+      "level": "senior",
+      "location": "曼谷, 泰国",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "区块链节点集群 K8s 运维；多链部署；容器编排；高可用；故障处置；约两周前发布。",
+      "link": "https://jobs.lever.co/binance",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Reown (WalletConnect)",
+      "category": "infra",
+      "position": "Site Reliability Engineer",
+      "level": "mid",
+      "location": "100% 远程 (无地域限制)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "2+ 年 Linux Sysadmin / SRE / DevOps；网络协议 (TCP/IP, UDP, ICMP)；Rust / TypeScript / Go 之一；钱包连接基础设施。",
+      "link": "https://cryptocurrencyjobs.co/engineering/walletconnect-site-reliability-engineer/",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Triton One",
+      "category": "infra",
+      "position": "Senior SRE / System Administrator (Solana RPC)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "运营全球最大 Solana RPC 集群；7x24 生产可用性 / 延迟 / 容量；自动化与弹性架构；资深系统管理 / SRE 经验。",
+      "link": "https://cryptojobslist.com/sre",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Binance",
+      "category": "exchange",
+      "position": "Senior Site Reliability Engineer (SRE) / Rust Developer",
+      "level": "senior",
+      "location": "Asia / 远程",
+      "region": [
+        "remote",
+        "asia",
+        "cn"
+      ],
+      "salary": "面议 (Levels.fyi 估算 SWE L5 在迪拜约 AED 514K–626K)",
+      "salaryNum": 180000,
+      "requirements": "5+ 年；Rust / Node.js；高并发实时生产系统；自研内部工具；故障排查；线上稳定性保障。",
+      "link": "https://jobs.lever.co/binance",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Binance",
+      "category": "exchange",
+      "position": "Big Data SRE / DevOps Leader",
+      "level": "head",
+      "location": "新加坡 / 迪拜 / 远程",
+      "region": [
+        "sg",
+        "dubai",
+        "remote",
+        "asia"
+      ],
+      "salary": "面议 (Director 级，年包通常 250K+ USD)",
+      "salaryNum": 250000,
+      "requirements": "带领大数据 SRE/DevOps 团队；Hadoop/Spark/Flink 平台稳定性；K8s；CI/CD；多 region 容灾。",
+      "link": "https://www.nodeflair.com/jobs/binance-big-data-sre-devops-leader-9568",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Binance",
+      "category": "exchange",
+      "position": "Senior SRE, Trading Technologies (Node.js)",
+      "level": "senior",
+      "location": "Asia / 远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "5+ 年 Node.js；测试自动化平台 (Playwright/Puppeteer/WDIO)；分布式测试环境运维。",
+      "link": "https://jobs.lever.co/binance/3372ed44-94ed-4f48-b448-91957f2b3e95",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Coinbase",
+      "category": "exchange",
+      "position": "Staff Site Reliability Engineer - Platform",
+      "level": "senior",
+      "location": "Remote - USA / 印度",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "约 $200K–$280K + bonus + equity",
+      "salaryNum": 240000,
+      "requirements": "7+ 年；高吞吐低延迟系统设计；Datadog/Kibana 等可观测性；SRE 教练，赋能业务工程团队。",
+      "link": "https://www.coinbase.com/careers/positions/6237252",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Coinbase",
+      "category": "exchange",
+      "position": "Staff SRE, Core AI Infrastructure",
+      "level": "senior",
+      "location": "Remote - USA",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "约 $210K–$290K + equity",
+      "salaryNum": 250000,
+      "requirements": "AI/ML 基础设施稳定性；GPU 集群；Kubernetes；模型服务 SLO。",
+      "link": "https://www.crypto-careers.com/jobs/525570987-staff-site-reliability-engineer-core-ai-infrastructure-at-coinbase",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Coinbase",
+      "category": "exchange",
+      "position": "Senior SRE, Identity Platform",
+      "level": "senior",
+      "location": "Remote - USA",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "约 $180K–$240K",
+      "salaryNum": 210000,
+      "requirements": "身份认证 / 风控系统稳定性；高可用；可观测性。",
+      "link": "https://www.coinbase.com/careers/positions/7516971",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Coinbase",
+      "category": "exchange",
+      "position": "Site Reliability Engineer, IT Infrastructure",
+      "level": "mid",
+      "location": "Remote - USA",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "约 $140K–$190K",
+      "salaryNum": 165000,
+      "requirements": "企业 IT 基础设施 / 网络 / 端点；K8s；混合云。",
+      "link": "https://www.coinbase.com/careers/positions/7559168",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "OKX",
+      "category": "exchange",
+      "position": "SRE 工程师 (CEX 业务方向)",
+      "level": "mid",
+      "location": "香港 (Base)",
+      "region": [
+        "hk",
+        "cn"
+      ],
+      "salary": "60K–100K HKD / 月 (约 92K–155K USD/年)",
+      "salaryNum": 120000,
+      "requirements": "K8s / 容器；高并发交易系统；AWS；线上故障处置；香港 Base 不接受远程。",
+      "link": "https://www.okx.com/en-us/join-us",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "OKX",
+      "category": "exchange",
+      "position": "数据平台运维 / 大数据 SRE",
+      "level": "senior",
+      "location": "香港 / 新加坡",
+      "region": [
+        "hk",
+        "sg",
+        "cn"
+      ],
+      "salary": "面议 (Senior 级)",
+      "salaryNum": 150000,
+      "requirements": "OLAP / 大数据集群运维；ClickHouse/Doris/Flink；监控告警体系；P0 故障响应。",
+      "link": "https://www.okx.com/en-us/join-us",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Bybit",
+      "category": "exchange",
+      "position": "Senior SRE / Infrastructure Engineer",
+      "level": "senior",
+      "location": "新加坡 / 迪拜 (Global HQ)",
+      "region": [
+        "sg",
+        "dubai",
+        "asia"
+      ],
+      "salary": "约 $130K–$200K (基于 NodeFlair / Glassdoor SG)",
+      "salaryNum": 165000,
+      "requirements": "高频交易撮合系统稳定性；多活；金融级 SLA；K8s；可观测性。",
+      "link": "https://www.bybit.com/en/promo/global/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Bybit",
+      "category": "exchange",
+      "position": "DevOps / Platform Engineer",
+      "level": "mid",
+      "location": "新加坡",
+      "region": [
+        "sg",
+        "asia"
+      ],
+      "salary": "约 SGD 8K–14K/月",
+      "salaryNum": 110000,
+      "requirements": "CI/CD；K8s；Terraform；公有云；故障值班。",
+      "link": "https://nodeflair.com/companies/bybit",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Kraken",
+      "category": "exchange",
+      "position": "SRE / DevOps Engineer (Developer Experience)",
+      "level": "mid",
+      "location": "全球远程 (70+ 国家)",
+      "region": [
+        "remote"
+      ],
+      "salary": "$96K–$192K + equity + bonus",
+      "salaryNum": 144000,
+      "requirements": "3+ 年 DevOps；Rust 系系统语言；Docker/Terraform；Prometheus/Grafana；Bash/Python。",
+      "link": "https://jobs.ashbyhq.com/kraken.com/0e512814-a14c-4ea7-8391-7d1c3e540bb9",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Kraken",
+      "category": "exchange",
+      "position": "Data Center Operations Engineer",
+      "level": "mid",
+      "location": "Remote - USA",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "约 $100K–$160K",
+      "salaryNum": 130000,
+      "requirements": "物理机房 / 裸金属 / 硬件运维；网络；冷备灾备。",
+      "link": "https://www.kraken.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Crypto.com",
+      "category": "exchange",
+      "position": "Senior Cloud Infrastructure Engineer",
+      "level": "senior",
+      "location": "新加坡 / 香港 / 远程",
+      "region": [
+        "sg",
+        "hk",
+        "asia",
+        "remote"
+      ],
+      "salary": "$177K–$247K (公开聚合)",
+      "salaryNum": 210000,
+      "requirements": "AWS/GCP；K8s；Terraform；多 region；合规与安全；交易所核心系统 SLA。",
+      "link": "https://crypto.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Bitget",
+      "category": "exchange",
+      "position": "SRE / 业务运维负责人",
+      "level": "head",
+      "location": "新加坡 / 香港",
+      "region": [
+        "sg",
+        "hk",
+        "asia",
+        "cn"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "带团队；交易所核心业务运维；故障复盘；SLO 体系；50+ 国家全球布局。",
+      "link": "https://www.bitget.com/promotion/hire",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Gate.io",
+      "category": "exchange",
+      "position": "SRE / DevOps 工程师",
+      "level": "mid",
+      "location": "远程 / 全球",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议 (Web3.career 显示 28 个公开岗位)",
+      "salaryNum": 120000,
+      "requirements": "交易系统运维；监控告警；K8s；中英文工作环境。",
+      "link": "https://beincrypto.com/jobs/company/gate-io/",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "KuCoin",
+      "category": "exchange",
+      "position": "Infrastructure / Cloud Engineer",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "公有云；K8s；CI/CD；高并发；合规要求。",
+      "link": "https://www.kucoin.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Ethereum Foundation",
+      "category": "chain",
+      "position": "Infrastructure / DevOps Engineer",
+      "level": "senior",
+      "location": "Berlin / 远程",
+      "region": [
+        "eu",
+        "remote"
+      ],
+      "salary": "约 €110K–€180K (非营利机构基准)",
+      "salaryNum": 160000,
+      "requirements": "Go / Rust / Python；Linux；Docker；支撑 Ethereum 网络底层基础设施；偏研究型团队。",
+      "link": "https://jobs.ashbyhq.com/ethereum-foundation",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Ethereum Foundation",
+      "category": "chain",
+      "position": "DevOps Intern (Summer 2026)",
+      "level": "mid",
+      "location": "Berlin / 远程",
+      "region": [
+        "eu",
+        "remote"
+      ],
+      "salary": "实习薪资 (12 周)",
+      "salaryNum": 60000,
+      "requirements": "在校生；Go/Rust/Python；Linux；Docker；EF 基础设施团队。",
+      "link": "https://simplify.jobs/p/dab03131-363c-47e6-bbc5-d70f315100a0/DevOps-Intern",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Solana Foundation",
+      "category": "chain",
+      "position": "Infrastructure Engineer (Product)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "约 $150K–$230K (CryptoJobsList 估算)",
+      "salaryNum": 190000,
+      "requirements": "5+ 年 SRE/Infra；Terraform/Pulumi；AWS/GCP/Cloudflare；Prometheus/Grafana/Datadog；On-call；区块链 tooling 经验。",
+      "link": "https://jobs.solana.com/companies/solana-foundation-2",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Aptos Labs",
+      "category": "chain",
+      "position": "Senior Infrastructure / SRE Engineer",
+      "level": "senior",
+      "location": "Palo Alto / NYC / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "约 $180K–$260K + token",
+      "salaryNum": 220000,
+      "requirements": "L1 节点运维；validator 网络稳定性；K8s；监控；分布式系统。",
+      "link": "https://job-boards.greenhouse.io/aptoslabs",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Sui Foundation / Mysten Labs",
+      "category": "chain",
+      "position": "Network Reliability / Infrastructure Engineer",
+      "level": "senior",
+      "location": "100% 远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "约 $170K–$240K",
+      "salaryNum": 200000,
+      "requirements": "Validator / 节点运维；Rust 周边工具；多链网络稳定性。",
+      "link": "https://web3.career/web3-companies/suifoundation",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Offchain Labs (Arbitrum)",
+      "category": "chain",
+      "position": "Senior Quality / SRE Engineer, Platform",
+      "level": "senior",
+      "location": "Remote / NYC",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "约 $180K–$250K + token",
+      "salaryNum": 215000,
+      "requirements": "L2 协议测试与稳定性；Sequencer / RPC 高可用；自动化测试管道；与 SRE 协作排障。",
+      "link": "https://jobs.lever.co/offchainlabs/ecb0944a-fd48-43c6-95d1-1d4b228c86b9",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Polygon Labs",
+      "category": "chain",
+      "position": "Site Reliability Engineer",
+      "level": "senior",
+      "location": "远程 (EU/Asia)",
+      "region": [
+        "remote",
+        "eu",
+        "asia"
+      ],
+      "salary": "约 $150K–$220K",
+      "salaryNum": 185000,
+      "requirements": "PoS 网络 / zkEVM 节点稳定性；K8s；多链 RPC SLA；可观测性。",
+      "link": "https://polygon.technology/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Phantom",
+      "category": "defi",
+      "position": "Staff SRE Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$200K–$260K (公开 JD 范围)",
+      "salaryNum": 230000,
+      "requirements": "K8s 集群运维；多链节点；自动化；性能优化；钱包后端稳定性；on-call。",
+      "link": "https://jobs.ashbyhq.com/phantom",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Consensys (MetaMask)",
+      "category": "defi",
+      "position": "Senior Staff DevOps Engineer - MetaMask",
+      "level": "head",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$190K–$263K",
+      "salaryNum": 225000,
+      "requirements": "MetaMask 后端 DevOps 资深；带方向，与 SRE/Dev 协同；多区域部署；CI/CD；安全合规。",
+      "link": "https://weworkremotely.com/remote-jobs/consensys-senior-staff-devops-engineer-metamask",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Uniswap Labs",
+      "category": "defi",
+      "position": "Infrastructure Engineer",
+      "level": "senior",
+      "location": "NYC / Remote",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "约 $180K–$240K + equity",
+      "salaryNum": 210000,
+      "requirements": "微服务架构；DeFi 协议后端 (Aave/Uniswap 类) 知识；indexer / 数据；高 QPS。",
+      "link": "https://jobs.ashbyhq.com/uniswap",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "DeBank / Rabby",
+      "category": "defi",
+      "position": "SRE / 后端 (中文区)",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "cn",
+        "remote",
+        "asia"
+      ],
+      "salary": "$5K–$13K USD/月 (折合 60K–155K USD/年)",
+      "salaryNum": 100000,
+      "requirements": "多链数据接入；indexer；K8s；钱包后端；DeFi 资产引擎稳定性。",
+      "link": "https://www.v2ex.com/t/950597",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Pharos (区块链初创)",
+      "category": "defi",
+      "position": "DevOps / SRE (C++ 区块链)",
+      "level": "senior",
+      "location": "纽约 / 湾区 / 香港 / 新加坡 / 远程",
+      "region": [
+        "us",
+        "hk",
+        "sg",
+        "cn",
+        "remote",
+        "asia"
+      ],
+      "salary": "$80K–$200K (按经验)",
+      "salaryNum": 140000,
+      "requirements": "C++ 区块链节点；高并发；Linux；性能调优；远程友好；中英文。",
+      "link": "https://www.v2ex.com/t/1084148",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "AWS 区块链节点服务 (中文招聘)",
+      "category": "infra",
+      "position": "区块链节点运维工程师 (DevOps/SRE)",
+      "level": "mid",
+      "location": "全远程 (中文)",
+      "region": [
+        "remote",
+        "cn"
+      ],
+      "salary": "面议 (按经验)",
+      "salaryNum": 90000,
+      "requirements": "多链节点部署、监控、优化；线上故障独立处置；性能优化；对 Web3 Infra 持续兴趣。",
+      "link": "https://www.v2ex.com/t/1210793",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Alchemy",
+      "category": "infra",
+      "position": "Director of Engineering, Infrastructure & Platform",
+      "level": "head",
+      "location": "NYC / SF / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "约 $280K–$420K + equity (Director 级)",
+      "salaryNum": 350000,
+      "requirements": "拥有基础设施 / 平台战略与执行；带 SRE/Platform 团队；高吞吐分布式区块链系统；公司级稳定性。",
+      "link": "https://www.alchemy.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Alchemy",
+      "category": "infra",
+      "position": "Senior Infrastructure / SRE Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$190K–$270K",
+      "salaryNum": 230000,
+      "requirements": "5+ 年；SLO/error budget 框架；OpenTelemetry/Prometheus/Grafana；AWS/GCP；K8s；多 region；Terraform/Helm/ArgoCD。",
+      "link": "https://www.alchemy.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "QuickNode",
+      "category": "infra",
+      "position": "Senior Infrastructure Engineer",
+      "level": "senior",
+      "location": "全球远程 (HQ 迈阿密)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$117K–$249K",
+      "salaryNum": 180000,
+      "requirements": "区块链 RPC 高性能服务；多链节点；性能与延迟优化；SOC 2 / ISO 27001 合规栈。",
+      "link": "https://jobs.ashbyhq.com/quicknode",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Chainstack",
+      "category": "infra",
+      "position": "Infrastructure Engineer (EU / LATAM 时区)",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "USD 计薪 + stock options",
+      "salaryNum": 130000,
+      "requirements": "Incident management；K8s；多云；RPC / 节点服务；客户级 SLA；前沿区块链 stack。",
+      "link": "https://web3.career/web3-companies/chainstack",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Blockdaemon",
+      "category": "infra",
+      "position": "Senior SRE / Platform Engineer",
+      "level": "senior",
+      "location": "全球远程 / 都柏林 / NYC",
+      "region": [
+        "remote",
+        "us",
+        "eu"
+      ],
+      "salary": "$130K–$250K (Web3.career 区间)",
+      "salaryNum": 190000,
+      "requirements": "30+ 链节点托管 / staking；K8s 大规模；合规与机构客户 SLA；DevOps Security。",
+      "link": "https://www.blockdaemon.com/careers",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Ankr",
+      "category": "infra",
+      "position": "Infrastructure / SRE Engineer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$65K–$95K (公开聚合，岗位较少)",
+      "salaryNum": 80000,
+      "requirements": "多链 RPC；Validator；容器化；监控；岗位放出节奏不稳定。",
+      "link": "https://cryptojobslist.com/companies/ankr",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Chainalysis",
+      "category": "other",
+      "position": "Senior Infrastructure Engineer (Investigations / Gov)",
+      "level": "senior",
+      "location": "US / EU / 远程",
+      "region": [
+        "us",
+        "eu",
+        "remote"
+      ],
+      "salary": "$160K–$260K",
+      "salaryNum": 215000,
+      "requirements": "Kubernetes 生产级；Terraform 专家级；带方向 / 架构；政府客户系统；高可靠数据管道。",
+      "link": "https://www.chainalysis.com/careers/job-openings/",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Fireblocks",
+      "category": "other",
+      "position": "Site Reliability Engineer (SRE)",
+      "level": "mid",
+      "location": "TLV / NYC / 远程",
+      "region": [
+        "us",
+        "eu",
+        "remote"
+      ],
+      "salary": "$150K–$175K (基准)",
+      "salaryNum": 165000,
+      "requirements": "3+ 年 SRE / Infra Backend (SaaS)；数字资产托管核心稳定性；高合规要求；事件响应。",
+      "link": "https://boards.greenhouse.io/fireblocks/jobs/4656035006",
+      "lastSeen": "2026-05-26"
+    },
+    {
+      "company": "Ripple",
+      "category": "other",
+      "position": "Infrastructure / Reliability Engineer",
+      "level": "senior",
+      "location": "SF / NYC / Singapore",
+      "region": [
+        "us",
+        "sg",
+        "asia"
+      ],
+      "salary": "$180K–$260K (公开聚合)",
+      "salaryNum": 215000,
+      "requirements": "支付/托管底层基础设施；XRPL 节点；机构级合规；Palisade 集成。",
+      "link": "https://ripple.com/careers",
+      "lastSeen": "2026-05-26"
+    }
+  ]
+};

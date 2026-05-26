@@ -1,0 +1,4 @@
+new_jobs.json
+*.bak
+.DS_Store
+node_modules/
