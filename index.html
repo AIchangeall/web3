@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Web3 运维 / SRE / 稳定性岗位招聘看板（每日更新）</title>
+<title>Web3 行业全职能岗位招聘看板（每日更新）</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -93,6 +93,16 @@
   .lvl-head     { background: #ffebee; color: #b71c1c; }
   .lvl-senior   { background: #fff8e1; color: #ad6800; }
   .lvl-mid      { background: #e0f7fa; color: #006064; }
+  .func-eng      { background: #e3f2fd; color: #0b549d; }
+  .func-ops      { background: #e8f5e9; color: #1b5e20; }
+  .func-product  { background: #f3e5f5; color: #6a1b9a; }
+  .func-design   { background: #fce4ec; color: #ad1457; }
+  .func-data     { background: #e0f7fa; color: #006064; }
+  .func-security { background: #ffebee; color: #b71c1c; }
+  .func-growth   { background: #fff3e0; color: #b54a00; }
+  .func-bd       { background: #fff8e1; color: #ad6800; }
+  .func-ga       { background: #eceff1; color: #455a64; }
+  .func-cell { margin-bottom: 4px; }
   .salary { color: #1b5e20; font-weight: 500; white-space: nowrap; }
   .req { color: #555; font-size: 12px; max-width: 360px; }
   a.link { color: #0b549d; text-decoration: none; font-size: 12px; word-break: break-all; }
@@ -119,8 +129,8 @@
 <body>
 
 <header>
-  <h1>Web3 行业 · 运维 / SRE / 稳定性岗位招聘看板</h1>
-  <p class="subtitle">聚焦头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施的运维、SRE、稳定性、运维负责人方向公开招聘</p>
+  <h1>Web3 行业招聘看板 · 全职能岗位</h1>
+  <p class="subtitle">覆盖 web3 / crypto 行业工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各职能公开招聘 · 可按职能 / 公司类型 / 级别 / 地区筛选</p>
   <p class="meta">
     <span id="updated-pill" class="updated-pill"><span class="dot"></span><span id="updated-text">加载中…</span></span>
     <span>共 <span id="meta-count">—</span> 个岗位</span>
@@ -146,7 +156,8 @@
   <div class="group" id="g-new">
     <span class="chip new-chip" id="chip-new">🆕 仅看今日新增</span>
   </div>
-  <div class="group" id="g-cat"><label>类别：</label></div>
+  <div class="group" id="g-func"><label>职能：</label></div>
+  <div class="group" id="g-cat"><label>公司类型：</label></div>
   <div class="group" id="g-lvl"><label>级别：</label></div>
   <div class="group" id="g-region"><label>地区：</label></div>
   <input class="search" id="search" placeholder="搜索公司 / 岗位 / 技能关键字..." />
@@ -156,8 +167,8 @@
   <thead>
     <tr>
       <th data-key="company">公司 <span class="arrow">↕</span></th>
-      <th data-key="category">类别 <span class="arrow">↕</span></th>
-      <th data-key="position">岗位 <span class="arrow">↕</span></th>
+      <th data-key="category">公司类型 <span class="arrow">↕</span></th>
+      <th data-key="position">职能 · 岗位 <span class="arrow">↕</span></th>
       <th data-key="level">级别 <span class="arrow">↕</span></th>
       <th data-key="location">地点 <span class="arrow">↕</span></th>
       <th data-key="salary">薪资 (USD/年) <span class="arrow">↕</span></th>
@@ -177,7 +188,7 @@
 <div class="footer-note">
   <strong>说明：</strong><span id="snapshot-note"></span>
   岗位会随时间变化，建议点击链接到原始 JD 页面进一步确认。<br>
-  <strong>筛选逻辑：</strong>多类别 / 多级别 / 多地区均为"或"关系；搜索框是全字段模糊匹配；"今日新增"指 <code>firstSeen</code> 等于最近更新日期的岗位。
+  <strong>筛选逻辑：</strong>多职能 / 多公司类型 / 多级别 / 多地区均为"或"关系（同维度内取并集，跨维度取交集）；搜索框是全字段模糊匹配；"今日新增"指 <code>firstSeen</code> 等于最近更新日期的岗位。
 </div>
 
 <details>
@@ -224,11 +235,12 @@
   data.forEach(d => { if (!d.id) d.id = slug(d.company) + "__" + slug(d.position); });
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
 
+  const funcLabels = { eng:"工程研发", ops:"运维/SRE/基础设施", product:"产品", design:"设计", data:"数据/AI", security:"安全", growth:"市场/增长/运营", bd:"BD/商务/销售", ga:"合规/法务/财务HR" };
   const catLabels = { exchange:"交易所", chain:"公链/L2", defi:"钱包/DeFi", infra:"节点/RPC基础设施", other:"合规/托管/其他" };
   const lvlLabels = { head:"负责人/总监", senior:"资深/Staff", mid:"中级" };
   const regionLabels = { remote:"远程", cn:"中文区", hk:"香港", sg:"新加坡", us:"美国", eu:"欧洲", dubai:"迪拜", asia:"亚洲其他" };
 
-  const state = { cats:new Set(), lvls:new Set(), regions:new Set(), newOnly:false, search:"", sortKey:null, sortDir:1 };
+  const state = { funcs:new Set(), cats:new Set(), lvls:new Set(), regions:new Set(), newOnly:false, search:"", sortKey:null, sortDir:1 };
 
   function buildChips(containerId, options, stateSet) {
     const c = document.getElementById(containerId);
@@ -244,6 +256,7 @@
       c.appendChild(el);
     }
   }
+  buildChips("g-func", funcLabels, state.funcs);
   buildChips("g-cat", catLabels, state.cats);
   buildChips("g-lvl", lvlLabels, state.lvls);
   buildChips("g-region", regionLabels, state.regions);
@@ -269,6 +282,7 @@
 
   function matches(row) {
     if (state.newOnly && !isNew(row)) return false;
+    if (state.funcs.size && !state.funcs.has(row.func)) return false;
     if (state.cats.size && !state.cats.has(row.category)) return false;
     if (state.lvls.size && !state.lvls.has(row.level)) return false;
     if (state.regions.size) {
@@ -309,7 +323,10 @@
       tr.innerHTML = `
         <td><div class="company">${r.company}</div></td>
         <td><span class="badge cat-${r.category}">${catLabels[r.category] || r.category}</span></td>
-        <td><div class="pos">${r.position}${isNew(r) ? '<span class="new-tag">NEW</span>' : ''}</div></td>
+        <td>
+          <div class="func-cell"><span class="badge func-${r.func || 'ga'}">${funcLabels[r.func] || '其他'}</span></div>
+          <div class="pos">${r.position}${isNew(r) ? '<span class="new-tag">NEW</span>' : ''}</div>
+        </td>
         <td><span class="badge lvl-${r.level}">${lvlLabels[r.level] || r.level}</span></td>
         <td>${r.location}</td>
         <td class="salary">${r.salary}</td>
