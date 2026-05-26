@@ -69,6 +69,10 @@ for (const j of incoming) {
 D.jobs = freshOnes.concat(D.jobs);
 D.lastUpdated = today;
 
+// 确保每个公司在 companies 映射中都有条目（新公司留空简介，待人工/后续补全）
+D.companies = D.companies || {};
+for (const j of D.jobs) { if (!D.companies[j.company]) D.companies[j.company] = { intro: "" }; }
+
 // 写 changelog（同一天重复运行则覆盖当天那条，保持幂等）
 const defaultNote = added
   ? `每日更新：新增 ${added} 个岗位${refreshed ? `，刷新 ${refreshed} 个在招岗位` : ""}。`

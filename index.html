@@ -150,6 +150,7 @@
     <div class="nav-links">
       <a href="index.html" class="active">职位</a>
       <a href="stats.html">数据洞察</a>
+      <a href="companies.html">合作单位</a>
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
@@ -161,10 +162,6 @@
   <div class="hero-in">
     <h1>Web3 行业全职能岗位</h1>
     <p>聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。</p>
-    <div class="audience">
-      <span>🧑‍💻 求职者：按职能 / 薪资 / 地区找岗</span>
-      <span>🎯 猎头：掌握各公司招聘动态与市场趋势</span>
-    </div>
     <div class="searchbar">
       <input id="search" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
       <button id="searchbtn">搜索</button>
@@ -346,6 +343,10 @@
     cl.innerHTML=(DATA.changelog||[]).map(c=>`<li><span class="d">${c.date}</span>${c.added?`<span class="ad">+${c.added}</span> `:""}${esc(c.note||"")}</li>`).join("");
     document.getElementById("pagefoot").innerHTML=`数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${lastUpdated} · <a href="stats.html" style="color:var(--accent)">查看数据洞察 →</a>`;
   }
+
+  // 支持从合作单位页跳转：?q=公司名 预填搜索
+  const qp=new URLSearchParams(location.search).get("q");
+  if(qp){ state.search=qp.trim().toLowerCase(); document.getElementById("search").value=qp; }
 
   head(); render();
 })();

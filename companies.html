@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>合作单位 · Web3 招聘公司库</title>
+<style>
+  :root{
+    color-scheme:light;
+    --accent:#6d5efc;--bg:#f4f5f9;--card:#fff;--ink:#0f1729;--muted:#6b7280;--line:#e8eaf0;
+    --grad:linear-gradient(135deg,#6d5efc 0%,#a855f7 100%);
+    --shadow:0 1px 2px rgba(15,23,41,.04),0 1px 3px rgba(15,23,41,.06);
+    --shadow-lg:0 10px 30px rgba(15,23,41,.10);
+  }
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Inter,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+  a{color:inherit;text-decoration:none}
+
+  .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
+  .brand .logo{width:30px;height:30px;border-radius:8px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+  .brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px}
+  .nav-links{display:flex;gap:4px;margin-left:8px}
+  .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
+  .nav-links a.active{background:#efeaff;color:var(--accent)}
+  .nav-right{margin-left:auto}
+  .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
+  .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
+  .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
+
+  .head{max-width:1180px;margin:0 auto;padding:30px 24px 6px}
+  .head h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em;font-weight:800}
+  .head p{margin:0;color:var(--muted);font-size:14px}
+
+  .wrap{max-width:1180px;margin:18px auto 60px;padding:0 24px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+  .bar .stat{font-size:13px;color:var(--muted)}.bar .stat b{color:var(--ink);font-size:15px;font-weight:800;margin-right:3px}
+  .bar .stat .a{color:var(--accent)}
+  .cosearch{margin-left:auto;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:13.5px;min-width:220px;background:#fff;outline:none}
+  .cosearch:focus{border-color:var(--accent)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+  .co{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);transition:.15s;display:flex;flex-direction:column}
+  .co:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:#dfe2ec}
+  .co-top{display:flex;align-items:center;gap:12px}
+  .avatar{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;flex:none}
+  .co-name{font-size:15.5px;font-weight:700}
+  .new{display:inline-block;background:#ef4444;color:#fff;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle}
+  .ctag{display:inline-block;font-size:11px;font-weight:600;border-radius:6px;padding:2px 8px;margin-top:3px}
+  .ctag.exchange{background:#fdeede;color:#ea580c}.ctag.chain{background:#e8effd;color:#2563eb}
+  .ctag.defi{background:#f1e9fe;color:#7c3aed}.ctag.infra{background:#e6f6ef;color:#059669}.ctag.other{background:#eef1f5;color:#475569}
+  .co-intro{margin:12px 0 0;font-size:13px;color:#64748b;line-height:1.6;min-height:42px}
+  .co-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 0;text-align:center}
+  .co-stats>div{background:#f7f8fb;border-radius:10px;padding:8px 4px}
+  .co-stats b{display:block;font-size:16px;font-weight:800;letter-spacing:-.02em}
+  .co-stats b.a{color:var(--accent)}.co-stats b.g{color:#047857}
+  .co-stats span{font-size:11px;color:var(--muted)}
+  .co-funcs{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+  .ftag{font-size:11px;font-weight:600;border-radius:6px;padding:2px 8px}
+  .f-eng{background:#e8effd;color:#2563eb}.f-ops{background:#e6f6ef;color:#059669}.f-product{background:#f1e9fe;color:#7c3aed}
+  .f-design{background:#fce7f1;color:#db2777}.f-data{background:#e2f5fa;color:#0891b2}.f-security{background:#fde8e8;color:#dc2626}
+  .f-growth{background:#fdeede;color:#ea580c}.f-bd{background:#fbf4d9;color:#b58a04}.f-ga{background:#eef1f5;color:#475569}
+  .co-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+  .co-latest{font-size:11.5px;color:#9aa1b1}
+  .co-link{font-size:13px;font-weight:700;color:var(--accent)}
+  .co-link:hover{text-decoration:underline}
+
+  .more{display:block;margin:22px auto 0;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:14px;padding:12px 28px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
+  .more:hover{border-color:var(--accent);color:var(--accent)}
+  .empty{text-align:center;color:var(--muted);padding:50px;grid-column:1/-1}
+  .note{max-width:1180px;margin:0 auto;padding:8px 24px 30px;color:#9aa1b1;font-size:12px;line-height:1.7}
+  .load-error{max-width:1180px;margin:20px auto;padding:14px 24px;color:#b91c1c}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html"><span class="logo">W3</span><span>Web3 招聘<small>全职能岗位 · 每日更新</small></span></a>
+    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html">数据洞察</a><a href="companies.html" class="active">合作单位</a></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span></div>
+  </div>
+</nav>
+
+<div class="head">
+  <h1>合作单位 · 公司库</h1>
+  <p>各招聘单位的简介与基于其在招职位实时计算的背景数据，帮助候选人与猎头快速了解公司画像。</p>
+</div>
+
+<div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
+
+<div class="wrap">
+  <div class="bar">
+    <div class="stat"><b id="s-co">0</b>家招聘单位</div>
+    <div class="stat"><b id="s-jobs">0</b>个在招职位</div>
+    <div class="stat"><b class="a" id="s-active">0</b>家今日有新增</div>
+    <input class="cosearch" id="cosearch" placeholder="搜索公司名 / 简介…" />
+  </div>
+  <div class="grid" id="grid"></div>
+  <button class="more" id="more" style="display:none">展开全部</button>
+</div>
+
+<div class="note" id="note"></div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const DATA=window.WEB3_JOBS_DATA;
+  if(!DATA||!Array.isArray(DATA.jobs)){document.getElementById("load-error").style.display="block";return;}
+  const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", COMP=DATA.companies||{};
+  const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
+
+  const funcLabels={eng:"工程研发",ops:"运维/SRE",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长",bd:"BD/销售",ga:"合规/HR"};
+  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
+  const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
+  const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
+  const initial=n=>((n||"?").trim()[0]||"?").toUpperCase();
+  const median=a=>{if(!a.length)return 0;const s=[...a].sort((x,y)=>x-y);const m=Math.floor(s.length/2);return s.length%2?s[m]:Math.round((s[m-1]+s[m])/2);};
+  const fmtK=n=>n>=1000?'$'+Math.round(n/1000)+'K':(n?'$'+n:'—');
+  const mode=arr=>{const m={};arr.forEach(x=>m[x]=(m[x]||0)+1);return Object.entries(m).sort((a,b)=>b[1]-a[1])[0]?.[0];};
+
+  // 聚合每家公司
+  const map={};
+  data.forEach(j=>{ (map[j.company]=map[j.company]||[]).push(j); });
+  let firms=Object.entries(map).map(([name,jobs])=>{
+    const sal=jobs.map(j=>j.salaryNum).filter(n=>n>0);
+    const fcnt={}; jobs.forEach(j=>fcnt[j.func]=(fcnt[j.func]||0)+1);
+    const topFuncs=Object.entries(fcnt).sort((a,b)=>b[1]-a[1]).map(([k])=>k);
+    const latest=jobs.map(j=>j.firstSeen).filter(Boolean).sort().pop()||"";
+    return {
+      name, count:jobs.length,
+      newCount:jobs.filter(isNew).length,
+      cat:mode(jobs.map(j=>j.category)),
+      funcs:topFuncs,
+      median:median(sal),
+      remotePct:Math.round(jobs.filter(j=>(j.region||[]).includes("remote")).length/jobs.length*100),
+      latest,
+      intro:(COMP[name]&&COMP[name].intro)||""
+    };
+  }).sort((a,b)=> b.count-a.count || b.newCount-a.newCount || a.name.localeCompare(b.name));
+
+  // KPI
+  document.getElementById("s-co").textContent=firms.length;
+  document.getElementById("s-jobs").textContent=data.length;
+  document.getElementById("s-active").textContent=firms.filter(f=>f.newCount>0).length;
+
+  const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
+  const today=new Date().toISOString().slice(0,10);
+  pill.className="upd"+(lastUpdated===today?"":" stale");
+  t.textContent=(lastUpdated===today?"今日已更新 ":"最近更新 ")+lastUpdated;
+
+  const LIMIT=24; let expanded=false, query="";
+  function card(f){
+    const introTxt=f.intro||`一家${catLabels[f.cat]||"web3"}领域的 web3 / crypto 公司。`;
+    const funcsHtml=f.funcs.slice(0,4).map(k=>`<span class="ftag f-${k}">${funcLabels[k]||k}</span>`).join("");
+    return `<article class="co">
+      <div class="co-top">
+        <div class="avatar" style="background:${acolor(f.name)}">${esc(initial(f.name))}</div>
+        <div>
+          <div class="co-name">${esc(f.name)}${f.newCount?`<span class="new">+${f.newCount}</span>`:""}</div>
+          <span class="ctag ${f.cat}">${catLabels[f.cat]||f.cat}</span>
+        </div>
+      </div>
+      <p class="co-intro">${esc(introTxt)}</p>
+      <div class="co-stats">
+        <div><b class="a">${f.count}</b><span>在招职位</span></div>
+        <div><b class="g">${fmtK(f.median)}</b><span>薪资中位</span></div>
+        <div><b>${f.remotePct}%</b><span>远程</span></div>
+      </div>
+      <div class="co-funcs">${funcsHtml}</div>
+      <div class="co-foot">
+        <span class="co-latest">${f.latest?"最新发布 "+f.latest:" "}</span>
+        <a class="co-link" href="index.html?q=${encodeURIComponent(f.name)}">查看职位 →</a>
+      </div>
+    </article>`;
+  }
+  function render(){
+    let list=firms;
+    if(query){ list=firms.filter(f=>(f.name+" "+f.intro).toLowerCase().includes(query)); }
+    const shown=expanded?list:list.slice(0,LIMIT);
+    document.getElementById("grid").innerHTML = shown.length?shown.map(card).join(""):'<div class="empty">未找到匹配的公司。</div>';
+    const more=document.getElementById("more");
+    if(!query && !expanded && list.length>LIMIT){ more.style.display="block"; more.textContent=`展开全部 ${list.length} 家`; }
+    else more.style.display="none";
+  }
+  document.getElementById("more").onclick=()=>{ expanded=true; render(); };
+  document.getElementById("cosearch").addEventListener("input",e=>{ query=e.target.value.trim().toLowerCase(); expanded=!!query; render(); });
+
+  document.getElementById("note").innerHTML=`公司简介为概要整理，分析数据基于看板当前在招职位实时计算 · 最近更新 ${lastUpdated} · 仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
+  render();
+})();
+</script>
+</body>
+</html>
