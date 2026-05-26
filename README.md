@@ -22,7 +22,7 @@
 直接用浏览器打开 `index.html` 即可（双击或拖入浏览器）。若浏览器拦截本地脚本，启动一个本地静态服务：
 
 ```bash
-cd 项目目录
+cd web3            # 进入项目目录
 python3 -m http.server 4173
 # 浏览器访问 http://localhost:4173/
 ```

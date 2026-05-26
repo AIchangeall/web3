@@ -1,4 +1,21 @@
+# 本地工具 / 编辑器配置（不上传）
+.claude/
+.vscode/
+.idea/
+
+# 临时 / 派生文件
 new_jobs.json
 *.bak
-.DS_Store
 node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 密钥 / 环境变量（防止误传）
+.env
+.env.*
+*.pem
+*.key
+*_token*
+secrets*
