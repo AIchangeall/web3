@@ -3,379 +3,351 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Web3 行业全职能岗位招聘看板（每日更新）</title>
+<title>Web3 招聘 · 全职能岗位 | 面向猎头与求职者</title>
 <style>
-  :root { color-scheme: light; }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Inter, Segoe UI, sans-serif;
-    background: #fafafa;
-    color: #111;
-    line-height: 1.5;
-    padding: 20px 24px 60px;
+  :root{
+    color-scheme: light;
+    --accent:#6d5efc; --accent-2:#a855f7;
+    --bg:#f4f5f9; --card:#fff; --ink:#0f1729; --muted:#6b7280; --line:#e8eaf0;
+    --grad:linear-gradient(135deg,#6d5efc 0%,#a855f7 100%);
+    --shadow:0 1px 2px rgba(15,23,41,.04),0 1px 3px rgba(15,23,41,.06);
+    --shadow-lg:0 10px 30px rgba(15,23,41,.10);
   }
-  header { margin-bottom: 16px; }
-  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .subtitle { color: #666; font-size: 13px; margin: 0; }
-  .meta { color: #888; font-size: 12px; margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .updated-pill {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9;
-    border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600;
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Inter,"Segoe UI",sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.5; font-size:14px;
   }
-  .updated-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: #2e7d32; }
-  .updated-pill.stale { background: #fff3e0; color: #b54a00; border-color: #ffe0b2; }
-  .updated-pill.stale .dot { background: #e65100; }
+  a{color:inherit;text-decoration:none}
 
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
-    gap: 10px;
-    margin: 16px 0;
+  /* ---------- 顶部导航 ---------- */
+  .nav{
+    position:sticky; top:0; z-index:20; background:rgba(255,255,255,.85);
+    backdrop-filter:saturate(150%) blur(10px); border-bottom:1px solid var(--line);
   }
-  .stat { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 12px 14px; }
-  .stat .num { font-size: 22px; font-weight: 600; }
-  .stat .lbl { font-size: 12px; color: #777; margin-top: 2px; }
-  .stat.new .num { color: #b71c1c; }
+  .nav-in{max-width:1180px; margin:0 auto; padding:0 24px; height:60px; display:flex; align-items:center; gap:24px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:16px}
+  .brand .logo{width:30px;height:30px;border-radius:8px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+  .brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px}
+  .nav-links{display:flex;gap:4px;margin-left:8px}
+  .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
+  .nav-links a.active{background:#efeaff;color:var(--accent)}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
+  .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
+  .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}
+  .upd.stale .dot{background:#f59e0b}
 
-  .controls {
-    background: #fff; border: 1px solid #eee; border-radius: 10px;
-    padding: 12px 14px; margin-bottom: 14px;
-    display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
-  }
-  .group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .group > label { font-size: 12px; color: #555; font-weight: 500; }
-  .chip {
-    border: 1px solid #ddd; background: #fff; color: #333;
-    padding: 4px 10px; border-radius: 999px; font-size: 12px;
-    cursor: pointer; user-select: none; transition: all 0.12s ease;
-  }
-  .chip:hover { border-color: #999; }
-  .chip.active { background: #111; color: #fff; border-color: #111; }
-  .chip.new-chip.active { background: #b71c1c; border-color: #b71c1c; }
-  .search {
-    flex: 1; min-width: 180px; border: 1px solid #ddd; border-radius: 8px;
-    padding: 7px 10px; font-size: 13px;
-  }
-  .search:focus { outline: 2px solid #c8c8ff; border-color: #99f; }
+  /* ---------- Hero ---------- */
+  .hero{background:var(--grad);color:#fff}
+  .hero-in{max-width:1180px;margin:0 auto;padding:40px 24px 30px}
+  .hero h1{font-size:30px;margin:0 0 8px;letter-spacing:-.02em;font-weight:800}
+  .hero p{margin:0;font-size:14.5px;opacity:.92;max-width:720px}
+  .hero .audience{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+  .hero .audience span{font-size:12.5px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:5px 12px;border-radius:999px;font-weight:600}
+  .searchbar{margin-top:20px;background:#fff;border-radius:14px;padding:7px;display:flex;gap:8px;box-shadow:var(--shadow-lg);max-width:680px}
+  .searchbar input{flex:1;border:0;outline:0;padding:11px 14px;font-size:15px;color:var(--ink);background:transparent}
+  .searchbar button{border:0;background:var(--ink);color:#fff;font-weight:700;font-size:14px;padding:0 22px;border-radius:10px;cursor:pointer}
+  .searchbar button:hover{background:#000}
 
-  table {
-    width: 100%; border-collapse: collapse; background: #fff;
-    border: 1px solid #eee; border-radius: 10px; overflow: hidden; font-size: 13px;
-  }
-  thead th {
-    text-align: left; background: #f3f3f3; color: #444; font-weight: 600;
-    padding: 9px 12px; border-bottom: 1px solid #e7e7e7; cursor: pointer;
-    white-space: nowrap; font-size: 12px;
-  }
-  thead th .arrow { color: #aaa; margin-left: 4px; font-size: 10px; }
-  tbody td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
-  tbody tr:hover { background: #fcfcfc; }
-  tbody tr.is-new { background: #fff9f9; }
-  tbody tr.is-new:hover { background: #fff2f2; }
-  .company { font-weight: 600; color: #111; }
-  .pos { color: #111; font-weight: 500; }
-  .new-tag {
-    display: inline-block; background: #b71c1c; color: #fff; font-size: 10px;
-    font-weight: 700; border-radius: 4px; padding: 1px 5px; margin-left: 6px;
-    vertical-align: middle; letter-spacing: 0.03em;
-  }
-  .badge {
-    display: inline-block; border-radius: 6px; font-size: 11px; padding: 2px 7px;
-    line-height: 1.5; margin-right: 4px; font-weight: 500;
-  }
-  .cat-exchange { background: #fff3e0; color: #b54a00; }
-  .cat-chain    { background: #e3f2fd; color: #0b549d; }
-  .cat-defi     { background: #f3e5f5; color: #6a1b9a; }
-  .cat-infra    { background: #e8f5e9; color: #1b5e20; }
-  .cat-other    { background: #eceff1; color: #455a64; }
-  .lvl-head     { background: #ffebee; color: #b71c1c; }
-  .lvl-senior   { background: #fff8e1; color: #ad6800; }
-  .lvl-mid      { background: #e0f7fa; color: #006064; }
-  .func-eng      { background: #e3f2fd; color: #0b549d; }
-  .func-ops      { background: #e8f5e9; color: #1b5e20; }
-  .func-product  { background: #f3e5f5; color: #6a1b9a; }
-  .func-design   { background: #fce4ec; color: #ad1457; }
-  .func-data     { background: #e0f7fa; color: #006064; }
-  .func-security { background: #ffebee; color: #b71c1c; }
-  .func-growth   { background: #fff3e0; color: #b54a00; }
-  .func-bd       { background: #fff8e1; color: #ad6800; }
-  .func-ga       { background: #eceff1; color: #455a64; }
-  .func-cell { margin-bottom: 4px; }
-  .salary { color: #1b5e20; font-weight: 500; white-space: nowrap; }
-  .req { color: #555; font-size: 12px; max-width: 360px; }
-  a.link { color: #0b549d; text-decoration: none; font-size: 12px; word-break: break-all; }
-  a.link:hover { text-decoration: underline; }
-  .empty { text-align: center; color: #888; padding: 30px; font-size: 13px; }
+  /* KPI strip */
+  .kpis{max-width:1180px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+  .kpi .n{font-size:22px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
+  .kpi.hot .n{color:var(--accent)}
 
-  .footer-note { margin-top: 16px; color: #888; font-size: 12px; line-height: 1.7; }
-  .footer-note strong { color: #555; }
-  details { margin-top: 14px; }
-  details summary { cursor: pointer; font-size: 13px; color: #555; padding: 6px 0; }
-  .changelog { margin: 6px 0 0 0; padding-left: 0; list-style: none; font-size: 12px; color: #555; }
-  .changelog li { margin: 4px 0; padding: 6px 10px; background: #fff; border: 1px solid #eee; border-radius: 8px; }
-  .changelog .cl-date { font-weight: 600; color: #111; margin-right: 8px; }
-  .changelog .cl-add { color: #1b5e20; font-weight: 600; }
-  .changelog .cl-rm { color: #b71c1c; font-weight: 600; }
-  .sources { margin: 6px 0 0 0; padding-left: 18px; font-size: 12px; color: #666; }
-  .sources li { margin: 2px 0; }
-  .sources a { color: #0b549d; text-decoration: none; }
-  .sources a:hover { text-decoration: underline; }
-  .load-error { background: #ffebee; border: 1px solid #ef9a9a; color: #b71c1c;
-    padding: 12px 14px; border-radius: 10px; font-size: 13px; }
+  /* ---------- 主体布局 ---------- */
+  .wrap{max-width:1180px;margin:24px auto 60px;padding:0 24px;display:grid;grid-template-columns:248px 1fr;gap:22px;align-items:start}
+
+  /* 侧栏筛选 */
+  .side{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .side-h{padding:14px 16px;border-bottom:1px solid var(--line);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between}
+  .side-h button{border:0;background:none;color:var(--accent);font-size:12px;font-weight:600;cursor:pointer}
+  .fgroup{padding:13px 16px;border-bottom:1px solid var(--line)}
+  .fgroup:last-child{border-bottom:0}
+  .fgroup>.t{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:9px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1px solid var(--line);background:#fff;color:#374151;padding:5px 10px;border-radius:8px;font-size:12.5px;cursor:pointer;user-select:none;transition:.12s}
+  .chip:hover{border-color:#c5c9d6}
+  .chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .toggle{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:13.5px;font-weight:600;user-select:none}
+  .toggle .sw{width:38px;height:22px;border-radius:999px;background:#d8dae3;position:relative;transition:.15s;flex:none}
+  .toggle .sw::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:2px;left:2px;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+  .toggle.on .sw{background:var(--accent)}
+  .toggle.on .sw::after{left:18px}
+
+  /* 列表头 */
+  .listbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
+  .listbar .cnt{font-size:14px;font-weight:600}
+  .listbar .cnt b{color:var(--accent)}
+  .sortsel{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
+  .sortsel select{border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13px;background:#fff;color:var(--ink);cursor:pointer}
+
+  /* 职位卡片 */
+  .jobs{display:flex;flex-direction:column;gap:12px}
+  .job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;gap:15px;box-shadow:var(--shadow);transition:.15s;position:relative}
+  .job:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:#dfe2ec}
+  .avatar{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px;flex:none}
+  .job-main{flex:1;min-width:0}
+  .job-title{font-size:16px;font-weight:700;margin:0;display:inline}
+  .new{display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle;letter-spacing:.03em}
+  .job-company{margin-top:4px;font-size:13px;color:var(--muted)}
+  .job-company b{color:#374151;font-weight:600}
+  .job-company .sep{margin:0 7px;color:#cbd0db}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+  .tag{font-size:12px;font-weight:600;border-radius:7px;padding:3px 9px;background:#f1f2f6;color:#475569}
+  .tag.remote{background:#e6f6ef;color:#059669}
+  .tag.lvl-head{background:#fdeaea;color:#dc2626}
+  .tag.f-eng{background:#e8effd;color:#2563eb} .tag.f-ops{background:#e6f6ef;color:#059669}
+  .tag.f-product{background:#f1e9fe;color:#7c3aed} .tag.f-design{background:#fce7f1;color:#db2777}
+  .tag.f-data{background:#e2f5fa;color:#0891b2} .tag.f-security{background:#fde8e8;color:#dc2626}
+  .tag.f-growth{background:#fdeede;color:#ea580c} .tag.f-bd{background:#fbf4d9;color:#b58a04}
+  .tag.f-ga{background:#eef1f5;color:#475569}
+  .job-req{margin:11px 0 0;font-size:13px;color:#64748b;line-height:1.55}
+  .job-side{flex:none;width:150px;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;text-align:right;gap:10px}
+  .salary{font-size:15px;font-weight:800;color:#047857;line-height:1.3}
+  .salary.neg{color:#94a3b8;font-weight:600;font-size:13.5px}
+  .apply{background:var(--ink);color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;transition:.12s}
+  .apply:hover{background:var(--accent)}
+  .posted{font-size:11px;color:#9aa1b1}
+
+  .more{display:block;margin:22px auto 0;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:14px;padding:12px 28px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
+  .more:hover{border-color:var(--accent);color:var(--accent)}
+  .empty{text-align:center;color:var(--muted);padding:50px;background:#fff;border:1px dashed var(--line);border-radius:16px}
+
+  details.foot{max-width:1180px;margin:8px auto;padding:0 24px}
+  details.foot summary{cursor:pointer;color:var(--muted);font-size:13px;padding:8px 0}
+  .cl{list-style:none;padding:0;margin:6px 0;display:flex;flex-direction:column;gap:6px}
+  .cl li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px;color:#475569}
+  .cl .d{font-weight:700;color:var(--ink);margin-right:8px}
+  .cl .ad{color:#059669;font-weight:700}
+  .src{columns:2;font-size:12.5px;color:#64748b;padding-left:18px}
+  .src a{color:var(--accent)}
+  .pagefoot{max-width:1180px;margin:20px auto;padding:18px 24px;color:#9aa1b1;font-size:12px;border-top:1px solid var(--line);line-height:1.7}
+  .load-error{max-width:1180px;margin:20px auto;padding:14px 24px;color:#b91c1c}
+
+  @media(max-width:900px){
+    .kpis{grid-template-columns:repeat(3,1fr)}
+    .wrap{grid-template-columns:1fr}
+    .side{position:static}
+    .job{flex-wrap:wrap}
+    .job-side{width:100%;flex-direction:row;align-items:center;text-align:left;justify-content:space-between;margin-top:4px}
+    .src{columns:1}
+  }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Web3 行业招聘看板 · 全职能岗位</h1>
-  <p class="subtitle">覆盖 web3 / crypto 行业工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各职能公开招聘 · 可按职能 / 公司类型 / 级别 / 地区筛选</p>
-  <p class="meta">
-    <span id="updated-pill" class="updated-pill"><span class="dot"></span><span id="updated-text">加载中…</span></span>
-    <span>共 <span id="meta-count">—</span> 个岗位</span>
-    <span id="new-count-meta"></span>
-  </p>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="logo">W3</span>
+      <span>Web3 招聘<small>全职能岗位 · 每日更新</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">职位</a>
+      <a href="stats.html">数据洞察</a>
+    </div>
+    <div class="nav-right">
+      <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <h1>Web3 行业全职能岗位</h1>
+    <p>聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。</p>
+    <div class="audience">
+      <span>🧑‍💻 求职者：按职能 / 薪资 / 地区找岗</span>
+      <span>🎯 猎头：掌握各公司招聘动态与市场趋势</span>
+    </div>
+    <div class="searchbar">
+      <input id="search" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
+      <button id="searchbtn">搜索</button>
+    </div>
+  </div>
 </header>
 
-<div id="load-error" class="load-error" style="display:none">
-  ⚠️ 未能加载 <code>data.js</code> 数据文件。请确认 <code>data.js</code> 与本页面在同一目录下，并直接用浏览器打开 <code>index.html</code>。
+<section class="kpis" id="kpis">
+  <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l">今日新增</div></div>
+  <div class="kpi"><div class="n" id="k-total">0</div><div class="l">在招岗位</div></div>
+  <div class="kpi"><div class="n" id="k-comp">0</div><div class="l">招聘公司</div></div>
+  <div class="kpi"><div class="n" id="k-remote">0</div><div class="l">支持远程</div></div>
+  <div class="kpi"><div class="n" id="k-head">0</div><div class="l">负责人 / 总监</div></div>
+</section>
+
+<div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
+
+<div class="wrap">
+  <aside class="side">
+    <div class="side-h">筛选 <button id="reset">重置</button></div>
+    <div class="fgroup"><label class="toggle" id="t-new"><span class="sw"></span><span>仅看今日新增</span></label></div>
+    <div class="fgroup"><div class="t">职能</div><div class="chips" id="g-func"></div></div>
+    <div class="fgroup"><div class="t">公司类型</div><div class="chips" id="g-cat"></div></div>
+    <div class="fgroup"><div class="t">级别</div><div class="chips" id="g-lvl"></div></div>
+    <div class="fgroup"><div class="t">地区</div><div class="chips" id="g-region"></div></div>
+  </aside>
+
+  <main>
+    <div class="listbar">
+      <div class="cnt">找到 <b id="result-cnt">0</b> 个职位</div>
+      <div class="sortsel">
+        <span>排序</span>
+        <select id="sort">
+          <option value="recommended">推荐（新增优先）</option>
+          <option value="salary_desc">薪资 高 → 低</option>
+          <option value="salary_asc">薪资 低 → 高</option>
+          <option value="company">公司名 A → Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="jobs" id="jobs"></div>
+    <div class="empty" id="empty" style="display:none">未匹配到职位，试试放宽筛选条件。</div>
+    <button class="more" id="more" style="display:none">加载更多</button>
+  </main>
 </div>
 
-<div class="stats" id="stats">
-  <div class="stat new"><div class="num" id="s-new">0</div><div class="lbl">今日新增</div></div>
-  <div class="stat"><div class="num" id="s-total">0</div><div class="lbl">岗位总数</div></div>
-  <div class="stat"><div class="num" id="s-head">0</div><div class="lbl">负责人 / 总监</div></div>
-  <div class="stat"><div class="num" id="s-senior">0</div><div class="lbl">资深 / Staff</div></div>
-  <div class="stat"><div class="num" id="s-mid">0</div><div class="lbl">中级</div></div>
-  <div class="stat"><div class="num" id="s-cn">0</div><div class="lbl">中文区岗位</div></div>
-  <div class="stat"><div class="num" id="s-remote">0</div><div class="lbl">支持远程</div></div>
-</div>
-
-<div class="controls">
-  <div class="group" id="g-new">
-    <span class="chip new-chip" id="chip-new">🆕 仅看今日新增</span>
-  </div>
-  <div class="group" id="g-func"><label>职能：</label></div>
-  <div class="group" id="g-cat"><label>公司类型：</label></div>
-  <div class="group" id="g-lvl"><label>级别：</label></div>
-  <div class="group" id="g-region"><label>地区：</label></div>
-  <input class="search" id="search" placeholder="搜索公司 / 岗位 / 技能关键字..." />
-</div>
-
-<table id="tbl">
-  <thead>
-    <tr>
-      <th data-key="company">公司 <span class="arrow">↕</span></th>
-      <th data-key="category">公司类型 <span class="arrow">↕</span></th>
-      <th data-key="position">职能 · 岗位 <span class="arrow">↕</span></th>
-      <th data-key="level">级别 <span class="arrow">↕</span></th>
-      <th data-key="location">地点 <span class="arrow">↕</span></th>
-      <th data-key="salary">薪资 (USD/年) <span class="arrow">↕</span></th>
-      <th data-key="requirements">要点</th>
-      <th data-key="link">链接</th>
-    </tr>
-  </thead>
-  <tbody id="tbody"></tbody>
-</table>
-<div class="empty" id="empty" style="display:none">未匹配到任何岗位，请放宽筛选条件。</div>
-
-<details open>
+<details class="foot">
   <summary>📋 更新日志（每日自动维护）</summary>
-  <ul class="changelog" id="changelog"></ul>
+  <ul class="cl" id="changelog"></ul>
+</details>
+<details class="foot">
+  <summary>数据来源</summary>
+  <div class="src">
+    公司官网 · Lever · Ashby · Greenhouse · LinkedIn · <a href="https://web3.career/" target="_blank">Web3.career</a> ·
+    <a href="https://cryptojobslist.com/" target="_blank">CryptoJobsList</a> · <a href="https://cryptocurrencyjobs.co/" target="_blank">CryptocurrencyJobs</a> ·
+    <a href="https://www.v2ex.com/go/cv" target="_blank">V2EX 招聘版</a> · <a href="https://learnblockchain.cn/jobs" target="_blank">登链社区</a>
+  </div>
 </details>
 
-<div class="footer-note">
-  <strong>说明：</strong><span id="snapshot-note"></span>
-  岗位会随时间变化，建议点击链接到原始 JD 页面进一步确认。<br>
-  <strong>筛选逻辑：</strong>多职能 / 多公司类型 / 多级别 / 多地区均为"或"关系（同维度内取并集，跨维度取交集）；搜索框是全字段模糊匹配；"今日新增"指 <code>firstSeen</code> 等于最近更新日期的岗位。
-</div>
+<div class="pagefoot" id="pagefoot"></div>
 
-<details>
-  <summary>查看主要数据来源 (点击展开)</summary>
-  <ul class="sources">
-    <li><a href="https://jobs.lever.co/binance" target="_blank">Binance 官方招聘 (Lever)</a></li>
-    <li><a href="https://www.coinbase.com/careers/positions?location=remote" target="_blank">Coinbase Remote Positions</a></li>
-    <li><a href="https://www.bybit.com/en/promo/global/careers" target="_blank">Bybit Careers</a></li>
-    <li><a href="https://www.okx.com/en-us/join-us" target="_blank">OKX Careers</a></li>
-    <li><a href="https://jobs.ashbyhq.com/kraken.com" target="_blank">Kraken Ashby 招聘系统</a></li>
-    <li><a href="https://jobs.solana.com/jobs" target="_blank">Solana Foundation 招聘</a></li>
-    <li><a href="https://jobs.ashbyhq.com/ethereum-foundation" target="_blank">Ethereum Foundation 招聘</a></li>
-    <li><a href="https://job-boards.greenhouse.io/aptoslabs" target="_blank">Aptos Labs Careers</a></li>
-    <li><a href="https://jobs.lever.co/offchainlabs" target="_blank">Offchain Labs (Arbitrum)</a></li>
-    <li><a href="https://consensys.io/open-roles/" target="_blank">Consensys / MetaMask 招聘</a></li>
-    <li><a href="https://jobs.ashbyhq.com/uniswap" target="_blank">Uniswap Labs Careers</a></li>
-    <li><a href="https://jobs.ashbyhq.com/phantom" target="_blank">Phantom Wallet Careers</a></li>
-    <li><a href="https://www.alchemy.com/careers" target="_blank">Alchemy Careers</a></li>
-    <li><a href="https://jobs.ashbyhq.com/quicknode" target="_blank">QuickNode Careers</a></li>
-    <li><a href="https://www.blockdaemon.com/careers" target="_blank">Blockdaemon Careers</a></li>
-    <li><a href="https://www.chainalysis.com/careers/job-openings/" target="_blank">Chainalysis 招聘</a></li>
-    <li><a href="https://boards.greenhouse.io/fireblocks" target="_blank">Fireblocks Greenhouse</a></li>
-    <li><a href="https://www.v2ex.com/go/cv" target="_blank">V2EX 招聘版</a></li>
-    <li><a href="https://web3.career/" target="_blank">Web3.career</a></li>
-    <li><a href="https://cryptojobslist.com/" target="_blank">CryptoJobsList</a></li>
-    <li><a href="https://learnblockchain.cn/jobs" target="_blank">登链社区招聘</a></li>
-  </ul>
-</details>
-
-<!-- 数据源：由每日更新程序维护 -->
 <script src="data.js"></script>
 <script>
-(function () {
+(function(){
   const DATA = window.WEB3_JOBS_DATA;
-  if (!DATA || !Array.isArray(DATA.jobs)) {
-    document.getElementById("load-error").style.display = "block";
-    return;
-  }
+  if(!DATA || !Array.isArray(DATA.jobs)){ document.getElementById("load-error").style.display="block"; return; }
   const data = DATA.jobs;
   const lastUpdated = DATA.lastUpdated || "";
-
-  // 生成稳定 id（兼容旧数据没有 id 的情况）
-  const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  data.forEach(d => { if (!d.id) d.id = slug(d.company) + "__" + slug(d.position); });
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
 
-  const funcLabels = { eng:"工程研发", ops:"运维/SRE/基础设施", product:"产品", design:"设计", data:"数据/AI", security:"安全", growth:"市场/增长/运营", bd:"BD/商务/销售", ga:"合规/法务/财务HR" };
-  const catLabels = { exchange:"交易所", chain:"公链/L2", defi:"钱包/DeFi", infra:"节点/RPC基础设施", other:"合规/托管/其他" };
-  const lvlLabels = { head:"负责人/总监", senior:"资深/Staff", mid:"中级" };
-  const regionLabels = { remote:"远程", cn:"中文区", hk:"香港", sg:"新加坡", us:"美国", eu:"欧洲", dubai:"迪拜", asia:"亚洲其他" };
+  const funcLabels={eng:"工程研发",ops:"运维/SRE/基础设施",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长/运营",bd:"BD/商务/销售",ga:"合规/法务/财务HR"};
+  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
+  const lvlLabels={head:"负责人/总监",senior:"资深/Staff",mid:"中级"};
+  const regionLabels={remote:"远程",cn:"中文区",hk:"香港",sg:"新加坡",us:"美国",eu:"欧洲",dubai:"迪拜",asia:"亚洲其他"};
 
-  const state = { funcs:new Set(), cats:new Set(), lvls:new Set(), regions:new Set(), newOnly:false, search:"", sortKey:null, sortDir:1 };
+  const PAGE=18;
+  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,search:"",sort:"recommended",limit:PAGE};
 
-  function buildChips(containerId, options, stateSet) {
-    const c = document.getElementById(containerId);
-    for (const [key, label] of Object.entries(options)) {
-      const el = document.createElement("span");
-      el.className = "chip";
-      el.textContent = label;
-      el.onclick = () => {
-        if (stateSet.has(key)) stateSet.delete(key); else stateSet.add(key);
-        el.classList.toggle("active");
-        render();
-      };
-      c.appendChild(el);
+  const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
+  const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
+  const initial=n=>((n||"?").trim()[0]||"?").toUpperCase();
+  const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+  function buildChips(id,labels,set){
+    const c=document.getElementById(id);
+    for(const [k,l] of Object.entries(labels)){
+      const e=document.createElement("span"); e.className="chip"; e.textContent=l;
+      e.onclick=()=>{ set.has(k)?set.delete(k):set.add(k); e.classList.toggle("active"); state.limit=PAGE; render(); };
+      c.appendChild(e);
     }
   }
-  buildChips("g-func", funcLabels, state.funcs);
-  buildChips("g-cat", catLabels, state.cats);
-  buildChips("g-lvl", lvlLabels, state.lvls);
-  buildChips("g-region", regionLabels, state.regions);
+  buildChips("g-func",funcLabels,state.funcs);
+  buildChips("g-cat",catLabels,state.cats);
+  buildChips("g-lvl",lvlLabels,state.lvls);
+  buildChips("g-region",regionLabels,state.regions);
 
-  document.getElementById("chip-new").onclick = function () {
-    state.newOnly = !state.newOnly;
-    this.classList.toggle("active");
-    render();
+  const tnew=document.getElementById("t-new");
+  tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
+  const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
+  document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
+  document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
+  document.getElementById("sort").onchange=e=>{ state.sort=e.target.value; state.limit=PAGE; render(); };
+  document.getElementById("more").onclick=()=>{ state.limit+=PAGE; render(); };
+  document.getElementById("reset").onclick=()=>{
+    state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
+    state.newOnly=false;state.search="";state.limit=PAGE;
+    document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
+    tnew.classList.remove("on"); document.getElementById("search").value="";
+    document.getElementById("sort").value="recommended"; state.sort="recommended"; render();
   };
-  document.getElementById("search").addEventListener("input", e => {
-    state.search = e.target.value.trim().toLowerCase();
-    render();
-  });
-  document.querySelectorAll("thead th").forEach(th => {
-    th.addEventListener("click", () => {
-      const k = th.dataset.key;
-      if (!k || k === "link" || k === "requirements") return;
-      if (state.sortKey === k) state.sortDir = -state.sortDir;
-      else { state.sortKey = k; state.sortDir = 1; }
-      render();
-    });
-  });
 
-  function matches(row) {
-    if (state.newOnly && !isNew(row)) return false;
-    if (state.funcs.size && !state.funcs.has(row.func)) return false;
-    if (state.cats.size && !state.cats.has(row.category)) return false;
-    if (state.lvls.size && !state.lvls.has(row.level)) return false;
-    if (state.regions.size) {
-      let ok = false;
-      for (const r of (row.region || [])) if (state.regions.has(r)) { ok = true; break; }
-      if (!ok) return false;
-    }
-    if (state.search) {
-      const blob = (row.company + " " + row.position + " " + row.location + " " + row.requirements + " " + row.salary).toLowerCase();
-      if (!blob.includes(state.search)) return false;
-    }
+  function match(r){
+    if(state.newOnly && !isNew(r)) return false;
+    if(state.funcs.size && !state.funcs.has(r.func)) return false;
+    if(state.cats.size && !state.cats.has(r.category)) return false;
+    if(state.lvls.size && !state.lvls.has(r.level)) return false;
+    if(state.regions.size){ if(!(r.region||[]).some(x=>state.regions.has(x))) return false; }
+    if(state.search){ const b=(r.company+" "+r.position+" "+r.location+" "+r.requirements+" "+r.salary).toLowerCase(); if(!b.includes(state.search)) return false; }
     return true;
   }
-
-  function render() {
-    let rows = data.filter(matches);
-    if (state.sortKey) {
-      const k = state.sortKey, dir = state.sortDir;
-      rows.sort((a, b) => {
-        let av = a[k], bv = b[k];
-        if (k === "salary") { av = a.salaryNum || 0; bv = b.salaryNum || 0; }
-        if (typeof av === "string") av = av.toLowerCase();
-        if (typeof bv === "string") bv = bv.toLowerCase();
-        if (av < bv) return -1 * dir;
-        if (av > bv) return 1 * dir;
-        return 0;
-      });
-    } else {
-      // 默认：新增置顶
-      rows = rows.slice().sort((a, b) => (isNew(b) ? 1 : 0) - (isNew(a) ? 1 : 0));
-    }
-
-    const tbody = document.getElementById("tbody");
-    tbody.innerHTML = "";
-    for (const r of rows) {
-      const tr = document.createElement("tr");
-      if (isNew(r)) tr.className = "is-new";
-      tr.innerHTML = `
-        <td><div class="company">${r.company}</div></td>
-        <td><span class="badge cat-${r.category}">${catLabels[r.category] || r.category}</span></td>
-        <td>
-          <div class="func-cell"><span class="badge func-${r.func || 'ga'}">${funcLabels[r.func] || '其他'}</span></div>
-          <div class="pos">${r.position}${isNew(r) ? '<span class="new-tag">NEW</span>' : ''}</div>
-        </td>
-        <td><span class="badge lvl-${r.level}">${lvlLabels[r.level] || r.level}</span></td>
-        <td>${r.location}</td>
-        <td class="salary">${r.salary}</td>
-        <td class="req">${r.requirements}</td>
-        <td><a class="link" href="${r.link}" target="_blank" rel="noopener">查看 JD →</a></td>
-      `;
-      tbody.appendChild(tr);
-    }
-    document.getElementById("empty").style.display = rows.length ? "none" : "block";
-
-    const newCount = data.filter(isNew).length;
-    document.getElementById("s-new").textContent = newCount;
-    document.getElementById("s-total").textContent = data.length;
-    document.getElementById("s-head").textContent = data.filter(d => d.level === "head").length;
-    document.getElementById("s-senior").textContent = data.filter(d => d.level === "senior").length;
-    document.getElementById("s-mid").textContent = data.filter(d => d.level === "mid").length;
-    document.getElementById("s-cn").textContent = data.filter(d => (d.region||[]).includes("cn") || (d.region||[]).includes("hk")).length;
-    document.getElementById("s-remote").textContent = data.filter(d => (d.region||[]).includes("remote")).length;
-    document.getElementById("meta-count").textContent = data.length;
-    document.getElementById("new-count-meta").textContent = newCount ? `· 今日新增 ${newCount} 个` : "";
+  function sortRows(rows){
+    const s=state.sort;
+    if(s==="salary_desc") return rows.sort((a,b)=>(b.salaryNum||0)-(a.salaryNum||0));
+    if(s==="salary_asc")  return rows.sort((a,b)=>(a.salaryNum||0)-(b.salaryNum||0));
+    if(s==="company")     return rows.sort((a,b)=>a.company.localeCompare(b.company,"en"));
+    return rows.sort((a,b)=>(isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0)); // recommended
   }
 
-  // 顶部更新状态
-  function renderHeader() {
-    const pill = document.getElementById("updated-pill");
-    const txt = document.getElementById("updated-text");
-    if (lastUpdated) {
-      const today = new Date().toISOString().slice(0, 10);
-      const fresh = lastUpdated === today;
-      pill.className = "updated-pill" + (fresh ? "" : " stale");
-      txt.textContent = (fresh ? "今日已更新" : "最近更新") + "：" + lastUpdated;
-    } else {
-      txt.textContent = "更新时间未知";
-    }
-    document.getElementById("snapshot-note").textContent = DATA.snapshotNote || "";
-
-    const cl = document.getElementById("changelog");
-    cl.innerHTML = "";
-    (DATA.changelog || []).forEach(c => {
-      const li = document.createElement("li");
-      const add = c.added ? `<span class="cl-add">+${c.added}</span> ` : "";
-      const rm = c.removed ? `<span class="cl-rm">-${c.removed}</span> ` : "";
-      li.innerHTML = `<span class="cl-date">${c.date}</span>${add}${rm}${c.note || ""}`;
-      cl.appendChild(li);
-    });
+  function card(r){
+    const remote=(r.region||[]).includes("remote");
+    const negSalary=!r.salary || /面议/.test(r.salary);
+    return `<article class="job">
+      <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
+      <div class="job-main">
+        <h3 class="job-title">${esc(r.position)}</h3>${isNew(r)?'<span class="new">NEW</span>':''}
+        <div class="job-company"><b>${esc(r.company)}</b><span class="sep">·</span>${catLabels[r.category]||r.category}</div>
+        <div class="tags">
+          <span class="tag f-${r.func||'ga'}">${funcLabels[r.func]||'其他'}</span>
+          <span class="tag ${r.level==='head'?'lvl-head':''}">${lvlLabels[r.level]||r.level}</span>
+          <span class="tag">📍 ${esc(r.location)}</span>
+          ${remote?'<span class="tag remote">远程友好</span>':''}
+        </div>
+        <p class="job-req">${esc(r.requirements)}</p>
+      </div>
+      <div class="job-side">
+        <div class="salary ${negSalary?'neg':''}">${esc(r.salary||'面议')}</div>
+        <a class="apply" href="${r.link}" target="_blank" rel="noopener">查看职位 →</a>
+        <div class="posted">${r.firstSeen?'上架 '+r.firstSeen:''}</div>
+      </div>
+    </article>`;
   }
 
-  renderHeader();
-  render();
+  function render(){
+    let rows=sortRows(data.filter(match));
+    const total=rows.length;
+    const shown=rows.slice(0,state.limit);
+    document.getElementById("jobs").innerHTML=shown.map(card).join("");
+    document.getElementById("result-cnt").textContent=total;
+    document.getElementById("empty").style.display=total?"none":"block";
+    document.getElementById("more").style.display=total>state.limit?"block":"none";
+    document.getElementById("more").textContent=`加载更多（剩余 ${total-state.limit} 个）`;
+  }
+
+  // KPI + header
+  function head(){
+    const companies=new Set(data.map(d=>d.company)).size;
+    document.getElementById("k-new").textContent=data.filter(isNew).length;
+    document.getElementById("k-total").textContent=data.length;
+    document.getElementById("k-comp").textContent=companies;
+    document.getElementById("k-remote").textContent=data.filter(d=>(d.region||[]).includes("remote")).length;
+    document.getElementById("k-head").textContent=data.filter(d=>d.level==="head").length;
+
+    const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
+    const today=new Date().toISOString().slice(0,10);
+    pill.className="upd"+(lastUpdated===today?"":" stale");
+    t.textContent=(lastUpdated===today?"今日已更新 ":"最近更新 ")+lastUpdated;
+
+    const cl=document.getElementById("changelog");
+    cl.innerHTML=(DATA.changelog||[]).map(c=>`<li><span class="d">${c.date}</span>${c.added?`<span class="ad">+${c.added}</span> `:""}${esc(c.note||"")}</li>`).join("");
+    document.getElementById("pagefoot").innerHTML=`数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${lastUpdated} · <a href="stats.html" style="color:var(--accent)">查看数据洞察 →</a>`;
+  }
+
+  head(); render();
 })();
 </script>
 </body>
