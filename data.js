@@ -12,18 +12,118 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-26",
-      "added": 7,
+      "added": 6,
       "removed": 0,
-      "note": "首次联网更新：新增 7 个近一周发布的岗位（Copper / Bloxstaking / Bitpanda / Auros / Binance / Reown / Triton One）。"
-    },
-    {
-      "date": "2026-05-26",
-      "added": 39,
-      "removed": 0,
-      "note": "初始建库：迁移历史看板 web3-sre-hiring.html 全部岗位，拆分数据与界面，接入每日更新流程。"
+      "note": "每日更新：新增 6 个近期发布岗位（Flashbots / Stellar / Kiln / Galaxy Digital / P2P.org×2）。"
     }
   ],
   "jobs": [
+    {
+      "company": "Flashbots",
+      "category": "infra",
+      "position": "Senior DevOps Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "MEV/区块构建基础设施；K8s+裸金属混合部署；Terraform/Ansible/Helm/Prometheus；4–10年分布式生产系统运维；L1/L2链上基础设施经验。",
+      "link": "https://jobs.ashbyhq.com/flashbots.net/8fa82d12-baef-4f95-86af-a8354af820d8",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "flashbots||senior-devops-engineer"
+    },
+    {
+      "company": "Stellar Development Foundation",
+      "category": "chain",
+      "position": "Senior Site Reliability Engineer",
+      "level": "senior",
+      "location": "New York, NY (Hybrid)",
+      "region": [
+        "us"
+      ],
+      "salary": "$150K–$200K",
+      "salaryNum": 175000,
+      "requirements": "5+年SRE/Infra；AWS/GCP及Linux系统运维；K8s集群；Jenkins/CI-CD；公链基础设施稳定性；监控告警体系。",
+      "link": "https://jobs.theblockchainassociation.org/companies/stellar-development-foundation/jobs/66495955-senior-site-reliability-engineer",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "stellar-development-foundation||senior-site-reliability-engineer"
+    },
+    {
+      "company": "Kiln",
+      "category": "infra",
+      "position": "Senior SRE / DevOps Engineer (Blockchain)",
+      "level": "senior",
+      "location": "Paris / EU 远程 (法、英、意、西、葡、荷)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "€80K–€100K + equity",
+      "salaryNum": 94000,
+      "requirements": "6+年SRE/Infra；Kubernetes专家级；Terraform/Helm/GitOps；多链验证者协议部署；SOC 2合规；法语+英语。",
+      "link": "https://jobs.ashbyhq.com/kiln.fi/ae5ec77c-f490-4060-a004-15dd00050a30",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "kiln||senior-sre-devops-engineer-blockchain"
+    },
+    {
+      "company": "Galaxy Digital",
+      "category": "other",
+      "position": "Site Reliability Engineer (Blockchain Infrastructure)",
+      "level": "senior",
+      "location": "香港",
+      "region": [
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "5+年SRE/DevOps (web3/blockchain)；PoS验证者及数字资产托管高可用基础设施；K8s/Terraform/Flux/Helm；PagerDuty on-call；约5天前发布。",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "galaxy-digital||site-reliability-engineer-blockchain-infrastructure"
+    },
+    {
+      "company": "P2P.org",
+      "category": "infra",
+      "position": "Senior SRE Engineer - Solana Ecosystem",
+      "level": "senior",
+      "location": "欧洲远程",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议 (可加密货币支付)",
+      "salaryNum": 120000,
+      "requirements": "Solana验证者/RPC基础设施运维与性能优化；GCP为主 (AWS/on-prem加分)；Go/Rust/Python；密钥安全管理；最大机构质押平台 (TVL $10B+)。",
+      "link": "https://cryptocurrencyjobs.co/engineering/p2p-org-senior-sre-engineer-solana-ecosystem/",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "p2p-org||senior-sre-engineer-solana-ecosystem"
+    },
+    {
+      "company": "P2P.org",
+      "category": "infra",
+      "position": "Senior SRE Engineer - Bitcoin Team",
+      "level": "senior",
+      "location": "欧洲远程",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议 (可加密货币支付)",
+      "salaryNum": 110000,
+      "requirements": "比特币节点大规模基础设施运维；高可用质押平台；监控与故障响应；EU时区；机构级质押提供商。",
+      "link": "https://remotive.com/remote-jobs/devops/senior-sre-bitcoin-1973683",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "p2p-org||senior-sre-engineer-bitcoin-team"
+    },
     {
       "company": "Copper.co",
       "category": "other",
