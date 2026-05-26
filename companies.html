@@ -110,7 +110,11 @@
 (function(){
   const DATA=window.WEB3_JOBS_DATA;
   if(!DATA||!Array.isArray(DATA.jobs)){document.getElementById("load-error").style.display="block";return;}
-  const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", COMP=DATA.companies||{};
+  const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", COMP=DATA.companies||{}, lastUpdatedAt=DATA.lastUpdatedAt||"";
+  const pad2=n=>String(n).padStart(2,"0");
+  const fmtDT=iso=>{const d=new Date(iso);if(isNaN(d.getTime()))return iso||lastUpdated;return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;};
+  const updDisplay=lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated;
+  const updFresh=lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
   const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
 
   const funcLabels={eng:"工程研发",ops:"运维/SRE",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长",bd:"BD/销售",ga:"合规/HR"};
@@ -149,9 +153,8 @@
   document.getElementById("s-active").textContent=firms.filter(f=>f.newCount>0).length;
 
   const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
-  const today=new Date().toISOString().slice(0,10);
-  pill.className="upd"+(lastUpdated===today?"":" stale");
-  t.textContent=(lastUpdated===today?"今日已更新 ":"最近更新 ")+lastUpdated;
+  pill.className="upd"+(updFresh?"":" stale");
+  t.textContent="更新 "+updDisplay;
 
   const LIMIT=24; let expanded=false, query="";
   function card(f){
@@ -190,7 +193,7 @@
   document.getElementById("more").onclick=()=>{ expanded=true; render(); };
   document.getElementById("cosearch").addEventListener("input",e=>{ query=e.target.value.trim().toLowerCase(); expanded=!!query; render(); });
 
-  document.getElementById("note").innerHTML=`公司简介为概要整理，分析数据基于看板当前在招职位实时计算 · 最近更新 ${lastUpdated} · 仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
+  document.getElementById("note").innerHTML=`公司简介为概要整理，分析数据基于看板当前在招职位实时计算 · 最近更新 ${updDisplay} · 仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
   render();
 })();
 </script>

@@ -164,7 +164,11 @@
 (function(){
   const DATA=window.WEB3_JOBS_DATA;
   if(!DATA||!Array.isArray(DATA.jobs)){document.getElementById("load-error").style.display="block";return;}
-  const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"";
+  const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", lastUpdatedAt=DATA.lastUpdatedAt||"";
+  const pad2=n=>String(n).padStart(2,"0");
+  const fmtDT=iso=>{const d=new Date(iso);if(isNaN(d.getTime()))return iso||lastUpdated;return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;};
+  const updDisplay=lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated;
+  const updFresh=lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
   const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
 
   const funcLabels={eng:"工程研发",ops:"运维/SRE/基础设施",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长/运营",bd:"BD/商务/销售",ga:"合规/法务/财务HR"};
@@ -201,9 +205,8 @@
 
   // header pill
   const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
-  const today=new Date().toISOString().slice(0,10);
-  pill.className="upd"+(lastUpdated===today?"":" stale");
-  t.textContent=(lastUpdated===today?"今日已更新 ":"最近更新 ")+lastUpdated;
+  pill.className="upd"+(updFresh?"":" stale");
+  t.textContent="更新 "+updDisplay;
 
   // 职能分布
   const fc=countBy(data,d=>d.func);
@@ -260,7 +263,7 @@
       ${grid}<polygon class="area" points="${area}"/><polyline class="line" points="${line}"/>${dots}${xl}</svg>`;
   }
 
-  document.getElementById("note").innerHTML=`统计基于看板当前 ${data.length} 个在招岗位实时计算 · 最近更新 ${lastUpdated} · 薪资为公开 JD 或聚合估算，仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
+  document.getElementById("note").innerHTML=`统计基于看板当前 ${data.length} 个在招岗位实时计算 · 最近更新 ${updDisplay} · 薪资为公开 JD 或聚合估算，仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
 })();
 </script>
 </body>

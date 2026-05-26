@@ -1,7 +1,8 @@
 // ============================================================================
 //  Web3 行业全职能岗位数据源（机器可维护，JSON 风格）
 //  本文件由每日更新程序自动维护；前端 index.html 通过 <script src> 加载。
-//  结构: { lastUpdated, snapshotNote, changelog[], jobs[], companies{} }
+//  结构: { lastUpdated, lastUpdatedAt, snapshotNote, changelog[], jobs[], companies{} }
+//  lastUpdated=日期(用于 firstSeen/NEW 比对); lastUpdatedAt=ISO 时间戳(前端转本地时区显示到分钟)
 //  每个 job: id?/company/category/func/position/level/location/region[]/salary/
 //            salaryNum/requirements/link/firstSeen/lastSeen
 //  companies: { "公司名": { intro:"一句话简介" } }（合作单位页用；新公司可留空简介）
@@ -2227,5 +2228,6 @@ window.WEB3_JOBS_DATA = {
     "Ripple": {
       "intro": "跨境支付与 XRPL 生态公司，面向机构。"
     }
-  }
+  },
+  "lastUpdatedAt": "2026-05-26T18:05:21.051Z"
 };

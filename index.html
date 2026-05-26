@@ -230,6 +230,11 @@
   if(!DATA || !Array.isArray(DATA.jobs)){ document.getElementById("load-error").style.display="block"; return; }
   const data = DATA.jobs;
   const lastUpdated = DATA.lastUpdated || "";
+  const lastUpdatedAt = DATA.lastUpdatedAt || "";
+  const pad2 = n => String(n).padStart(2, "0");
+  const fmtDT = iso => { const d = new Date(iso); if (isNaN(d.getTime())) return iso || lastUpdated; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
+  const updDisplay = lastUpdatedAt ? fmtDT(lastUpdatedAt) : lastUpdated;
+  const updFresh = lastUpdatedAt ? ((Date.now() - new Date(lastUpdatedAt).getTime()) / 36e5 <= 6) : false;
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
 
   const funcLabels={eng:"工程研发",ops:"运维/SRE/基础设施",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长/运营",bd:"BD/商务/销售",ga:"合规/法务/财务HR"};
@@ -335,13 +340,12 @@
     document.getElementById("k-head").textContent=data.filter(d=>d.level==="head").length;
 
     const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
-    const today=new Date().toISOString().slice(0,10);
-    pill.className="upd"+(lastUpdated===today?"":" stale");
-    t.textContent=(lastUpdated===today?"今日已更新 ":"最近更新 ")+lastUpdated;
+    pill.className="upd"+(updFresh?"":" stale");
+    t.textContent="更新 "+updDisplay;
 
     const cl=document.getElementById("changelog");
     cl.innerHTML=(DATA.changelog||[]).map(c=>`<li><span class="d">${c.date}</span>${c.added?`<span class="ad">+${c.added}</span> `:""}${esc(c.note||"")}</li>`).join("");
-    document.getElementById("pagefoot").innerHTML=`数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${lastUpdated} · <a href="stats.html" style="color:var(--accent)">查看数据洞察 →</a>`;
+    document.getElementById("pagefoot").innerHTML=`数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay} · <a href="stats.html" style="color:var(--accent)">查看数据洞察 →</a>`;
   }
 
   // 支持从合作单位页跳转：?q=公司名 预填搜索

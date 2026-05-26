@@ -67,19 +67,25 @@ for (const j of incoming) {
 
 // 新岗位置顶
 D.jobs = freshOnes.concat(D.jobs);
-D.lastUpdated = today;
+D.lastUpdated = today;                          // 日期：用于 firstSeen/NEW 比对与 changelog 分组
+D.lastUpdatedAt = new Date().toISOString();     // 完整时间戳(UTC)：前端转本地时区显示到分钟
 
 // 确保每个公司在 companies 映射中都有条目（新公司留空简介，待人工/后续补全）
 D.companies = D.companies || {};
 for (const j of D.jobs) { if (!D.companies[j.company]) D.companies[j.company] = { intro: "" }; }
 
-// 写 changelog（同一天重复运行则覆盖当天那条，保持幂等）
-const defaultNote = added
-  ? `每日更新：新增 ${added} 个岗位${refreshed ? `，刷新 ${refreshed} 个在招岗位` : ""}。`
-  : (refreshed ? `每日更新：无新增，刷新 ${refreshed} 个在招岗位。` : "每日更新：今日无变化。");
-const entry = { date: today, added, removed: 0, note: note || defaultNote };
-D.changelog = (D.changelog || []).filter(c => c.date !== today);
-D.changelog.unshift(entry);
+// 写 changelog：同一天累计（每 5 小时多次运行会累加当日新增；同一批数据重复跑 added=0，保持幂等）
+D.changelog = D.changelog || [];
+const sameDay = D.changelog.find(c => c.date === today);
+if (sameDay) {
+  sameDay.added = (sameDay.added || 0) + added;
+  sameDay.note = note || `当日累计新增 ${sameDay.added} 个岗位${refreshed ? `；本次刷新 ${refreshed} 个` : ""}。`;
+} else {
+  const defaultNote = added
+    ? `新增 ${added} 个岗位${refreshed ? `，刷新 ${refreshed} 个在招岗位` : ""}。`
+    : (refreshed ? `无新增，刷新 ${refreshed} 个在招岗位。` : "今日无变化。");
+  D.changelog.unshift({ date: today, added, removed: 0, note: note || defaultNote });
+}
 
 // 序列化回 JSON 风格的 data.js（保留文件头注释）
 const headerEnd = raw.indexOf("window.WEB3_JOBS_DATA");
