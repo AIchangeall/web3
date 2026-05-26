@@ -12,7 +12,7 @@
 //  约定: 新岗位 firstSeen=当日(即被标 NEW); 每次扫描把仍在招岗位的 lastSeen 改为当日。
 // ============================================================================
 window.WEB3_JOBS_DATA = {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-26",
   "snapshotNote": "覆盖 web3/crypto 行业全职能公开招聘（工程研发 / 运维SRE / 产品 / 设计 / 数据AI / 安全 / 市场增长 / BD / 合规HR）。数据来自公司官网 / Lever / Ashby / Greenhouse / Web3.career / CryptoJobsList / CryptocurrencyJobs / V2EX / 登链社区。薪资为公开 JD 或聚合估算，仅供参考。",
   "changelog": [
     {
@@ -23,12 +23,465 @@ window.WEB3_JOBS_DATA = {
     },
     {
       "date": "2026-05-26",
-      "added": 32,
+      "added": 56,
       "removed": 0,
-      "note": "每日更新 2026-05-26：新增工程/运维/产品/设计/数据AI/安全/市场增长/BD/合规HR 共 33 个岗位（来源：Lever/Greenhouse/CryptoJobsList）"
+      "note": "每日更新 2026-05-26：新增工程/运维/产品/设计/数据AI/安全/市场增长/BD/合规HR 共 24 个岗位（来源：Lever/Greenhouse，覆盖 Immutable/1inch/Limit Break/Fuel Labs/Story Protocol/Offchain Labs/Arbitrum Foundation/MyShell/Coins.ph 等）"
     }
   ],
   "jobs": [
+    {
+      "company": "Immutable",
+      "func": "eng",
+      "category": "chain",
+      "position": "Protocol Blockchain Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "使用 Go/Rust 构建 Immutable zkEVM L2 协议核心；强类型高性能语言；分布式系统设计。",
+      "link": "https://jobs.lever.co/immutable/03e6848f-6cc7-4295-a162-7910b0368c4d",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "immutable||protocol-blockchain-engineer"
+    },
+    {
+      "company": "1inch",
+      "func": "eng",
+      "category": "defi",
+      "position": "Technical Lead (Blockchain)",
+      "level": "head",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "Solidity/Yul 主网生产部署经验；Rust 知识；DeFi 聚合器核心合约技术主管。",
+      "link": "https://jobs.lever.co/1inch/a39cdc2d-36df-47c2-be7a-09be92e57979",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "1inch||technical-lead-blockchain"
+    },
+    {
+      "company": "1inch",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Software Engineer (Blockchain)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "Solidity/Yul/Rust/TypeScript 智能合约开发框架；DeFi 链上产品开发。",
+      "link": "https://jobs.lever.co/1inch/b43b5dfa-95ff-4a30-9a42-6fb7860ff0ec",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "1inch||senior-software-engineer-blockchain"
+    },
+    {
+      "company": "Limit Break",
+      "func": "eng",
+      "category": "other",
+      "position": "Sr Blockchain Engineer (Smart Contract)",
+      "level": "senior",
+      "location": "远程 / 洛杉矶",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Solidity 主网智能合约开发与审计上线；NFT/链上游戏协议；安全设计。",
+      "link": "https://jobs.lever.co/limitbreak/d358beee-a1a9-4055-a653-f594672ca415",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "limit-break||sr-blockchain-engineer-smart-contract"
+    },
+    {
+      "company": "Crypto.com",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Blockchain DevOps Engineer",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "区块链软件配置与 CI/CD 自动化；前后端基础设施可扩展设计；云计算工作负载维护。",
+      "link": "https://jobs.lever.co/crypto/920768e5-3b79-401e-8c12-a9e0da82190a",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "crypto-com||blockchain-devops-engineer"
+    },
+    {
+      "company": "MyShell",
+      "func": "product",
+      "category": "other",
+      "position": "Web3 Product Manager (Consumer Crypto)",
+      "level": "mid",
+      "location": "新加坡",
+      "region": [
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "AI Agent + Web3 消费端产品；链上交易平台与 DeFi 融合方向；产品生命周期管理。",
+      "link": "https://job-boards.greenhouse.io/myshell/jobs/4024148008",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "myshell||web3-product-manager-consumer-crypto"
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Infra Product Manager (Web3)",
+      "level": "senior",
+      "location": "香港 / 新加坡",
+      "region": [
+        "hk",
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Web3 跨业务基础设施产品设计与生命周期管理；技术产品路线图；跨团队协作。",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6686184003",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "okx||senior-infra-product-manager-web3"
+    },
+    {
+      "company": "Binance",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager, Web3 Growth",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Web3 钱包产品战略规划与上线；增长方向；数据驱动迭代；跨职能协作。",
+      "link": "https://jobs.lever.co/binance/38b8287d-6ef2-4bfd-8eab-490b74ac892a",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "binance||product-manager-web3-growth"
+    },
+    {
+      "company": "Crypto.com",
+      "func": "product",
+      "category": "exchange",
+      "position": "Associate Product Manager (Early Career)",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 95000,
+      "requirements": "从产品构思到 GTM 全流程参与；加速成长通道；Web3/交易所产品方向。",
+      "link": "https://jobs.lever.co/crypto/62ae1c4c-2063-4f55-8131-8b0a407e564e",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "crypto-com||associate-product-manager-early-career"
+    },
+    {
+      "company": "Fuel Labs",
+      "func": "design",
+      "category": "chain",
+      "position": "Web3 Product Designer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "首位设计师，与 Head of Product 紧密协作打造最佳区块链用户体验；2+ 年 crypto 经验；5+ 年产品设计。",
+      "link": "https://jobs.lever.co/fuellabs/a49576f1-eb27-487c-9baa-223600080c91",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "fuel-labs||web3-product-designer"
+    },
+    {
+      "company": "Story Protocol",
+      "func": "design",
+      "category": "chain",
+      "position": "Product Designer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 145000,
+      "requirements": "UX+UI 双向能力；Web3 空间产品设计作品集；IP 区块链协议产品体验设计。",
+      "link": "https://jobs.lever.co/storyprotocol/d49d2c0e-3025-496b-a405-33ab931acaa9",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "story-protocol||product-designer"
+    },
+    {
+      "company": "Ethereum Foundation",
+      "func": "design",
+      "category": "chain",
+      "position": "Product Designer",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "Web2+Web3 产品管理与 UX 设计经验；视觉设计与 UI/UX 原则融合；以太坊生态产品体验。",
+      "link": "https://jobs.lever.co/ethereumfoundation/6df6ebd3-ff9f-4ee2-81c0-c7f1bc4e6da7",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "ethereum-foundation||product-designer"
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Data Scientist (Web3)",
+      "level": "senior",
+      "location": "香港 / 新加坡",
+      "region": [
+        "hk",
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "算法驱动的链上交易与市场数据产品；高级数据科学方法；内部业务分析支持。",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6691995003",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "okx||senior-data-scientist-web3"
+    },
+    {
+      "company": "Blockchain.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Scientist",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "ETL 数据管道；GCP；概率统计与机器学习算法；链上数据工程。",
+      "link": "https://boards.greenhouse.io/blockchain/jobs/3035279",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "blockchain-com||data-scientist"
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Web3 Security Data Analyst",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "5+ 年区块链/反欺诈/风控；SQL/Python/Spark/Flink；链上安全数据分析与反欺诈模型。",
+      "link": "https://jobs.lever.co/binance/1d2fc9c5-bb7d-4bab-b596-df3a8336e171",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "binance||web3-security-data-analyst"
+    },
+    {
+      "company": "CertiK",
+      "func": "security",
+      "category": "other",
+      "position": "Blockchain Security Engineer (Solidity / Rust / Golang)",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "初级安全工程师；智能合约/区块链节点/去中心化基础设施漏洞研究；Solidity/Rust/Go。",
+      "link": "https://jobs.lever.co/certik/478ab0cd-9f5e-4b88-88b5-01d3beac4d81",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "certik||blockchain-security-engineer-solidity-rust-golang"
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Blockchain Security Engineer (Smart Contract Auditing)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 155000,
+      "requirements": "Solidity/Rust/Go 智能合约安全审计；漏洞识别与修复建议；DeFi 安全威胁研究。",
+      "link": "https://jobs.lever.co/binance/31a86987-81b3-4719-9d93-fc80bd5584a5",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "binance||blockchain-security-engineer-smart-contract-auditing"
+    },
+    {
+      "company": "Arbitrum Foundation",
+      "func": "growth",
+      "category": "chain",
+      "position": "Marketing Strategy & Operations Lead",
+      "level": "head",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 155000,
+      "requirements": "面向机构受众（资产管理/企业/协议）的综合营销战略与运营；L2 生态品牌建设。",
+      "link": "https://jobs.lever.co/arbitrumfoundation/de077057-81ff-4db1-b89f-701d44d280eb",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "arbitrum-foundation||marketing-strategy-operations-lead"
+    },
+    {
+      "company": "Offchain Labs",
+      "func": "growth",
+      "category": "chain",
+      "position": "Community Manager",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "4–7 年区块链创业公司营销/社区管理经验；Web3/crypto 社区运营与增长。",
+      "link": "https://jobs.lever.co/offchainlabs/2d897afa-bbb3-4694-85b3-0c5c6a83e466",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "offchain-labs||community-manager"
+    },
+    {
+      "company": "1inch",
+      "func": "growth",
+      "category": "defi",
+      "position": "Social Media Manager",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 85000,
+      "requirements": "3+ 年社媒营销（含 2+ 年 Web3/crypto）；社交频道管理与增长；内容策略。",
+      "link": "https://jobs.lever.co/1inch/30fc85c7-d65d-42c9-9cae-e76a4ad21b33",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "1inch||social-media-manager"
+    },
+    {
+      "company": "Coins.ph",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Web3 Business Development Associate",
+      "level": "mid",
+      "location": "菲律宾 / 远程",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 65000,
+      "requirements": "建立合作伙伴信任关系；市场研究与合作趋势分析；东南亚 Web3 生态扩展。",
+      "link": "https://jobs.lever.co/coins/5ce8eff6-d4df-44c9-9a09-dbc5f152341c",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "coins-ph||web3-business-development-associate"
+    },
+    {
+      "company": "Offchain Labs",
+      "func": "ga",
+      "category": "chain",
+      "position": "Corporate Counsel",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "公司法务；美国及国际产品合规审查；Arbitrum 协议法律与战略支持。",
+      "link": "https://jobs.lever.co/offchainlabs/f2fb76a8-705f-4a0e-be43-a8119f830dfa",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "offchain-labs||corporate-counsel"
+    },
+    {
+      "company": "Binance",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Regulatory Counsel - MENA",
+      "level": "senior",
+      "location": "迪拜 / 远程",
+      "region": [
+        "dubai",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "MENA 地区监管战略制定；产品发布法律支持；金融监管合规与商业目标平衡。",
+      "link": "https://jobs.lever.co/binance/22ff0aae-c34e-4e0f-95d4-132d9290132f",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "binance||regulatory-counsel-mena"
+    },
+    {
+      "company": "Binance",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition Specialist (Corporate)",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "覆盖合规/法务/运营/财务/安全等职能的全球扩张招聘；全周期猎头。",
+      "link": "https://jobs.lever.co/binance/c4e205be-a2a6-47bc-b45c-cb1bdf49421a",
+      "firstSeen": "2026-05-26",
+      "lastSeen": "2026-05-26",
+      "id": "binance||talent-acquisition-specialist-corporate"
+    },
     {
       "company": "Aave Labs",
       "func": "eng",
@@ -2227,7 +2680,31 @@ window.WEB3_JOBS_DATA = {
     },
     "Ripple": {
       "intro": "跨境支付与 XRPL 生态公司，面向机构。"
+    },
+    "Immutable": {
+      "intro": ""
+    },
+    "1inch": {
+      "intro": ""
+    },
+    "Limit Break": {
+      "intro": ""
+    },
+    "MyShell": {
+      "intro": ""
+    },
+    "Fuel Labs": {
+      "intro": ""
+    },
+    "Story Protocol": {
+      "intro": ""
+    },
+    "Arbitrum Foundation": {
+      "intro": ""
+    },
+    "Coins.ph": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-26T18:05:21.051Z"
+  "lastUpdatedAt": "2026-05-26T20:09:48.115Z"
 };
