@@ -60,6 +60,8 @@
   .kpi .n{font-size:22px;font-weight:800;letter-spacing:-.02em}
   .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
   .kpi.hot .n{color:var(--accent)}
+  .kpi[data-act]{cursor:pointer;transition:.12s}
+  .kpi[data-act]:hover{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-1px)}
 
   /* ---------- 主体布局 ---------- */
   .wrap{max-width:1180px;margin:24px auto 60px;padding:0 24px;display:grid;grid-template-columns:248px 1fr;gap:22px;align-items:start}
@@ -144,6 +146,7 @@
     .src{columns:1}
   }
 </style>
+<link rel="stylesheet" href="mobile.css" />
 </head>
 <body>
 
@@ -178,11 +181,11 @@
 </header>
 
 <section class="kpis" id="kpis">
-  <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l" data-i18n="kpi.new">今日新增</div></div>
-  <div class="kpi"><div class="n" id="k-total">0</div><div class="l" data-i18n="kpi.total">在招岗位</div></div>
-  <div class="kpi"><div class="n" id="k-comp">0</div><div class="l" data-i18n="kpi.comp">招聘公司</div></div>
-  <div class="kpi"><div class="n" id="k-remote">0</div><div class="l" data-i18n="kpi.remote">支持远程</div></div>
-  <div class="kpi"><div class="n" id="k-head">0</div><div class="l" data-i18n="kpi.head">负责人 / 总监</div></div>
+  <div class="kpi hot" data-act="new"><div class="n" id="k-new">0</div><div class="l" data-i18n="kpi.new">今日新增</div></div>
+  <div class="kpi" data-act="all"><div class="n" id="k-total">0</div><div class="l" data-i18n="kpi.total">在招岗位</div></div>
+  <div class="kpi" data-act="companies"><div class="n" id="k-comp">0</div><div class="l" data-i18n="kpi.comp">招聘公司</div></div>
+  <div class="kpi" data-act="remote"><div class="n" id="k-remote">0</div><div class="l" data-i18n="kpi.remote">支持远程</div></div>
+  <div class="kpi" data-act="head"><div class="n" id="k-head">0</div><div class="l" data-i18n="kpi.head">负责人 / 总监</div></div>
 </section>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
@@ -297,6 +300,20 @@
     const el=e.target.closest(".kw"); if(!el) return;
     const v=el.dataset.kw; state.search=v.toLowerCase();
     document.getElementById("search").value=v; state.limit=PAGE; render();
+  });
+  // KPI 卡片点击筛选
+  function kpiActivate(groupId,set,key){ if(!set.has(key))set.add(key); var el=[...document.getElementById(groupId).querySelectorAll(".chip")].find(c=>c.dataset.key===key); if(el)el.classList.add("active"); }
+  document.querySelectorAll(".kpi[data-act]").forEach(card=>{
+    card.addEventListener("click",()=>{
+      var a=card.dataset.act;
+      if(a==="companies"){ location.href="companies.html"; return; }
+      if(a==="all"){ document.getElementById("reset").onclick(); window.scrollTo({top:0,behavior:"smooth"}); return; }
+      if(a==="new"){ state.newOnly=true; tnew.classList.add("on"); }
+      else if(a==="remote"){ kpiActivate("g-region",state.regions,"remote"); }
+      else if(a==="head"){ kpiActivate("g-lvl",state.lvls,"head"); }
+      state.limit=PAGE; render();
+      var m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"});
+    });
   });
 
   function match(r){
