@@ -59,6 +59,8 @@
   .ptags{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
   .kw{font-size:11px;color:#5b5bd6;background:#eeeefb;border:1px solid #e3e3fb;border-radius:6px;padding:1px 7px}
   .kw::before{content:"#";opacity:.5}
+  .duty{font-size:11px;color:#0f766e;background:#e6f6f4;border:1px solid #cdeee8;border-radius:6px;padding:1px 7px}
+  .dlabel{font-size:10px;color:#94a3b8;margin-right:2px;align-self:center}
   .tag{font-size:11px;font-weight:600;border-radius:6px;padding:2px 7px;background:#f1f2f6;color:#475569}
   .f-eng{background:#e8effd;color:#2563eb}.f-ops{background:#e6f6ef;color:#059669}.f-product{background:#f1e9fe;color:#7c3aed}
   .f-design{background:#fce7f1;color:#db2777}.f-data{background:#e2f5fa;color:#0891b2}.f-security{background:#fde8e8;color:#dc2626}
@@ -159,7 +161,7 @@
   function rows(){
     let r=data.filter(j=>{
       if(state.contactOnly && !(j.contact||j.contactInfo)) return false;
-      if(state.search){const b=(j.company+" "+j.position+" "+srcOf(j.link)+" "+(j.contact||"")+" "+(j.contactInfo||"")+" "+j.location+" "+(j.keywords||[]).join(" ")).toLowerCase();if(!b.includes(state.search))return false;}
+      if(state.search){const b=(j.company+" "+j.position+" "+srcOf(j.link)+" "+(j.contact||"")+" "+(j.contactInfo||"")+" "+j.location+" "+(j.keywords||[]).join(" ")+" "+(j.duties||[]).join(" ")).toLowerCase();if(!b.includes(state.search))return false;}
       return true;
     });
     const s=state.sort;
@@ -185,7 +187,8 @@
           <div><div class="co-name">${esc(j.company)}</div><div class="co-cat">${catLabels[j.category]||j.category}</div></div></div></td>
         <td><div class="pos">${esc(j.position)}${isNew(j)?'<span class="new">NEW</span>':''}</div>
           <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div>
-          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,5).map(k=>`<span class="kw">${esc(k)}</span>`).join("")}</div>`:""}</td>
+          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,5).map(k=>`<span class="kw">${esc(k)}</span>`).join("")}</div>`:""}
+          ${(j.duties&&j.duties.length)?`<div class="ptags"><span class="dlabel">职责</span>${j.duties.slice(0,5).map(k=>`<span class="duty">${esc(k)}</span>`).join("")}</div>`:""}</td>
         <td><span class="salary ${neg?'neg':''}">${esc(j.salary||'面议')}</span></td>
         <td><span class="srctag">${esc(src)}</span></td>
         <td>${contactCell}</td>

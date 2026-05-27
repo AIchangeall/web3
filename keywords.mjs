@@ -70,3 +70,41 @@ export function extractKeywords(text, max = 8) {
   }
   return out;
 }
+
+// ============================================================================
+//  职责关键词词典（偏「做什么 / 职责范围」，区别于上面的技能 / 技术关键字）
+//  extractDuties(text) 返回命中的职责 canonical 列表，供猎头端展示与检索。
+// ============================================================================
+export const DUTY_DICT = [
+  ["团队管理", /带团队|团队管理|管理团队|带.{0,2}人|head of|总监|负责人|\bdirector\b|\bleader\b|leadership|engineering manager|people manage/i],
+  ["架构设计", /architect|架构|系统设计|technical design|design.{0,6}system/i],
+  ["稳定性保障", /reliability|稳定性|availability|可用性|\bsla\b|\bslo\b|uptime|error budget/i],
+  ["故障/值班", /incident|故障|事故|排障|troubleshoot|on[\- ]?call|值班|响应/i],
+  ["监控告警", /monitor|监控|告警|\balert/i],
+  ["性能/容量", /capacity|容量|performance|性能|latency|延迟|scal(e|ing|ability)|优化/i],
+  ["部署发布", /deploy|部署|发布|上线|ci\/cd|cicd|release|pipeline|流水线/i],
+  ["自动化", /automat|自动化/i],
+  ["节点运维", /\bnode\b|节点|validator|验证者|\brpc\b|staking|质押/i],
+  ["协议/合约开发", /protocol|协议|smart contract|智能合约|合约|onchain|链上/i],
+  ["多链/跨链", /multi[\- ]?chain|多链|cross[\- ]?chain|跨链|interoperab/i],
+  ["安全/审计", /\baudit\b|审计|security|安全|漏洞|vulnerab/i],
+  ["合规风控", /compliance|合规|\baml\b|\bkyc\b|监管|regulat|风控/i],
+  ["数据分析", /data scien|数据分析|analytics|\banalyst\b|建模|machine learning|机器学习/i],
+  ["产品规划", /product manage|产品经理|产品规划|roadmap|产品需求/i],
+  ["设计/品牌", /\bdesigner\b|产品设计|视觉设计|品牌设计|交互设计|\bbrand\b|\bui\b|\bux\b/i],
+  ["增长营销", /growth|增长|marketing|营销/i],
+  ["社区运营", /community|社区|运营/i],
+  ["商务拓展", /business development|\bbd\b|\bsales\b|销售|商务|拓展|partnership/i],
+  ["招聘/HR", /recruit|招聘|\bhr\b|talent|人才/i],
+  ["客户/机构对接", /customer|客户|\bclient\b|机构|institutional/i],
+];
+
+export function extractDuties(text, max = 6) {
+  const s = text || "";
+  const out = [];
+  for (const [name, re] of DUTY_DICT) {
+    if (re.test(s)) out.push(name);
+    if (out.length >= max) break;
+  }
+  return out;
+}

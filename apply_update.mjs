@@ -16,7 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractKeywords } from "./keywords.mjs";
+import { extractKeywords, extractDuties } from "./keywords.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "data.js");
@@ -75,8 +75,12 @@ D.lastUpdatedAt = new Date().toISOString();     // 完整时间戳(UTC)：前端
 D.companies = D.companies || {};
 for (const j of D.jobs) { if (!D.companies[j.company]) D.companies[j.company] = { intro: "" }; }
 
-// 为缺少 keywords 的岗位自动派生岗位关键字（用于职位/猎头端展示与数据洞察分析）
-for (const j of D.jobs) { if (!Array.isArray(j.keywords) || !j.keywords.length) j.keywords = extractKeywords((j.position || "") + " " + (j.requirements || "")); }
+// 为缺少 keywords / duties 的岗位自动派生岗位关键字与职责关键词
+for (const j of D.jobs) {
+  const text = (j.position || "") + " " + (j.requirements || "");
+  if (!Array.isArray(j.keywords) || !j.keywords.length) j.keywords = extractKeywords(text);
+  if (!Array.isArray(j.duties) || !j.duties.length) j.duties = extractDuties(text);
+}
 
 // 写 changelog：同一天累计（每 5 小时多次运行会累加当日新增；同一批数据重复跑 added=0，保持幂等）
 D.changelog = D.changelog || [];

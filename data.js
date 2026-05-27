@@ -4,9 +4,10 @@
 //  结构: { lastUpdated, lastUpdatedAt, snapshotNote, changelog[], jobs[], companies{} }
 //  lastUpdated=日期(用于 firstSeen/NEW 比对); lastUpdatedAt=ISO 时间戳(前端转本地时区显示到分钟)
 //  每个 job: id?/company/category/func/position/level/location/region[]/salary/
-//            salaryNum/requirements/link/firstSeen/lastSeen/contact?/contactInfo?/keywords[]
+//            salaryNum/requirements/link/firstSeen/lastSeen/contact?/contactInfo?/keywords[]/duties[]
 //  contact/contactInfo(猎头端用): 仅当来源公开招聘信息明确披露联系人/邮箱·TG·微信时填写，勿编造
-//  keywords(岗位关键字): 由 keywords.mjs 从 position+requirements 自动派生；apply_update 对缺失者自动补全
+//  keywords(技能/技术关键字) 与 duties(职责关键词,偏"做什么"): 由 keywords.mjs 从 position+requirements
+//    自动派生(extractKeywords / extractDuties)；apply_update 对缺失者自动补全。猎头端两者并列展示
 //  companies: { "公司名": { intro:"一句话简介" } }（合作单位页用；新公司可留空简介）
 //  func(职能): eng工程研发 | ops运维SRE基础设施 | product产品 | design设计 |
 //              data数据AI | security安全 | growth市场增长运营 | bd商务销售 | ga合规法务财务HR
@@ -52,6 +53,12 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Smart Contract",
         "EVM"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计"
       ]
     },
     {
@@ -78,6 +85,9 @@ window.WEB3_JOBS_DATA = {
         "Smart Contract",
         "DeFi",
         "Ethereum"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -101,6 +111,9 @@ window.WEB3_JOBS_DATA = {
         "TypeScript",
         "React",
         "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -124,6 +137,11 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Smart Contract",
         "EVM"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "协议/合约开发"
       ]
     },
     {
@@ -149,6 +167,10 @@ window.WEB3_JOBS_DATA = {
         "Solana",
         "Kubernetes",
         "AWS"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链"
       ]
     },
     {
@@ -171,6 +193,11 @@ window.WEB3_JOBS_DATA = {
       "id": "crypto-com||senior-product-manager-api",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "产品规划",
+        "商务拓展"
       ]
     },
     {
@@ -195,6 +222,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "合规"
+      ],
+      "duties": [
+        "安全/审计",
+        "合规风控",
+        "产品规划"
       ]
     },
     {
@@ -216,6 +248,9 @@ window.WEB3_JOBS_DATA = {
       "id": "trust-wallet||senior-product-designer-trading",
       "keywords": [
         "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
       ]
     },
     {
@@ -236,7 +271,10 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
       "id": "crypto-com||senior-product-designer-web",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
     },
     {
       "company": "Binance",
@@ -258,7 +296,8 @@ window.WEB3_JOBS_DATA = {
       "id": "binance||senior-llm-algorithm-engineer",
       "keywords": [
         "AI"
-      ]
+      ],
+      "duties": []
     },
     {
       "company": "Saga",
@@ -282,6 +321,10 @@ window.WEB3_JOBS_DATA = {
         "Go",
         "Python",
         "AI"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发"
       ]
     },
     {
@@ -305,6 +348,9 @@ window.WEB3_JOBS_DATA = {
         "Kafka",
         "Spark",
         "AI"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -328,6 +374,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "AWS"
+      ],
+      "duties": [
+        "架构设计",
+        "安全/审计",
+        "客户/机构对接"
       ]
     },
     {
@@ -349,6 +400,10 @@ window.WEB3_JOBS_DATA = {
       "id": "vac-status-logos||application-security-engineer-web3",
       "keywords": [
         "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -374,6 +429,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
       ]
     },
     {
@@ -396,6 +455,9 @@ window.WEB3_JOBS_DATA = {
       "id": "animoca-brands||marketing-manager",
       "keywords": [
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
       ]
     },
     {
@@ -418,6 +480,12 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链",
+        "增长营销",
+        "商务拓展"
       ]
     },
     {
@@ -440,6 +508,11 @@ window.WEB3_JOBS_DATA = {
       "id": "coinmarketcap||business-development-manager-api",
       "keywords": [
         "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "商务拓展",
+        "客户/机构对接"
       ]
     },
     {
@@ -460,7 +533,8 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
       "id": "binance||senior-corporate-legal-counsel",
-      "keywords": []
+      "keywords": [],
+      "duties": []
     },
     {
       "company": "Immutable",
@@ -484,6 +558,11 @@ window.WEB3_JOBS_DATA = {
         "Rust",
         "Go",
         "L2/Rollup"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "协议/合约开发"
       ]
     },
     {
@@ -508,6 +587,10 @@ window.WEB3_JOBS_DATA = {
         "Rust",
         "Smart Contract",
         "DeFi"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发"
       ]
     },
     {
@@ -533,6 +616,9 @@ window.WEB3_JOBS_DATA = {
         "TypeScript",
         "Smart Contract",
         "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -557,6 +643,11 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Smart Contract",
         "安全审计"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -579,6 +670,10 @@ window.WEB3_JOBS_DATA = {
       "id": "crypto-com||blockchain-devops-engineer",
       "keywords": [
         "CI/CD"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化"
       ]
     },
     {
@@ -602,6 +697,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "AI"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
       ]
     },
     {
@@ -623,7 +722,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "okx||senior-infra-product-manager-web3",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "产品规划",
+        "设计/品牌"
+      ]
     },
     {
       "company": "Binance",
@@ -646,6 +749,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Wallet",
         "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "产品规划",
+        "增长营销"
       ]
     },
     {
@@ -666,7 +774,10 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "crypto-com||associate-product-manager-early-career",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ]
     },
     {
       "company": "Fuel Labs",
@@ -686,7 +797,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "fuel-labs||web3-product-designer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "设计/品牌"
+      ]
     },
     {
       "company": "Story Protocol",
@@ -706,7 +821,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "story-protocol||product-designer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "设计/品牌"
+      ]
     },
     {
       "company": "Ethereum Foundation",
@@ -727,6 +846,9 @@ window.WEB3_JOBS_DATA = {
       "id": "ethereum-foundation||product-designer",
       "keywords": [
         "Ethereum"
+      ],
+      "duties": [
+        "设计/品牌"
       ]
     },
     {
@@ -748,7 +870,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "okx||senior-data-scientist-web3",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
+      ]
     },
     {
       "company": "Blockchain.com",
@@ -770,6 +896,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "GCP",
         "Machine Learning"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
       ]
     },
     {
@@ -795,6 +925,12 @@ window.WEB3_JOBS_DATA = {
         "Flink",
         "Spark",
         "SQL"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控",
+        "数据分析"
       ]
     },
     {
@@ -822,6 +958,11 @@ window.WEB3_JOBS_DATA = {
         "Go",
         "Smart Contract",
         "Validator/节点"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -849,6 +990,10 @@ window.WEB3_JOBS_DATA = {
         "Smart Contract",
         "DeFi",
         "安全审计"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -872,6 +1017,12 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "L2/Rollup",
         "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
       ]
     },
     {
@@ -895,6 +1046,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
       ]
     },
     {
@@ -916,6 +1071,9 @@ window.WEB3_JOBS_DATA = {
       "id": "1inch||social-media-manager",
       "keywords": [
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
       ]
     },
     {
@@ -935,7 +1093,10 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "coins-ph||web3-business-development-associate",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展"
+      ]
     },
     {
       "company": "Offchain Labs",
@@ -957,6 +1118,10 @@ window.WEB3_JOBS_DATA = {
       "id": "offchain-labs||corporate-counsel",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "合规风控"
       ]
     },
     {
@@ -979,6 +1144,10 @@ window.WEB3_JOBS_DATA = {
       "id": "binance||regulatory-counsel-mena",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "合规风控"
       ]
     },
     {
@@ -1001,6 +1170,12 @@ window.WEB3_JOBS_DATA = {
       "id": "binance||talent-acquisition-specialist-corporate",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "安全/审计",
+        "合规风控",
+        "社区运营",
+        "招聘/HR"
       ]
     },
     {
@@ -1026,6 +1201,11 @@ window.WEB3_JOBS_DATA = {
         "EVM",
         "DeFi",
         "Ethereum"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -1049,6 +1229,9 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Smart Contract",
         "EVM"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -1070,6 +1253,10 @@ window.WEB3_JOBS_DATA = {
       "id": "zetachain||frontend-engineer-web3-consumer-apps",
       "keywords": [
         "React"
+      ],
+      "duties": [
+        "故障/值班",
+        "性能/容量"
       ]
     },
     {
@@ -1092,6 +1279,12 @@ window.WEB3_JOBS_DATA = {
       "id": "binance||senior-frontend-engineer-web3-wallet",
       "keywords": [
         "Wallet"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "安全/审计"
       ]
     },
     {
@@ -1114,6 +1307,9 @@ window.WEB3_JOBS_DATA = {
       "id": "gate-io||web3-backend-engineer",
       "keywords": [
         "EVM"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -1137,6 +1333,11 @@ window.WEB3_JOBS_DATA = {
         "Go",
         "Node.js",
         "Validator/节点"
+      ],
+      "duties": [
+        "架构设计",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -1159,6 +1360,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Solidity",
         "Smart Contract"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "多链/跨链"
       ]
     },
     {
@@ -1181,6 +1387,13 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Validator/节点",
         "Solana"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "节点运维"
       ]
     },
     {
@@ -1204,6 +1417,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链",
+        "产品规划"
       ]
     },
     {
@@ -1227,6 +1445,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Smart Contract",
         "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
       ]
     },
     {
@@ -1250,6 +1472,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划",
+        "增长营销"
       ]
     },
     {
@@ -1274,6 +1501,9 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "DeFi",
         "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
       ]
     },
     {
@@ -1296,6 +1526,9 @@ window.WEB3_JOBS_DATA = {
       "id": "phantom||brand-designer",
       "keywords": [
         "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
       ]
     },
     {
@@ -1315,7 +1548,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "immunefi||senior-ux-product-designer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "安全/审计",
+        "设计/品牌"
+      ]
     },
     {
       "company": "Binance",
@@ -1337,6 +1574,9 @@ window.WEB3_JOBS_DATA = {
       "id": "binance||data-scientist-ai-agent-engineering-infrastructure",
       "keywords": [
         "AI"
+      ],
+      "duties": [
+        "数据分析"
       ]
     },
     {
@@ -1360,6 +1600,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Machine Learning",
         "AML/KYC"
+      ],
+      "duties": [
+        "合规风控",
+        "数据分析"
       ]
     },
     {
@@ -1386,6 +1630,9 @@ window.WEB3_JOBS_DATA = {
         "Rust",
         "Go",
         "安全审计"
+      ],
+      "duties": [
+        "安全/审计"
       ]
     },
     {
@@ -1410,6 +1657,11 @@ window.WEB3_JOBS_DATA = {
         "Smart Contract",
         "DeFi",
         "安全审计"
+      ],
+      "duties": [
+        "自动化",
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -1435,6 +1687,11 @@ window.WEB3_JOBS_DATA = {
         "Smart Contract",
         "EVM",
         "安全审计"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -1455,7 +1712,12 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "jump-crypto||blockchain-security-engineer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计"
+      ]
     },
     {
       "company": "OKX",
@@ -1479,6 +1741,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
       ]
     },
     {
@@ -1501,6 +1767,9 @@ window.WEB3_JOBS_DATA = {
       "id": "crypto-com||growth-manager",
       "keywords": [
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
       ]
     },
     {
@@ -1523,6 +1792,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
       ]
     },
     {
@@ -1544,6 +1817,10 @@ window.WEB3_JOBS_DATA = {
       "id": "token-metrics||head-of-marketing-and-communications",
       "keywords": [
         "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销"
       ]
     },
     {
@@ -1569,6 +1846,12 @@ window.WEB3_JOBS_DATA = {
         "DeFi",
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "客户/机构对接"
       ]
     },
     {
@@ -1589,7 +1872,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "crypto-com||business-development-manager-vip-partnerships",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展",
+        "客户/机构对接"
+      ]
     },
     {
       "company": "Celo Foundation",
@@ -1608,7 +1895,11 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "celo-foundation||head-of-business-development-and-partnerships",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "商务拓展"
+      ]
     },
     {
       "company": "Gateway.fm",
@@ -1628,7 +1919,10 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "gateway-fm||business-development-manager-web3",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -1650,6 +1944,9 @@ window.WEB3_JOBS_DATA = {
       "id": "crypto-com||regulatory-legal-counsel",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "合规风控"
       ]
     },
     {
@@ -1672,6 +1969,9 @@ window.WEB3_JOBS_DATA = {
       "id": "circle||web3-blockchain-researcher-compliance",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "合规风控"
       ]
     },
     {
@@ -1693,6 +1993,10 @@ window.WEB3_JOBS_DATA = {
       "id": "galaxy-digital||head-of-legal-retail",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控"
       ]
     },
     {
@@ -1713,7 +2017,10 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "offchain-labs||technical-recruiter-crypto",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "招聘/HR"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1737,6 +2044,9 @@ window.WEB3_JOBS_DATA = {
         "Go",
         "EVM",
         "L2/Rollup"
+      ],
+      "duties": [
+        "协议/合约开发"
       ]
     },
     {
@@ -1761,6 +2071,10 @@ window.WEB3_JOBS_DATA = {
         "Smart Contract",
         "DeFi",
         "Foundry"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -1783,7 +2097,8 @@ window.WEB3_JOBS_DATA = {
       "id": "uniswap-labs-senior-frontend-engineer-react-ts",
       "keywords": [
         "React"
-      ]
+      ],
+      "duties": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1806,6 +2121,9 @@ window.WEB3_JOBS_DATA = {
         "Go",
         "Node.js",
         "Validator/节点"
+      ],
+      "duties": [
+        "节点运维"
       ]
     },
     {
@@ -1829,6 +2147,10 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Rust",
         "Staking"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发"
       ]
     },
     {
@@ -1850,6 +2172,10 @@ window.WEB3_JOBS_DATA = {
       "id": "op-labs-pbc-senior-product-manager",
       "keywords": [
         "L2/Rollup"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
       ]
     },
     {
@@ -1871,6 +2197,10 @@ window.WEB3_JOBS_DATA = {
       "id": "kraken-product-manager-onchain",
       "keywords": [
         "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
       ]
     },
     {
@@ -1894,6 +2224,11 @@ window.WEB3_JOBS_DATA = {
         "合规",
         "营销/增长",
         "出入金"
+      ],
+      "duties": [
+        "合规风控",
+        "产品规划",
+        "增长营销"
       ]
     },
     {
@@ -1913,7 +2248,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "6+ 年；移动优先消费级产品；端到端交付。",
       "link": "https://web3.career/product-designer-jobs",
       "id": "figure-principal-product-designer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1933,7 +2271,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "品牌视觉设计；5+ 年 fintech/crypto/SaaS。",
       "link": "https://web3.career/brand-designer-jobs",
       "id": "alchemy-senior-associate-brand-design",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1952,7 +2293,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "品牌视觉/视觉系统；多渠道素材产出。",
       "link": "https://web3.career/brand-designer-jobs",
       "id": "squads-brand-designer",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1974,6 +2318,10 @@ window.WEB3_JOBS_DATA = {
       "id": "binance-data-scientist-on-chain",
       "keywords": [
         "Python"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
       ]
     },
     {
@@ -1998,6 +2346,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Python",
         "Machine Learning"
+      ],
+      "duties": [
+        "合规风控",
+        "数据分析"
       ]
     },
     {
@@ -2021,6 +2373,10 @@ window.WEB3_JOBS_DATA = {
       "id": "chainalysis-data-analyst-investigations",
       "keywords": [
         "SQL"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
       ]
     },
     {
@@ -2047,6 +2403,10 @@ window.WEB3_JOBS_DATA = {
         "Foundry",
         "安全审计",
         "形式化验证"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -2070,6 +2430,10 @@ window.WEB3_JOBS_DATA = {
         "Solidity",
         "Smart Contract",
         "EVM"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -2094,6 +2458,10 @@ window.WEB3_JOBS_DATA = {
         "ZK",
         "安全审计",
         "形式化验证"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
       ]
     },
     {
@@ -2117,6 +2485,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "社区",
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
       ]
     },
     {
@@ -2138,6 +2510,9 @@ window.WEB3_JOBS_DATA = {
       "id": "moonpay-product-marketing-manager",
       "keywords": [
         "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
       ]
     },
     {
@@ -2159,6 +2534,9 @@ window.WEB3_JOBS_DATA = {
       "id": "mercuryo-community-manager",
       "keywords": [
         "社区"
+      ],
+      "duties": [
+        "社区运营"
       ]
     },
     {
@@ -2180,7 +2558,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "机构业务拓展；交易所机构客户；谈判与成单。",
       "link": "https://web3.career/business-development-jobs",
       "id": "bitget-institutional-bd-manager",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展",
+        "客户/机构对接"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -2199,7 +2581,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "机构客户关系；托管/数字资产；区域拓展。",
       "link": "https://web3.career/business-development-jobs",
       "id": "anchorage-digital-regional-institutional-manager",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展",
+        "客户/机构对接"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -2219,7 +2605,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "3+ 年 web3 销售；outbound 开发；线索培育与成单。",
       "link": "https://web3.career/sales-jobs",
       "id": "paxos-sales-business-development",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "商务拓展"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -2239,7 +2628,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "证券/商品监管；区块链法务；多司法辖区。",
       "link": "https://web3.career/crypto+legal-jobs",
       "id": "crypto-com-legal-counsel-crypto",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "合规风控"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -2262,6 +2654,9 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "AML/KYC",
         "合规"
+      ],
+      "duties": [
+        "合规风控"
       ]
     },
     {
@@ -2282,7 +2677,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "技术招聘；web3 人才；端到端招聘流程。",
       "link": "https://web3.career/crypto+recruiter-jobs",
       "id": "anchorage-digital-crypto-technical-recruiter",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "招聘/HR"
+      ]
     },
     {
       "company": "Flashbots",
@@ -2307,6 +2705,10 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "Terraform",
         "Prometheus"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发"
       ]
     },
     {
@@ -2331,6 +2733,10 @@ window.WEB3_JOBS_DATA = {
         "AWS",
         "GCP",
         "Linux"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警"
       ]
     },
     {
@@ -2356,6 +2762,13 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "Terraform",
         "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链",
+        "合规风控"
       ]
     },
     {
@@ -2381,6 +2794,12 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "Terraform",
         "On-call"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "部署发布",
+        "节点运维"
       ]
     },
     {
@@ -2410,6 +2829,12 @@ window.WEB3_JOBS_DATA = {
         "Staking",
         "Solana",
         "AWS"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "客户/机构对接"
       ]
     },
     {
@@ -2434,6 +2859,12 @@ window.WEB3_JOBS_DATA = {
         "Validator/节点",
         "Staking",
         "Bitcoin"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "节点运维",
+        "客户/机构对接"
       ]
     },
     {
@@ -2456,6 +2887,13 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Kubernetes",
         "可观测性"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "客户/机构对接"
       ]
     },
     {
@@ -2480,6 +2918,13 @@ window.WEB3_JOBS_DATA = {
         "Ethereum",
         "Kubernetes",
         "On-call"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "部署发布",
+        "节点运维"
       ]
     },
     {
@@ -2503,6 +2948,11 @@ window.WEB3_JOBS_DATA = {
         "AWS",
         "CI/CD",
         "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "合规风控"
       ]
     },
     {
@@ -2521,7 +2971,13 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "func": "ops",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
     },
     {
       "company": "Binance",
@@ -2542,6 +2998,12 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Validator/节点",
         "Kubernetes"
+      ],
+      "duties": [
+        "故障/值班",
+        "部署发布",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -2566,6 +3028,10 @@ window.WEB3_JOBS_DATA = {
         "TypeScript",
         "Wallet",
         "Linux"
+      ],
+      "duties": [
+        "稳定性保障",
+        "协议/合约开发"
       ]
     },
     {
@@ -2587,6 +3053,14 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "RPC",
         "Solana"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "社区运营"
       ]
     },
     {
@@ -2610,6 +3084,11 @@ window.WEB3_JOBS_DATA = {
         "Rust",
         "Node.js",
         "Validator/节点"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "节点运维"
       ]
     },
     {
@@ -2635,6 +3114,11 @@ window.WEB3_JOBS_DATA = {
         "CI/CD",
         "Flink",
         "Spark"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "部署发布"
       ]
     },
     {
@@ -2656,6 +3140,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Node.js",
         "Validator/节点"
+      ],
+      "duties": [
+        "自动化",
+        "节点运维"
       ]
     },
     {
@@ -2676,6 +3164,11 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "可观测性"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量"
       ]
     },
     {
@@ -2699,6 +3192,9 @@ window.WEB3_JOBS_DATA = {
         "SLO/SLA",
         "Machine Learning",
         "AI"
+      ],
+      "duties": [
+        "稳定性保障"
       ]
     },
     {
@@ -2719,6 +3215,10 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "可观测性"
+      ],
+      "duties": [
+        "稳定性保障",
+        "合规风控"
       ]
     },
     {
@@ -2739,6 +3239,9 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "Kubernetes"
+      ],
+      "duties": [
+        "稳定性保障"
       ]
     },
     {
@@ -2760,6 +3263,9 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Kubernetes",
         "AWS"
+      ],
+      "duties": [
+        "故障/值班"
       ]
     },
     {
@@ -2782,6 +3288,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Flink",
         "ClickHouse"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警"
       ]
     },
     {
@@ -2805,6 +3315,9 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "可观测性",
         "SLO/SLA"
+      ],
+      "duties": [
+        "稳定性保障"
       ]
     },
     {
@@ -2827,6 +3340,10 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "Terraform",
         "CI/CD"
+      ],
+      "duties": [
+        "故障/值班",
+        "部署发布"
       ]
     },
     {
@@ -2851,7 +3368,8 @@ window.WEB3_JOBS_DATA = {
         "Terraform",
         "Prometheus",
         "Grafana"
-      ]
+      ],
+      "duties": []
     },
     {
       "company": "Kraken",
@@ -2869,7 +3387,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://www.kraken.com/careers",
       "lastSeen": "2026-05-26",
       "func": "ops",
-      "keywords": []
+      "keywords": [],
+      "duties": []
     },
     {
       "company": "Crypto.com",
@@ -2896,6 +3415,11 @@ window.WEB3_JOBS_DATA = {
         "GCP",
         "SLO/SLA",
         "合规"
+      ],
+      "duties": [
+        "稳定性保障",
+        "安全/审计",
+        "合规风控"
       ]
     },
     {
@@ -2918,6 +3442,11 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "SLO/SLA"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班"
       ]
     },
     {
@@ -2937,6 +3466,9 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "Kubernetes"
+      ],
+      "duties": [
+        "监控告警"
       ]
     },
     {
@@ -2960,6 +3492,10 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "CI/CD",
         "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "合规风控"
       ]
     },
     {
@@ -2985,7 +3521,8 @@ window.WEB3_JOBS_DATA = {
         "Ethereum",
         "Docker",
         "Linux"
-      ]
+      ],
+      "duties": []
     },
     {
       "company": "Ethereum Foundation",
@@ -3009,7 +3546,8 @@ window.WEB3_JOBS_DATA = {
         "Python",
         "Docker",
         "Linux"
-      ]
+      ],
+      "duties": []
     },
     {
       "company": "Solana Foundation",
@@ -3033,6 +3571,9 @@ window.WEB3_JOBS_DATA = {
         "Prometheus",
         "Grafana",
         "On-call"
+      ],
+      "duties": [
+        "故障/值班"
       ]
     },
     {
@@ -3054,6 +3595,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Validator/节点",
         "Kubernetes"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "节点运维"
       ]
     },
     {
@@ -3074,6 +3620,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Rust",
         "Validator/节点"
+      ],
+      "duties": [
+        "稳定性保障",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -3095,6 +3646,13 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "L2/Rollup",
         "RPC"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "自动化",
+        "节点运维",
+        "协议/合约开发"
       ]
     },
     {
@@ -3121,6 +3679,11 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "可观测性",
         "SLO/SLA"
+      ],
+      "duties": [
+        "稳定性保障",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -3143,6 +3706,14 @@ window.WEB3_JOBS_DATA = {
         "Wallet",
         "Kubernetes",
         "On-call"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -3163,6 +3734,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "CI/CD",
         "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "安全/审计",
+        "合规风控"
       ]
     },
     {
@@ -3183,6 +3759,10 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "DeFi"
+      ],
+      "duties": [
+        "架构设计",
+        "协议/合约开发"
       ]
     },
     {
@@ -3207,6 +3787,10 @@ window.WEB3_JOBS_DATA = {
         "DeFi",
         "Wallet",
         "Kubernetes"
+      ],
+      "duties": [
+        "稳定性保障",
+        "多链/跨链"
       ]
     },
     {
@@ -3235,6 +3819,10 @@ window.WEB3_JOBS_DATA = {
         "C++",
         "Validator/节点",
         "Linux"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维"
       ]
     },
     {
@@ -3257,6 +3845,14 @@ window.WEB3_JOBS_DATA = {
       "contactInfo": "bobbychen1992@protonmail.com",
       "keywords": [
         "Validator/节点"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -3275,7 +3871,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://www.alchemy.com/careers",
       "lastSeen": "2026-05-26",
       "func": "ops",
-      "keywords": []
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "稳定性保障"
+      ]
     },
     {
       "company": "Alchemy",
@@ -3301,6 +3901,9 @@ window.WEB3_JOBS_DATA = {
         "Prometheus",
         "Grafana",
         "SLO/SLA"
+      ],
+      "duties": [
+        "稳定性保障"
       ]
     },
     {
@@ -3323,6 +3926,12 @@ window.WEB3_JOBS_DATA = {
         "Validator/节点",
         "RPC",
         "合规"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "合规风控"
       ]
     },
     {
@@ -3346,6 +3955,12 @@ window.WEB3_JOBS_DATA = {
         "RPC",
         "Kubernetes",
         "SLO/SLA"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "节点运维",
+        "客户/机构对接"
       ]
     },
     {
@@ -3371,6 +3986,13 @@ window.WEB3_JOBS_DATA = {
         "Kubernetes",
         "SLO/SLA",
         "合规"
+      ],
+      "duties": [
+        "稳定性保障",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "客户/机构对接"
       ]
     },
     {
@@ -3391,6 +4013,11 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Validator/节点",
         "RPC"
+      ],
+      "duties": [
+        "监控告警",
+        "节点运维",
+        "多链/跨链"
       ]
     },
     {
@@ -3413,6 +4040,10 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Kubernetes",
         "Terraform"
+      ],
+      "duties": [
+        "架构设计",
+        "客户/机构对接"
       ]
     },
     {
@@ -3434,6 +4065,11 @@ window.WEB3_JOBS_DATA = {
       "func": "ops",
       "keywords": [
         "合规"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "合规风控"
       ]
     },
     {
@@ -3456,6 +4092,12 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Validator/节点",
         "合规"
+      ],
+      "duties": [
+        "稳定性保障",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
       ]
     }
   ],
