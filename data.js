@@ -12,14 +12,14 @@
 //  约定: 新岗位 firstSeen=当日(即被标 NEW); 每次扫描把仍在招岗位的 lastSeen 改为当日。
 // ============================================================================
 window.WEB3_JOBS_DATA = {
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-27",
   "snapshotNote": "覆盖 web3/crypto 行业全职能公开招聘（工程研发 / 运维SRE / 产品 / 设计 / 数据AI / 安全 / 市场增长 / BD / 合规HR）。数据来自公司官网 / Lever / Ashby / Greenhouse / Web3.career / CryptoJobsList / CryptocurrencyJobs / V2EX / 登链社区。薪资为公开 JD 或聚合估算，仅供参考。",
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 26,
+      "added": 45,
       "removed": 0,
-      "note": "扩展岗位范围至全职能：新增工程/产品/设计/数据AI/安全/市场增长/BD/合规HR 共 26 个岗位，并上线「职能」分类筛选。"
+      "note": "新增工程/产品/设计/数据AI/安全/增长/BD/合规 共19个岗位（来源：Chainlink/CoW DAO/Monad/Trust Wallet/OKX/Binance/Paxos/Risk Labs/Animoca/CoinMarketCap 等）"
     },
     {
       "date": "2026-05-26",
@@ -29,6 +29,362 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Chainlink Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Smart Contract Engineer, Solidity (CCIP)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "5+年 Solidity/EVM 主网生产经验；驱动 CCIP 跨链合约端到端交付；安全设计与多链部署。",
+      "link": "https://jobs.ashbyhq.com/chainlink-labs/842e9d47-982c-4dfb-8461-1080759c82d9",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "chainlink-labs||senior-smart-contract-engineer-solidity-ccip"
+    },
+    {
+      "company": "CoW DAO",
+      "func": "eng",
+      "category": "defi",
+      "position": "Web3 Backend Engineer (Rust)",
+      "level": "senior",
+      "location": "全球远程（欧洲优先）",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "$84K–$124K",
+      "salaryNum": 104000,
+      "requirements": "1+年 Rust 生产经验；与 Solidity 合约交互；DeFi/以太坊；高并发链下订单流处理。",
+      "link": "https://jobs.ashbyhq.com/cow-dao/92622acb-7be1-4017-9f64-b20bf8a25c7f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "cow-dao||web3-backend-engineer-rust"
+    },
+    {
+      "company": "Monad Foundation",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Software Engineer, Full Stack (Web3)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "4+年全栈（React/Next.js/TypeScript）；wallet connectors/ethers.js；构建链上 DApp 与区块链 SDK。",
+      "link": "https://jobs.ashbyhq.com/monad.foundation/2242c712-d2cf-4fe5-8cc4-eae0ce2bc4f5",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "monad-foundation||senior-software-engineer-full-stack-web3"
+    },
+    {
+      "company": "pod network",
+      "func": "eng",
+      "category": "infra",
+      "position": "Smart Contract Engineer (EVM / Low-Level Execution)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "深入理解 EVM 内部机制与字节码；Solidity 合约架构；低级 EVM 执行层研究与优化。",
+      "link": "https://jobs.ashbyhq.com/pod-network/64ec90ae-a0d3-4175-b29d-27fc35eef85b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "pod-network||smart-contract-engineer-evm-low-level-execution"
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Backend Engineer (Web3)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$90K–$100K",
+      "salaryNum": 95000,
+      "requirements": "Go 微服务；多链链上数据解析（EVM/Solana 等）；AWS/K8s；分布式系统与分布式账本集成。",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/ec71403d-e365-48b4-833a-63d1852ec58d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trust-wallet||senior-backend-engineer-web3"
+    },
+    {
+      "company": "Crypto.com",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Product Manager, API",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "API 产品策略设计；5+年 PM 经验；加密交易所生态系统；与工程/BD/合规跨职能协作。",
+      "link": "https://jobs.lever.co/crypto/5bb16711-a863-4ded-9e89-20a0be9eae1e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "crypto-com||senior-product-manager-api"
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Product Manager, Web3 Risk Controls",
+      "level": "senior",
+      "location": "香港 / 新加坡",
+      "region": [
+        "hk",
+        "sg",
+        "asia"
+      ],
+      "salary": "$87K–$115K",
+      "salaryNum": 101000,
+      "requirements": "Web3 风控产品规划；DEX/DeFi 风险框架设计；3-5年产品经验；区块链合规与安全产品方向。",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6989066003",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "okx||senior-product-manager-web3-risk-controls"
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "design",
+      "category": "defi",
+      "position": "Senior Product Designer (Trading)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "非托管钱包交易核心产品 UX；端到端设计交付；Web3 DApp 复杂交互与用户旅程设计。",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/7a286b2a-940a-441b-a02b-9b2790dcf561",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trust-wallet||senior-product-designer-trading"
+    },
+    {
+      "company": "Crypto.com",
+      "func": "design",
+      "category": "exchange",
+      "position": "Senior Product Designer, Web",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "Web 端加密交易平台 UX/UI 设计；5+年产品设计；Web3 金融产品用户体验设计与规范制定。",
+      "link": "https://jobs.lever.co/crypto/3f9af9c2-045f-4243-be19-459f63b3eb68",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "crypto-com||senior-product-designer-web"
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior LLM Algorithm Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 165000,
+      "requirements": "定制基础大语言模型研发；Web3 数据湖 ETL 管道设计；LLM 预训练/微调；Crypto 场景 AI 落地。",
+      "link": "https://jobs.lever.co/binance/c0980db4-ea30-4f3a-be47-a17fe8424ceb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "binance||senior-llm-algorithm-engineer"
+    },
+    {
+      "company": "Saga",
+      "func": "data",
+      "category": "chain",
+      "position": "Senior AI Agent Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "AI Agent 构建、训练与部署；Python/Go；LLM/SLM 推理管道；MCP/A2A 协议；链上支付集成。",
+      "link": "https://jobs.lever.co/saga-xyz/6f4e2b80-c18f-4f62-b61b-da67d257b828",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "saga||senior-ai-agent-engineer"
+    },
+    {
+      "company": "Token Metrics",
+      "func": "data",
+      "category": "other",
+      "position": "Senior Crypto Data Engineer",
+      "level": "senior",
+      "location": "全球远程（非美国）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "大数据工程（ETL/实时流处理）；链上/链下 Crypto 数据整合；Spark/Kafka；AI 投研平台支撑。",
+      "link": "https://jobs.lever.co/tokenmetrics/5c80bc13-c7dc-4aa5-97f2-1314b30a2686",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "token-metrics||senior-crypto-data-engineer"
+    },
+    {
+      "company": "Paxos",
+      "func": "security",
+      "category": "other",
+      "position": "Lead Security Engineer",
+      "level": "head",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$130K–$180K",
+      "salaryNum": 155000,
+      "requirements": "Web2+Web3 全栈安全架构；AWS/Azure 云安全与密钥管理；DeFi 集成漏洞研究；NYDFS 持牌机构。",
+      "link": "https://jobs.ashbyhq.com/PaxosLabs/ad5179f9-c859-43bb-a7d3-2ab8ef8c9884",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "paxos||lead-security-engineer"
+    },
+    {
+      "company": "Vac (Status / Logos)",
+      "func": "security",
+      "category": "other",
+      "position": "Application Security Engineer (Web3)",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "5+年 Web3 安全工程；区块链协议/密码学系统漏洞研究；智能合约安全；P2P 隐私通信安全。",
+      "link": "https://job-boards.greenhouse.io/vac/jobs/6986179",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "vac-status-logos||application-security-engineer-web3"
+    },
+    {
+      "company": "OKX",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Senior Product Marketing Manager, Web3",
+      "level": "senior",
+      "location": "香港 / 新加坡 / 加州",
+      "region": [
+        "hk",
+        "sg",
+        "us",
+        "asia"
+      ],
+      "salary": "$180K–$264K",
+      "salaryNum": 222000,
+      "requirements": "8+年 Crypto 原生社区建设与 KOL 网络；Web3 产品营销 GTM；分析驱动增长策略。",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6573704003",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "okx||senior-product-marketing-manager-web3"
+    },
+    {
+      "company": "Animoca Brands",
+      "func": "growth",
+      "category": "other",
+      "position": "Marketing Manager",
+      "level": "mid",
+      "location": "香港 / 亚洲",
+      "region": [
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Web3/NFT/游戏生态品牌营销；跨渠道内容与活动策划执行；合作伙伴 co-marketing。",
+      "link": "https://jobs.lever.co/animocabrands/b912661b-cb7e-431f-8084-645978716c32",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "animoca-brands||marketing-manager"
+    },
+    {
+      "company": "Risk Labs (UMA / Across)",
+      "func": "bd",
+      "category": "defi",
+      "position": "BD Manager",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "3+年 BD/销售/解决方案工程（软件或协议领域）；DeFi 生态合作开发；推动 Across 跨链桥集成与增长。",
+      "link": "https://jobs.lever.co/risklabs/eb7a1ecd-f42d-4c59-8963-f87ef3417330",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "risk-labs-uma-across||bd-manager"
+    },
+    {
+      "company": "CoinMarketCap",
+      "func": "bd",
+      "category": "other",
+      "position": "Business Development Manager (API)",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "CMC 数据 API 端到端销售；交易所/DeFi 协议/机构客户拓展；加密数据产品商业化。",
+      "link": "https://jobs.lever.co/coinmarketcap/43e9d6cf-31fe-4434-a2c4-850cefa4683c",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "coinmarketcap||business-development-manager-api"
+    },
+    {
+      "company": "Binance",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Corporate Legal Counsel",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "8+年公司法务（顶级律所/上市公司）；跨境公司治理/重组/内部交易；多辖区并行项目管理。",
+      "link": "https://jobs.lever.co/binance/257a6829-fa82-46fa-a09b-f3026ed7d2b2",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "binance||senior-corporate-legal-counsel"
+    },
     {
       "company": "Immutable",
       "func": "eng",
@@ -2704,7 +3060,37 @@ window.WEB3_JOBS_DATA = {
     },
     "Coins.ph": {
       "intro": ""
+    },
+    "Chainlink Labs": {
+      "intro": ""
+    },
+    "CoW DAO": {
+      "intro": ""
+    },
+    "Monad Foundation": {
+      "intro": ""
+    },
+    "pod network": {
+      "intro": ""
+    },
+    "Trust Wallet": {
+      "intro": ""
+    },
+    "Saga": {
+      "intro": ""
+    },
+    "Vac (Status / Logos)": {
+      "intro": ""
+    },
+    "Animoca Brands": {
+      "intro": ""
+    },
+    "Risk Labs (UMA / Across)": {
+      "intro": ""
+    },
+    "CoinMarketCap": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-26T20:09:48.115Z"
+  "lastUpdatedAt": "2026-05-27T00:10:46.654Z"
 };
