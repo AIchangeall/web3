@@ -3,7 +3,7 @@
 //   1) 浏览量统计：本机 localStorage 计数（始终可用）+ 不蒜子(busuanzi) 全站 PV/UV
 //      （网站公开托管且联网时显示全站真实数据，否则回退本机累计访问数）
 //   2) 合作沟通：右下角悬浮按钮 → 微信二维码弹窗（图片 assets/wechat-qr.png）
-//   3) 赞赏提示：累计浏览满 5 分钟后温和弹出一次「自愿赞赏」(微信收款码 assets/wxskm.jpg)，
+//   3) 赞赏提示：累计浏览满 1 分钟后温和弹出一次「自愿赞赏」(微信收款码 assets/wxskm.jpg)，
 //      可随手关闭、关闭后不再打扰(localStorage 记忆)。非付费墙/不限制浏览，纯自愿。
 //  自动在每个页面注入，无需各页改动结构。文案随 I18N 语言切换。
 // ============================================================================
@@ -102,7 +102,7 @@
     mask.addEventListener("click", function (e) { if (e.target === mask) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
 
-    // ---- 赞赏提示：累计浏览满 5 分钟，温和弹出一次「自愿赞赏」，可关闭且不再打扰 ----
+    // ---- 赞赏提示：累计浏览满 1 分钟，温和弹出一次「自愿赞赏」，可关闭且不再打扰 ----
     var pay = document.createElement("div");
     pay.className = "cnh-pay-mask"; pay.id = "cnh-pay-mask";
     pay.innerHTML =
@@ -120,7 +120,7 @@
     var payqr = document.getElementById("cnh-pay-qr");
     payqr.addEventListener("error", function () { payqr.style.display = "none"; var h = document.getElementById("cnh-pay-qrhint"); h.style.display = "flex"; h.textContent = T("pay.hint"); });
 
-    var SEEN_KEY = "cnh_tip_seen", MS_KEY = "cnh_browse_ms", LIMIT_MS = 5 * 60 * 1000;
+    var SEEN_KEY = "cnh_tip_seen", MS_KEY = "cnh_browse_ms", LIMIT_MS = 1 * 60 * 1000;
     var browsed = parseInt(localStorage.getItem(MS_KEY) || "0", 10) || 0;
     function seen() { return localStorage.getItem(SEEN_KEY) === "1"; }
     function dismiss() { try { localStorage.setItem(SEEN_KEY, "1"); } catch (e) {} pay.classList.remove("show"); }
