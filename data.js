@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 128,
+      "added": 148,
       "removed": 0,
-      "note": "补种 CMC 前100交易所：Bullish / Flipster / BTSE / Bitrue / BloFin / CoinDCX / Independent Reserve / Toobit / Deepcoin / Hotcoin Global；新增 ZK/DeFi：Aztec / Caldera / Zokyo / Horizen Labs / Paradex / Mellow Protocol / StarkWare Industries"
+      "note": "当日累计新增 148 个岗位。"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,553 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "dYdX",
+      "func": "eng",
+      "category": "defi",
+      "position": "Software Engineer",
+      "level": "senior",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$225K–$345K+",
+      "salaryNum": 280000,
+      "requirements": "5年以上后端/系统工程经验；Go/TypeScript；构建并扩展 dYdX v4 去中心化永续合约协议；加密原生开发背景。",
+      "link": "https://dydx.exchange/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "dydx||software-engineer",
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "dYdX",
+      "func": "data",
+      "category": "defi",
+      "position": "GTM Data Engineering Lead",
+      "level": "senior",
+      "location": "纽约（混合办公）",
+      "region": [
+        "us"
+      ],
+      "salary": "$190K–$240K",
+      "salaryNum": 215000,
+      "requirements": "4年以上数据科学/分析经验，2年以上区块链数据背景；SQL/Python/BigQuery/GCP；主导增长漏斗分析与营销数据管道，支持DEX增长策略。",
+      "link": "https://dydx.exchange/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "dydx||gtm-data-engineering-lead",
+      "keywords": [
+        "Python",
+        "GCP",
+        "SQL",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Hyperliquid Labs",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "新加坡（现场）",
+      "region": [
+        "sg"
+      ],
+      "salary": "$105K–$150K",
+      "salaryNum": 128000,
+      "requirements": "Rust系统工程；优化共识算法与交易API，支持10万TPS去中心化链上订单簿；算法竞赛背景优先；新加坡现场办公。",
+      "link": "https://jobs.ashbyhq.com/Hyperliquid%20Labs/08060480-1355-490c-b765-97ea1b529ac6",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hyperliquid-labs||backend-engineer",
+      "keywords": [
+        "Rust"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Hyperliquid Labs",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Frontend Engineer",
+      "level": "senior",
+      "location": "新加坡（现场）",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "React/TypeScript；构建高性能DEX前端应用；负责产品设计与UX；参与完整前端技术栈；新加坡现场办公优先。",
+      "link": "https://jobs.ashbyhq.com/Hyperliquid%20Labs/2172f854-7005-4dde-8e33-de94aed0fb27",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hyperliquid-labs||senior-frontend-engineer",
+      "keywords": [
+        "TypeScript",
+        "React"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Nibiru Chain",
+      "func": "eng",
+      "category": "chain",
+      "position": "Developer Relations Engineer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$91K–$108K",
+      "salaryNum": 100000,
+      "requirements": "3年以上Web3开发者关系经验；Cosmos生态与L1知识；Rust/TypeScript/Golang；制作教程与工具文档、主持黑客松及会议工作坊。",
+      "link": "https://jobs.lever.co/nibiru/189b8ceb-5552-4735-8e07-062e48ed1599",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "nibiru-chain||developer-relations-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "TypeScript"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Shardeum Foundation",
+      "func": "security",
+      "category": "chain",
+      "position": "Security Software Engineer - Blockchain / Web3",
+      "level": "senior",
+      "location": "远程（APAC）",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "区块链/Web3安全；智能合约威胁建模与漏洞评估；链上攻击实时检测系统开发；NodeJS/TypeScript；EVM安全；支持Shardeum主网安全上线。",
+      "link": "https://boards.greenhouse.io/shardeumfoundation/jobs/4306858005",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "shardeum-foundation||security-software-engineer-blockchain-web3",
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "Smart Contract",
+        "EVM"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Shardeum Foundation",
+      "func": "eng",
+      "category": "chain",
+      "position": "Principal Software Engineer - Core Blockchain",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "区块链核心协议工程；动态状态分片设计；EVM兼容L1高性能开发；分布式系统高并发；作为核心工程师主导Shardeum协议层研发。",
+      "link": "https://job-boards.greenhouse.io/shardeumfoundation/jobs/4559618005",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "shardeum-foundation||principal-software-engineer-core-blockchain",
+      "keywords": [
+        "EVM"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Eigen Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Software Engineer, Backend (EigenLayer)",
+      "level": "senior",
+      "location": "西雅图 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$180K–$220K",
+      "salaryNum": 200000,
+      "requirements": "5年以上分布式系统后端经验；Go/Rust/C++；Solidity智能合约；Docker容器化；构建EigenLayer再质押协议与节点运营商工具。",
+      "link": "https://jobs.ashbyhq.com/eigen-labs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "eigen-labs||software-engineer-backend-eigenlayer",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "C++",
+        "Smart Contract",
+        "Validator/节点",
+        "Staking",
+        "Docker"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Eigen Labs",
+      "func": "design",
+      "category": "infra",
+      "position": "Senior/Staff Brand Designer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "4年以上品牌设计经验；定义视觉系统与设计语言；多媒介（插画/3D/动效/摄影/视频）；Figma组件库；Token+股权激励；全球远程。",
+      "link": "https://jobs.ashbyhq.com/eigen-labs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "eigen-labs||senior-staff-brand-designer",
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "design",
+      "category": "other",
+      "position": "Senior Brand Designer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "4年以上营销/品牌设计经验；AI设计工具（Midjourney/Adobe Firefly/Runway）；Figma组件库与模板体系；主导会议品牌与社交媒体视觉；2026年5月发布。",
+      "link": "https://jobs.ashbyhq.com/trm-labs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trm-labs||senior-brand-designer",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Software Engineer (Graph Analytics)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "区块链数据PB级ETL管道设计；加密货币交易网络图算法开发；分布式系统；链上情报分析平台核心工程。",
+      "link": "https://jobs.ashbyhq.com/trm-labs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trm-labs||senior-software-engineer-graph-analytics",
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "HashKey Group",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Product Manager",
+      "level": "senior",
+      "location": "香港",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "数字资产交易所产品管理；交易产品规划与迭代；跨工程/合规/运营协作；香港持牌交易所（SFC及MAS持牌）背景优先。",
+      "link": "https://group.hashkey.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hashkey-group||senior-product-manager",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "产品规划",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "HashKey Group",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Compliance Manager",
+      "level": "mid",
+      "location": "新加坡 / 香港",
+      "region": [
+        "sg",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "MAS AML/CFT合规；数字资产VASP监管；虚拟资产交易所合规框架搭建；新加坡或香港加密合规经验。",
+      "link": "https://group.hashkey.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hashkey-group||compliance-manager",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Jito Labs",
+      "func": "security",
+      "category": "infra",
+      "position": "Security Engineer",
+      "level": "senior",
+      "location": "远程（美国）",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "区块链/MEV安全；密钥与访问管理；漏洞识别与安全架构；Solana生态安全审查；智能合约安全审计；向安全负责人汇报。",
+      "link": "https://jobs.lever.co/jito.wtf",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "jito-labs||security-engineer",
+      "keywords": [
+        "Smart Contract",
+        "MEV",
+        "Solana",
+        "安全审计"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Jito Labs",
+      "func": "ops",
+      "category": "infra",
+      "position": "Platform Engineer",
+      "level": "senior",
+      "location": "远程（美国）",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "5年以上基础设施/SRE/DevOps经验；Terraform/Ansible；Grafana/Prometheus；Rust/PostgreSQL；Solana验证节点低延迟生产系统维护；HCP Vault/Cloudflare/Tailscale。",
+      "link": "https://jobs.lever.co/jito.wtf",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "jito-labs||platform-engineer",
+      "keywords": [
+        "Rust",
+        "Validator/节点",
+        "Solana",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Jito Labs",
+      "func": "bd",
+      "category": "infra",
+      "position": "Validator Relations Associate",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 80000,
+      "requirements": "Solana验证者生态与质押经济学深入了解；JitoSOL委托机制对接；验证者需求收集与产品反馈；协助制作入驻指南和教育内容。",
+      "link": "https://jobs.lever.co/jito.wtf/eebaeb41-a547-49f2-9499-a9bd18c41155",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "jito-labs||validator-relations-associate",
+      "keywords": [
+        "Validator/节点",
+        "Staking",
+        "Solana"
+      ],
+      "duties": [
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Ondo Finance",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Smart Contract Engineer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "3年以上区块链工程经验；Solidity及非EVM智能合约语言；多链DeFi协议（Ethereum/Arbitrum/Solana/Sui/Aptos）；RWA代币化（USDY/OUSG）技术负责人。",
+      "link": "https://jobs.gem.com/ondo-finance",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ondo-finance||senior-smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "Ethereum",
+        "Solana"
+      ],
+      "duties": [
+        "团队管理",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Ondo Finance",
+      "func": "security",
+      "category": "defi",
+      "position": "Senior Security Engineer - Operations / Incident Response",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "3-5年以上安全运营/检测工程/事件响应经验；SIEM（Splunk/Panther/Elastic/Sentinel）；EDR调优；Python脚本；将检测逻辑代码化；RWA协议安全防御。",
+      "link": "https://jobs.gem.com/ondo-finance",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ondo-finance||senior-security-engineer-operations-incident-response",
+      "keywords": [
+        "Python"
+      ],
+      "duties": [
+        "故障/值班",
+        "协议/合约开发",
+        "安全/审计",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Ondo Finance",
+      "func": "growth",
+      "category": "defi",
+      "position": "Senior Developer Relations Lead",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "深度DeFi/RWA生态知识；构建0到1开发者生态系统；技术传道与开发者社区运营；RWA代币化协议推广；Token+股权激励。",
+      "link": "https://jobs.gem.com/ondo-finance",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ondo-finance||senior-developer-relations-lead",
+      "keywords": [
+        "DeFi",
+        "社区"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Deribit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Software Development Engineer in Test",
+      "level": "senior",
+      "location": "阿姆斯特丹 / 远程",
+      "region": [
+        "eu",
+        "remote"
+      ],
+      "salary": "$115K–$138K",
+      "salaryNum": 127000,
+      "requirements": "5年以上QA自动化经验；TypeScript/Python；测试框架构建；CI/CD管道；加密衍生品交易所（期权/永续合约）质量保障；金融交易领域背景优先。",
+      "link": "https://deribit.recruitee.com/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "deribit||software-development-engineer-in-test",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "Smart Contract",
+        "CI/CD"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "自动化",
+        "协议/合约开发"
+      ]
+    },
     {
       "company": "Bullish",
       "func": "eng",
@@ -6593,7 +7140,37 @@ window.WEB3_JOBS_DATA = {
     },
     "StarkWare Industries": {
       "intro": ""
+    },
+    "dYdX": {
+      "intro": ""
+    },
+    "Hyperliquid Labs": {
+      "intro": ""
+    },
+    "Nibiru Chain": {
+      "intro": ""
+    },
+    "Shardeum Foundation": {
+      "intro": ""
+    },
+    "Eigen Labs": {
+      "intro": ""
+    },
+    "TRM Labs": {
+      "intro": ""
+    },
+    "HashKey Group": {
+      "intro": ""
+    },
+    "Jito Labs": {
+      "intro": ""
+    },
+    "Ondo Finance": {
+      "intro": ""
+    },
+    "Deribit": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T10:15:28.103Z"
+  "lastUpdatedAt": "2026-05-27T15:22:48.337Z"
 };
