@@ -55,7 +55,7 @@ function jobLd(j, url) {
   const o = {
     "@context": "https://schema.org/", "@type": "JobPosting",
     "title": j.position,
-    "description": (j.requirements || j.position || ""),
+    "description": (j.description || j.requirements || j.position || ""),
     "datePosted": j.firstSeen,
     "validThrough": j.linkDead ? (j.linkCheckedAt ? j.linkCheckedAt.slice(0, 10) : j.firstSeen) : addDays(j.lastSeen || j.firstSeen, VALID_DAYS),
     "employmentType": "FULL_TIME",
@@ -122,7 +122,7 @@ function pageHtml(j) {
   .nav{background:rgba(255,255,255,.9);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
   .nav-in{max-width:760px;margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px}
-  .brand .logo{width:28px;height:28px;border-radius:7px;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:800}
+  .brand .logo{width:30px;height:30px;background:url(../assets/favicon.svg) center/contain no-repeat;flex:none}
   .nav a.back{font-size:13px;font-weight:600;color:var(--accent)}
   main{max-width:760px;margin:24px auto 60px;padding:0 20px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,41,.06)}
@@ -160,7 +160,7 @@ function pageHtml(j) {
 </head>
 <body>
 <nav class="nav"><div class="nav-in">
-  <a class="brand" href="../index.html"><span class="logo">链</span> 链聘 ChainHire</a>
+  <a class="brand" href="../index.html"><span class="logo"></span> 链聘 <span style="color:var(--accent)">ChainHire</span></a>
   <a class="back" href="../index.html">← 全部职位</a>
 </div></nav>
 <main>
@@ -175,7 +175,7 @@ function pageHtml(j) {
     ${deadBanner}${flagBanner}
     <div class="salary ${negSalary ? "neg" : ""}">${esc(salary)}</div>
     <div class="tags">${tags}</div>
-    <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(j.requirements || "")}</p></div>
+    <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(j.description || j.requirements || "")}</p></div>
     ${kws ? `<div class="sec"><h2>技能关键字</h2><div class="kws">${kws}</div></div>` : ""}
     ${duties ? `<div class="sec"><h2>职责方向</h2><div class="tags">${duties}</div></div>` : ""}
     ${contact}

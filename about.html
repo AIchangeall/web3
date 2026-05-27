@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
   .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
-  .brand .logo{width:30px;height:30px;border-radius:8px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+  .brand .logo{width:34px;height:34px;background:url(assets/favicon.svg) center/contain no-repeat;flex:none}
   .brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px}
   .nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
   .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <body>
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
+    <a class="brand" href="index.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span><small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
     <div class="nav-links">
       <a href="index.html" data-i18n="nav.jobs">职位</a>
       <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
