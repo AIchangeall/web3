@@ -17,6 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractKeywords, extractDuties } from "./keywords.mjs";
+import { loadDescs, saveDescs } from "./descstore.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -99,6 +100,12 @@ if (sameDay) {
 // 序列化回 JSON 风格的 data.js（保留文件头注释）
 const headerEnd = raw.indexOf("window.WEB3_JOBS_DATA");
 const header = headerEnd > 0 ? raw.slice(0, headerEnd) : "";
+// 正文不入 data.js：把传入岗位带的 description 转存进 descriptions.json（按 id），再从 data.js 剥离
+const DESC = loadDescs();
+let movedDesc = 0;
+for (const j of D.jobs) { if (j.description) { const id = j.id || keyOf(j); if (!DESC[id] || DESC[id].length < j.description.length) { DESC[id] = String(j.description).slice(0, 4000); } delete j.description; movedDesc++; } }
+saveDescs(DESC);
+
 fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
 
 // 同步重建每岗位静态页（jobs/<id>.html，含 JobPosting 结构化数据）与 sitemap.xml
