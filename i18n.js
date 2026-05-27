@@ -143,6 +143,10 @@
     "hh.apply":        ["投递链接 →", "Apply link →"],
     "hh.origin":       ["原帖", "Source"],
     "hh.empty":        ["未匹配到线索，试试放宽筛选。", "No leads — try loosening the filters."],
+    "hh.coverage":     ["联系方式覆盖率", "Contact coverage"],
+    "hh.export":       ["⬇ 导出 CSV", "⬇ Export CSV"],
+    "hh.exported":     ["已导出 {n} 条线索（当前筛选）", "Exported {n} leads (current filter)"],
+    "hh.tipnudge":     ["如对你的招聘有帮助，欢迎赞赏支持 💜", "If this helps your hiring, support with a tip 💜"],
   };
 
   const FUNC = { eng:["工程研发","Engineering"], ops:["运维/SRE/基础设施","SRE / Infrastructure"], product:["产品","Product"], design:["设计","Design"], data:["数据/AI","Data / AI"], security:["安全","Security"], growth:["市场/增长/运营","Growth / Marketing"], bd:["BD/商务/销售","BD / Sales"], ga:["合规/法务/财务HR","Legal / Compliance / HR"] };

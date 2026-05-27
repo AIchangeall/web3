@@ -124,6 +124,7 @@
 <div class="wrap">
   <div class="bar">
     <div class="cnt" id="cnt-w"></div>
+    <span class="cov" id="cov" title=""></span>
     <input class="search" id="search" data-i18n-ph="hh.searchph" placeholder="搜索公司 / 岗位 / 来源 / 联系人…" />
     <label class="toggle" id="t-contact"><span class="sw"></span><span data-i18n="hh.contactonly">仅看有联系方式</span></label>
     <select class="sort" id="sort">
@@ -131,6 +132,7 @@
       <option value="company" data-i18n="hh.sort.company">按公司名</option>
       <option value="salary" data-i18n="hh.sort.salary">按薪资高低</option>
     </select>
+    <button class="expbtn" id="export" data-i18n="hh.export">⬇ 导出 CSV</button>
   </div>
 
   <div class="tablecard">
@@ -154,6 +156,12 @@
 <style>
   .hh-stale{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
   .hh-dead{display:inline-block;background:#f1f2f6;color:#64748b;border:1px solid #e2e5ec;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+  .cov{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:#047857;background:#e6f6ef;border:1px solid #c8ebd9;padding:5px 11px;border-radius:999px;white-space:nowrap}
+  .expbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13px;padding:9px 14px;border-radius:10px;cursor:pointer;white-space:nowrap}
+  .expbtn:hover{border-color:var(--accent);color:var(--accent)}
+  .hh-toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);background:#0f1729;color:#fff;font-size:13px;font-weight:600;padding:12px 20px;border-radius:12px;z-index:70;opacity:0;pointer-events:none;transition:.25s;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:90vw;text-align:center}
+  .hh-toast.on{opacity:1;bottom:54px;pointer-events:auto}
+  .hh-toast a{color:#a5b4fc;text-decoration:underline;cursor:pointer}
 </style>
 
 <script src="i18n.js"></script>
@@ -192,6 +200,41 @@
   const tc=document.getElementById("t-contact");
   tc.onclick=()=>{state.contactOnly=!state.contactOnly;tc.classList.toggle("on");render();};
   document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render();};
+
+  // 联系方式覆盖率（卖点展示）
+  function paintCov(){
+    const total=data.length, wc=data.filter(j=>j.contact||j.contactInfo).length, pct=total?Math.round(wc/total*100):0;
+    const el=document.getElementById("cov");
+    el.innerHTML=I18N.t("hh.coverage")+' <b>'+pct+'%</b>'; el.title=wc+" / "+total;
+  }
+  // 导出 CSV（软引导：导出后温和邀请赞赏；永不拦截下载、不收费、不解锁）
+  const csvCell=v=>{v=String(v==null?"":v);return /[",\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
+  function exportCSV(){
+    const r=rows(), zh=I18N.lang==="zh";
+    const headers=zh
+      ?["招聘公司","公司类型","岗位","职能","级别","地点","薪资","技能关键词","职责关键词","来源渠道","联系人","联系方式","投递链接","最新发布","状态"]
+      :["Company","Type","Role","Function","Level","Location","Salary","Skills","Duties","Source","Contact","Contact info","Apply link","Posted","Status"];
+    const lines=[headers.map(csvCell).join(",")];
+    for(const j of r){
+      const status=j.linkDead?(zh?"原页面已下线":"Link offline"):(isStale(j)?(zh?"可能已截止":"May be closed"):"");
+      lines.push([j.company,catLabels[j.category]||j.category,j.position,funcLabels[j.func]||j.func,lvlLabels[j.level]||j.level,j.location,j.salary||(zh?"面议":"Negotiable"),(j.keywords||[]).join(" / "),(j.duties||[]).join(" / "),srcOf(j.link),j.contact||"",j.contactInfo||"",j.link||"",j.firstSeen||"",status].map(csvCell).join(","));
+    }
+    const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"});
+    const url=URL.createObjectURL(blob), a=document.createElement("a");
+    a.href=url; a.download="chainhire-leads-"+(new Date().toISOString().slice(0,10))+".csv";
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000);
+    nudge(r.length);
+  }
+  function nudge(n){
+    let t=document.getElementById("hh-toast");
+    if(!t){ t=document.createElement("div"); t.id="hh-toast"; t.className="hh-toast"; document.body.appendChild(t); }
+    t.innerHTML=I18N.t("hh.exported").replace("{n}",n)+' · <a id="hh-tip">'+I18N.t("hh.tipnudge")+'</a>';
+    t.classList.add("on");
+    const tip=document.getElementById("hh-tip");
+    if(tip) tip.onclick=()=>{ const f=document.getElementById("cnh-fab2"); if(f) f.click(); t.classList.remove("on"); };
+    clearTimeout(nudge._t); nudge._t=setTimeout(()=>t.classList.remove("on"),6500);
+  }
+  document.getElementById("export").onclick=exportCSV;
 
   function rows(){
     let r=data.filter(j=>{
@@ -248,6 +291,7 @@
       ? `来源渠道由职位链接自动识别；联系人 / 联系方式仅展示来源公开招聘信息中明确披露的内容（当前 ${withContact} 条含直接联系方式，其余以来源渠道投递），不含任何非公开数据 · 最近更新 ${updDisplay}`
       : `Source auto-detected from the job link; contacts shown only when publicly disclosed by the source (${withContact} with direct contact, the rest apply via source); no non-public data · updated ${updDisplay}`;
     document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a>`;
+    paintCov();
   }
 
   head(); render();
