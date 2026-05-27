@@ -9,6 +9,9 @@ new_jobs.json
 node_modules/
 dist/
 
+# 内部交接文档（含部署/机制细节，默认不公开）
+PROJECT_OVERVIEW.md
+
 # 系统文件
 .DS_Store
 Thumbs.db
