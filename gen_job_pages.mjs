@@ -29,6 +29,10 @@ const CAT = { exchange: "交易所", chain: "公链/L2", defi: "钱包/DeFi", in
 const LVL = { head: "负责人/总监", senior: "资深/Staff", mid: "中级" };
 const REGION = { remote: "远程", cn: "中文区", hk: "香港", sg: "新加坡", us: "美国", eu: "欧洲", dubai: "迪拜", asia: "亚洲其他" };
 const COUNTRY = { cn: "CN", hk: "HK", sg: "SG", us: "US", eu: "DE", dubai: "AE", asia: "SG" };
+// 合规提示（中性）——与 flags.js 保持一致，用于岗位静态页
+const FLAGS = {
+  "HTX": "HTX（原火币）在部分国家 / 地区面临监管限制或下架。投递或合作前请自行了解所在地的合规与可用性情况。",
+};
 
 const PALETTE = ["#6d5efc", "#0ea5e9", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#14b8a6", "#f97316", "#3b82f6"];
 const acolor = n => { let h = 0; for (const c of (n || "")) h = (h * 31 + c.charCodeAt(0)) >>> 0; return PALETTE[h % PALETTE.length]; };
@@ -78,6 +82,7 @@ function pageHtml(j) {
     ? `<div class="sec"><h2>联系人 / 联系方式</h2><p class="req">${esc([j.contact, j.contactInfo].filter(Boolean).join("  ·  "))}</p></div>` : "";
   const dead = !!j.linkDead;
   const deadBanner = dead ? `<div class="banner">⚠️ 该岗位的原始招聘页经探测可能已下线或失效，信息仅供参考；建议通过下方按钮查看该公司其它在招职位或前往其官网核实。</div>` : "";
+  const flagBanner = FLAGS[j.company] ? `<div class="banner">⚠️ ${esc(FLAGS[j.company])}</div>` : "";
   const applyBtn = (j.link && !dead)
     ? `<a class="btn primary" href="${esc(j.link)}" target="_blank" rel="noopener">查看 / 投递原始职位 →</a>`
     : (dead ? `<span class="btn primary dis">⚠️ 原招聘页可能已下线</span>` : "");
@@ -153,7 +158,7 @@ function pageHtml(j) {
         <div class="co"><b>${esc(j.company)}</b> · ${esc(CAT[j.category] || j.category || "")}${j.firstSeen ? ` · 上架 ${esc(j.firstSeen)}` : ""}</div>
       </div>
     </div>
-    ${deadBanner}
+    ${deadBanner}${flagBanner}
     <div class="salary ${negSalary ? "neg" : ""}">${esc(salary)}</div>
     <div class="tags">${tags}</div>
     <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(j.requirements || "")}</p></div>
@@ -188,6 +193,23 @@ function genSitemap(items, lastUpdated) {
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`);
 }
 
+function genFeed(D) {
+  const jobs = (D.jobs || []).filter(j => j.firstSeen).slice()
+    .sort((a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || ""))
+    .slice(0, 40);
+  const items = jobs.map(j => {
+    const sid = safeId(j.id || keyOf(j));
+    const url = `${SITE}/jobs/${sid}.html`;
+    const sal = (!j.salary || /面议/.test(j.salary)) ? "面议" : j.salary;
+    const desc = `${CAT[j.category] || j.category || ""} · ${LVL[j.level] || ""} · ${j.location || "面议"} · ${sal}。${(j.requirements || "").slice(0, 160)}`;
+    const pub = new Date((j.firstSeen || "1970-01-01") + "T09:00:00+08:00").toUTCString();
+    return `    <item>\n      <title>${esc(j.position + " · " + j.company)}</title>\n      <link>${url}</link>\n      <guid isPermaLink="true">${url}</guid>\n      <pubDate>${pub}</pubDate>\n      <description>${esc(desc)}</description>\n    </item>`;
+  }).join("\n");
+  const lastBuild = new Date(D.lastUpdatedAt || Date.now()).toUTCString();
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n  <channel>\n    <title>链聘 ChainHire · 最新 Web3 岗位</title>\n    <link>${SITE}/</link>\n    <description>Web3 / crypto 行业全职能最新公开招聘，每日自动更新。</description>\n    <language>zh-cn</language>\n    <lastBuildDate>${lastBuild}</lastBuildDate>\n${items}\n  </channel>\n</rss>\n`;
+  fs.writeFileSync(path.join(__dirname, "feed.xml"), feed);
+}
+
 export function generate(D) {
   const jobsDir = path.join(__dirname, "jobs");
   fs.rmSync(jobsDir, { recursive: true, force: true });
@@ -202,6 +224,7 @@ export function generate(D) {
     items.push({ sid, firstSeen: j.firstSeen });
   }
   genSitemap(items, D.lastUpdated);
+  genFeed(D);
   return items.length;
 }
 

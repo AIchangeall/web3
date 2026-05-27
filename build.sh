@@ -12,10 +12,11 @@ rm -rf dist
 mkdir -p dist/assets
 
 # 网站对外需要的文件
-cp index.html stats.html companies.html headhunter.html \
-   i18n.js widgets.js mobile.css data.js \
+cp index.html stats.html companies.html headhunter.html about.html \
+   i18n.js flags.js widgets.js mobile.css data.js \
    robots.txt sitemap.xml \
    dist/
+[ -f feed.xml ] && cp feed.xml dist/ || true
 
 # 每岗位静态页（供 Google for Jobs / 社交分享落地）
 [ -d jobs ] && cp -r jobs dist/ || true

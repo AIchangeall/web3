@@ -147,6 +147,40 @@
     "hh.export":       ["⬇ 导出 CSV", "⬇ Export CSV"],
     "hh.exported":     ["已导出 {n} 条线索（当前筛选）", "Exported {n} leads (current filter)"],
     "hh.tipnudge":     ["如对你的招聘有帮助，欢迎赞赏支持 💜", "If this helps your hiring, support with a tip 💜"],
+
+    // 导航 / 收藏 / 筛选 / RSS
+    "nav.about":       ["关于", "About"],
+    "flt.savedonly":   ["仅看收藏", "Saved only"],
+    "flt.paidonly":    ["仅看公开薪资", "Disclosed salary"],
+    "flt.recent7":     ["近 7 天新增", "New in 7 days"],
+    "flt.mine":        ["我的", "Mine"],
+    "card.save":       ["收藏", "Save"],
+    "card.saved":      ["已收藏", "Saved"],
+    "card.markapplied":["标记已投", "Mark applied"],
+    "card.applied":    ["已投递", "Applied"],
+    "foot.rss":        ["📡 RSS 订阅最新岗位", "📡 Subscribe new jobs (RSS)"],
+    "flag.note":       ["合规提示", "Compliance note"],
+
+    // 关于页
+    "about.h1":        ["关于 链聘 ChainHire", "About ChainHire"],
+    "about.lead":      ["链聘 ChainHire 是一个聚合 Web3 / 加密行业公开招聘信息的看板，覆盖交易所、公链 / L2、钱包 / DeFi、节点基础设施等各类公司的全职能岗位，面向猎头与求职者，每日自动更新。",
+                        "ChainHire aggregates publicly posted Web3 / crypto job openings — across exchanges, chains / L2, wallets / DeFi and node infrastructure, all functions — for recruiters and job seekers, updated daily."],
+    "about.s1.t":      ["数据从哪来", "Where the data comes from"],
+    "about.s1.d":      ["岗位信息整理自公开渠道：公司官网招聘页、Lever / Ashby / Greenhouse、Web3.career、CryptoJobsList、CryptocurrencyJobs、V2EX 招聘版、登链社区等。本站不抓取或展示任何非公开数据，联系人 / 联系方式仅在来源已明确公开时才展示。",
+                        "Roles are compiled from public sources: company career pages, Lever / Ashby / Greenhouse, Web3.career, CryptoJobsList, CryptocurrencyJobs, V2EX, LearnBlockchain and more. We never scrape or show non-public data; contacts appear only when publicly disclosed by the source."],
+    "about.s2.t":      ["多久更新", "How often it updates"],
+    "about.s2.d":      ["由自动化程序约每 5 小时同步一次：新岗位置顶并标「NEW」；长时间未再出现于来源的岗位标「可能已截止」；经探测失效的链接标「原页面已下线」。",
+                        "An automated job syncs roughly every 5 hours: new roles are pinned and tagged “NEW”; roles long absent from sources are flagged “may be closed”; links detected as broken are flagged “offline”."],
+    "about.s3.t":      ["完全免费", "Completely free"],
+    "about.s3.d":      ["本站对求职者与猎头完全免费浏览与使用，不收取任何求职、投递、招聘、会员或解锁费用。页面中的「赞赏」纯属自愿，关闭后不再打扰。",
+                        "ChainHire is completely free to browse and use for both job seekers and recruiters. We charge no application, posting, membership or unlock fees. Any “tip” prompt is entirely voluntary and won’t nag once dismissed."],
+    "about.s4.t":      ["免责声明", "Disclaimer"],
+    "about.s4.d":      ["所有岗位、薪资、联系方式均整理自公开渠道；薪资多为公开 JD 或聚合估算，仅供参考，具体以原招聘方与面试谈薪为准。本站不保证信息的实时性、完整性或准确性，投递前请通过原招聘页或公司官方渠道核实。涉及受监管 / 受制裁实体的岗位，请自行了解所在地区的合规要求。",
+                        "All roles, salaries and contacts are compiled from public sources; salaries are mostly from public JDs or aggregated estimates, for reference only — confirm with the employer and during interviews. We do not guarantee the timeliness, completeness or accuracy of any information; verify via the original posting or the company’s official channels before applying. For roles at regulated / sanctioned entities, please check the compliance requirements in your own jurisdiction."],
+    "about.s5.t":      ["合作与联系", "Partnership & contact"],
+    "about.s5.d":      ["商务合作、数据对接或信息纠错，请点击右下角「合作沟通」扫码添加微信。",
+                        "For partnership, data integration or corrections, tap “Contact” at the bottom-right to add us on WeChat."],
+    "about.back":      ["← 返回职位列表", "← Back to jobs"],
   };
 
   const FUNC = { eng:["工程研发","Engineering"], ops:["运维/SRE/基础设施","SRE / Infrastructure"], product:["产品","Product"], design:["设计","Design"], data:["数据/AI","Data / AI"], security:["安全","Security"], growth:["市场/增长/运营","Growth / Marketing"], bd:["BD/商务/销售","BD / Sales"], ga:["合规/法务/财务HR","Legal / Compliance / HR"] };

@@ -9,6 +9,7 @@
 <meta name="author" content="链聘 ChainHire" />
 <meta name="robots" content="index,follow" />
 <link rel="canonical" href="https://gmjobs.github.io/chainhire/" />
+<link rel="alternate" type="application/rss+xml" title="链聘 ChainHire · 最新岗位" href="feed.xml" />
 <meta name="theme-color" content="#6d5efc" />
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <!-- Open Graph -->
@@ -129,7 +130,14 @@
   .new{display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle;letter-spacing:.03em}
   .badge-stale{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle}
   .badge-dead{display:inline-block;background:#f1f2f6;color:#64748b;border:1px solid #e2e5ec;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle}
+  .badge-applied{display:inline-block;background:#e6f6ef;color:#059669;border:1px solid #c8ebd9;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle}
   .job.is-dead{opacity:.72}
+  .iconbtn{border:1px solid var(--line);background:#fff;color:#94a3b8;font-weight:700;font-size:13px;padding:7px 11px;border-radius:9px;cursor:pointer;line-height:1;white-space:nowrap}
+  .iconbtn:hover{border-color:var(--accent);color:var(--accent)}
+  .iconbtn.on{background:#fff7e6;border-color:#f59e0b;color:#d97706}
+  .iconbtn.ap.on{background:#e6f6ef;border-color:#10b981;color:#059669}
+  .flag-note{margin-top:9px;font-size:12px;font-weight:600;color:#b45309;background:#fdf2e0;border:1px solid #f6e0bd;border-radius:8px;padding:6px 10px;line-height:1.5}
+  .jm-note.flag{background:#fdf2e0;border:1px solid #f6e0bd;color:#b45309}
   .jm-note{margin:0 0 14px;border-radius:11px;padding:11px 14px;font-size:13px;font-weight:600;line-height:1.5}
   .jm-note.stale{background:#fdf2e0;border:1px solid #f6e0bd;color:#b45309}
   .jm-note.dead{background:#f1f2f6;border:1px solid #e2e5ec;color:#475569}
@@ -229,6 +237,7 @@
       <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
       <a href="companies.html" data-i18n="nav.companies">企业库</a>
       <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
@@ -263,7 +272,10 @@
     <div class="side-h"><span data-i18n="flt.title">筛选</span> <button id="reset" data-i18n="flt.reset">重置</button></div>
     <div class="fgroup">
       <label class="toggle" id="t-new"><span class="sw"></span><span data-i18n="flt.newonly">仅看今日新增</span></label>
+      <label class="toggle" id="t-recent7" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.recent7">近 7 天新增</span></label>
       <label class="toggle" id="t-fresh" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.hidestale">仅看近期在招</span></label>
+      <label class="toggle" id="t-paid" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.paidonly">仅看公开薪资</span></label>
+      <label class="toggle" id="t-saved" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.savedonly">仅看收藏</span></label>
     </div>
     <div class="fgroup"><div class="t" data-i18n="flt.func">职能</div><div class="chips" id="g-func"></div></div>
     <div class="fgroup"><div class="t" data-i18n="flt.cat">公司类型</div><div class="chips" id="g-cat"></div></div>
@@ -309,6 +321,7 @@
 <div class="jm-mask" id="jm-mask"><div class="jm" id="jm"></div></div>
 
 <script src="i18n.js"></script>
+<script src="flags.js"></script>
 <script src="widgets.js"></script>
 <script src="data.js"></script>
 <script>
@@ -328,6 +341,18 @@
   const STALE_DAYS = 30;
   const isStale = d => { if(!d.lastSeen) return false; const t=Date.parse(d.lastSeen+"T00:00:00Z"); return isFinite(t) && (Date.now()-t)/86400000 > STALE_DAYS; };
   const addDays = (s,n) => { const d=new Date((s||"")+"T00:00:00Z"); if(isNaN(d)) return undefined; d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); };
+  // 近 N 天新增（相对数据更新日）
+  const refDate = lastUpdated ? Date.parse(lastUpdated+"T00:00:00Z") : Date.now();
+  const isRecent7 = d => { if(!d.firstSeen) return false; const t=Date.parse(d.firstSeen+"T00:00:00Z"); return isFinite(t) && (refDate-t)/86400000 < 7; };
+  const hasSalary = d => d.salary && !/面议/.test(d.salary);
+  // 合规提示
+  const flagOf = c => (window.CNH_FLAGS && window.CNH_FLAGS[c]) || null;
+  const flagText = f => f ? (I18N.lang==="zh"?f.zh:f.en) : "";
+  // 收藏 / 已投递（localStorage，纯本机）
+  const loadSet = k => { try{ return new Set(JSON.parse(localStorage.getItem(k)||"[]")); }catch(e){ return new Set(); } };
+  const saveSet = (k,s) => { try{ localStorage.setItem(k, JSON.stringify([...s])); }catch(e){} };
+  const SAVED = loadSet("cnh_saved"), APPLIED = loadSet("cnh_applied");
+  const toggleSet = (set,k,id) => { if(set.has(id)) set.delete(id); else set.add(id); saveSet(k,set); };
 
   // 稳定 id（深链 / 详情用）；data.js 多数已带 id，缺失者按 company||position 规则补全
   const slug = s => (s||"").toLowerCase().replace(/[^a-z0-9一-龥]+/g,"-").replace(/^-+|-+$/g,"");
@@ -339,7 +364,7 @@
   buildLabels();
 
   const PAGE=18;
-  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,hideStale:false,search:"",sort:"latest",limit:PAGE};
+  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,recent7:false,hideStale:false,paidOnly:false,savedOnly:false,search:"",sort:"latest",limit:PAGE};
 
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -369,6 +394,12 @@
   tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
   const tfresh=document.getElementById("t-fresh");
   tfresh.onclick=()=>{ state.hideStale=!state.hideStale; tfresh.classList.toggle("on"); state.limit=PAGE; render(); };
+  const trecent=document.getElementById("t-recent7");
+  trecent.onclick=()=>{ state.recent7=!state.recent7; trecent.classList.toggle("on"); state.limit=PAGE; render(); };
+  const tpaid=document.getElementById("t-paid");
+  tpaid.onclick=()=>{ state.paidOnly=!state.paidOnly; tpaid.classList.toggle("on"); state.limit=PAGE; render(); };
+  const tsaved=document.getElementById("t-saved");
+  tsaved.onclick=()=>{ state.savedOnly=!state.savedOnly; tsaved.classList.toggle("on"); state.limit=PAGE; render(); };
   const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
   document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
   document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
@@ -376,9 +407,9 @@
   document.getElementById("more").onclick=()=>{ state.limit+=PAGE; render(); };
   document.getElementById("reset").onclick=()=>{
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
-    state.newOnly=false;state.hideStale=false;state.search="";state.limit=PAGE;
+    state.newOnly=false;state.recent7=false;state.hideStale=false;state.paidOnly=false;state.savedOnly=false;state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
-    tnew.classList.remove("on"); tfresh.classList.remove("on"); document.getElementById("search").value="";
+    [tnew,trecent,tfresh,tpaid,tsaved].forEach(t=>t.classList.remove("on")); document.getElementById("search").value="";
     document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
   // 列表区点击委托：关键字筛选 / 打开详情 / 分享
@@ -387,6 +418,10 @@
     if(kw){ const v=kw.dataset.kw; state.search=v.toLowerCase(); document.getElementById("search").value=v; state.limit=PAGE; render(); return; }
     const sb=e.target.closest("[data-share]");
     if(sb){ const art=sb.closest(".job"); if(art) shareJob(art.dataset.id); return; }
+    const sv=e.target.closest("[data-save]");
+    if(sv){ const art=sv.closest(".job"); if(art){ toggleSet(SAVED,"cnh_saved",art.dataset.id); render(); } return; }
+    const ap=e.target.closest("[data-applied]");
+    if(ap){ const art=ap.closest(".job"); if(art){ toggleSet(APPLIED,"cnh_applied",art.dataset.id); render(); } return; }
     const dt=e.target.closest("[data-detail]");
     if(dt){ const art=dt.closest(".job"); if(art) openDetail(art.dataset.id); return; }
   });
@@ -407,7 +442,10 @@
 
   function match(r){
     if(state.newOnly && !isNew(r)) return false;
+    if(state.recent7 && !isRecent7(r)) return false;
     if(state.hideStale && isStale(r)) return false;
+    if(state.paidOnly && !hasSalary(r)) return false;
+    if(state.savedOnly && !SAVED.has(r.id)) return false;
     if(state.funcs.size && !state.funcs.has(r.func)) return false;
     if(state.cats.size && !state.cats.has(r.category)) return false;
     if(state.lvls.size && !state.lvls.has(r.level)) return false;
@@ -430,11 +468,12 @@
   function card(r){
     const remote=(r.region||[]).includes("remote");
     const negSalary=!r.salary || /面议/.test(r.salary);
-    const stale=isStale(r), dead=!!r.linkDead;
+    const stale=isStale(r), dead=!!r.linkDead, saved=SAVED.has(r.id), applied=APPLIED.has(r.id), fg=flagOf(r.company);
     const applyHtml = (r.link && !dead)
       ? `<a class="apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>`
       : `<button class="sharebtn" data-detail type="button">${I18N.t('card.detail')}</button>`;
     const badges = (isNew(r)?'<span class="new">NEW</span>':'')
+      + (applied?`<span class="badge-applied">✓ ${I18N.t('card.applied')}</span>`:'')
       + (stale?`<span class="badge-stale">${I18N.t('badge.stale')}</span>`:'')
       + (dead?`<span class="badge-dead">${I18N.t('badge.dead')}</span>`:'');
     return `<article class="job${dead?' is-dead':''}" data-id="${esc(r.id)}">
@@ -448,6 +487,7 @@
           <span class="tag">📍 ${esc(r.location)}</span>
           ${remote?`<span class="tag remote">${I18N.t('card.remote')}</span>`:''}
         </div>
+        ${fg?`<div class="flag-note">⚠️ ${esc(flagText(fg))}</div>`:''}
         <p class="job-req">${esc(r.requirements)}</p>
         ${(r.keywords&&r.keywords.length)?`<div class="kws">${r.keywords.slice(0,6).map(k=>`<span class="kw" data-kw="${esc(k)}">${esc(I18N.kw(k))}</span>`).join("")}</div>`:""}
       </div>
@@ -456,6 +496,8 @@
         <div class="js-btns">
           ${applyHtml}
           <button class="sharebtn" data-share type="button">🔗 ${I18N.t('card.share')}</button>
+          <button class="iconbtn${saved?' on':''}" data-save type="button" title="${I18N.t('card.save')}" aria-label="${I18N.t('card.save')}">${saved?'★':'☆'}</button>
+          <button class="iconbtn ap${applied?' on':''}" data-applied type="button" title="${I18N.t('card.markapplied')}" aria-label="${I18N.t('card.markapplied')}">✓</button>
         </div>
         <div class="posted">${r.firstSeen?I18N.t('card.posted')+' '+r.firstSeen:''}</div>
       </div>
@@ -492,7 +534,7 @@
     const fn=I18N.lang==="zh"
       ? `数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay}`
       : `Data aggregated from public sources; salaries are public/estimated, for reference only · ${data.length} roles · updated ${updDisplay}`;
-    document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a>`;
+    document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a> · <a href="about.html" style="color:var(--accent)">${I18N.t("nav.about")}</a> · <a href="feed.xml" style="color:var(--accent)">${I18N.t("foot.rss")}</a>`;
   }
 
   // ---------- 岗位详情弹层 / 分享 / 结构化数据 ----------
@@ -532,9 +574,10 @@
     const kws=(r.keywords&&r.keywords.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.kw')}</div><div class="kws">${r.keywords.map(k=>`<span class="kw" style="cursor:default">${esc(I18N.kw(k))}</span>`).join("")}</div></div>`:"";
     const duties=(r.duties&&r.duties.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.duty')}</div><div class="tags">${r.duties.map(d=>`<span class="tag">${esc(I18N.duty(d))}</span>`).join("")}</div></div>`:"";
     const cinfo=(r.contact||r.contactInfo)?`<div class="jm-sec"><div class="t">${I18N.t('detail.contact')} / ${I18N.t('detail.cinfo')}</div><div class="jm-req">${esc([r.contact,r.contactInfo].filter(Boolean).join("  ·  "))}</div></div>`:"";
-    const stale=isStale(r), dead=!!r.linkDead;
+    const stale=isStale(r), dead=!!r.linkDead, saved=SAVED.has(r.id), applied=APPLIED.has(r.id), fg=flagOf(r.company);
     const notice = dead ? `<div class="jm-note dead">${I18N.t('detail.dead')}</div>`
                  : (stale ? `<div class="jm-note stale">${I18N.t('detail.stale')}</div>` : "");
+    const fgNote = fg ? `<div class="jm-note flag">⚠️ ${esc(flagText(fg))}</div>` : "";
     const applyHtml = dead
       ? `<span class="jm-apply dis">${I18N.t('badge.dead')}</span>`
       : (r.link
@@ -550,7 +593,7 @@
         </div>
       </div>
       <div class="jm-b">
-        ${notice}
+        ${notice}${fgNote}
         <div class="jm-sec"><div class="jm-sal ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div></div>
         <div class="jm-sec"><div class="tags">${tags}</div></div>
         <div class="jm-sec"><div class="t">${I18N.t('detail.req')}</div><div class="jm-req">${esc(r.requirements||'')}</div></div>
@@ -558,6 +601,8 @@
       </div>
       <div class="jm-f">
         ${applyHtml}
+        <button class="jm-copy" data-jmsave type="button">${saved?'★ '+I18N.t('card.saved'):'☆ '+I18N.t('card.save')}</button>
+        <button class="jm-copy" data-jmapplied type="button">✓ ${applied?I18N.t('card.applied'):I18N.t('card.markapplied')}</button>
         <button class="jm-copy" data-jmcopy type="button">${I18N.t('detail.copy')}</button>
       </div>`;
   }
@@ -573,7 +618,11 @@
     try{ history.replaceState(null,"",urlNoJob()); }catch(e){}
   }
   mask.addEventListener("click",e=>{ if(e.target===mask||e.target.closest("[data-jmclose]")) closeDetail(); });
-  jm.addEventListener("click",e=>{ if(e.target.closest("[data-jmcopy]")) copyText(jobPageUrl(jm.dataset.id)); });
+  jm.addEventListener("click",e=>{
+    if(e.target.closest("[data-jmcopy]")){ copyText(jobPageUrl(jm.dataset.id)); return; }
+    if(e.target.closest("[data-jmsave]")){ toggleSet(SAVED,"cnh_saved",jm.dataset.id); openDetail(jm.dataset.id); render(); return; }
+    if(e.target.closest("[data-jmapplied]")){ toggleSet(APPLIED,"cnh_applied",jm.dataset.id); openDetail(jm.dataset.id); render(); return; }
+  });
   document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
 
   // JobPosting 结构化数据（供 Google for Jobs 抓取，注入当前筛选结果的前 40 条）
