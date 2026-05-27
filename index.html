@@ -197,6 +197,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .jm-sec{margin-bottom:16px}
   .jm-sec>.t{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
   .jm-req{font-size:13.5px;color:#475569;line-height:1.7;white-space:pre-wrap}
+  .jm-fulllink{display:inline-block;margin-top:10px;color:var(--accent);font-weight:700;font-size:13px}
+  .jm-fulllink:hover{text-decoration:underline}
   .jm-sal{font-size:19px;font-weight:800;color:#047857}
   .jm-sal.neg{color:#94a3b8;font-size:15px}
   .jm-f{padding:14px 24px 20px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;position:sticky;bottom:0;background:#fff}
@@ -620,7 +622,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
         ${notice}${fgNote}
         <div class="jm-sec"><div class="jm-sal ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div></div>
         <div class="jm-sec"><div class="tags">${tags}</div></div>
-        <div class="jm-sec"><div class="t">${I18N.t('detail.req')}</div><div class="jm-req">${esc(r.description||r.requirements||'')}</div></div>
+        <div class="jm-sec"><div class="t">${I18N.t('detail.req')}</div><div class="jm-req">${esc(r.requirements||'')}</div>
+          <a class="jm-fulllink" href="${jobPageUrl(r.id)}" target="_blank" rel="noopener">${I18N.t('detail.full')}</a></div>
         ${kws}${duties}${cinfo}
       </div>
       <div class="jm-f">
@@ -657,7 +660,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const countries=(r.region||[]).map(x=>COUNTRY[x]).filter(Boolean);
     const o={
       "@context":"https://schema.org/","@type":"JobPosting",
-      "title":r.position, "description":(r.description||r.requirements||r.position||"").slice(0,1500),
+      "title":r.position, "description":(r.requirements||r.position||"").slice(0,1500),
       "datePosted":r.firstSeen,
       "validThrough": r.linkDead ? (r.linkCheckedAt?String(r.linkCheckedAt).slice(0,10):r.firstSeen) : addDays(r.lastSeen||r.firstSeen,45),
       "employmentType":"FULL_TIME",

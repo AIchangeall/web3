@@ -76,6 +76,7 @@
     "detail.apply":    ["查看 / 投递原始职位 →", "View / apply on source →"],
     "detail.nolink":   ["该岗位暂无直接投递链接，可在企业库或公司官网检索", "No direct apply link — search the company site or our directory"],
     "detail.close":    ["关闭", "Close"],
+    "detail.full":     ["📄 查看完整职位详情 →", "📄 View full job details →"],
     "badge.stale":     ["⏳ 可能已截止", "⏳ May be closed"],
     "badge.dead":      ["⚠️ 原页面已下线", "⚠️ Link offline"],
     "flt.hidestale":   ["仅看近期在招", "Recent & open only"],

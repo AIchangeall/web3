@@ -1,21 +1,15 @@
 #!/usr/bin/env node
 // ============================================================================
-//  apply_desc.mjs — 把抓取到的岗位【完整 JD 正文】合并进 data.js 的 description 字段
-//
+//  apply_desc.mjs — 把抓到的【完整 JD 正文】合并进 descriptions.json（按岗位 id）
+//  正文不入 data.js，只存 descriptions.json（供 gen_job_pages 生成静态页）。
 //  用法：node apply_desc.mjs descs.json
-//    descs.json 形如 [{ "id": "<job id>", "description": "<完整正文>" }, ...]
-//                或   { "<job id>": "<完整正文>", ... }
-//
-//  约定（守真实性）：
-//   - description 必须是从原招聘页抓取的真实正文（职责 + 要求等），保留换行；严禁编造。
-//   - 按 job.id 匹配；缺 id 的岗位回退用 company||position 规则匹配。
-//   - 正文做轻度清洗：去首尾空白、合并 3+ 连续空行为 2 行、上限 4000 字。
-//   - 合并后重建 jobs/ 静态页与 sitemap.xml / feed.xml（前端据 description 展示全文）。
-//  幂等：同一 descs 重复跑只是覆盖同值。
+//    descs.json = [{ "id": "<岗位id>", "description": "<正文>" }, ...] 或 { "<id>": "<正文>" }
+//  严禁编造；正文轻清洗、上限 4000 字；合并后重建静态页 / sitemap / feed。
 // ============================================================================
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDescs, saveDescs } from "./descstore.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -30,26 +24,20 @@ const clean = s => String(s || "").replace(/\r\n/g, "\n").replace(/[ \t]+\n/g, "
 const raw = fs.readFileSync(DATA_FILE, "utf-8");
 const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
 const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const validIds = new Set(D.jobs.map(j => j.id || keyOf(j)));
 
-// 归一化输入为 id -> description
 const incoming = JSON.parse(fs.readFileSync(inFile, "utf-8"));
-const map = {};
-if (Array.isArray(incoming)) for (const it of incoming) { if (it && it.id && it.description) map[it.id] = it.description; }
-else for (const k of Object.keys(incoming || {})) { if (incoming[k]) map[k] = incoming[k]; }
+const pairs = Array.isArray(incoming) ? incoming.map(it => [it && it.id, it && it.description]) : Object.entries(incoming || {});
 
+const DESC = loadDescs();
 let applied = 0;
-for (const j of D.jobs || []) {
-  const id = j.id || keyOf(j);
-  const desc = map[id] != null ? map[id] : (map[keyOf(j)] != null ? map[keyOf(j)] : null);
-  if (desc != null) {
-    const c = clean(desc);
-    if (c && c.length >= 20) { j.description = c; applied++; }
-  }
+for (const [id, desc] of pairs) {
+  if (!id || !desc) continue;
+  const c = clean(desc);
+  if (c.length < 20) continue;
+  if (!validIds.has(id)) continue; // 只接受能对上岗位的 id
+  DESC[id] = c; applied++;
 }
-
-const header = raw.slice(0, raw.indexOf("window.WEB3_JOBS_DATA"));
-fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
-
+const total = saveDescs(DESC);
 const pages = genJobPages(D);
-const withDesc = (D.jobs || []).filter(j => j.description).length;
-console.log(`📝 合并完成：本次写入 ${applied} 条 description | 已有完整正文岗位共 ${withDesc}/${(D.jobs || []).length} | 重建静态页 ${pages}`);
+console.log(`📝 合并 ${applied} 条 → descriptions.json（共 ${total} 条正文）| 重建静态页 ${pages}`);

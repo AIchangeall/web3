@@ -20,9 +20,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDescs } from "./descstore.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = "https://gmjobs.github.io/chainhire";
+let DESC = {};                            // { id: 完整 JD 正文 }（不在 data.js 中）；generate() 时刷新
+const descOf = j => DESC[j.id || keyOf(j)] || "";
 
 const FUNC = { eng: "工程研发", ops: "运维/SRE/基础设施", product: "产品", design: "设计", data: "数据/AI", security: "安全", growth: "市场/增长/运营", bd: "BD/商务/销售", ga: "合规/法务/财务HR" };
 const CAT = { exchange: "交易所", chain: "公链/L2", defi: "钱包/DeFi", infra: "节点/RPC基础设施", other: "合规/托管/其他" };
@@ -63,7 +66,7 @@ function jobLd(j, url) {
   const o = {
     "@context": "https://schema.org/", "@type": "JobPosting",
     "title": j.position,
-    "description": (j.description || j.requirements || j.position || ""),
+    "description": (descOf(j) || j.requirements || j.position || ""),
     "datePosted": j.firstSeen,
     "validThrough": j.linkDead ? (j.linkCheckedAt ? j.linkCheckedAt.slice(0, 10) : j.firstSeen) : addDays(j.lastSeen || j.firstSeen, VALID_DAYS),
     "employmentType": "FULL_TIME",
@@ -183,7 +186,7 @@ function pageHtml(j) {
     ${deadBanner}${flagBanner}
     <div class="salary ${negSalary ? "neg" : ""}">${esc(salary)}</div>
     <div class="tags">${tags}</div>
-    <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(j.description || j.requirements || "")}</p></div>
+    <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(descOf(j) || j.requirements || "")}</p></div>
     ${kws ? `<div class="sec"><h2>技能关键字</h2><div class="kws">${kws}</div></div>` : ""}
     ${duties ? `<div class="sec"><h2>职责方向</h2><div class="tags">${duties}</div></div>` : ""}
     ${contact}
@@ -233,6 +236,7 @@ function genFeed(D) {
 }
 
 export function generate(D) {
+  DESC = loadDescs();                     // 每次生成前刷新正文（脚本可能刚写入）
   const jobsDir = path.join(__dirname, "jobs");
   fs.rmSync(jobsDir, { recursive: true, force: true });
   fs.mkdirSync(jobsDir, { recursive: true });

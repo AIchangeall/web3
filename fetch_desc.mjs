@@ -11,10 +11,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDescs, saveDescs } from "./descstore.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "data.js");
+const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").replace(/(^-|-$)/g, "");
+const keyOf = j => slug(j.company) + "||" + slug(j.position);
+const DESC = loadDescs();
+const idOf = j => j.id || keyOf(j);
 const arg = (f, d) => { const i = process.argv.indexOf(f); return i >= 0 && process.argv[i + 1] && !process.argv[i + 1].startsWith("--") ? process.argv[i + 1] : d; };
 const LIMIT = Number(arg("--limit", 9999));
 const CONC = Number(arg("--concurrency", 6));
@@ -78,7 +83,7 @@ function extractorFor(host) {
   return null;
 }
 
-const targets = (D.jobs || []).filter(j => j.link && (FORCE || !j.description)).filter(j => {
+const targets = (D.jobs || []).filter(j => j.link && (FORCE || !DESC[idOf(j)])).filter(j => {
   try { return !!extractorFor(new URL(j.link).hostname.replace(/^www\./, "")); } catch (e) { return false; }
 }).slice(0, LIMIT);
 
@@ -88,7 +93,7 @@ async function handle(j) {
     const u = new URL(j.link);
     const fn = extractorFor(u.hostname.replace(/^www\./, ""));
     const text = await fn(u);
-    if (text && text.length >= 120) { j.description = text; ok++; } else fail++;
+    if (text && text.length >= 120) { DESC[idOf(j)] = text; ok++; } else fail++;
   } catch (e) { fail++; }
 }
 async function run() {
@@ -99,8 +104,6 @@ async function run() {
 console.log(`候选(可走 ATS 接口且缺正文)：${targets.length} 个，开始抓取…`);
 await run();
 
-const header = raw.slice(0, raw.indexOf("window.WEB3_JOBS_DATA"));
-fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
+const total = saveDescs(DESC);
 const pages = genJobPages(D);
-const total = (D.jobs || []).filter(j => j.description).length;
-console.log(`✅ 抓取成功 ${ok} | 失败/跳过 ${fail} | 现有完整正文岗位 ${total}/${(D.jobs || []).length} | 重建静态页 ${pages}`);
+console.log(`✅ 抓取成功 ${ok} | 失败/跳过 ${fail} | descriptions.json 共 ${total} 条正文 | 重建静态页 ${pages}`);
