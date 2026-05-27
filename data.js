@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 98,
+      "added": 128,
       "removed": 0,
-      "note": "扩展交易所数据范围至 CoinMarketCap 前 100：补种 Gemini / WOO X / Backpack / Binance.US / bitFlyer / Pionex / CoinEx / Bitvavo / BitMEX / Bitso / Luno / Bitkub / Coincheck / AscendEX / Poloniex 等知名交易所岗位"
+      "note": "补种 CMC 前100交易所：Bullish / Flipster / BTSE / Bitrue / BloFin / CoinDCX / Independent Reserve / Toobit / Deepcoin / Hotcoin Global；新增 ZK/DeFi：Aztec / Caldera / Zokyo / Horizen Labs / Paradex / Mellow Protocol / StarkWare Industries"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,776 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Bullish",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Principal Engineer, High-Performance Systems",
+      "level": "senior",
+      "location": "纽约 / 香港 / 新加坡",
+      "region": [
+        "us",
+        "hk",
+        "sg"
+      ],
+      "salary": "$125K–$175K+",
+      "salaryNum": 165000,
+      "requirements": "高性能数据系统设计与开发；低延迟系统；多地混合办公；合规数字资产交易所（德国/香港/直布罗陀持牌）。",
+      "link": "https://www.bullish.com/us/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bullish||principal-engineer-high-performance-systems",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bullish",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Lead Full Stack Engineer",
+      "level": "head",
+      "location": "纽约 / 全球",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "全栈工程师负责人；用户端交易应用；前后端协作；AI辅助开发；七地办公室（纽约/香港/新加坡）。",
+      "link": "https://www.bullish.com/us/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bullish||lead-full-stack-engineer",
+      "keywords": [
+        "AI"
+      ],
+      "duties": [
+        "团队管理"
+      ]
+    },
+    {
+      "company": "Bullish",
+      "func": "product",
+      "category": "exchange",
+      "position": "Director of Product Management, US Derivatives",
+      "level": "head",
+      "location": "纽约 / 开曼群岛",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 250000,
+      "requirements": "美国衍生品产品总监；合规交易所；跨工程/设计/合规协作；多国持牌交易所产品经验。",
+      "link": "https://www.bullish.com/us/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bullish||director-of-product-management-us-derivatives",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Flipster",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Junior / Intermediate Backend Software Engineer",
+      "level": "mid",
+      "location": "新加坡 / 远程 (APAC)",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "初/中级后端工程师；高性能合约永续交易所；Golang或Rust优先；新加坡/APAC。",
+      "link": "https://careers.flipster.io/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "flipster||junior-intermediate-backend-software-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Smart Contract"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Flipster",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Mobile Platform Engineer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote",
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "iOS/Android移动端平台工程师；零利差永续合约交易所App；多端性能优化；全球远程。",
+      "link": "https://careers.flipster.io/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "flipster||senior-mobile-platform-engineer",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Flipster",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Partnerships Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "产品合作伙伴经理；交易所API生态拓展；产品+BD复合背景；全球远程。",
+      "link": "https://careers.flipster.io/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "flipster||product-partnerships-manager",
+      "keywords": [],
+      "duties": [
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Backend Engineer (Python / Java)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "5年以上Python/Java后端；高频交易系统；RESTful API；可扩展微服务架构；全球远程。",
+      "link": "https://jobs.lever.co/BTSE",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "btse||senior-backend-engineer-python-java",
+      "keywords": [
+        "Python"
+      ],
+      "duties": [
+        "架构设计"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Infrastructure Cloud Engineer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "云基础设施（AWS/GCP）；Kubernetes；高可用交易所架构；监控自动化运维；全球远程。",
+      "link": "https://jobs.lever.co/BTSE",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "btse||infrastructure-cloud-engineer",
+      "keywords": [
+        "Kubernetes",
+        "AWS",
+        "GCP"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "自动化"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "bd",
+      "category": "exchange",
+      "position": "OTC Institutional Sales",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "机构OTC大宗交易销售；加密行业客户开发；关系维护；全球合规交易所（新加坡+英属维尔京群岛持牌）。",
+      "link": "https://jobs.lever.co/BTSE",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "btse||otc-institutional-sales",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "data",
+      "category": "exchange",
+      "position": "Research Data Engineer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "数据工程/量化研究；交易所量化数据管道；Python/SQL；金融/加密市场数据分析背景。",
+      "link": "https://jobs.lever.co/BTSE",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "btse||research-data-engineer",
+      "keywords": [
+        "Python",
+        "SQL"
+      ],
+      "duties": [
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Bitrue",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Finance Associate",
+      "level": "mid",
+      "location": "新加坡",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 70000,
+      "requirements": "财务运营；加密交易所后台；会计/财务背景；新加坡持牌交易所（700+ 币种）。",
+      "link": "https://www.linkedin.com/jobs/view/finance-associate-at-bitrue-4227239136",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitrue||finance-associate",
+      "keywords": [],
+      "duties": [
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitrue",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Director of Marketing Operations",
+      "level": "head",
+      "location": "美国",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "营销运营总监；Bitrue美国市场增长；团队管理；加密行业品牌运营经验。",
+      "link": "https://www.linkedin.com/jobs/view/director-of-marketing-operations-at-bitrue-us-4205299985",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitrue||director-of-marketing-operations",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "BloFin",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Senior BD Expert (Payment)",
+      "level": "senior",
+      "location": "远程 (APAC)",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "高级BD专家（加密支付方向）；APAC支付渠道拓展；Crypto合规支付合作谈判经验。",
+      "link": "https://www.linkedin.com/jobs/view/senior-bd-expert-payment-at-blofin-4386726914",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "blofin||senior-bd-expert-payment",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "BloFin",
+      "func": "ops",
+      "category": "exchange",
+      "position": "P2P Operations Manager",
+      "level": "mid",
+      "location": "远程 (APAC)",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "P2P交易运营管理；风控与流动性维护；亚太区用户P2P市场运营。",
+      "link": "https://www.linkedin.com/jobs/view/p2p-operations-manager-at-blofin-4164907962",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "blofin||p2p-operations-manager",
+      "keywords": [],
+      "duties": [
+        "合规风控",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "CoinDCX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Staff Software Engineer, Backend – Trading Platform",
+      "level": "senior",
+      "location": "班加罗尔, 印度",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 80000,
+      "requirements": "Staff级后端工程师；交易引擎平台；高吞吐分布式系统；印度头部合规加密交易所。",
+      "link": "https://careers.coindcx.com/o/staff-software-engineer-backend-trading-platform",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "coindcx||staff-software-engineer-backend-trading-platform",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Independent Reserve",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Developer (.NET / MS SQL Server)",
+      "level": "mid",
+      "location": "悉尼, 澳大利亚",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "后端开发（C#/.NET/MSSQL）；澳大利亚合规交易所（500k+ 用户）；AUSTRAC/MAS持牌。",
+      "link": "https://independentreserve.freshteam.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "independent-reserve||backend-developer-net-ms-sql-server",
+      "keywords": [
+        "SQL",
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Independent Reserve",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Compliance Officer",
+      "level": "mid",
+      "location": "悉尼 / 新加坡",
+      "region": [
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "合规官；AML/交易监控；AUSTRAC/MAS持牌交易所；加密行业合规背景。",
+      "link": "https://independentreserve.freshteam.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "independent-reserve||compliance-officer",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Toobit",
+      "func": "bd",
+      "category": "exchange",
+      "position": "BD Manager / Leader (North American Region)",
+      "level": "head",
+      "location": "远程 (北美)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "北美区BD负责人；KOL/联盟合作伙伴拓展；交易所用户增长；前Huobi核心成员创办团队。",
+      "link": "https://wellfound.com/company/toobit-2/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "toobit||bd-manager-leader-north-american-region",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Deepcoin",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer (Golang)",
+      "level": "mid",
+      "location": "远程 / 亚洲",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Golang后端；微服务架构（MySQL/Redis/Kafka）；CeFi现货/衍生品交易所；亚洲团队。",
+      "link": "https://www.deepcoin.com/turbo/en/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "deepcoin||backend-engineer-golang",
+      "keywords": [
+        "Go",
+        "Kafka"
+      ],
+      "duties": [
+        "架构设计"
+      ]
+    },
+    {
+      "company": "Hotcoin Global",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Marketing Director",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "营销总监；加密交易所全球增长；品牌/活动/社媒运营；7M+ 用户、180+ 国家平台。",
+      "link": "https://www.hotcoin.com/en_US/position/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hotcoin-global||marketing-director",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Hotcoin Global",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Chief Business Development Officer (CBDO)",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "首席商务发展官；全球战略合作；机构/项目生态拓展；加密交易所C级管理经验。",
+      "link": "https://www.hotcoin.com/en_US/position/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "hotcoin-global||chief-business-development-officer-cbdo",
+      "keywords": [],
+      "duties": [
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Aztec",
+      "func": "eng",
+      "category": "chain",
+      "position": "Software Engineer (Noir Generalist)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "Noir ZK语言全栈；零知识证明电路；隐私智能合约；Aztec L2（发明PLONK zkSNARK + Noir语言；a16z/Paradigm投资）。",
+      "link": "https://web3.career/web3-companies/aztec",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "aztec||software-engineer-noir-generalist",
+      "keywords": [
+        "Smart Contract",
+        "L2/Rollup",
+        "ZK"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Caldera",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Protocol Engineer (Rollups)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$190K–$250K",
+      "salaryNum": 220000,
+      "requirements": "高级协议工程师；OP Stack/Arbitrum/ZKsync Rollup框架；模块化链基础设施；Rust/Go。",
+      "link": "https://jobs.ashbyhq.com/Caldera/4cca4a1a-e53e-455c-8470-09724c8f840e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "caldera||senior-protocol-engineer-rollups",
+      "keywords": [
+        "Rust",
+        "Go",
+        "L2/Rollup"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Zokyo",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Security Engineer (Smart Contract Auditor)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "智能合约审计；Solidity/Rust安全漏洞分析；DeFi协议安全；形式化验证经验；全球100% 远程。",
+      "link": "https://cryptocurrencyjobs.co/startups/zokyo/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "zokyo||senior-security-engineer-smart-contract-auditor",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Smart Contract",
+        "DeFi",
+        "安全审计",
+        "形式化验证"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Horizen Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Developer Relations Engineer",
+      "level": "mid",
+      "location": "纽约 / 米兰 / 远程",
+      "region": [
+        "us",
+        "eu",
+        "remote"
+      ],
+      "salary": "$65K–$80K",
+      "salaryNum": 72500,
+      "requirements": "开发者关系工程师；ZKVerify公链；开发者文档/SDK支持；ZK技术传播；纽约/米兰/远程。",
+      "link": "https://job-boards.greenhouse.io/horizenlabs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "horizen-labs||developer-relations-engineer",
+      "keywords": [
+        "ZK"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Horizen Labs",
+      "func": "design",
+      "category": "chain",
+      "position": "UI/UX Designer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$65K–$80K",
+      "salaryNum": 72500,
+      "requirements": "UI/UX设计师；ZK区块链产品设计；Web3钱包/DApp交互体验；Figma；用户研究。",
+      "link": "https://job-boards.greenhouse.io/horizenlabs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "horizen-labs||ui-ux-designer",
+      "keywords": [
+        "ZK",
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Paradex",
+      "func": "eng",
+      "category": "defi",
+      "position": "Software Engineer (High-Performance DEX)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "高级工程师；Starknet链上永续合约DEX；高性能撮合系统；Paradigm孵化项目。",
+      "link": "https://cryptojobslist.com/companies/paradex",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "paradex||software-engineer-high-performance-dex",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Mellow Protocol",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Smart Contract Developer (Solidity / AMM)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Solidity高级合约开发；Uniswap V3 AMM定制化；DeFi流动性优化；形式化验证经验加分。",
+      "link": "https://cryptojobslist.com/companies/mellow-protocol",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "mellow-protocol||senior-smart-contract-developer-solidity-amm",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "DeFi",
+        "形式化验证"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "StarkWare Industries",
+      "func": "eng",
+      "category": "chain",
+      "position": "Software Engineer / Researcher (ZK-STARK)",
+      "level": "senior",
+      "location": "以色列 / 远程",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "ZK-STARK/Cairo/Starknet工程师或研究员；零知识证明系统；性能优化；以色列总部或远程。",
+      "link": "https://starkware.co/careers/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "starkware-industries||software-engineer-researcher-zk-stark",
+      "keywords": [
+        "ZK"
+      ],
+      "duties": [
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "MoonPay",
+      "func": "data",
+      "category": "other",
+      "position": "Staff Data Engineer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Staff级数据工程师；加密支付基础设施数据管道/仓储；Python/SQL；100+ 法币/加密货币支持平台。",
+      "link": "https://jobs.lever.co/moonpay",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "moonpay||staff-data-engineer",
+      "keywords": [
+        "Python",
+        "SQL"
+      ],
+      "duties": []
+    },
     {
       "company": "Gemini",
       "func": "eng",
@@ -5772,7 +6542,58 @@ window.WEB3_JOBS_DATA = {
     },
     "Poloniex": {
       "intro": ""
+    },
+    "Bullish": {
+      "intro": ""
+    },
+    "Flipster": {
+      "intro": ""
+    },
+    "BTSE": {
+      "intro": ""
+    },
+    "Bitrue": {
+      "intro": ""
+    },
+    "BloFin": {
+      "intro": ""
+    },
+    "CoinDCX": {
+      "intro": ""
+    },
+    "Independent Reserve": {
+      "intro": ""
+    },
+    "Toobit": {
+      "intro": ""
+    },
+    "Deepcoin": {
+      "intro": ""
+    },
+    "Hotcoin Global": {
+      "intro": ""
+    },
+    "Aztec": {
+      "intro": ""
+    },
+    "Caldera": {
+      "intro": ""
+    },
+    "Zokyo": {
+      "intro": ""
+    },
+    "Horizen Labs": {
+      "intro": ""
+    },
+    "Paradex": {
+      "intro": ""
+    },
+    "Mellow Protocol": {
+      "intro": ""
+    },
+    "StarkWare Industries": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T09:10:22.250Z"
+  "lastUpdatedAt": "2026-05-27T10:15:28.103Z"
 };
