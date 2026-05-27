@@ -161,8 +161,9 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
   const initial=n=>((n||"?").trim()[0]||"?").toUpperCase();
   const ATS=["jobs.lever.co","lever.co","jobs.ashbyhq.com","ashbyhq.com","boards.greenhouse.io","job-boards.greenhouse.io","greenhouse.io","web3.career","cryptojobslist.com","cryptocurrencyjobs.co","v2ex.com","learnblockchain.cn","crypto-careers.com","nodeflair.com","simplify.jobs","weworkremotely.com","beincrypto.com","myworkdayjobs.com","linkedin.com","notion.site","bamboohr.com","workable.com","recruitee.com","breezy.hr"];
-  const logoUrl=link=>{try{const h=new URL(link).hostname.replace(/^www\./,"");if(ATS.some(a=>h===a||h.endsWith("."+a)))return "";return "https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(h);}catch(e){return "";}};
-  const avatarHtml=(name,link)=>`<div class="avatar" style="background:${acolor(name)}"><span class="ltr">${esc(initial(name))}</span>${logoUrl(link)?`<img class="logo-img" src="${logoUrl(link)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
+  const logoDomain=(name,link)=>{const D=window.CNH_DOMAINS||{};if(D[name])return D[name];try{const h=new URL(link).hostname.replace(/^www\./,"");if(ATS.some(a=>h===a||h.endsWith("."+a)))return "";const p=h.split("."),label=(p.length>=2?p[p.length-2]:p[0]),cn=(name||"").toLowerCase().replace(/[^a-z0-9]/g,"");return (cn.length>=3&&label.length>=3&&(cn===label||label.includes(cn)))?h:"";}catch(e){return "";}};
+  const logoUrl=(name,link)=>{const d=logoDomain(name,link);return d?"https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(d):"";};
+  const avatarHtml=(name,link)=>`<div class="avatar" style="background:${acolor(name)}"><span class="ltr">${esc(initial(name))}</span>${logoUrl(name,link)?`<img class="logo-img" src="${logoUrl(name,link)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
   const median=a=>{if(!a.length)return 0;const s=[...a].sort((x,y)=>x-y);const m=Math.floor(s.length/2);return s.length%2?s[m]:Math.round((s[m-1]+s[m])/2);};
   const fmtK=n=>n>=1000?'$'+Math.round(n/1000)+'K':(n?'$'+n:'—');
   const mode=arr=>{const m={};arr.forEach(x=>m[x]=(m[x]||0)+1);return Object.entries(m).sort((a,b)=>b[1]-a[1])[0]?.[0];};
@@ -183,7 +184,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       median:median(sal),
       remotePct:Math.round(jobs.filter(j=>(j.region||[]).includes("remote")).length/jobs.length*100),
       latest,
-      link:(jobs.find(j=>j.link&&logoUrl(j.link))||jobs[0]||{}).link||"",
+      link:(jobs.find(j=>j.link&&logoDomain(name,j.link))||jobs[0]||{}).link||"",
       intro:(COMP[name]&&COMP[name].intro)||""
     };
   }).sort((a,b)=> b.count-a.count || b.newCount-a.newCount || a.name.localeCompare(b.name));

@@ -385,7 +385,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
   // 公司 logo：从岗位链接的公司域名取 favicon（排除 ATS / 聚合站域名）；取不到则回退字母头像
   const ATS=["jobs.lever.co","lever.co","jobs.ashbyhq.com","ashbyhq.com","boards.greenhouse.io","job-boards.greenhouse.io","greenhouse.io","web3.career","cryptojobslist.com","cryptocurrencyjobs.co","v2ex.com","learnblockchain.cn","crypto-careers.com","nodeflair.com","simplify.jobs","weworkremotely.com","beincrypto.com","myworkdayjobs.com","linkedin.com","notion.site","bamboohr.com","workable.com","recruitee.com","breezy.hr"];
-  const logoUrl=r=>{ try{ const h=new URL(r.link).hostname.replace(/^www\./,""); if(ATS.some(a=>h===a||h.endsWith("."+a))) return ""; return "https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(h); }catch(e){ return ""; } };
+  const logoDomain=(company,link)=>{ const D=window.CNH_DOMAINS||{}; if(D[company]) return D[company]; try{ const h=new URL(link).hostname.replace(/^www\./,""); if(ATS.some(a=>h===a||h.endsWith("."+a))) return ""; const p=h.split("."),label=(p.length>=2?p[p.length-2]:p[0]),cn=(company||"").toLowerCase().replace(/[^a-z0-9]/g,""); return (cn.length>=3&&label.length>=3&&(cn===label||label.includes(cn)))?h:""; }catch(e){ return ""; } };
+  const logoUrl=r=>{ const d=logoDomain(r.company,r.link); return d?"https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(d):""; };
   const avatarHtml=r=>`<div class="avatar" style="background:${acolor(r.company)}"><span class="ltr">${esc(initial(r.company))}</span>${logoUrl(r)?`<img class="logo-img" src="${logoUrl(r)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
 
   function buildChips(id,labels,set){

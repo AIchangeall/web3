@@ -29,10 +29,9 @@ const CAT = { exchange: "交易所", chain: "公链/L2", defi: "钱包/DeFi", in
 const LVL = { head: "负责人/总监", senior: "资深/Staff", mid: "中级" };
 const REGION = { remote: "远程", cn: "中文区", hk: "香港", sg: "新加坡", us: "美国", eu: "欧洲", dubai: "迪拜", asia: "亚洲其他" };
 const COUNTRY = { cn: "CN", hk: "HK", sg: "SG", us: "US", eu: "DE", dubai: "AE", asia: "SG" };
-// 合规提示（中性）——与 flags.js 保持一致，用于岗位静态页
-const FLAGS = {
-  "HTX": "HTX（原火币）在部分国家 / 地区面临监管限制或下架。投递或合作前请自行了解所在地的合规与可用性情况。",
-};
+// 复用 flags.js 的品牌元数据（合规提示 CNH_FLAGS + 公司官方域名 CNH_DOMAINS），不重复维护
+let CNH_FLAGS = {}, CNH_DOMAINS = {};
+try { const win = {}; new Function("window", fs.readFileSync(path.join(__dirname, "flags.js"), "utf-8"))(win); CNH_FLAGS = win.CNH_FLAGS || {}; CNH_DOMAINS = win.CNH_DOMAINS || {}; } catch (e) { /* 缺失则降级为无 logo/提示 */ }
 
 const PALETTE = ["#6d5efc", "#0ea5e9", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#14b8a6", "#f97316", "#3b82f6"];
 const acolor = n => { let h = 0; for (const c of (n || "")) h = (h * 31 + c.charCodeAt(0)) >>> 0; return PALETTE[h % PALETTE.length]; };
@@ -45,7 +44,16 @@ const addDays = (dateStr, n) => { const d = new Date((dateStr || "") + "T00:00:0
 const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").replace(/(^-|-$)/g, "");
 const keyOf = j => slug(j.company) + "||" + slug(j.position);
 const ATS = ["jobs.lever.co", "lever.co", "jobs.ashbyhq.com", "ashbyhq.com", "boards.greenhouse.io", "job-boards.greenhouse.io", "greenhouse.io", "web3.career", "cryptojobslist.com", "cryptocurrencyjobs.co", "v2ex.com", "learnblockchain.cn", "crypto-careers.com", "nodeflair.com", "simplify.jobs", "weworkremotely.com", "beincrypto.com", "myworkdayjobs.com", "linkedin.com", "notion.site", "bamboohr.com", "workable.com", "recruitee.com", "breezy.hr"];
-const logoUrl = link => { try { const h = new URL(link).hostname.replace(/^www\./, ""); if (ATS.some(a => h === a || h.endsWith("." + a))) return ""; return "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(h); } catch (e) { return ""; } };
+const logoUrl = (company, link) => {
+  if (CNH_DOMAINS[company]) return "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(CNH_DOMAINS[company]);
+  try {
+    const h = new URL(link).hostname.replace(/^www\./, "");
+    if (ATS.some(a => h === a || h.endsWith("." + a))) return "";
+    const p = h.split("."), label = (p.length >= 2 ? p[p.length - 2] : p[0]), cn = (company || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (cn.length >= 3 && label.length >= 3 && (cn === label || label.includes(cn))) return "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(h);
+    return "";
+  } catch (e) { return ""; }
+};
 const safeId = id => (id || "").replace(/\|+/g, "-").replace(/-+/g, "-").replace(/(^-|-$)/g, "");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -84,7 +92,7 @@ function pageHtml(j) {
     ? `<div class="sec"><h2>联系人 / 联系方式</h2><p class="req">${esc([j.contact, j.contactInfo].filter(Boolean).join("  ·  "))}</p></div>` : "";
   const dead = !!j.linkDead;
   const deadBanner = dead ? `<div class="banner">⚠️ 该岗位的原始招聘页经探测可能已下线或失效，信息仅供参考；建议通过下方按钮查看该公司其它在招职位或前往其官网核实。</div>` : "";
-  const flagBanner = FLAGS[j.company] ? `<div class="banner">⚠️ ${esc(FLAGS[j.company])}</div>` : "";
+  const flagBanner = CNH_FLAGS[j.company] ? `<div class="banner">⚠️ ${esc(CNH_FLAGS[j.company].zh)}</div>` : "";
   const applyBtn = (j.link && !dead)
     ? `<a class="btn primary" href="${esc(j.link)}" target="_blank" rel="noopener">查看 / 投递原始职位 →</a>`
     : (dead ? `<span class="btn primary dis">⚠️ 原招聘页可能已下线</span>` : "");
@@ -166,7 +174,7 @@ function pageHtml(j) {
 <main>
   <article class="card">
     <div class="top">
-      <div class="avatar" style="background:${acolor(j.company)}"><span class="ltr">${esc(initial(j.company))}</span>${logoUrl(j.link) ? `<img class="logo-img" src="${logoUrl(j.link)}" loading="lazy" alt="" onerror="this.remove()">` : ""}</div>
+      <div class="avatar" style="background:${acolor(j.company)}"><span class="ltr">${esc(initial(j.company))}</span>${logoUrl(j.company, j.link) ? `<img class="logo-img" src="${logoUrl(j.company, j.link)}" loading="lazy" alt="" onerror="this.remove()">` : ""}</div>
       <div>
         <h1>${esc(j.position)}</h1>
         <div class="co"><b>${esc(j.company)}</b> · ${esc(CAT[j.category] || j.category || "")}${j.firstSeen ? ` · 上架 ${esc(j.firstSeen)}` : ""}</div>

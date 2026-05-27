@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     'learnblockchain.cn':'登链社区','crypto-careers.com':'Crypto-Careers','nodeflair.com':'NodeFlair','simplify.jobs':'Simplify',
     'weworkremotely.com':'WeWorkRemotely','beincrypto.com':'BeInCrypto'};
   const srcOf=link=>{try{const h=new URL(link).hostname.replace(/^www\./,'');return SRC[h]||(h.includes('.')?h:'—');}catch(e){return '—';}};
-  const logoUrl=j=>{try{const h=new URL(j.link).hostname.replace(/^www\./,'');if(SRC[h]||Object.keys(SRC).some(a=>h.endsWith('.'+a)))return '';return 'https://www.google.com/s2/favicons?sz=64&domain='+encodeURIComponent(h);}catch(e){return '';}};
+  const logoUrl=j=>{const D=window.CNH_DOMAINS||{};let h=D[j.company]||"";if(!h){try{const host=new URL(j.link).hostname.replace(/^www\./,'');if(SRC[host]||Object.keys(SRC).some(a=>host.endsWith('.'+a)))h="";else{const p=host.split('.'),label=(p.length>=2?p[p.length-2]:p[0]),cn=(j.company||"").toLowerCase().replace(/[^a-z0-9]/g,"");h=(cn.length>=3&&label.length>=3&&(cn===label||label.includes(cn)))?host:"";}}catch(e){h="";}}return h?'https://www.google.com/s2/favicons?sz=64&domain='+encodeURIComponent(h):'';};
   const avatarHtml=j=>`<div class="avatar" style="background:${acolor(j.company)}"><span class="ltr">${esc(initial(j.company))}</span>${logoUrl(j)?`<img class="logo-img" src="${logoUrl(j)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
 
   const state={search:"",contactOnly:false,sort:"latest"};
