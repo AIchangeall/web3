@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 79,
+      "added": 98,
       "removed": 0,
-      "note": "按 CoinMarketCap 交易所排名补充头部交易所招聘：新增 Bitfinex / MEXC / HTX / Bitstamp / BingX / Upbit / Bithumb / BitMart / LBank / XT.COM 的在招岗位"
+      "note": "扩展交易所数据范围至 CoinMarketCap 前 100：补种 Gemini / WOO X / Backpack / Binance.US / bitFlyer / Pionex / CoinEx / Bitvavo / BitMEX / Bitso / Luno / Bitkub / Coincheck / AscendEX / Poloniex 等知名交易所岗位"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,467 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Gemini",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Software Engineer, Risk Engineering",
+      "level": "senior",
+      "location": "NYC / 远程 (美国)",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$140K–$200K",
+      "salaryNum": 170000,
+      "requirements": "风控引擎后端；高可靠交易系统；美国合规交易所（Winklevoss 创办）。",
+      "link": "https://www.gemini.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "gemini||senior-software-engineer-risk-engineering",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "product",
+      "category": "exchange",
+      "position": "Lead Product Manager",
+      "level": "senior",
+      "location": "NYC / 远程 (美国)",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$168K–$240K",
+      "salaryNum": 204000,
+      "requirements": "交易所产品负责人；跨研发/设计/合规协作。",
+      "link": "https://www.gemini.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "gemini||lead-product-manager",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Staff Enterprise Infrastructure Engineer",
+      "level": "senior",
+      "location": "远程 (美国)",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "企业级基础设施；K8s/云平台；高可用与可观测性。",
+      "link": "https://www.gemini.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "gemini||staff-enterprise-infrastructure-engineer",
+      "keywords": [
+        "Kubernetes",
+        "可观测性"
+      ],
+      "duties": []
+    },
+    {
+      "company": "WOO X",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Senior Technical Support Engineer",
+      "level": "mid",
+      "location": "远程 (欧洲/亚洲)",
+      "region": [
+        "remote",
+        "eu",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "技术支持；客户问题排查；与研发协作；8 国 12 城远程团队。",
+      "link": "https://woox.io/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "woo-x||senior-technical-support-engineer",
+      "keywords": [],
+      "duties": [
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "WOO X",
+      "func": "ga",
+      "category": "exchange",
+      "position": "People Operations Specialist",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 80000,
+      "requirements": "HR 运营；薪酬/政策合规；全球团队。",
+      "link": "https://woox.io/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "woo-x||people-operations-specialist",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Backpack Exchange",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Mobile Engineer (React Native)",
+      "level": "senior",
+      "location": "远程 (芝加哥/迪拜/东京)",
+      "region": [
+        "remote",
+        "us",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "React Native 移动端；交易所 App；含公司股权。",
+      "link": "https://jobs.backpack.app/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "backpack-exchange||mobile-engineer-react-native",
+      "keywords": [
+        "React"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Backpack Exchange",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Wallet Engineer (React Web)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "钱包前端（React Web）；自托管钱包；多链。",
+      "link": "https://jobs.backpack.app/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "backpack-exchange||wallet-engineer-react-web",
+      "keywords": [
+        "React",
+        "Wallet"
+      ],
+      "duties": [
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Binance.US",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "远程 (美国)",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "美国合规交易所后端；高并发；微服务；详见招聘页。",
+      "link": "https://www.binance.us/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "binance-us||backend-engineer",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "bitFlyer",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "东京, 日本",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "日本头部合规交易所；后端开发；高可用。",
+      "link": "https://web3.career/web3-companies/bitflyer",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitflyer||backend-engineer",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Pionex",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "网格交易/量化交易所后端；策略系统；详见招聘页。",
+      "link": "https://web3.career/web3-companies/pionex",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "pionex||backend-engineer",
+      "keywords": [],
+      "duties": [
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "CoinEx",
+      "func": "ops",
+      "category": "exchange",
+      "position": "DevOps / SRE Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "交易系统运维；K8s；监控告警；全球远程。",
+      "link": "https://web3.career/web3-companies/coinex",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "coinex||devops-sre-engineer",
+      "keywords": [
+        "Kubernetes"
+      ],
+      "duties": [
+        "监控告警"
+      ]
+    },
+    {
+      "company": "Bitvavo",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "阿姆斯特丹, 欧洲",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "欧洲（荷兰）合规交易所后端；高并发；详见招聘页。",
+      "link": "https://bitvavo.com/en/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitvavo||backend-engineer",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "BitMEX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "远程 / 香港",
+      "region": [
+        "remote",
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "衍生品交易所后端；高频撮合；低延迟系统。",
+      "link": "https://www.bitmex.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitmex||backend-engineer",
+      "keywords": [],
+      "duties": [
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "Bitso",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "远程 (拉美)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "拉美头部交易所后端；支付与交易系统；详见招聘页。",
+      "link": "https://bitso.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitso||backend-engineer",
+      "keywords": [],
+      "duties": [
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Luno",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer (Go)",
+      "level": "senior",
+      "location": "远程 / 欧洲",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "交易所后端；Go；新兴市场用户规模大。",
+      "link": "https://www.luno.com/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "luno||backend-engineer-go",
+      "keywords": [
+        "Go"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Bitkub",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "mid",
+      "location": "曼谷, 泰国",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "泰国头部交易所后端；高并发；详见招聘页。",
+      "link": "https://web3.career/web3-companies/bitkub",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitkub||backend-engineer",
+      "keywords": [],
+      "duties": [
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Coincheck",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "东京, 日本",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "日本合规交易所后端；纳斯达克上市集团；详见招聘页。",
+      "link": "https://web3.career/web3-companies/coincheck",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "coincheck||backend-engineer",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "AscendEX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "交易所后端；现货/合约；详见招聘页。",
+      "link": "https://web3.career/web3-companies/ascendex",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ascendex||backend-engineer",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Poloniex",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "老牌交易所后端；多币种交易系统；全球远程。",
+      "link": "https://web3.career/web3-companies/poloniex",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "poloniex||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
     {
       "company": "Bitfinex",
       "func": "eng",
@@ -5266,7 +5727,52 @@ window.WEB3_JOBS_DATA = {
     },
     "XT.COM": {
       "intro": ""
+    },
+    "Gemini": {
+      "intro": ""
+    },
+    "WOO X": {
+      "intro": ""
+    },
+    "Backpack Exchange": {
+      "intro": ""
+    },
+    "Binance.US": {
+      "intro": ""
+    },
+    "bitFlyer": {
+      "intro": ""
+    },
+    "Pionex": {
+      "intro": ""
+    },
+    "CoinEx": {
+      "intro": ""
+    },
+    "Bitvavo": {
+      "intro": ""
+    },
+    "BitMEX": {
+      "intro": ""
+    },
+    "Bitso": {
+      "intro": ""
+    },
+    "Luno": {
+      "intro": ""
+    },
+    "Bitkub": {
+      "intro": ""
+    },
+    "Coincheck": {
+      "intro": ""
+    },
+    "AscendEX": {
+      "intro": ""
+    },
+    "Poloniex": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T05:57:42.066Z"
+  "lastUpdatedAt": "2026-05-27T09:10:22.250Z"
 };
