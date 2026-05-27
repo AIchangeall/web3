@@ -481,6 +481,9 @@
     clearTimeout(toast._t); toast._t=setTimeout(()=>toastEl.classList.remove("on"),1900);
   }
   function shareUrl(id){ return location.origin+location.pathname+"?job="+encodeURIComponent(id); }
+  // 对外分享 / 结构化数据用：指向该岗位的独立静态页（含 JobPosting JSON-LD 与专属 OG 卡片）
+  const safeId = id => (id||"").replace(/\|+/g,"-").replace(/-+/g,"-").replace(/^-+|-+$/g,"");
+  function jobPageUrl(id){ try{ return new URL("jobs/"+safeId(id)+".html", location.href).href; }catch(e){ return location.origin+location.pathname; } }
   function urlNoJob(){ const p=new URLSearchParams(location.search); p.delete("job"); const q=p.toString(); return location.pathname+(q?"?"+q:""); }
   function copyText(text){
     const done=()=>toast(I18N.t("share.copied"));
@@ -489,7 +492,7 @@
   }
   function fbCopy(text,done){ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.focus(); ta.select(); try{ document.execCommand("copy"); done&&done(); }catch(e){} document.body.removeChild(ta); }
   function shareJob(id){
-    const r=byId[id]; if(!r) return; const url=shareUrl(id);
+    const r=byId[id]; if(!r) return; const url=jobPageUrl(id);
     const title=`${r.position} · ${r.company}｜链聘 ChainHire`;
     if(navigator.share){ navigator.share({title,text:title,url}).catch(()=>{}); return; }
     copyText(url);
@@ -541,7 +544,7 @@
     try{ history.replaceState(null,"",urlNoJob()); }catch(e){}
   }
   mask.addEventListener("click",e=>{ if(e.target===mask||e.target.closest("[data-jmclose]")) closeDetail(); });
-  jm.addEventListener("click",e=>{ if(e.target.closest("[data-jmcopy]")) copyText(shareUrl(jm.dataset.id)); });
+  jm.addEventListener("click",e=>{ if(e.target.closest("[data-jmcopy]")) copyText(jobPageUrl(jm.dataset.id)); });
   document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
 
   // JobPosting 结构化数据（供 Google for Jobs 抓取，注入当前筛选结果的前 40 条）
@@ -556,7 +559,7 @@
       "datePosted":r.firstSeen, "employmentType":"FULL_TIME",
       "hiringOrganization":{"@type":"Organization","name":r.company},
       "identifier":{"@type":"PropertyValue","name":r.company,"value":r.id},
-      "url":shareUrl(r.id), "directApply":false,
+      "url":jobPageUrl(r.id), "directApply":false,
       "jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":(r.location||"").replace(/\s*[\/／].*$/,"")||r.company,"addressCountry":countries[0]||"SG"}}
     };
     if(remote){ o.jobLocationType="TELECOMMUTE"; if(countries.length) o.applicantLocationRequirements=countries.map(c=>({"@type":"Country","name":c})); }

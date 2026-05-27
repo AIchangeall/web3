@@ -17,6 +17,9 @@ cp index.html stats.html companies.html headhunter.html \
    robots.txt sitemap.xml \
    dist/
 
+# 每岗位静态页（供 Google for Jobs / 社交分享落地）
+[ -d jobs ] && cp -r jobs dist/ || true
+
 # 图片资源（若存在）：二维码 / OG 分享封面 / favicon
 [ -f assets/wechat-qr.png ] && cp assets/wechat-qr.png dist/assets/ || true
 [ -f assets/wxskm.jpg ] && cp assets/wxskm.jpg dist/assets/ || true

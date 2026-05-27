@@ -17,6 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractKeywords, extractDuties } from "./keywords.mjs";
+import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "data.js");
@@ -100,4 +101,7 @@ const headerEnd = raw.indexOf("window.WEB3_JOBS_DATA");
 const header = headerEnd > 0 ? raw.slice(0, headerEnd) : "";
 fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
 
-console.log(`✅ 更新完成 @ ${today}  新增 ${added} | 刷新 ${refreshed} | 岗位总数 ${D.jobs.length}`);
+// 同步重建每岗位静态页（jobs/<id>.html，含 JobPosting 结构化数据）与 sitemap.xml
+const pages = genJobPages(D);
+
+console.log(`✅ 更新完成 @ ${today}  新增 ${added} | 刷新 ${refreshed} | 岗位总数 ${D.jobs.length} | 静态页 ${pages}`);
