@@ -34,6 +34,10 @@ const PALETTE = ["#6d5efc", "#0ea5e9", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6
 const acolor = n => { let h = 0; for (const c of (n || "")) h = (h * 31 + c.charCodeAt(0)) >>> 0; return PALETTE[h % PALETTE.length]; };
 const initial = n => ((n || "?").trim()[0] || "?").toUpperCase();
 
+const STALE_DAYS = 30;        // lastSeen 早于此天数 → 视为可能已截止
+const VALID_DAYS = 45;        // JobPosting validThrough = lastSeen + 此天数（供 Google 自动过期）
+const addDays = (dateStr, n) => { const d = new Date((dateStr || "") + "T00:00:00Z"); if (isNaN(d)) return undefined; d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+
 const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").replace(/(^-|-$)/g, "");
 const keyOf = j => slug(j.company) + "||" + slug(j.position);
 const safeId = id => (id || "").replace(/\|+/g, "-").replace(/-+/g, "-").replace(/(^-|-$)/g, "");
@@ -47,6 +51,7 @@ function jobLd(j, url) {
     "title": j.position,
     "description": (j.requirements || j.position || ""),
     "datePosted": j.firstSeen,
+    "validThrough": j.linkDead ? (j.linkCheckedAt ? j.linkCheckedAt.slice(0, 10) : j.firstSeen) : addDays(j.lastSeen || j.firstSeen, VALID_DAYS),
     "employmentType": "FULL_TIME",
     "hiringOrganization": { "@type": "Organization", "name": j.company },
     "identifier": { "@type": "PropertyValue", "name": j.company, "value": j.id || keyOf(j) },
@@ -71,7 +76,11 @@ function pageHtml(j) {
   const duties = (j.duties || []).map(d => `<span class="tag">${esc(d)}</span>`).join("");
   const contact = (j.contact || j.contactInfo)
     ? `<div class="sec"><h2>联系人 / 联系方式</h2><p class="req">${esc([j.contact, j.contactInfo].filter(Boolean).join("  ·  "))}</p></div>` : "";
-  const applyBtn = j.link ? `<a class="btn primary" href="${esc(j.link)}" target="_blank" rel="noopener">查看 / 投递原始职位 →</a>` : "";
+  const dead = !!j.linkDead;
+  const deadBanner = dead ? `<div class="banner">⚠️ 该岗位的原始招聘页经探测可能已下线或失效，信息仅供参考；建议通过下方按钮查看该公司其它在招职位或前往其官网核实。</div>` : "";
+  const applyBtn = (j.link && !dead)
+    ? `<a class="btn primary" href="${esc(j.link)}" target="_blank" rel="noopener">查看 / 投递原始职位 →</a>`
+    : (dead ? `<span class="btn primary dis">⚠️ 原招聘页可能已下线</span>` : "");
   const ld = JSON.stringify(jobLd(j, url));
   return `<!doctype html>
 <html lang="zh-CN">
@@ -123,6 +132,8 @@ function pageHtml(j) {
   .btn{display:inline-block;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13.5px;padding:11px 18px;border-radius:11px}
   .btn:hover{border-color:var(--accent);color:var(--accent)}
   .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary.dis,.btn.primary.dis:hover{background:#fdf2e0;color:#b45309;border-color:#f6e0bd;cursor:default}
+  .banner{margin:16px 0 0;background:#fdf2e0;border:1px solid #f6e0bd;color:#b45309;border-radius:11px;padding:11px 14px;font-size:13px;font-weight:600;line-height:1.5}
   .disc{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:#9aa1b1}
   .disc a{color:var(--accent);font-weight:600}
   @media(max-width:560px){.card{padding:20px}h1{font-size:20px}}
@@ -142,6 +153,7 @@ function pageHtml(j) {
         <div class="co"><b>${esc(j.company)}</b> · ${esc(CAT[j.category] || j.category || "")}${j.firstSeen ? ` · 上架 ${esc(j.firstSeen)}` : ""}</div>
       </div>
     </div>
+    ${deadBanner}
     <div class="salary ${negSalary ? "neg" : ""}">${esc(salary)}</div>
     <div class="tags">${tags}</div>
     <div class="sec"><h2>职位要求 / 描述</h2><p class="req">${esc(j.requirements || "")}</p></div>

@@ -74,6 +74,11 @@
     "detail.apply":    ["查看 / 投递原始职位 →", "View / apply on source →"],
     "detail.nolink":   ["该岗位暂无直接投递链接，可在企业库或公司官网检索", "No direct apply link — search the company site or our directory"],
     "detail.close":    ["关闭", "Close"],
+    "badge.stale":     ["⏳ 可能已截止", "⏳ May be closed"],
+    "badge.dead":      ["⚠️ 原页面已下线", "⚠️ Link offline"],
+    "flt.hidestale":   ["仅看近期在招", "Recent & open only"],
+    "detail.stale":    ["该信息较旧（30 天以上未再出现于来源渠道），可能已截止，请以原招聘页为准。", "This posting is 30+ days old and may be closed — please verify on the source page."],
+    "detail.dead":     ["原始招聘页经探测可能已下线或失效，信息仅供参考，建议前往公司官网核实。", "The original posting appears offline; treat as reference only and verify on the company site."],
 
     // stats 数据洞察
     "st.h1":           ["数据洞察 · Web3 招聘市场", "Insights · Web3 Hiring Market"],

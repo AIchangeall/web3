@@ -151,6 +151,11 @@
 
 <div class="note" id="note"></div>
 
+<style>
+  .hh-stale{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+  .hh-dead{display:inline-block;background:#f1f2f6;color:#64748b;border:1px solid #e2e5ec;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+</style>
+
 <script src="i18n.js"></script>
 <script src="widgets.js"></script>
 <script src="data.js"></script>
@@ -160,6 +165,8 @@
   if(!DATA||!Array.isArray(DATA.jobs)){document.getElementById("load-error").style.display="block";return;}
   const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", lastUpdatedAt=DATA.lastUpdatedAt||"";
   const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
+  const STALE_DAYS=30;
+  const isStale=d=>{if(!d.lastSeen)return false;const t=Date.parse(d.lastSeen+"T00:00:00Z");return isFinite(t)&&(Date.now()-t)/86400000>STALE_DAYS;};
   const pad2=n=>String(n).padStart(2,"0");
   const fmtDT=iso=>{const d=new Date(iso);if(isNaN(d.getTime()))return iso||lastUpdated;return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;};
   const updDisplay=lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated;
@@ -206,14 +213,17 @@
     document.getElementById("tbody").innerHTML=r.map(j=>{
       const neg=!j.salary||/面议/.test(j.salary);
       const src=srcOf(j.link);
+      const stale=isStale(j), dead=!!j.linkDead;
       const contactCell=j.contact?`<span class="contact">${esc(j.contact)}</span>`:`<span class="contact none">—</span>`;
       let cinfo;
-      if(j.contactInfo){ cinfo=isEmail(j.contactInfo)?`<a href="mailto:${esc(j.contactInfo)}">${esc(j.contactInfo)}</a>`:`<span>${esc(j.contactInfo)}</span>`; cinfo+=` · <a class="apply" href="${j.link}" target="_blank" rel="noopener">${I18N.t('hh.origin')}</a>`; }
+      if(dead){ cinfo=(j.contactInfo?((isEmail(j.contactInfo)?`<a href="mailto:${esc(j.contactInfo)}">${esc(j.contactInfo)}</a>`:`<span>${esc(j.contactInfo)}</span>`)+' · '):'')+`<span class="hh-dead">${I18N.t('badge.dead')}</span>`; }
+      else if(j.contactInfo){ cinfo=isEmail(j.contactInfo)?`<a href="mailto:${esc(j.contactInfo)}">${esc(j.contactInfo)}</a>`:`<span>${esc(j.contactInfo)}</span>`; cinfo+=` · <a class="apply" href="${j.link}" target="_blank" rel="noopener">${I18N.t('hh.origin')}</a>`; }
       else { cinfo=`<a class="apply" href="${j.link}" target="_blank" rel="noopener">${I18N.t('hh.apply')}</a>`; }
-      return `<tr class="${isNew(j)?'is-new':''}">
+      const badges=(isNew(j)?'<span class="new">NEW</span>':'')+(stale?`<span class="hh-stale">${I18N.t('badge.stale')}</span>`:'')+(dead?`<span class="hh-dead">${I18N.t('badge.dead')}</span>`:'');
+      return `<tr class="${isNew(j)?'is-new':''}"${dead?' style="opacity:.66"':''}>
         <td><div class="co"><div class="avatar" style="background:${acolor(j.company)}">${esc(initial(j.company))}</div>
           <div><div class="co-name">${esc(j.company)}</div><div class="co-cat">${catLabels[j.category]||j.category}</div></div></div></td>
-        <td><div class="pos">${esc(j.position)}${isNew(j)?'<span class="new">NEW</span>':''}</div>
+        <td><div class="pos">${esc(j.position)}${badges}</div>
           <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div></td>
         <td class="kwcell">
           ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,6).map(k=>`<span class="kw">${esc(I18N.kw(k))}</span>`).join("")}</div>`:""}

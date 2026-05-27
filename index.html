@@ -127,6 +127,12 @@
   .job-main{flex:1;min-width:0}
   .job-title{font-size:16px;font-weight:700;margin:0;display:inline}
   .new{display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle;letter-spacing:.03em}
+  .badge-stale{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle}
+  .badge-dead{display:inline-block;background:#f1f2f6;color:#64748b;border:1px solid #e2e5ec;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle}
+  .job.is-dead{opacity:.72}
+  .jm-note{margin:0 0 14px;border-radius:11px;padding:11px 14px;font-size:13px;font-weight:600;line-height:1.5}
+  .jm-note.stale{background:#fdf2e0;border:1px solid #f6e0bd;color:#b45309}
+  .jm-note.dead{background:#f1f2f6;border:1px solid #e2e5ec;color:#475569}
   .job-company{margin-top:4px;font-size:13px;color:var(--muted)}
   .job-company b{color:#374151;font-weight:600}
   .job-company .sep{margin:0 7px;color:#cbd0db}
@@ -255,7 +261,10 @@
 <div class="wrap">
   <aside class="side">
     <div class="side-h"><span data-i18n="flt.title">筛选</span> <button id="reset" data-i18n="flt.reset">重置</button></div>
-    <div class="fgroup"><label class="toggle" id="t-new"><span class="sw"></span><span data-i18n="flt.newonly">仅看今日新增</span></label></div>
+    <div class="fgroup">
+      <label class="toggle" id="t-new"><span class="sw"></span><span data-i18n="flt.newonly">仅看今日新增</span></label>
+      <label class="toggle" id="t-fresh" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.hidestale">仅看近期在招</span></label>
+    </div>
     <div class="fgroup"><div class="t" data-i18n="flt.func">职能</div><div class="chips" id="g-func"></div></div>
     <div class="fgroup"><div class="t" data-i18n="flt.cat">公司类型</div><div class="chips" id="g-cat"></div></div>
     <div class="fgroup"><div class="t" data-i18n="flt.lvl">级别</div><div class="chips" id="g-lvl"></div></div>
@@ -315,6 +324,11 @@
   const updFresh = lastUpdatedAt ? ((Date.now() - new Date(lastUpdatedAt).getTime()) / 36e5 <= 6) : false;
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
 
+  // 过期判定：lastSeen 早于 STALE_DAYS 天 → 可能已截止；linkDead 由探活脚本写入
+  const STALE_DAYS = 30;
+  const isStale = d => { if(!d.lastSeen) return false; const t=Date.parse(d.lastSeen+"T00:00:00Z"); return isFinite(t) && (Date.now()-t)/86400000 > STALE_DAYS; };
+  const addDays = (s,n) => { const d=new Date((s||"")+"T00:00:00Z"); if(isNaN(d)) return undefined; d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); };
+
   // 稳定 id（深链 / 详情用）；data.js 多数已带 id，缺失者按 company||position 规则补全
   const slug = s => (s||"").toLowerCase().replace(/[^a-z0-9一-龥]+/g,"-").replace(/^-+|-+$/g,"");
   const byId = {};
@@ -325,7 +339,7 @@
   buildLabels();
 
   const PAGE=18;
-  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,search:"",sort:"latest",limit:PAGE};
+  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,hideStale:false,search:"",sort:"latest",limit:PAGE};
 
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -353,6 +367,8 @@
 
   const tnew=document.getElementById("t-new");
   tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
+  const tfresh=document.getElementById("t-fresh");
+  tfresh.onclick=()=>{ state.hideStale=!state.hideStale; tfresh.classList.toggle("on"); state.limit=PAGE; render(); };
   const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
   document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
   document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
@@ -360,9 +376,9 @@
   document.getElementById("more").onclick=()=>{ state.limit+=PAGE; render(); };
   document.getElementById("reset").onclick=()=>{
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
-    state.newOnly=false;state.search="";state.limit=PAGE;
+    state.newOnly=false;state.hideStale=false;state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
-    tnew.classList.remove("on"); document.getElementById("search").value="";
+    tnew.classList.remove("on"); tfresh.classList.remove("on"); document.getElementById("search").value="";
     document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
   // 列表区点击委托：关键字筛选 / 打开详情 / 分享
@@ -391,6 +407,7 @@
 
   function match(r){
     if(state.newOnly && !isNew(r)) return false;
+    if(state.hideStale && isStale(r)) return false;
     if(state.funcs.size && !state.funcs.has(r.func)) return false;
     if(state.cats.size && !state.cats.has(r.category)) return false;
     if(state.lvls.size && !state.lvls.has(r.level)) return false;
@@ -400,24 +417,30 @@
   }
   function sortRows(rows){
     const s=state.sort;
-    if(s==="salary_desc") return rows.sort((a,b)=>(b.salaryNum||0)-(a.salaryNum||0));
-    if(s==="salary_asc")  return rows.sort((a,b)=>(a.salaryNum||0)-(b.salaryNum||0));
-    if(s==="company")     return rows.sort((a,b)=>a.company.localeCompare(b.company,"en"));
-    if(s==="recommended") return rows.sort((a,b)=>(isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
-    // latest（默认）：按上架日期倒序，今日新增最前，薪资为次级
-    return rows.sort((a,b)=>(b.firstSeen||"").localeCompare(a.firstSeen||"") || (isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
+    // 可能已截止 / 已下线的岗位统一沉到对应排序的后面（次级仍按各自规则）
+    const demote=r=>(isStale(r)||r.linkDead)?1:0;
+    if(s==="salary_desc") return rows.sort((a,b)=>demote(a)-demote(b) || (b.salaryNum||0)-(a.salaryNum||0));
+    if(s==="salary_asc")  return rows.sort((a,b)=>demote(a)-demote(b) || (a.salaryNum||0)-(b.salaryNum||0));
+    if(s==="company")     return rows.sort((a,b)=>demote(a)-demote(b) || a.company.localeCompare(b.company,"en"));
+    if(s==="recommended") return rows.sort((a,b)=>demote(a)-demote(b) || (isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
+    // latest（默认）：未过期优先，再按上架日期倒序，今日新增最前，薪资为次级
+    return rows.sort((a,b)=>demote(a)-demote(b) || (b.firstSeen||"").localeCompare(a.firstSeen||"") || (isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
   }
 
   function card(r){
     const remote=(r.region||[]).includes("remote");
     const negSalary=!r.salary || /面议/.test(r.salary);
-    const applyHtml = r.link
+    const stale=isStale(r), dead=!!r.linkDead;
+    const applyHtml = (r.link && !dead)
       ? `<a class="apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>`
       : `<button class="sharebtn" data-detail type="button">${I18N.t('card.detail')}</button>`;
-    return `<article class="job" data-id="${esc(r.id)}">
+    const badges = (isNew(r)?'<span class="new">NEW</span>':'')
+      + (stale?`<span class="badge-stale">${I18N.t('badge.stale')}</span>`:'')
+      + (dead?`<span class="badge-dead">${I18N.t('badge.dead')}</span>`:'');
+    return `<article class="job${dead?' is-dead':''}" data-id="${esc(r.id)}">
       <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
       <div class="job-main">
-        <h3 class="job-title" data-detail title="${esc(r.position)}">${esc(r.position)}</h3>${isNew(r)?'<span class="new">NEW</span>':''}
+        <h3 class="job-title" data-detail title="${esc(r.position)}">${esc(r.position)}</h3>${badges}
         <div class="job-company"><b>${esc(r.company)}</b><span class="sep">·</span>${catLabels[r.category]||r.category}</div>
         <div class="tags">
           <span class="tag f-${r.func||'ga'}">${funcLabels[r.func]||'其他'}</span>
@@ -509,9 +532,14 @@
     const kws=(r.keywords&&r.keywords.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.kw')}</div><div class="kws">${r.keywords.map(k=>`<span class="kw" style="cursor:default">${esc(I18N.kw(k))}</span>`).join("")}</div></div>`:"";
     const duties=(r.duties&&r.duties.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.duty')}</div><div class="tags">${r.duties.map(d=>`<span class="tag">${esc(I18N.duty(d))}</span>`).join("")}</div></div>`:"";
     const cinfo=(r.contact||r.contactInfo)?`<div class="jm-sec"><div class="t">${I18N.t('detail.contact')} / ${I18N.t('detail.cinfo')}</div><div class="jm-req">${esc([r.contact,r.contactInfo].filter(Boolean).join("  ·  "))}</div></div>`:"";
-    const applyHtml=r.link
-      ? `<a class="jm-apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('detail.apply')}</a>`
-      : `<span class="jm-apply dis">${I18N.t('detail.nolink')}</span>`;
+    const stale=isStale(r), dead=!!r.linkDead;
+    const notice = dead ? `<div class="jm-note dead">${I18N.t('detail.dead')}</div>`
+                 : (stale ? `<div class="jm-note stale">${I18N.t('detail.stale')}</div>` : "");
+    const applyHtml = dead
+      ? `<span class="jm-apply dis">${I18N.t('badge.dead')}</span>`
+      : (r.link
+          ? `<a class="jm-apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('detail.apply')}</a>`
+          : `<span class="jm-apply dis">${I18N.t('detail.nolink')}</span>`);
     return `
       <button class="jm-x" data-jmclose type="button" aria-label="close">×</button>
       <div class="jm-h">
@@ -522,6 +550,7 @@
         </div>
       </div>
       <div class="jm-b">
+        ${notice}
         <div class="jm-sec"><div class="jm-sal ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div></div>
         <div class="jm-sec"><div class="tags">${tags}</div></div>
         <div class="jm-sec"><div class="t">${I18N.t('detail.req')}</div><div class="jm-req">${esc(r.requirements||'')}</div></div>
@@ -556,7 +585,9 @@
     const o={
       "@context":"https://schema.org/","@type":"JobPosting",
       "title":r.position, "description":(r.requirements||r.position||"").slice(0,1500),
-      "datePosted":r.firstSeen, "employmentType":"FULL_TIME",
+      "datePosted":r.firstSeen,
+      "validThrough": r.linkDead ? (r.linkCheckedAt?String(r.linkCheckedAt).slice(0,10):r.firstSeen) : addDays(r.lastSeen||r.firstSeen,45),
+      "employmentType":"FULL_TIME",
       "hiringOrganization":{"@type":"Organization","name":r.company},
       "identifier":{"@type":"PropertyValue","name":r.company,"value":r.id},
       "url":jobPageUrl(r.id), "directApply":false,
