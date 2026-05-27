@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 58,
+      "added": 79,
       "removed": 0,
-      "note": "当日累计新增 58 个岗位。"
+      "note": "按 CoinMarketCap 交易所排名补充头部交易所招聘：新增 Bitfinex / MEXC / HTX / Bitstamp / BingX / Upbit / Bithumb / BitMart / LBank / XT.COM 的在招岗位"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,504 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Bitfinex",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Node.js Backend Developer",
+      "level": "senior",
+      "location": "100% 远程 (全球)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Node.js 后端开发；高并发交易系统；分布式架构；全球远程。",
+      "link": "https://careers.bitfinex.com/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitfinex||senior-node-js-backend-developer",
+      "keywords": [
+        "Node.js",
+        "Validator/节点"
+      ],
+      "duties": [
+        "架构设计",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Bitfinex",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Mobile Developer - React Native",
+      "level": "mid",
+      "location": "100% 远程 (全球)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "React Native 移动端开发；交易所 App；全球远程。",
+      "link": "https://careers.bitfinex.com/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitfinex||mobile-developer-react-native",
+      "keywords": [
+        "React"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Bitfinex",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Content Marketing Manager",
+      "level": "mid",
+      "location": "远程 (CET 时区)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "内容营销；加密行业内容策略；CET 时区；远程。",
+      "link": "https://careers.bitfinex.com/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitfinex||content-marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitfinex",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Junior Risk Monitoring Analyst",
+      "level": "mid",
+      "location": "远程 (CET 时区)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 80000,
+      "requirements": "风险监控与分析；交易风控；合规；CET 时区。",
+      "link": "https://careers.bitfinex.com/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitfinex||junior-risk-monitoring-analyst",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "MEXC",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "交易所后端；高并发撮合；微服务；全员远程文化。",
+      "link": "https://cryptojobslist.com/companies/mexc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "mexc||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "MEXC",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Marketing Manager",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 95000,
+      "requirements": "市场营销与增长；多市场拓展；全球远程。",
+      "link": "https://cryptojobslist.com/companies/mexc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "mexc||marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "HTX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "交易系统后端；高可用；服务 130+ 国家用户。",
+      "link": "https://crypto.jobs/companies/htx",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "htx||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "Bitstamp by Robinhood",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Counsel (Legal)",
+      "level": "senior",
+      "location": "远程 (EU)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "加密法务；证券/支付监管；合规；老牌合规交易所（Robinhood 旗下）。",
+      "link": "https://apply.workable.com/bitstamp/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitstamp-by-robinhood||senior-counsel-legal",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitstamp by Robinhood",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Risk Governance Senior Specialist",
+      "level": "senior",
+      "location": "远程 (EU)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "风险治理；合规风控体系；监管报告。",
+      "link": "https://apply.workable.com/bitstamp/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitstamp-by-robinhood||risk-governance-senior-specialist",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitstamp by Robinhood",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Corporate Accountant",
+      "level": "mid",
+      "location": "远程 (EU)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "公司财务会计；账务核算；报表。",
+      "link": "https://apply.workable.com/bitstamp/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitstamp-by-robinhood||corporate-accountant",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "BingX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Blockchain Developer (BTC/ETH)",
+      "level": "senior",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "比特币/以太坊开发；钱包与链上集成；新加坡 HQ。",
+      "link": "https://careers.bingx.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bingx||blockchain-developer-btc-eth",
+      "keywords": [
+        "Wallet",
+        "Ethereum",
+        "Bitcoin"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "BingX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "交易所产品；社交交易方向；新加坡/远程。",
+      "link": "https://careers.bingx.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bingx||product-manager",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BingX",
+      "func": "design",
+      "category": "exchange",
+      "position": "UI/UX Designer",
+      "level": "mid",
+      "location": "新加坡 / 远程",
+      "region": [
+        "sg",
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "UI/UX 设计；移动端交易体验。",
+      "link": "https://careers.bingx.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bingx||ui-ux-designer",
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "BingX",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Community Manager",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 75000,
+      "requirements": "社区运营；社媒；多语言社区增长。",
+      "link": "https://careers.bingx.com/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bingx||community-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Upbit (Dunamu)",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Director of Marketing and Growth",
+      "level": "head",
+      "location": "美国 (Salt Lake City)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "市场与增长总监；带团队；海外扩张；韩国最大交易所母公司 Dunamu。",
+      "link": "https://www.dunamu.com/en",
+      "contact": "Dunamu HR",
+      "contactInfo": "jobs@dunamu.com",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "upbit-dunamu||director-of-marketing-and-growth",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Upbit (Dunamu)",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Director of Strategic Planning",
+      "level": "head",
+      "location": "美国",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "战略规划总监；业务战略；合规与扩张。",
+      "link": "https://www.dunamu.com/en",
+      "contact": "Dunamu HR",
+      "contactInfo": "jobs@dunamu.com",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "upbit-dunamu||director-of-strategic-planning",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Upbit (Dunamu)",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer (백오피스 플랫폼)",
+      "level": "senior",
+      "location": "首尔, 韩国",
+      "region": [
+        "asia"
+      ],
+      "salary": "约 ₩150M+ (Dunamu 公开均薪)",
+      "salaryNum": 115000,
+      "requirements": "后台平台后端开发；Java/Kotlin/JVM；高并发金融系统。",
+      "link": "https://www.dunamu.com/en",
+      "contact": "Dunamu HR",
+      "contactInfo": "jobs@dunamu.com",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "upbit-dunamu||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "Bithumb",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "首尔, 韩国",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "交易所后端；高并发；韩国头部交易所。",
+      "link": "https://cryptojobslist.com/companies/bithumb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bithumb||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "BitMart",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "交易所后端开发；高并发；全球远程。",
+      "link": "https://web3.career/web3-companies/bitmart",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitmart||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "LBank",
+      "func": "ops",
+      "category": "exchange",
+      "position": "DevOps / SRE Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "交易系统运维；K8s；监控告警；全球远程。",
+      "link": "https://web3.career/web3-companies/lbank",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "lbank||devops-sre-engineer",
+      "keywords": [
+        "Kubernetes"
+      ],
+      "duties": [
+        "监控告警"
+      ]
+    },
+    {
+      "company": "XT.COM",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Backend Engineer",
+      "level": "mid",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "交易所后端开发；微服务；全球远程。",
+      "link": "https://web3.career/web3-companies/xt-com",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "xt-com||backend-engineer",
+      "keywords": [],
+      "duties": []
+    },
     {
       "company": "MoonPay",
       "func": "eng",
@@ -4738,7 +5236,37 @@ window.WEB3_JOBS_DATA = {
     },
     "Wormhole Foundation": {
       "intro": ""
+    },
+    "Bitfinex": {
+      "intro": ""
+    },
+    "MEXC": {
+      "intro": ""
+    },
+    "HTX": {
+      "intro": ""
+    },
+    "Bitstamp by Robinhood": {
+      "intro": ""
+    },
+    "BingX": {
+      "intro": ""
+    },
+    "Upbit (Dunamu)": {
+      "intro": ""
+    },
+    "Bithumb": {
+      "intro": ""
+    },
+    "BitMart": {
+      "intro": ""
+    },
+    "LBank": {
+      "intro": ""
+    },
+    "XT.COM": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T05:09:07.582Z"
+  "lastUpdatedAt": "2026-05-27T05:57:42.066Z"
 };
