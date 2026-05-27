@@ -46,7 +46,9 @@
 
   .tablecard{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
   .scroll{overflow-x:auto}
-  table{width:100%;border-collapse:collapse;font-size:13px;min-width:980px}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:1140px}
+  .kwcell{min-width:200px;max-width:250px}
+  .kwnone{color:#b0b6c3}
   thead th{text-align:left;background:#f7f8fb;color:#475569;font-weight:700;font-size:12px;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
   tbody td{padding:12px 14px;border-bottom:1px solid #f1f2f6;vertical-align:top}
   tbody tr:hover{background:#fbfbfe}
@@ -112,7 +114,7 @@
       <table>
         <thead>
           <tr>
-            <th>招聘公司</th><th>岗位信息</th><th>薪资</th><th>来源渠道</th>
+            <th>招聘公司</th><th>岗位信息</th><th>关键词</th><th>薪资</th><th>来源渠道</th>
             <th>联系人</th><th>联系方式 / 投递</th><th>最新发布</th>
           </tr>
         </thead>
@@ -186,9 +188,11 @@
         <td><div class="co"><div class="avatar" style="background:${acolor(j.company)}">${esc(initial(j.company))}</div>
           <div><div class="co-name">${esc(j.company)}</div><div class="co-cat">${catLabels[j.category]||j.category}</div></div></div></td>
         <td><div class="pos">${esc(j.position)}${isNew(j)?'<span class="new">NEW</span>':''}</div>
-          <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div>
-          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,5).map(k=>`<span class="kw">${esc(k)}</span>`).join("")}</div>`:""}
-          ${(j.duties&&j.duties.length)?`<div class="ptags"><span class="dlabel">职责</span>${j.duties.slice(0,5).map(k=>`<span class="duty">${esc(k)}</span>`).join("")}</div>`:""}</td>
+          <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div></td>
+        <td class="kwcell">
+          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,6).map(k=>`<span class="kw">${esc(k)}</span>`).join("")}</div>`:""}
+          ${(j.duties&&j.duties.length)?`<div class="ptags" style="margin-top:5px"><span class="dlabel">职责</span>${j.duties.slice(0,6).map(k=>`<span class="duty">${esc(k)}</span>`).join("")}</div>`:""}
+          ${(!(j.keywords&&j.keywords.length)&&!(j.duties&&j.duties.length))?'<span class="kwnone">—</span>':""}</td>
         <td><span class="salary ${neg?'neg':''}">${esc(j.salary||'面议')}</span></td>
         <td><span class="srctag">${esc(src)}</span></td>
         <td>${contactCell}</td>
