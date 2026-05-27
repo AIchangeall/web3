@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 167,
+      "added": 189,
       "removed": 0,
-      "note": "新增 Hyperliquid/dYdX/CEX.IO/Biconomy/THORChain/Certora等覆盖"
+      "note": "当日累计新增 189 个岗位。"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,594 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "ENS Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Smart Contract Engineer",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "深度 Solidity 与 EVM 开发经验；ENS 协议扩展与升级；安全审计意识；参与过主网合约开发。",
+      "link": "https://jobs.ashbyhq.com/ens-labs/429c9a0d-67b0-4ea0-b88f-0adffa090241",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ens-labs||smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "安全审计"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "ENS Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Integrations Engineer (Web3)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "Web3 集成经验；熟悉 ENS/域名解析协议；能与第三方协议（钱包、dApp）对接；JavaScript/TypeScript。",
+      "link": "https://jobs.ashbyhq.com/ens-labs/9c93564c-4e3a-4635-be6c-f9dc6cd70b26",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ens-labs||integrations-engineer-web3",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "ENS Labs",
+      "func": "product",
+      "category": "chain",
+      "position": "Product Manager (APAC Time Zones)",
+      "level": "mid",
+      "location": "远程（亚太时区）",
+      "region": [
+        "remote",
+        "asia",
+        "sg",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "3年以上 Web3/区块链产品经验；APAC 时区；能独立驱动产品路线图；熟悉 DNS/命名协议加分。",
+      "link": "https://jobs.ashbyhq.com/ens-labs/dd7200c9-c29c-44b4-81d3-165bdda73414",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ens-labs||product-manager-apac-time-zones",
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "ENS Labs",
+      "func": "design",
+      "category": "chain",
+      "position": "Designer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "产品设计/UI/UX；具备 Web3/DeFi 产品设计经验；Figma 熟练；理解区块链用户心理模型。",
+      "link": "https://jobs.ashbyhq.com/ens-labs/30da0143-cff0-4e77-97b4-754b0a82ea25",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ens-labs||designer",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "ENS Labs",
+      "func": "ops",
+      "category": "chain",
+      "position": "DevOps Engineer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "Kubernetes / Terraform / AWS；链上节点运维；CI/CD 自动化；区块链基础设施高可用维护。",
+      "link": "https://jobs.ashbyhq.com/ens-labs/833215e7-8f5a-432d-9229-45c85c7f1fc2",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ens-labs||devops-engineer",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "CI/CD"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Lightspark",
+      "func": "eng",
+      "category": "infra",
+      "position": "Staff Backend Engineer, Spark",
+      "level": "senior",
+      "location": "美国 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 210000,
+      "requirements": "Staff 级后端研发；分布式支付系统；Lightning Network / Bitcoin 协议；高吞吐量低延迟架构。",
+      "link": "https://jobs.ashbyhq.com/lightspark/a97c84ff-80f0-4006-8bc8-a4a21139c382",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "lightspark||staff-backend-engineer-spark",
+      "keywords": [
+        "Bitcoin",
+        "Spark"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Lightspark",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Fullstack Engineer, Connect",
+      "level": "senior",
+      "location": "美国 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "全栈（React + 后端服务）；Bitcoin/Lightning 支付集成；API 平台构建；5年以上工程经验。",
+      "link": "https://jobs.ashbyhq.com/lightspark/290b0276-47a4-4277-b349-22fb1225b42b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "lightspark||senior-fullstack-engineer-connect",
+      "keywords": [
+        "React",
+        "Bitcoin"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Lightspark",
+      "func": "security",
+      "category": "infra",
+      "position": "Senior Crypto Security Engineer",
+      "level": "senior",
+      "location": "美国 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 210000,
+      "requirements": "区块链协议安全+基础设施安全+应用安全三向覆盖；Lightning Network 密钥管理；渗透测试；密码学。",
+      "link": "https://jobs.ashbyhq.com/lightspark/fb02d6c1-aa2a-4aa7-bee5-2ef0d49ead9f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "lightspark||senior-crypto-security-engineer",
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Lightspark",
+      "func": "security",
+      "category": "infra",
+      "position": "Senior Security Engineer",
+      "level": "senior",
+      "location": "美国 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "安全架构与框架建设；安全审计与事件响应；检测与防御体系；5年以上安全工程经验。",
+      "link": "https://jobs.ashbyhq.com/lightspark/fdc6f89b-d970-466b-a106-7c2253d77388",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "lightspark||senior-security-engineer",
+      "keywords": [
+        "安全审计"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Product Engineer",
+      "level": "senior",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "产品导向型全栈工程师；React + TypeScript + 后端服务；链上预测市场产品开发；5年以上经验。",
+      "link": "https://jobs.ashbyhq.com/polymarket/84d100c2-bb38-470a-bb7e-400730f11214",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "polymarket||senior-product-engineer",
+      "keywords": [
+        "TypeScript",
+        "React"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Software Engineer, Markets",
+      "level": "mid",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "全栈工程师；DeFi/链上市场合约开发；Polygon / EVM；与智能合约团队紧密协作。",
+      "link": "https://jobs.ashbyhq.com/polymarket/e353d1bc-9b67-476f-846c-961e1db8c49b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "polymarket||software-engineer-markets",
+      "keywords": [
+        "Smart Contract",
+        "EVM",
+        "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "design",
+      "category": "defi",
+      "position": "Design Engineer",
+      "level": "mid",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 155000,
+      "requirements": "前端 + 设计双修；React / CSS-in-JS；极致用户体验；对 DeFi 产品有强烈审美直觉。",
+      "link": "https://jobs.ashbyhq.com/polymarket/05c897c8-dc57-4332-a730-cf6f4b911b8f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "polymarket||design-engineer",
+      "keywords": [
+        "React",
+        "DeFi"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Ellipsis Labs",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Smart Contract Engineer (EVM)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "Solidity 高级开发；EVM 低级优化；Solana 经验加分；构建链上 DEX/AMM 的丰富实战。",
+      "link": "https://jobs.ashbyhq.com/ellipsislabs/f5200c58-cada-4e8b-b398-67175ec4bd6b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "ellipsis-labs||senior-smart-contract-engineer-evm",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "Solana"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Senior Software Engineer, Reliability",
+      "level": "senior",
+      "location": "美国（门洛帕克/纽约）",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "SRE / 可靠性工程；大规模分布式系统；加密资产与经纪业务系统高可用；Go/Python；Kubernetes。",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/6567560",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "robinhood||senior-software-engineer-reliability",
+      "keywords": [
+        "Go",
+        "Python",
+        "Kubernetes"
+      ],
+      "duties": [
+        "稳定性保障"
+      ]
+    },
+    {
+      "company": "Gate.io",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Growth Operations Manager, Gate Web3 Wallet",
+      "level": "mid",
+      "location": "远程 / 亚太",
+      "region": [
+        "remote",
+        "asia",
+        "hk",
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Web3 Wallet 用户增长策略；DeFi/NFT 生态整合；3年以上增长运营经验；熟悉链上数据分析。",
+      "link": "https://jobs.lever.co/gate/1abdec93-a15f-4878-b5f7-3c49a62d5f8e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "gate-io||growth-operations-manager-gate-web3-wallet",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Legal Counsel, DeFi/Web3",
+      "level": "mid",
+      "location": "新加坡 / 香港",
+      "region": [
+        "sg",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "4年以上加密/金融法律经验；DeFi 协议法律尽职调查；监管合规咨询；英语流利；律师执照。",
+      "link": "https://boards.greenhouse.io/okx/jobs/5817816003",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "okx||legal-counsel-defi-web3",
+      "keywords": [
+        "DeFi",
+        "合规"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "growth",
+      "category": "defi",
+      "position": "Growth Marketing Specialist (Bilingual: Chinese & English)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote",
+        "asia",
+        "cn"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "中英双语；Web3 钱包/DeFi 用户增长；社区营销；KOL 合作；数据驱动增长实验；2年以上经验。",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/09610212-5f29-4cea-b136-db102be0f516",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trust-wallet||growth-marketing-specialist-bilingual-chinese-english",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "data",
+      "category": "defi",
+      "position": "Senior Data Analyst (Web3)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "链上数据分析；Dune Analytics / Nansen；SQL / Python；钱包用户行为建模；DeFi 数据洞察。",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/04239652-62bb-43d7-87ea-844b0cdfc844",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "trust-wallet||senior-data-analyst-web3",
+      "keywords": [
+        "Python",
+        "DeFi",
+        "Wallet",
+        "SQL"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Scientist, LLM & AI Agent Engineer (Applied AI)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "AI 风控团队；LLM/AI Agent 构建；非结构化数据处理；Python + PyTorch；金融安全场景优化经验。",
+      "link": "https://jobs.lever.co/binance/0531f274-7479-46f5-9d24-db078bc9515a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "binance||data-scientist-llm-ai-agent-engineer-applied-ai",
+      "keywords": [
+        "Python",
+        "AI"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Serotonin",
+      "func": "growth",
+      "category": "other",
+      "position": "Web3 Social Media Manager",
+      "level": "mid",
+      "location": "欧洲（远程）",
+      "region": [
+        "eu",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 75000,
+      "requirements": "Web3 社交媒体策略；Twitter/X、Farcaster、Lens 生态运营；内容创作；3年以上加密行业品牌经验。",
+      "link": "https://jobs.lever.co/serotonin/72fb42cf-a9ef-45e2-8374-ec67e92ab324",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "serotonin||web3-social-media-manager",
+      "keywords": [],
+      "duties": [
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Legal Counsel - Capital Markets - European Union",
+      "level": "mid",
+      "location": "欧洲（远程/混合）",
+      "region": [
+        "eu",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "欧盟金融监管（MiFID II/MiCA）；资本市场法律；加密资产发行合规；英语+欧盟语言；律师资格。",
+      "link": "https://jobs.lever.co/crypto/26710fb2-e787-45fc-b38a-98b363177cbb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "crypto-com||legal-counsel-capital-markets-european-union",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Offchain Labs",
+      "func": "data",
+      "category": "chain",
+      "position": "Research Scientist/Engineer",
+      "level": "senior",
+      "location": "美国 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 190000,
+      "requirements": "L2/Rollup 协议研究；密码学/博弈论/经济学背景；Arbitrum 生态研究；发表过同行评审论文优先。",
+      "link": "https://jobs.lever.co/offchainlabs/ec604e46-11b5-4528-b21b-c1ce9bd8ccc0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "offchain-labs||research-scientist-engineer",
+      "keywords": [
+        "L2/Rollup"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
     {
       "company": "Coins.ph",
       "func": "ga",
@@ -17446,7 +18034,25 @@ window.WEB3_JOBS_DATA = {
     },
     "Certora": {
       "intro": ""
+    },
+    "ENS Labs": {
+      "intro": ""
+    },
+    "Lightspark": {
+      "intro": ""
+    },
+    "Polymarket": {
+      "intro": ""
+    },
+    "Ellipsis Labs": {
+      "intro": ""
+    },
+    "Robinhood": {
+      "intro": ""
+    },
+    "Serotonin": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T15:25:14.829Z"
+  "lastUpdatedAt": "2026-05-27T20:13:57.609Z"
 };

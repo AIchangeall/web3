@@ -5,7 +5,161 @@
     <link>https://gmjobs.github.io/chainhire/</link>
     <description>Web3 / crypto 行业全职能最新公开招聘，每日自动更新。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 27 May 2026 15:25:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 20:13:57 GMT</lastBuildDate>
+    <item>
+      <title>Smart Contract Engineer · ENS Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ens-labs-smart-contract-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ens-labs-smart-contract-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 资深/Staff · 远程 · 面议。深度 Solidity 与 EVM 开发经验；ENS 协议扩展与升级；安全审计意识；参与过主网合约开发。</description>
+    </item>
+    <item>
+      <title>Integrations Engineer (Web3) · ENS Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ens-labs-integrations-engineer-web3.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ens-labs-integrations-engineer-web3.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · 远程 · 面议。Web3 集成经验；熟悉 ENS/域名解析协议；能与第三方协议（钱包、dApp）对接；JavaScript/TypeScript。</description>
+    </item>
+    <item>
+      <title>Product Manager (APAC Time Zones) · ENS Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ens-labs-product-manager-apac-time-zones.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ens-labs-product-manager-apac-time-zones.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · 远程（亚太时区） · 面议。3年以上 Web3/区块链产品经验；APAC 时区；能独立驱动产品路线图；熟悉 DNS/命名协议加分。</description>
+    </item>
+    <item>
+      <title>Designer · ENS Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ens-labs-designer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ens-labs-designer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · 远程 · 面议。产品设计/UI/UX；具备 Web3/DeFi 产品设计经验；Figma 熟练；理解区块链用户心理模型。</description>
+    </item>
+    <item>
+      <title>DevOps Engineer · ENS Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ens-labs-devops-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ens-labs-devops-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · 远程 · 面议。Kubernetes / Terraform / AWS；链上节点运维；CI/CD 自动化；区块链基础设施高可用维护。</description>
+    </item>
+    <item>
+      <title>Staff Backend Engineer, Spark · Lightspark</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/lightspark-staff-backend-engineer-spark.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/lightspark-staff-backend-engineer-spark.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · 美国 / 远程 · 面议。Staff 级后端研发；分布式支付系统；Lightning Network / Bitcoin 协议；高吞吐量低延迟架构。</description>
+    </item>
+    <item>
+      <title>Senior Fullstack Engineer, Connect · Lightspark</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/lightspark-senior-fullstack-engineer-connect.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/lightspark-senior-fullstack-engineer-connect.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · 美国 / 远程 · 面议。全栈（React + 后端服务）；Bitcoin/Lightning 支付集成；API 平台构建；5年以上工程经验。</description>
+    </item>
+    <item>
+      <title>Senior Crypto Security Engineer · Lightspark</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/lightspark-senior-crypto-security-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/lightspark-senior-crypto-security-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · 美国 / 远程 · 面议。区块链协议安全+基础设施安全+应用安全三向覆盖；Lightning Network 密钥管理；渗透测试；密码学。</description>
+    </item>
+    <item>
+      <title>Senior Security Engineer · Lightspark</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/lightspark-senior-security-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/lightspark-senior-security-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · 美国 / 远程 · 面议。安全架构与框架建设；安全审计与事件响应；检测与防御体系；5年以上安全工程经验。</description>
+    </item>
+    <item>
+      <title>Senior Product Engineer · Polymarket</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polymarket-senior-product-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polymarket-senior-product-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 资深/Staff · 纽约 / 远程 · 面议。产品导向型全栈工程师；React + TypeScript + 后端服务；链上预测市场产品开发；5年以上经验。</description>
+    </item>
+    <item>
+      <title>Software Engineer, Markets · Polymarket</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polymarket-software-engineer-markets.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polymarket-software-engineer-markets.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 中级 · 纽约 / 远程 · 面议。全栈工程师；DeFi/链上市场合约开发；Polygon / EVM；与智能合约团队紧密协作。</description>
+    </item>
+    <item>
+      <title>Design Engineer · Polymarket</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polymarket-design-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polymarket-design-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 中级 · 纽约 / 远程 · 面议。前端 + 设计双修；React / CSS-in-JS；极致用户体验；对 DeFi 产品有强烈审美直觉。</description>
+    </item>
+    <item>
+      <title>Senior Smart Contract Engineer (EVM) · Ellipsis Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/ellipsis-labs-senior-smart-contract-engineer-evm.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ellipsis-labs-senior-smart-contract-engineer-evm.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 资深/Staff · 远程 · 面议。Solidity 高级开发；EVM 低级优化；Solana 经验加分；构建链上 DEX/AMM 的丰富实战。</description>
+    </item>
+    <item>
+      <title>Senior Software Engineer, Reliability · Robinhood</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/robinhood-senior-software-engineer-reliability.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/robinhood-senior-software-engineer-reliability.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 资深/Staff · 美国（门洛帕克/纽约） · 面议。SRE / 可靠性工程；大规模分布式系统；加密资产与经纪业务系统高可用；Go/Python；Kubernetes。</description>
+    </item>
+    <item>
+      <title>Growth Operations Manager, Gate Web3 Wallet · Gate.io</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/gate-io-growth-operations-manager-gate-web3-wallet.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/gate-io-growth-operations-manager-gate-web3-wallet.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · 远程 / 亚太 · 面议。Web3 Wallet 用户增长策略；DeFi/NFT 生态整合；3年以上增长运营经验；熟悉链上数据分析。</description>
+    </item>
+    <item>
+      <title>Legal Counsel, DeFi/Web3 · OKX</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/okx-legal-counsel-defi-web3.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/okx-legal-counsel-defi-web3.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · 新加坡 / 香港 · 面议。4年以上加密/金融法律经验；DeFi 协议法律尽职调查；监管合规咨询；英语流利；律师执照。</description>
+    </item>
+    <item>
+      <title>Growth Marketing Specialist (Bilingual: Chinese &amp; English) · Trust Wallet</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/trust-wallet-growth-marketing-specialist-bilingual-chinese-english.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/trust-wallet-growth-marketing-specialist-bilingual-chinese-english.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 中级 · 远程 · 面议。中英双语；Web3 钱包/DeFi 用户增长；社区营销；KOL 合作；数据驱动增长实验；2年以上经验。</description>
+    </item>
+    <item>
+      <title>Senior Data Analyst (Web3) · Trust Wallet</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/trust-wallet-senior-data-analyst-web3.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/trust-wallet-senior-data-analyst-web3.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>钱包/DeFi · 资深/Staff · 远程 · 面议。链上数据分析；Dune Analytics / Nansen；SQL / Python；钱包用户行为建模；DeFi 数据洞察。</description>
+    </item>
+    <item>
+      <title>Data Scientist, LLM &amp; AI Agent Engineer (Applied AI) · Binance</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/binance-data-scientist-llm-ai-agent-engineer-applied-ai.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-data-scientist-llm-ai-agent-engineer-applied-ai.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · 远程 · 面议。AI 风控团队；LLM/AI Agent 构建；非结构化数据处理；Python + PyTorch；金融安全场景优化经验。</description>
+    </item>
+    <item>
+      <title>Web3 Social Media Manager · Serotonin</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/serotonin-web3-social-media-manager.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/serotonin-web3-social-media-manager.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 中级 · 欧洲（远程） · 面议。Web3 社交媒体策略；Twitter/X、Farcaster、Lens 生态运营；内容创作；3年以上加密行业品牌经验。</description>
+    </item>
+    <item>
+      <title>Legal Counsel - Capital Markets - European Union · Crypto.com</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/crypto-com-legal-counsel-capital-markets-european-union.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/crypto-com-legal-counsel-capital-markets-european-union.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · 欧洲（远程/混合） · 面议。欧盟金融监管（MiFID II/MiCA）；资本市场法律；加密资产发行合规；英语+欧盟语言；律师资格。</description>
+    </item>
+    <item>
+      <title>Research Scientist/Engineer · Offchain Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/offchain-labs-research-scientist-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/offchain-labs-research-scientist-engineer.html</guid>
+      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 资深/Staff · 美国 / 远程 · 面议。L2/Rollup 协议研究；密码学/博弈论/经济学背景；Arbitrum 生态研究；发表过同行评审论文优先。</description>
+    </item>
     <item>
       <title>AML Compliance Officer · Coins.ph</title>
       <link>https://gmjobs.github.io/chainhire/jobs/coins-ph-aml-compliance-officer.html</link>
@@ -131,160 +285,6 @@
       <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/gate-io-backend-architect.html</guid>
       <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
       <description>交易所 · 中级 · APAC-C1 · 面议。我们的愿景</description>
-    </item>
-    <item>
-      <title>AI算法工程师 · Gate.io</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/gate-io-ai算法工程师.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/gate-io-ai算法工程师.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · APAC-C1 · 面议。我们的愿景</description>
-    </item>
-    <item>
-      <title>AI研发工程师 · Gate.io</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/gate-io-ai研发工程师.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/gate-io-ai研发工程师.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · APAC-C1 · 面议。About Gate：</description>
-    </item>
-    <item>
-      <title>[Fintech] Operations Specialist (Mandarin-speaking, KL based) · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-fintech-operations-specialist-mandarin-speaking-kl-based.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-fintech-operations-specialist-mandarin-speaking-kl-based.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Malaysia · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>[Fintech] Business Operations Associate · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-fintech-business-operations-associate.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-fintech-business-operations-associate.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>[Fintech] Account Sales Lead (Payment) · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-fintech-account-sales-lead-payment.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-fintech-account-sales-lead-payment.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) Quant Developer - Core Trading Systems · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-quant-developer-core-trading-systems.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-quant-developer-core-trading-systems.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Hong Kong · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) QA Engineer · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-qa-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-qa-engineer.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) Java Engineer, Engine Team · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-java-engineer-engine-team.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-java-engineer-engine-team.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) Java Engineer - (Admin &amp; Payment) · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-java-engineer-admin-payment.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-java-engineer-admin-payment.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) Frontend Developer (web3/blockchain experience preferred)- Mandarin Speaker · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-frontend-developer-web3-blockchain-experience-preferred-mandarin-speaker.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-frontend-developer-web3-blockchain-experience-preferred-mandarin-speaker.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Sr.) Data Scientist · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-sr-data-scientist.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-sr-data-scientist.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>(Senior) Talent Acquisition Associate · BTSE</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/btse-senior-talent-acquisition-associate.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/btse-senior-talent-acquisition-associate.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Taipei · 面议。About BTSE:</description>
-    </item>
-    <item>
-      <title>Head of Foundation · Arbitrum Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-head-of-foundation.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-head-of-foundation.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 负责人/总监 · Europe · 面议。About Arbitrum Foundation</description>
-    </item>
-    <item>
-      <title>Head of Ecosystem Growth · Arbitrum Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-head-of-ecosystem-growth.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-head-of-ecosystem-growth.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 负责人/总监 · Europe · 面议。About Arbitrum Foundation</description>
-    </item>
-    <item>
-      <title>Don&#39;t see the right role for you? Apply here! · Arbitrum Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-don-t-see-the-right-role-for-you-apply-here.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/arbitrum-foundation-don-t-see-the-right-role-for-you-apply-here.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 中级 · Cayman Islands · 面议。The Arbitrum Foundation is an organisation based in the Cayman Islands that is tasked with developing and nurturing the </description>
-    </item>
-    <item>
-      <title>AI Chatbot Product Manager · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-ai-chatbot-product-manager.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-ai-chatbot-product-manager.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Asia · 面议。Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an</description>
-    </item>
-    <item>
-      <title>AI Agent Platform Engineer (Openclaw) · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-ai-agent-platform-engineer-openclaw.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-ai-agent-platform-engineer-openclaw.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Asia · 面议。Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an</description>
-    </item>
-    <item>
-      <title>Affiliate Relationship Manager (APAC) · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-apac.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-apac.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Asia · 面议。Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an</description>
-    </item>
-    <item>
-      <title>Affiliate Relationship Manager - LATAM · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-latam.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-latam.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Brazil, Sao Paulo · 面议。About the Role</description>
-    </item>
-    <item>
-      <title>Affiliate Relationship Manager - EU · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-eu.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-eu.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · Spain, Madrid · 面议。About the Role</description>
-    </item>
-    <item>
-      <title>Affiliate Relationship Manager - CIS · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-cis.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager-cis.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · CIS Region · 面议。About the Role</description>
-    </item>
-    <item>
-      <title>Affiliate Relationship Manager · Binance</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-affiliate-relationship-manager.html</guid>
-      <pubDate>Wed, 27 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 中级 · South East Asia · 面议。Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an</description>
     </item>
   </channel>
 </rss>
