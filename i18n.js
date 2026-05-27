@@ -22,6 +22,7 @@
     "partner.sub":     ["扫码添加微信，洽谈合作与商务对接", "Scan the WeChat QR to discuss partnership"],
     "partner.hint":    ["二维码待添加：把图片保存为 assets/wechat-qr.png", "Add the QR image at assets/wechat-qr.png"],
     "partner.close":   ["关闭", "Close"],
+    "sponsor":         ["赞助支持", "Support"],
     "pay.title":       ["☕ 赞赏作者", "☕ Tip the author"],
     "pay.sub":         ["本站岗位每日自动更新、永久免费浏览。若对你有帮助，欢迎扫码自愿赞赏，金额随意 🙏", "All jobs here update daily and are free to browse forever. If it helped you, a small voluntary tip is welcome 🙏"],
     "pay.ali":         ["微信 · 金额随意", "WeChat · any amount"],

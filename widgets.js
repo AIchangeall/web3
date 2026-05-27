@@ -24,6 +24,7 @@
     border:0;padding:11px 16px;border-radius:999px;cursor:pointer;box-shadow:0 8px 24px rgba(109,94,252,.4)}
   .cnh-fab:hover{filter:brightness(1.05)}
   .cnh-fab svg{width:17px;height:17px;fill:#fff}
+  .cnh-fab2{bottom:74px;background:linear-gradient(135deg,#10b981,#07c160);box-shadow:0 8px 24px rgba(7,193,96,.4)}
   .cnh-mask{position:fixed;inset:0;z-index:50;background:rgba(15,23,41,.5);backdrop-filter:blur(2px);
     display:none;align-items:center;justify-content:center;padding:20px}
   .cnh-mask.show{display:flex}
@@ -37,7 +38,7 @@
   .cnh-x{position:absolute;top:12px;right:14px;border:0;background:none;font-size:22px;line-height:1;color:#9aa1b1;cursor:pointer}
   .cnh-x:hover{color:#0f1729}
   .cnh-mark{margin-top:14px;font-size:12px;color:#16a34a;font-weight:600;display:flex;align-items:center;justify-content:center;gap:5px}
-  @media(max-width:560px){.cnh-fab{right:14px;bottom:14px;padding:10px 14px}}
+  @media(max-width:560px){.cnh-fab{right:14px;bottom:14px;padding:10px 14px}.cnh-fab2{bottom:62px}}
   /* 软性付费墙 */
   .cnh-pay-mask{position:fixed;inset:0;z-index:60;background:rgba(15,23,41,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px}
   .cnh-pay-mask.show{display:flex}
@@ -138,6 +139,13 @@
       }, 1000);
     }
 
+    // 「赞助支持」浮窗按钮（叠在「合作沟通」上方）→ 打开微信收款码（赞赏弹窗）
+    var fab2 = document.createElement("button");
+    fab2.className = "cnh-fab cnh-fab2"; fab2.id = "cnh-fab2";
+    fab2.innerHTML = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.6-4.7-10.1-9.2C.4 9.1 1.6 5.7 4.8 5.7c1.9 0 3.3 1.1 4 2.4.7-1.3 2.1-2.4 4-2.4 3.2 0 4.4 3.4 2.9 6.1C19.6 16.3 12 21 12 21Z"/></svg><span id="cnh-fab2-t"></span>';
+    document.body.appendChild(fab2);
+    fab2.addEventListener("click", showTip);
+
     paint();
     window.addEventListener("langchange", paint);
     // busuanzi 异步回填后刷新一次浏览量显示
@@ -161,6 +169,7 @@
   }
   function paint() {
     document.getElementById("cnh-fab-t").textContent = T("partner");
+    var f2 = document.getElementById("cnh-fab2-t"); if (f2) f2.textContent = T("sponsor");
     document.getElementById("cnh-title").textContent = T("partner.title");
     document.getElementById("cnh-sub").textContent = T("partner.sub");
     document.getElementById("cnh-x").title = T("partner.close");
