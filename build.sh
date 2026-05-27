@@ -14,11 +14,14 @@ mkdir -p dist/assets
 # 网站对外需要的文件
 cp index.html stats.html companies.html headhunter.html \
    i18n.js widgets.js mobile.css data.js \
+   robots.txt sitemap.xml \
    dist/
 
-# 二维码图片（若存在）
+# 图片资源（若存在）：二维码 / OG 分享封面 / favicon
 [ -f assets/wechat-qr.png ] && cp assets/wechat-qr.png dist/assets/ || true
 [ -f assets/wxskm.jpg ] && cp assets/wxskm.jpg dist/assets/ || true
+[ -f assets/og-cover.png ] && cp assets/og-cover.png dist/assets/ || true
+[ -f assets/favicon.svg ] && cp assets/favicon.svg dist/assets/ || true
 
 # 缓存/安全响应头：HTML 与每日更新的 data.js / i18n.js 走 no-cache（仍由 ETag 快速校验），保证更新即时可见
 cat > dist/_headers <<'EOF'

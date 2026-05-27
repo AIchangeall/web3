@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gmjobs.github.io/chainhire/sitemap.xml

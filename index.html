@@ -3,7 +3,36 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>链聘 ChainHire · Web3 全职能招聘</title>
+<title>链聘 ChainHire · Web3 全职能招聘 | 交易所/公链/DeFi 岗位每日更新</title>
+<meta name="description" content="链聘 ChainHire 聚合头部交易所、公链/L2、钱包/DeFi、节点基础设施等公司的工程、运维SRE、产品、设计、数据AI、安全、增长、BD、合规HR 等 Web3 全职能公开岗位。面向猎头与求职者，每日自动更新，支持职能/级别/地区筛选与薪资排序。" />
+<meta name="keywords" content="Web3招聘,区块链招聘,crypto jobs,web3 jobs,链上招聘,交易所招聘,公链招聘,DeFi招聘,SRE招聘,Solidity,远程工作" />
+<meta name="author" content="链聘 ChainHire" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://gmjobs.github.io/chainhire/" />
+<meta name="theme-color" content="#6d5efc" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="链聘 ChainHire" />
+<meta property="og:title" content="链聘 ChainHire · Web3 全职能招聘" />
+<meta property="og:description" content="聚合交易所、公链/L2、钱包/DeFi、基础设施等公司的工程、运维、产品、安全等 Web3 全职能公开岗位，面向猎头与求职者，每日自动更新。" />
+<meta property="og:url" content="https://gmjobs.github.io/chainhire/" />
+<meta property="og:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="链聘 ChainHire · Web3 全职能招聘" />
+<meta name="twitter:description" content="交易所/公链/DeFi/基础设施 等 Web3 全职能岗位，面向猎头与求职者，每日自动更新。" />
+<meta name="twitter:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"链聘 ChainHire","alternateName":"ChainHire","url":"https://gmjobs.github.io/chainhire/","inLanguage":["zh-CN","en"],"description":"Web3 行业全职能招聘信息聚合，面向猎头与求职者，每日自动更新。","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://gmjobs.github.io/chainhire/index.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"链聘 ChainHire","alternateName":"ChainHire","url":"https://gmjobs.github.io/chainhire/","logo":"https://gmjobs.github.io/chainhire/assets/og-cover.png"}
+</script>
 <style>
   :root{
     color-scheme: light;
@@ -122,6 +151,39 @@
   .apply:hover{background:var(--accent)}
   .posted{font-size:11px;color:#9aa1b1}
 
+  .job-title{cursor:pointer}
+  .job-title:hover{color:var(--accent)}
+  .js-btns{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+  .sharebtn{border:1px solid var(--line);background:#fff;color:var(--muted);font-weight:700;font-size:12.5px;padding:8px 12px;border-radius:10px;cursor:pointer;white-space:nowrap;transition:.12s}
+  .sharebtn:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* 岗位详情弹层 */
+  .jm-mask{position:fixed;inset:0;background:rgba(15,23,41,.55);backdrop-filter:blur(2px);z-index:60;display:none;align-items:center;justify-content:center;padding:20px}
+  .jm-mask.on{display:flex}
+  .jm{background:#fff;border-radius:18px;max-width:620px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 24px 60px rgba(15,23,41,.3);position:relative}
+  .jm-x{position:absolute;top:14px;right:16px;border:0;background:#f1f2f6;color:#64748b;width:30px;height:30px;border-radius:8px;font-size:18px;cursor:pointer;line-height:1;z-index:2}
+  .jm-x:hover{background:#e7e8ef;color:var(--ink)}
+  .jm-h{padding:22px 24px 16px;border-bottom:1px solid var(--line);display:flex;gap:14px}
+  .jm-h .avatar{width:52px;height:52px;border-radius:13px;font-size:21px}
+  .jm-title{font-size:19px;font-weight:800;margin:0;padding-right:30px;line-height:1.35}
+  .jm-co{margin-top:6px;font-size:13.5px;color:var(--muted)}
+  .jm-co b{color:#374151}
+  .jm-b{padding:18px 24px 8px}
+  .jm-sec{margin-bottom:16px}
+  .jm-sec>.t{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+  .jm-req{font-size:13.5px;color:#475569;line-height:1.7;white-space:pre-wrap}
+  .jm-sal{font-size:19px;font-weight:800;color:#047857}
+  .jm-sal.neg{color:#94a3b8;font-size:15px}
+  .jm-f{padding:14px 24px 20px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;position:sticky;bottom:0;background:#fff}
+  .jm-apply{flex:1;min-width:150px;text-align:center;background:var(--ink);color:#fff;font-weight:700;font-size:14px;padding:12px 16px;border-radius:11px}
+  .jm-apply:hover{background:var(--accent)}
+  .jm-apply.dis{background:#eef0f4;color:#94a3b8;cursor:default;font-weight:600;font-size:12.5px}
+  .jm-apply.dis:hover{background:#eef0f4}
+  .jm-copy{border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13.5px;padding:12px 16px;border-radius:11px;cursor:pointer;white-space:nowrap}
+  .jm-copy:hover{border-color:var(--accent);color:var(--accent)}
+  .jm-toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);background:#0f1729;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:12px;z-index:70;opacity:0;pointer-events:none;transition:.25s;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .jm-toast.on{opacity:1;bottom:54px}
+
   .more{display:block;margin:22px auto 0;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:14px;padding:12px 28px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
   .more:hover{border-color:var(--accent);color:var(--accent)}
   .empty{text-align:center;color:var(--muted);padding:50px;background:#fff;border:1px dashed var(--line);border-radius:16px}
@@ -235,6 +297,8 @@
 
 <div class="pagefoot" id="pagefoot"></div>
 
+<div class="jm-mask" id="jm-mask"><div class="jm" id="jm"></div></div>
+
 <script src="i18n.js"></script>
 <script src="widgets.js"></script>
 <script src="data.js"></script>
@@ -250,6 +314,11 @@
   const updDisplay = lastUpdatedAt ? fmtDT(lastUpdatedAt) : lastUpdated;
   const updFresh = lastUpdatedAt ? ((Date.now() - new Date(lastUpdatedAt).getTime()) / 36e5 <= 6) : false;
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
+
+  // 稳定 id（深链 / 详情用）；data.js 多数已带 id，缺失者按 company||position 规则补全
+  const slug = s => (s||"").toLowerCase().replace(/[^a-z0-9一-龥]+/g,"-").replace(/^-+|-+$/g,"");
+  const byId = {};
+  data.forEach(r=>{ if(!r.id) r.id = slug(r.company)+"||"+slug(r.position); if(!byId[r.id]) byId[r.id]=r; });
 
   let funcLabels, catLabels, lvlLabels, regionLabels;
   function buildLabels(){ funcLabels=I18N.map("func"); catLabels=I18N.map("cat"); lvlLabels=I18N.map("lvl"); regionLabels=I18N.map("region"); }
@@ -280,7 +349,7 @@
       document.getElementById(id).querySelectorAll(".chip").forEach(e=>{ e.textContent=m[e.dataset.key]; });
     });
   }
-  window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); });
+  window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); if(mask.classList.contains("on")&&jm.dataset.id) openDetail(jm.dataset.id); });
 
   const tnew=document.getElementById("t-new");
   tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
@@ -296,11 +365,14 @@
     tnew.classList.remove("on"); document.getElementById("search").value="";
     document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
-  // 点击岗位关键字 → 按该关键字筛选
+  // 列表区点击委托：关键字筛选 / 打开详情 / 分享
   document.getElementById("jobs").addEventListener("click",e=>{
-    const el=e.target.closest(".kw"); if(!el) return;
-    const v=el.dataset.kw; state.search=v.toLowerCase();
-    document.getElementById("search").value=v; state.limit=PAGE; render();
+    const kw=e.target.closest(".kw");
+    if(kw){ const v=kw.dataset.kw; state.search=v.toLowerCase(); document.getElementById("search").value=v; state.limit=PAGE; render(); return; }
+    const sb=e.target.closest("[data-share]");
+    if(sb){ const art=sb.closest(".job"); if(art) shareJob(art.dataset.id); return; }
+    const dt=e.target.closest("[data-detail]");
+    if(dt){ const art=dt.closest(".job"); if(art) openDetail(art.dataset.id); return; }
   });
   // KPI 卡片点击筛选
   function kpiActivate(groupId,set,key){ if(!set.has(key))set.add(key); var el=[...document.getElementById(groupId).querySelectorAll(".chip")].find(c=>c.dataset.key===key); if(el)el.classList.add("active"); }
@@ -339,10 +411,13 @@
   function card(r){
     const remote=(r.region||[]).includes("remote");
     const negSalary=!r.salary || /面议/.test(r.salary);
-    return `<article class="job">
+    const applyHtml = r.link
+      ? `<a class="apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>`
+      : `<button class="sharebtn" data-detail type="button">${I18N.t('card.detail')}</button>`;
+    return `<article class="job" data-id="${esc(r.id)}">
       <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
       <div class="job-main">
-        <h3 class="job-title">${esc(r.position)}</h3>${isNew(r)?'<span class="new">NEW</span>':''}
+        <h3 class="job-title" data-detail title="${esc(r.position)}">${esc(r.position)}</h3>${isNew(r)?'<span class="new">NEW</span>':''}
         <div class="job-company"><b>${esc(r.company)}</b><span class="sep">·</span>${catLabels[r.category]||r.category}</div>
         <div class="tags">
           <span class="tag f-${r.func||'ga'}">${funcLabels[r.func]||'其他'}</span>
@@ -355,7 +430,10 @@
       </div>
       <div class="job-side">
         <div class="salary ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div>
-        <a class="apply" href="${r.link}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>
+        <div class="js-btns">
+          ${applyHtml}
+          <button class="sharebtn" data-share type="button">🔗 ${I18N.t('card.share')}</button>
+        </div>
         <div class="posted">${r.firstSeen?I18N.t('card.posted')+' '+r.firstSeen:''}</div>
       </div>
     </article>`;
@@ -365,6 +443,7 @@
     let rows=sortRows(data.filter(match));
     const total=rows.length;
     const shown=rows.slice(0,state.limit);
+    injectLd(rows);
     document.getElementById("jobs").innerHTML=shown.map(card).join("");
     document.getElementById("cnt").innerHTML=I18N.t("found.tpl").replace("{n}",'<b>'+total+'</b>');
     document.getElementById("empty").style.display=total?"none":"block";
@@ -393,6 +472,102 @@
     document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a>`;
   }
 
+  // ---------- 岗位详情弹层 / 分享 / 结构化数据 ----------
+  const mask=document.getElementById("jm-mask"), jm=document.getElementById("jm");
+  let toastEl;
+  function toast(msg){
+    if(!toastEl){ toastEl=document.createElement("div"); toastEl.className="jm-toast"; document.body.appendChild(toastEl); }
+    toastEl.textContent=msg; toastEl.classList.add("on");
+    clearTimeout(toast._t); toast._t=setTimeout(()=>toastEl.classList.remove("on"),1900);
+  }
+  function shareUrl(id){ return location.origin+location.pathname+"?job="+encodeURIComponent(id); }
+  function urlNoJob(){ const p=new URLSearchParams(location.search); p.delete("job"); const q=p.toString(); return location.pathname+(q?"?"+q:""); }
+  function copyText(text){
+    const done=()=>toast(I18N.t("share.copied"));
+    if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done).catch(()=>fbCopy(text,done)); }
+    else fbCopy(text,done);
+  }
+  function fbCopy(text,done){ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.focus(); ta.select(); try{ document.execCommand("copy"); done&&done(); }catch(e){} document.body.removeChild(ta); }
+  function shareJob(id){
+    const r=byId[id]; if(!r) return; const url=shareUrl(id);
+    const title=`${r.position} · ${r.company}｜链聘 ChainHire`;
+    if(navigator.share){ navigator.share({title,text:title,url}).catch(()=>{}); return; }
+    copyText(url);
+  }
+  function jmContent(r){
+    const remote=(r.region||[]).includes("remote");
+    const negSalary=!r.salary || /面议/.test(r.salary);
+    const tags=[
+      `<span class="tag f-${r.func||'ga'}">${funcLabels[r.func]||'其他'}</span>`,
+      `<span class="tag ${r.level==='head'?'lvl-head':''}">${lvlLabels[r.level]||r.level}</span>`,
+      `<span class="tag">📍 ${esc(r.location)}</span>`,
+      remote?`<span class="tag remote">${I18N.t('card.remote')}</span>`:''
+    ].join("");
+    const kws=(r.keywords&&r.keywords.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.kw')}</div><div class="kws">${r.keywords.map(k=>`<span class="kw" style="cursor:default">${esc(I18N.kw(k))}</span>`).join("")}</div></div>`:"";
+    const duties=(r.duties&&r.duties.length)?`<div class="jm-sec"><div class="t">${I18N.t('detail.duty')}</div><div class="tags">${r.duties.map(d=>`<span class="tag">${esc(I18N.duty(d))}</span>`).join("")}</div></div>`:"";
+    const cinfo=(r.contact||r.contactInfo)?`<div class="jm-sec"><div class="t">${I18N.t('detail.contact')} / ${I18N.t('detail.cinfo')}</div><div class="jm-req">${esc([r.contact,r.contactInfo].filter(Boolean).join("  ·  "))}</div></div>`:"";
+    const applyHtml=r.link
+      ? `<a class="jm-apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('detail.apply')}</a>`
+      : `<span class="jm-apply dis">${I18N.t('detail.nolink')}</span>`;
+    return `
+      <button class="jm-x" data-jmclose type="button" aria-label="close">×</button>
+      <div class="jm-h">
+        <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
+        <div>
+          <h2 class="jm-title">${esc(r.position)} ${isNew(r)?'<span class="new">NEW</span>':''}</h2>
+          <div class="jm-co"><b>${esc(r.company)}</b> · ${catLabels[r.category]||r.category}${r.firstSeen?` · ${I18N.t('card.posted')} ${r.firstSeen}`:''}</div>
+        </div>
+      </div>
+      <div class="jm-b">
+        <div class="jm-sec"><div class="jm-sal ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div></div>
+        <div class="jm-sec"><div class="tags">${tags}</div></div>
+        <div class="jm-sec"><div class="t">${I18N.t('detail.req')}</div><div class="jm-req">${esc(r.requirements||'')}</div></div>
+        ${kws}${duties}${cinfo}
+      </div>
+      <div class="jm-f">
+        ${applyHtml}
+        <button class="jm-copy" data-jmcopy type="button">${I18N.t('detail.copy')}</button>
+      </div>`;
+  }
+  function openDetail(id){
+    const r=byId[id]; if(!r) return;
+    jm.innerHTML=jmContent(r); jm.dataset.id=id; jm.scrollTop=0;
+    mask.classList.add("on"); document.body.style.overflow="hidden";
+    try{ history.replaceState(null,"",shareUrl(id)); }catch(e){}
+  }
+  function closeDetail(){
+    if(!mask.classList.contains("on")) return;
+    mask.classList.remove("on"); document.body.style.overflow="";
+    try{ history.replaceState(null,"",urlNoJob()); }catch(e){}
+  }
+  mask.addEventListener("click",e=>{ if(e.target===mask||e.target.closest("[data-jmclose]")) closeDetail(); });
+  jm.addEventListener("click",e=>{ if(e.target.closest("[data-jmcopy]")) copyText(shareUrl(jm.dataset.id)); });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
+
+  // JobPosting 结构化数据（供 Google for Jobs 抓取，注入当前筛选结果的前 40 条）
+  const COUNTRY={cn:"CN",hk:"HK",sg:"SG",us:"US",eu:"DE",dubai:"AE",asia:"SG"};
+  let ldEl;
+  function jobLd(r){
+    const remote=(r.region||[]).includes("remote");
+    const countries=(r.region||[]).map(x=>COUNTRY[x]).filter(Boolean);
+    const o={
+      "@context":"https://schema.org/","@type":"JobPosting",
+      "title":r.position, "description":(r.requirements||r.position||"").slice(0,1500),
+      "datePosted":r.firstSeen, "employmentType":"FULL_TIME",
+      "hiringOrganization":{"@type":"Organization","name":r.company},
+      "identifier":{"@type":"PropertyValue","name":r.company,"value":r.id},
+      "url":shareUrl(r.id), "directApply":false,
+      "jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":(r.location||"").replace(/\s*[\/／].*$/,"")||r.company,"addressCountry":countries[0]||"SG"}}
+    };
+    if(remote){ o.jobLocationType="TELECOMMUTE"; if(countries.length) o.applicantLocationRequirements=countries.map(c=>({"@type":"Country","name":c})); }
+    if(r.salaryNum){ o.baseSalary={"@type":"MonetaryAmount","currency":"USD","value":{"@type":"QuantitativeValue","value":r.salaryNum,"unitText":"YEAR"}}; }
+    return o;
+  }
+  function injectLd(rows){
+    if(!ldEl){ ldEl=document.createElement("script"); ldEl.type="application/ld+json"; ldEl.id="jobposting-ld"; document.head.appendChild(ldEl); }
+    ldEl.textContent=JSON.stringify(rows.filter(r=>r.firstSeen).slice(0,40).map(jobLd));
+  }
+
   // 支持从其它页（企业库 / 数据洞察）跳转预设筛选：?q= / ?func= / ?cat= / ?level= / ?region= / ?new=1
   (function(){
     const p=new URLSearchParams(location.search);
@@ -407,6 +582,9 @@
   })();
 
   head(); render();
+
+  // 深链：?job=<id> 直接打开该岗位详情（分享链接落地）
+  (function(){ const jid=new URLSearchParams(location.search).get("job"); if(jid&&byId[jid]) openDetail(jid); })();
 })();
 </script>
 </body>

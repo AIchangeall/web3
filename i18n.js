@@ -62,6 +62,18 @@
     "salary.negotiable":["面议", "Negotiable"],
     "found.tpl":       ["找到 {n} 个职位", "{n} jobs found"],
     "more.tpl":        ["加载更多（剩余 {n} 个）", "Load more ({n} left)"],
+    "card.share":      ["分享", "Share"],
+    "card.detail":     ["详情", "Details"],
+    "share.copied":    ["✅ 分享链接已复制，去粘贴吧", "✅ Share link copied — paste anywhere"],
+    "detail.req":      ["职位要求 / 描述", "Requirements / description"],
+    "detail.kw":       ["技能关键字", "Skills"],
+    "detail.duty":     ["职责方向", "Duties"],
+    "detail.contact":  ["联系人", "Contact"],
+    "detail.cinfo":    ["联系方式", "Contact info"],
+    "detail.copy":     ["🔗 复制分享链接", "🔗 Copy share link"],
+    "detail.apply":    ["查看 / 投递原始职位 →", "View / apply on source →"],
+    "detail.nolink":   ["该岗位暂无直接投递链接，可在企业库或公司官网检索", "No direct apply link — search the company site or our directory"],
+    "detail.close":    ["关闭", "Close"],
 
     // stats 数据洞察
     "st.h1":           ["数据洞察 · Web3 招聘市场", "Insights · Web3 Hiring Market"],
