@@ -33,6 +33,4805 @@ window.WEB3_JOBS_DATA = {
   ],
   "jobs": [
     {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "BD Manager, CIS",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4a82e63f-7837-4692-a8b6-394a6fa00151",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bd-manager-cis",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Business Analyst",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/19c44bd5-c1f5-4af8-9237-8ea44235557e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-analyst",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "BGW Swap Aggregator Backend Engineer 聚合器后端技术工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2a159508-dfc1-4483-85b4-fafa9e56a783",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bgw-swap-aggregator-backend-engineer-聚合器后端技术工程师",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "Smart Contract",
+        "Staking",
+        "Wallet",
+        "Ethereum",
+        "Solana"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Operations Manager 运营经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/81966259-9c82-4ba4-91d4-04a9e4063fa8",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||operations-manager-运营经理",
+      "keywords": [
+        "Validator/节点",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Web3 Junior Engineer 技术研发工程师 (Fresh Graduate is Welcome)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/8911cfcc-376d-4bda-af51-06136fb1900d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||web3-junior-engineer-技术研发工程师-fresh-graduate-is-welcome",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "Node.js",
+        "React",
+        "Smart Contract",
+        "EVM",
+        "DeFi"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "BGW Backend Architecture Engineer 架构组后端研发工程师 ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4be88b0b-25bd-4a67-bdf9-da37291ee1ef",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bgw-backend-architecture-engineer-架构组后端研发工程师",
+      "keywords": [
+        "Go",
+        "Node.js",
+        "DeFi",
+        "Validator/节点",
+        "Staking",
+        "Wallet",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager, DACH",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/538303d0-06f1-4a32-94ad-501e50c0ea9f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-dach",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "BGW Backend DEX Engineer 资深后端DEX工程师",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/58bc5796-8287-4091-b274-43c9ea752a58",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bgw-backend-dex-engineer-资深后端dex工程师",
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Node.js",
+        "Smart Contract",
+        "EVM",
+        "Validator/节点",
+        "Staking",
+        "MEV"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Institutional Business Development Manager , Asia",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/0c065287-6853-47f2-84ea-aa5ca9d10c61",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||institutional-business-development-manager-asia",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager, Latam",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e05e6a44-523c-4c85-bb3c-9ca616ab2eb0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-latam",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager, EU",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/a69be733-4321-44cf-9d54-977a8ead356e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-eu",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Polish Business Development Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/8da73aac-27c3-480f-91c7-23728b851eca",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||polish-business-development-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Product Marketing Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/42f1ea94-0fc6-4621-9efa-cd2afb8c8fb1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||product-marketing-manager",
+      "keywords": [
+        "Go",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager (Wallet Infra) 产品经理（钱包基础架构）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/f28a3935-4e61-41f8-ae93-ee3f2ec5fbe2",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||product-manager-wallet-infra-产品经理-钱包基础架构",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Marketing Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/8e6ce13a-0246-41bb-b0fd-2bfb2619c9ad",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "数据分析",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "BGW Senior Test Engineer 高级测试工程师",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6852b8d2-31ee-4470-a2d6-08bde9f57bff",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bgw-senior-test-engineer-高级测试工程师",
+      "keywords": [
+        "Solidity",
+        "Go",
+        "Python",
+        "JavaScript",
+        "Smart Contract",
+        "DeFi",
+        "Staking",
+        "Wallet"
+      ],
+      "duties": [
+        "自动化",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Video Production Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9518b9a3-bce5-4b16-9163-16b7e88173ed",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||video-production-manager",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOC/KOL BD Manager (part-time)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1e00ebfd-0ba8-45b7-89b3-5576268bde01",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||koc-kol-bd-manager-part-time",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Compliance Operations Analyst  (AML – KYC & Transaction Monitoring)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e28d3e20-d72a-46b8-adeb-ca64cddb2529",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-operations-analyst-aml-kyc-transaction-monitoring",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "协议/合约开发",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "CIS Community Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9a34e539-cd63-4fa6-bb73-a462fba34230",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cis-community-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Test Engineer  测试工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/02372c13-327b-4f66-900f-20867db1129d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||test-engineer-测试工程师",
+      "keywords": [
+        "Smart Contract",
+        "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Platform Growth Operations 平台增长运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/f653894d-85c7-4b11-bbef-3f13ca1022e4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||platform-growth-operations-平台增长运营",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Future Operation Trading Product Operation",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7b39622d-c44d-4723-91a3-ec549ac2350c",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||future-operation-trading-product-operation",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Spot Asset Listing Operations 现货上币运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6a6524cf-299a-4a8d-a467-202933592df3",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||spot-asset-listing-operations-现货上币运营",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "数据分析",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "design",
+      "category": "exchange",
+      "position": "Visual Design Specialist",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ab1f4a56-f324-4963-83ab-64d1b85d1b05",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||visual-design-specialist",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "design",
+      "category": "exchange",
+      "position": "Graphic Designer 平面设计师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/19c4f72b-32d0-4d05-8926-2db6599e2fb8",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||graphic-designer-平面设计师",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "design",
+      "category": "exchange",
+      "position": "Graphic Motion Designer 动效设计师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/bb3ec712-1219-401a-9eed-2dc905f38d27",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||graphic-motion-designer-动效设计师",
+      "keywords": [
+        "Staking",
+        "Wallet"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "design",
+      "category": "exchange",
+      "position": "UI Designer UI 设计师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4acf5c39-eb6a-4b76-8b2e-661424cf96bb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ui-designer-ui-设计师",
+      "keywords": [
+        "Staking",
+        "Wallet"
+      ],
+      "duties": [
+        "稳定性保障",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Custody (RI), Dubai",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/c0786fe8-ec9a-47fb-8c57-458d8ae24317",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-custody-ri-dubai",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AI Product manager AI产品经理（专家）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/271746ed-50cc-41a0-b9e0-f88219f49990",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ai-product-manager-ai产品经理-专家",
+      "keywords": [
+        "Machine Learning",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "数据分析",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "(Regulatory) Accounting Manager（SG）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e27ecea6-1ac9-401a-946d-2f2be3c38c69",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||regulatory-accounting-manager-sg",
+      "keywords": [
+        "安全审计",
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Market Information System Engineer 行情系统工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6ded5df1-6b67-4099-bf95-facb43266011",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||market-information-system-engineer-行情系统工程师",
+      "keywords": [
+        "Linux",
+        "Kafka",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Event Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/51f3d474-3d28-4a85-93d1-757c08df6e73",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||event-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "PR Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d8748ce2-c44d-4c19-a9bc-1a88cfcda532",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||pr-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Institutional Business Development Manager (Japanese speaker)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About Us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/0614802e-2a35-4b2d-88a3-c2ce91464240",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||institutional-business-development-manager-japanese-speaker",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL Business Development (Europe)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "What You’ll Do:",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9e5a4879-34f1-4c38-b635-3e6e0fec52b5",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-business-development-europe",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Broker Operations Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d1fbaffb-6c3e-47b6-a573-13c5c1636d4f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||broker-operations-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Compliance Analyst",
+      "level": "mid",
+      "location": "Hongkong",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/568b873e-7c9f-4680-a704-e2958203bc32",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-analyst",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "CS Specialist (Japanese)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/a05c03eb-1b59-490b-990c-4552ca24ae50",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cs-specialist-japanese",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager, Malaysia ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/93cfd68d-172a-46ed-b4c9-257c3ac2ece1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-malaysia",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD BD (CN)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/5c77cd10-6e71-46e6-9e5b-b8d475774dcc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-bd-cn",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager, LATAM ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ff060ea8-2933-43f2-b7b2-50bb2e080b2f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-latam",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "CS Specialist (German)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/cbc65673-2b89-429c-99a6-e688d668d0c7",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cs-specialist-german",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Compliance Operations Lead (Transaction Monitoring, Noon Shift)",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Job Responsibilities",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1aac209f-7800-4464-9111-fa872eda5e9e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-operations-lead-transaction-monitoring-noon-shift",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Corporate Counsel",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7b9d2064-1549-40a8-a5b2-eaf2ccb01bdc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||corporate-counsel",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AI Agent Developer 开发工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e42ff479-bec5-4e46-87dd-2279dc63c616",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ai-agent-developer-开发工程师",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "Python",
+        "Node.js",
+        "Smart Contract",
+        "EVM",
+        "DeFi"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Service PMO",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/810e36a1-eb1e-494e-bcb7-b9c2df12e958",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||customer-service-pmo",
+      "keywords": [
+        "SQL",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "产品规划",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager, CIS (Forex/Brokerage/CFD) ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ecc78ff0-8e02-4bd1-a733-66ded75c6e5a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-cis-forex-brokerage-cfd",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Senior Growth Manager, Argentina ",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/04ff6611-c3f0-4ead-997b-ac23c35c7acd",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-growth-manager-argentina",
+      "keywords": [
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "design",
+      "category": "exchange",
+      "position": "AIGC Designer",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1ddfd31c-3b83-47e5-8823-e78982aa9f55",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||aigc-designer",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "AI"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "设计/品牌",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Specialist (UK)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Responsibilities:",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7f163da5-98ea-4ecf-9835-ef2a8e51a424",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-specialist-uk",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Marketing Manager- Poland",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6c33199b-fb04-4009-b2a1-b5b940c471cf",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||marketing-manager-poland",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AI Product Manager AI产品经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2f2aae33-70a2-4f5d-94fa-7f3a2aec65d4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ai-product-manager-ai产品经理",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Data Scientist",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2bde4be2-fdb2-4dea-aabf-9dbdbb5c618d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-data-scientist",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Treasury Specialist / Treasury Specialist（SG）",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e4b2b831-a9e3-4b88-b799-eae6557bfb5d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-treasury-specialist-treasury-specialist-sg",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Translator - Russian",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/8406ded7-dd98-4118-8cef-64d9ec8123ec",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||translator-russian",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager, Malaysia ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/f320d1b9-43a2-4814-ad3b-b41ce28e0aba",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-malaysia",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Technical Accounting",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9d107601-fa59-4c90-89e1-7cf6f4e04364",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-technical-accounting",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Finance Manager  (Group Consolidation & Reporting team)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7c8da57e-d6f4-4ecc-b660-717c45caa4e0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||finance-manager-group-consolidation-reporting-team",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Group Consolidation and Reporting",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/35dabd5f-c9d6-4fce-9842-a8d5fb31da2f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-group-consolidation-and-reporting",
+      "keywords": [
+        "Wallet",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Web3 Product Manager Web3 产品经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9f2bc863-ac4b-4e62-b35e-b425e4bbbbc7",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||web3-product-manager-web3-产品经理",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "VIP Operations Specialist（CN)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7f4cdcec-0e06-4a61-80b7-de086e8e7f86",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||vip-operations-specialist-cn",
+      "keywords": [
+        "Smart Contract",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "协议/合约开发",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Marketing Manager- UK",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/df0e1df2-d211-4fd6-9428-fd2ded2647f4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||marketing-manager-uk",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Sanctions, Policy Management & Training Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/c8c493b2-fe62-4972-95a7-3aa536b6b60c",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||sanctions-policy-management-training-manager",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Country Manager , Brazil ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/136a4ca2-b211-49ce-b767-10188a93ada1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||country-manager-brazil",
+      "keywords": [
+        "Go",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Channel Operations Manager-EU",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1c58c64e-9ef8-4e04-af96-99d107e0be59",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||channel-operations-manager-eu",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Financial Product Manager 资深理财产品经理（owner）",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/35e2b2c4-3c55-4756-b6bf-02ef4d18ae59",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-financial-product-manager-资深理财产品经理-owner",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "数据分析",
+        "产品规划",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Employment Counsel",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e57afde5-db82-435d-870e-863cb338fa5d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||employment-counsel",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "社群外拓谈判BD兼职",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7e3e375e-219a-4502-b572-8baa74b35533",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||社群外拓谈判bd兼职",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "security",
+      "category": "exchange",
+      "position": "MT5 Risk Control Strategy Operation MT5 风控策略运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/07bafa8d-7fee-4367-a136-cc7b370b623b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||mt5-risk-control-strategy-operation-mt5-风控策略运营",
+      "keywords": [
+        "SQL",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Broker Manager",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ccee7886-9845-4c4c-97e2-578ebc4ddef8",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-broker-manager",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition Manager/Leader（SG）",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/9a48d5e3-9259-40a5-a226-09b3cf79055a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||talent-acquisition-manager-leader-sg",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior KYT Specialist (EU)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/542004cf-93e1-4d77-808c-1f377ae87dde",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-kyt-specialist-eu",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "SLO/SLA",
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior KYC/KYB Specialist (EU)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d8007a82-02c3-40d7-9e66-c25335e4f4a0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-kyc-kyb-specialist-eu",
+      "keywords": [
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Screening Analyst ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/35c13dbd-c305-404d-b79e-5c3bd3623bef",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||screening-analyst",
+      "keywords": [
+        "Staking",
+        "Wallet"
+      ],
+      "duties": [
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager- UK",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Business Development Manager- UK",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3562da8a-0161-420d-acda-2697878624b1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-uk",
+      "keywords": [],
+      "duties": [
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "游戏化交易产品增长运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3b8a070f-d436-431f-ad47-4d2cb48bb04b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||游戏化交易产品增长运营",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Social Media Manager",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/dd3fe42c-00ef-4ba8-add6-526c2d27245a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-social-media-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "数据分析",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "VIP Product Operation Manager/Senior Product Operation Manager VIP 产品运营经理",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2c20174b-627a-41c9-a94c-8e9c2a1efc99",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||vip-product-operation-manager-senior-product-operation-manager-vip-产品运营经理",
+      "keywords": [
+        "Smart Contract",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "协议/合约开发",
+        "数据分析",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager, LATAM (Part Time)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2422f5e8-0350-4065-bd20-12fe2923ef4a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-latam-part-time",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "CFD Liquidity Management Expert CFD流动性管理专家",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/5ce43373-37b9-4cc0-856a-90b27c9f524b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-liquidity-management-expert-cfd流动性管理专家",
+      "keywords": [
+        "Python",
+        "Validator/节点",
+        "SQL",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager , SEA (Part Time) ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/aeff259b-7607-4071-9728-b3245a5f2766",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-sea-part-time",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "VIP Operations Manager-EU",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/648b5d2e-1272-4c3b-8bf1-470c200b0966",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||vip-operations-manager-eu",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Group Treasury Investment",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3a17b9be-b496-488f-9305-606a33ac46f0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-group-treasury-investment",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Finance Manager / Finance Manager (Finance Control) ",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d23f709c-94b5-4305-a9dc-198427664f7b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-finance-manager-finance-manager-finance-control",
+      "keywords": [
+        "Wallet",
+        "AWS",
+        "GCP",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Global Tax",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/af4eac3b-168d-4444-8643-37d0bf418017",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-global-tax",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Head of Finance COE and Transformation",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/a5221d4a-64ab-4908-8f21-b3bfed0118d1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-finance-coe-and-transformation",
+      "keywords": [
+        "Wallet",
+        "SQL",
+        "安全审计",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Head of Finance Control",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/593a7234-60b5-4a98-bc3a-f3e120c5bf49",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-finance-control",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "自动化",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Finance Manager / Finance Manager (Capital Markets and Financial Planning)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3723b92f-c75c-4137-ad63-f48489c0cd55",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-finance-manager-finance-manager-capital-markets-and-financial-planning",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager, Turkish ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e32d7be2-f01b-4256-80f5-e135d3ea5010",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-turkish",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager, South Asia ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/f41cfc46-0884-46f6-8bf3-abbc6f1607aa",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-south-asia",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "security",
+      "category": "exchange",
+      "position": "Perp DEX & On-chain Risk Control Strategy Analyst Perp DEX&链上风控策略分析师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/32d1eac3-ef05-4750-b8fc-e8ee9d2e0ec6",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||perp-dex-on-chain-risk-control-strategy-analyst-perp-dex-链上风控策略分析师",
+      "keywords": [
+        "Python",
+        "DeFi",
+        "MEV",
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "协议/合约开发",
+        "合规风控",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Analyst",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/81148143-f9cc-47a3-bbe0-400a8296a005",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||data-analyst",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "SQL",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager , SEA ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/bb6da96e-c3b5-4063-9b54-780d23d9ebca",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-sea",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Technology (EU)",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4f49673b-d77e-42ec-ae84-be60fa4df8c6",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-technology-eu",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Compliance Officer, El Salvador",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/706669ab-c219-42b1-83e8-74a343f0a0c8",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-officer-el-salvador",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AI Architecture AI架构师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/67304d4c-885f-4ec5-88ed-45f8389d4244",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ai-architecture-ai架构师",
+      "keywords": [
+        "Go",
+        "Staking",
+        "Wallet",
+        "On-call",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition Manager/Leader（HK）",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/11eaee1a-1f76-4e46-adad-a07ac3fe0586",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||talent-acquisition-manager-leader-hk",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Growth Manager - North America",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/a5de9849-2054-4123-88f5-8667c93b3d0d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||growth-manager-north-america",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition Manager/Leader（UK）",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/0999229d-2f30-4263-9eb2-445cc17dd035",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||talent-acquisition-manager-leader-uk",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Product Marketing Specialist (Intern)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/7db4e5a9-6a66-41b8-96f4-9be016047dd5",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||product-marketing-specialist-intern",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "P2P Business Development Manager (CIS)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/dac45642-fb29-4a25-8730-e7747e9c6f25",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||p2p-business-development-manager-cis",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Key Account Manager ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e8c66bb9-d79a-4eb3-a388-7bcf9a2f1c27",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||key-account-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "现货增长运营  Spot Growth Operations",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1f1797b1-72de-4ca8-96a0-74c03c6961d4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||现货增长运营-spot-growth-operations",
+      "keywords": [
+        "DeFi",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Compliance Operations Analyst (KYC/KYB/EDD）Noon shift",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/5d040e69-7ebc-418b-be54-75ce6cb3cb30",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-operations-analyst-kyc-kyb-edd-noon-shift",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "协议/合约开发",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition Manager / Lead",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/dec4e5ba-e7d4-4341-ab96-4d461c6fd705",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||talent-acquisition-manager-lead",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Morph Product Operations Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Morph Product Operations Manager",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1253d412-eecf-4d7a-b1da-08c446ea149a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||morph-product-operations-manager",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Compliance Operations Analyst (KYC/KYB/EDD）Night Shift",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/96507436-14a5-4168-9fe0-db1d7cb56ea7",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||compliance-operations-analyst-kyc-kyb-edd-night-shift",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "协议/合约开发",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "BD Manager, CN",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/52787223-a5f7-4433-a2d2-d4e5859e2b7e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bd-manager-cn",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager- Brazil",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/67c23074-658d-4f64-bb57-f23dd3e3342d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-brazil",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Business Development Manager- Iberia",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/61cbad6b-d995-4b25-a3e9-53682fd84783",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-business-development-manager-iberia",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "German & English  Business Development Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/5e3d6408-8851-441f-b8ef-af550c1a1754",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||german-english-business-development-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "User Research Specislist （part time)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6d1e5e68-c444-46ed-a805-3e00b3d4db1c",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||user-research-specislist-part-time",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "EU BD Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/dc8c61aa-b989-4510-8ee1-dfcbeaaed445",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||eu-bd-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "CIS CFD Business Analyst",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/0af6297e-e8a4-4b18-931d-e2becbeeb15a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cis-cfd-business-analyst",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "CFD Trade Operations - Institutional",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/23115593-63fd-45d1-b4f6-a475bdf21bca",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-trade-operations-institutional",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CIS KOL Business Development Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ec5a5e00-9e8d-4272-911d-c2dd5aceb7c4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cis-kol-business-development-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Talent Acquisition (Part-time)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/43b695f9-858a-44d6-a703-6667aaa4238e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||talent-acquisition-part-time",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL Business Development Manager-Brazil",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d5cd5d7f-32d9-4696-88fa-b6748f1293d5",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-business-development-manager-brazil",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL BD Manager -Turkey",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ad8c1d1e-fe34-407d-aafc-17974d1f34b5",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-bd-manager-turkey",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL BD Manager LATAM",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/22817a44-2d62-42ef-b2c6-29979514a3d3",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-bd-manager-latam",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Paralegal",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/5bac5717-7c89-4505-98e3-959c2d7ed253",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||paralegal",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "GRC Officer, Brazil",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/30bdacae-2ef8-4f75-b8ef-e26019da8850",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||grc-officer-brazil",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AI Application Testing Engineer (Agent Direction) AI应用测试工程师（Agent方向）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/acddd0d8-295b-43eb-b06a-529d8192a7dc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||ai-application-testing-engineer-agent-direction-ai应用测试工程师-agent方向",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "CI/CD",
+        "Linux",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "English localization specialist",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/b5392d98-394f-45e7-8fae-ac764dacaf6b",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||english-localization-specialist",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "English Copy Editor",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/22afb098-087f-459d-837f-9f6e550a6cd6",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||english-copy-editor",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Localization Project Manager 本地化翻译项目经理(PMO)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3f3720f8-9da4-4efd-a1a2-8bbc19f985c0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||localization-project-manager-本地化翻译项目经理-pmo",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Head of growth-CIS",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/33de47b9-a397-44dc-940f-cf0a538ed567",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||head-of-growth-cis",
+      "keywords": [
+        "Go",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "AIOps Engineer / AI Platform Engineer (Ops)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/e5cdf33d-3104-4ac0-aa25-c61880d2c9c1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||aiops-engineer-ai-platform-engineer-ops",
+      "keywords": [
+        "Go",
+        "Python",
+        "AWS",
+        "CI/CD",
+        "Linux",
+        "AI",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Legal Counsel, Regulatory & Licensing (US)",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/39fa3ad5-3dd2-4a14-b5f7-fe7247ea96ae",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-legal-counsel-regulatory-licensing-us",
+      "keywords": [
+        "Staking",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "产品规划",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Technical Accounting Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/164b1ae8-9527-498e-97f0-d824dc3b6611",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||technical-accounting-manager",
+      "keywords": [
+        "安全审计",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL BD Manager- Germany",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/b87ab46b-4c4d-4823-b988-336e40eed2d2",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-bd-manager-germany",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Managing Director (MiFID, EU)",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/18604ebd-aecf-4563-9e62-5e970ee4f420",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||managing-director-mifid-eu",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "security",
+      "category": "exchange",
+      "position": "CFD量化风控专家（HK/MY）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/29b3fd5d-7cb6-41b4-99b2-d88b25aabc2d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd量化风控专家-hk-my",
+      "keywords": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "合规风控",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Branding Director",
+      "level": "head",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/ba295b32-0334-433a-a9d0-9a642786c50a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||branding-director",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "数据分析",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "量化研究员（高频分析建模） Quantitative Researcher（High-frequency trading modeling）",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d15a7d34-9e50-4c54-9f9f-740fa6b1d87e",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||量化研究员-高频分析建模-quantitative-researcher-high-frequency-trading-modeling",
+      "keywords": [
+        "Python",
+        "Machine Learning",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Key Account Business Manager 大客户商务经理 ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/54f3e78d-8a17-4e0d-95dc-e2796b3fb0c2",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||key-account-business-manager-大客户商务经理",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Website Operations Specialist",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/df7ffade-93b7-4a14-98a5-0f06c4cee632",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||website-operations-specialist",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Institutional Business Development Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/72a59117-5b91-4de2-8bf8-892cea8744df",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||institutional-business-development-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Localization Product Manager | Translation Platform Direction",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/b9fe66aa-4853-49ca-bf3a-1b6b5b6d8550",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||localization-product-manager-translation-platform-direction",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "产品规划",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Legal Intern - Commercial (3-6 months, Full Time)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/3d1918e4-0282-44df-a270-ab8792514ab8",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||legal-intern-commercial-3-6-months-full-time",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "自动化",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Swap Product Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/8b81d030-92e2-412b-a968-dbf148f6cad0",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||swap-product-manager",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Smart Contract Engineer 智能合约工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/6797e8c2-a557-4681-aa6f-a51c9949a8ab",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||smart-contract-engineer-智能合约工程师",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Ethereum"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "BGW Flutter Engineer 客户端Flutter开发",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/96b2ef94-4c25-4d67-b182-9af3ec5576e9",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||bgw-flutter-engineer-客户端flutter开发",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "CI/CD"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Institutional Business Development Manager（Europe)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/a64c18da-9710-4296-8795-3c401a0a51eb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||institutional-business-development-manager-europe",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "VIP Relationship Manager (Korean speaker)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/961fb69e-8351-45a6-8b12-df2e6c8b6f2d",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||vip-relationship-manager-korean-speaker",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "KOL Business Development(Poland)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "What You’ll Do:",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/647258ca-5ad0-42ec-ac05-eaaf6808e597",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||kol-business-development-poland",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "VIP Relationship Manager-Germany",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/db57ccba-88d6-4737-a9a1-0ab8e31ecf2f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||vip-relationship-manager-germany",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Operations Manager ",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4c5b88f3-a38c-4812-b41f-5c960026ca08",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||operations-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Business Development Manager (Korean speaker)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/782e6aa0-7ded-4082-91e0-456bf55eef58",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||business-development-manager-korean-speaker",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Agent Innovative Application Algorithm Engineer Agent创新应用算法工程师",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/cfb9dcfa-5b11-498e-aecf-2f380d075c69",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||agent-innovative-application-algorithm-engineer-agent创新应用算法工程师",
+      "keywords": [
+        "DeFi",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior AI Application Development Engineer/Agent Architect 高级 AI 应用开发工程师/Agent 架构师",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/51833464-96eb-40b8-956e-698061987c60",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-ai-application-development-engineer-agent-architect-高级-ai-应用开发工程师-agent-架构师",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "On-call",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Institutional Product Manager 机构产品经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/1004a662-93f5-4723-9649-e243d1a3dd01",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||institutional-product-manager-机构产品经理",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "DEX Business Development Manager",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/d87a9aaa-db99-4a80-b36e-7379d8cc4e57",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||dex-business-development-manager",
+      "keywords": [
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "bd",
+      "category": "exchange",
+      "position": "CFD Sales & Channel Operations",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2ec669ac-59b4-4e18-97d6-4f4a044411a3",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||cfd-sales-channel-operations",
+      "keywords": [
+        "Python",
+        "SQL",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Pakistan Country CEO/MD",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/61bcb5ca-b9a6-4413-af5e-a4964125d5bc",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||pakistan-country-ceo-md",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "product",
+      "category": "exchange",
+      "position": "Payfi Product Manager Payfi 产品经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4ccf629c-7739-4121-8fd7-47af114397e1",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||payfi-product-manager-payfi-产品经理",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "security",
+      "category": "exchange",
+      "position": "US Equity Risk Control Operations 美股风控运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/45c493ac-a98b-47bc-bd31-f1a7da28bd42",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||us-equity-risk-control-operations-美股风控运营",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Stock Market Event Planning 股票活动策划",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/cd2c5772-630f-4b6b-aee3-8781991cf461",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||stock-market-event-planning-股票活动策划",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "产品规划",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "security",
+      "category": "exchange",
+      "position": "资金风控产品经理",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/2bff6542-3ff2-4cac-b049-e85600d5b185",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||资金风控产品经理",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长",
+        "出入金"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "growth",
+      "category": "exchange",
+      "position": "US Equity Clearing and Settlement Operations 美股清结算运营",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/4c06c042-2672-4fe5-99a3-882c530a5469",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||us-equity-clearing-and-settlement-operations-美股清结算运营",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bitget",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Equity Analyst 资深股票分析师",
+      "level": "senior",
+      "location": "远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About us",
+      "link": "https://hire-r1.mokahr.com/social-recruitment/bitget/100000079#/job/708022d6-89e8-4aee-ad0f-d69ff4f31a34",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "bitget||senior-equity-analyst-资深股票分析师",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
       "company": "ENS Labs",
       "func": "eng",
       "category": "chain",
