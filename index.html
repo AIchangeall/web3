@@ -390,9 +390,18 @@
     document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a>`;
   }
 
-  // 支持从企业库页跳转：?q=公司名 预填搜索
-  const qp=new URLSearchParams(location.search).get("q");
-  if(qp){ state.search=qp.trim().toLowerCase(); document.getElementById("search").value=qp; }
+  // 支持从其它页（企业库 / 数据洞察）跳转预设筛选：?q= / ?func= / ?cat= / ?level= / ?region= / ?new=1
+  (function(){
+    const p=new URLSearchParams(location.search);
+    const qp=p.get("q");
+    if(qp){ state.search=qp.trim().toLowerCase(); document.getElementById("search").value=qp; }
+    function act(groupId,set,key){ if(!key)return; if(!set.has(key))set.add(key); var el=[...document.getElementById(groupId).querySelectorAll(".chip")].find(c=>c.dataset.key===key); if(el)el.classList.add("active"); }
+    (p.get("func")||"").split(",").filter(Boolean).forEach(k=>act("g-func",state.funcs,k));
+    (p.get("cat")||"").split(",").filter(Boolean).forEach(k=>act("g-cat",state.cats,k));
+    (p.get("level")||"").split(",").filter(Boolean).forEach(k=>act("g-lvl",state.lvls,k));
+    (p.get("region")||"").split(",").filter(Boolean).forEach(k=>act("g-region",state.regions,k));
+    if(p.get("new")==="1"){ state.newOnly=true; tnew.classList.add("on"); }
+  })();
 
   head(); render();
 })();
