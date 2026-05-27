@@ -4,7 +4,9 @@
 //  结构: { lastUpdated, lastUpdatedAt, snapshotNote, changelog[], jobs[], companies{} }
 //  lastUpdated=日期(用于 firstSeen/NEW 比对); lastUpdatedAt=ISO 时间戳(前端转本地时区显示到分钟)
 //  每个 job: id?/company/category/func/position/level/location/region[]/salary/
-//            salaryNum/requirements/link/firstSeen/lastSeen
+//            salaryNum/requirements/link/firstSeen/lastSeen/contact?/contactInfo?/keywords[]
+//  contact/contactInfo(猎头端用): 仅当来源公开招聘信息明确披露联系人/邮箱·TG·微信时填写，勿编造
+//  keywords(岗位关键字): 由 keywords.mjs 从 position+requirements 自动派生；apply_update 对缺失者自动补全
 //  companies: { "公司名": { intro:"一句话简介" } }（合作单位页用；新公司可留空简介）
 //  func(职能): eng工程研发 | ops运维SRE基础设施 | product产品 | design设计 |
 //              data数据AI | security安全 | growth市场增长运营 | bd商务销售 | ga合规法务财务HR
@@ -45,7 +47,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/chainlink-labs/842e9d47-982c-4dfb-8461-1080759c82d9",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "chainlink-labs||senior-smart-contract-engineer-solidity-ccip"
+      "id": "chainlink-labs||senior-smart-contract-engineer-solidity-ccip",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM"
+      ]
     },
     {
       "company": "CoW DAO",
@@ -64,7 +71,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/cow-dao/92622acb-7be1-4017-9f64-b20bf8a25c7f",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "cow-dao||web3-backend-engineer-rust"
+      "id": "cow-dao||web3-backend-engineer-rust",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Smart Contract",
+        "DeFi",
+        "Ethereum"
+      ]
     },
     {
       "company": "Monad Foundation",
@@ -82,7 +96,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/monad.foundation/2242c712-d2cf-4fe5-8cc4-eae0ce2bc4f5",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "monad-foundation||senior-software-engineer-full-stack-web3"
+      "id": "monad-foundation||senior-software-engineer-full-stack-web3",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Wallet"
+      ]
     },
     {
       "company": "pod network",
@@ -100,7 +119,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/pod-network/64ec90ae-a0d3-4175-b29d-27fc35eef85b",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "pod-network||smart-contract-engineer-evm-low-level-execution"
+      "id": "pod-network||smart-contract-engineer-evm-low-level-execution",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM"
+      ]
     },
     {
       "company": "Trust Wallet",
@@ -118,7 +142,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/trust-wallet/ec71403d-e365-48b4-833a-63d1852ec58d",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "trust-wallet||senior-backend-engineer-web3"
+      "id": "trust-wallet||senior-backend-engineer-web3",
+      "keywords": [
+        "Go",
+        "EVM",
+        "Solana",
+        "Kubernetes",
+        "AWS"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -137,7 +168,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/5bb16711-a863-4ded-9e89-20a0be9eae1e",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "crypto-com||senior-product-manager-api"
+      "id": "crypto-com||senior-product-manager-api",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "OKX",
@@ -157,7 +191,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/6989066003",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "okx||senior-product-manager-web3-risk-controls"
+      "id": "okx||senior-product-manager-web3-risk-controls",
+      "keywords": [
+        "DeFi",
+        "合规"
+      ]
     },
     {
       "company": "Trust Wallet",
@@ -175,7 +213,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/trust-wallet/7a286b2a-940a-441b-a02b-9b2790dcf561",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "trust-wallet||senior-product-designer-trading"
+      "id": "trust-wallet||senior-product-designer-trading",
+      "keywords": [
+        "Wallet"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -194,7 +235,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/3f9af9c2-045f-4243-be19-459f63b3eb68",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "crypto-com||senior-product-designer-web"
+      "id": "crypto-com||senior-product-designer-web",
+      "keywords": []
     },
     {
       "company": "Binance",
@@ -213,7 +255,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/c0980db4-ea30-4f3a-be47-a17fe8424ceb",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "binance||senior-llm-algorithm-engineer"
+      "id": "binance||senior-llm-algorithm-engineer",
+      "keywords": [
+        "AI"
+      ]
     },
     {
       "company": "Saga",
@@ -232,7 +277,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/saga-xyz/6f4e2b80-c18f-4f62-b61b-da67d257b828",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "saga||senior-ai-agent-engineer"
+      "id": "saga||senior-ai-agent-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "AI"
+      ]
     },
     {
       "company": "Token Metrics",
@@ -250,7 +300,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/tokenmetrics/5c80bc13-c7dc-4aa5-97f2-1314b30a2686",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "token-metrics||senior-crypto-data-engineer"
+      "id": "token-metrics||senior-crypto-data-engineer",
+      "keywords": [
+        "Kafka",
+        "Spark",
+        "AI"
+      ]
     },
     {
       "company": "Paxos",
@@ -269,7 +324,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.ashbyhq.com/PaxosLabs/ad5179f9-c859-43bb-a7d3-2ab8ef8c9884",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "paxos||lead-security-engineer"
+      "id": "paxos||lead-security-engineer",
+      "keywords": [
+        "DeFi",
+        "AWS"
+      ]
     },
     {
       "company": "Vac (Status / Logos)",
@@ -287,7 +346,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/vac/jobs/6986179",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "vac-status-logos||application-security-engineer-web3"
+      "id": "vac-status-logos||application-security-engineer-web3",
+      "keywords": [
+        "Smart Contract"
+      ]
     },
     {
       "company": "OKX",
@@ -308,7 +370,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/6573704003",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "okx||senior-product-marketing-manager-web3"
+      "id": "okx||senior-product-marketing-manager-web3",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "company": "Animoca Brands",
@@ -327,7 +393,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/animocabrands/b912661b-cb7e-431f-8084-645978716c32",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "animoca-brands||marketing-manager"
+      "id": "animoca-brands||marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ]
     },
     {
       "company": "Risk Labs (UMA / Across)",
@@ -345,7 +414,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/risklabs/eb7a1ecd-f42d-4c59-8963-f87ef3417330",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "risk-labs-uma-across||bd-manager"
+      "id": "risk-labs-uma-across||bd-manager",
+      "keywords": [
+        "DeFi",
+        "营销/增长"
+      ]
     },
     {
       "company": "CoinMarketCap",
@@ -364,7 +437,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/coinmarketcap/43e9d6cf-31fe-4434-a2c4-850cefa4683c",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "coinmarketcap||business-development-manager-api"
+      "id": "coinmarketcap||business-development-manager-api",
+      "keywords": [
+        "DeFi"
+      ]
     },
     {
       "company": "Binance",
@@ -383,7 +459,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/257a6829-fa82-46fa-a09b-f3026ed7d2b2",
       "firstSeen": "2026-05-27",
       "lastSeen": "2026-05-27",
-      "id": "binance||senior-corporate-legal-counsel"
+      "id": "binance||senior-corporate-legal-counsel",
+      "keywords": []
     },
     {
       "company": "Immutable",
@@ -402,7 +479,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/immutable/03e6848f-6cc7-4295-a162-7910b0368c4d",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "immutable||protocol-blockchain-engineer"
+      "id": "immutable||protocol-blockchain-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "L2/Rollup"
+      ]
     },
     {
       "company": "1inch",
@@ -420,7 +502,13 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/1inch/a39cdc2d-36df-47c2-be7a-09be92e57979",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "1inch||technical-lead-blockchain"
+      "id": "1inch||technical-lead-blockchain",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Smart Contract",
+        "DeFi"
+      ]
     },
     {
       "company": "1inch",
@@ -438,7 +526,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/1inch/b43b5dfa-95ff-4a30-9a42-6fb7860ff0ec",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "1inch||senior-software-engineer-blockchain"
+      "id": "1inch||senior-software-engineer-blockchain",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "TypeScript",
+        "Smart Contract",
+        "DeFi"
+      ]
     },
     {
       "company": "Limit Break",
@@ -457,7 +552,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/limitbreak/d358beee-a1a9-4055-a653-f594672ca415",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "limit-break||sr-blockchain-engineer-smart-contract"
+      "id": "limit-break||sr-blockchain-engineer-smart-contract",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "安全审计"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -476,7 +576,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/920768e5-3b79-401e-8c12-a9e0da82190a",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||blockchain-devops-engineer"
+      "id": "crypto-com||blockchain-devops-engineer",
+      "keywords": [
+        "CI/CD"
+      ]
     },
     {
       "company": "MyShell",
@@ -495,7 +598,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/myshell/jobs/4024148008",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "myshell||web3-product-manager-consumer-crypto"
+      "id": "myshell||web3-product-manager-consumer-crypto",
+      "keywords": [
+        "DeFi",
+        "AI"
+      ]
     },
     {
       "company": "OKX",
@@ -515,7 +622,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/6686184003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||senior-infra-product-manager-web3"
+      "id": "okx||senior-infra-product-manager-web3",
+      "keywords": []
     },
     {
       "company": "Binance",
@@ -534,7 +642,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/38b8287d-6ef2-4bfd-8eab-490b74ac892a",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||product-manager-web3-growth"
+      "id": "binance||product-manager-web3-growth",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -553,7 +665,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/62ae1c4c-2063-4f55-8131-8b0a407e564e",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||associate-product-manager-early-career"
+      "id": "crypto-com||associate-product-manager-early-career",
+      "keywords": []
     },
     {
       "company": "Fuel Labs",
@@ -572,7 +685,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/fuellabs/a49576f1-eb27-487c-9baa-223600080c91",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "fuel-labs||web3-product-designer"
+      "id": "fuel-labs||web3-product-designer",
+      "keywords": []
     },
     {
       "company": "Story Protocol",
@@ -591,7 +705,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/storyprotocol/d49d2c0e-3025-496b-a405-33ab931acaa9",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "story-protocol||product-designer"
+      "id": "story-protocol||product-designer",
+      "keywords": []
     },
     {
       "company": "Ethereum Foundation",
@@ -609,7 +724,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/ethereumfoundation/6df6ebd3-ff9f-4ee2-81c0-c7f1bc4e6da7",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "ethereum-foundation||product-designer"
+      "id": "ethereum-foundation||product-designer",
+      "keywords": [
+        "Ethereum"
+      ]
     },
     {
       "company": "OKX",
@@ -629,7 +747,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/6691995003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||senior-data-scientist-web3"
+      "id": "okx||senior-data-scientist-web3",
+      "keywords": []
     },
     {
       "company": "Blockchain.com",
@@ -647,7 +766,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/blockchain/jobs/3035279",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "blockchain-com||data-scientist"
+      "id": "blockchain-com||data-scientist",
+      "keywords": [
+        "GCP",
+        "Machine Learning"
+      ]
     },
     {
       "company": "Binance",
@@ -666,7 +789,13 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/1d2fc9c5-bb7d-4bab-b596-df3a8336e171",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||web3-security-data-analyst"
+      "id": "binance||web3-security-data-analyst",
+      "keywords": [
+        "Python",
+        "Flink",
+        "Spark",
+        "SQL"
+      ]
     },
     {
       "company": "CertiK",
@@ -686,7 +815,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/certik/478ab0cd-9f5e-4b88-88b5-01d3beac4d81",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "certik||blockchain-security-engineer-solidity-rust-golang"
+      "id": "certik||blockchain-security-engineer-solidity-rust-golang",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "Smart Contract",
+        "Validator/节点"
+      ]
     },
     {
       "company": "Binance",
@@ -705,7 +841,15 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/31a86987-81b3-4719-9d93-fc80bd5584a5",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||blockchain-security-engineer-smart-contract-auditing"
+      "id": "binance||blockchain-security-engineer-smart-contract-auditing",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "Smart Contract",
+        "DeFi",
+        "安全审计"
+      ]
     },
     {
       "company": "Arbitrum Foundation",
@@ -724,7 +868,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/arbitrumfoundation/de077057-81ff-4db1-b89f-701d44d280eb",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "arbitrum-foundation||marketing-strategy-operations-lead"
+      "id": "arbitrum-foundation||marketing-strategy-operations-lead",
+      "keywords": [
+        "L2/Rollup",
+        "营销/增长"
+      ]
     },
     {
       "company": "Offchain Labs",
@@ -743,7 +891,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/offchainlabs/2d897afa-bbb3-4694-85b3-0c5c6a83e466",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "offchain-labs||community-manager"
+      "id": "offchain-labs||community-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "company": "1inch",
@@ -761,7 +913,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/1inch/30fc85c7-d65d-42c9-9cae-e76a4ad21b33",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "1inch||social-media-manager"
+      "id": "1inch||social-media-manager",
+      "keywords": [
+        "营销/增长"
+      ]
     },
     {
       "company": "Coins.ph",
@@ -779,7 +934,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/coins/5ce8eff6-d4df-44c9-9a09-dbc5f152341c",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "coins-ph||web3-business-development-associate"
+      "id": "coins-ph||web3-business-development-associate",
+      "keywords": []
     },
     {
       "company": "Offchain Labs",
@@ -798,7 +954,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/offchainlabs/f2fb76a8-705f-4a0e-be43-a8119f830dfa",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "offchain-labs||corporate-counsel"
+      "id": "offchain-labs||corporate-counsel",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Binance",
@@ -817,7 +976,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/22ff0aae-c34e-4e0f-95d4-132d9290132f",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||regulatory-counsel-mena"
+      "id": "binance||regulatory-counsel-mena",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Binance",
@@ -836,7 +998,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/c4e205be-a2a6-47bc-b45c-cb1bdf49421a",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||talent-acquisition-specialist-corporate"
+      "id": "binance||talent-acquisition-specialist-corporate",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Aave Labs",
@@ -854,7 +1019,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.eu.lever.co/aavelabs/a3f47e26-ab0a-403d-8e59-ca2d7e5b4fe7",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "aave-labs||staff-smart-contract-engineer"
+      "id": "aave-labs||staff-smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "Ethereum"
+      ]
     },
     {
       "company": "Sei Labs",
@@ -872,7 +1044,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/SeiLabs/64c40993-eaaf-41de-a73f-60d846f7393c",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "sei-labs||solidity-smart-contracts-engineer"
+      "id": "sei-labs||solidity-smart-contracts-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM"
+      ]
     },
     {
       "company": "ZetaChain",
@@ -890,7 +1067,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/zetachain/jobs/4934204008",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "zetachain||frontend-engineer-web3-consumer-apps"
+      "id": "zetachain||frontend-engineer-web3-consumer-apps",
+      "keywords": [
+        "React"
+      ]
     },
     {
       "company": "Binance",
@@ -909,7 +1089,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/1801f2c6-fee7-4ec2-b37d-b3dd08a3e3ed",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||senior-frontend-engineer-web3-wallet"
+      "id": "binance||senior-frontend-engineer-web3-wallet",
+      "keywords": [
+        "Wallet"
+      ]
     },
     {
       "company": "Gate.io",
@@ -928,7 +1111,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/gate/49bc4443-981c-4cc4-9734-1033c1e2d36e",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "gate-io||web3-backend-engineer"
+      "id": "gate-io||web3-backend-engineer",
+      "keywords": [
+        "EVM"
+      ]
     },
     {
       "company": "LayerZero Labs",
@@ -946,7 +1132,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/layerzerolabs/jobs/4290390004",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "layerzero-labs||backend-engineer"
+      "id": "layerzero-labs||backend-engineer",
+      "keywords": [
+        "Go",
+        "Node.js",
+        "Validator/节点"
+      ]
     },
     {
       "company": "Ethereum Foundation",
@@ -964,7 +1155,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/ethereumfoundation/7c34b7a5-62c4-4905-98eb-2920b6074c09",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "ethereum-foundation||developer-account-abstraction-interop"
+      "id": "ethereum-foundation||developer-account-abstraction-interop",
+      "keywords": [
+        "Solidity",
+        "Smart Contract"
+      ]
     },
     {
       "company": "Triton One",
@@ -982,7 +1177,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://cryptojobslist.com/sre",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "triton-one||site-reliability-engineer-solana-infrastructure"
+      "id": "triton-one||site-reliability-engineer-solana-infrastructure",
+      "keywords": [
+        "Validator/节点",
+        "Solana"
+      ]
     },
     {
       "company": "Binance",
@@ -1001,7 +1200,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/feeb939d-5dac-46fa-bfbc-e13bc2ba7fea",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||product-manager-web3-defi"
+      "id": "binance||product-manager-web3-defi",
+      "keywords": [
+        "DeFi",
+        "Wallet"
+      ]
     },
     {
       "company": "Space and Time Labs",
@@ -1020,7 +1223,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/space-time/77e0d156-4869-40d7-8d70-3e4d3b64dc8a",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "space-and-time-labs||product-manager-defi"
+      "id": "space-and-time-labs||product-manager-defi",
+      "keywords": [
+        "Smart Contract",
+        "DeFi"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -1039,7 +1246,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/161feab0-def0-4b63-b719-2ac87f4f849e",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||product-manager-onchain"
+      "id": "crypto-com||product-manager-onchain",
+      "keywords": [
+        "DeFi",
+        "营销/增长"
+      ]
     },
     {
       "company": "OKX",
@@ -1059,7 +1270,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/OKX/jobs/6660783003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||senior-product-designer-web3-defi"
+      "id": "okx||senior-product-designer-web3-defi",
+      "keywords": [
+        "DeFi",
+        "Wallet"
+      ]
     },
     {
       "company": "Phantom",
@@ -1078,7 +1293,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/phantom45/jobs/4502077005",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "phantom||brand-designer"
+      "id": "phantom||brand-designer",
+      "keywords": [
+        "Wallet"
+      ]
     },
     {
       "company": "Immunefi",
@@ -1096,7 +1314,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/immunefi/jobs/5475815004",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "immunefi||senior-ux-product-designer"
+      "id": "immunefi||senior-ux-product-designer",
+      "keywords": []
     },
     {
       "company": "Binance",
@@ -1115,7 +1334,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/b823f1b9-f62e-4156-b8e2-c20d11a163a3",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||data-scientist-ai-agent-engineering-infrastructure"
+      "id": "binance||data-scientist-ai-agent-engineering-infrastructure",
+      "keywords": [
+        "AI"
+      ]
     },
     {
       "company": "Binance",
@@ -1134,7 +1356,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/efc8b129-8ddb-457a-9d5f-7eb3fe0e4dc6",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||data-scientist-computer-vision-risk-management"
+      "id": "binance||data-scientist-computer-vision-risk-management",
+      "keywords": [
+        "Machine Learning",
+        "AML/KYC"
+      ]
     },
     {
       "company": "CertiK",
@@ -1154,7 +1380,13 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/certik/e15a5a75-137f-4e37-a402-85079dd12b94",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "certik||senior-blockchain-security-engineer-solidity-rust-golang"
+      "id": "certik||senior-blockchain-security-engineer-solidity-rust-golang",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Go",
+        "安全审计"
+      ]
     },
     {
       "company": "Binance",
@@ -1173,7 +1405,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance/6f64f1c8-2fdc-4231-8da3-631ebdf3ae2a",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "binance||smart-contract-auditor"
+      "id": "binance||smart-contract-auditor",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "安全审计"
+      ]
     },
     {
       "company": "OKX",
@@ -1193,7 +1430,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/6483958003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||web3-security-researcher-smart-contract"
+      "id": "okx||web3-security-researcher-smart-contract",
+      "keywords": [
+        "Smart Contract",
+        "EVM",
+        "安全审计"
+      ]
     },
     {
       "company": "Jump Crypto",
@@ -1212,7 +1454,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/jumpcrypto/jobs/3959660",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "jump-crypto||blockchain-security-engineer"
+      "id": "jump-crypto||blockchain-security-engineer",
+      "keywords": []
     },
     {
       "company": "OKX",
@@ -1232,7 +1475,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/okx/jobs/5820258003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||web3-ecosystem-marketing-manager"
+      "id": "okx||web3-ecosystem-marketing-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -1251,7 +1498,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/cbf62afb-e150-4f3b-b894-d529bb191262",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||growth-manager"
+      "id": "crypto-com||growth-manager",
+      "keywords": [
+        "营销/增长"
+      ]
     },
     {
       "company": "Blockchain.com",
@@ -1269,7 +1519,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/blockchain/jobs/6865066",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "blockchain-com||community-manager-web3"
+      "id": "blockchain-com||community-manager-web3",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "company": "Token Metrics",
@@ -1287,7 +1541,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/tokenmetrics/e5e3f4c0-37ee-42fc-9ce9-c3f6611f3e13",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "token-metrics||head-of-marketing-and-communications"
+      "id": "token-metrics||head-of-marketing-and-communications",
+      "keywords": [
+        "营销/增长"
+      ]
     },
     {
       "company": "OKX",
@@ -1307,7 +1564,12 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/okx/jobs/7537363003",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "okx||business-development-manager-web3-community"
+      "id": "okx||business-development-manager-web3-community",
+      "keywords": [
+        "DeFi",
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "company": "Crypto.com",
@@ -1326,7 +1588,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/682e46b9-70e8-4256-a010-32aa010a5db1",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||business-development-manager-vip-partnerships"
+      "id": "crypto-com||business-development-manager-vip-partnerships",
+      "keywords": []
     },
     {
       "company": "Celo Foundation",
@@ -1344,7 +1607,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/celofoundation/jobs/4310556004",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "celo-foundation||head-of-business-development-and-partnerships"
+      "id": "celo-foundation||head-of-business-development-and-partnerships",
+      "keywords": []
     },
     {
       "company": "Gateway.fm",
@@ -1363,7 +1627,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.eu.greenhouse.io/gatewayfm/jobs/4552399101",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "gateway-fm||business-development-manager-web3"
+      "id": "gateway-fm||business-development-manager-web3",
+      "keywords": []
     },
     {
       "company": "Crypto.com",
@@ -1382,7 +1647,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/crypto/8a3e7811-28a4-4217-aaf2-21856f3a9834",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "crypto-com||regulatory-legal-counsel"
+      "id": "crypto-com||regulatory-legal-counsel",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Circle",
@@ -1401,7 +1669,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://boards.greenhouse.io/circle/jobs/6012230002",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "circle||web3-blockchain-researcher-compliance"
+      "id": "circle||web3-blockchain-researcher-compliance",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Galaxy Digital",
@@ -1419,7 +1690,10 @@ window.WEB3_JOBS_DATA = {
       "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5669303004",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "galaxy-digital||head-of-legal-retail"
+      "id": "galaxy-digital||head-of-legal-retail",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Offchain Labs",
@@ -1438,7 +1712,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/offchainlabs/2f0f490e-d5cd-44e1-8151-126c27fb5d01",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "id": "offchain-labs||technical-recruiter-crypto"
+      "id": "offchain-labs||technical-recruiter-crypto",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1456,7 +1731,13 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 200000,
       "requirements": "L2 协议核心开发；Optimism Bedrock；Go/Rust；EVM 底层。",
       "link": "https://web3.career/blockchain-jobs",
-      "id": "op-labs-optimism-protocol-engineer-go-rust"
+      "id": "op-labs-optimism-protocol-engineer-go-rust",
+      "keywords": [
+        "Rust",
+        "Go",
+        "EVM",
+        "L2/Rollup"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1474,7 +1755,13 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 190000,
       "requirements": "DeFi 借贷协议合约开发；Solidity；Foundry；合约安全。",
       "link": "https://web3.career/smart-contract-jobs",
-      "id": "aave-senior-smart-contract-engineer-solidity"
+      "id": "aave-senior-smart-contract-engineer-solidity",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "DeFi",
+        "Foundry"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1493,7 +1780,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 200000,
       "requirements": "DApp 前端；React/Next.js；ethers.js；高 QPS 数据展示。",
       "link": "https://web3.career/front-end-jobs",
-      "id": "uniswap-labs-senior-frontend-engineer-react-ts"
+      "id": "uniswap-labs-senior-frontend-engineer-react-ts",
+      "keywords": [
+        "React"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1511,7 +1801,12 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 140000,
       "requirements": "Node.js/Go；The Graph；API 集成；IPFS。",
       "link": "https://web3.career/backend-jobs",
-      "id": "halliday-backend-engineer"
+      "id": "halliday-backend-engineer",
+      "keywords": [
+        "Go",
+        "Node.js",
+        "Validator/节点"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1529,7 +1824,12 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 200000,
       "requirements": "restaking 协议工程；Rust/Solidity；分布式系统。",
       "link": "https://web3.career/blockchain-jobs",
-      "id": "symbiotic-protocol-engineer-restaking"
+      "id": "symbiotic-protocol-engineer-restaking",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Staking"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1547,7 +1847,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 150000,
       "requirements": "L2 产品策略；onchain 产品；跨研发/设计协作。",
       "link": "https://web3.career/product-manager-jobs",
-      "id": "op-labs-pbc-senior-product-manager"
+      "id": "op-labs-pbc-senior-product-manager",
+      "keywords": [
+        "L2/Rollup"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1565,7 +1868,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 160000,
       "requirements": "交易所 onchain 产品；钱包/链上交互方向。",
       "link": "https://web3.career/product-manager-jobs",
-      "id": "kraken-product-manager-onchain"
+      "id": "kraken-product-manager-onchain",
+      "keywords": [
+        "Wallet"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1583,7 +1889,12 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 130000,
       "requirements": "法币出入金产品；支付合规；增长指标。",
       "link": "https://web3.career/product-manager-jobs",
-      "id": "moonpay-product-manager-on-off-ramp"
+      "id": "moonpay-product-manager-on-off-ramp",
+      "keywords": [
+        "合规",
+        "营销/增长",
+        "出入金"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1601,7 +1912,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 158000,
       "requirements": "6+ 年；移动优先消费级产品；端到端交付。",
       "link": "https://web3.career/product-designer-jobs",
-      "id": "figure-principal-product-designer"
+      "id": "figure-principal-product-designer",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1620,7 +1932,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 120000,
       "requirements": "品牌视觉设计；5+ 年 fintech/crypto/SaaS。",
       "link": "https://web3.career/brand-designer-jobs",
-      "id": "alchemy-senior-associate-brand-design"
+      "id": "alchemy-senior-associate-brand-design",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1638,7 +1951,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 110000,
       "requirements": "品牌视觉/视觉系统；多渠道素材产出。",
       "link": "https://web3.career/brand-designer-jobs",
-      "id": "squads-brand-designer"
+      "id": "squads-brand-designer",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1657,7 +1971,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 160000,
       "requirements": "链上数据分析与建模；Python；趋势/风险洞察；看板。",
       "link": "https://web3.career/data-science-jobs",
-      "id": "binance-data-scientist-on-chain"
+      "id": "binance-data-scientist-on-chain",
+      "keywords": [
+        "Python"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1677,7 +1994,11 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 213000,
       "requirements": "风控/推荐 ML 模型；Python；神经网络/聚类。",
       "link": "https://cryptojobslist.com/machine-learning",
-      "id": "okx-machine-learning-engineer"
+      "id": "okx-machine-learning-engineer",
+      "keywords": [
+        "Python",
+        "Machine Learning"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1697,7 +2018,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 120000,
       "requirements": "链上数据；调查分析；SQL；可视化。",
       "link": "https://web3.career/analyst-jobs",
-      "id": "chainalysis-data-analyst-investigations"
+      "id": "chainalysis-data-analyst-investigations",
+      "keywords": [
+        "SQL"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1715,7 +2039,15 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 400000,
       "requirements": "Solidity 安全审计；形式化验证；Foundry/Slither/Echidna；EVM。",
       "link": "https://web3.career/security+smart-contract-jobs",
-      "id": "trail-of-bits-smart-contract-security-auditor"
+      "id": "trail-of-bits-smart-contract-security-auditor",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "Foundry",
+        "安全审计",
+        "形式化验证"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1733,7 +2065,12 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 200000,
       "requirements": "3+ 年 Solidity 安全；EVM/Yellow Paper；常见漏洞模式。",
       "link": "https://web3.career/smart-contract-auditor-nethermind/78699",
-      "id": "nethermind-smart-contract-auditor"
+      "id": "nethermind-smart-contract-auditor",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1751,7 +2088,13 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 200000,
       "requirements": "形式化验证；漏洞研究；ZK/合约审计。",
       "link": "https://web3.career/security+smart-contract-jobs",
-      "id": "veridise-security-researcher"
+      "id": "veridise-security-researcher",
+      "keywords": [
+        "Smart Contract",
+        "ZK",
+        "安全审计",
+        "形式化验证"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1770,7 +2113,11 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 90000,
       "requirements": "增长运营；内容与社区；数据驱动。",
       "link": "https://web3.career/marketing-jobs",
-      "id": "binance-growth-operations-binance-academy"
+      "id": "binance-growth-operations-binance-academy",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1788,7 +2135,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 115000,
       "requirements": "产品营销；GTM；跨市场内容策略。",
       "link": "https://cryptojobslist.com/marketing",
-      "id": "moonpay-product-marketing-manager"
+      "id": "moonpay-product-marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1806,7 +2156,10 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 65000,
       "requirements": "社区运营；X/Telegram/Discord；内容；活动。",
       "link": "https://web3.career/community-manager-jobs",
-      "id": "mercuryo-community-manager"
+      "id": "mercuryo-community-manager",
+      "keywords": [
+        "社区"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1826,7 +2179,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 150000,
       "requirements": "机构业务拓展；交易所机构客户；谈判与成单。",
       "link": "https://web3.career/business-development-jobs",
-      "id": "bitget-institutional-bd-manager"
+      "id": "bitget-institutional-bd-manager",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1844,7 +2198,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 170000,
       "requirements": "机构客户关系；托管/数字资产；区域拓展。",
       "link": "https://web3.career/business-development-jobs",
-      "id": "anchorage-digital-regional-institutional-manager"
+      "id": "anchorage-digital-regional-institutional-manager",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1863,7 +2218,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 120000,
       "requirements": "3+ 年 web3 销售；outbound 开发；线索培育与成单。",
       "link": "https://web3.career/sales-jobs",
-      "id": "paxos-sales-business-development"
+      "id": "paxos-sales-business-development",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1882,7 +2238,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 180000,
       "requirements": "证券/商品监管；区块链法务；多司法辖区。",
       "link": "https://web3.career/crypto+legal-jobs",
-      "id": "crypto-com-legal-counsel-crypto"
+      "id": "crypto-com-legal-counsel-crypto",
+      "keywords": []
     },
     {
       "firstSeen": "2026-05-27",
@@ -1901,7 +2258,11 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 110000,
       "requirements": "AML/KYC；travel rule；多辖区合规流程。",
       "link": "https://web3.career/crypto-jobs",
-      "id": "binance-compliance-officer-aml-kyc"
+      "id": "binance-compliance-officer-aml-kyc",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ]
     },
     {
       "firstSeen": "2026-05-27",
@@ -1920,7 +2281,8 @@ window.WEB3_JOBS_DATA = {
       "salaryNum": 110000,
       "requirements": "技术招聘；web3 人才；端到端招聘流程。",
       "link": "https://web3.career/crypto+recruiter-jobs",
-      "id": "anchorage-digital-crypto-technical-recruiter"
+      "id": "anchorage-digital-crypto-technical-recruiter",
+      "keywords": []
     },
     {
       "company": "Flashbots",
@@ -1938,7 +2300,14 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "flashbots||senior-devops-engineer",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "L2/Rollup",
+        "MEV",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus"
+      ]
     },
     {
       "company": "Stellar Development Foundation",
@@ -1956,7 +2325,13 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "stellar-development-foundation||senior-site-reliability-engineer",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "Linux"
+      ]
     },
     {
       "company": "Kiln",
@@ -1975,7 +2350,13 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "kiln||senior-sre-devops-engineer-blockchain",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes",
+        "Terraform",
+        "合规"
+      ]
     },
     {
       "company": "Galaxy Digital",
@@ -1994,7 +2375,13 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "galaxy-digital||site-reliability-engineer-blockchain-infrastructure",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes",
+        "Terraform",
+        "On-call"
+      ]
     },
     {
       "company": "P2P.org",
@@ -2013,7 +2400,17 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "p2p-org||senior-sre-engineer-solana-ecosystem",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "Validator/节点",
+        "RPC",
+        "Staking",
+        "Solana",
+        "AWS"
+      ]
     },
     {
       "company": "P2P.org",
@@ -2032,7 +2429,12 @@ window.WEB3_JOBS_DATA = {
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
       "id": "p2p-org||senior-sre-engineer-bitcoin-team",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Staking",
+        "Bitcoin"
+      ]
     },
     {
       "company": "Copper.co",
@@ -2050,7 +2452,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://web3.career/reliability-jobs",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "可观测性"
+      ]
     },
     {
       "company": "Bloxstaking (ssv.network)",
@@ -2067,7 +2473,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://web3.career/reliability-jobs",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Staking",
+        "Ethereum",
+        "Kubernetes",
+        "On-call"
+      ]
     },
     {
       "company": "Bitpanda",
@@ -2084,7 +2497,13 @@ window.WEB3_JOBS_DATA = {
       "link": "https://web3.career/devops-jobs",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "AWS",
+        "CI/CD",
+        "合规"
+      ]
     },
     {
       "company": "Auros",
@@ -2101,7 +2520,8 @@ window.WEB3_JOBS_DATA = {
       "link": "https://web3.career/devops-jobs",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": []
     },
     {
       "company": "Binance",
@@ -2118,7 +2538,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://jobs.lever.co/binance",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes"
+      ]
     },
     {
       "company": "Reown (WalletConnect)",
@@ -2135,7 +2559,14 @@ window.WEB3_JOBS_DATA = {
       "link": "https://cryptocurrencyjobs.co/engineering/walletconnect-site-reliability-engineer/",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Go",
+        "TypeScript",
+        "Wallet",
+        "Linux"
+      ]
     },
     {
       "company": "Triton One",
@@ -2152,7 +2583,11 @@ window.WEB3_JOBS_DATA = {
       "link": "https://cryptojobslist.com/sre",
       "firstSeen": "2026-05-26",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "RPC",
+        "Solana"
+      ]
     },
     {
       "company": "Binance",
@@ -2170,7 +2605,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "5+ 年；Rust / Node.js；高并发实时生产系统；自研内部工具；故障排查；线上稳定性保障。",
       "link": "https://jobs.lever.co/binance",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Node.js",
+        "Validator/节点"
+      ]
     },
     {
       "company": "Binance",
@@ -2189,7 +2629,13 @@ window.WEB3_JOBS_DATA = {
       "requirements": "带领大数据 SRE/DevOps 团队；Hadoop/Spark/Flink 平台稳定性；K8s；CI/CD；多 region 容灾。",
       "link": "https://www.nodeflair.com/jobs/binance-big-data-sre-devops-leader-9568",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "CI/CD",
+        "Flink",
+        "Spark"
+      ]
     },
     {
       "company": "Binance",
@@ -2206,7 +2652,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "5+ 年 Node.js；测试自动化平台 (Playwright/Puppeteer/WDIO)；分布式测试环境运维。",
       "link": "https://jobs.lever.co/binance/3372ed44-94ed-4f48-b448-91957f2b3e95",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Node.js",
+        "Validator/节点"
+      ]
     },
     {
       "company": "Coinbase",
@@ -2223,7 +2673,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "7+ 年；高吞吐低延迟系统设计；Datadog/Kibana 等可观测性；SRE 教练，赋能业务工程团队。",
       "link": "https://www.coinbase.com/careers/positions/6237252",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "可观测性"
+      ]
     },
     {
       "company": "Coinbase",
@@ -2240,7 +2693,13 @@ window.WEB3_JOBS_DATA = {
       "requirements": "AI/ML 基础设施稳定性；GPU 集群；Kubernetes；模型服务 SLO。",
       "link": "https://www.crypto-careers.com/jobs/525570987-staff-site-reliability-engineer-core-ai-infrastructure-at-coinbase",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "SLO/SLA",
+        "Machine Learning",
+        "AI"
+      ]
     },
     {
       "company": "Coinbase",
@@ -2257,7 +2716,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "身份认证 / 风控系统稳定性；高可用；可观测性。",
       "link": "https://www.coinbase.com/careers/positions/7516971",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "可观测性"
+      ]
     },
     {
       "company": "Coinbase",
@@ -2274,7 +2736,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "企业 IT 基础设施 / 网络 / 端点；K8s；混合云。",
       "link": "https://www.coinbase.com/careers/positions/7559168",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes"
+      ]
     },
     {
       "company": "OKX",
@@ -2291,7 +2756,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "K8s / 容器；高并发交易系统；AWS；线上故障处置；香港 Base 不接受远程。",
       "link": "https://www.okx.com/en-us/join-us",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "AWS"
+      ]
     },
     {
       "company": "OKX",
@@ -2309,7 +2778,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "OLAP / 大数据集群运维；ClickHouse/Doris/Flink；监控告警体系；P0 故障响应。",
       "link": "https://www.okx.com/en-us/join-us",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Flink",
+        "ClickHouse"
+      ]
     },
     {
       "company": "Bybit",
@@ -2327,7 +2800,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "高频交易撮合系统稳定性；多活；金融级 SLA；K8s；可观测性。",
       "link": "https://www.bybit.com/en/promo/global/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "可观测性",
+        "SLO/SLA"
+      ]
     },
     {
       "company": "Bybit",
@@ -2344,7 +2822,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "CI/CD；K8s；Terraform；公有云；故障值班。",
       "link": "https://nodeflair.com/companies/bybit",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "CI/CD"
+      ]
     },
     {
       "company": "Kraken",
@@ -2360,7 +2843,15 @@ window.WEB3_JOBS_DATA = {
       "requirements": "3+ 年 DevOps；Rust 系系统语言；Docker/Terraform；Prometheus/Grafana；Bash/Python。",
       "link": "https://jobs.ashbyhq.com/kraken.com/0e512814-a14c-4ea7-8391-7d1c3e540bb9",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Python",
+        "Docker",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
+      ]
     },
     {
       "company": "Kraken",
@@ -2377,7 +2868,8 @@ window.WEB3_JOBS_DATA = {
       "requirements": "物理机房 / 裸金属 / 硬件运维；网络；冷备灾备。",
       "link": "https://www.kraken.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": []
     },
     {
       "company": "Crypto.com",
@@ -2396,7 +2888,15 @@ window.WEB3_JOBS_DATA = {
       "requirements": "AWS/GCP；K8s；Terraform；多 region；合规与安全；交易所核心系统 SLA。",
       "link": "https://crypto.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "SLO/SLA",
+        "合规"
+      ]
     },
     {
       "company": "Bitget",
@@ -2415,7 +2915,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "带团队；交易所核心业务运维；故障复盘；SLO 体系；50+ 国家全球布局。",
       "link": "https://www.bitget.com/promotion/hire",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "SLO/SLA"
+      ]
     },
     {
       "company": "Gate.io",
@@ -2431,7 +2934,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "交易系统运维；监控告警；K8s；中英文工作环境。",
       "link": "https://beincrypto.com/jobs/company/gate-io/",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes"
+      ]
     },
     {
       "company": "KuCoin",
@@ -2449,7 +2955,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "公有云；K8s；CI/CD；高并发；合规要求。",
       "link": "https://www.kucoin.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "CI/CD",
+        "合规"
+      ]
     },
     {
       "company": "Ethereum Foundation",
@@ -2466,7 +2977,15 @@ window.WEB3_JOBS_DATA = {
       "requirements": "Go / Rust / Python；Linux；Docker；支撑 Ethereum 网络底层基础设施；偏研究型团队。",
       "link": "https://jobs.ashbyhq.com/ethereum-foundation",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "Ethereum",
+        "Docker",
+        "Linux"
+      ]
     },
     {
       "company": "Ethereum Foundation",
@@ -2483,7 +3002,14 @@ window.WEB3_JOBS_DATA = {
       "requirements": "在校生；Go/Rust/Python；Linux；Docker；EF 基础设施团队。",
       "link": "https://simplify.jobs/p/dab03131-363c-47e6-bbc5-d70f315100a0/DevOps-Intern",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "Docker",
+        "Linux"
+      ]
     },
     {
       "company": "Solana Foundation",
@@ -2499,7 +3025,15 @@ window.WEB3_JOBS_DATA = {
       "requirements": "5+ 年 SRE/Infra；Terraform/Pulumi；AWS/GCP/Cloudflare；Prometheus/Grafana/Datadog；On-call；区块链 tooling 经验。",
       "link": "https://jobs.solana.com/companies/solana-foundation-2",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Prometheus",
+        "Grafana",
+        "On-call"
+      ]
     },
     {
       "company": "Aptos Labs",
@@ -2516,7 +3050,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "L1 节点运维；validator 网络稳定性；K8s；监控；分布式系统。",
       "link": "https://job-boards.greenhouse.io/aptoslabs",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes"
+      ]
     },
     {
       "company": "Sui Foundation / Mysten Labs",
@@ -2532,7 +3070,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "Validator / 节点运维；Rust 周边工具；多链网络稳定性。",
       "link": "https://web3.career/web3-companies/suifoundation",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Rust",
+        "Validator/节点"
+      ]
     },
     {
       "company": "Offchain Labs (Arbitrum)",
@@ -2549,7 +3091,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "L2 协议测试与稳定性；Sequencer / RPC 高可用；自动化测试管道；与 SRE 协作排障。",
       "link": "https://jobs.lever.co/offchainlabs/ecb0944a-fd48-43c6-95d1-1d4b228c86b9",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "L2/Rollup",
+        "RPC"
+      ]
     },
     {
       "company": "Polygon Labs",
@@ -2567,7 +3113,15 @@ window.WEB3_JOBS_DATA = {
       "requirements": "PoS 网络 / zkEVM 节点稳定性；K8s；多链 RPC SLA；可观测性。",
       "link": "https://polygon.technology/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "L2/Rollup",
+        "Validator/节点",
+        "RPC",
+        "Kubernetes",
+        "可观测性",
+        "SLO/SLA"
+      ]
     },
     {
       "company": "Phantom",
@@ -2583,7 +3137,13 @@ window.WEB3_JOBS_DATA = {
       "requirements": "K8s 集群运维；多链节点；自动化；性能优化；钱包后端稳定性；on-call。",
       "link": "https://jobs.ashbyhq.com/phantom",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Wallet",
+        "Kubernetes",
+        "On-call"
+      ]
     },
     {
       "company": "Consensys (MetaMask)",
@@ -2599,7 +3159,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "MetaMask 后端 DevOps 资深；带方向，与 SRE/Dev 协同；多区域部署；CI/CD；安全合规。",
       "link": "https://weworkremotely.com/remote-jobs/consensys-senior-staff-devops-engineer-metamask",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "CI/CD",
+        "合规"
+      ]
     },
     {
       "company": "Uniswap Labs",
@@ -2616,7 +3180,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "微服务架构；DeFi 协议后端 (Aave/Uniswap 类) 知识；indexer / 数据；高 QPS。",
       "link": "https://jobs.ashbyhq.com/uniswap",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "DeFi"
+      ]
     },
     {
       "company": "DeBank / Rabby",
@@ -2635,7 +3202,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "多链数据接入；indexer；K8s；钱包后端；DeFi 资产引擎稳定性。",
       "link": "https://www.v2ex.com/t/950597",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "Kubernetes"
+      ]
     },
     {
       "company": "Pharos (区块链初创)",
@@ -2656,7 +3228,14 @@ window.WEB3_JOBS_DATA = {
       "requirements": "C++ 区块链节点；高并发；Linux；性能调优；远程友好；中英文。",
       "link": "https://www.v2ex.com/t/1084148",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "contact": "gochendong (V2EX)",
+      "contactInfo": "gochendong@gmail.com",
+      "keywords": [
+        "C++",
+        "Validator/节点",
+        "Linux"
+      ]
     },
     {
       "company": "AWS 区块链节点服务 (中文招聘)",
@@ -2673,7 +3252,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "多链节点部署、监控、优化；线上故障独立处置；性能优化；对 Web3 Infra 持续兴趣。",
       "link": "https://www.v2ex.com/t/1210793",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "contact": "bobbychen (V2EX)",
+      "contactInfo": "bobbychen1992@protonmail.com",
+      "keywords": [
+        "Validator/节点"
+      ]
     },
     {
       "company": "Alchemy",
@@ -2690,7 +3274,8 @@ window.WEB3_JOBS_DATA = {
       "requirements": "拥有基础设施 / 平台战略与执行；带 SRE/Platform 团队；高吞吐分布式区块链系统；公司级稳定性。",
       "link": "https://www.alchemy.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": []
     },
     {
       "company": "Alchemy",
@@ -2707,7 +3292,16 @@ window.WEB3_JOBS_DATA = {
       "requirements": "5+ 年；SLO/error budget 框架；OpenTelemetry/Prometheus/Grafana；AWS/GCP；K8s；多 region；Terraform/Helm/ArgoCD。",
       "link": "https://www.alchemy.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Prometheus",
+        "Grafana",
+        "SLO/SLA"
+      ]
     },
     {
       "company": "QuickNode",
@@ -2724,7 +3318,12 @@ window.WEB3_JOBS_DATA = {
       "requirements": "区块链 RPC 高性能服务；多链节点；性能与延迟优化；SOC 2 / ISO 27001 合规栈。",
       "link": "https://jobs.ashbyhq.com/quicknode",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "RPC",
+        "合规"
+      ]
     },
     {
       "company": "Chainstack",
@@ -2741,7 +3340,13 @@ window.WEB3_JOBS_DATA = {
       "requirements": "Incident management；K8s；多云；RPC / 节点服务；客户级 SLA；前沿区块链 stack。",
       "link": "https://web3.career/web3-companies/chainstack",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "RPC",
+        "Kubernetes",
+        "SLO/SLA"
+      ]
     },
     {
       "company": "Blockdaemon",
@@ -2759,7 +3364,14 @@ window.WEB3_JOBS_DATA = {
       "requirements": "30+ 链节点托管 / staking；K8s 大规模；合规与机构客户 SLA；DevOps Security。",
       "link": "https://www.blockdaemon.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "Staking",
+        "Kubernetes",
+        "SLO/SLA",
+        "合规"
+      ]
     },
     {
       "company": "Ankr",
@@ -2775,7 +3387,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "多链 RPC；Validator；容器化；监控；岗位放出节奏不稳定。",
       "link": "https://cryptojobslist.com/companies/ankr",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "RPC"
+      ]
     },
     {
       "company": "Chainalysis",
@@ -2793,7 +3409,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "Kubernetes 生产级；Terraform 专家级；带方向 / 架构；政府客户系统；高可靠数据管道。",
       "link": "https://www.chainalysis.com/careers/job-openings/",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Kubernetes",
+        "Terraform"
+      ]
     },
     {
       "company": "Fireblocks",
@@ -2811,7 +3431,10 @@ window.WEB3_JOBS_DATA = {
       "requirements": "3+ 年 SRE / Infra Backend (SaaS)；数字资产托管核心稳定性；高合规要求；事件响应。",
       "link": "https://boards.greenhouse.io/fireblocks/jobs/4656035006",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "合规"
+      ]
     },
     {
       "company": "Ripple",
@@ -2829,7 +3452,11 @@ window.WEB3_JOBS_DATA = {
       "requirements": "支付/托管底层基础设施；XRPL 节点；机构级合规；Palisade 集成。",
       "link": "https://ripple.com/careers",
       "lastSeen": "2026-05-26",
-      "func": "ops"
+      "func": "ops",
+      "keywords": [
+        "Validator/节点",
+        "合规"
+      ]
     }
   ],
   "companies": {

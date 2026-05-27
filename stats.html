@@ -84,7 +84,7 @@
 <nav class="nav">
   <div class="nav-in">
     <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small>Web3 全职能招聘 · 每日更新</small></span></a>
-    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html" class="active">数据洞察</a><a href="companies.html">合作单位</a></div>
+    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html" class="active">数据洞察</a><a href="companies.html">合作单位</a><a href="headhunter.html">猎头端</a></div>
     <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span></div>
   </div>
 </nav>
@@ -153,6 +153,12 @@
       <h3>各职能薪资中位</h3>
       <p class="sub">基于公开 JD 标注或聚合估算的 salaryNum 中位值（USD/年），仅供参考</p>
       <div id="c-salary"></div>
+    </div>
+
+    <div class="panel full">
+      <h3>热门技能关键字</h3>
+      <p class="sub">从全部在招岗位的职位名与要求中提取的高频技能 / 技术关键字（Top 18），反映当前市场最抢手的能力</p>
+      <div id="c-keywords"></div>
     </div>
   </div>
 </div>
@@ -230,6 +236,11 @@
     return {label:funcLabels[k],value:median(arr),color:funcColors[k],n:arr.length};
   }).filter(x=>x.value>0).sort((a,b)=>b.value-a.value);
   bars("c-salary",salByFunc,fmtK);
+
+  // 热门技能关键字
+  const kc={}; data.forEach(j=>(j.keywords||[]).forEach(k=>kc[k]=(kc[k]||0)+1));
+  const topK=Object.entries(kc).sort((a,b)=>b[1]-a[1]).slice(0,18).map(([k,v])=>({label:k,value:v,color:"#6d5efc"}));
+  bars("c-keywords",topK);
 
   // 公司类型甜甜圈
   const cc=countBy(data,d=>d.category);

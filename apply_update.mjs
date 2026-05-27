@@ -16,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { extractKeywords } from "./keywords.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "data.js");
@@ -73,6 +74,9 @@ D.lastUpdatedAt = new Date().toISOString();     // 完整时间戳(UTC)：前端
 // 确保每个公司在 companies 映射中都有条目（新公司留空简介，待人工/后续补全）
 D.companies = D.companies || {};
 for (const j of D.jobs) { if (!D.companies[j.company]) D.companies[j.company] = { intro: "" }; }
+
+// 为缺少 keywords 的岗位自动派生岗位关键字（用于职位/猎头端展示与数据洞察分析）
+for (const j of D.jobs) { if (!Array.isArray(j.keywords) || !j.keywords.length) j.keywords = extractKeywords((j.position || "") + " " + (j.requirements || "")); }
 
 // 写 changelog：同一天累计（每 5 小时多次运行会累加当日新增；同一批数据重复跑 added=0，保持幂等）
 D.changelog = D.changelog || [];

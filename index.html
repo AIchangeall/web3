@@ -107,6 +107,10 @@
   .tag.f-growth{background:#fdeede;color:#ea580c} .tag.f-bd{background:#fbf4d9;color:#b58a04}
   .tag.f-ga{background:#eef1f5;color:#475569}
   .job-req{margin:11px 0 0;font-size:13px;color:#64748b;line-height:1.55}
+  .kws{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .kw{font-size:11.5px;color:#5b5bd6;background:#eeeefb;border:1px solid #e3e3fb;border-radius:6px;padding:2px 8px;cursor:pointer;transition:.12s}
+  .kw:hover{background:#e0e0fb;border-color:#c7c7f5}
+  .kw::before{content:"#";opacity:.5;margin-right:1px}
   .job-side{flex:none;width:150px;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;text-align:right;gap:10px}
   .salary{font-size:15px;font-weight:800;color:#047857;line-height:1.3}
   .salary.neg{color:#94a3b8;font-weight:600;font-size:13.5px}
@@ -151,6 +155,7 @@
       <a href="index.html" class="active">职位</a>
       <a href="stats.html">数据洞察</a>
       <a href="companies.html">合作单位</a>
+      <a href="headhunter.html">猎头端</a>
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
@@ -277,6 +282,12 @@
     tnew.classList.remove("on"); document.getElementById("search").value="";
     document.getElementById("sort").value="recommended"; state.sort="recommended"; render();
   };
+  // 点击岗位关键字 → 按该关键字筛选
+  document.getElementById("jobs").addEventListener("click",e=>{
+    const el=e.target.closest(".kw"); if(!el) return;
+    const v=el.dataset.kw; state.search=v.toLowerCase();
+    document.getElementById("search").value=v; state.limit=PAGE; render();
+  });
 
   function match(r){
     if(state.newOnly && !isNew(r)) return false;
@@ -284,7 +295,7 @@
     if(state.cats.size && !state.cats.has(r.category)) return false;
     if(state.lvls.size && !state.lvls.has(r.level)) return false;
     if(state.regions.size){ if(!(r.region||[]).some(x=>state.regions.has(x))) return false; }
-    if(state.search){ const b=(r.company+" "+r.position+" "+r.location+" "+r.requirements+" "+r.salary).toLowerCase(); if(!b.includes(state.search)) return false; }
+    if(state.search){ const b=(r.company+" "+r.position+" "+r.location+" "+r.requirements+" "+r.salary+" "+(r.keywords||[]).join(" ")).toLowerCase(); if(!b.includes(state.search)) return false; }
     return true;
   }
   function sortRows(rows){
@@ -310,6 +321,7 @@
           ${remote?'<span class="tag remote">远程友好</span>':''}
         </div>
         <p class="job-req">${esc(r.requirements)}</p>
+        ${(r.keywords&&r.keywords.length)?`<div class="kws">${r.keywords.slice(0,6).map(k=>`<span class="kw" data-kw="${esc(k)}">${esc(k)}</span>`).join("")}</div>`:""}
       </div>
       <div class="job-side">
         <div class="salary ${negSalary?'neg':''}">${esc(r.salary||'面议')}</div>

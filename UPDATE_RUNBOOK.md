@@ -35,9 +35,13 @@
      "salary": "公开 JD 或聚合估算，无则\"面议\"",
      "salaryNum": 160000,
      "requirements": "一句话要点：年限 / 技术栈 / 职责。",
-     "link": "原始 JD 或来源页 URL"
+     "link": "原始 JD 或来源页 URL",
+     "contact": "（可选）来源公开披露的联系人，如 V2EX 用户名 / 招聘人姓名",
+     "contactInfo": "（可选）来源公开披露的联系方式，如邮箱 / Telegram / 微信"
    }
    ```
+   - `contact` / `contactInfo`（猎头端用）：**仅当来源招聘信息中明确公开了**联系人或联系方式（常见于 V2EX / 登链等中文区招聘帖）才填写；**严禁编造**联系人或邮箱。聚合站 / Lever / Ashby 等无公开联系人的，留空即可（猎头端会以来源渠道作为投递入口）。来源渠道由 `link` 域名自动识别，无需手填。
+   - `keywords`（岗位关键字）：**无需手填**。`apply_update.mjs` 会调用 `keywords.mjs` 从职位名 + 要点自动派生（用于职位/猎头端展示与数据洞察的热门关键字分析）。如要扩充识别词，编辑 `keywords.mjs` 的词典即可。
    - `func`（职能）：工程研发=eng，运维/SRE/基础设施=ops，产品=product，设计=design，数据/AI=data，安全=security，市场/增长/运营=growth，BD/商务/销售=bd，合规/法务/财务/HR=ga。
    - `category`（公司类型）：交易所=exchange，公链/L2=chain，钱包/DeFi=defi，节点/RPC基础设施=infra，合规/托管/其他=other。
    - `level`：负责人/总监=head，资深/Staff=senior，中级=mid。
