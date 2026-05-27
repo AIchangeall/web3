@@ -24,7 +24,9 @@
   .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
   .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
   .nav-links a.active{background:#efeaff;color:var(--accent)}
-  .nav-right{margin-left:auto}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
   .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
   .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
   .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
@@ -83,81 +85,81 @@
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small>Web3 全职能招聘 · 每日更新</small></span></a>
-    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html" class="active">数据洞察</a><a href="companies.html">企业库</a><a href="headhunter.html">招聘线索</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span></div>
+    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
+    <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" class="active" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" data-i18n="nav.leads">招聘线索</a></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
 <div class="head">
-  <h1>数据洞察 · Web3 招聘市场</h1>
-  <p>基于看板在招岗位实时计算的招聘趋势、热门公司与薪资分布。</p>
+  <h1 data-i18n="st.h1">数据洞察 · Web3 招聘市场</h1>
+  <p data-i18n="st.desc">基于看板在招岗位实时计算的招聘趋势、热门公司与薪资分布。</p>
 </div>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
 <div class="wrap">
   <div class="kpis">
-    <div class="kpi"><div class="n" id="k-total">0</div><div class="l">在招岗位</div></div>
-    <div class="kpi"><div class="n" id="k-comp">0</div><div class="l">招聘公司</div></div>
-    <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l">今日新增</div></div>
-    <div class="kpi"><div class="n" id="k-remote">0%</div><div class="l">远程友好占比</div></div>
-    <div class="kpi"><div class="n" id="k-median">—</div><div class="l">薪资中位（USD/年）</div></div>
-    <div class="kpi"><div class="n" id="k-func">0</div><div class="l">覆盖职能</div></div>
+    <div class="kpi"><div class="n" id="k-total">0</div><div class="l" data-i18n="st.kpi.total">在招岗位</div></div>
+    <div class="kpi"><div class="n" id="k-comp">0</div><div class="l" data-i18n="st.kpi.comp">招聘公司</div></div>
+    <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l" data-i18n="st.kpi.new">今日新增</div></div>
+    <div class="kpi"><div class="n" id="k-remote">0%</div><div class="l" data-i18n="st.kpi.remote">远程友好占比</div></div>
+    <div class="kpi"><div class="n" id="k-median">—</div><div class="l" data-i18n="st.kpi.median">薪资中位（USD/年）</div></div>
+    <div class="kpi"><div class="n" id="k-func">0</div><div class="l" data-i18n="st.kpi.func">覆盖职能</div></div>
   </div>
 
   <div class="grid">
     <div class="panel full">
-      <h3>新发布岗位趋势</h3>
-      <p class="sub">按岗位首次上架日期（firstSeen）统计的每日新增数量，随每日更新积累</p>
+      <h3 data-i18n="st.p.trend">新发布岗位趋势</h3>
+      <p class="sub" data-i18n="st.p.trend.sub">按岗位首次上架日期（firstSeen）统计的每日新增数量，随每日更新积累</p>
       <div id="trend"></div>
     </div>
 
     <div class="panel">
-      <h3>职能分布</h3>
-      <p class="sub">各职能在招岗位数量</p>
+      <h3 data-i18n="st.p.func">职能分布</h3>
+      <p class="sub" data-i18n="st.p.func.sub">各职能在招岗位数量</p>
       <div id="c-func"></div>
     </div>
 
     <div class="panel">
-      <h3>公司类型占比</h3>
-      <p class="sub">岗位所属公司类型分布</p>
+      <h3 data-i18n="st.p.cat">公司类型占比</h3>
+      <p class="sub" data-i18n="st.p.cat.sub">岗位所属公司类型分布</p>
       <div class="donut-wrap">
         <div class="donut-hole" style="position:relative">
           <div class="donut" id="c-cat-donut"></div>
-          <div class="donut-center"><b id="c-cat-total">0</b><span>岗位</span></div>
+          <div class="donut-center"><b id="c-cat-total">0</b><span data-i18n="st.donut.center">岗位</span></div>
         </div>
         <div class="legend" id="c-cat-legend"></div>
       </div>
     </div>
 
     <div class="panel full">
-      <h3>Top 招聘公司</h3>
-      <p class="sub">在招岗位数最多的公司（猎头重点关注的活跃雇主）</p>
+      <h3 data-i18n="st.p.company">Top 招聘公司</h3>
+      <p class="sub" data-i18n="st.p.company.sub">在招岗位数最多的公司（猎头重点关注的活跃雇主）</p>
       <div id="c-company"></div>
     </div>
 
     <div class="panel">
-      <h3>级别分布</h3>
-      <p class="sub">负责人 / 资深 / 中级</p>
+      <h3 data-i18n="st.p.level">级别分布</h3>
+      <p class="sub" data-i18n="st.p.level.sub">负责人 / 资深 / 中级</p>
       <div id="c-level"></div>
     </div>
 
     <div class="panel">
-      <h3>地区分布</h3>
-      <p class="sub">岗位覆盖地区（一个岗位可对应多个地区）</p>
+      <h3 data-i18n="st.p.region">地区分布</h3>
+      <p class="sub" data-i18n="st.p.region.sub">岗位覆盖地区（一个岗位可对应多个地区）</p>
       <div id="c-region"></div>
     </div>
 
     <div class="panel full">
-      <h3>各职能薪资中位</h3>
-      <p class="sub">基于公开 JD 标注或聚合估算的 salaryNum 中位值（USD/年），仅供参考</p>
+      <h3 data-i18n="st.p.salary">各职能薪资中位</h3>
+      <p class="sub" data-i18n="st.p.salary.sub">基于公开 JD 标注或聚合估算的 salaryNum 中位值（USD/年），仅供参考</p>
       <div id="c-salary"></div>
     </div>
 
     <div class="panel full">
-      <h3>热门技能关键字</h3>
-      <p class="sub">从全部在招岗位的职位名与要求中提取的高频技能 / 技术关键字（Top 18），反映当前市场最抢手的能力</p>
+      <h3 data-i18n="st.p.kw">热门技能关键字</h3>
+      <p class="sub" data-i18n="st.p.kw.sub">从全部在招岗位的职位名与要求中提取的高频技能 / 技术关键字（Top 18），反映当前市场最抢手的能力</p>
       <div id="c-keywords"></div>
     </div>
   </div>
@@ -165,6 +167,7 @@
 
 <div class="note" id="note"></div>
 
+<script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -177,10 +180,9 @@
   const updFresh=lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
   const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
 
-  const funcLabels={eng:"工程研发",ops:"运维/SRE/基础设施",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长/运营",bd:"BD/商务/销售",ga:"合规/法务/财务HR"};
-  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
-  const lvlLabels={head:"负责人/总监",senior:"资深/Staff",mid:"中级"};
-  const regionLabels={remote:"远程",cn:"中文区",hk:"香港",sg:"新加坡",us:"美国",eu:"欧洲",dubai:"迪拜",asia:"亚洲其他"};
+  let funcLabels, catLabels, lvlLabels, regionLabels;
+  function buildLabels(){ funcLabels=I18N.map("func"); catLabels=I18N.map("cat"); lvlLabels=I18N.map("lvl"); regionLabels=I18N.map("region"); }
+  buildLabels();
   const funcColors={eng:"#2563eb",ops:"#059669",product:"#7c3aed",design:"#db2777",data:"#0891b2",security:"#dc2626",growth:"#ea580c",bd:"#b58a04",ga:"#475569"};
   const catColors={exchange:"#ea580c",chain:"#2563eb",defi:"#7c3aed",infra:"#059669",other:"#64748b"};
 
@@ -212,7 +214,9 @@
   // header pill
   const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
   pill.className="upd"+(updFresh?"":" stale");
-  t.textContent="更新 "+updDisplay;
+
+  function paint(){
+  t.textContent=I18N.t("upd.prefix")+" "+updDisplay;
 
   // 职能分布
   const fc=countBy(data,d=>d.func);
@@ -239,7 +243,7 @@
 
   // 热门技能关键字
   const kc={}; data.forEach(j=>(j.keywords||[]).forEach(k=>kc[k]=(kc[k]||0)+1));
-  const topK=Object.entries(kc).sort((a,b)=>b[1]-a[1]).slice(0,18).map(([k,v])=>({label:k,value:v,color:"#6d5efc"}));
+  const topK=Object.entries(kc).sort((a,b)=>b[1]-a[1]).slice(0,18).map(([k,v])=>({label:I18N.kw(k),value:v,color:"#6d5efc"}));
   bars("c-keywords",topK);
 
   // 公司类型甜甜圈
@@ -259,7 +263,7 @@
   function drawTrend(pts){
     const W=900,H=220,padL=34,padR=20,padT=18,padB=34;
     const el=document.getElementById("trend");
-    if(!pts.length){el.innerHTML='<p style="color:#9aa1b1;font-size:13px">暂无趋势数据，随每日更新积累。</p>';return;}
+    if(!pts.length){el.innerHTML='<p style="color:#9aa1b1;font-size:13px">'+(I18N.lang==="zh"?"暂无趋势数据，随每日更新积累。":"No trend data yet — accumulating over time.")+'</p>';return;}
     const maxV=Math.max(...pts.map(p=>p.value),1);
     const n=pts.length;
     const x=i=>n===1?(W/2):padL+(W-padL-padR)*i/(n-1);
@@ -274,7 +278,13 @@
       ${grid}<polygon class="area" points="${area}"/><polyline class="line" points="${line}"/>${dots}${xl}</svg>`;
   }
 
-  document.getElementById("note").innerHTML=`统计基于看板当前 ${data.length} 个在招岗位实时计算 · 最近更新 ${updDisplay} · 薪资为公开 JD 或聚合估算，仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
+  const fn=I18N.lang==="zh"
+    ? `统计基于看板当前 ${data.length} 个在招岗位实时计算 · 最近更新 ${updDisplay} · 薪资为公开 JD 或聚合估算，仅供参考`
+    : `Computed live from ${data.length} open roles · updated ${updDisplay} · salaries public/estimated, for reference only`;
+  document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a>`;
+  }
+  paint();
+  window.addEventListener("langchange",()=>{ buildLabels(); paint(); });
 })();
 </script>
 </body>

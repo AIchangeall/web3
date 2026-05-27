@@ -25,7 +25,9 @@
   .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
   .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
   .nav-links a.active{background:#efeaff;color:var(--accent)}
-  .nav-right{margin-left:auto}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
   .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
   .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
   .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
@@ -79,32 +81,33 @@
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small>Web3 全职能招聘 · 每日更新</small></span></a>
-    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html">数据洞察</a><a href="companies.html" class="active">企业库</a><a href="headhunter.html">招聘线索</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span></div>
+    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
+    <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" class="active" data-i18n="nav.companies">企业库</a><a href="headhunter.html" data-i18n="nav.leads">招聘线索</a></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
 <div class="head">
-  <h1>企业库</h1>
-  <p>各招聘单位的简介与基于其在招职位实时计算的背景数据，帮助候选人与猎头快速了解公司画像。</p>
+  <h1 data-i18n="co.h1">企业库</h1>
+  <p data-i18n="co.desc">各招聘单位的简介与基于其在招职位实时计算的背景数据，帮助候选人与猎头快速了解公司画像。</p>
 </div>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
 <div class="wrap">
   <div class="bar">
-    <div class="stat"><b id="s-co">0</b>家招聘单位</div>
-    <div class="stat"><b id="s-jobs">0</b>个在招职位</div>
-    <div class="stat"><b class="a" id="s-active">0</b>家今日有新增</div>
-    <input class="cosearch" id="cosearch" placeholder="搜索公司名 / 简介…" />
+    <div class="stat" id="s-co-w"></div>
+    <div class="stat" id="s-jobs-w"></div>
+    <div class="stat" id="s-active-w"></div>
+    <input class="cosearch" id="cosearch" data-i18n-ph="co.searchph" placeholder="搜索公司名 / 简介…" />
   </div>
   <div class="grid" id="grid"></div>
-  <button class="more" id="more" style="display:none">展开全部</button>
+  <button class="more" id="more" style="display:none"></button>
 </div>
 
 <div class="note" id="note"></div>
 
+<script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -117,8 +120,9 @@
   const updFresh=lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
   const isNew=d=>d.firstSeen&&d.firstSeen===lastUpdated;
 
-  const funcLabels={eng:"工程研发",ops:"运维/SRE",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长",bd:"BD/销售",ga:"合规/HR"};
-  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
+  let funcLabels, catLabels;
+  function buildLabels(){ funcLabels=I18N.map("func"); catLabels=I18N.map("cat"); }
+  buildLabels();
   const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -147,18 +151,22 @@
     };
   }).sort((a,b)=> b.count-a.count || b.newCount-a.newCount || a.name.localeCompare(b.name));
 
-  // KPI
-  document.getElementById("s-co").textContent=firms.length;
-  document.getElementById("s-jobs").textContent=data.length;
-  document.getElementById("s-active").textContent=firms.filter(f=>f.newCount>0).length;
-
   const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
   pill.className="upd"+(updFresh?"":" stale");
-  t.textContent="更新 "+updDisplay;
+  function head(){
+    document.getElementById("s-co-w").innerHTML=I18N.t("co.firms.tpl").replace("{n}",'<b>'+firms.length+'</b>');
+    document.getElementById("s-jobs-w").innerHTML=I18N.t("co.open.tpl").replace("{n}",'<b>'+data.length+'</b>');
+    document.getElementById("s-active-w").innerHTML=I18N.t("co.active.tpl").replace("{n}",'<b class="a">'+firms.filter(f=>f.newCount>0).length+'</b>');
+    t.textContent=I18N.t("upd.prefix")+" "+updDisplay;
+    const fn=I18N.lang==="zh"
+      ? `公司简介为概要整理，分析数据基于看板当前在招职位实时计算 · 最近更新 ${updDisplay} · 仅供参考`
+      : `Profiles are concise summaries; stats computed live from current open roles · updated ${updDisplay} · for reference`;
+    document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a>`;
+  }
 
   const LIMIT=24; let expanded=false, query="";
   function card(f){
-    const introTxt=f.intro||`一家${catLabels[f.cat]||"web3"}领域的 web3 / crypto 公司。`;
+    const introTxt=f.intro||(I18N.lang==="zh"?`一家${catLabels[f.cat]||"web3"}领域的 web3 / crypto 公司。`:`A web3 / crypto company in ${catLabels[f.cat]||"web3"}.`);
     const funcsHtml=f.funcs.slice(0,4).map(k=>`<span class="ftag f-${k}">${funcLabels[k]||k}</span>`).join("");
     return `<article class="co">
       <div class="co-top">
@@ -170,14 +178,14 @@
       </div>
       <p class="co-intro">${esc(introTxt)}</p>
       <div class="co-stats">
-        <div><b class="a">${f.count}</b><span>在招职位</span></div>
-        <div><b class="g">${fmtK(f.median)}</b><span>薪资中位</span></div>
-        <div><b>${f.remotePct}%</b><span>远程</span></div>
+        <div><b class="a">${f.count}</b><span>${I18N.t("co.stat.open")}</span></div>
+        <div><b class="g">${fmtK(f.median)}</b><span>${I18N.t("co.stat.median")}</span></div>
+        <div><b>${f.remotePct}%</b><span>${I18N.t("co.stat.remote")}</span></div>
       </div>
       <div class="co-funcs">${funcsHtml}</div>
       <div class="co-foot">
-        <span class="co-latest">${f.latest?"最新发布 "+f.latest:" "}</span>
-        <a class="co-link" href="index.html?q=${encodeURIComponent(f.name)}">查看职位 →</a>
+        <span class="co-latest">${f.latest?I18N.t("co.latest")+" "+f.latest:" "}</span>
+        <a class="co-link" href="index.html?q=${encodeURIComponent(f.name)}">${I18N.t("co.viewjobs")}</a>
       </div>
     </article>`;
   }
@@ -185,16 +193,16 @@
     let list=firms;
     if(query){ list=firms.filter(f=>(f.name+" "+f.intro).toLowerCase().includes(query)); }
     const shown=expanded?list:list.slice(0,LIMIT);
-    document.getElementById("grid").innerHTML = shown.length?shown.map(card).join(""):'<div class="empty">未找到匹配的公司。</div>';
+    document.getElementById("grid").innerHTML = shown.length?shown.map(card).join(""):`<div class="empty">${I18N.t("co.empty")}</div>`;
     const more=document.getElementById("more");
-    if(!query && !expanded && list.length>LIMIT){ more.style.display="block"; more.textContent=`展开全部 ${list.length} 家`; }
+    if(!query && !expanded && list.length>LIMIT){ more.style.display="block"; more.textContent=I18N.tpl("co.more.tpl",list.length); }
     else more.style.display="none";
   }
   document.getElementById("more").onclick=()=>{ expanded=true; render(); };
   document.getElementById("cosearch").addEventListener("input",e=>{ query=e.target.value.trim().toLowerCase(); expanded=!!query; render(); });
 
-  document.getElementById("note").innerHTML=`公司简介为概要整理，分析数据基于看板当前在招职位实时计算 · 最近更新 ${updDisplay} · 仅供参考 · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
-  render();
+  head(); render();
+  window.addEventListener("langchange",()=>{ buildLabels(); head(); render(); });
 })();
 </script>
 </body>

@@ -24,7 +24,9 @@
   .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
   .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
   .nav-links a.active{background:#efeaff;color:var(--accent)}
-  .nav-right{margin-left:auto}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
   .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
   .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
   .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
@@ -84,28 +86,28 @@
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small>Web3 全职能招聘 · 每日更新</small></span></a>
-    <div class="nav-links"><a href="index.html">职位</a><a href="stats.html">数据洞察</a><a href="companies.html">企业库</a><a href="headhunter.html" class="active">招聘线索</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span></div>
+    <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
+    <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" class="active" data-i18n="nav.leads">招聘线索</a></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
 <div class="head">
-  <h1>招聘线索</h1>
-  <p>招聘线索表：招聘公司、来源渠道、岗位信息、关键词、联系人 / 联系方式与最新发布时间，可搜索、筛选与排序。</p>
+  <h1 data-i18n="hh.h1">招聘线索</h1>
+  <p data-i18n="hh.desc">招聘线索表：招聘公司、来源渠道、岗位信息、关键词、联系人 / 联系方式与最新发布时间，可搜索、筛选与排序。</p>
 </div>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
 <div class="wrap">
   <div class="bar">
-    <div class="cnt">共 <b id="cnt">0</b> 条线索</div>
-    <input class="search" id="search" placeholder="搜索公司 / 岗位 / 来源 / 联系人…" />
-    <label class="toggle" id="t-contact"><span class="sw"></span><span>仅看有联系方式</span></label>
+    <div class="cnt" id="cnt-w"></div>
+    <input class="search" id="search" data-i18n-ph="hh.searchph" placeholder="搜索公司 / 岗位 / 来源 / 联系人…" />
+    <label class="toggle" id="t-contact"><span class="sw"></span><span data-i18n="hh.contactonly">仅看有联系方式</span></label>
     <select class="sort" id="sort">
-      <option value="latest">按最新发布</option>
-      <option value="company">按公司名</option>
-      <option value="salary">按薪资高低</option>
+      <option value="latest" data-i18n="hh.sort.latest">按最新发布</option>
+      <option value="company" data-i18n="hh.sort.company">按公司名</option>
+      <option value="salary" data-i18n="hh.sort.salary">按薪资高低</option>
     </select>
   </div>
 
@@ -114,19 +116,20 @@
       <table>
         <thead>
           <tr>
-            <th>招聘公司</th><th>岗位信息</th><th>关键词</th><th>薪资</th><th>来源渠道</th>
-            <th>联系人</th><th>联系方式 / 投递</th><th>最新发布</th>
+            <th data-i18n="hh.th.company">招聘公司</th><th data-i18n="hh.th.job">岗位信息</th><th data-i18n="hh.th.kw">关键词</th><th data-i18n="hh.th.salary">薪资</th><th data-i18n="hh.th.source">来源渠道</th>
+            <th data-i18n="hh.th.contact">联系人</th><th data-i18n="hh.th.cinfo">联系方式 / 投递</th><th data-i18n="hh.th.posted">最新发布</th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
       </table>
     </div>
-    <div class="empty" id="empty" style="display:none">未匹配到线索，试试放宽筛选。</div>
+    <div class="empty" id="empty" style="display:none" data-i18n="hh.empty">未匹配到线索，试试放宽筛选。</div>
   </div>
 </div>
 
 <div class="note" id="note"></div>
 
+<script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -139,9 +142,9 @@
   const updDisplay=lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated;
   const updFresh=lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
 
-  const funcLabels={eng:"工程研发",ops:"运维/SRE",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长",bd:"BD/销售",ga:"合规/HR"};
-  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
-  const lvlLabels={head:"负责人/总监",senior:"资深/Staff",mid:"中级"};
+  let funcLabels, catLabels, lvlLabels;
+  function buildLabels(){ funcLabels=I18N.map("func"); catLabels=I18N.map("cat"); lvlLabels=I18N.map("lvl"); }
+  buildLabels();
   const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -175,25 +178,25 @@
 
   function render(){
     const r=rows();
-    document.getElementById("cnt").textContent=r.length;
+    document.getElementById("cnt-w").innerHTML=I18N.t("hh.count.tpl").replace("{n}",'<b>'+r.length+'</b>');
     document.getElementById("empty").style.display=r.length?"none":"block";
     document.getElementById("tbody").innerHTML=r.map(j=>{
       const neg=!j.salary||/面议/.test(j.salary);
       const src=srcOf(j.link);
       const contactCell=j.contact?`<span class="contact">${esc(j.contact)}</span>`:`<span class="contact none">—</span>`;
       let cinfo;
-      if(j.contactInfo){ cinfo=isEmail(j.contactInfo)?`<a href="mailto:${esc(j.contactInfo)}">${esc(j.contactInfo)}</a>`:`<span>${esc(j.contactInfo)}</span>`; cinfo+=` · <a class="apply" href="${j.link}" target="_blank" rel="noopener">原帖</a>`; }
-      else { cinfo=`<a class="apply" href="${j.link}" target="_blank" rel="noopener">投递链接 →</a>`; }
+      if(j.contactInfo){ cinfo=isEmail(j.contactInfo)?`<a href="mailto:${esc(j.contactInfo)}">${esc(j.contactInfo)}</a>`:`<span>${esc(j.contactInfo)}</span>`; cinfo+=` · <a class="apply" href="${j.link}" target="_blank" rel="noopener">${I18N.t('hh.origin')}</a>`; }
+      else { cinfo=`<a class="apply" href="${j.link}" target="_blank" rel="noopener">${I18N.t('hh.apply')}</a>`; }
       return `<tr class="${isNew(j)?'is-new':''}">
         <td><div class="co"><div class="avatar" style="background:${acolor(j.company)}">${esc(initial(j.company))}</div>
           <div><div class="co-name">${esc(j.company)}</div><div class="co-cat">${catLabels[j.category]||j.category}</div></div></div></td>
         <td><div class="pos">${esc(j.position)}${isNew(j)?'<span class="new">NEW</span>':''}</div>
           <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div></td>
         <td class="kwcell">
-          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,6).map(k=>`<span class="kw">${esc(k)}</span>`).join("")}</div>`:""}
-          ${(j.duties&&j.duties.length)?`<div class="ptags" style="margin-top:5px"><span class="dlabel">职责</span>${j.duties.slice(0,6).map(k=>`<span class="duty">${esc(k)}</span>`).join("")}</div>`:""}
+          ${(j.keywords&&j.keywords.length)?`<div class="ptags">${j.keywords.slice(0,6).map(k=>`<span class="kw">${esc(I18N.kw(k))}</span>`).join("")}</div>`:""}
+          ${(j.duties&&j.duties.length)?`<div class="ptags" style="margin-top:5px"><span class="dlabel">${I18N.t("hh.duty")}</span>${j.duties.slice(0,6).map(k=>`<span class="duty">${esc(I18N.duty(k))}</span>`).join("")}</div>`:""}
           ${(!(j.keywords&&j.keywords.length)&&!(j.duties&&j.duties.length))?'<span class="kwnone">—</span>':""}</td>
-        <td><span class="salary ${neg?'neg':''}">${esc(j.salary||'面议')}</span></td>
+        <td><span class="salary ${neg?'neg':''}">${esc(j.salary?I18N.salary(j.salary):I18N.t('salary.negotiable'))}</span></td>
         <td><span class="srctag">${esc(src)}</span></td>
         <td>${contactCell}</td>
         <td class="cinfo">${cinfo}</td>
@@ -205,11 +208,17 @@
   // header pill
   const pill=document.getElementById("upd"),t=document.getElementById("upd-t");
   pill.className="upd"+(updFresh?"":" stale");
-  t.textContent="更新 "+updDisplay;
   const withContact=data.filter(j=>j.contact||j.contactInfo).length;
-  document.getElementById("note").innerHTML=`来源渠道由职位链接自动识别；联系人 / 联系方式仅展示来源公开招聘信息中明确披露的内容（当前 ${withContact} 条含直接联系方式，其余以来源渠道投递），不含任何非公开数据 · 最近更新 ${updDisplay} · <a href="index.html" style="color:var(--accent)">← 返回职位列表</a>`;
+  function head(){
+    t.textContent=I18N.t("upd.prefix")+" "+updDisplay;
+    const fn=I18N.lang==="zh"
+      ? `来源渠道由职位链接自动识别；联系人 / 联系方式仅展示来源公开招聘信息中明确披露的内容（当前 ${withContact} 条含直接联系方式，其余以来源渠道投递），不含任何非公开数据 · 最近更新 ${updDisplay}`
+      : `Source auto-detected from the job link; contacts shown only when publicly disclosed by the source (${withContact} with direct contact, the rest apply via source); no non-public data · updated ${updDisplay}`;
+    document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a>`;
+  }
 
-  render();
+  head(); render();
+  window.addEventListener("langchange",()=>{ buildLabels(); head(); render(); });
 })();
 </script>
 </body>

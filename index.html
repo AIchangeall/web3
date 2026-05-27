@@ -39,6 +39,8 @@
   .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
   .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}
   .upd.stale .dot{background:#f59e0b}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
 
   /* ---------- Hero ---------- */
   .hero{background:var(--grad);color:#fff}
@@ -149,76 +151,77 @@
   <div class="nav-in">
     <a class="brand" href="index.html">
       <span class="logo">链</span>
-      <span>链聘 ChainHire<small>Web3 全职能招聘 · 每日更新</small></span>
+      <span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span>
     </a>
     <div class="nav-links">
-      <a href="index.html" class="active">职位</a>
-      <a href="stats.html">数据洞察</a>
-      <a href="companies.html">企业库</a>
-      <a href="headhunter.html">招聘线索</a>
+      <a href="index.html" class="active" data-i18n="nav.jobs">职位</a>
+      <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
+      <a href="companies.html" data-i18n="nav.companies">企业库</a>
+      <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
+      <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
     </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-in">
-    <h1>Web3 行业全职能岗位</h1>
-    <p>聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。</p>
+    <h1 data-i18n="idx.h1">Web3 行业全职能岗位</h1>
+    <p data-i18n="idx.desc">聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。</p>
     <div class="searchbar">
-      <input id="search" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
-      <button id="searchbtn">搜索</button>
+      <input id="search" data-i18n-ph="idx.searchph" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
+      <button id="searchbtn" data-i18n="idx.searchbtn">搜索</button>
     </div>
   </div>
 </header>
 
 <section class="kpis" id="kpis">
-  <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l">今日新增</div></div>
-  <div class="kpi"><div class="n" id="k-total">0</div><div class="l">在招岗位</div></div>
-  <div class="kpi"><div class="n" id="k-comp">0</div><div class="l">招聘公司</div></div>
-  <div class="kpi"><div class="n" id="k-remote">0</div><div class="l">支持远程</div></div>
-  <div class="kpi"><div class="n" id="k-head">0</div><div class="l">负责人 / 总监</div></div>
+  <div class="kpi hot"><div class="n" id="k-new">0</div><div class="l" data-i18n="kpi.new">今日新增</div></div>
+  <div class="kpi"><div class="n" id="k-total">0</div><div class="l" data-i18n="kpi.total">在招岗位</div></div>
+  <div class="kpi"><div class="n" id="k-comp">0</div><div class="l" data-i18n="kpi.comp">招聘公司</div></div>
+  <div class="kpi"><div class="n" id="k-remote">0</div><div class="l" data-i18n="kpi.remote">支持远程</div></div>
+  <div class="kpi"><div class="n" id="k-head">0</div><div class="l" data-i18n="kpi.head">负责人 / 总监</div></div>
 </section>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
 <div class="wrap">
   <aside class="side">
-    <div class="side-h">筛选 <button id="reset">重置</button></div>
-    <div class="fgroup"><label class="toggle" id="t-new"><span class="sw"></span><span>仅看今日新增</span></label></div>
-    <div class="fgroup"><div class="t">职能</div><div class="chips" id="g-func"></div></div>
-    <div class="fgroup"><div class="t">公司类型</div><div class="chips" id="g-cat"></div></div>
-    <div class="fgroup"><div class="t">级别</div><div class="chips" id="g-lvl"></div></div>
-    <div class="fgroup"><div class="t">地区</div><div class="chips" id="g-region"></div></div>
+    <div class="side-h"><span data-i18n="flt.title">筛选</span> <button id="reset" data-i18n="flt.reset">重置</button></div>
+    <div class="fgroup"><label class="toggle" id="t-new"><span class="sw"></span><span data-i18n="flt.newonly">仅看今日新增</span></label></div>
+    <div class="fgroup"><div class="t" data-i18n="flt.func">职能</div><div class="chips" id="g-func"></div></div>
+    <div class="fgroup"><div class="t" data-i18n="flt.cat">公司类型</div><div class="chips" id="g-cat"></div></div>
+    <div class="fgroup"><div class="t" data-i18n="flt.lvl">级别</div><div class="chips" id="g-lvl"></div></div>
+    <div class="fgroup"><div class="t" data-i18n="flt.region">地区</div><div class="chips" id="g-region"></div></div>
   </aside>
 
   <main>
     <div class="listbar">
-      <div class="cnt">找到 <b id="result-cnt">0</b> 个职位</div>
+      <div class="cnt" id="cnt"></div>
       <div class="sortsel">
-        <span>排序</span>
+        <span data-i18n="sort.label">排序</span>
         <select id="sort">
-          <option value="recommended">推荐（新增优先）</option>
-          <option value="salary_desc">薪资 高 → 低</option>
-          <option value="salary_asc">薪资 低 → 高</option>
-          <option value="company">公司名 A → Z</option>
+          <option value="recommended" data-i18n="sort.recommended">推荐（新增优先）</option>
+          <option value="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</option>
+          <option value="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</option>
+          <option value="company" data-i18n="sort.company">公司名 A → Z</option>
         </select>
       </div>
     </div>
     <div class="jobs" id="jobs"></div>
-    <div class="empty" id="empty" style="display:none">未匹配到职位，试试放宽筛选条件。</div>
-    <button class="more" id="more" style="display:none">加载更多</button>
+    <div class="empty" id="empty" style="display:none" data-i18n="empty.jobs">未匹配到职位，试试放宽筛选条件。</div>
+    <button class="more" id="more" style="display:none"></button>
   </main>
 </div>
 
 <details class="foot">
-  <summary>📋 更新日志（每日自动维护）</summary>
+  <summary data-i18n="foot.changelog">📋 更新日志（每日自动维护）</summary>
   <ul class="cl" id="changelog"></ul>
 </details>
 <details class="foot">
-  <summary>数据来源</summary>
+  <summary data-i18n="foot.sources">数据来源</summary>
   <div class="src">
     公司官网 · Lever · Ashby · Greenhouse · LinkedIn · <a href="https://web3.career/" target="_blank">Web3.career</a> ·
     <a href="https://cryptojobslist.com/" target="_blank">CryptoJobsList</a> · <a href="https://cryptocurrencyjobs.co/" target="_blank">CryptocurrencyJobs</a> ·
@@ -228,6 +231,7 @@
 
 <div class="pagefoot" id="pagefoot"></div>
 
+<script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -242,10 +246,9 @@
   const updFresh = lastUpdatedAt ? ((Date.now() - new Date(lastUpdatedAt).getTime()) / 36e5 <= 6) : false;
   const isNew = d => d.firstSeen && d.firstSeen === lastUpdated;
 
-  const funcLabels={eng:"工程研发",ops:"运维/SRE/基础设施",product:"产品",design:"设计",data:"数据/AI",security:"安全",growth:"市场/增长/运营",bd:"BD/商务/销售",ga:"合规/法务/财务HR"};
-  const catLabels={exchange:"交易所",chain:"公链/L2",defi:"钱包/DeFi",infra:"节点/RPC基础设施",other:"合规/托管/其他"};
-  const lvlLabels={head:"负责人/总监",senior:"资深/Staff",mid:"中级"};
-  const regionLabels={remote:"远程",cn:"中文区",hk:"香港",sg:"新加坡",us:"美国",eu:"欧洲",dubai:"迪拜",asia:"亚洲其他"};
+  let funcLabels, catLabels, lvlLabels, regionLabels;
+  function buildLabels(){ funcLabels=I18N.map("func"); catLabels=I18N.map("cat"); lvlLabels=I18N.map("lvl"); regionLabels=I18N.map("region"); }
+  buildLabels();
 
   const PAGE=18;
   const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,search:"",sort:"recommended",limit:PAGE};
@@ -258,7 +261,7 @@
   function buildChips(id,labels,set){
     const c=document.getElementById(id);
     for(const [k,l] of Object.entries(labels)){
-      const e=document.createElement("span"); e.className="chip"; e.textContent=l;
+      const e=document.createElement("span"); e.className="chip"; e.textContent=l; e.dataset.key=k;
       e.onclick=()=>{ set.has(k)?set.delete(k):set.add(k); e.classList.toggle("active"); state.limit=PAGE; render(); };
       c.appendChild(e);
     }
@@ -267,6 +270,12 @@
   buildChips("g-cat",catLabels,state.cats);
   buildChips("g-lvl",lvlLabels,state.lvls);
   buildChips("g-region",regionLabels,state.regions);
+  function relabelChips(){
+    [["g-func",funcLabels],["g-cat",catLabels],["g-lvl",lvlLabels],["g-region",regionLabels]].forEach(([id,m])=>{
+      document.getElementById(id).querySelectorAll(".chip").forEach(e=>{ e.textContent=m[e.dataset.key]; });
+    });
+  }
+  window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); });
 
   const tnew=document.getElementById("t-new");
   tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
@@ -318,15 +327,15 @@
           <span class="tag f-${r.func||'ga'}">${funcLabels[r.func]||'其他'}</span>
           <span class="tag ${r.level==='head'?'lvl-head':''}">${lvlLabels[r.level]||r.level}</span>
           <span class="tag">📍 ${esc(r.location)}</span>
-          ${remote?'<span class="tag remote">远程友好</span>':''}
+          ${remote?`<span class="tag remote">${I18N.t('card.remote')}</span>`:''}
         </div>
         <p class="job-req">${esc(r.requirements)}</p>
-        ${(r.keywords&&r.keywords.length)?`<div class="kws">${r.keywords.slice(0,6).map(k=>`<span class="kw" data-kw="${esc(k)}">${esc(k)}</span>`).join("")}</div>`:""}
+        ${(r.keywords&&r.keywords.length)?`<div class="kws">${r.keywords.slice(0,6).map(k=>`<span class="kw" data-kw="${esc(k)}">${esc(I18N.kw(k))}</span>`).join("")}</div>`:""}
       </div>
       <div class="job-side">
-        <div class="salary ${negSalary?'neg':''}">${esc(r.salary||'面议')}</div>
-        <a class="apply" href="${r.link}" target="_blank" rel="noopener">查看职位 →</a>
-        <div class="posted">${r.firstSeen?'上架 '+r.firstSeen:''}</div>
+        <div class="salary ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div>
+        <a class="apply" href="${r.link}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>
+        <div class="posted">${r.firstSeen?I18N.t('card.posted')+' '+r.firstSeen:''}</div>
       </div>
     </article>`;
   }
@@ -336,10 +345,10 @@
     const total=rows.length;
     const shown=rows.slice(0,state.limit);
     document.getElementById("jobs").innerHTML=shown.map(card).join("");
-    document.getElementById("result-cnt").textContent=total;
+    document.getElementById("cnt").innerHTML=I18N.t("found.tpl").replace("{n}",'<b>'+total+'</b>');
     document.getElementById("empty").style.display=total?"none":"block";
     document.getElementById("more").style.display=total>state.limit?"block":"none";
-    document.getElementById("more").textContent=`加载更多（剩余 ${total-state.limit} 个）`;
+    document.getElementById("more").textContent=I18N.tpl("more.tpl",total-state.limit);
   }
 
   // KPI + header
@@ -353,11 +362,14 @@
 
     const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
     pill.className="upd"+(updFresh?"":" stale");
-    t.textContent="更新 "+updDisplay;
+    t.textContent=I18N.t("upd.prefix")+" "+updDisplay;
 
     const cl=document.getElementById("changelog");
     cl.innerHTML=(DATA.changelog||[]).map(c=>`<li><span class="d">${c.date}</span>${c.added?`<span class="ad">+${c.added}</span> `:""}${esc(c.note||"")}</li>`).join("");
-    document.getElementById("pagefoot").innerHTML=`数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay} · <a href="stats.html" style="color:var(--accent)">查看数据洞察 →</a>`;
+    const fn=I18N.lang==="zh"
+      ? `数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay}`
+      : `Data aggregated from public sources; salaries are public/estimated, for reference only · ${data.length} roles · updated ${updDisplay}`;
+    document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a>`;
   }
 
   // 支持从企业库页跳转：?q=公司名 预填搜索
