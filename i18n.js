@@ -24,9 +24,9 @@
     "partner.close":   ["关闭", "Close"],
     "pay.title":       ["☕ 赞赏作者", "☕ Tip the author"],
     "pay.sub":         ["本站岗位每日自动更新、永久免费浏览。若对你有帮助，欢迎扫码自愿赞赏，金额随意 🙏", "All jobs here update daily and are free to browse forever. If it helped you, a small voluntary tip is welcome 🙏"],
-    "pay.ali":         ["支付宝 · 金额随意", "Alipay · any amount"],
+    "pay.ali":         ["微信 · 金额随意", "WeChat · any amount"],
     "pay.ok":          ["继续浏览", "Continue browsing"],
-    "pay.hint":        ["赞赏码待添加：把图片保存为 assets/alipay-qr.png", "Add your tip QR at assets/alipay-qr.png"],
+    "pay.hint":        ["赞赏码待添加：把图片保存为 assets/wxskm.jpg", "Add your tip QR at assets/wxskm.jpg"],
 
     // index 职位
     "idx.h1":          ["Web3 行业全职能岗位", "Web3 All-Function Jobs"],

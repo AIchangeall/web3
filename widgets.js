@@ -3,7 +3,7 @@
 //   1) 浏览量统计：本机 localStorage 计数（始终可用）+ 不蒜子(busuanzi) 全站 PV/UV
 //      （网站公开托管且联网时显示全站真实数据，否则回退本机累计访问数）
 //   2) 合作沟通：右下角悬浮按钮 → 微信二维码弹窗（图片 assets/wechat-qr.png）
-//   3) 赞赏提示：累计浏览满 5 分钟后温和弹出一次「自愿赞赏」(支付宝赞赏码 assets/alipay-qr.png)，
+//   3) 赞赏提示：累计浏览满 5 分钟后温和弹出一次「自愿赞赏」(微信收款码 assets/wxskm.jpg)，
 //      可随手关闭、关闭后不再打扰(localStorage 记忆)。非付费墙/不限制浏览，纯自愿。
 //  自动在每个页面注入，无需各页改动结构。文案随 I18N 语言切换。
 // ============================================================================
@@ -49,9 +49,9 @@
   .cnh-pay .psub{margin:0 0 14px;font-size:13px;color:#6b7280;line-height:1.6}
   .cnh-pay .pqr{width:210px;height:210px;max-width:100%;border-radius:12px;border:1px solid #e8eaf0;object-fit:contain;background:#fafafe}
   .cnh-pay .pqrhint{width:210px;max-width:100%;margin:0 auto;aspect-ratio:1;border:1px dashed #cbd0db;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#9aa1b1;font-size:12px;padding:16px;text-align:center}
-  .cnh-pay .pali{margin-top:10px;font-size:12.5px;color:#1677ff;font-weight:600}
-  .cnh-pay .punlock{margin-top:16px;width:100%;border:0;background:#1677ff;color:#fff;font-weight:700;font-size:15px;padding:12px;border-radius:12px;cursor:pointer}
-  .cnh-pay .punlock:hover{background:#0e5fd8}
+  .cnh-pay .pali{margin-top:10px;font-size:12.5px;color:#07c160;font-weight:600}
+  .cnh-pay .punlock{margin-top:16px;width:100%;border:0;background:#07c160;color:#fff;font-weight:700;font-size:15px;padding:12px;border-radius:12px;cursor:pointer}
+  .cnh-pay .punlock:hover{background:#06ad56}
   .cnh-pay .plater{margin-top:10px;background:none;border:0;color:#9aa1b1;font-size:12.5px;cursor:pointer}
   `;
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
@@ -111,7 +111,7 @@
       '<div class="emoji">☕</div>' +
       '<h3 id="cnh-pay-title"></h3>' +
       '<div class="psub" id="cnh-pay-sub"></div>' +
-      '<img class="pqr" id="cnh-pay-qr" src="assets/alipay-qr.png" alt="赞赏码" />' +
+      '<img class="pqr" id="cnh-pay-qr" src="assets/wxskm.jpg" alt="赞赏码" />' +
       '<div class="pqrhint" id="cnh-pay-qrhint" style="display:none"></div>' +
       '<div class="pali" id="cnh-pay-ali"></div>' +
       '<button class="punlock" id="cnh-pay-ok"></button>' +

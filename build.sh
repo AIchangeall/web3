@@ -18,7 +18,7 @@ cp index.html stats.html companies.html headhunter.html \
 
 # 二维码图片（若存在）
 [ -f assets/wechat-qr.png ] && cp assets/wechat-qr.png dist/assets/ || true
-[ -f assets/alipay-qr.png ] && cp assets/alipay-qr.png dist/assets/ || true
+[ -f assets/wxskm.jpg ] && cp assets/wxskm.jpg dist/assets/ || true
 
 # 缓存/安全响应头：HTML 与每日更新的 data.js / i18n.js 走 no-cache（仍由 ETag 快速校验），保证更新即时可见
 cat > dist/_headers <<'EOF'
