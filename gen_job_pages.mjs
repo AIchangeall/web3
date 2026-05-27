@@ -44,6 +44,8 @@ const addDays = (dateStr, n) => { const d = new Date((dateStr || "") + "T00:00:0
 
 const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").replace(/(^-|-$)/g, "");
 const keyOf = j => slug(j.company) + "||" + slug(j.position);
+const ATS = ["jobs.lever.co", "lever.co", "jobs.ashbyhq.com", "ashbyhq.com", "boards.greenhouse.io", "job-boards.greenhouse.io", "greenhouse.io", "web3.career", "cryptojobslist.com", "cryptocurrencyjobs.co", "v2ex.com", "learnblockchain.cn", "crypto-careers.com", "nodeflair.com", "simplify.jobs", "weworkremotely.com", "beincrypto.com", "myworkdayjobs.com", "linkedin.com", "notion.site", "bamboohr.com", "workable.com", "recruitee.com", "breezy.hr"];
+const logoUrl = link => { try { const h = new URL(link).hostname.replace(/^www\./, ""); if (ATS.some(a => h === a || h.endsWith("." + a))) return ""; return "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(h); } catch (e) { return ""; } };
 const safeId = id => (id || "").replace(/\|+/g, "-").replace(/-+/g, "-").replace(/(^-|-$)/g, "");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -92,6 +94,7 @@ function pageHtml(j) {
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>(function(){try{if(localStorage.getItem('cnh_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 <title>${esc(j.position)} · ${esc(j.company)}｜链聘 ChainHire</title>
 <meta name="description" content="${esc(desc)}" />
 <meta name="robots" content="index,follow" />
@@ -124,7 +127,9 @@ function pageHtml(j) {
   main{max-width:760px;margin:24px auto 60px;padding:0 20px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,41,.06)}
   .top{display:flex;gap:15px;align-items:flex-start}
-  .avatar{width:54px;height:54px;border-radius:14px;color:#fff;display:grid;place-items:center;font-weight:800;font-size:22px;flex:none}
+  .avatar{width:54px;height:54px;border-radius:14px;color:#fff;display:grid;place-items:center;font-weight:800;font-size:22px;flex:none;position:relative;overflow:hidden}
+  .avatar .ltr{position:absolute;inset:0;display:grid;place-items:center}
+  .avatar .logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:inherit;padding:6px;box-sizing:border-box}
   h1{font-size:23px;margin:0;letter-spacing:-.01em}
   .co{margin-top:6px;color:var(--muted);font-size:14px}.co b{color:#374151}
   .salary{font-size:22px;font-weight:800;color:#047857;margin:18px 0 4px}.salary.neg{color:#94a3b8;font-size:16px}
@@ -142,6 +147,15 @@ function pageHtml(j) {
   .disc{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:#9aa1b1}
   .disc a{color:var(--accent);font-weight:600}
   @media(max-width:560px){.card{padding:20px}h1{font-size:20px}}
+  html[data-theme="dark"]{color-scheme:dark;--bg:#0e1320;--card:#161d2e;--ink:#e7eaf3;--muted:#9aa3b8;--line:#26304a}
+  html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+  html[data-theme="dark"] .nav{background:rgba(16,21,33,.9)}
+  html[data-theme="dark"] .tag{background:#222b42;color:#c0c8dc}
+  html[data-theme="dark"] .kw{background:#221f42;border-color:#332b63;color:#bdb6f5}
+  html[data-theme="dark"] .btn{background:#1b2236;color:var(--ink);border-color:var(--line)}
+  html[data-theme="dark"] .btn.primary{background:#5b54e6;border-color:#5b54e6;color:#fff}
+  html[data-theme="dark"] .req{color:#9aa3b8}
+  html[data-theme="dark"] .co b{color:#cbd3e6}
 </style>
 </head>
 <body>
@@ -152,7 +166,7 @@ function pageHtml(j) {
 <main>
   <article class="card">
     <div class="top">
-      <div class="avatar" style="background:${acolor(j.company)}">${esc(initial(j.company))}</div>
+      <div class="avatar" style="background:${acolor(j.company)}"><span class="ltr">${esc(initial(j.company))}</span>${logoUrl(j.link) ? `<img class="logo-img" src="${logoUrl(j.link)}" loading="lazy" alt="" onerror="this.remove()">` : ""}</div>
       <div>
         <h1>${esc(j.position)}</h1>
         <div class="co"><b>${esc(j.company)}</b> · ${esc(CAT[j.category] || j.category || "")}${j.firstSeen ? ` · 上架 ${esc(j.firstSeen)}` : ""}</div>

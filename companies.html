@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
 <title>企业库 · 链聘 ChainHire | Web3 招聘公司背景与在招画像</title>
 <meta name="description" content="链聘 ChainHire 企业库：交易所、公链/L2、钱包/DeFi、节点基础设施等 Web3 招聘公司的简介与基于在招职位实时计算的背景画像，帮助候选人与猎头快速做公司背景调研。" />
 <meta name="keywords" content="Web3公司,区块链公司,crypto companies,交易所,公链,DeFi项目,公司背景调研" />
@@ -76,6 +81,9 @@
   .ctag.defi{background:#f1e9fe;color:#7c3aed}.ctag.infra{background:#e6f6ef;color:#059669}.ctag.other{background:#eef1f5;color:#475569}
   .co-intro{margin:12px 0 0;font-size:13px;color:#64748b;line-height:1.6;min-height:42px}
   .co-flag{margin-top:8px;font-size:11.5px;font-weight:600;color:#b45309;background:#fdf2e0;border:1px solid #f6e0bd;border-radius:8px;padding:6px 9px;line-height:1.45}
+  .avatar{position:relative;overflow:hidden}
+  .avatar .ltr{position:absolute;inset:0;display:grid;place-items:center}
+  .avatar .logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:inherit;padding:5px;box-sizing:border-box}
   .co-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 0;text-align:center}
   .co-stats>div{background:#f7f8fb;border-radius:10px;padding:8px 4px}
   .co-stats b{display:block;font-size:16px;font-weight:800;letter-spacing:-.02em}
@@ -106,7 +114,7 @@
   <div class="nav-in">
     <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
     <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" class="active" data-i18n="nav.companies">企业库</a><a href="headhunter.html" data-i18n="nav.leads">招聘线索</a><a href="about.html" data-i18n="nav.about">关于</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
@@ -152,6 +160,9 @@
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
   const initial=n=>((n||"?").trim()[0]||"?").toUpperCase();
+  const ATS=["jobs.lever.co","lever.co","jobs.ashbyhq.com","ashbyhq.com","boards.greenhouse.io","job-boards.greenhouse.io","greenhouse.io","web3.career","cryptojobslist.com","cryptocurrencyjobs.co","v2ex.com","learnblockchain.cn","crypto-careers.com","nodeflair.com","simplify.jobs","weworkremotely.com","beincrypto.com","myworkdayjobs.com","linkedin.com","notion.site","bamboohr.com","workable.com","recruitee.com","breezy.hr"];
+  const logoUrl=link=>{try{const h=new URL(link).hostname.replace(/^www\./,"");if(ATS.some(a=>h===a||h.endsWith("."+a)))return "";return "https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(h);}catch(e){return "";}};
+  const avatarHtml=(name,link)=>`<div class="avatar" style="background:${acolor(name)}"><span class="ltr">${esc(initial(name))}</span>${logoUrl(link)?`<img class="logo-img" src="${logoUrl(link)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
   const median=a=>{if(!a.length)return 0;const s=[...a].sort((x,y)=>x-y);const m=Math.floor(s.length/2);return s.length%2?s[m]:Math.round((s[m-1]+s[m])/2);};
   const fmtK=n=>n>=1000?'$'+Math.round(n/1000)+'K':(n?'$'+n:'—');
   const mode=arr=>{const m={};arr.forEach(x=>m[x]=(m[x]||0)+1);return Object.entries(m).sort((a,b)=>b[1]-a[1])[0]?.[0];};
@@ -172,6 +183,7 @@
       median:median(sal),
       remotePct:Math.round(jobs.filter(j=>(j.region||[]).includes("remote")).length/jobs.length*100),
       latest,
+      link:(jobs.find(j=>j.link&&logoUrl(j.link))||jobs[0]||{}).link||"",
       intro:(COMP[name]&&COMP[name].intro)||""
     };
   }).sort((a,b)=> b.count-a.count || b.newCount-a.newCount || a.name.localeCompare(b.name));
@@ -195,7 +207,7 @@
     const funcsHtml=f.funcs.slice(0,4).map(k=>`<span class="ftag f-${k}">${funcLabels[k]||k}</span>`).join("");
     return `<article class="co">
       <div class="co-top">
-        <div class="avatar" style="background:${acolor(f.name)}">${esc(initial(f.name))}</div>
+        ${avatarHtml(f.name,f.link)}
         <div>
           <div class="co-name">${esc(f.name)}${f.newCount?`<span class="new">+${f.newCount}</span>`:""}</div>
           <span class="ctag ${f.cat}">${catLabels[f.cat]||f.cat}</span>

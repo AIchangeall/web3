@@ -70,3 +70,54 @@ img, svg, table { max-width: 100%; }
   .upd { display: none !important; }
   .hero h1 { font-size: 19px !important; }
 }
+
+/* ============================================================================
+   暗色模式（全站共用）—— html[data-theme="dark"] 覆盖 CSS 变量 + 硬编码浅色面
+   切换由各页 <head> 内联脚本 + 导航按钮控制，localStorage 记忆 cnh_theme
+   ============================================================================ */
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0e1320; --card:#161d2e; --ink:#e7eaf3; --muted:#9aa3b8; --line:#26304a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 1px 3px rgba(0,0,0,.5);
+  --shadow-lg:0 12px 34px rgba(0,0,0,.55);
+}
+html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+html[data-theme="dark"] .nav{background:rgba(16,21,33,.86);border-bottom-color:var(--line)}
+html[data-theme="dark"] .nav-links a{color:#aab2c8}
+html[data-theme="dark"] .nav-links a:hover{background:#1f2740;color:var(--ink)}
+html[data-theme="dark"] .nav-links a.active{background:#2a2350;color:#c4b5fd}
+html[data-theme="dark"] .chip{background:#1f2740;border-color:var(--line);color:#cbd3e6}
+html[data-theme="dark"] .chip:hover{border-color:#3a456a}
+html[data-theme="dark"] .chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+html[data-theme="dark"] .tag{background:#222b42;color:#c0c8dc}
+html[data-theme="dark"] .searchbar{background:#1b2236;box-shadow:var(--shadow-lg)}
+html[data-theme="dark"] .searchbar input{color:var(--ink);background:transparent}
+html[data-theme="dark"] .search,html[data-theme="dark"] .cosearch,html[data-theme="dark"] select,
+html[data-theme="dark"] .sortsel select,html[data-theme="dark"] .langbtn,html[data-theme="dark"] .more,
+html[data-theme="dark"] .expbtn,html[data-theme="dark"] .iconbtn,html[data-theme="dark"] .sharebtn{
+  background:#1b2236;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .search::placeholder,html[data-theme="dark"] .searchbar input::placeholder{color:#6b7689}
+html[data-theme="dark"] .empty{background:var(--card);border-color:var(--line);color:var(--muted)}
+html[data-theme="dark"] .jm,html[data-theme="dark"] .jm-f{background:var(--card)}
+html[data-theme="dark"] .jm-x{background:#222b42;color:#cbd3e6}
+html[data-theme="dark"] .jm-copy{background:#1b2236;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] thead th{background:#1b2236;color:#aab2c8;border-bottom-color:var(--line)}
+html[data-theme="dark"] tbody td{border-bottom-color:#202a40}
+html[data-theme="dark"] tbody tr:hover{background:#1b2236}
+html[data-theme="dark"] tbody tr.is-new{background:#1d2138}
+html[data-theme="dark"] tbody tr.is-new:hover{background:#221a30}
+html[data-theme="dark"] .job-req,html[data-theme="dark"] .co-intro,html[data-theme="dark"] .req{color:#9aa3b8}
+html[data-theme="dark"] .job-company b,html[data-theme="dark"] .job-company .sep{color:#cbd3e6}
+html[data-theme="dark"] .kw{background:#221f42;border-color:#332b63;color:#bdb6f5}
+html[data-theme="dark"] .kw:hover{background:#2b2658;border-color:#433a7a}
+html[data-theme="dark"] .panel,html[data-theme="dark"] .tablecard,html[data-theme="dark"] .co,html[data-theme="dark"] .side{background:var(--card);border-color:var(--line)}
+html[data-theme="dark"] .bar-track,html[data-theme="dark"] .track{background:#222b42}
+html[data-theme="dark"] .note,html[data-theme="dark"] .pagefoot{color:#7e8aa3;border-top-color:var(--line)}
+html[data-theme="dark"] .cl li{background:#1b2236;border-color:var(--line);color:#aab2c8}
+html[data-theme="dark"] .srctag,html[data-theme="dark"] .contact{color:#cbd3e6}
+html[data-theme="dark"] .kwnone,html[data-theme="dark"] .contact.none{color:#5c6680}
+html[data-theme="dark"] .avatar{border:1px solid var(--line)}
+html[data-theme="dark"] .co-stats>div{background:#1b2236}
+html[data-theme="dark"] .cov{background:#13241c;border-color:#1f4d36;color:#5fcf9b}
+html[data-theme="dark"] .hh-toast a{color:#a5b4fc}
+html[data-theme="dark"] .themebtn{font-size:13px}

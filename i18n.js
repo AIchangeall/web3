@@ -34,6 +34,8 @@
     "idx.desc":        ["聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。",
                         "Aggregating open roles — engineering, SRE, product, design, data/AI, security, growth, BD, compliance & HR — across top exchanges, chains/L2, wallets/DeFi, node & RPC infra and custody. Updated daily."],
     "idx.searchph":    ["搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…", "Search company, role or skill — Solidity, SRE, PM…"],
+    "idx.todaynew":    ["今日新增 {n} 个岗位 →", "{n} new jobs today →"],
+    "idx.todaynew0":   ["每日持续更新 · 查看全部 →", "Updated daily · view all →"],
     "idx.searchbtn":   ["搜索", "Search"],
     "flt.title":       ["筛选", "Filters"],
     "flt.reset":       ["重置", "Reset"],

@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
 <title>招聘线索 · 链聘 ChainHire | Web3 猎头线索库（公司/岗位/联系方式）</title>
 <meta name="description" content="链聘 ChainHire 招聘线索表：招聘公司、岗位信息、技能与职责关键词、薪资、来源渠道与公开联系方式，面向猎头的可搜索、可筛选、可排序线索库。联系方式仅来自公开披露渠道。" />
 <meta name="keywords" content="Web3猎头,crypto recruiter,招聘线索,HR联系方式,区块链招聘对接,候选人mapping" />
@@ -110,7 +115,7 @@
   <div class="nav-in">
     <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
     <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" class="active" data-i18n="nav.leads">招聘线索</a><a href="about.html" data-i18n="nav.about">关于</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
@@ -157,6 +162,9 @@
   .hh-stale{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
   .hh-dead{display:inline-block;background:#f1f2f6;color:#64748b;border:1px solid #e2e5ec;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
   .hh-flag{display:inline-block;background:#fdf2e0;color:#b45309;border:1px solid #f6e0bd;font-size:9.5px;font-weight:800;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle;white-space:nowrap;cursor:help}
+  .avatar{position:relative;overflow:hidden}
+  .avatar .ltr{position:absolute;inset:0;display:grid;place-items:center}
+  .avatar .logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:inherit;padding:3px;box-sizing:border-box}
   .cov{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:#047857;background:#e6f6ef;border:1px solid #c8ebd9;padding:5px 11px;border-radius:999px;white-space:nowrap}
   .expbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13px;padding:9px 14px;border-radius:10px;cursor:pointer;white-space:nowrap}
   .expbtn:hover{border-color:var(--accent);color:var(--accent)}
@@ -196,6 +204,8 @@
     'learnblockchain.cn':'登链社区','crypto-careers.com':'Crypto-Careers','nodeflair.com':'NodeFlair','simplify.jobs':'Simplify',
     'weworkremotely.com':'WeWorkRemotely','beincrypto.com':'BeInCrypto'};
   const srcOf=link=>{try{const h=new URL(link).hostname.replace(/^www\./,'');return SRC[h]||(h.includes('.')?h:'—');}catch(e){return '—';}};
+  const logoUrl=j=>{try{const h=new URL(j.link).hostname.replace(/^www\./,'');if(SRC[h]||Object.keys(SRC).some(a=>h.endsWith('.'+a)))return '';return 'https://www.google.com/s2/favicons?sz=64&domain='+encodeURIComponent(h);}catch(e){return '';}};
+  const avatarHtml=j=>`<div class="avatar" style="background:${acolor(j.company)}"><span class="ltr">${esc(initial(j.company))}</span>${logoUrl(j)?`<img class="logo-img" src="${logoUrl(j)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
 
   const state={search:"",contactOnly:false,sort:"latest"};
   document.getElementById("search").addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();render();});
@@ -267,7 +277,7 @@
       const fg=(window.CNH_FLAGS&&window.CNH_FLAGS[j.company])||null;
       const badges=(isNew(j)?'<span class="new">NEW</span>':'')+(stale?`<span class="hh-stale">${I18N.t('badge.stale')}</span>`:'')+(dead?`<span class="hh-dead">${I18N.t('badge.dead')}</span>`:'')+(fg?`<span class="hh-flag" title="${esc(I18N.lang==="zh"?fg.zh:fg.en)}">⚠️ ${I18N.t('flag.note')}</span>`:'');
       return `<tr class="${isNew(j)?'is-new':''}"${dead?' style="opacity:.66"':''}>
-        <td><div class="co"><div class="avatar" style="background:${acolor(j.company)}">${esc(initial(j.company))}</div>
+        <td><div class="co">${avatarHtml(j)}
           <div><div class="co-name">${esc(j.company)}</div><div class="co-cat">${catLabels[j.category]||j.category}</div></div></div></td>
         <td><div class="pos">${esc(j.position)}${badges}</div>
           <div class="ptags"><span class="tag f-${j.func||'ga'}">${funcLabels[j.func]||'其他'}</span><span class="tag">${lvlLabels[j.level]||j.level}</span><span class="tag">📍 ${esc(j.location)}</span></div></td>

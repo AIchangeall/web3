@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
 <title>链聘 ChainHire · Web3 全职能招聘 | 交易所/公链/DeFi 岗位每日更新</title>
 <meta name="description" content="链聘 ChainHire 聚合头部交易所、公链/L2、钱包/DeFi、节点基础设施等公司的工程、运维SRE、产品、设计、数据AI、安全、增长、BD、合规HR 等 Web3 全职能公开岗位。面向猎头与求职者，每日自动更新，支持职能/级别/地区筛选与薪资排序。" />
 <meta name="keywords" content="Web3招聘,区块链招聘,crypto jobs,web3 jobs,链上招聘,交易所招聘,公链招聘,DeFi招聘,SRE招聘,Solidity,远程工作" />
@@ -83,6 +88,10 @@
   .searchbar input{flex:1;border:0;outline:0;padding:11px 14px;font-size:15px;color:var(--ink);background:transparent}
   .searchbar button{border:0;background:var(--ink);color:#fff;font-weight:700;font-size:14px;padding:0 22px;border-radius:10px;cursor:pointer}
   .searchbar button:hover{background:#000}
+  .today-new{display:inline-flex;align-items:center;gap:9px;margin-top:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);color:#fff;font-weight:700;font-size:13.5px;padding:9px 17px;border-radius:999px;cursor:pointer;backdrop-filter:blur(4px);transition:.15s}
+  .today-new:hover{background:rgba(255,255,255,.28);transform:translateY(-1px)}
+  .today-new .pulse{width:9px;height:9px;border-radius:50%;background:#fde047;flex:none;animation:cnhpulse 1.8s infinite}
+  @keyframes cnhpulse{0%{box-shadow:0 0 0 0 rgba(253,224,71,.7)}70%{box-shadow:0 0 0 9px rgba(253,224,71,0)}100%{box-shadow:0 0 0 0 rgba(253,224,71,0)}}
 
   /* KPI strip */
   .kpis{max-width:1180px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
@@ -124,7 +133,9 @@
   .jobs{display:flex;flex-direction:column;gap:12px}
   .job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;gap:15px;box-shadow:var(--shadow);transition:.15s;position:relative}
   .job:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:#dfe2ec}
-  .avatar{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px;flex:none}
+  .avatar{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px;flex:none;position:relative;overflow:hidden}
+  .avatar .ltr{position:absolute;inset:0;display:grid;place-items:center}
+  .avatar .logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:inherit;padding:5px;box-sizing:border-box}
   .job-main{flex:1;min-width:0}
   .job-title{font-size:16px;font-weight:700;margin:0;display:inline}
   .new{display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;margin-left:8px;vertical-align:middle;letter-spacing:.03em}
@@ -241,6 +252,7 @@
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
+      <button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button>
       <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
     </div>
   </div>
@@ -254,6 +266,7 @@
       <input id="search" data-i18n-ph="idx.searchph" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
       <button id="searchbtn" data-i18n="idx.searchbtn">搜索</button>
     </div>
+    <div><a class="today-new" id="today-new" role="button" style="display:none"></a></div>
   </div>
 </header>
 
@@ -370,6 +383,10 @@
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
   const initial=n=>((n||"?").trim()[0]||"?").toUpperCase();
   const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  // 公司 logo：从岗位链接的公司域名取 favicon（排除 ATS / 聚合站域名）；取不到则回退字母头像
+  const ATS=["jobs.lever.co","lever.co","jobs.ashbyhq.com","ashbyhq.com","boards.greenhouse.io","job-boards.greenhouse.io","greenhouse.io","web3.career","cryptojobslist.com","cryptocurrencyjobs.co","v2ex.com","learnblockchain.cn","crypto-careers.com","nodeflair.com","simplify.jobs","weworkremotely.com","beincrypto.com","myworkdayjobs.com","linkedin.com","notion.site","bamboohr.com","workable.com","recruitee.com","breezy.hr"];
+  const logoUrl=r=>{ try{ const h=new URL(r.link).hostname.replace(/^www\./,""); if(ATS.some(a=>h===a||h.endsWith("."+a))) return ""; return "https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(h); }catch(e){ return ""; } };
+  const avatarHtml=r=>`<div class="avatar" style="background:${acolor(r.company)}"><span class="ltr">${esc(initial(r.company))}</span>${logoUrl(r)?`<img class="logo-img" src="${logoUrl(r)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
 
   function buildChips(id,labels,set){
     const c=document.getElementById(id);
@@ -477,7 +494,7 @@
       + (stale?`<span class="badge-stale">${I18N.t('badge.stale')}</span>`:'')
       + (dead?`<span class="badge-dead">${I18N.t('badge.dead')}</span>`:'');
     return `<article class="job${dead?' is-dead':''}" data-id="${esc(r.id)}">
-      <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
+      ${avatarHtml(r)}
       <div class="job-main">
         <h3 class="job-title" data-detail title="${esc(r.position)}">${esc(r.position)}</h3>${badges}
         <div class="job-company"><b>${esc(r.company)}</b><span class="sep">·</span>${catLabels[r.category]||r.category}</div>
@@ -535,6 +552,12 @@
       ? `数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准 · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay}`
       : `Data aggregated from public sources; salaries are public/estimated, for reference only · ${data.length} roles · updated ${updDisplay}`;
     document.getElementById("pagefoot").innerHTML=`${fn} · <a href="stats.html" style="color:var(--accent)">${I18N.t("nav.stats")} →</a> · <a href="about.html" style="color:var(--accent)">${I18N.t("nav.about")}</a> · <a href="feed.xml" style="color:var(--accent)">${I18N.t("foot.rss")}</a>`;
+
+    // Hero「今日新增」醒目脉冲胶囊（点击筛选今日新增）
+    const tn=document.getElementById("today-new"), nc=data.filter(isNew).length;
+    tn.style.display="inline-flex";
+    tn.innerHTML=`<span class="pulse"${nc===0?' style="background:#86efac"':''}></span><span>${nc>0?I18N.tpl("idx.todaynew",nc):I18N.t("idx.todaynew0")}</span>`;
+    tn.onclick=e=>{ e.preventDefault(); if(nc>0){ state.newOnly=true; tnew.classList.add("on"); } state.limit=PAGE; render(); const m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"}); };
   }
 
   // ---------- 岗位详情弹层 / 分享 / 结构化数据 ----------
@@ -586,7 +609,7 @@
     return `
       <button class="jm-x" data-jmclose type="button" aria-label="close">×</button>
       <div class="jm-h">
-        <div class="avatar" style="background:${acolor(r.company)}">${esc(initial(r.company))}</div>
+        ${avatarHtml(r)}
         <div>
           <h2 class="jm-title">${esc(r.position)} ${isNew(r)?'<span class="new">NEW</span>':''}</h2>
           <div class="jm-co"><b>${esc(r.company)}</b> · ${catLabels[r.category]||r.category}${r.firstSeen?` · ${I18N.t('card.posted')} ${r.firstSeen}`:''}</div>

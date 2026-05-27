@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
 <title>数据洞察 · 链聘 ChainHire | Web3 招聘市场趋势与薪资分布</title>
 <meta name="description" content="链聘 ChainHire 数据洞察：基于实时在招岗位计算的 Web3 招聘市场趋势、热门雇主、职能与级别分布、各职能薪资中位与热门技能关键字，供猎头与求职者把握市场动向。" />
 <meta name="keywords" content="Web3招聘数据,区块链薪资,crypto hiring trends,web3 salary,招聘市场,技能需求" />
@@ -116,7 +121,7 @@
   <div class="nav-in">
     <a class="brand" href="index.html"><span class="logo">链</span><span>链聘 ChainHire<small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
     <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" class="active" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" data-i18n="nav.leads">招聘线索</a><a href="about.html" data-i18n="nav.about">关于</a></div>
-    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
+    <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
 
