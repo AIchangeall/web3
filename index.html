@@ -206,6 +206,7 @@
       <div class="sortsel">
         <span data-i18n="sort.label">排序</span>
         <select id="sort">
+          <option value="latest" data-i18n="sort.latest">最新发布</option>
           <option value="recommended" data-i18n="sort.recommended">推荐（新增优先）</option>
           <option value="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</option>
           <option value="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</option>
@@ -255,7 +256,7 @@
   buildLabels();
 
   const PAGE=18;
-  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,search:"",sort:"recommended",limit:PAGE};
+  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,search:"",sort:"latest",limit:PAGE};
 
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -293,7 +294,7 @@
     state.newOnly=false;state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
     tnew.classList.remove("on"); document.getElementById("search").value="";
-    document.getElementById("sort").value="recommended"; state.sort="recommended"; render();
+    document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
   // 点击岗位关键字 → 按该关键字筛选
   document.getElementById("jobs").addEventListener("click",e=>{
@@ -330,7 +331,9 @@
     if(s==="salary_desc") return rows.sort((a,b)=>(b.salaryNum||0)-(a.salaryNum||0));
     if(s==="salary_asc")  return rows.sort((a,b)=>(a.salaryNum||0)-(b.salaryNum||0));
     if(s==="company")     return rows.sort((a,b)=>a.company.localeCompare(b.company,"en"));
-    return rows.sort((a,b)=>(isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0)); // recommended
+    if(s==="recommended") return rows.sort((a,b)=>(isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
+    // latest（默认）：按上架日期倒序，今日新增最前，薪资为次级
+    return rows.sort((a,b)=>(b.firstSeen||"").localeCompare(a.firstSeen||"") || (isNew(b)?1:0)-(isNew(a)?1:0) || (b.salaryNum||0)-(a.salaryNum||0));
   }
 
   function card(r){

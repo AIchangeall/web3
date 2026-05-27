@@ -42,6 +42,7 @@
     "kpi.remote":      ["支持远程", "Remote"],
     "kpi.head":        ["负责人 / 总监", "Lead / Director"],
     "sort.label":      ["排序", "Sort"],
+    "sort.latest":     ["最新发布", "Latest posted"],
     "sort.recommended":["推荐（新增优先）", "Recommended"],
     "sort.salary_desc":["薪资 高 → 低", "Salary: high → low"],
     "sort.salary_asc": ["薪资 低 → 高", "Salary: low → high"],
