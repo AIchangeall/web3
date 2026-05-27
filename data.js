@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 45,
+      "added": 58,
       "removed": 0,
-      "note": "新增工程/产品/设计/数据AI/安全/增长/BD/合规 共19个岗位（来源：Chainlink/CoW DAO/Monad/Trust Wallet/OKX/Binance/Paxos/Risk Labs/Animoca/CoinMarketCap 等）"
+      "note": "当日累计新增 58 个岗位。"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,367 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "MoonPay",
+      "func": "eng",
+      "category": "other",
+      "position": "Blockchain Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 145000,
+      "requirements": "DeFi/钱包/自托管产品经验；链上合约交互（MEV 感知/swap 路由）；链下服务对接链上合约；交易所/托管/钱包基础设施团队背景。",
+      "link": "https://jobs.lever.co/moonpay/33021311-30a3-4296-be88-324d37751e1f",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "moonpay||blockchain-engineer",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "MEV",
+        "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Technical Staff, Blockchain (Backend Engineer)",
+      "level": "senior",
+      "location": "远程（美国/葡萄牙/阿根廷/巴西）",
+      "region": [
+        "remote",
+        "us",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 165000,
+      "requirements": "Go；深研新加密资产协议白皮书并集成；分布式系统；质押/治理/vesting 等参与功能开发；跨链抽象层设计。",
+      "link": "https://jobs.lever.co/anchorage/8db9058f-6302-4f48-a277-f0812a7cf028",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "anchorage-digital||member-of-technical-staff-blockchain-backend-engineer",
+      "keywords": [
+        "Go",
+        "Staking"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Zora",
+      "func": "ops",
+      "category": "other",
+      "position": "Sr. Software Engineer, Infrastructure",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$170K–$200K",
+      "salaryNum": 185000,
+      "requirements": "5+年基础设施/平台工程；Go（优先）或 Python；Kubernetes；分布式存储（Ceph）；以太坊/EVM 链深度理解；可观测性工具。",
+      "link": "https://web3.career/sr-software-engineer-infrastructure-zora/142721",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "zora||sr-software-engineer-infrastructure",
+      "keywords": [
+        "Go",
+        "Python",
+        "EVM",
+        "Ethereum",
+        "Kubernetes",
+        "可观测性"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Binance",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Senior DevOps Engineer (Blockchain)",
+      "level": "senior",
+      "location": "全球远程（居家）",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 155000,
+      "requirements": "3+年 DevOps/云工程；AWS(EC2/VPC/IAM)/Kubernetes(EKS)/CI-CD；Bash/Python/Go；区块链共识/Layer 2/智能合约理解；中英双语。",
+      "link": "https://jobs.lever.co/binance/014f8ea5-bdba-491d-91bb-df4d6f1aad0a",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "binance||senior-devops-engineer-blockchain",
+      "keywords": [
+        "Go",
+        "Python",
+        "Smart Contract",
+        "L2/Rollup",
+        "Kubernetes",
+        "AWS"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Linera",
+      "func": "ops",
+      "category": "chain",
+      "position": "Web3 Infrastructure Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$157K–$175K",
+      "salaryNum": 166000,
+      "requirements": "5+年 DevOps/SRE/基础设施；AWS/GCP+Terraform；Docker/Kubernetes；Prometheus/Grafana/Loki；Rust 优先；保障 testnet 与 mainnet 可靠性。",
+      "link": "https://jobs.ashbyhq.com/linera.io/e1af1e7c-4318-4823-9433-e3fdffa45322",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "linera||web3-infrastructure-engineer",
+      "keywords": [
+        "Rust",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Prometheus",
+        "Grafana"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Kraken",
+      "func": "ops",
+      "category": "exchange",
+      "position": "SRE / DevOps Engineer",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "大规模加密交易所可靠性工程；Kubernetes/CI-CD；SRE 实践与 on-call；链上基础设施自动化维护；多区域高可用架构。",
+      "link": "https://jobs.ashbyhq.com/kraken.com/308e2a7c-197b-4ba0-a485-f7a6b00079d3",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "kraken||sre-devops-engineer",
+      "keywords": [
+        "Kubernetes",
+        "On-call"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "自动化",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "0G Labs",
+      "func": "product",
+      "category": "chain",
+      "position": "Senior Product Manager, Web3",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "主导 0G AI 数据基础设施产品生态愿景与执行；核心 infra 产品路线图制定；跨团队协调交付；Web3 协议层产品经验。",
+      "link": "https://jobs.ashbyhq.com/0g/09aca14b-e4b2-49b1-8dfc-25e2092430c4",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "0g-labs||senior-product-manager-web3",
+      "keywords": [
+        "AI"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "0x",
+      "func": "data",
+      "category": "defi",
+      "position": "Data Scientist (GTM)",
+      "level": "senior",
+      "location": "全球远程（美国）",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 165000,
+      "requirements": "4–8+年数据分析；EVM 链上数据（Dune/Allium）；SQL；链上行为洞察转化为 GTM 决策；全球出差及每半年 offsite。",
+      "link": "https://jobs.ashbyhq.com/0x/6dbca8eb-0553-411d-b903-dfa5f73dfcd3",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "0x||data-scientist-gtm",
+      "keywords": [
+        "EVM",
+        "SQL"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Sky Mavis",
+      "func": "security",
+      "category": "other",
+      "position": "Web3 Security Engineer",
+      "level": "senior",
+      "location": "胡志明市 / 远程",
+      "region": [
+        "asia",
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "2+年安全工程+智能合约审计；Solidity；Ronin 区块链/钱包安全；威胁建模与链上监控方案；协助工程团队修复漏洞。",
+      "link": "https://jobs.ashbyhq.com/skymavis/4b58a7cf-538a-44c7-908b-da8918348efb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "sky-mavis||web3-security-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "Wallet",
+        "安全审计"
+      ],
+      "duties": [
+        "监控告警",
+        "协议/合约开发",
+        "安全/审计",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Wormhole Foundation",
+      "func": "growth",
+      "category": "infra",
+      "position": "Head of Marketing",
+      "level": "head",
+      "location": "全球远程（美洲/欧洲）",
+      "region": [
+        "remote",
+        "us",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "Web3+传统双栈营销战略；跨链生态品牌建设与增长执行；营销团队建设与管理；数据驱动度量与机构/零售受众兼顾。",
+      "link": "https://job-boards.greenhouse.io/wormholefoundation/jobs/4859304008",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "wormhole-foundation||head-of-marketing",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "多链/跨链",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Nethermind",
+      "func": "bd",
+      "category": "other",
+      "position": "Business Development Associate (Web3 Security)",
+      "level": "mid",
+      "location": "伦敦",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 115000,
+      "requirements": "Web3 安全审计/形式化验证服务 BD；客户拓展、关系管理与合同谈判；Web3 网络资源；安全服务销售经验优先。",
+      "link": "https://boards.eu.greenhouse.io/nethermind/jobs/4225896101",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "nethermind||business-development-associate-web3-security",
+      "keywords": [
+        "安全审计",
+        "形式化验证"
+      ],
+      "duties": [
+        "安全/审计",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "design",
+      "category": "exchange",
+      "position": "Senior Product Designer, Onboarding",
+      "level": "senior",
+      "location": "全球远程",
+      "region": [
+        "remote"
+      ],
+      "salary": "$81K–$116K",
+      "salaryNum": 98000,
+      "requirements": "端到端用户引导流程设计；数据驱动 A/B 测试与 UX 迭代；人本设计方法论；跨职能协作；Crypto/交易所产品背景优先。",
+      "link": "https://web3.career/senior-product-designer-kraken/48616",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "kraken||senior-product-designer-onboarding",
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Member of Compliance, FCC Program (AML/BSA Analytics)",
+      "level": "mid",
+      "location": "全球远程（美国/葡萄牙/新加坡）",
+      "region": [
+        "remote",
+        "us",
+        "sg",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "3+年 AML/OFAC 合规数据分析；数字资产 BSA/AML 监管框架与红旗识别；SQL/Excel；CAMS 认证加分；联邦持牌加密银行合规项目。",
+      "link": "https://himalayas.app/companies/anchorage-digital/jobs/member-of-compliance-fcc-program",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "anchorage-digital||member-of-compliance-fcc-program-aml-bsa-analytics",
+      "keywords": [
+        "SQL",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "数据分析"
+      ]
+    },
     {
       "company": "Chainlink Labs",
       "func": "eng",
@@ -4359,7 +4720,25 @@ window.WEB3_JOBS_DATA = {
     },
     "CoinMarketCap": {
       "intro": ""
+    },
+    "Zora": {
+      "intro": ""
+    },
+    "Linera": {
+      "intro": ""
+    },
+    "0G Labs": {
+      "intro": ""
+    },
+    "0x": {
+      "intro": ""
+    },
+    "Sky Mavis": {
+      "intro": ""
+    },
+    "Wormhole Foundation": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T00:10:46.654Z"
+  "lastUpdatedAt": "2026-05-27T05:09:07.582Z"
 };
