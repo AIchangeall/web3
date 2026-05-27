@@ -7,6 +7,7 @@
 new_jobs.json
 *.bak
 node_modules/
+dist/
 
 # 系统文件
 .DS_Store
