@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-27",
-      "added": 148,
+      "added": 167,
       "removed": 0,
-      "note": "当日累计新增 148 个岗位。"
+      "note": "新增 Hyperliquid/dYdX/CEX.IO/Biconomy/THORChain/Certora等覆盖"
     },
     {
       "date": "2026-05-26",
@@ -32,6 +32,508 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "dYdX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Scientist",
+      "level": "senior",
+      "location": "纽约 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$190K–$240K",
+      "salaryNum": 215000,
+      "requirements": "量化方向学士/硕士（CS/统计/经济学）；DeFi数据洞察与用户增长分析；数据基础设施维护；链上数据处理经验。",
+      "link": "https://dydx.exchange/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "dydx||data-scientist",
+      "keywords": [
+        "DeFi",
+        "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "dYdX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Software Engineer, Backend",
+      "level": "senior",
+      "location": "旧金山 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$170K–$275K",
+      "salaryNum": 220000,
+      "requirements": "区块链工具与升级策略开发；工程最佳实践；DEX/链上基础设施丰富经验；Go/TypeScript。",
+      "link": "https://dydx.exchange/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "dydx||senior-software-engineer-backend",
+      "keywords": [
+        "Go",
+        "TypeScript"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "dYdX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Research Lead",
+      "level": "head",
+      "location": "旧金山 / 远程",
+      "region": [
+        "us",
+        "remote"
+      ],
+      "salary": "$200K–$275K",
+      "salaryNum": 240000,
+      "requirements": "市场结构/协议设计/用户行为研究；数据基础设施建设；社区参与；DeFi协议深度研究经验。",
+      "link": "https://dydx.exchange/careers",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "dydx||research-lead",
+      "keywords": [
+        "DeFi",
+        "社区"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "CEX.IO",
+      "func": "ops",
+      "category": "exchange",
+      "position": "DevSecOps Engineer",
+      "level": "mid",
+      "location": "远程（英/美/乌克兰/塞浦路斯/直布罗陀）",
+      "region": [
+        "remote",
+        "eu",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "DevSecOps安全与基础设施；高负载加密货币平台运维；安全自动化；320+人团队。",
+      "link": "https://cex.io/we-are-hiring",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "cex-io||devsecops-engineer",
+      "keywords": [],
+      "duties": [
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "CEX.IO",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Android Developer",
+      "level": "mid",
+      "location": "远程（混合办公）",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "3年+Android开发（Java/Kotlin）；Android SDK深度经验；高负载千万级用户产品；交易所移动端。",
+      "link": "https://cex.io/we-are-hiring",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "cex-io||android-developer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "CEX.IO",
+      "func": "design",
+      "category": "exchange",
+      "position": "Lead Product Designer",
+      "level": "head",
+      "location": "远程（混合办公）",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "主导CEX.IO加密钱包/交易所/DeFi生态系统完整设计所有权；加密金融产品设计经验；团队领导。",
+      "link": "https://cex.io/we-are-hiring",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "cex-io||lead-product-designer",
+      "keywords": [
+        "DeFi",
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Biconomy",
+      "func": "eng",
+      "category": "infra",
+      "position": "Blockchain Technical Lead",
+      "level": "head",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "5年+开发（2年+区块链）；Account Abstraction/AA+LLM融合；领导DAN技术团队；LLM开发经验；AI加密钱包。",
+      "link": "https://wellfound.com/company/biconomy/jobs",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "biconomy||blockchain-technical-lead",
+      "keywords": [
+        "Wallet",
+        "AI"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Biconomy",
+      "func": "eng",
+      "category": "infra",
+      "position": "Web3 Blockchain Engineer",
+      "level": "mid",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "$46K–$60K",
+      "salaryNum": 53000,
+      "requirements": "4年+开发（2年+区块链）；智能合约+后端服务开发；SDK/文档协作；Account Abstraction基础设施。",
+      "link": "https://web3.career/blockchain-engineer-biconomy/39563",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "biconomy||web3-blockchain-engineer",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Biconomy",
+      "func": "ops",
+      "category": "infra",
+      "position": "Lead DevOps Engineer",
+      "level": "head",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "$63K–$90K",
+      "salaryNum": 76500,
+      "requirements": "DevOps/Infra负责人；Kubernetes/Terraform/GitOps；区块链节点管理；CI/CD流程设计。",
+      "link": "https://web3.career/lead-devops-engineer-biconomy/51211",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "biconomy||lead-devops-engineer",
+      "keywords": [
+        "Validator/节点",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD"
+      ],
+      "duties": [
+        "团队管理",
+        "部署发布",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "THORChain",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Protocol Engineer",
+      "level": "senior",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "生产级Go代码开发；Cosmos SDK协议升级（激励机制/跨链能力）；Bifrost多链桥接客户端；分布式系统经验。",
+      "link": "https://blockchain.works-hub.com/jobs/remote-senior-core-protocol-engineer-e07",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "thorchain||senior-protocol-engineer",
+      "keywords": [
+        "Go"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Eight Forces",
+      "func": "growth",
+      "category": "other",
+      "position": "Web3 Marketing/Growth Manager",
+      "level": "mid",
+      "location": "远程（无地域限制）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 80000,
+      "requirements": "3年+web3增长营销经验；营销/销售漏斗设计；团队管理（内部+外包）；数据分析与活动复盘。",
+      "link": "https://cryptocurrencyjobs.co/marketing/eight-forces-web3-marketing-growth-manager/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "eight-forces||web3-marketing-growth-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "数据分析",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Analog",
+      "func": "growth",
+      "category": "chain",
+      "position": "Web3/Crypto Marketing Lead",
+      "level": "senior",
+      "location": "远程（无地域限制）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "3年+营销/2年+web3社区建设；Layer-0跨链项目；内容营销/社交媒体/KOL合作；Proof-of-Time共识网络。",
+      "link": "https://cryptocurrencyjobs.co/marketing/analog-web3-crypto-marketing-lead/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "analog||web3-crypto-marketing-lead",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "多链/跨链",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Cere Network",
+      "func": "bd",
+      "category": "infra",
+      "position": "Business Development Manager (Web3)",
+      "level": "mid",
+      "location": "远程 / 旧金山 / 阿姆斯特丹 / 柏林 / 亚洲",
+      "region": [
+        "remote",
+        "us",
+        "eu",
+        "asia"
+      ],
+      "salary": "$60K–$100K",
+      "salaryNum": 80000,
+      "requirements": "去中心化数据协议BD；扩展链/DeFi/DAO生态伙伴关系；Binance Labs/Republic Labs背书；web3生态系统经验。",
+      "link": "https://web3.career/business-development-manager-web-3-cere-network/42467",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "cere-network||business-development-manager-web3",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Google Cloud",
+      "func": "growth",
+      "category": "other",
+      "position": "Head of Product Marketing, Global Web3",
+      "level": "head",
+      "location": "纽约 / 旧金山 / 西雅图 / 桑尼维尔",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 280000,
+      "requirements": "领导谷歌云Web3产品营销团队；制定Web3 GTM策略与消息体系；B2B云/开发者受众营销经验；跨地区团队管理。",
+      "link": "https://cryptocurrencyjobs.co/marketing/google-head-of-product-marketing-global-web3-google-cloud/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "google-cloud||head-of-product-marketing-global-web3",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "NodeReal",
+      "func": "ops",
+      "category": "infra",
+      "position": "Site Reliability Engineer",
+      "level": "mid",
+      "location": "远程（无地域限制）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "大规模分布式系统设计与可靠性保障；C/C++/Java/Python/Go任一语言；Linux/Unix；区块链节点基础设施运维。",
+      "link": "https://cryptocurrencyjobs.co/engineering/nodereal-sre/",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "nodereal||site-reliability-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "C++",
+        "Validator/节点",
+        "Linux"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Jupiter",
+      "func": "design",
+      "category": "defi",
+      "position": "Product Designer (Crypto)",
+      "level": "mid",
+      "location": "远程",
+      "region": [
+        "remote",
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "3年+产品设计（移动端优先）；UX基础与视觉设计；Solana最大DEX/DeFi协议产品体验；web3/DeFi/fintech设计经验优先。",
+      "link": "https://jobs.solana.com/companies/jupiter-2-051c86c1-68fc-4de2-a5d3-406864e3e717",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "jupiter||product-designer-crypto",
+      "keywords": [
+        "DeFi",
+        "Solana"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Singapore Compliance Lead",
+      "level": "head",
+      "location": "新加坡",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "新加坡MPI/AML/CFT合规监管框架专家；数字支付与加密货币合规体系建设；MAS法规执行与监管报告。",
+      "link": "https://jobs.lever.co/anchorage/f8ae8302-980b-41f5-a408-1f336c25b0fb",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "anchorage-digital||singapore-compliance-lead",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "data",
+      "category": "exchange",
+      "position": "Sr. Staff AI/ML Engineer",
+      "level": "senior",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "$170K–$350K",
+      "salaryNum": 250000,
+      "requirements": "10年+大规模ML系统生产经验；MLOps平台架构；PyTorch/TensorFlow/Spark；Python/Go/Rust；反欺诈/风控/推荐系统。",
+      "link": "https://jobs.theblockchainassociation.org/companies/kraken/jobs/66076684-sr-staff-ai-ml-engineer",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "kraken||sr-staff-ai-ml-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "Spark",
+        "Machine Learning",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Certora",
+      "func": "security",
+      "category": "other",
+      "position": "Web3 Security Researcher",
+      "level": "mid",
+      "location": "远程（全球）",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "智能合约形式验证/安全审计；Certora Prover工具；EVM/Solidity深度理解；审计报告撰写；顶级安全审计公司。",
+      "link": "https://www.certora.com/careers/web3-security-researcher",
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-05-27",
+      "id": "certora||web3-security-researcher",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "安全审计"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
     {
       "company": "dYdX",
       "func": "eng",
@@ -7170,7 +7672,37 @@ window.WEB3_JOBS_DATA = {
     },
     "Deribit": {
       "intro": ""
+    },
+    "CEX.IO": {
+      "intro": ""
+    },
+    "Biconomy": {
+      "intro": ""
+    },
+    "THORChain": {
+      "intro": ""
+    },
+    "Eight Forces": {
+      "intro": ""
+    },
+    "Analog": {
+      "intro": ""
+    },
+    "Cere Network": {
+      "intro": ""
+    },
+    "Google Cloud": {
+      "intro": ""
+    },
+    "NodeReal": {
+      "intro": ""
+    },
+    "Jupiter": {
+      "intro": ""
+    },
+    "Certora": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T15:22:48.337Z"
+  "lastUpdatedAt": "2026-05-27T15:25:14.829Z"
 };
