@@ -18,7 +18,7 @@ git add assets/wechat-qr.png && git commit -m "添加合作沟通微信二维码
 
 ## wxskm.jpg（微信赞赏码）
 
-访客累计浏览满 1 分钟后，会温和弹出一次「自愿赞赏」弹窗，显示本目录下的 `wxskm.jpg`（微信收款码）。
+访客累计浏览满 2 分钟后，会温和弹出一次「自愿赞赏」弹窗，显示本目录下的 `wxskm.jpg`（微信收款码）。
 
 **请把你的微信收款码图片保存为 `assets/wxskm.jpg`** 并提交：
 
