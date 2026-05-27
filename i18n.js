@@ -15,6 +15,13 @@
     "nav.leads":       ["招聘线索", "Leads"],
     "brand.tag":       ["Web3 全职能招聘 · 每日更新", "Web3 hiring · updated daily"],
     "upd.prefix":      ["更新", "Updated"],
+    "views":           ["浏览量", "Views"],
+    "visitors":        ["访客", "Visitors"],
+    "partner":         ["合作沟通", "Contact"],
+    "partner.title":   ["合作沟通", "Partnership & Contact"],
+    "partner.sub":     ["扫码添加微信，洽谈合作与商务对接", "Scan the WeChat QR to discuss partnership"],
+    "partner.hint":    ["二维码待添加：把图片保存为 assets/wechat-qr.png", "Add the QR image at assets/wechat-qr.png"],
+    "partner.close":   ["关闭", "Close"],
 
     // index 职位
     "idx.h1":          ["Web3 行业全职能岗位", "Web3 All-Function Jobs"],
