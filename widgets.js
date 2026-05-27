@@ -3,6 +3,8 @@
 //   1) 浏览量统计：本机 localStorage 计数（始终可用）+ 不蒜子(busuanzi) 全站 PV/UV
 //      （网站公开托管且联网时显示全站真实数据，否则回退本机累计访问数）
 //   2) 合作沟通：右下角悬浮按钮 → 微信二维码弹窗（图片 assets/wechat-qr.png）
+//   3) 赞赏提示：累计浏览满 5 分钟后温和弹出一次「自愿赞赏」(支付宝赞赏码 assets/alipay-qr.png)，
+//      可随手关闭、关闭后不再打扰(localStorage 记忆)。非付费墙/不限制浏览，纯自愿。
 //  自动在每个页面注入，无需各页改动结构。文案随 I18N 语言切换。
 // ============================================================================
 (function () {
@@ -36,6 +38,21 @@
   .cnh-x:hover{color:#0f1729}
   .cnh-mark{margin-top:14px;font-size:12px;color:#16a34a;font-weight:600;display:flex;align-items:center;justify-content:center;gap:5px}
   @media(max-width:560px){.cnh-fab{right:14px;bottom:14px;padding:10px 14px}}
+  /* 软性付费墙 */
+  .cnh-pay-mask{position:fixed;inset:0;z-index:60;background:rgba(15,23,41,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px}
+  .cnh-pay-mask.show{display:flex}
+  .cnh-pay{position:relative;background:#fff;border-radius:18px;padding:24px;width:340px;max-width:100%;text-align:center;box-shadow:0 20px 60px rgba(15,23,41,.35)}
+  .cnh-pay .cnh-payx{position:absolute;top:12px;right:14px;border:0;background:none;font-size:22px;line-height:1;color:#9aa1b1;cursor:pointer}
+  .cnh-pay .cnh-payx:hover{color:#0f1729}
+  .cnh-pay .emoji{font-size:30px;line-height:1;margin-bottom:4px}
+  .cnh-pay h3{margin:0 0 6px;font-size:18px;font-weight:800;color:#0f1729}
+  .cnh-pay .psub{margin:0 0 14px;font-size:13px;color:#6b7280;line-height:1.6}
+  .cnh-pay .pqr{width:210px;height:210px;max-width:100%;border-radius:12px;border:1px solid #e8eaf0;object-fit:contain;background:#fafafe}
+  .cnh-pay .pqrhint{width:210px;max-width:100%;margin:0 auto;aspect-ratio:1;border:1px dashed #cbd0db;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#9aa1b1;font-size:12px;padding:16px;text-align:center}
+  .cnh-pay .pali{margin-top:10px;font-size:12.5px;color:#1677ff;font-weight:600}
+  .cnh-pay .punlock{margin-top:16px;width:100%;border:0;background:#1677ff;color:#fff;font-weight:700;font-size:15px;padding:12px;border-radius:12px;cursor:pointer}
+  .cnh-pay .punlock:hover{background:#0e5fd8}
+  .cnh-pay .plater{margin-top:10px;background:none;border:0;color:#9aa1b1;font-size:12.5px;cursor:pointer}
   `;
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
@@ -85,6 +102,42 @@
     mask.addEventListener("click", function (e) { if (e.target === mask) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
 
+    // ---- 赞赏提示：累计浏览满 5 分钟，温和弹出一次「自愿赞赏」，可关闭且不再打扰 ----
+    var pay = document.createElement("div");
+    pay.className = "cnh-pay-mask"; pay.id = "cnh-pay-mask";
+    pay.innerHTML =
+      '<div class="cnh-pay" role="dialog" aria-modal="true">' +
+      '<button class="cnh-payx" id="cnh-pay-x" aria-label="close">&times;</button>' +
+      '<div class="emoji">☕</div>' +
+      '<h3 id="cnh-pay-title"></h3>' +
+      '<div class="psub" id="cnh-pay-sub"></div>' +
+      '<img class="pqr" id="cnh-pay-qr" src="assets/alipay-qr.png" alt="赞赏码" />' +
+      '<div class="pqrhint" id="cnh-pay-qrhint" style="display:none"></div>' +
+      '<div class="pali" id="cnh-pay-ali"></div>' +
+      '<button class="punlock" id="cnh-pay-ok"></button>' +
+      '</div>';
+    document.body.appendChild(pay);
+    var payqr = document.getElementById("cnh-pay-qr");
+    payqr.addEventListener("error", function () { payqr.style.display = "none"; var h = document.getElementById("cnh-pay-qrhint"); h.style.display = "flex"; h.textContent = T("pay.hint"); });
+
+    var SEEN_KEY = "cnh_tip_seen", MS_KEY = "cnh_browse_ms", LIMIT_MS = 5 * 60 * 1000;
+    var browsed = parseInt(localStorage.getItem(MS_KEY) || "0", 10) || 0;
+    function seen() { return localStorage.getItem(SEEN_KEY) === "1"; }
+    function dismiss() { try { localStorage.setItem(SEEN_KEY, "1"); } catch (e) {} pay.classList.remove("show"); }
+    function showTip() { paint(); pay.classList.add("show"); }
+    document.getElementById("cnh-pay-x").addEventListener("click", dismiss);
+    document.getElementById("cnh-pay-ok").addEventListener("click", dismiss);
+    pay.addEventListener("click", function (e) { if (e.target === pay) dismiss(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && pay.classList.contains("show")) dismiss(); });
+    if (!seen()) {
+      var tipTmr = setInterval(function () {
+        if (seen()) { clearInterval(tipTmr); pay.classList.remove("show"); return; }
+        if (document.visibilityState && document.visibilityState !== "visible") return;
+        browsed += 1000; try { localStorage.setItem(MS_KEY, String(browsed)); } catch (e) {}
+        if (browsed >= LIMIT_MS) { showTip(); clearInterval(tipTmr); }
+      }, 1000);
+    }
+
     paint();
     window.addEventListener("langchange", paint);
     // busuanzi 异步回填后刷新一次浏览量显示
@@ -113,6 +166,15 @@
     document.getElementById("cnh-x").title = T("partner.close");
     var hint = document.getElementById("cnh-qrhint");
     if (hint && hint.style.display !== "none") hint.textContent = T("partner.hint");
+    var pt = document.getElementById("cnh-pay-title");
+    if (pt) {
+      pt.textContent = T("pay.title");
+      document.getElementById("cnh-pay-sub").textContent = T("pay.sub");
+      document.getElementById("cnh-pay-ali").textContent = T("pay.ali");
+      document.getElementById("cnh-pay-ok").textContent = T("pay.ok");
+      var ph = document.getElementById("cnh-pay-qrhint");
+      if (ph && ph.style.display !== "none") ph.textContent = T("pay.hint");
+    }
     paintViews();
   }
 

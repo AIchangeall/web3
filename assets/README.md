@@ -15,3 +15,16 @@ git add assets/wechat-qr.png && git commit -m "添加合作沟通微信二维码
 
 未放置时，弹窗会显示一条占位提示（不会报错），放入图片后自动显示。
 建议尺寸 ≥ 240×240 的方形 PNG。
+
+## alipay-qr.png（赞赏码）
+
+访客累计浏览满 5 分钟后，会温和弹出一次「自愿赞赏」弹窗，显示本目录下的 `alipay-qr.png`（支付宝赞赏/收款码）。
+
+**请把你的支付宝收款码图片保存为 `assets/alipay-qr.png`** 并提交：
+
+```bash
+git add assets/alipay-qr.png && git commit -m "添加赞赏码" && git push
+```
+
+同样地，缺图时弹窗显示占位提示、不报错；这是**纯自愿赞赏**，不限制浏览、不收费、关闭后不再打扰。
+
