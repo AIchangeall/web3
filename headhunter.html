@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span><small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span></a>
-    <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" class="active" data-i18n="nav.leads">招聘线索</a><a href="about.html" data-i18n="nav.about">关于</a></div>
+    <a class="brand" href="index.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span></span></a>
+    <div class="nav-links"><a href="index.html" data-i18n="nav.jobs">职位</a><a href="stats.html" data-i18n="nav.stats">数据洞察</a><a href="companies.html" data-i18n="nav.companies">企业库</a><a href="headhunter.html" class="active" data-i18n="nav.leads">招聘线索</a></div>
     <div class="nav-right"><span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span><button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button><button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button></div>
   </div>
 </nav>
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     t.innerHTML=I18N.t("hh.exported").replace("{n}",n)+' · <a id="hh-tip">'+I18N.t("hh.tipnudge")+'</a>';
     t.classList.add("on");
     const tip=document.getElementById("hh-tip");
-    if(tip) tip.onclick=()=>{ const f=document.getElementById("cnh-fab2"); if(f) f.click(); t.classList.remove("on"); };
+    if(tip) tip.onclick=()=>{ if(window.cnhShowTip) window.cnhShowTip(); else { const f=document.getElementById("cnh-fab"); if(f) f.click(); } t.classList.remove("on"); };
     clearTimeout(nudge._t); nudge._t=setTimeout(()=>t.classList.remove("on"),6500);
   }
   document.getElementById("export").onclick=exportCSV;
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const fn=I18N.lang==="zh"
       ? `来源渠道由职位链接自动识别；联系人 / 联系方式仅展示来源公开招聘信息中明确披露的内容（当前 ${withContact} 条含直接联系方式，其余以来源渠道投递），不含任何非公开数据 · 最近更新 ${updDisplay}`
       : `Source auto-detected from the job link; contacts shown only when publicly disclosed by the source (${withContact} with direct contact, the rest apply via source); no non-public data · updated ${updDisplay}`;
-    document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a>`;
+    document.getElementById("note").innerHTML=`${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a> · <a href="about.html" style="color:var(--accent)">${I18N.t("nav.about")}</a>`;
     paintCov();
   }
 

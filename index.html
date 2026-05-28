@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   @keyframes cnhpulse{0%{box-shadow:0 0 0 0 rgba(253,224,71,.7)}70%{box-shadow:0 0 0 9px rgba(253,224,71,0)}100%{box-shadow:0 0 0 0 rgba(253,224,71,0)}}
 
   /* KPI strip */
-  .kpis{max-width:1180px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+  .kpis{max-width:1180px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
   .kpi .n{font-size:22px;font-weight:800;letter-spacing:-.02em}
   .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
@@ -121,6 +121,14 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .toggle .sw::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:2px;left:2px;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
   .toggle.on .sw{background:var(--accent)}
   .toggle.on .sw::after{left:18px}
+  .fgroup .ftiny{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:7px}
+  .fgroup .fsel{width:100%;border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13px;background:#fff;color:var(--ink);cursor:pointer}
+  .chips-row{margin-top:10px}
+  details.fgroup>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between}
+  details.fgroup>summary::-webkit-details-marker{display:none}
+  details.fgroup>summary::after{content:"▾";color:var(--muted);font-size:10px;transition:transform .15s}
+  details.fgroup[open]>summary{margin-bottom:9px}
+  details.fgroup[open]>summary::after{transform:rotate(180deg)}
 
   /* 列表头 */
   .listbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
@@ -243,14 +251,13 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   <div class="nav-in">
     <a class="brand" href="index.html">
       <span class="logo"></span>
-      <span>链聘 <span style="color:var(--accent)">ChainHire</span><small data-i18n="brand.tag">Web3 全职能招聘 · 每日更新</small></span>
+      <span>链聘 <span style="color:var(--accent)">ChainHire</span></span>
     </a>
     <div class="nav-links">
       <a href="index.html" class="active" data-i18n="nav.jobs">职位</a>
       <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
       <a href="companies.html" data-i18n="nav.companies">企业库</a>
       <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
-      <a href="about.html" data-i18n="nav.about">关于</a>
     </div>
     <div class="nav-right">
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
@@ -263,7 +270,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <header class="hero">
   <div class="hero-in">
     <h1 data-i18n="idx.h1">Web3 行业全职能岗位</h1>
-    <p data-i18n="idx.desc">聚合头部交易所、公链 / L2、钱包 / DeFi、节点 RPC 基础设施、合规托管等公司的工程研发、运维 SRE、产品、设计、数据 AI、安全、市场增长、BD、合规 HR 等各类公开职位，每日自动更新。</p>
     <div class="searchbar">
       <input id="search" data-i18n-ph="idx.searchph" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
       <button id="searchbtn" data-i18n="idx.searchbtn">搜索</button>
@@ -276,8 +282,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   <div class="kpi hot" data-act="new"><div class="n" id="k-new">0</div><div class="l" data-i18n="kpi.new">今日新增</div></div>
   <div class="kpi" data-act="all"><div class="n" id="k-total">0</div><div class="l" data-i18n="kpi.total">在招岗位</div></div>
   <div class="kpi" data-act="companies"><div class="n" id="k-comp">0</div><div class="l" data-i18n="kpi.comp">招聘公司</div></div>
-  <div class="kpi" data-act="remote"><div class="n" id="k-remote">0</div><div class="l" data-i18n="kpi.remote">支持远程</div></div>
-  <div class="kpi" data-act="head"><div class="n" id="k-head">0</div><div class="l" data-i18n="kpi.head">负责人 / 总监</div></div>
 </section>
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
@@ -286,16 +290,22 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   <aside class="side">
     <div class="side-h"><span data-i18n="flt.title">筛选</span> <button id="reset" data-i18n="flt.reset">重置</button></div>
     <div class="fgroup">
-      <label class="toggle" id="t-new"><span class="sw"></span><span data-i18n="flt.newonly">仅看今日新增</span></label>
-      <label class="toggle" id="t-recent7" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.recent7">近 7 天新增</span></label>
-      <label class="toggle" id="t-fresh" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.hidestale">仅看近期在招</span></label>
-      <label class="toggle" id="t-paid" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.paidonly">仅看公开薪资</span></label>
-      <label class="toggle" id="t-saved" style="margin-top:10px"><span class="sw"></span><span data-i18n="flt.savedonly">仅看收藏</span></label>
+      <label class="ftiny" data-i18n="flt.fresh.label">上架时效</label>
+      <select id="t-freshness" class="fsel">
+        <option value="all" data-i18n="flt.fresh.all">全部</option>
+        <option value="today" data-i18n="flt.fresh.today">今日</option>
+        <option value="recent7" data-i18n="flt.fresh.7d">近 7 天</option>
+      </select>
+      <div class="chips chips-row">
+        <span class="chip" id="t-fresh" data-i18n="flt.hidestale">仅看近期在招</span>
+        <span class="chip" id="t-paid" data-i18n="flt.paidonly">仅看公开薪资</span>
+        <span class="chip" id="t-saved" data-i18n="flt.savedonly">仅看收藏</span>
+      </div>
     </div>
     <div class="fgroup"><div class="t" data-i18n="flt.func">职能</div><div class="chips" id="g-func"></div></div>
-    <div class="fgroup"><div class="t" data-i18n="flt.cat">公司类型</div><div class="chips" id="g-cat"></div></div>
-    <div class="fgroup"><div class="t" data-i18n="flt.lvl">级别</div><div class="chips" id="g-lvl"></div></div>
-    <div class="fgroup"><div class="t" data-i18n="flt.region">地区</div><div class="chips" id="g-region"></div></div>
+    <details class="fgroup"><summary class="t" data-i18n="flt.cat">公司类型</summary><div class="chips" id="g-cat"></div></details>
+    <details class="fgroup"><summary class="t" data-i18n="flt.lvl">级别</summary><div class="chips" id="g-lvl"></div></details>
+    <details class="fgroup"><summary class="t" data-i18n="flt.region">地区</summary><div class="chips" id="g-region"></div></details>
   </aside>
 
   <main>
@@ -415,16 +425,14 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   }
   window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); if(mask.classList.contains("on")&&jm.dataset.id) openDetail(jm.dataset.id); });
 
-  const tnew=document.getElementById("t-new");
-  tnew.onclick=()=>{ state.newOnly=!state.newOnly; tnew.classList.toggle("on"); state.limit=PAGE; render(); };
-  const tfresh=document.getElementById("t-fresh");
-  tfresh.onclick=()=>{ state.hideStale=!state.hideStale; tfresh.classList.toggle("on"); state.limit=PAGE; render(); };
-  const trecent=document.getElementById("t-recent7");
-  trecent.onclick=()=>{ state.recent7=!state.recent7; trecent.classList.toggle("on"); state.limit=PAGE; render(); };
-  const tpaid=document.getElementById("t-paid");
-  tpaid.onclick=()=>{ state.paidOnly=!state.paidOnly; tpaid.classList.toggle("on"); state.limit=PAGE; render(); };
-  const tsaved=document.getElementById("t-saved");
-  tsaved.onclick=()=>{ state.savedOnly=!state.savedOnly; tsaved.classList.toggle("on"); state.limit=PAGE; render(); };
+  // 时效下拉(全部 / 今日 / 近 7 天)：内部仍用 state.newOnly + state.recent7
+  const tfreshness=document.getElementById("t-freshness");
+  tfreshness.onchange=e=>{ state.newOnly=e.target.value==="today"; state.recent7=e.target.value==="recent7"; state.limit=PAGE; render(); };
+  // 3 chip：仅看近期在招 / 仅看公开薪资 / 仅看收藏
+  function chipBtn(id, key){ const el=document.getElementById(id); el.onclick=()=>{ state[key]=!state[key]; el.classList.toggle("active",state[key]); state.limit=PAGE; render(); }; return el; }
+  const tfresh=chipBtn("t-fresh","hideStale");
+  const tpaid=chipBtn("t-paid","paidOnly");
+  const tsaved=chipBtn("t-saved","savedOnly");
   const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
   document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
   document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
@@ -434,7 +442,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
     state.newOnly=false;state.recent7=false;state.hideStale=false;state.paidOnly=false;state.savedOnly=false;state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
-    [tnew,trecent,tfresh,tpaid,tsaved].forEach(t=>t.classList.remove("on")); document.getElementById("search").value="";
+    tfreshness.value="all"; document.getElementById("search").value="";
     document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
   // 列表区点击委托：关键字筛选 / 打开详情 / 分享
@@ -457,7 +465,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       var a=card.dataset.act;
       if(a==="companies"){ location.href="companies.html"; return; }
       if(a==="all"){ document.getElementById("reset").onclick(); window.scrollTo({top:0,behavior:"smooth"}); return; }
-      if(a==="new"){ state.newOnly=true; tnew.classList.add("on"); }
+      if(a==="new"){ state.newOnly=true; state.recent7=false; tfreshness.value="today"; }
       else if(a==="remote"){ kpiActivate("g-region",state.regions,"remote"); }
       else if(a==="head"){ kpiActivate("g-lvl",state.lvls,"head"); }
       state.limit=PAGE; render();
@@ -497,10 +505,12 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const applyHtml = (r.link && !dead)
       ? `<a class="apply" href="${esc(r.link)}" target="_blank" rel="noopener">${I18N.t('card.apply')}</a>`
       : `<button class="sharebtn" data-detail type="button">${I18N.t('card.detail')}</button>`;
-    const badges = (isNew(r)?'<span class="new">NEW</span>':'')
-      + (applied?`<span class="badge-applied">✓ ${I18N.t('card.applied')}</span>`:'')
-      + (stale?`<span class="badge-stale">${I18N.t('badge.stale')}</span>`:'')
-      + (dead?`<span class="badge-dead">${I18N.t('badge.dead')}</span>`:'');
+    // 徽标优先级：dead > stale 独占；否则 NEW + 已投可并存
+    const badges = dead
+      ? `<span class="badge-dead">${I18N.t('badge.dead')}</span>`
+      : stale
+        ? `<span class="badge-stale">${I18N.t('badge.stale')}</span>`
+        : (isNew(r)?'<span class="new">NEW</span>':'') + (applied?`<span class="badge-applied">✓ ${I18N.t('card.applied')}</span>`:'');
     return `<article class="job${dead?' is-dead':''}" data-id="${esc(r.id)}">
       ${avatarHtml(r)}
       <div class="job-main">
@@ -520,11 +530,9 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
         <div class="salary ${negSalary?'neg':''}">${esc(r.salary?I18N.salary(r.salary):I18N.t('salary.negotiable'))}</div>
         <div class="js-btns">
           ${applyHtml}
-          <button class="sharebtn" data-share type="button">🔗 ${I18N.t('card.share')}</button>
           <button class="iconbtn${saved?' on':''}" data-save type="button" title="${I18N.t('card.save')}" aria-label="${I18N.t('card.save')}">${saved?'★':'☆'}</button>
-          <button class="iconbtn ap${applied?' on':''}" data-applied type="button" title="${I18N.t('card.markapplied')}" aria-label="${I18N.t('card.markapplied')}">✓</button>
         </div>
-        <div class="posted">${r.firstSeen?I18N.t('card.posted')+' '+r.firstSeen:''}</div>
+        <div class="posted">${(isNew(r)||!r.firstSeen)?'':I18N.t('card.posted')+' '+r.firstSeen}</div>
       </div>
     </article>`;
   }
@@ -547,8 +555,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     document.getElementById("k-new").textContent=data.filter(isNew).length;
     document.getElementById("k-total").textContent=data.length;
     document.getElementById("k-comp").textContent=companies;
-    document.getElementById("k-remote").textContent=data.filter(d=>(d.region||[]).includes("remote")).length;
-    document.getElementById("k-head").textContent=data.filter(d=>d.level==="head").length;
 
     const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
     pill.className="upd"+(updFresh?"":" stale");
@@ -565,7 +571,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const tn=document.getElementById("today-new"), nc=data.filter(isNew).length;
     tn.style.display="inline-flex";
     tn.innerHTML=`<span class="pulse"${nc===0?' style="background:#86efac"':''}></span><span>${nc>0?I18N.tpl("idx.todaynew",nc):I18N.t("idx.todaynew0")}</span>`;
-    tn.onclick=e=>{ e.preventDefault(); if(nc>0){ state.newOnly=true; tnew.classList.add("on"); } state.limit=PAGE; render(); const m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"}); };
+    tn.onclick=e=>{ e.preventDefault(); if(nc>0){ state.newOnly=true; state.recent7=false; tfreshness.value="today"; } state.limit=PAGE; render(); const m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"}); };
   }
 
   // ---------- 岗位详情弹层 / 分享 / 结构化数据 ----------
