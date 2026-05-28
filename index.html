@@ -104,37 +104,48 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
   /* ---------- 主体布局 ---------- */
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px}
-  /* 横向下拉筛选条（药丸式，参考 BOSS 风格） */
-  .filterbar{max-width:1180px;margin:22px auto 16px;padding:0 24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:relative;z-index:6}
+  /* 横向筛选条（药丸 + 浅灰底工具条带 + 视觉三档分级） */
+  .filterbar{max-width:1180px;margin:22px auto 16px;padding:9px 12px;background:#eef0f5;border-radius:14px;display:flex;flex-wrap:wrap;gap:5px;align-items:center;position:relative;z-index:6}
   .fdrop{position:relative}
   /* 透明桥接：鼠标从按钮移到弹出菜单时不会脱离 hover 区 */
   .fdrop::after{content:"";position:absolute;top:100%;left:0;right:0;height:10px;display:none}
   .fdrop:hover::after{display:block}
-  .fbtn,.fchip{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#374151;font-weight:600;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1px solid var(--line);cursor:pointer;white-space:nowrap;transition:.15s;line-height:1}
-  .fchip:hover{border-color:var(--accent);color:var(--accent)}
-  /* 注意：.fbtn 的 hover 用 .fdrop:hover .fbtn 触发（包含桥接区） */
-  .fdrop:hover .fbtn,.fbtn.has,.fdrop.open .fbtn,.fchip.active{background:#efeaff;border-color:#c4b5fd;color:var(--accent)}
+  /* 主下拉药丸：白底有边 + ▾ */
+  .fbtn{display:inline-flex;align-items:center;gap:6px;background:#fff;color:#374151;font-weight:600;font-size:13.5px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);cursor:pointer;white-space:nowrap;transition:.15s;line-height:1}
+  .fdrop:hover .fbtn,.fbtn.has,.fdrop.open .fbtn{background:#efeaff;border-color:#c4b5fd;color:var(--accent)}
   .fbtn .fcnt{display:none;background:var(--accent);color:#fff;font-size:10.5px;line-height:1;padding:3px 6px;border-radius:99px;font-weight:700;margin-left:1px}
   .fbtn.has .fcnt{display:inline-block}
   .fbtn .farr{color:#9aa1b1;font-size:10.5px;transition:transform .15s;margin-left:2px}
   .fdrop:hover .fbtn .farr,.fdrop.open .fbtn .farr{transform:rotate(180deg);color:var(--accent)}
+  /* 排序按钮：前缀「排序·」浅灰，主值深色 */
+  .fbtn .sort-pre{color:#9aa1b1;font-weight:500}
+  .fbtn .sort-sep{color:#cbd0db;margin:0 1px}
+  /* 次级 toggle chip：无边浅灰，融在工具条带里 */
+  .fchip{display:inline-flex;align-items:center;background:transparent;color:#64748b;font-weight:600;font-size:13px;padding:8px 13px;border-radius:999px;border:0;cursor:pointer;white-space:nowrap;transition:.15s;line-height:1}
+  .fchip:hover{background:rgba(109,94,252,.09);color:var(--accent)}
+  .fchip.active{background:#efeaff;color:var(--accent);font-weight:700}
+  /* 弹出菜单 */
   .fpop{position:absolute;top:calc(100% + 10px);left:0;z-index:31;background:#fff;border:1px solid var(--line);border-radius:11px;padding:6px;min-width:200px;max-width:320px;box-shadow:0 10px 30px rgba(15,23,41,.12);display:none}
   .fdrop:hover .fpop,.fdrop.open .fpop{display:block}
   .fpop .chips{display:flex;flex-direction:column;gap:1px;max-height:60vh;overflow-y:auto}
   .fpop .chip{display:block;width:100%;text-align:left;padding:8px 12px;border-radius:7px;border:0;background:transparent;color:#374151;font-size:13.5px;font-weight:500;cursor:pointer}
   .fpop .chip:hover{background:#f4f5f9}
   .fpop .chip.active{background:#efeaff;color:var(--accent);font-weight:600}
-  .freset{border:0;background:none;color:var(--accent);font-size:13.5px;font-weight:600;cursor:pointer;padding:9px 12px;border-radius:999px}
-  .freset:hover{background:#efeaff}
-  /* 排序药丸（在筛选条末尾） */
-  .filterbar .sortsel{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px 6px 14px;color:var(--muted);font-size:13px;font-weight:600;line-height:1;margin:0}
-  .filterbar .sortsel select{border:0;background:transparent;font-size:13.5px;color:var(--ink);cursor:pointer;font-weight:600;padding:3px 0}
-  .filterbar .sortsel:hover{border-color:var(--accent)}
+  /* 最右侧排序：弹窗右对齐避免溢出 */
+  .fdrop[data-key="sort"] .fpop{left:auto;right:0}
+  /* 分组竖分隔 */
+  .fsep{width:1px;height:18px;background:#d6dae3;margin:0 5px;flex:none}
+  /* 重置：极轻 icon 按钮 */
+  .freset{display:inline-flex;align-items:center;gap:4px;border:0;background:transparent;color:#64748b;font-size:13px;font-weight:600;cursor:pointer;padding:7px 10px;border-radius:999px;line-height:1}
+  .freset:hover{color:var(--accent);background:rgba(109,94,252,.09)}
+  .freset .ricon{font-size:13.5px;line-height:1;display:inline-block;transform:translateY(-.5px)}
   @media(max-width:560px){
-    .filterbar{padding:0 14px;gap:7px}
-    .fbtn,.fchip{font-size:12.5px;padding:7px 13px}
+    .filterbar{padding:8px 10px;gap:4px}
+    .fbtn{font-size:12.5px;padding:7px 12px}
+    .fchip{font-size:12.5px;padding:7px 11px}
+    .fsep{margin:0 3px;height:16px}
     .fpop{min-width:180px;max-width:90vw}
-    .freset{margin-left:0;font-size:12.5px;padding:7px 10px}
+    .freset{font-size:12.5px;padding:6px 9px}
   }
 
   /* 侧栏筛选 */
@@ -335,19 +346,22 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <span class="chip" data-fresh="recent7" data-i18n="flt.fresh.7d">近 7 天</span>
     </div></div>
   </div>
+  <span class="fsep"></span>
   <span class="chip fchip" id="t-fresh" data-i18n="flt.hidestale">仅看近期在招</span>
   <span class="chip fchip" id="t-paid" data-i18n="flt.paidonly">仅看公开薪资</span>
   <span class="chip fchip" id="t-saved" data-i18n="flt.savedonly">仅看收藏</span>
-  <button class="freset" id="reset" type="button" data-i18n="flt.reset">重置</button>
-  <div class="sortsel">
-    <span data-i18n="sort.label">排序</span>
-    <select id="sort">
-      <option value="latest" data-i18n="sort.latest">最新发布</option>
-      <option value="recommended" data-i18n="sort.recommended">推荐（新增优先）</option>
-      <option value="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</option>
-      <option value="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</option>
-      <option value="company" data-i18n="sort.company">公司名 A → Z</option>
-    </select>
+  <span class="fsep"></span>
+  <button class="freset" id="reset" type="button"><span class="ricon" aria-hidden="true">↺</span><span data-i18n="flt.reset">重置</span></button>
+  <span class="fsep"></span>
+  <div class="fdrop" data-key="sort">
+    <button class="fbtn" type="button"><span class="sort-pre" data-i18n="sort.label">排序</span><span class="sort-sep">·</span><span class="flb" id="sort-label" data-i18n="sort.latest">最新发布</span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-sort">
+      <span class="chip active" data-sort="latest" data-i18n="sort.latest">最新发布</span>
+      <span class="chip" data-sort="recommended" data-i18n="sort.recommended">推荐（新增优先）</span>
+      <span class="chip" data-sort="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</span>
+      <span class="chip" data-sort="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</span>
+      <span class="chip" data-sort="company" data-i18n="sort.company">公司名 A → Z</span>
+    </div></div>
   </div>
 </div>
 
@@ -466,7 +480,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       document.getElementById(id).querySelectorAll(".chip").forEach(e=>{ e.textContent=m[e.dataset.key]; });
     });
   }
-  window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); if(mask.classList.contains("on")&&jm.dataset.id) openDetail(jm.dataset.id); });
+  window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); if(typeof setSortLabel==='function') setSortLabel(); if(mask.classList.contains("on")&&jm.dataset.id) openDetail(jm.dataset.id); });
 
   // 时效下拉(全部 / 今日 / 近 7 天)：dropdown 内 chip 单选；内部仍用 state.newOnly + state.recent7
   function setFreshness(v){
@@ -497,7 +511,22 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
   document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
   document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
-  document.getElementById("sort").onchange=e=>{ state.sort=e.target.value; state.limit=PAGE; render(); };
+  // 自定义排序下拉：点选 chip → 更新 state.sort + 主按钮标签
+  function setSortLabel(){
+    const lab=document.getElementById("sort-label"); if(!lab) return;
+    const cur=document.querySelector('#g-sort .chip[data-sort="'+state.sort+'"]');
+    if(cur){ lab.textContent=cur.textContent; lab.setAttribute('data-i18n', cur.getAttribute('data-i18n')||''); }
+  }
+  document.querySelectorAll('#g-sort .chip').forEach(c=>{
+    c.addEventListener('click', ev=>{
+      ev.stopPropagation();
+      state.sort=c.dataset.sort; state.limit=PAGE;
+      document.querySelectorAll('#g-sort .chip').forEach(x=>x.classList.toggle('active', x===c));
+      setSortLabel();
+      document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
+      render();
+    });
+  });
   document.getElementById("more").onclick=()=>{ state.limit+=PAGE; render(); };
   document.getElementById("reset").onclick=()=>{
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
@@ -507,7 +536,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
     ['func','cat','lvl','region','freshness'].forEach(updateFbtn);
     document.getElementById("search").value="";
-    document.getElementById("sort").value="latest"; state.sort="latest"; render();
+    state.sort="latest";
+    document.querySelectorAll('#g-sort .chip').forEach(x=>x.classList.toggle('active', x.dataset.sort==='latest'));
+    setSortLabel();
+    render();
   };
   // 列表区点击委托：关键字筛选 / 打开详情 / 分享
   document.getElementById("jobs").addEventListener("click",e=>{

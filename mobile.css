@@ -118,16 +118,23 @@ html[data-theme="dark"] .srctag,html[data-theme="dark"] .contact{color:#cbd3e6}
 html[data-theme="dark"] .kwnone,html[data-theme="dark"] .contact.none{color:#5c6680}
 html[data-theme="dark"] .avatar{border:1px solid var(--line)}
 /* 横向药丸筛选条暗色 */
-html[data-theme="dark"] .fbtn,html[data-theme="dark"] .fchip{background:var(--card);color:#cbd3e6;border-color:var(--line)}
-html[data-theme="dark"] .fbtn:hover,html[data-theme="dark"] .fchip:hover{border-color:#7c6cf5;color:#c4b5fd}
-html[data-theme="dark"] .fbtn.has,html[data-theme="dark"] .fdrop.open .fbtn,html[data-theme="dark"] .fchip.active{background:#2a2350;border-color:#5b4dd5;color:#c4b5fd}
+html[data-theme="dark"] .filterbar{background:#171d2c}
+html[data-theme="dark"] .fbtn{background:var(--card);color:#cbd3e6;border-color:var(--line)}
+html[data-theme="dark"] .fchip{background:transparent;color:#9aa3b8;border-color:transparent}
+html[data-theme="dark"] .fdrop:hover .fbtn,html[data-theme="dark"] .fbtn.has,html[data-theme="dark"] .fdrop.open .fbtn{background:#2a2350;border-color:#5b4dd5;color:#c4b5fd}
+html[data-theme="dark"] .fchip:hover{background:rgba(124,108,245,.18);color:#c4b5fd}
+html[data-theme="dark"] .fchip.active{background:#2a2350;color:#c4b5fd;font-weight:700}
 html[data-theme="dark"] .fbtn .farr{color:#7e8aa3}
-html[data-theme="dark"] .fdrop.open .fbtn .farr{color:#c4b5fd}
+html[data-theme="dark"] .fdrop:hover .fbtn .farr,html[data-theme="dark"] .fdrop.open .fbtn .farr{color:#c4b5fd}
+html[data-theme="dark"] .fbtn .sort-pre{color:#7e8aa3}
+html[data-theme="dark"] .fbtn .sort-sep{color:#3f4a66}
 html[data-theme="dark"] .fpop{background:var(--card);border-color:var(--line)}
-html[data-theme="dark"] .fpop .chip{color:#cbd3e6}
+html[data-theme="dark"] .fpop .chip{color:#cbd3e6;background:transparent}
 html[data-theme="dark"] .fpop .chip:hover{background:#1f2740}
 html[data-theme="dark"] .fpop .chip.active{background:#2a2350;color:#c4b5fd}
-html[data-theme="dark"] .freset:hover{background:#2a2350}
+html[data-theme="dark"] .fsep{background:#2a3550}
+html[data-theme="dark"] .freset{color:#9aa3b8}
+html[data-theme="dark"] .freset:hover{background:rgba(124,108,245,.18);color:#c4b5fd}
 /* 招聘热度色阶暗色 */
 html[data-theme="dark"] .hm-l0{fill:#1f2740}
 html[data-theme="dark"] .hm-l1{fill:#26224a}
