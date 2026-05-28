@@ -661,7 +661,7 @@ window.WEB3_JOBS_DATA = {
       "intro": ""
     }
   },
-  "totalJobs": 2147,
+  "totalJobs": 2427,
   "chunks": [
     "data-jobs-1.json",
     "data-jobs-2.json",

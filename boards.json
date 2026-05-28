@@ -301,6 +301,20 @@
     "count": 14
   },
   {
+    "company": "Sei Foundation",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "seifoundation",
+    "count": 3
+  },
+  {
+    "company": "Sei Labs",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "sei-labs",
+    "count": 9
+  },
+  {
     "company": "Sky Mavis",
     "category": "other",
     "ats": "ashby",
