@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-28",
-      "added": 24,
+      "added": 52,
       "removed": 0,
-      "note": "新增 24 个岗位，刷新 3 个在招岗位。"
+      "note": "当日累计新增 52 个岗位。"
     },
     {
       "date": "2026-05-27",
@@ -38,6 +38,723 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Ethena Labs",
+      "func": "design",
+      "category": "defi",
+      "position": "Head of Product Design",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "Lead design strategy and UX for Ethena's synthetic dollar protocol; manage 1 senior designer, collaborate with CEO and 5-engineer product team, expand scope into Product Management.",
+      "link": "https://jobs.lever.co/ethenalabs/a6562800-2493-4c58-8f36-e7cac8e1ad17",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ethena-labs||head-of-product-design",
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "协议/合约开发",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Rain",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer - Blockchain",
+      "level": "mid",
+      "location": "New York / Remote",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$140k–$240k/yr",
+      "salaryNum": 190000,
+      "requirements": "Build multi-chain smart contract and backend infrastructure across EVM, Solana, and Stellar for crypto-backed card products; scale on-chain systems to millions of users globally.",
+      "link": "https://jobs.ashbyhq.com/rain/2e5bcf13-fadd-4b4f-a079-1535b9615aa5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "rain||software-engineer-blockchain",
+      "keywords": [
+        "Smart Contract",
+        "EVM",
+        "Solana"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发",
+        "多链/跨链"
+      ]
+    },
+    {
+      "company": "Rain",
+      "func": "product",
+      "category": "other",
+      "position": "Senior Product Manager",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 165000,
+      "requirements": "Drive product roadmap for stablecoin-powered payments platform enabling cross-border transactions, card payments, and remittances; 5+ years PM experience in fintech or Web3.",
+      "link": "https://jobs.ashbyhq.com/rain/149dccf1-fdbf-4a14-8f2c-7551fe8ba43e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "rain||senior-product-manager",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Rain",
+      "func": "ga",
+      "category": "other",
+      "position": "Compliance Analyst",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "Support compliance framework for stablecoin payments infrastructure; monitor regulatory developments, conduct AML/KYC reviews, liaise with legal and operations.",
+      "link": "https://jobs.ashbyhq.com/rain/ea5dacdd-8d29-4ae4-afc0-b3e41aad5f70",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "rain||compliance-analyst",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Rain",
+      "func": "bd",
+      "category": "other",
+      "position": "Business Development Analyst",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 85000,
+      "requirements": "Identify and develop partnership opportunities for stablecoin payments platform; analyze market trends, support BD pipeline, build relationships with crypto and fintech partners.",
+      "link": "https://jobs.ashbyhq.com/rain/c888dad0-19d9-4b91-86a5-1431761a155b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "rain||business-development-analyst",
+      "keywords": [],
+      "duties": [
+        "部署发布",
+        "数据分析",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Improbable",
+      "func": "eng",
+      "category": "chain",
+      "position": "Blockchain Protocol Engineer",
+      "level": "mid",
+      "location": "London / Remote",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 145000,
+      "requirements": "Join founding team designing and building the world's highest-throughput EVM-based L1 blockchain; proficiency in C/C++/Rust, experience with blockchain ecosystem required.",
+      "link": "https://jobs.ashbyhq.com/Improbable/6608c9f0-1ed7-42aa-9adf-e79d15dcbcfe",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "improbable||blockchain-protocol-engineer",
+      "keywords": [
+        "Rust",
+        "C++",
+        "EVM"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Turnkey",
+      "func": "ops",
+      "category": "infra",
+      "position": "DevOps Engineer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 155000,
+      "requirements": "Build and manage infrastructure for secure crypto key management platform; Kubernetes, AWS/GCP, Terraform expertise; experience with high-availability, fault-tolerant distributed systems.",
+      "link": "https://jobs.ashbyhq.com/turnkey/c5308a21-b138-4a6b-8966-2dcf1f1826e9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "turnkey||devops-engineer",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "GCP"
+      ],
+      "duties": [
+        "稳定性保障"
+      ]
+    },
+    {
+      "company": "Optimum",
+      "func": "ops",
+      "category": "infra",
+      "position": "Senior DevOps Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Scale and secure global infrastructure for Web3 data-acceleration network (RLNC-based memory layer for blockchains); blockchain networking operations, CI/CD, distributed systems.",
+      "link": "https://jobs.ashbyhq.com/optimum/a36544ea-e267-44d7-8cc5-cf69264ad7e6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "optimum||senior-devops-engineer",
+      "keywords": [
+        "CI/CD"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Indodax",
+      "func": "security",
+      "category": "exchange",
+      "position": "Senior Product Security Engineer",
+      "level": "senior",
+      "location": "Jakarta, Indonesia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 55000,
+      "requirements": "Lead product security at Indonesia's largest crypto exchange; conduct security assessments, vulnerability management, threat modeling, secure SDLC for trading platform.",
+      "link": "https://id.linkedin.com/jobs/view/senior-product-security-engineer-at-indodax-indonesia-digital-asset-exchange-4365956375",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "indodax||senior-product-security-engineer",
+      "keywords": [],
+      "duties": [
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Blockworks",
+      "func": "data",
+      "category": "other",
+      "position": "Research Data Analyst",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Produce on-chain and market data research for leading crypto media and research firm; SQL, Python, blockchain data tools; strong crypto fundamentals required.",
+      "link": "https://jobs.ashbyhq.com/Blockworks/2928a136-03e8-42f1-a97f-13f794a64901",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockworks||research-data-analyst",
+      "keywords": [
+        "Python",
+        "SQL"
+      ],
+      "duties": [
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Sui Foundation",
+      "func": "growth",
+      "category": "chain",
+      "position": "Social Media Manager & Web3 Growth Lead",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "Web3-native community growth lead for the Sui blockchain; combine Web2 social media expertise with deep Web3 community involvement; Discord, Telegram, X, Farcaster fluency.",
+      "link": "https://jobs.ashbyhq.com/sui%20foundation/c2e32f02-d990-4770-8441-479918bdba6d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "sui-foundation||social-media-manager-web3-growth-lead",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "InfStones",
+      "func": "growth",
+      "category": "infra",
+      "position": "Growth Marketing Manager",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Drive community growth and digital marketing for blockchain infrastructure provider; 3+ years growth marketing experience with Web3/blockchain companies, content and campaign management.",
+      "link": "https://jobs.lever.co/infstones/5b01e003-31ae-429e-af9c-5962233a5cc4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "infstones||growth-marketing-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Gate.io",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Web3 QA Engineer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 95000,
+      "requirements": "Develop test strategies for blockchain-related requirements; ensure overall test quality for Web3 trading systems including on-chain transaction flows.",
+      "link": "https://jobs.lever.co/gate/95e567e2-6b58-48fe-93cc-15c8f08d40d9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gate-io||web3-qa-engineer",
+      "keywords": [],
+      "duties": []
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Fullstack Developer (Exchange/Trading Platform)",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "Design and develop software for exchange/finance/trading capabilities from frontend UI to backend infrastructure; TypeScript, React, high-performance trading systems experience.",
+      "link": "https://jobs.lever.co/crypto/808e8b83-0818-4c7a-98c1-3c440d50511e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-fullstack-developer-exchange-trading-platform",
+      "keywords": [
+        "TypeScript",
+        "React"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "design",
+      "category": "exchange",
+      "position": "UX Researcher - Exchange, Trading Experience",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 115000,
+      "requirements": "Conduct UX research embedded in exchange product team; understand both design excellence and trading workflows; user interviews, usability studies, quantitative analysis.",
+      "link": "https://jobs.lever.co/crypto/36f9b126-fa39-4db5-8b4a-e92dc22a4f84",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||ux-researcher-exchange-trading-experience",
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Quality Assurance Engineer (Exchange)",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 135000,
+      "requirements": "QA automation for cryptocurrency exchange platform; test financial trading and settlement systems, automated test frameworks, performance and regression testing.",
+      "link": "https://jobs.lever.co/crypto/38b7290c-23de-40b0-ba7f-e676c8e69f1c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-quality-assurance-engineer-exchange",
+      "keywords": [],
+      "duties": [
+        "性能/容量",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Web3 Security Senior Software Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "Build security detection and response for Web3 ecosystem; detect and mitigate on-chain threats, deep knowledge of DeFi protocols, smart contract vulnerabilities, and EVM internals.",
+      "link": "https://jobs.lever.co/binance/609dffee-bb3a-4883-a0b1-a24b480428b1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||web3-security-senior-software-engineer",
+      "keywords": [
+        "Smart Contract",
+        "EVM",
+        "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Lead Security Engineer (Web3 Wallet / DeFi)",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 260000,
+      "requirements": "Lead security engineering for Binance Web3 Wallet and DeFi products; drive secure innovation, smart contract auditing, lead cross-functional security teams.",
+      "link": "https://jobs.lever.co/binance/ecc1d85c-9ee4-461c-806b-cc5156cc2ce2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||lead-security-engineer-web3-wallet-defi",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Data Warehouse Engineer - Web3",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "Architect enterprise-scale data warehouse powering Web3 analytics and real-time services; 5+ years data lake/warehouse design, ETL pipelines, spark/flink, big data at scale.",
+      "link": "https://jobs.lever.co/binance/d9f3e709-6560-44be-8ebf-1840663ecc64",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||senior-data-warehouse-engineer-web3",
+      "keywords": [
+        "Flink",
+        "Spark"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager, Web3 Wallet",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 165000,
+      "requirements": "Own strategic planning, development, and launch of Binance Web3 Wallet; 5+ years PM experience in web3 wallet infrastructure, DeFi, and cross-chain protocols.",
+      "link": "https://jobs.lever.co/binance/342b544b-068e-427a-9735-9832bcf78d3c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||product-manager-web3-wallet",
+      "keywords": [
+        "DeFi",
+        "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Risk Analyst (SQL), KYC Fraud Prevention & Compliance",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 95000,
+      "requirements": "KYC fraud prevention and compliance rule analysis for global exchange; strong SQL, data analysis for risk management, AML/fraud pattern detection.",
+      "link": "https://jobs.lever.co/binance/11f63c9b-2f78-4c27-81fa-ab10982cd8bb",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||risk-analyst-sql-kyc-fraud-prevention-compliance",
+      "keywords": [
+        "SQL",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "security",
+      "category": "exchange",
+      "position": "Web3 Security Engineer (Onchain Monitor)",
+      "level": "mid",
+      "location": "Remote / Hong Kong",
+      "region": [
+        "remote",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Develop AML on-chain monitoring systems; track hacker addresses, build real-time threat detection for Web3 assets, blockchain forensics and smart contract security.",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6616014003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||web3-security-engineer-onchain-monitor",
+      "keywords": [
+        "Smart Contract",
+        "AML/KYC"
+      ],
+      "duties": [
+        "监控告警",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "MoonPay",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Application Security Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "Web3 security testing including smart contracts and blockchain app assessments; DAST/SAST tooling, penetration testing, secure code review, web3 integration security.",
+      "link": "https://jobs.lever.co/moonpay/bdca853b-629c-41ff-a100-5f3675247ae8",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "moonpay||senior-application-security-engineer",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Chainalysis",
+      "func": "security",
+      "category": "infra",
+      "position": "Senior/Staff Software Engineer, Hexagate",
+      "level": "senior",
+      "location": "Remote / Tel Aviv",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 190000,
+      "requirements": "Build cloud-native blockchain security monitoring software for Hexagate (real-time threat detection for Web3 assets); Rust, Kubernetes, microservices, blockchain data pipelines.",
+      "link": "https://jobs.ashbyhq.com/chainalysis-careers/2608444a-a4f1-4a8f-875b-cc63ea52ad0d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "chainalysis||senior-staff-software-engineer-hexagate",
+      "keywords": [
+        "Rust",
+        "Kubernetes"
+      ],
+      "duties": [
+        "监控告警",
+        "部署发布",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Full Stack Engineer (Web3 Product Innovation)",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 175000,
+      "requirements": "Build at intersection of technology and business for Trust Wallet; rapidly prototype and ship user-facing Web3 features, wallet integrations, on-chain product innovation.",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/bb177863-fd26-407f-9f4a-bf24586b7d02",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trust-wallet||senior-full-stack-engineer-web3-product-innovation",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "bd",
+      "category": "defi",
+      "position": "Junior Business Development Analyst - Web3 / DeFi",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 75000,
+      "requirements": "Support BD pipeline for leading non-custodial wallet; identify DeFi partnership opportunities, conduct market analysis, assist in ecosystem growth initiatives.",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/115bea59-1670-41fd-8cca-244cd3d49ef5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trust-wallet||junior-business-development-analyst-web3-defi",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "数据分析",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Animoca Brands",
+      "func": "eng",
+      "category": "other",
+      "position": "Blockchain Engineer (Full Stack Web3)",
+      "level": "mid",
+      "location": "Remote / Hong Kong",
+      "region": [
+        "remote",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 110000,
+      "requirements": "Junior to mid-level full stack blockchain engineer; design and implement blockchain solutions, smart contracts, and Web3 integrations for gaming/NFT ecosystem.",
+      "link": "https://jobs.lever.co/animocabrands/e904b270-96ac-4ec1-b81c-bc1469649d2a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "animoca-brands||blockchain-engineer-full-stack-web3",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "ga",
+      "category": "exchange",
+      "position": "[Web3] MLRO / Risk & Compliance Manager",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "Combine MLRO and Risk Manager responsibilities for crypto exchange; oversee AML/CFT compliance program, develop enterprise risk framework, interface with regulators.",
+      "link": "https://jobs.lever.co/BTSE/bf528ba4-997a-4227-87aa-dadab23807b1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||web3-mlro-risk-compliance-manager",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ]
+    },
     {
       "company": "Crypto.com",
       "func": "data",
@@ -52587,7 +53304,82 @@ window.WEB3_JOBS_DATA = {
     },
     "dYdX Foundation": {
       "intro": ""
+    },
+    "Ethena Labs": {
+      "intro": ""
+    },
+    "Rain": {
+      "intro": ""
+    },
+    "Improbable": {
+      "intro": ""
+    },
+    "Turnkey": {
+      "intro": ""
+    },
+    "Optimum": {
+      "intro": ""
+    },
+    "Indodax": {
+      "intro": ""
+    },
+    "Blockworks": {
+      "intro": ""
+    },
+    "Sui Foundation": {
+      "intro": ""
+    },
+    "InfStones": {
+      "intro": ""
+    },
+    "Douro Labs (Pyth)": {
+      "intro": ""
+    },
+    "FalconX": {
+      "intro": ""
+    },
+    "LiFi": {
+      "intro": ""
+    },
+    "BitGo": {
+      "intro": ""
+    },
+    "Ava Labs (Avalanche)": {
+      "intro": ""
+    },
+    "Ramp Network": {
+      "intro": ""
+    },
+    "Eclipse": {
+      "intro": ""
+    },
+    "Helius": {
+      "intro": ""
+    },
+    "Ledger": {
+      "intro": ""
+    },
+    "Dune Analytics": {
+      "intro": ""
+    },
+    "Safe (Gnosis Safe)": {
+      "intro": ""
+    },
+    "Morpho": {
+      "intro": ""
+    },
+    "NEAR Foundation": {
+      "intro": ""
+    },
+    "Filecoin Foundation": {
+      "intro": ""
+    },
+    "Figment": {
+      "intro": ""
+    },
+    "Celestia": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-28T00:15:51.325Z"
+  "lastUpdatedAt": "2026-05-28T05:18:17.459Z"
 };
