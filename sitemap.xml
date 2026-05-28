@@ -25,6 +25,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://gmjobs.github.io/chainhire/heatmap.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/coins-ph-quantitative-developer-c-java-go-python.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>

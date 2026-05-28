@@ -21,6 +21,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDescs } from "./descstore.mjs";
+import { readData as readDataChunked } from "./gen_chunks.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = "https://gmjobs.github.io/chainhire";
@@ -209,6 +210,7 @@ function genSitemap(items, lastUpdated) {
     { loc: `${SITE}/stats.html`, lm, cf: "daily", pr: "0.7" },
     { loc: `${SITE}/companies.html`, lm, cf: "daily", pr: "0.7" },
     { loc: `${SITE}/headhunter.html`, lm, cf: "daily", pr: "0.6" },
+    { loc: `${SITE}/heatmap.html`, lm, cf: "daily", pr: "0.6" },
   ];
   const jobUrls = items.map(it => ({ loc: `${SITE}/jobs/${it.sid}.html`, lm: it.firstSeen || lm, cf: "weekly", pr: "0.5" }));
   const body = head.concat(jobUrls)
@@ -254,11 +256,7 @@ export function generate(D) {
   return items.length;
 }
 
-function readData() {
-  const raw = fs.readFileSync(path.join(__dirname, "data.js"), "utf-8");
-  const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-  return JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
-}
+const readData = readDataChunked;  // 复用 gen_chunks 的分块拼装版
 
 // 独立运行入口
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

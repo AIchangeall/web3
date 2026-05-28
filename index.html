@@ -287,6 +287,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
       <a href="companies.html" data-i18n="nav.companies">企业库</a>
       <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
+      <a href="heatmap.html" data-i18n="nav.heatmap">招聘热度</a>
     </div>
     <div class="nav-right">
       <a class="today-new" id="today-new" role="button" style="display:none"></a>
@@ -424,7 +425,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   buildLabels();
 
   const PAGE=18;
-  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,recent7:false,hideStale:false,paidOnly:false,savedOnly:false,search:"",sort:"latest",limit:PAGE};
+  const state={funcs:new Set(),cats:new Set(),lvls:new Set(),regions:new Set(),newOnly:false,recent7:false,hideStale:false,paidOnly:false,savedOnly:false,dateOnly:"",search:"",sort:"latest",limit:PAGE};
 
   const palette=['#6d5efc','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#3b82f6'];
   const acolor=n=>{let h=0;for(const c of (n||""))h=(h*31+c.charCodeAt(0))>>>0;return palette[h%palette.length];};
@@ -500,7 +501,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   document.getElementById("more").onclick=()=>{ state.limit+=PAGE; render(); };
   document.getElementById("reset").onclick=()=>{
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
-    state.newOnly=false;state.recent7=false;state.hideStale=false;state.paidOnly=false;state.savedOnly=false;state.search="";state.limit=PAGE;
+    state.newOnly=false;state.recent7=false;state.hideStale=false;state.paidOnly=false;state.savedOnly=false;state.dateOnly="";state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
     document.querySelector('#g-freshness .chip[data-fresh="all"]').classList.add('active');
     document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
@@ -537,6 +538,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   });
 
   function match(r){
+    if(state.dateOnly && r.firstSeen !== state.dateOnly) return false;
     if(state.newOnly && !isNew(r)) return false;
     if(state.recent7 && !isRecent7(r)) return false;
     if(state.hideStale && isStale(r)) return false;
@@ -758,6 +760,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     (p.get("level")||"").split(",").filter(Boolean).forEach(k=>act("g-lvl",state.lvls,k));
     (p.get("region")||"").split(",").filter(Boolean).forEach(k=>act("g-region",state.regions,k));
     if(p.get("new")==="1") setFreshness("today");
+    const dateP=p.get("date"); if(dateP){ state.dateOnly=dateP; }
     ['func','cat','lvl','region','freshness'].forEach(updateFbtn);
   })();
 

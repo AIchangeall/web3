@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
+<title>招聘热度 · 链聘 ChainHire | Web3 招聘活跃度年历</title>
+<meta name="description" content="链聘 ChainHire 招聘热度：基于每日新增岗位数渲染的 365 天年度热力图，看 Web3 招聘市场节奏一目了然——什么时候在猛招、什么时候降温、周末/节假日趋势。" />
+<meta name="keywords" content="Web3招聘趋势,招聘市场热度,crypto hiring trends,年度活跃度,招聘节奏" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://gmjobs.github.io/chainhire/heatmap.html" />
+<meta name="theme-color" content="#6d5efc" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="链聘 ChainHire" />
+<meta property="og:title" content="招聘热度 · Web3 招聘活跃度年历" />
+<meta property="og:description" content="每日新增岗位数的 365 天热力图，看招聘市场节奏一目了然。" />
+<meta property="og:url" content="https://gmjobs.github.io/chainhire/heatmap.html" />
+<meta property="og:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="招聘热度 · 链聘 ChainHire" />
+<meta name="twitter:description" content="365 天 Web3 招聘活跃度年历。" />
+<meta name="twitter:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<style>
+  :root{color-scheme:light;--accent:#6d5efc;--bg:#f4f5f9;--card:#fff;--ink:#0f1729;--muted:#6b7280;--line:#e8eaf0;--grad:linear-gradient(135deg,#6d5efc,#a855f7);--shadow:0 1px 2px rgba(15,23,41,.04),0 1px 3px rgba(15,23,41,.06);--shadow-lg:0 10px 30px rgba(15,23,41,.10)}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Inter,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:14px}
+  a{color:inherit;text-decoration:none}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
+  .brand .logo{width:34px;height:34px;background:url(assets/favicon.svg) center/contain no-repeat;flex:none}
+  .nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+  .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
+  .nav-links a.active{background:#efeaff;color:var(--accent)}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
+  .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
+  .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+  .head{max-width:1180px;margin:0 auto;padding:30px 24px 6px}
+  .head h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em;font-weight:800}
+  .head p{margin:0;color:var(--muted);font-size:14px}
+
+  .hm-wrap{max-width:1180px;margin:18px auto 50px;padding:0 24px;display:flex;flex-direction:column;gap:16px}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+  .kpi .n{font-size:21px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
+  .kpi .n.accent{color:var(--accent)}
+  .kpi .n.green{color:#047857}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .panel h2{font-size:15px;font-weight:700;margin:0 0 4px}
+  .panel .sub{margin:0 0 14px;color:var(--muted);font-size:12.5px}
+
+  /* 热力图 SVG */
+  .hm-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  .hm-svg{display:block;min-width:760px;height:auto}
+  .hm-svg text{font-family:inherit}
+  .hm-l0{fill:#f1f2f6}
+  .hm-l1{fill:#e1ddfc}
+  .hm-l2{fill:#b8a8fa}
+  .hm-l3{fill:#8d7af6}
+  .hm-l4{fill:#6d5efc}
+  .hm-l5{fill:#3f2bcd}
+  .hm-svg rect[data-count]{transition:transform .12s}
+  .hm-svg rect[data-count]:hover{transform-origin:center;outline:2px solid var(--accent);outline-offset:1px}
+
+  .hm-legend{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin-top:12px;justify-content:flex-end}
+  .hm-legend .lg-cells{display:flex;gap:3px}
+  .hm-legend .lg-cell{width:11px;height:11px;border-radius:2px}
+
+  /* Top 活跃日 */
+  .hm-top ol{list-style:none;padding:0;margin:0;counter-reset:topli}
+  .hm-top li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;counter-increment:topli}
+  .hm-top li:last-child{border:0}
+  .hm-top li::before{content:counter(topli);width:22px;height:22px;border-radius:50%;background:#f1f2f6;color:var(--muted);display:grid;place-items:center;font-size:11px;font-weight:800;flex:none}
+  .hm-top li:nth-child(1)::before{background:#fef3c7;color:#92400e}
+  .hm-top li:nth-child(2)::before{background:#f1f5f9;color:#475569}
+  .hm-top li:nth-child(3)::before{background:#fee7d6;color:#9a3412}
+  .hm-top .hm-date{min-width:108px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+  .hm-top .hm-bar{flex:1;height:7px;background:#f1f2f6;border-radius:99px;overflow:hidden;min-width:60px}
+  .hm-top .hm-bar>span{display:block;height:100%;background:linear-gradient(90deg,#6d5efc,#a855f7);border-radius:99px}
+  .hm-top b{min-width:54px;text-align:right;color:#047857;font-weight:800;font-variant-numeric:tabular-nums}
+
+  .note{max-width:1180px;margin:0 auto 30px;padding:10px 24px;color:#9aa1b1;font-size:12px;line-height:1.7}
+  .load-error{max-width:1180px;margin:20px auto;padding:14px 24px;color:#b91c1c}
+
+  @media(max-width:640px){
+    .head{padding:22px 14px 4px}
+    .hm-wrap{padding:0 14px;gap:14px}
+    .kpis{grid-template-columns:repeat(2,1fr);gap:8px}
+    .kpi .n{font-size:18px}
+    .panel{padding:14px 16px}
+  }
+</style>
+<link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span></span></a>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="nav.jobs">职位</a>
+      <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
+      <a href="companies.html" data-i18n="nav.companies">企业库</a>
+      <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
+      <a href="heatmap.html" class="active" data-i18n="nav.heatmap">招聘热度</a>
+    </div>
+    <div class="nav-right">
+      <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
+      <button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button>
+      <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="head">
+  <h1 data-i18n="hm.h1">招聘热度 · 365 天活跃度</h1>
+  <p data-i18n="hm.desc">基于每日新增岗位数的年度热力图，看 Web3 招聘市场节奏一目了然——什么时候在猛招、什么时候降温、周末/节假日趋势。</p>
+</div>
+
+<div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code></div>
+
+<div class="hm-wrap">
+  <section class="kpis">
+    <div class="kpi"><div class="n accent" id="k-total">0</div><div class="l" data-i18n="hm.kpi.total">全年新增</div></div>
+    <div class="kpi"><div class="n green" id="k-peak">—</div><div class="l" data-i18n="hm.kpi.peak">最活跃日</div></div>
+    <div class="kpi"><div class="n" id="k-avg">0</div><div class="l" data-i18n="hm.kpi.avg">活跃日均</div></div>
+    <div class="kpi"><div class="n" id="k-silent">0</div><div class="l" data-i18n="hm.kpi.silent">静默日</div></div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="hm.heat">招聘活跃度</h2>
+    <p class="sub" data-i18n="hm.heat.sub">近 365 天每日新增岗位数，色块越深当日新增越多。悬停看明细。</p>
+    <div class="hm-scroll" id="hm-svg-wrap"></div>
+    <div class="hm-legend">
+      <span data-i18n="hm.legend.less">少</span>
+      <span class="lg-cells">
+        <span class="lg-cell hm-l0"></span>
+        <span class="lg-cell hm-l1"></span>
+        <span class="lg-cell hm-l2"></span>
+        <span class="lg-cell hm-l3"></span>
+        <span class="lg-cell hm-l4"></span>
+        <span class="lg-cell hm-l5"></span>
+      </span>
+      <span data-i18n="hm.legend.more">多</span>
+    </div>
+  </section>
+
+  <section class="panel hm-top">
+    <h2 data-i18n="hm.top">Top 10 活跃日</h2>
+    <p class="sub" data-i18n="hm.top.sub">新增岗位数最多的日期。点击跳到首页查看该日新增。</p>
+    <ol id="hm-top-list"></ol>
+  </section>
+</div>
+
+<div class="note" id="note"></div>
+
+<script src="i18n.js"></script>
+<script src="flags.js"></script>
+<script src="widgets.js"></script>
+<script src="data.js"></script>
+<script>
+(async function(){
+  const DATA = window.WEB3_JOBS_DATA;
+  if(!DATA){ document.getElementById("load-error").style.display="block"; return; }
+  if(!Array.isArray(DATA.jobs) && Array.isArray(DATA.chunks)){
+    try{ const arrs = await Promise.all(DATA.chunks.map(c => fetch(c).then(r => r.ok ? r.json() : []))); DATA.jobs = arrs.flat(); }catch(e){}
+  }
+  const data = DATA.jobs || [];
+
+  const lastUpdated = DATA.lastUpdated || "";
+  const lastUpdatedAt = DATA.lastUpdatedAt || "";
+  const pad2 = n => String(n).padStart(2,"0");
+  const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||lastUpdated; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
+  const updDisplay = lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated;
+  const updFresh = lastUpdatedAt?((Date.now()-new Date(lastUpdatedAt).getTime())/36e5<=6):false;
+
+  // 按日期聚合：优先用 changelog.added；缺失日期用 firstSeen 累计补
+  const byDate = {};
+  for(const e of (DATA.changelog||[])){
+    if(e.date) byDate[e.date] = (byDate[e.date]||0) + (e.added||0);
+  }
+  // firstSeen 补充（若 changelog 没记录某天，就用当天实际 firstSeen 的岗位数补上）
+  const fsCount = {};
+  for(const j of data) if(j.firstSeen) fsCount[j.firstSeen] = (fsCount[j.firstSeen]||0)+1;
+  for(const d in fsCount) if(!byDate[d]) byDate[d] = fsCount[d];
+
+  // 取 lastUpdated 为终点，向前 365 天
+  const endStr = lastUpdated || (new Date().toISOString().slice(0,10));
+  const [yy,mm,dd] = endStr.split("-").map(Number);
+  const end = new Date(yy, mm-1, dd);
+  const days = [];
+  for(let i=364; i>=0; i--){ const d=new Date(end); d.setDate(end.getDate()-i); days.push(d); }
+  const keyOf = d => d.getFullYear()+"-"+pad2(d.getMonth()+1)+"-"+pad2(d.getDate());
+  const cells = days.map(d => ({ date:d, key:keyOf(d), count: byDate[keyOf(d)]||0 }));
+
+  // KPI
+  const totalAdded = cells.reduce((s,c)=>s+c.count,0);
+  const activeCells = cells.filter(c=>c.count>0);
+  const activeDays = activeCells.length;
+  const silentDays = cells.length - activeDays;
+  const peakCell = cells.reduce((m,c)=>c.count>m.count?c:m, cells[0]);
+  const avgPerActive = activeDays ? Math.round(totalAdded/activeDays) : 0;
+
+  // 等级 0-5
+  const maxCount = Math.max(1, ...cells.map(c=>c.count));
+  function level(n){
+    if(n===0) return 0;
+    if(maxCount<=1) return 5;
+    const r = n/maxCount;
+    if(r<0.15) return 1;
+    if(r<0.35) return 2;
+    if(r<0.55) return 3;
+    if(r<0.80) return 4;
+    return 5;
+  }
+
+  // 渲染 SVG（7 行 × N 列，按周排列；周日在最上）
+  function renderHeat(){
+    const cellSize=12, gap=2;
+    const colW = cellSize+gap, rowH = cellSize+gap;
+    const labelW = 28, labelH = 20;
+    // 列起点：第一天所在周的周日
+    const start = new Date(cells[0].date); start.setDate(start.getDate() - start.getDay());
+    const colOf = d => Math.floor((d - start)/86400000/7);
+    const rowOf = d => d.getDay();
+    const cols = colOf(cells[cells.length-1].date) + 1;
+    const W = labelW + cols*colW + 4;
+    const H = labelH + 7*rowH + 4;
+
+    let svg = `<svg viewBox="0 0 ${W} ${H}" class="hm-svg" xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">`;
+    // 月份标签：当月第 1-7 天遇到的列上方写月份
+    let lastMonth = -1;
+    for(const c of cells){
+      if(c.date.getDate()<=7 && c.date.getMonth()!==lastMonth){
+        lastMonth = c.date.getMonth();
+        const x = labelW + colOf(c.date)*colW;
+        const lbl = (I18N.lang==="zh") ? (c.date.getMonth()+1)+"月" : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][c.date.getMonth()];
+        svg += `<text x="${x}" y="${labelH-7}" font-size="9" fill="#9aa1b1">${lbl}</text>`;
+      }
+    }
+    // 周几标签（zh: 一三五；en: M W F）
+    const wls = (I18N.lang==="zh") ? ["","一","","三","","五",""] : ["","Mon","","Wed","","Fri",""];
+    for(let r=0; r<7; r++){
+      if(wls[r]) svg += `<text x="0" y="${labelH + r*rowH + cellSize - 2}" font-size="9" fill="#9aa1b1">${wls[r]}</text>`;
+    }
+    // 格子
+    for(const c of cells){
+      const x = labelW + colOf(c.date)*colW;
+      const y = labelH + rowOf(c.date)*rowH;
+      const cls = "hm-l"+level(c.count);
+      const t = (I18N.lang==="zh") ? `${c.key} · 新增 ${c.count}` : `${c.key} · +${c.count}`;
+      svg += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" class="${cls}" data-count="${c.count}" data-date="${c.key}"><title>${t}</title></rect>`;
+    }
+    svg += '</svg>';
+    document.getElementById("hm-svg-wrap").innerHTML = svg;
+
+    // 点击格子 → 首页该日筛选（用 q= 搜索 firstSeen 关键字；index 已支持 q）
+    document.querySelectorAll('#hm-svg-wrap rect[data-count]').forEach(r=>{
+      r.style.cursor = 'pointer';
+      r.addEventListener('click', ()=>{ const d=r.getAttribute('data-date'); location.href = 'index.html?date='+d; });
+    });
+  }
+
+  function renderTop(){
+    const top = activeCells.slice().sort((a,b)=>b.count-a.count).slice(0,10);
+    const max = top[0]?.count || 1;
+    const html = top.map(c=>`<li><span class="hm-date">${c.key}</span><span class="hm-bar"><span style="width:${(c.count/max*100).toFixed(1)}%"></span></span><b>+${c.count}</b></li>`).join("");
+    document.getElementById("hm-top-list").innerHTML = html || `<li style="border:0;color:var(--muted)">${I18N.t("empty.jobs")}</li>`;
+  }
+
+  function head(){
+    document.getElementById("k-total").textContent = totalAdded;
+    document.getElementById("k-peak").textContent = peakCell.count>0 ? `${peakCell.key} (+${peakCell.count})` : "—";
+    document.getElementById("k-avg").textContent = "+"+avgPerActive;
+    document.getElementById("k-silent").textContent = silentDays;
+    const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
+    pill.className="upd"+(updFresh?"":" stale");
+    t.textContent = I18N.t("upd.prefix")+" "+updDisplay;
+    const fn = I18N.lang==="zh"
+      ? `数据来自 changelog 与岗位首次出现日期(firstSeen) 实时聚合 · 终点 ${endStr} · 共 ${data.length} 个岗位 · 最近更新 ${updDisplay}`
+      : `Aggregated live from changelog and per-job firstSeen · ends ${endStr} · ${data.length} roles · updated ${updDisplay}`;
+    document.getElementById("note").innerHTML = `${fn} · <a href="index.html" style="color:var(--accent)">${I18N.lang==="zh"?"← 返回职位列表":"← Back to jobs"}</a> · <a href="about.html" style="color:var(--accent)">${I18N.t("nav.about")}</a>`;
+  }
+
+  head(); renderHeat(); renderTop();
+  window.addEventListener("langchange", ()=>{ head(); renderHeat(); renderTop(); });
+})();
+</script>
+</body>
+</html>
