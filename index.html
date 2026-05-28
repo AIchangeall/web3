@@ -117,7 +117,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .fdrop.open .fbtn{border-color:var(--accent);color:var(--accent)}
   .fpop{position:absolute;top:calc(100% + 6px);left:0;z-index:31;background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 12px;min-width:240px;max-width:340px;box-shadow:0 8px 24px rgba(15,23,41,.12);display:none}
   .fdrop.open .fpop{display:block}
-  .fpop .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .fpop .chips{display:flex;flex-direction:column;gap:3px;max-height:60vh;overflow-y:auto}
+  .fpop .chip{display:block;width:100%;text-align:left;padding:7px 11px;border-radius:7px}
   .fchip{padding:6px 11px;font-size:12.5px}
   .freset{margin-left:auto;border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;padding:7px 10px;border-radius:8px}
   .freset:hover{color:var(--accent);background:#f5f4ff}
@@ -154,9 +155,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   details.fgroup[open]>summary::after{transform:rotate(180deg)}
 
   /* 列表头 */
-  .listbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
-  .listbar .cnt{font-size:14px;font-weight:600}
-  .listbar .cnt b{color:var(--accent)}
+  .listbar{display:flex;align-items:center;justify-content:flex-end;margin-bottom:14px;flex-wrap:wrap;gap:10px}
   .sortsel{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
   .sortsel select{border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13px;background:#fff;color:var(--ink);cursor:pointer}
 
@@ -343,7 +342,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="wrap">
   <main>
     <div class="listbar">
-      <div class="cnt" id="cnt"></div>
       <div class="sortsel">
         <span data-i18n="sort.label">排序</span>
         <select id="sort">
@@ -609,7 +607,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const shown=rows.slice(0,state.limit);
     injectLd(rows);
     document.getElementById("jobs").innerHTML=shown.map(card).join("");
-    document.getElementById("cnt").innerHTML=I18N.t("found.tpl").replace("{n}",'<b>'+total+'</b>');
     document.getElementById("empty").style.display=total?"none":"block";
     document.getElementById("more").style.display=total>state.limit?"block":"none";
     document.getElementById("more").textContent=I18N.tpl("more.tpl",total-state.limit);
