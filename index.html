@@ -300,12 +300,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   </div>
 </header>
 
-<section class="kpis" id="kpis">
-  <div class="kpi hot" data-act="new"><div class="n" id="k-new">0</div><div class="l" data-i18n="kpi.new">今日新增</div></div>
-  <div class="kpi" data-act="all"><div class="n" id="k-total">0</div><div class="l" data-i18n="kpi.total">在招岗位</div></div>
-  <div class="kpi" data-act="companies"><div class="n" id="k-comp">0</div><div class="l" data-i18n="kpi.comp">招聘公司</div></div>
-</section>
-
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
 <div class="filterbar" id="filterbar">
@@ -615,10 +609,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   // KPI + header
   function head(){
     const companies=new Set(data.map(d=>d.company)).size;
-    document.getElementById("k-new").textContent=data.filter(isNew).length;
-    document.getElementById("k-total").textContent=data.length;
-    document.getElementById("k-comp").textContent=companies;
-
     const pill=document.getElementById("upd"), t=document.getElementById("upd-t");
     pill.className="upd"+(updFresh?"":" stale");
     t.textContent=I18N.t("upd.prefix")+" "+updDisplay;
