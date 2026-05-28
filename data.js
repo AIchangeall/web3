@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-28",
-      "added": 69,
+      "added": 106,
       "removed": 0,
-      "note": "当日累计新增 69 个岗位。"
+      "note": "当日累计新增 106 个岗位。"
     },
     {
       "date": "2026-05-27",
@@ -38,6 +38,917 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Consensys",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Fullstack Engineer - MetaMask",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "Production application experience required; work on bringing transactions through the web3 ecosystem in MetaMask's core platform.",
+      "link": "https://boards.greenhouse.io/consensys/jobs/6569656",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "consensys||senior-fullstack-engineer-metamask",
+      "keywords": [],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Consensys",
+      "func": "product",
+      "category": "chain",
+      "position": "Product Manager, Mobile (MetaMask)",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "Drive iterative development of MetaMask mobile roadmap, ensuring MetaMask supports its mission of democratizing access to the decentralized web.",
+      "link": "https://boards.greenhouse.io/consensys/jobs/3324573",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "consensys||product-manager-mobile-metamask",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Consensys",
+      "func": "product",
+      "category": "chain",
+      "position": "Senior Product Manager - MetaMask Transactions",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 185000,
+      "requirements": "Own vision and roadmap for MetaMask transaction flows; cross-functional collaboration with engineering, design, and research.",
+      "link": "https://boards.greenhouse.io/consensys/jobs/6730966",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "consensys||senior-product-manager-metamask-transactions",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Consensys",
+      "func": "ops",
+      "category": "chain",
+      "position": "Engineering Manager - MetaMask (Backend-Platform)",
+      "level": "head",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 230000,
+      "requirements": "Lead teams responsible for building core data building blocks powering user experiences; deliver high-quality, stable, performance services.",
+      "link": "https://boards.greenhouse.io/consensys/jobs/7297078",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "consensys||engineering-manager-metamask-backend-platform",
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "性能/容量"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Consensys",
+      "func": "design",
+      "category": "chain",
+      "position": "Senior Content Designer - MetaMask",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Craft in-product content for MetaMask; collaborate with designers, PMs, researchers, and engineers on user-facing copy.",
+      "link": "https://boards.greenhouse.io/consensys/jobs/6898736",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "consensys||senior-content-designer-metamask",
+      "keywords": [],
+      "duties": [
+        "设计/品牌"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Messari",
+      "func": "data",
+      "category": "other",
+      "position": "Analytics Engineer",
+      "level": "senior",
+      "location": "Remote - US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$120k–$150k/yr",
+      "salaryNum": 135000,
+      "requirements": "Join Messari's on-chain data team; highly collaborative role working closely with research, product, and engineering teams to build data pipelines and dashboards.",
+      "link": "https://boards.greenhouse.io/messari/jobs/4289523005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "messari||analytics-engineer",
+      "keywords": [],
+      "duties": [
+        "部署发布",
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Messari",
+      "func": "data",
+      "category": "other",
+      "position": "Research Analyst - Diligence",
+      "level": "mid",
+      "location": "Remote - US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$110k–$120k/yr",
+      "salaryNum": 115000,
+      "requirements": "2-3 years as Research Analyst or Data Engineer in crypto or TradFi; conduct deep structured research on crypto assets and protocols.",
+      "link": "https://boards.greenhouse.io/messari/jobs/4336256005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "messari||research-analyst-diligence",
+      "keywords": [],
+      "duties": [
+        "协议/合约开发",
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Messari",
+      "func": "data",
+      "category": "other",
+      "position": "Data Engineer",
+      "level": "mid",
+      "location": "Remote - US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$130k–$160k/yr",
+      "salaryNum": 145000,
+      "requirements": "Ensure analysts can access data smoothly; expand and optimize data infra and pipeline architecture for blockchain analytics.",
+      "link": "https://boards.greenhouse.io/messari/jobs/4033661005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "messari||data-engineer",
+      "keywords": [],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Messari",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Front-End Engineer",
+      "level": "senior",
+      "location": "Remote - US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$140k–$180k/yr",
+      "salaryNum": 160000,
+      "requirements": "Build analytical platforms that help users learn, analyze, and participate in web3; strong React/TypeScript experience required.",
+      "link": "https://boards.greenhouse.io/messari/jobs/4392059005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "messari||senior-front-end-engineer",
+      "keywords": [
+        "TypeScript",
+        "React"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Aptos Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Software Engineer, Smart Contracts",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "$180k–$300k/yr",
+      "salaryNum": 240000,
+      "requirements": "Build novel and capable smart contracts on Move for the Aptos ecosystem; partner with external and internal customers across one or more programming languages.",
+      "link": "https://boards.greenhouse.io/aptoslabs/jobs/4249553005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aptos-labs||software-engineer-smart-contracts",
+      "keywords": [
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "客户/机构对接"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Aptos Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Software Engineer, Blockchain Core",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "$180k–$300k/yr",
+      "salaryNum": 240000,
+      "requirements": "Build production-grade L1 blockchain, working on performance, reliability, scalability, decentralization, and incentive mechanisms.",
+      "link": "https://boards.greenhouse.io/aptoslabs/jobs/4114510005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aptos-labs||software-engineer-blockchain-core",
+      "keywords": [],
+      "duties": [
+        "稳定性保障",
+        "性能/容量"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Aptos Labs",
+      "func": "ops",
+      "category": "chain",
+      "position": "Production Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "$180k–$250k/yr",
+      "salaryNum": 215000,
+      "requirements": "Develop core blockchain node software and ecosystem infrastructure; implement node reference deployment and build automation tools.",
+      "link": "https://boards.greenhouse.io/aptoslabs/jobs/4002408005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aptos-labs||production-engineer",
+      "keywords": [
+        "Validator/节点"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "节点运维"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Aptos Labs",
+      "func": "data",
+      "category": "chain",
+      "position": "Machine Learning Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "$180k–$280k/yr",
+      "salaryNum": 230000,
+      "requirements": "Work with platform and language development teams to build a first-in-class Move language and Aptos DApp co-pilot AI experience.",
+      "link": "https://boards.greenhouse.io/aptoslabs/jobs/4323517005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aptos-labs||machine-learning-engineer",
+      "keywords": [
+        "Machine Learning",
+        "AI"
+      ],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Aptos Labs",
+      "func": "data",
+      "category": "chain",
+      "position": "Data Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "$160k–$220k/yr",
+      "salaryNum": 190000,
+      "requirements": "Expand and optimize data infra and data pipeline architecture for the growing Aptos Analytics team.",
+      "link": "https://boards.greenhouse.io/aptoslabs/jobs/4082949005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aptos-labs||data-engineer",
+      "keywords": [],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Trust Machines",
+      "func": "eng",
+      "category": "chain",
+      "position": "Blockchain Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Talented and mission-oriented blockchain engineer to contribute to the Stacks core protocol; remote-first team building on Bitcoin.",
+      "link": "https://boards.greenhouse.io/trustmachines/jobs/4500349004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trust-machines||blockchain-engineer",
+      "keywords": [
+        "Bitcoin"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "招聘/HR"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Okcoin",
+      "func": "data",
+      "category": "exchange",
+      "position": "Growth Analyst",
+      "level": "mid",
+      "location": "Remote - US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "Analyze growth metrics and drive user acquisition insights for Okcoin's US crypto exchange platform.",
+      "link": "https://boards.greenhouse.io/okcoin/jobs/4686753003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okcoin||growth-analyst",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "数据分析",
+        "增长营销"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Okcoin",
+      "func": "security",
+      "category": "exchange",
+      "position": "Sr. Blockchain & Risk Investigator",
+      "level": "senior",
+      "location": "Austin, TX, USA",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "Senior blockchain and risk investigator managing on-chain risk and compliance investigations for Okcoin's US exchange.",
+      "link": "https://boards.greenhouse.io/okcoin/jobs/5393417003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okcoin||sr-blockchain-risk-investigator",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Okcoin",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager, New Grad",
+      "level": "mid",
+      "location": "San Jose, CA, USA",
+      "region": [
+        "us"
+      ],
+      "salary": "$125k–$155k/yr",
+      "salaryNum": 140000,
+      "requirements": "New grad product manager role at Okcoin; own end-to-end delivery of bank and payment partner integrations.",
+      "link": "https://boards.greenhouse.io/okcoin/jobs/5723192003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okcoin||product-manager-new-grad",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Matter Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Protocol Engineer",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 210000,
+      "requirements": "Build zkSync, credibly neutral open-source technology stack on Ethereum; advance zero-knowledge proof protocols and zkEVM.",
+      "link": "https://jobs.ashbyhq.com/matter-labs/f6054a2f-ea5d-42ee-a243-8c3fa95018ef",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "matter-labs||senior-protocol-engineer",
+      "keywords": [
+        "L2/Rollup",
+        "ZK",
+        "Ethereum"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Matter Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Staff Engineer (Cryptography)",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 250000,
+      "requirements": "Advanced cryptography engineering for zkSync; deep expertise in zero-knowledge proofs, ZK-SNARKs, and formal proof systems.",
+      "link": "https://jobs.ashbyhq.com/matter-labs/32900135-dfc0-4f1d-a3bb-535263939456",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "matter-labs||staff-engineer-cryptography",
+      "keywords": [
+        "ZK"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Matter Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Blockchain Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 190000,
+      "requirements": "Build and maintain blockchain infrastructure for zkSync; experience with EVM, Solidity, and distributed systems required.",
+      "link": "https://jobs.ashbyhq.com/matter-labs/9e080dc4-827c-46d9-b596-e8f2e2cd5581",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "matter-labs||blockchain-engineer",
+      "keywords": [
+        "Solidity",
+        "EVM"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Matter Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Protocol Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 190000,
+      "requirements": "Protocol engineering for zkSync Layer-2; contribute to ZK proof generation and Ethereum compatibility layers.",
+      "link": "https://jobs.ashbyhq.com/matter-labs/73a6d330-de98-433a-bedf-e37de493d21c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "matter-labs||protocol-engineer",
+      "keywords": [
+        "ZK",
+        "Ethereum"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Matter Labs",
+      "func": "bd",
+      "category": "chain",
+      "position": "Developer Relations Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Developer relations and ecosystem growth for zkSync; build relationships with dApp developers and create educational content.",
+      "link": "https://jobs.ashbyhq.com/matter-labs/93748fb1-e6d4-49da-aaec-ff4aef65bb00",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "matter-labs||developer-relations-engineer",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Allium",
+      "func": "data",
+      "category": "infra",
+      "position": "Blockchain Research Analyst",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "Conduct on-chain data research and analysis at Allium, a blockchain data company focused on making blockchain data accurate, simple, and fast.",
+      "link": "https://jobs.ashbyhq.com/allium/46da49f4-3b4e-43fd-97b1-039407f7d621",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "allium||blockchain-research-analyst",
+      "keywords": [],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Anagram",
+      "func": "ops",
+      "category": "infra",
+      "position": "Site Reliability Engineer",
+      "level": "mid",
+      "location": "Remote, USA",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Support and scale critical Web3 infrastructure at Anagram, a digital assets holding company; SRE experience with blockchain clients required.",
+      "link": "https://jobs.ashbyhq.com/anagram/72bc0471-ab17-4123-81fa-c1ee3921af1f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anagram||site-reliability-engineer",
+      "keywords": [],
+      "duties": [
+        "稳定性保障",
+        "性能/容量"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Clearmatics",
+      "func": "ops",
+      "category": "infra",
+      "position": "Infrastructure and Technical Support Engineer - Asia / US time zones",
+      "level": "mid",
+      "location": "Remote / London, UK",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "Infrastructure support for blockchain systems; familiarity with Ethereum-like infrastructure key; supporting Asia / US time zones.",
+      "link": "https://boards.greenhouse.io/clearmatics/jobs/6590460002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "clearmatics||infrastructure-and-technical-support-engineer-asia-us-time-zones",
+      "keywords": [
+        "Ethereum"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Chainlink Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Software Engineer, Developer Experience",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Advance the developer experience for the Chainlink ecosystem; globally remote role on rapidly growing Chainlink Labs engineering team.",
+      "link": "https://jobs.lever.co/chainlink/d10e0db0-7ebf-40de-8e1a-81a2314a61c8",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "chainlink-labs||software-engineer-developer-experience",
+      "keywords": [],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Chainlink Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "Staff Software Engineer, Data Feeds",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "Staff-level engineering on Chainlink Data Feeds; build and maintain PB-scale decentralized oracle data infrastructure.",
+      "link": "https://jobs.lever.co/chainlink/ef12912a-d102-41e8-9a68-f2cea88a2243",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "chainlink-labs||staff-software-engineer-data-feeds",
+      "keywords": [],
+      "duties": [
+        "性能/容量"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Chainlink Labs",
+      "func": "bd",
+      "category": "infra",
+      "position": "Strategic Sales",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "User acquisition and account management for Chainlink Labs; develop strategic partnerships across DeFi and enterprise blockchain verticals.",
+      "link": "https://jobs.lever.co/chainlink/86270268-3b72-477d-85f3-dc2bb922442e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "chainlink-labs||strategic-sales",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "商务拓展"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Arbitrum Foundation",
+      "func": "bd",
+      "category": "chain",
+      "position": "Developer Relations Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Enthusiastic and skilled Developer Relations Engineer to become a key member of the Arbitrum Foundation team; build developer community.",
+      "link": "https://jobs.lever.co/arbitrumfoundation/d18b4e24-4a1e-46d9-8593-853203bdf123",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "arbitrum-foundation||developer-relations-engineer",
+      "keywords": [
+        "社区"
+      ],
+      "duties": [
+        "社区运营"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Arbitrum Foundation",
+      "func": "data",
+      "category": "chain",
+      "position": "Data Engineer",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Develop and optimize SQL queries for data extraction; create dashboards using Dune Analytics, Allium, and Flipside for blockchain data insights.",
+      "link": "https://jobs.lever.co/arbitrumfoundation/3c9abbd1-d5aa-4dcb-a48c-efc3e492c2c3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "arbitrum-foundation||data-engineer",
+      "keywords": [
+        "SQL"
+      ],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Application Security Engineer (Java Code Audit)",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Conduct manual source code business security audits and excavate unknown security vulnerabilities in Java programs at Binance.",
+      "link": "https://jobs.lever.co/binance/3702f291-c432-4591-90b9-00bac5ca9e00",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||application-security-engineer-java-code-audit",
+      "keywords": [
+        "安全审计"
+      ],
+      "duties": [
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Smart Contract Security Engineer (Security Audit)",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "Conduct pen testing and security reviews for blockchain products; smart contract auditing across multiple chains at Binance.",
+      "link": "https://jobs.lever.co/binance/0477fd3b-581b-4b1a-a613-264e376d0401",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||smart-contract-security-engineer-security-audit",
+      "keywords": [
+        "Smart Contract",
+        "安全审计"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Senior Security Operations Engineer (SOC)",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Handle 24/7 security incident response; formulation and implementation of security response plans for Binance's global SOC operations.",
+      "link": "https://jobs.lever.co/binance/4ea6b395-0279-4d4d-9d03-ef0c83cfbe02",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||senior-security-operations-engineer-soc",
+      "keywords": [],
+      "duties": [
+        "故障/值班",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Data Scientist (Content, Feeds, Recommendation)",
+      "level": "senior",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 190000,
+      "requirements": "Leverage PB-level data and state-of-the-art ML infrastructure for content recommendation and feeds personalization at Binance.",
+      "link": "https://jobs.lever.co/binance/60353b1e-55ac-44a5-8448-858fb1703ea0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||senior-data-scientist-content-feeds-recommendation",
+      "keywords": [
+        "Machine Learning"
+      ],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "On Chain Research Data Analyst",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "3+ years experience in data engineering, modeling, and ETL; analyze on-chain data for research insights at Binance.",
+      "link": "https://jobs.lever.co/binance/d4b929cb-52a3-44d9-87d8-d98c7258ceb5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||on-chain-research-data-analyst",
+      "keywords": [],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Infrastructure Security Engineer (DevSecOps)",
+      "level": "mid",
+      "location": "Remote, Worldwide",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Secure and automate Binance's platform; own security posture of cloud infrastructure, CI/CD pipelines, and production systems.",
+      "link": "https://jobs.lever.co/binance/421f571f-946f-47a2-98cd-877627c25f8b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||infrastructure-security-engineer-devsecops",
+      "keywords": [
+        "CI/CD"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
+    },
     {
       "company": "Crypto.com",
       "func": "ga",
@@ -70,7 +981,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -102,7 +1014,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "数据分析",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -132,7 +1045,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "合规风控",
         "产品规划"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -168,7 +1082,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -204,7 +1119,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -240,7 +1156,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -276,7 +1193,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -312,7 +1230,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -348,7 +1267,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Crypto.com",
@@ -375,7 +1295,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "协议/合约开发"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -402,7 +1323,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -432,7 +1354,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -462,7 +1385,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -492,7 +1416,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "社区运营",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -522,7 +1447,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -552,7 +1478,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "合规风控",
         "产品规划"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -581,7 +1508,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -609,7 +1537,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -637,7 +1566,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -660,7 +1590,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "部署发布",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -695,7 +1626,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -729,7 +1661,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -758,7 +1691,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "产品规划",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -784,7 +1718,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "合规风控",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -820,7 +1755,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -857,7 +1793,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -893,7 +1830,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -923,7 +1861,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "数据分析",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -952,7 +1891,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Xsolla",
@@ -982,7 +1922,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1015,7 +1956,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "产品规划",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1050,7 +1992,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "安全/审计",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1083,7 +2026,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1116,7 +2060,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "产品规划",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1147,7 +2092,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "自动化",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1179,7 +2125,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1211,7 +2158,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1238,7 +2186,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1269,7 +2218,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "产品规划",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1300,7 +2250,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "增长营销",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1331,7 +2282,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1361,7 +2313,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -1392,7 +2345,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "安全/审计",
         "产品规划"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T15:13:51.895Z"
     },
     {
       "company": "Ramp Network",
@@ -64489,7 +65443,34 @@ window.WEB3_JOBS_DATA = {
     },
     "WhiteBIT": {
       "intro": ""
+    },
+    "Consensys": {
+      "intro": ""
+    },
+    "Messari": {
+      "intro": ""
+    },
+    "Trust Machines": {
+      "intro": ""
+    },
+    "Okcoin": {
+      "intro": ""
+    },
+    "Matter Labs": {
+      "intro": ""
+    },
+    "Allium": {
+      "intro": ""
+    },
+    "Anagram": {
+      "intro": ""
+    },
+    "Clearmatics": {
+      "intro": ""
+    },
+    "Succinct": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-28T10:17:56.381Z"
+  "lastUpdatedAt": "2026-05-28T15:13:31.624Z"
 };
