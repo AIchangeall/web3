@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .searchbar input{flex:1;border:0;outline:0;padding:11px 14px;font-size:15px;color:var(--ink);background:transparent}
   .searchbar button{border:0;background:var(--ink);color:#fff;font-weight:700;font-size:14px;padding:0 22px;border-radius:10px;cursor:pointer}
   .searchbar button:hover{background:#000}
-  .today-new{display:inline-flex;align-items:center;gap:9px;margin-top:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);color:#fff;font-weight:700;font-size:13.5px;padding:9px 17px;border-radius:999px;cursor:pointer;backdrop-filter:blur(4px);transition:.15s}
-  .today-new:hover{background:rgba(255,255,255,.28);transform:translateY(-1px)}
-  .today-new .pulse{width:9px;height:9px;border-radius:50%;background:#fde047;flex:none;animation:cnhpulse 1.8s infinite}
-  @keyframes cnhpulse{0%{box-shadow:0 0 0 0 rgba(253,224,71,.7)}70%{box-shadow:0 0 0 9px rgba(253,224,71,0)}100%{box-shadow:0 0 0 0 rgba(253,224,71,0)}}
+  .today-new{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12px;padding:5px 11px;border-radius:999px;cursor:pointer;background:#fff7e6;border:1px solid #fde68a;color:#b45309;transition:.12s;white-space:nowrap;text-decoration:none}
+  .today-new:hover{background:#fef3c7;border-color:#f59e0b;color:#92400e}
+  .today-new .pulse{width:6px;height:6px;border-radius:50%;background:#f59e0b;flex:none;animation:cnhpulse 1.8s infinite}
+  @keyframes cnhpulse{0%{box-shadow:0 0 0 0 rgba(245,158,11,.65)}70%{box-shadow:0 0 0 6px rgba(245,158,11,0)}100%{box-shadow:0 0 0 0 rgba(245,158,11,0)}}
 
   /* KPI strip */
   .kpis{max-width:1180px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -103,7 +103,30 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .kpi[data-act]:hover{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-1px)}
 
   /* ---------- 主体布局 ---------- */
-  .wrap{max-width:1180px;margin:24px auto 60px;padding:0 24px;display:grid;grid-template-columns:248px 1fr;gap:22px;align-items:start}
+  .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px}
+  /* 横向下拉筛选条（替代左侧栏） */
+  .filterbar{max-width:1180px;margin:18px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;position:relative;z-index:6}
+  .fdrop{position:relative}
+  .fbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:600;font-size:13px;padding:7px 12px;border-radius:9px;cursor:pointer;white-space:nowrap;transition:.12s}
+  .fbtn:hover{border-color:var(--accent);color:var(--accent)}
+  .fbtn.has{background:#efeaff;border-color:#c4b5fd;color:var(--accent)}
+  .fbtn .fcnt{display:none;background:var(--accent);color:#fff;font-size:10.5px;line-height:1;padding:3px 6px;border-radius:99px;font-weight:700}
+  .fbtn.has .fcnt{display:inline-block}
+  .fbtn .farr{color:var(--muted);font-size:10px;transition:transform .15s}
+  .fdrop.open .fbtn .farr{transform:rotate(180deg)}
+  .fdrop.open .fbtn{border-color:var(--accent);color:var(--accent)}
+  .fpop{position:absolute;top:calc(100% + 6px);left:0;z-index:31;background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 12px;min-width:240px;max-width:340px;box-shadow:0 8px 24px rgba(15,23,41,.12);display:none}
+  .fdrop.open .fpop{display:block}
+  .fpop .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .fchip{padding:6px 11px;font-size:12.5px}
+  .freset{margin-left:auto;border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;padding:7px 10px;border-radius:8px}
+  .freset:hover{color:var(--accent);background:#f5f4ff}
+  @media(max-width:560px){
+    .filterbar{padding:0 14px;gap:6px}
+    .fbtn{font-size:12.5px;padding:6px 10px}
+    .fpop{min-width:200px;max-width:90vw;left:0}
+    .freset{margin-left:0;font-size:12px}
+  }
 
   /* 侧栏筛选 */
   .side{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
@@ -260,6 +283,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
     </div>
     <div class="nav-right">
+      <a class="today-new" id="today-new" role="button" style="display:none"></a>
       <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
       <button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button>
       <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
@@ -274,7 +298,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <input id="search" data-i18n-ph="idx.searchph" placeholder="搜索公司 / 职位 / 技能关键字，如 Solidity、SRE、产品经理…" />
       <button id="searchbtn" data-i18n="idx.searchbtn">搜索</button>
     </div>
-    <div><a class="today-new" id="today-new" role="button" style="display:none"></a></div>
   </div>
 </header>
 
@@ -286,28 +309,38 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
 <div id="load-error" class="load-error" style="display:none">⚠️ 未能加载 <code>data.js</code>，请确认与本页同目录，或用本地服务打开。</div>
 
-<div class="wrap">
-  <aside class="side">
-    <div class="side-h"><span data-i18n="flt.title">筛选</span> <button id="reset" data-i18n="flt.reset">重置</button></div>
-    <div class="fgroup">
-      <label class="ftiny" data-i18n="flt.fresh.label">上架时效</label>
-      <select id="t-freshness" class="fsel">
-        <option value="all" data-i18n="flt.fresh.all">全部</option>
-        <option value="today" data-i18n="flt.fresh.today">今日</option>
-        <option value="recent7" data-i18n="flt.fresh.7d">近 7 天</option>
-      </select>
-      <div class="chips chips-row">
-        <span class="chip" id="t-fresh" data-i18n="flt.hidestale">仅看近期在招</span>
-        <span class="chip" id="t-paid" data-i18n="flt.paidonly">仅看公开薪资</span>
-        <span class="chip" id="t-saved" data-i18n="flt.savedonly">仅看收藏</span>
-      </div>
-    </div>
-    <div class="fgroup"><div class="t" data-i18n="flt.func">职能</div><div class="chips" id="g-func"></div></div>
-    <details class="fgroup"><summary class="t" data-i18n="flt.cat">公司类型</summary><div class="chips" id="g-cat"></div></details>
-    <details class="fgroup"><summary class="t" data-i18n="flt.lvl">级别</summary><div class="chips" id="g-lvl"></div></details>
-    <details class="fgroup"><summary class="t" data-i18n="flt.region">地区</summary><div class="chips" id="g-region"></div></details>
-  </aside>
+<div class="filterbar" id="filterbar">
+  <div class="fdrop" data-key="func">
+    <button class="fbtn" type="button"><span class="flb" data-i18n="flt.func">职能</span><span class="fcnt"></span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-func"></div></div>
+  </div>
+  <div class="fdrop" data-key="cat">
+    <button class="fbtn" type="button"><span class="flb" data-i18n="flt.cat">公司类型</span><span class="fcnt"></span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-cat"></div></div>
+  </div>
+  <div class="fdrop" data-key="lvl">
+    <button class="fbtn" type="button"><span class="flb" data-i18n="flt.lvl">级别</span><span class="fcnt"></span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-lvl"></div></div>
+  </div>
+  <div class="fdrop" data-key="region">
+    <button class="fbtn" type="button"><span class="flb" data-i18n="flt.region">地区</span><span class="fcnt"></span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-region"></div></div>
+  </div>
+  <div class="fdrop" data-key="freshness">
+    <button class="fbtn" type="button"><span class="flb" data-i18n="flt.fresh.label">上架时效</span><span class="fcnt"></span><span class="farr">▾</span></button>
+    <div class="fpop"><div class="chips" id="g-freshness">
+      <span class="chip active" data-fresh="all" data-i18n="flt.fresh.all">全部</span>
+      <span class="chip" data-fresh="today" data-i18n="flt.fresh.today">今日</span>
+      <span class="chip" data-fresh="recent7" data-i18n="flt.fresh.7d">近 7 天</span>
+    </div></div>
+  </div>
+  <span class="chip fchip" id="t-fresh" data-i18n="flt.hidestale">仅看近期在招</span>
+  <span class="chip fchip" id="t-paid" data-i18n="flt.paidonly">仅看公开薪资</span>
+  <span class="chip fchip" id="t-saved" data-i18n="flt.savedonly">仅看收藏</span>
+  <button class="freset" id="reset" type="button" data-i18n="flt.reset">重置</button>
+</div>
 
+<div class="wrap">
   <main>
     <div class="listbar">
       <div class="cnt" id="cnt"></div>
@@ -406,18 +439,30 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const logoUrl=r=>{ const d=logoDomain(r.company,r.link); return d?"https://www.google.com/s2/favicons?sz=64&domain="+encodeURIComponent(d):""; };
   const avatarHtml=r=>`<div class="avatar" style="background:${acolor(r.company)}"><span class="ltr">${esc(initial(r.company))}</span>${logoUrl(r)?`<img class="logo-img" src="${logoUrl(r)}" loading="lazy" alt="" onerror="this.remove()">`:""}</div>`;
 
-  function buildChips(id,labels,set){
+  // 横向下拉条：每个下拉按钮显示当前已选数量
+  function updateFbtn(key){
+    const drop=document.querySelector('.fdrop[data-key="'+key+'"]'); if(!drop) return;
+    const cnt=drop.querySelector('.fcnt'); const btn=drop.querySelector('.fbtn');
+    let n=0;
+    if(key==='func') n=state.funcs.size;
+    else if(key==='cat') n=state.cats.size;
+    else if(key==='lvl') n=state.lvls.size;
+    else if(key==='region') n=state.regions.size;
+    else if(key==='freshness') n=(state.newOnly||state.recent7)?1:0;
+    if(n>0){ btn.classList.add('has'); cnt.textContent=n; } else { btn.classList.remove('has'); cnt.textContent=''; }
+  }
+  function buildChips(id,labels,set,key){
     const c=document.getElementById(id);
     for(const [k,l] of Object.entries(labels)){
       const e=document.createElement("span"); e.className="chip"; e.textContent=l; e.dataset.key=k;
-      e.onclick=()=>{ set.has(k)?set.delete(k):set.add(k); e.classList.toggle("active"); state.limit=PAGE; render(); };
+      e.onclick=(ev)=>{ ev.stopPropagation(); set.has(k)?set.delete(k):set.add(k); e.classList.toggle("active"); state.limit=PAGE; if(key) updateFbtn(key); render(); };
       c.appendChild(e);
     }
   }
-  buildChips("g-func",funcLabels,state.funcs);
-  buildChips("g-cat",catLabels,state.cats);
-  buildChips("g-lvl",lvlLabels,state.lvls);
-  buildChips("g-region",regionLabels,state.regions);
+  buildChips("g-func",funcLabels,state.funcs,"func");
+  buildChips("g-cat",catLabels,state.cats,"cat");
+  buildChips("g-lvl",lvlLabels,state.lvls,"lvl");
+  buildChips("g-region",regionLabels,state.regions,"region");
   function relabelChips(){
     [["g-func",funcLabels],["g-cat",catLabels],["g-lvl",lvlLabels],["g-region",regionLabels]].forEach(([id,m])=>{
       document.getElementById(id).querySelectorAll(".chip").forEach(e=>{ e.textContent=m[e.dataset.key]; });
@@ -425,14 +470,32 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   }
   window.addEventListener("langchange",()=>{ buildLabels(); relabelChips(); head(); render(); if(mask.classList.contains("on")&&jm.dataset.id) openDetail(jm.dataset.id); });
 
-  // 时效下拉(全部 / 今日 / 近 7 天)：内部仍用 state.newOnly + state.recent7
-  const tfreshness=document.getElementById("t-freshness");
-  tfreshness.onchange=e=>{ state.newOnly=e.target.value==="today"; state.recent7=e.target.value==="recent7"; state.limit=PAGE; render(); };
-  // 3 chip：仅看近期在招 / 仅看公开薪资 / 仅看收藏
+  // 时效下拉(全部 / 今日 / 近 7 天)：dropdown 内 chip 单选；内部仍用 state.newOnly + state.recent7
+  function setFreshness(v){
+    state.newOnly = v==="today"; state.recent7 = v==="recent7";
+    document.querySelectorAll('#g-freshness .chip').forEach(x=>x.classList.toggle('active', x.dataset.fresh===v));
+    updateFbtn('freshness');
+  }
+  document.querySelectorAll('#g-freshness .chip').forEach(c=>{
+    c.addEventListener('click', ev=>{ ev.stopPropagation(); setFreshness(c.dataset.fresh); state.limit=PAGE; render(); });
+  });
+  // 3 个独立 chip：仅看近期在招 / 仅看公开薪资 / 仅看收藏
   function chipBtn(id, key){ const el=document.getElementById(id); el.onclick=()=>{ state[key]=!state[key]; el.classList.toggle("active",state[key]); state.limit=PAGE; render(); }; return el; }
   const tfresh=chipBtn("t-fresh","hideStale");
   const tpaid=chipBtn("t-paid","paidOnly");
   const tsaved=chipBtn("t-saved","savedOnly");
+  // 下拉按钮开关 + 点外部关闭
+  document.querySelectorAll('.fdrop .fbtn').forEach(btn=>{
+    btn.addEventListener('click', ev=>{
+      ev.stopPropagation();
+      const drop=btn.closest('.fdrop'); const wasOpen=drop.classList.contains('open');
+      document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
+      if(!wasOpen) drop.classList.add('open');
+    });
+  });
+  document.addEventListener('click', ev=>{
+    if(!ev.target.closest('.fdrop')) document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
+  });
   const doSearch=v=>{ state.search=v.trim().toLowerCase(); state.limit=PAGE; render(); };
   document.getElementById("search").addEventListener("input",e=>doSearch(e.target.value));
   document.getElementById("searchbtn").onclick=()=>doSearch(document.getElementById("search").value);
@@ -442,7 +505,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     state.funcs.clear();state.cats.clear();state.lvls.clear();state.regions.clear();
     state.newOnly=false;state.recent7=false;state.hideStale=false;state.paidOnly=false;state.savedOnly=false;state.search="";state.limit=PAGE;
     document.querySelectorAll(".chip.active").forEach(c=>c.classList.remove("active"));
-    tfreshness.value="all"; document.getElementById("search").value="";
+    document.querySelector('#g-freshness .chip[data-fresh="all"]').classList.add('active');
+    document.querySelectorAll('.fdrop.open').forEach(d=>d.classList.remove('open'));
+    ['func','cat','lvl','region','freshness'].forEach(updateFbtn);
+    document.getElementById("search").value="";
     document.getElementById("sort").value="latest"; state.sort="latest"; render();
   };
   // 列表区点击委托：关键字筛选 / 打开详情 / 分享
@@ -465,9 +531,9 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       var a=card.dataset.act;
       if(a==="companies"){ location.href="companies.html"; return; }
       if(a==="all"){ document.getElementById("reset").onclick(); window.scrollTo({top:0,behavior:"smooth"}); return; }
-      if(a==="new"){ state.newOnly=true; state.recent7=false; tfreshness.value="today"; }
-      else if(a==="remote"){ kpiActivate("g-region",state.regions,"remote"); }
-      else if(a==="head"){ kpiActivate("g-lvl",state.lvls,"head"); }
+      if(a==="new"){ setFreshness("today"); }
+      else if(a==="remote"){ kpiActivate("g-region",state.regions,"remote"); updateFbtn("region"); }
+      else if(a==="head"){ kpiActivate("g-lvl",state.lvls,"head"); updateFbtn("lvl"); }
       state.limit=PAGE; render();
       var m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"});
     });
@@ -571,7 +637,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const tn=document.getElementById("today-new"), nc=data.filter(isNew).length;
     tn.style.display="inline-flex";
     tn.innerHTML=`<span class="pulse"${nc===0?' style="background:#86efac"':''}></span><span>${nc>0?I18N.tpl("idx.todaynew",nc):I18N.t("idx.todaynew0")}</span>`;
-    tn.onclick=e=>{ e.preventDefault(); if(nc>0){ state.newOnly=true; state.recent7=false; tfreshness.value="today"; } state.limit=PAGE; render(); const m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"}); };
+    tn.onclick=e=>{ e.preventDefault(); if(nc>0) setFreshness("today"); state.limit=PAGE; render(); const m=document.querySelector("main"); if(m) m.scrollIntoView({behavior:"smooth",block:"start"}); };
   }
 
   // ---------- 岗位详情弹层 / 分享 / 结构化数据 ----------
@@ -699,7 +765,8 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     (p.get("cat")||"").split(",").filter(Boolean).forEach(k=>act("g-cat",state.cats,k));
     (p.get("level")||"").split(",").filter(Boolean).forEach(k=>act("g-lvl",state.lvls,k));
     (p.get("region")||"").split(",").filter(Boolean).forEach(k=>act("g-region",state.regions,k));
-    if(p.get("new")==="1"){ state.newOnly=true; tnew.classList.add("on"); }
+    if(p.get("new")==="1") setFreshness("today");
+    ['func','cat','lvl','region','freshness'].forEach(updateFbtn);
   })();
 
   head(); render();
