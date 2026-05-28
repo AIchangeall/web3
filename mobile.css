@@ -117,6 +117,17 @@ html[data-theme="dark"] .cl li{background:#1b2236;border-color:var(--line);color
 html[data-theme="dark"] .srctag,html[data-theme="dark"] .contact{color:#cbd3e6}
 html[data-theme="dark"] .kwnone,html[data-theme="dark"] .contact.none{color:#5c6680}
 html[data-theme="dark"] .avatar{border:1px solid var(--line)}
+/* 横向药丸筛选条暗色 */
+html[data-theme="dark"] .fbtn,html[data-theme="dark"] .fchip{background:var(--card);color:#cbd3e6;border-color:var(--line)}
+html[data-theme="dark"] .fbtn:hover,html[data-theme="dark"] .fchip:hover{border-color:#7c6cf5;color:#c4b5fd}
+html[data-theme="dark"] .fbtn.has,html[data-theme="dark"] .fdrop.open .fbtn,html[data-theme="dark"] .fchip.active{background:#2a2350;border-color:#5b4dd5;color:#c4b5fd}
+html[data-theme="dark"] .fbtn .farr{color:#7e8aa3}
+html[data-theme="dark"] .fdrop.open .fbtn .farr{color:#c4b5fd}
+html[data-theme="dark"] .fpop{background:var(--card);border-color:var(--line)}
+html[data-theme="dark"] .fpop .chip{color:#cbd3e6}
+html[data-theme="dark"] .fpop .chip:hover{background:#1f2740}
+html[data-theme="dark"] .fpop .chip.active{background:#2a2350;color:#c4b5fd}
+html[data-theme="dark"] .freset:hover{background:#2a2350}
 html[data-theme="dark"] .co-stats>div{background:#1b2236}
 html[data-theme="dark"] .cov{background:#13241c;border-color:#1f4d36;color:#5fcf9b}
 html[data-theme="dark"] .hh-toast a{color:#a5b4fc}
