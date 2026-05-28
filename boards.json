@@ -238,6 +238,13 @@
     "count": 259
   },
   {
+    "company": "OpenSea",
+    "category": "other",
+    "ats": "ashby",
+    "id": "opensea",
+    "count": 4
+  },
+  {
     "company": "Phantom",
     "category": "defi",
     "ats": "ashby",
@@ -273,6 +280,13 @@
     "count": 127
   },
   {
+    "company": "Risk Labs (UMA / Across)",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "risklabs",
+    "count": 6
+  },
+  {
     "company": "Robinhood",
     "category": "exchange",
     "ats": "greenhouse",
@@ -299,6 +313,13 @@
     "ats": "ashby",
     "id": "Solana Foundation",
     "count": 12
+  },
+  {
+    "company": "Succinct",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "succinct",
+    "count": 1
   },
   {
     "company": "TRM Labs",
