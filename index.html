@@ -105,23 +105,31 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   /* ---------- 主体布局 ---------- */
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px}
   /* 横向下拉筛选条（药丸式，参考 BOSS 风格） */
-  .filterbar{max-width:1180px;margin:22px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:relative;z-index:6}
+  .filterbar{max-width:1180px;margin:22px auto 16px;padding:0 24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:relative;z-index:6}
   .fdrop{position:relative}
+  /* 透明桥接：鼠标从按钮移到弹出菜单时不会脱离 hover 区 */
+  .fdrop::after{content:"";position:absolute;top:100%;left:0;right:0;height:10px;display:none}
+  .fdrop:hover::after{display:block}
   .fbtn,.fchip{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#374151;font-weight:600;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1px solid var(--line);cursor:pointer;white-space:nowrap;transition:.15s;line-height:1}
-  .fbtn:hover,.fchip:hover{border-color:var(--accent);color:var(--accent)}
-  .fbtn.has,.fdrop.open .fbtn,.fchip.active{background:#efeaff;border-color:#c4b5fd;color:var(--accent)}
+  .fchip:hover{border-color:var(--accent);color:var(--accent)}
+  /* 注意：.fbtn 的 hover 用 .fdrop:hover .fbtn 触发（包含桥接区） */
+  .fdrop:hover .fbtn,.fbtn.has,.fdrop.open .fbtn,.fchip.active{background:#efeaff;border-color:#c4b5fd;color:var(--accent)}
   .fbtn .fcnt{display:none;background:var(--accent);color:#fff;font-size:10.5px;line-height:1;padding:3px 6px;border-radius:99px;font-weight:700;margin-left:1px}
   .fbtn.has .fcnt{display:inline-block}
   .fbtn .farr{color:#9aa1b1;font-size:10.5px;transition:transform .15s;margin-left:2px}
-  .fdrop.open .fbtn .farr{transform:rotate(180deg);color:var(--accent)}
-  .fpop{position:absolute;top:calc(100% + 6px);left:0;z-index:31;background:#fff;border:1px solid var(--line);border-radius:11px;padding:6px;min-width:200px;max-width:320px;box-shadow:0 10px 30px rgba(15,23,41,.12);display:none}
-  .fdrop.open .fpop{display:block}
+  .fdrop:hover .fbtn .farr,.fdrop.open .fbtn .farr{transform:rotate(180deg);color:var(--accent)}
+  .fpop{position:absolute;top:calc(100% + 10px);left:0;z-index:31;background:#fff;border:1px solid var(--line);border-radius:11px;padding:6px;min-width:200px;max-width:320px;box-shadow:0 10px 30px rgba(15,23,41,.12);display:none}
+  .fdrop:hover .fpop,.fdrop.open .fpop{display:block}
   .fpop .chips{display:flex;flex-direction:column;gap:1px;max-height:60vh;overflow-y:auto}
   .fpop .chip{display:block;width:100%;text-align:left;padding:8px 12px;border-radius:7px;border:0;background:transparent;color:#374151;font-size:13.5px;font-weight:500;cursor:pointer}
   .fpop .chip:hover{background:#f4f5f9}
   .fpop .chip.active{background:#efeaff;color:var(--accent);font-weight:600}
-  .freset{margin-left:auto;border:0;background:none;color:var(--accent);font-size:13.5px;font-weight:600;cursor:pointer;padding:9px 12px;border-radius:8px}
+  .freset{border:0;background:none;color:var(--accent);font-size:13.5px;font-weight:600;cursor:pointer;padding:9px 12px;border-radius:999px}
   .freset:hover{background:#efeaff}
+  /* 排序药丸（在筛选条末尾） */
+  .filterbar .sortsel{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px 6px 14px;color:var(--muted);font-size:13px;font-weight:600;line-height:1;margin:0}
+  .filterbar .sortsel select{border:0;background:transparent;font-size:13.5px;color:var(--ink);cursor:pointer;font-weight:600;padding:3px 0}
+  .filterbar .sortsel:hover{border-color:var(--accent)}
   @media(max-width:560px){
     .filterbar{padding:0 14px;gap:7px}
     .fbtn,.fchip{font-size:12.5px;padding:7px 13px}
@@ -155,7 +163,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   details.fgroup[open]>summary::after{transform:rotate(180deg)}
 
   /* 列表头 */
-  .listbar{display:flex;align-items:center;justify-content:flex-end;margin-bottom:14px;flex-wrap:wrap;gap:10px}
   .sortsel{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
   .sortsel select{border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13px;background:#fff;color:var(--ink);cursor:pointer}
 
@@ -331,22 +338,20 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   <span class="chip fchip" id="t-paid" data-i18n="flt.paidonly">仅看公开薪资</span>
   <span class="chip fchip" id="t-saved" data-i18n="flt.savedonly">仅看收藏</span>
   <button class="freset" id="reset" type="button" data-i18n="flt.reset">重置</button>
+  <div class="sortsel">
+    <span data-i18n="sort.label">排序</span>
+    <select id="sort">
+      <option value="latest" data-i18n="sort.latest">最新发布</option>
+      <option value="recommended" data-i18n="sort.recommended">推荐（新增优先）</option>
+      <option value="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</option>
+      <option value="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</option>
+      <option value="company" data-i18n="sort.company">公司名 A → Z</option>
+    </select>
+  </div>
 </div>
 
 <div class="wrap">
   <main>
-    <div class="listbar">
-      <div class="sortsel">
-        <span data-i18n="sort.label">排序</span>
-        <select id="sort">
-          <option value="latest" data-i18n="sort.latest">最新发布</option>
-          <option value="recommended" data-i18n="sort.recommended">推荐（新增优先）</option>
-          <option value="salary_desc" data-i18n="sort.salary_desc">薪资 高 → 低</option>
-          <option value="salary_asc" data-i18n="sort.salary_asc">薪资 低 → 高</option>
-          <option value="company" data-i18n="sort.company">公司名 A → Z</option>
-        </select>
-      </div>
-    </div>
     <div class="jobs" id="jobs"></div>
     <div class="empty" id="empty" style="display:none" data-i18n="empty.jobs">未匹配到职位，试试放宽筛选条件。</div>
     <button class="more" id="more" style="display:none"></button>
