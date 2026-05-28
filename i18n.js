@@ -196,8 +196,27 @@
   const KW_EN = { "Validator/节点":"Validator / Node", "可观测性":"Observability", "安全审计":"Security Audit", "形式化验证":"Formal Verification", "合规":"Compliance", "社区":"Community", "营销/增长":"Marketing / Growth", "出入金":"On/Off-ramp" };
   const DUTY_EN = { "团队管理":"Management", "架构设计":"Architecture", "稳定性保障":"Reliability", "故障/值班":"Incident / On-call", "监控告警":"Monitoring", "性能/容量":"Performance / Capacity", "部署发布":"Deployment", "自动化":"Automation", "节点运维":"Node Ops", "协议/合约开发":"Protocol / Contract Dev", "多链/跨链":"Multi / Cross-chain", "安全/审计":"Security / Audit", "合规风控":"Compliance / Risk", "数据分析":"Data Analysis", "产品规划":"Product Planning", "设计/品牌":"Design / Brand", "增长营销":"Growth / Marketing", "社区运营":"Community", "商务拓展":"Business Dev", "招聘/HR":"Recruiting / HR", "客户/机构对接":"Client / Institutional" };
 
+  // 自动选语言：①用户已选过(localStorage)→ 用之；②navigator.language(s) 含 zh* → zh；
+  // ③时区在大中华区 → zh；④其余 → en。仍可点 EN/中 切换并记忆。
+  function detectLang() {
+    try { const saved = localStorage.getItem("lang"); if (saved === "en" || saved === "zh") return saved; } catch (e) {}
+    try {
+      const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]).map(s => String(s || "").toLowerCase());
+      if (langs.some(l => l === "zh" || l.startsWith("zh-") || l.startsWith("zh_"))) return "zh";
+      if (langs.length && langs.some(l => l && !l.startsWith("zh"))) {
+        // 浏览器明确给出非中文偏好 → en
+        const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
+        if (/asia\/(shanghai|chongqing|harbin|urumqi|hong_kong|macau|taipei)/.test(tz)) return "zh";
+        return "en";
+      }
+      const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
+      if (/asia\/(shanghai|chongqing|harbin|urumqi|hong_kong|macau|taipei)/.test(tz)) return "zh";
+    } catch (e) {}
+    return "en";
+  }
+
   const I18N = {
-    lang: (localStorage.getItem("lang") === "en") ? "en" : "zh",
+    lang: detectLang(),
     t(key) { const e = DICT[key]; return e ? e[this.lang === "zh" ? 0 : 1] : key; },
     tpl(key, n) { return this.t(key).replace("{n}", n); },
     map(name) { const m = MAPS[name], i = this.lang === "zh" ? 0 : 1, out = {}; for (const k in m) out[k] = m[k][i]; return out; },
