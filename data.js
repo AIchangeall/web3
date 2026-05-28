@@ -15,9 +15,15 @@
 //  约定: 新岗位 firstSeen=当日(即被标 NEW); 每次扫描把仍在招岗位的 lastSeen 改为当日。
 // ============================================================================
 window.WEB3_JOBS_DATA = {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "snapshotNote": "覆盖 web3/crypto 行业全职能公开招聘（工程研发 / 运维SRE / 产品 / 设计 / 数据AI / 安全 / 市场增长 / BD / 合规HR）。数据来自公司官网 / Lever / Ashby / Greenhouse / Web3.career / CryptoJobsList / CryptocurrencyJobs / V2EX / 登链社区。薪资为公开 JD 或聚合估算，仅供参考。",
   "changelog": [
+    {
+      "date": "2026-05-28",
+      "added": 24,
+      "removed": 0,
+      "note": "新增 24 个岗位，刷新 3 个在招岗位。"
+    },
     {
       "date": "2026-05-27",
       "added": 189,
@@ -32,6 +38,651 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Celestia Labs",
+      "func": "product",
+      "category": "chain",
+      "position": "Head of Product",
+      "level": "head",
+      "location": "Remote (EU/US timezones)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 250000,
+      "requirements": "7+ 年产品管理经验；4+ 年高级产品领导；主导模块化区块链产品战略与路线图，管理 3 人产品团队，向 CEO 汇报。",
+      "link": "https://jobs.lever.co/celestia/b2a99f19-fdf1-471c-85e8-d106faa58a2f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "celestia-labs||head-of-product",
+      "keywords": [],
+      "duties": [
+        "团队管理"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Celestia Labs",
+      "func": "growth",
+      "category": "chain",
+      "position": "Head of Marketing",
+      "level": "head",
+      "location": "Remote (EU/US timezones)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "5+ 年营销经验；独立负责全渠道品牌与增长策略；具备面向开发者和机构客户的内容创作与活动策划能力。",
+      "link": "https://jobs.lever.co/celestia/9090aa0b-e71d-4fb8-829a-9ee87faab1a2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "celestia-labs||head-of-marketing",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "客户/机构对接"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Celestia Labs",
+      "func": "ga",
+      "category": "chain",
+      "position": "Associate General Counsel",
+      "level": "senior",
+      "location": "Remote (US East Coast preferred)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "美国执照律师；熟悉加密/Web3 法律领域；负责日常法务事务与商业合同；向 General Counsel 汇报。",
+      "link": "https://jobs.lever.co/celestia/0230fe86-1cf8-4add-8879-d1d624ff7474",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "celestia-labs||associate-general-counsel",
+      "keywords": [],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Celestia Labs",
+      "func": "ga",
+      "category": "chain",
+      "position": "Head of Finance",
+      "level": "head",
+      "location": "Remote (CET preferred)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "5+ 年高级财务领导经验；具备 Web3/基金会财务管理背景；熟悉 IFRS/GAAP 及加密资产会计；瑞士/列支敦士登经验优先。",
+      "link": "https://jobs.lever.co/celestia/e4283710-d627-4c6a-9d01-50c0c5f86f80",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "celestia-labs||head-of-finance",
+      "keywords": [],
+      "duties": [
+        "团队管理"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Celestia Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Engineer - ZK Interoperability",
+      "level": "senior",
+      "location": "Remote (EU/US timezones)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 230000,
+      "requirements": "资深区块链工程师；精通 ZK 证明与互操作性协议；熟悉 Rust/Go；具备分布式系统与密码学协议研发经验。",
+      "link": "https://jobs.lever.co/celestia/95a2f7b0-b204-4da5-a254-612e402dd960",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "celestia-labs||senior-engineer-zk-interoperability",
+      "keywords": [
+        "Rust",
+        "Go",
+        "ZK"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "多链/跨链"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Hyperlane",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Backend Engineer",
+      "level": "senior",
+      "location": "Remote / New York",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$180,000–$250,000",
+      "salaryNum": 215000,
+      "requirements": "5+ 年高可用系统开发经验（Rust/Go/TypeScript）；负责跨链协议核心设计与互链安全模型优化；具备区块链/Rollup 集成经验。",
+      "link": "https://jobs.lever.co/Hyperlane/593277eb-e0f2-4d9f-9dbe-22557872a4d1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "hyperlane||senior-backend-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "TypeScript",
+        "L2/Rollup"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Hyperlane",
+      "func": "bd",
+      "category": "infra",
+      "position": "APAC Ecosystem Lead",
+      "level": "mid",
+      "location": "Remote / Singapore",
+      "region": [
+        "remote",
+        "sg",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "2+ 年 APAC 市场 BD 经验；深耕跨链互操作性生态；具备开发者社区拓展与生态合作能力。",
+      "link": "https://jobs.lever.co/Hyperlane/12b30356-42c9-4ce9-9290-7aef951ee90b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "hyperlane||apac-ecosystem-lead",
+      "keywords": [
+        "社区"
+      ],
+      "duties": [
+        "多链/跨链",
+        "社区运营",
+        "商务拓展"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Hyperlane",
+      "func": "eng",
+      "category": "infra",
+      "position": "Software Engineer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "参与 Rust/TypeScript 代码库开发；维护 Hyperlane 多链核心部署与基础设施运营；支持跨链互操作性协议迭代。",
+      "link": "https://jobs.lever.co/Hyperlane/b05b97af-0ec1-4278-ac1e-b7145a81fbd5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "hyperlane||software-engineer",
+      "keywords": [
+        "Rust",
+        "TypeScript"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "多链/跨链",
+        "社区运营"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "OpenSea",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Software Engineer, Backend",
+      "level": "senior",
+      "location": "Remote / US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "资深后端工程师；构建 NFT 交易平台核心服务；精通分布式系统与区块链集成；具备大规模交易与数据处理经验。",
+      "link": "https://jobs.ashbyhq.com/OpenSea/4407ec92-20bc-41bc-bf66-91cf28306893",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "opensea||senior-software-engineer-backend",
+      "keywords": [],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "OpenSea",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Application Security Engineer",
+      "level": "senior",
+      "location": "Remote / US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "5+ 年安全工程经验；熟悉 Web3/DApp 安全；主导平台漏洞评估、威胁建模与安全代码审查；精通 OWASP Top 10 与 Solidity 安全。",
+      "link": "https://jobs.lever.co/OpenSea/42274b7b-e5bc-45ca-9cc7-f5af3c08f4c0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "opensea||senior-application-security-engineer",
+      "keywords": [
+        "Solidity"
+      ],
+      "duties": [
+        "安全/审计",
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "OpenSea",
+      "func": "design",
+      "category": "other",
+      "position": "Product Design Lead",
+      "level": "head",
+      "location": "Remote / US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "领导 NFT/Web3 产品设计；端到端 UX/UI 设计能力；具备面向 DeFi/NFT 用户的设计经验；负责设计语言体系建设。",
+      "link": "https://jobs.ashbyhq.com/OpenSea/23fe789d-79ff-4d20-8233-018d5cd3615f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "opensea||product-design-lead",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "设计/品牌"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Drift Protocol",
+      "func": "design",
+      "category": "defi",
+      "position": "UI/UX Designer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "$45,000–$90,000",
+      "salaryNum": 67500,
+      "requirements": "Solana 链上衍生品交易所核心产品设计；精通 Figma/Framer；将复杂 DeFi 概念转化为直观体验；具备 Web/Mobile 双端设计能力。",
+      "link": "https://jobs.solana.com/companies/drift-protocol/jobs/19109567-ui-ux-designer",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "drift-protocol||ui-ux-designer",
+      "keywords": [
+        "DeFi",
+        "Solana"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "设计/品牌"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Magic Eden",
+      "func": "data",
+      "category": "other",
+      "position": "Staff Data Scientist, Analytics",
+      "level": "senior",
+      "location": "Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$180,000–$220,000",
+      "salaryNum": 200000,
+      "requirements": "资深数据科学家；主导 NFT/Web3 交易平台某一业务板块的分析与策略；具备高级分析、ML 建模能力；向高管汇报产品与商业洞察。",
+      "link": "https://jobs.ashbyhq.com/magiceden/ad2953a4-3b63-4e0c-a889-5ac05e491086",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "magic-eden||staff-data-scientist-analytics",
+      "keywords": [
+        "Machine Learning"
+      ],
+      "duties": [
+        "数据分析"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Slingshot",
+      "func": "ga",
+      "category": "defi",
+      "position": "Compliance Associate, Crypto and Web3",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "加密/Web3 合规专员；支持去中心化交易聚合器合规建设；熟悉数字资产监管框架；无地域限制。",
+      "link": "https://cryptocurrencyjobs.co/operations/slingshot-compliance-associate-crypto-and-web3/",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "slingshot||compliance-associate-crypto-and-web3",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Animoca Brands",
+      "func": "eng",
+      "category": "other",
+      "position": "Web3 Engineer, Moca Network",
+      "level": "mid",
+      "location": "Remote / Hong Kong",
+      "region": [
+        "remote",
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "3+ 年全栈 Web3 开发；精通 EVM 智能合约与账户抽象（AA）；具备 LayerZero/Cosmos 跨链互操作经验；熟悉 React/Node.js。",
+      "link": "https://jobs.lever.co/animocabrands/0b5e62c5-801e-4348-9971-ebc29b11bd29",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "animoca-brands||web3-engineer-moca-network",
+      "keywords": [
+        "Node.js",
+        "React",
+        "Smart Contract",
+        "EVM",
+        "Validator/节点"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "多链/跨链"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Animoca Brands",
+      "func": "eng",
+      "category": "other",
+      "position": "Smart Contract Engineer",
+      "level": "senior",
+      "location": "Remote / Hong Kong",
+      "region": [
+        "remote",
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "5+ 年智能合约开发（Solidity/Rust）；熟悉 EVM 安全审计与漏洞挖掘；具备 AI/ML 工程实践经验加分；负责核心 dApp 合约设计与部署。",
+      "link": "https://jobs.lever.co/animocabrands/c024f238-5936-452b-9dcc-3468e6b30158",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "animoca-brands||smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Smart Contract",
+        "EVM",
+        "Machine Learning",
+        "AI",
+        "安全审计"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Pendle Finance",
+      "func": "product",
+      "category": "defi",
+      "position": "Product",
+      "level": "mid",
+      "location": "Hong Kong / Japan / Singapore",
+      "region": [
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "DeFi 固定收益与收益交易协议产品经理；深入理解 yield market 机制；具备链上数据分析与用户研究能力。",
+      "link": "https://wellfound.com/jobs/2855485-product",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "pendle-finance||product",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "数据分析",
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "DigiFinex",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "加密交易所支付产品经理；主导 P2P/B2P/B2B 支付方案研发；具备数字资产行业经验。",
+      "link": "https://hk.linkedin.com/jobs/view/product-manager-at-digifinex-global-4091729903",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "digifinex||product-manager",
+      "keywords": [],
+      "duties": [
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Uniswap Labs",
+      "func": "security",
+      "category": "defi",
+      "position": "Senior Application Security Engineer",
+      "level": "senior",
+      "location": "New York / Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "$230,000–$255,000",
+      "salaryNum": 242500,
+      "requirements": "塑造 Uniswap 产品安全体系；精通 DeFi 协议安全与智能合约审计；负责安全评估、代码审查与事件响应；NY 或美国远程。",
+      "link": "https://job-boards.greenhouse.io/uniswaplabs/jobs/4623355005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "uniswap-labs||senior-application-security-engineer",
+      "keywords": [
+        "Smart Contract",
+        "DeFi",
+        "安全审计"
+      ],
+      "duties": [
+        "故障/值班",
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Uniswap Labs",
+      "func": "ga",
+      "category": "defi",
+      "position": "Associate General Counsel",
+      "level": "senior",
+      "location": "New York / Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "Uniswap Labs 法律顾问；熟悉 DeFi/SEC 监管框架与商业合同；提供法律战略支持；纽约或美国远程。",
+      "link": "https://job-boards.greenhouse.io/uniswaplabs/jobs/4617176005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "uniswap-labs||associate-general-counsel",
+      "keywords": [
+        "DeFi"
+      ],
+      "duties": [
+        "合规风控"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Big Data Engineer, Web3 Data Platform",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Web3 数据平台大数据工程师；2+ 年 FinTech/Crypto 工程经验；负责链上数据基础设施建设与核心工程贡献。",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7512732003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||big-data-engineer-web3-data-platform",
+      "keywords": [],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "dYdX Foundation",
+      "func": "growth",
+      "category": "defi",
+      "position": "Marketing Lead",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "负责 dYdX 全渠道通信与内容战略；主导博客/社交/网站等内容创作；推动生态系统认知增长。",
+      "link": "https://job-boards.greenhouse.io/dydxfoundation/jobs/4591548101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "dydx-foundation||marketing-lead",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Smart Contract Engineer",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "4+ 年 Solidity 智能合约生产经验；深入理解 EVM 与 DeFi 协议架构；端到端负责从设计到部署的合约开发；具备安全优先思维。",
+      "link": "https://jobs.ashbyhq.com/polymarket/32a5d4bd-8f3a-42aa-9956-358d59a7eaec",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "EVM",
+        "DeFi"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
+    {
+      "company": "Polymarket",
+      "func": "ops",
+      "category": "defi",
+      "position": "Senior Platform Engineer",
+      "level": "senior",
+      "location": "Remote / New York",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 200000,
+      "requirements": "World-class 后端工程师；主导平台工程基础设施建设；确保百万日均交易量系统稳定性与可扩展性。",
+      "link": "https://jobs.ashbyhq.com/polymarket/09f1c1e6-1aff-46f3-8b7e-3fac77e2daf0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-platform-engineer",
+      "keywords": [],
+      "duties": [
+        "稳定性保障"
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
+    },
     {
       "company": "Bitget",
       "func": "bd",
@@ -57,7 +708,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -84,7 +736,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -120,7 +773,8 @@ window.WEB3_JOBS_DATA = {
         "节点运维",
         "协议/合约开发",
         "多链/跨链"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -150,7 +804,8 @@ window.WEB3_JOBS_DATA = {
         "社区运营",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -186,7 +841,8 @@ window.WEB3_JOBS_DATA = {
         "节点运维",
         "协议/合约开发",
         "多链/跨链"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -221,7 +877,8 @@ window.WEB3_JOBS_DATA = {
         "节点运维",
         "多链/跨链",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -248,7 +905,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -284,7 +942,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "节点运维"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -313,7 +972,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -340,7 +1000,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -367,7 +1028,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -394,7 +1056,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -423,7 +1086,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -457,7 +1121,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "节点运维",
         "协议/合约开发"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -485,7 +1150,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -520,7 +1186,8 @@ window.WEB3_JOBS_DATA = {
         "协议/合约开发",
         "多链/跨链",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -550,7 +1217,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -577,7 +1245,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -608,7 +1277,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -637,7 +1307,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -665,7 +1336,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -693,7 +1365,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -719,7 +1392,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -747,7 +1421,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -778,7 +1453,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -809,7 +1485,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -838,7 +1515,8 @@ window.WEB3_JOBS_DATA = {
         "多链/跨链",
         "安全/审计",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -868,7 +1546,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "产品规划",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -899,7 +1578,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -930,7 +1610,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "产品规划",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -958,7 +1639,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -989,7 +1671,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "合规风控",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1019,7 +1702,8 @@ window.WEB3_JOBS_DATA = {
         "社区运营",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1046,7 +1730,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1074,7 +1759,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1102,7 +1788,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1130,7 +1817,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1160,7 +1848,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1186,7 +1875,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1214,7 +1904,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1243,7 +1934,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1271,7 +1963,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1300,7 +1993,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1325,7 +2019,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "监控告警",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1354,7 +2049,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1390,7 +2086,8 @@ window.WEB3_JOBS_DATA = {
         "节点运维",
         "协议/合约开发",
         "多链/跨链"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1420,7 +2117,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1448,7 +2146,8 @@ window.WEB3_JOBS_DATA = {
         "商务拓展",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1479,7 +2178,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1510,7 +2210,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "设计/品牌",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1535,7 +2236,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "增长营销",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1565,7 +2267,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1593,7 +2296,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1624,7 +2328,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "合规风控",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1653,7 +2358,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -1679,7 +2385,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T00:16:06.174Z"
     },
     {
       "company": "Bitget",
@@ -19138,7 +19845,7 @@ window.WEB3_JOBS_DATA = {
       "requirements": "算法驱动的链上交易与市场数据产品；高级数据科学方法；内部业务分析支持。",
       "link": "https://job-boards.greenhouse.io/okx/jobs/6691995003",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-26",
+      "lastSeen": "2026-05-28",
       "id": "okx||senior-data-scientist-web3",
       "keywords": [],
       "duties": [
@@ -19251,7 +19958,7 @@ window.WEB3_JOBS_DATA = {
       "requirements": "Solidity/Rust/Go 智能合约安全审计；漏洞识别与修复建议；DeFi 安全威胁研究。",
       "link": "https://jobs.lever.co/binance/31a86987-81b3-4719-9d93-fc80bd5584a5",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-27",
+      "lastSeen": "2026-05-28",
       "id": "binance||blockchain-security-engineer-smart-contract-auditing",
       "keywords": [
         "Solidity",
@@ -19921,7 +20628,7 @@ window.WEB3_JOBS_DATA = {
       "requirements": "智能合约安全审计；自动化扫描工具开发；DeFi/链上安全分析。",
       "link": "https://jobs.lever.co/binance/6f64f1c8-2fdc-4231-8da3-631ebdf3ae2a",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-27",
+      "lastSeen": "2026-05-28",
       "id": "binance||smart-contract-auditor",
       "keywords": [
         "Smart Contract",
@@ -22851,7 +23558,34 @@ window.WEB3_JOBS_DATA = {
     },
     "Serotonin": {
       "intro": ""
+    },
+    "Celestia Labs": {
+      "intro": ""
+    },
+    "Hyperlane": {
+      "intro": ""
+    },
+    "OpenSea": {
+      "intro": ""
+    },
+    "Drift Protocol": {
+      "intro": ""
+    },
+    "Magic Eden": {
+      "intro": ""
+    },
+    "Slingshot": {
+      "intro": ""
+    },
+    "Pendle Finance": {
+      "intro": ""
+    },
+    "DigiFinex": {
+      "intro": ""
+    },
+    "dYdX Foundation": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-27T20:13:57.609Z"
+  "lastUpdatedAt": "2026-05-28T00:15:51.325Z"
 };
