@@ -28,6 +28,13 @@
     "count": 4
   },
   {
+    "company": "Ava Labs (Avalanche)",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "ava-labs",
+    "count": 4
+  },
+  {
     "company": "Backpack Exchange",
     "category": "exchange",
     "ats": "ashby",
@@ -40,6 +47,13 @@
     "ats": "greenhouse",
     "id": "bitgo",
     "count": 50
+  },
+  {
+    "company": "Blockworks",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "Blockworks",
+    "count": 3
   },
   {
     "company": "Bybit",
@@ -77,11 +91,25 @@
     "count": 117
   },
   {
+    "company": "Douro Labs (Pyth)",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "dourolabs.xyz",
+    "count": 6
+  },
+  {
     "company": "Dune Analytics",
     "category": "infra",
     "ats": "ashby",
     "id": "dune",
     "count": 2
+  },
+  {
+    "company": "Eclipse",
+    "category": "chain",
+    "ats": "greenhouse",
+    "id": "eclipse",
+    "count": 1
   },
   {
     "company": "FalconX",
@@ -147,11 +175,32 @@
     "count": 1
   },
   {
+    "company": "Kraken",
+    "category": "exchange",
+    "ats": "ashby",
+    "id": "kraken.com",
+    "count": 52
+  },
+  {
     "company": "Ledger",
     "category": "other",
     "ats": "ashby",
     "id": "ledger",
     "count": 12
+  },
+  {
+    "company": "LiFi",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "li.fi",
+    "count": 7
+  },
+  {
+    "company": "Magic Eden",
+    "category": "other",
+    "ats": "ashby",
+    "id": "magiceden",
+    "count": 5
   },
   {
     "company": "Monad Foundation",
@@ -196,6 +245,13 @@
     "count": 13
   },
   {
+    "company": "Polygon Labs",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "polygon-labs",
+    "count": 7
+  },
+  {
     "company": "Polymarket",
     "category": "defi",
     "ats": "ashby",
@@ -236,6 +292,13 @@
     "ats": "ashby",
     "id": "skymavis",
     "count": 6
+  },
+  {
+    "company": "Solana Foundation",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "Solana Foundation",
+    "count": 12
   },
   {
     "company": "TRM Labs",

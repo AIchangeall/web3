@@ -39,6 +39,11699 @@ window.WEB3_JOBS_DATA = {
   ],
   "jobs": [
     {
+      "company": "Crypto.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Trading Analytics Developer, Quantitative Trading",
+      "level": "mid",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Quant Trading team is responsible for trading and managing risks associated with different crypto products, includin",
+      "link": "https://jobs.lever.co/crypto/aeeaccaa-9d6a-4c02-aca6-75f6aee32677",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||trading-analytics-developer-quantitative-trading",
+      "keywords": [
+        "Python",
+        "DeFi",
+        "Kubernetes",
+        "AWS",
+        "CI/CD",
+        "Grafana",
+        "Linux",
+        "Kafka"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Trading Analytics Developer",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Quant Trading team is responsible for trading and managing risks associated with different crypto products, includin",
+      "link": "https://jobs.lever.co/crypto/bea50fc4-6500-4217-8704-ddb1ffd01dce",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||trading-analytics-developer",
+      "keywords": [
+        "Python",
+        "C++",
+        "Wallet",
+        "Kubernetes",
+        "AWS",
+        "Prometheus",
+        "Grafana",
+        "Linux"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Social Media Manager",
+      "level": "mid",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Social Media Manager will be the driving force behind Crypto.com’s digital presence and community engagement. You wi",
+      "link": "https://jobs.lever.co/crypto/ff3dc7ba-662e-4e49-82c2-e6143bb93712",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||social-media-manager",
+      "keywords": [
+        "AI",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Tax Analyst - Tax Compliance",
+      "level": "senior",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are seeking a high-caliber Senior Tax Analyst - Tax Compliance to handle the rapid expansion of the tax compliance fu",
+      "link": "https://jobs.lever.co/crypto/e8c8afcc-fcd6-4b23-9295-11d29308ad6a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-tax-analyst-tax-compliance",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Quant Trader",
+      "level": "senior",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Responsibilities：",
+      "link": "https://jobs.lever.co/crypto/54a8e468-f506-46cf-b37d-bea5ca8b9367",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-quant-trader",
+      "keywords": [
+        "Python"
+      ],
+      "duties": [
+        "监控告警",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Product Manager, Trading(Crypto.com App)",
+      "level": "senior",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Our Product Management team drives product initiatives from inception through execution, makes impacts and launches prod",
+      "link": "https://jobs.lever.co/crypto/9947f3a5-fd22-410e-9058-ff3ee9f36951",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-product-manager-trading-crypto-com-app",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "product",
+      "category": "exchange",
+      "position": "Senior Product Manager, Predictions (Exchange)",
+      "level": "senior",
+      "location": "London, United Kingdom",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Our Product Management team drives product initiatives from inception through execution, makes impacts and launches prod",
+      "link": "https://jobs.lever.co/crypto/75834c40-a57f-4720-9cda-8b54283c1e5e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-product-manager-predictions-exchange",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Senior Product Manager, AI Transformation",
+      "level": "senior",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Our Product Management team drives product initiatives from inception through execution, makes impacts and launches prod",
+      "link": "https://jobs.lever.co/crypto/cd599da5-0bd0-415f-8079-657f343d5732",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-product-manager-ai-transformation",
+      "keywords": [
+        "Wallet",
+        "SQL",
+        "Machine Learning",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Java Developer (Trading Platform), Canada",
+      "level": "senior",
+      "location": "Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Trading Infrastructure team is  building a high-performance, front-to-back Trading Platform that supports multi-asse",
+      "link": "https://jobs.lever.co/crypto/43eede3a-794f-40a2-8c7b-5269f09e022e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-java-developer-trading-platform-canada",
+      "keywords": [
+        "Python",
+        "React",
+        "Wallet",
+        "Kubernetes",
+        "CI/CD",
+        "可观测性",
+        "ClickHouse",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Java Developer (Trading Platform)",
+      "level": "senior",
+      "location": "Taipei, Taiwan",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Trading Infrastructure team is  building a high-performance, front-to-back Trading Platform that supports multi-asse",
+      "link": "https://jobs.lever.co/crypto/edb37fe1-2540-4bf3-a848-e19f7adec16b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-java-developer-trading-platform",
+      "keywords": [
+        "Python",
+        "React",
+        "Wallet",
+        "Kubernetes",
+        "CI/CD",
+        "可观测性",
+        "ClickHouse",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Senior Growth Manager, Paid Search",
+      "level": "senior",
+      "location": "Berlin, Germany",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Are you an ambitious hands-on Paid Search specialist? Then we have an excellent opportunity for you!",
+      "link": "https://jobs.lever.co/crypto/fd356ff3-1e52-430f-8f59-841ddd3152d3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-growth-manager-paid-search",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Senior Finance Associate",
+      "level": "senior",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The F&A team comprises multiple functions from Financials Control & Business Performance Management, Procurement, Digita",
+      "link": "https://jobs.lever.co/crypto/12273ac8-2253-42be-bb96-1d36cfc1a1e3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-finance-associate",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Senior DevOps Engineer (Trading Platform)",
+      "level": "senior",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Trading Infrastructure team is  building a high-performance, front-to-back Trading Platform that supports multi-asse",
+      "link": "https://jobs.lever.co/crypto/f04dc470-ce53-4220-bf14-7edbfbdef1d0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-devops-engineer-trading-platform",
+      "keywords": [
+        "Python",
+        "React",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "Prometheus"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Corporate Secretary Officer, Singapore",
+      "level": "senior",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Legal team provides legal and regulatory advice to ensure that all CDC products and services are compliant per local",
+      "link": "https://jobs.lever.co/crypto/34d6dba5-b192-4fa5-bf62-f39b65002296",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-corporate-secretary-officer-singapore",
+      "keywords": [
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Corporate Secretary Officer, Hong Kong",
+      "level": "senior",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Legal team provides legal and regulatory advice to ensure that all CDC products and services are compliant per local",
+      "link": "https://jobs.lever.co/crypto/55f127b2-4520-48a8-be85-d6d465e5728f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||senior-corporate-secretary-officer-hong-kong",
+      "keywords": [
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "security",
+      "category": "exchange",
+      "position": "Security IT Support Engineer",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Crypto.com, our dedication to user security is led by our highly experienced Security Team. Comprising an internation",
+      "link": "https://jobs.lever.co/crypto/cc0d9f1c-cc9b-47ab-ba9b-b0ea9326a1dd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||security-it-support-engineer",
+      "keywords": [
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "部署发布",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "security",
+      "category": "exchange",
+      "position": "Security Engineer, Security Operation & Vulnerability Monitoring",
+      "level": "mid",
+      "location": "Sofia, Bulgaria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are looking for an intermediate level security specialist to join our Global Cybersecurity Services Team. As part of ",
+      "link": "https://jobs.lever.co/crypto/016f3af9-236f-40ba-b982-613399c77a18",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||security-engineer-security-operation-vulnerability-monitoring",
+      "keywords": [
+        "AWS",
+        "GCP",
+        "On-call",
+        "AI"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Regulatory Compliance Manager, Malta",
+      "level": "mid",
+      "location": "Saint Julian's, Malta",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Our Local Programs and Regulatory Compliance team is responsible for ensuring compliance with local laws and regulations",
+      "link": "https://jobs.lever.co/crypto/76154a76-bdf2-462c-a5c6-333b224d5c80",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||regulatory-compliance-manager-malta",
+      "keywords": [
+        "Wallet",
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "data",
+      "category": "exchange",
+      "position": "Quantitative Analyst (Options)",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "The Team",
+      "link": "https://jobs.lever.co/crypto/76999c28-d1ab-4d84-955f-18de755ba66c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||quantitative-analyst-options",
+      "keywords": [
+        "Python",
+        "C++"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Crypto.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Quant Trader (VP)",
+      "level": "head",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are looking for mid-to-senior quantitative traders to join our multi-strategy desk and help drive the next stage of g",
+      "link": "https://jobs.lever.co/crypto/697873d6-1a47-4f92-a764-36d701898064",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "crypto-com||quant-trader-vp",
+      "keywords": [
+        "Python",
+        "C++",
+        "Wallet",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Global Senior Treasury",
+      "level": "senior",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/8dcbcd10-f9bc-4cd9-abcf-caaa183251b0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-senior-treasury",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "design",
+      "category": "exchange",
+      "position": "Global Product Solution Design Leader （UI/UX）",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About the Role",
+      "link": "https://jobs.lever.co/coins/2202585e-7b80-403e-8f4d-69fc6ae3af05",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-product-solution-design-leader-ui-ux",
+      "keywords": [
+        "JavaScript",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Global Licensing Senior Associate",
+      "level": "senior",
+      "location": "Shanghai, China",
+      "region": [
+        "cn"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About Coins.ph",
+      "link": "https://jobs.lever.co/coins/2fcecb1e-8cc3-4f2f-b952-1fcbd122f401",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-licensing-senior-associate",
+      "keywords": [
+        "Wallet",
+        "AML/KYC"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "产品规划",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Global Head of Marketing",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Responsibilities：",
+      "link": "https://jobs.lever.co/coins/44cd6290-ccfb-4163-8b2d-74b566026262",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-head-of-marketing",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "design",
+      "category": "exchange",
+      "position": "Global Director, Product Solution Design",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About the Role",
+      "link": "https://jobs.lever.co/coins/dd014240-82b4-4c35-8cde-2b9a2a6fb205",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-director-product-solution-design",
+      "keywords": [
+        "JavaScript",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Global Digital Marketing Leader",
+      "level": "mid",
+      "location": "Shanghai, China",
+      "region": [
+        "cn"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are seeking a Digital Marketing Leader to own and drive the digital marketing strategy for Coins.ph and Coins.xyz ’s ",
+      "link": "https://jobs.lever.co/coins/f1684176-f6a5-4b9c-85ed-87782e08e66f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||global-digital-marketing-leader",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "数据分析",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "ga",
+      "category": "exchange",
+      "position": "General Opportunity – Join Coins.ph Talent Network",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/de3da238-92b4-4d4c-8274-d093b44dd1f3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||general-opportunity-join-coins-ph-talent-network",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Frontend Senior Manager",
+      "level": "senior",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/299909f8-577c-4e1d-820f-9cbde143dc33",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||frontend-senior-manager",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "CI/CD",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Fraud Risk Expert/Manager",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/c23327d7-411e-44b7-8f25-3790558ab7ff",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||fraud-risk-expert-manager",
+      "keywords": [
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "data",
+      "category": "exchange",
+      "position": "Exchange Operations Analyst (PH)",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/8cfcd647-f3f7-4dad-9130-3a7221bd19e5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||exchange-operations-analyst-ph",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Director, Risk Strategy (Fraud & AML | Fiat + Crypto)",
+      "level": "head",
+      "location": "Shanghai, China",
+      "region": [
+        "cn"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are looking for an experienced Risk Strategy Leader to lead the design and execution of our end-to-end risk control f",
+      "link": "https://jobs.lever.co/coins/1096d07a-86c5-460d-a800-d3f155da0d38",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||director-risk-strategy-fraud-aml-fiat-crypto",
+      "keywords": [
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "出入金"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "自动化",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "security",
+      "category": "exchange",
+      "position": "Director of Cybersecurity & Incident Response (Brazil)",
+      "level": "head",
+      "location": "Vila Velha, Espírito Santo",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "COINS.XYZ Digital Markets is the Brazilian arm of the COINS.PH group, a leading licensed Virtual Asset Service Provider ",
+      "link": "https://jobs.lever.co/coins/4568861f-1700-4877-a751-73d3e3a08c52",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||director-of-cybersecurity-incident-response-brazil",
+      "keywords": [
+        "Wallet",
+        "AWS",
+        "GCP",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Director – Brazil (Financial Services / Virtual Assets)",
+      "level": "head",
+      "location": "Vila Velha, Espírito Santo",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/c18b44cf-01bf-400b-b747-123d358a82dc",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||director-brazil-financial-services-virtual-assets",
+      "keywords": [
+        "AML/KYC",
+        "合规",
+        "出入金"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "ops",
+      "category": "exchange",
+      "position": "DevOps Engineer",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/15f947ae-3252-48b2-83c8-3c2efbead416",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||devops-engineer",
+      "keywords": [
+        "Python",
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "可观测性",
+        "Kafka",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Deputy Chief Compliance Officer",
+      "level": "head",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/d53b75bc-41ab-45dc-9c08-65b9ce2f6f5a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||deputy-chief-compliance-officer",
+      "keywords": [
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Protection Officer (DPO) – Coins EU",
+      "level": "mid",
+      "location": "Warsaw, Poland",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About Coins EU",
+      "link": "https://jobs.lever.co/coins/fdcafbbb-c7d0-4897-b52f-6ae1580d562c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||data-protection-officer-dpo-coins-eu",
+      "keywords": [
+        "AWS",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Leader",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/421d24d7-b27c-4bd5-87be-bfb6b5ae97a1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||data-leader",
+      "keywords": [
+        "Python",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Kafka",
+        "Flink",
+        "Spark",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Risk Operations Associate",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/eb6e82f9-23f7-4ad9-91db-a7e3c643c5aa",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||customer-risk-operations-associate",
+      "keywords": [
+        "Wallet",
+        "SLO/SLA",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Crypto Settlement Associate",
+      "level": "mid",
+      "location": "Taguig City, Metro Manila, Philippines",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Join the Pioneer Crypto Brand in the Philippines!",
+      "link": "https://jobs.lever.co/coins/0209b992-57fe-4298-9bda-0e1bd15d0469",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||crypto-settlement-associate",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Coins.ph",
+      "func": "product",
+      "category": "exchange",
+      "position": "Cross-border Payments Senior Product Manager",
+      "level": "senior",
+      "location": "Vila Velha, Espírito Santo",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About Coins.ph",
+      "link": "https://jobs.lever.co/coins/2e3c25d7-2897-4baf-a9b6-942ed470e5f6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "coins-ph||cross-border-payments-senior-product-manager",
+      "keywords": [
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "product",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Product Manager - Search/Trading Insights",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/49ab22b5-5099-4601-aed9-832136b5d55c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-product-manager-search-trading-insights",
+      "keywords": [
+        "SQL",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Product Compliance",
+      "level": "mid",
+      "location": "Europe",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/18713973-9586-4088-b48f-fdf4256c3cb1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-product-compliance",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - PR (APAC)",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/860f5cd4-d415-4e1e-b10c-1a8854e75813",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-pr-apac",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Performance Engineer",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/12fb8c98-299b-4704-b1ce-d1a2c5325f64",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-performance-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "Machine Learning",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Marketing Uzbekistan",
+      "level": "mid",
+      "location": "Uzbekistan, Tashkent",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/f8d05a49-683b-4fe5-8cce-180cdff3e1a0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-marketing-uzbekistan",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Marketing (Baltics)",
+      "level": "mid",
+      "location": "Riga, Latvia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/caa85420-1626-4f05-b202-4cb5cfaa6590",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-marketing-baltics",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - LLM Model Training & Data Processing",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/e94f5ff8-307c-4737-95cc-ebe5dee72fee",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-llm-model-training-data-processing",
+      "keywords": [
+        "Machine Learning",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Institutional Business Development",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/824f5080-a30f-4dd0-807a-3d2091d62af1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-institutional-business-development",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Infrastructure Security (Python/ LLM)",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/f7b23016-a6a3-4c02-a2b0-3553c7a5f3a1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-infrastructure-security-python-llm",
+      "keywords": [
+        "Go",
+        "Python",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "Linux",
+        "Machine Learning",
+        "AI"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "design",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Graphic Design (EU)",
+      "level": "mid",
+      "location": "Southern Europe",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/3785f1c4-3d3a-494a-9d0b-51e68f84ac08",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-graphic-design-eu",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Frontend Engineer (for current students )",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/f539d94a-a8ce-45a4-9cf4-2a84b8e978cd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-frontend-engineer-for-current-students",
+      "keywords": [
+        "Node.js",
+        "React",
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - DevOps Engineer (AI)",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/efeb548d-b3fd-44b0-b802-d4c983dbc244",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-devops-engineer-ai",
+      "keywords": [
+        "Go",
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "AI"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Data Scientist (LLM & Trading)",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/da139395-7bd1-4ede-a277-742bacecadcd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-data-scientist-llm-trading",
+      "keywords": [
+        "Go",
+        "Python",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Data Scientist (CV, Agentic AI)",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/6b9ff843-c2e2-4e38-84e8-1f397f656cd8",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-data-scientist-cv-agentic-ai",
+      "keywords": [
+        "Python",
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "data",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Data Scientist (AI/LLM)",
+      "level": "mid",
+      "location": "Taiwan, Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/96e8326e-074f-4d1f-89c4-8ed1a6f96014",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-data-scientist-ai-llm",
+      "keywords": [
+        "Python",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "数据分析",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Creator Partnerships",
+      "level": "mid",
+      "location": "CIS Region",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/4685269e-f7e7-4d01-b69d-946190845142",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-creator-partnerships",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Content Specialist",
+      "level": "mid",
+      "location": "UAE, Dubai",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/3d4da73f-40e7-4459-8f96-5762e8e0064e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-content-specialist",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Blockchain Security Researcher",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/c9e55cf8-845d-40c0-84a1-b061242657c6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-blockchain-security-researcher",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Python",
+        "JavaScript",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "Wallet"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "协议/合约开发",
+        "安全/审计",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "security",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Blockchain / Smart Contract Security",
+      "level": "mid",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/91a89fed-30c5-49bb-9f29-602a5c14e748",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-blockchain-smart-contract-security",
+      "keywords": [
+        "Solidity",
+        "Python",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "L2/Rollup",
+        "Wallet",
+        "安全审计"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "自动化",
+        "协议/合约开发",
+        "安全/审计",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Binance",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Binance Accelerator Program - Binance TH Academy, Gulf Binance",
+      "level": "mid",
+      "location": "Thailand, Bangkok",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume an",
+      "link": "https://jobs.lever.co/binance/9e46af2d-e8d3-44f4-81a4-995a56ea3395",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "binance||binance-accelerator-program-binance-th-academy-gulf-binance",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "安全/审计",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "ga",
+      "category": "infra",
+      "position": "Senior Technical Recruiter",
+      "level": "senior",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/33f75799-ae55-4abf-a993-40312aaee766",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-technical-recruiter",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Customer Success Manager",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/e4e7ecb6-434c-41d7-8a6c-3e2e3d04188c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||customer-success-manager",
+      "keywords": [
+        "On-call",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "bd",
+      "category": "infra",
+      "position": "Senior Sales Recruiter",
+      "level": "senior",
+      "location": "North America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/73255d78-7e06-4e53-b959-dc5fde29d598",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-sales-recruiter",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Staff Software Engineer, Agent Engineering - US Remote",
+      "level": "senior",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/eb560943-3adb-4839-bf64-4cbdeee9ae57",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||staff-software-engineer-agent-engineering-us-remote",
+      "keywords": [
+        "Python",
+        "可观测性",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Account Director,  Financial Institutions",
+      "level": "head",
+      "location": "North America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/79826f77-893b-4258-b547-2cc9146fdebe",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||account-director-financial-institutions",
+      "keywords": [
+        "Go",
+        "React",
+        "AI",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "Engineering Manager, AI Product Engineering - US Remote",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/adff00fa-00ab-4540-ab58-ba1ea017fff4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||engineering-manager-ai-product-engineering-us-remote",
+      "keywords": [
+        "可观测性",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Events Manager APAC",
+      "level": "mid",
+      "location": "APAC",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/651f9b86-b6fa-4d74-b659-f97240804866",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||events-manager-apac",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "ops",
+      "category": "infra",
+      "position": "Machine Learning Infrastructure Engineer",
+      "level": "mid",
+      "location": "San Francisco, CA",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/f902b428-d2d4-4c68-a087-48a4ee5d3ba6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||machine-learning-infrastructure-engineer",
+      "keywords": [
+        "React",
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "可观测性",
+        "Machine Learning",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Head of Communications",
+      "level": "head",
+      "location": "North America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/faae82aa-114e-4c07-92d8-88b1795fb5ee",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||head-of-communications",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "Senior Software Engineer, Data Product",
+      "level": "senior",
+      "location": "South America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/f50ac5b5-d199-4e5b-9dae-7ce9a44dea1e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-software-engineer-data-product",
+      "keywords": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Kafka",
+        "Flink",
+        "Spark",
+        "SQL"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Software Engineer, Full Stack | Product Engineering",
+      "level": "senior",
+      "location": "South America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/92d3b3fe-284b-4d68-890f-b5b26b64bd98",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-software-engineer-full-stack-product-engineering",
+      "keywords": [
+        "Node.js",
+        "Validator/节点",
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Software Engineer, Backend | Product Engineering",
+      "level": "senior",
+      "location": "South America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/ecc944bf-7cb5-48e7-be97-0d3cb45a92e9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-software-engineer-backend-product-engineering",
+      "keywords": [
+        "Node.js",
+        "Validator/节点",
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "Senior AI Engineer (AI Automation) - India",
+      "level": "senior",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/4f553e59-44b1-41f6-b77e-87fb669c9638",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-ai-engineer-ai-automation-india",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "可观测性",
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "Senior AI Engineer (AI Automation) - LATAM ",
+      "level": "senior",
+      "location": "South America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/02c35d2c-d123-4eac-aef6-0071f43d7f27",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||senior-ai-engineer-ai-automation-latam",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "可观测性",
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "bd",
+      "category": "infra",
+      "position": "Contract Sales Recruiter",
+      "level": "mid",
+      "location": "North America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/bd9d4318-0392-42df-a2d4-aae4f9380bf0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||contract-sales-recruiter",
+      "keywords": [
+        "Go",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "ga",
+      "category": "infra",
+      "position": "Contract Business Recruiter",
+      "level": "mid",
+      "location": "North America",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/70d863e8-99a2-4026-b4ff-5700a1889cb9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||contract-business-recruiter",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "data",
+      "category": "infra",
+      "position": "AI Engineering Manager, Product Engineering - US Remote",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/b8924cbb-3581-458c-bfd0-9f5bcb633474",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||ai-engineering-manager-product-engineering-us-remote",
+      "keywords": [
+        "可观测性",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Agent Engineer - US Remote",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/ae3a0f96-50a8-480c-ba63-8ef989fbc3c9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||agent-engineer-us-remote",
+      "keywords": [
+        "Python",
+        "可观测性",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Global Investigator - APAC ",
+      "level": "mid",
+      "location": "APAC",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/2e45c7a8-c7da-4b55-bfca-6e2a603fb726",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||global-investigator-apac",
+      "keywords": [
+        "React",
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "func": "eng",
+      "category": "infra",
+      "position": "Deployment Strategist, Public Sector",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILD A SAFER WORLD.",
+      "link": "https://jobs.ashbyhq.com/trm-labs/34ec2f41-d2d1-4197-a97a-f833b9898453",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trm-labs||deployment-strategist-public-sector",
+      "keywords": [
+        "On-call",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Agent, Customer Service (Italian Speaker)",
+      "level": "senior",
+      "location": "Budapest, Budapest, Hungary",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7739015003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||senior-agent-customer-service-italian-speaker",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Agent, Customer Service (German Speaker)",
+      "level": "senior",
+      "location": "Budapest, Budapest, Hungary",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"RpoEdRXrWoavx2xJ5CPu6mmysBc\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6255696003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||senior-agent-customer-service-german-speaker",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Senior Affiliate Business Development Manager, Western Europe",
+      "level": "senior",
+      "location": "Netherlands (Remote)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"UW0sdA4fboOvwLx6hRVlAZ7tg6c\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7632854003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||senior-affiliate-business-development-manager-western-europe",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Administrative Manager",
+      "level": "senior",
+      "location": "Kuala Lumpur, Malaysia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7668609003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||senior-administrative-manager",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "security",
+      "category": "exchange",
+      "position": "Security Engineer (Data & Endpoint Security)",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-Cfb8dvi9voxFkWxhNcmuJX50sZb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7675035003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||security-engineer-data-endpoint-security",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "故障/值班",
+        "安全/审计",
+        "数据分析",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Relationship Manager, Greater China",
+      "level": "mid",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7668535003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||relationship-manager-greater-china",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Relationship Manager",
+      "level": "mid",
+      "location": "Remote Roles - APAC",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7541274003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||relationship-manager",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Quantitative Trader, D1 ",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7724455003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||quantitative-trader-d1",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Quantitative Trader, Cash OTC",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7714574003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||quantitative-trader-cash-otc",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Quant Developer (Rust), Liquidity Platform, Delta One Systematic Trading",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"AEW3d0Y2noLuIcxROuFubTLpsZd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7673443003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||quant-developer-rust-liquidity-platform-delta-one-systematic-trading",
+      "keywords": [
+        "Rust",
+        "Wallet"
+      ],
+      "duties": [
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Quant Developer (Rust), Liquidity Platform, Delta One",
+      "level": "mid",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-Cfb8dvi9voxFkWxhNcmuJX50sZb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7673432003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||quant-developer-rust-liquidity-platform-delta-one",
+      "keywords": [
+        "Rust",
+        "DeFi",
+        "Wallet"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Product & Strategy Operations Manager",
+      "level": "mid",
+      "location": "Sydney, New South Wales, Australia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"AEW3d0Y2noLuIcxROuFubTLpsZd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7734069003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-strategy-operations-manager",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager / Product Director, Copy Trading / Trading Bot",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxus3bYvV5DS6icDHnquWbEcNb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6679538003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-product-director-copy-trading-trading-bot",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Product Manager / Director, Trading Infrastructure",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7739031003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-trading-infrastructure",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "团队管理",
+        "产品规划",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager / Director, Institutional Product",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7747640003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-institutional-product",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager / Director, Institutional Growth",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7738698003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-institutional-growth",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager / Director, Global Payment Partnerships",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxus3bYvV5DS6icDHnquWbEcNb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7527252003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-global-payment-partnerships",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "合规",
+        "出入金"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Product Manager / Director, Fiat",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxus3bYvV5DS6icDHnquWbEcNb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7552817003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-fiat",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "合规",
+        "出入金"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Product Manager / Director, AI Trading",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7712844003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-manager-director-ai-trading",
+      "keywords": [
+        "Wallet",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "自动化",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Product Director, Trust & Experience",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"DO5kdcjnjoJTO3xqpcxuRvxLsfd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6576979003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-director-trust-experience",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "security",
+      "category": "exchange",
+      "position": "IT Security Engineer (Jakarta Based)",
+      "level": "mid",
+      "location": "Jakarta",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/fc79c123-f7a9-46d3-8d03-f1d38189e143",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||it-security-engineer-jakarta-based",
+      "keywords": [
+        "Wallet",
+        "AWS",
+        "GCP",
+        "Linux",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "IT End User Computing Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/665b08af-7c3f-4e79-97c2-473614715078",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||it-end-user-computing-manager",
+      "keywords": [
+        "AWS",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "security",
+      "category": "exchange",
+      "position": "Internal Audit Specialist (Jakarta Based)",
+      "level": "mid",
+      "location": "Jakarta",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/6a374f96-664c-41b6-8f2a-580be9ef3c97",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||internal-audit-specialist-jakarta-based",
+      "keywords": [
+        "Wallet",
+        "安全审计",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "security",
+      "category": "exchange",
+      "position": "Internal Audit Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/2f3c6398-6bc0-43d4-8149-86d21c1f424a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||internal-audit-manager",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Head of Operations UAE",
+      "level": "head",
+      "location": "Dubai",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BTSE Group is a global leader in fintech and blockchain technology, anchored by three core business pillars: Exchange, P",
+      "link": "https://jobs.lever.co/BTSE/210f5cb6-ccc1-4185-9b2c-19cac1333717",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||head-of-operations-uae",
+      "keywords": [
+        "Wallet",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Head of Compliance | MLRO",
+      "level": "head",
+      "location": "Dubai",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BTSE Group is a global leader in fintech and blockchain technology, anchored by three core business pillars: Exchange, P",
+      "link": "https://jobs.lever.co/BTSE/174b32e3-8dfc-40ee-bd4e-c02db6581c49",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||head-of-compliance-mlro",
+      "keywords": [
+        "Wallet",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Executive Assistant / Personal Assistant",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/3219c8af-e0e7-44a0-a364-33a7c62c2cfc",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||executive-assistant-personal-assistant",
+      "keywords": [],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Scientist/Analytics Engineer",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/62c157c5-ee2a-4ba3-999c-c5fa76a7808f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||data-scientist-analytics-engineer",
+      "keywords": [
+        "Python",
+        "Spark",
+        "SQL"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "数据分析",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Engineer",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/90fa158f-7a38-41a2-996c-e7249abb2710",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||data-engineer",
+      "keywords": [
+        "Python",
+        "Wallet",
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Success Operations Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/c7c5a062-8e5f-40dd-b648-22998ca3914a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||customer-success-operations-manager",
+      "keywords": [
+        "Python",
+        "SQL"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Success Account Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/c7ddb2d9-c85f-44db-ae4c-079837d9d60d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||customer-success-account-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "产品规划",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Community Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/ad2b3b6f-2f9f-40aa-b5b2-f4ad7b88c6a5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||community-manager",
+      "keywords": [
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Cloud Solution Architect - Infrastructure",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/0dc1d093-723c-4814-8a40-8d9c5c2656cd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||cloud-solution-architect-infrastructure",
+      "keywords": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "Prometheus"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Business Strategy Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE",
+      "link": "https://jobs.lever.co/BTSE/d89ffc20-1795-4a5c-8fd9-7203860b2482",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||business-strategy-manager",
+      "keywords": [
+        "SQL",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Business Operations Lead",
+      "level": "senior",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/20f78ba3-80b7-4627-9535-e447627fd6ad",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||business-operations-lead",
+      "keywords": [
+        "Go",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Business and People Strategy Manager",
+      "level": "mid",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE",
+      "link": "https://jobs.lever.co/BTSE/8c18f67e-c7bd-4349-bef4-614d663117da",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||business-and-people-strategy-manager",
+      "keywords": [
+        "安全审计",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "growth",
+      "category": "exchange",
+      "position": "B2B Marketing Manager",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About BTSE:",
+      "link": "https://jobs.lever.co/BTSE/b8a2e7f8-fbac-4322-9fc8-08169d51bdf4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||b2b-marketing-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Associate Director/Director, Settlement",
+      "level": "head",
+      "location": "Southeast Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BTSE Group is a leading global fintech and blockchain company that is committed to building innovative technology and in",
+      "link": "https://jobs.lever.co/BTSE/dbc9747f-c0db-4f07-b51e-5993f6d18fe4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||associate-director-director-settlement",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Associate Director/Director of User Operations",
+      "level": "head",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "彼特思方舟 is a specialized service provider dedicated to delivering a full spectrum of front-office and back-office support ",
+      "link": "https://jobs.lever.co/BTSE/da61d61c-f6a5-4745-876e-9bcee2d2b2d4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||associate-director-director-of-user-operations",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "数据分析",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BTSE",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Associate Director/Director of Exchange Operations",
+      "level": "head",
+      "location": "Taipei",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "彼特思方舟 is a specialized service provider dedicated to delivering a full spectrum of front-office and back-office support ",
+      "link": "https://jobs.lever.co/BTSE/dcb04f4e-6889-4108-8e27-ac8a392ffe01",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "btse||associate-director-director-of-exchange-operations",
+      "keywords": [
+        "AML/KYC",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Engineering Manager - Frontend - Pro",
+      "level": "senior",
+      "location": "Brazil",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/6555e5e5-58a1-4419-86c6-fc232b4ea641",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||senior-engineering-manager-frontend-pro",
+      "keywords": [
+        "Rust",
+        "TypeScript",
+        "Node.js",
+        "C++",
+        "React",
+        "Validator/节点",
+        "Wallet"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Software Engineer - C++ - Trading Technologies",
+      "level": "senior",
+      "location": "United Kingdom",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/6d6bb529-d52b-4879-8354-602cfbe92afd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||senior-software-engineer-c-trading-technologies",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "C++",
+        "Wallet",
+        "Linux",
+        "SQL"
+      ],
+      "duties": [
+        "稳定性保障",
+        "性能/容量",
+        "安全/审计",
+        "产品规划",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "growth",
+      "category": "exchange",
+      "position": "Senior Social Media Specialist - xstocks",
+      "level": "senior",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/328a2384-53a2-4e26-96b2-318350e4762a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||senior-social-media-specialist-xstocks",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发",
+        "安全/审计",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "License Operations & Strategy Manager",
+      "level": "mid",
+      "location": "Ireland",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/c3c8d6b8-dc05-4289-85ff-ef1f6c3a5468",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||license-operations-strategy-manager",
+      "keywords": [
+        "Wallet",
+        "SLO/SLA",
+        "AI",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Staff React Native Engineer - Pro",
+      "level": "senior",
+      "location": "United Kingdom",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/52ccad44-e0a6-4b15-8b2a-ca6a17a40d6b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||staff-react-native-engineer-pro",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Wallet",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "安全/审计",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Account Executive, Trading-as-a-Service (TaaS), Payward Services",
+      "level": "mid",
+      "location": "United Kingdom",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/e7480aaf-0a1b-4ed4-a047-37cc5b3b88a3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||account-executive-trading-as-a-service-taas-payward-services",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "合规"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控",
+        "产品规划",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Senior AI Compute Infrastructure Engineer",
+      "level": "senior",
+      "location": "United Kingdom",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/055adaf0-a15b-40f3-89ab-dc5ab4fa719e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||senior-ai-compute-infrastructure-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "C++",
+        "Validator/节点",
+        "Wallet",
+        "Kubernetes",
+        "AWS"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Network Engineer ",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/7d289f6a-e40b-4fee-9c73-dc22cc5027d7",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||network-engineer",
+      "keywords": [
+        "Wallet",
+        "Terraform",
+        "AWS"
+      ],
+      "duties": [
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "security",
+      "category": "exchange",
+      "position": "SOX Auditor - IT Controls Manager",
+      "level": "mid",
+      "location": "Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/56c2aa8a-8a6a-4700-ad75-eeb941b43613",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||sox-auditor-it-controls-manager",
+      "keywords": [
+        "Wallet",
+        "AWS",
+        "GCP",
+        "CI/CD",
+        "AI",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Kraken",
+      "func": "security",
+      "category": "exchange",
+      "position": "Staff Security Architect",
+      "level": "senior",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "BUILDING THE FUTURE OF CRYPTO",
+      "link": "https://jobs.ashbyhq.com/kraken.com/2bad131b-78ad-4266-8c18-7b035a11937d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "kraken||staff-security-architect",
+      "keywords": [
+        "Rust",
+        "Wallet",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "安全/审计",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Stablecoin Solutions, APAC Regional Lead",
+      "level": "senior",
+      "location": "Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/09b2b0d1-fb52-431c-b617-2fb74b595b1d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-stablecoin-solutions-apac-regional-lead",
+      "keywords": [
+        "Go",
+        "Staking",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Risk, Enterprise Risk Management",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/4b5e9435-f3ea-4f4b-944c-5ba23b135157",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-risk-enterprise-risk-management",
+      "keywords": [
+        "Staking",
+        "安全审计"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "bd",
+      "category": "other",
+      "position": "Member of Revenue Strategy & Operations, Salesforce Architect",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/c3a1cf30-bae1-47ff-8f67-545f22f8f09f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-revenue-strategy-operations-salesforce-architect",
+      "keywords": [
+        "Go",
+        "Staking",
+        "CI/CD",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Member of Product, Transparency (Financial Crimes Compliance)",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/4e1296e5-9ac1-4723-bcc8-1e277c993ff8",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-transparency-financial-crimes-compliance",
+      "keywords": [
+        "Go",
+        "Staking",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Stablecoins Solutions",
+      "level": "mid",
+      "location": "Miami, Florida",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/2241b52b-da64-4626-9abc-c8ff5fb58009",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-stablecoins-solutions",
+      "keywords": [
+        "Go",
+        "Python",
+        "Validator/节点",
+        "Staking",
+        "SQL",
+        "合规",
+        "出入金"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Stablecoins - SWIFT Integration",
+      "level": "mid",
+      "location": "Miami, Florida",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/6abc50f6-f8ce-44c1-b0fe-b2ba62a192b1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-stablecoins-swift-integration",
+      "keywords": [
+        "Staking",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "多链/跨链",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "security",
+      "category": "other",
+      "position": "Member of Product, Security",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/43703182-aa1f-4db4-a13a-1e890ae2fae9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-security",
+      "keywords": [
+        "Go",
+        "Staking",
+        "Wallet",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "data",
+      "category": "other",
+      "position": "Member of Product, Data Platform",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/0e730f61-a2e4-4152-8277-3f6383cc69a6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-data-platform",
+      "keywords": [
+        "Go",
+        "Staking",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Custody",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/4b3e67d2-fe2f-4588-9c9e-effd90291eef",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-custody",
+      "keywords": [
+        "Staking",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Client Solutions & Enablement",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/8cb6810f-c1dc-4158-a5d7-13f9e6f203d7",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-client-solutions-enablement",
+      "keywords": [
+        "Go",
+        "Staking",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "安全/审计",
+        "产品规划",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Blockchain Specialist",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/7e4a7ba6-3956-4176-8212-f794b607784b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-blockchain-specialist",
+      "keywords": [
+        "Staking"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "产品规划",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Blockchain Researcher",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/51411fe3-d7be-417c-9e2b-770cb9235409",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-blockchain-researcher",
+      "keywords": [
+        "DeFi",
+        "L2/Rollup",
+        "Staking",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Product, Blockchain",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/1fe740a8-334a-42d1-b8d2-4e142728046c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-blockchain",
+      "keywords": [
+        "Staking",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "growth",
+      "category": "other",
+      "position": "Member of Product Marketing, Stablecoins",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/026fb354-1d5f-49dc-9ea8-1602e6ace52e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-marketing-stablecoins",
+      "keywords": [
+        "Go",
+        "Staking",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "growth",
+      "category": "other",
+      "position": "Member of Product Marketing, Content",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/9e73887f-20a2-4181-a27c-e185ddbcf025",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-marketing-content",
+      "keywords": [
+        "Go",
+        "Staking",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "design",
+      "category": "other",
+      "position": "Member of Product Design, Digital Assets",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/58e201bc-8e06-4eff-9ec1-c7ea8aa0434c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-product-design-digital-assets",
+      "keywords": [
+        "Staking",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "安全/审计",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Member of Legal, Senior Counsel, Trading",
+      "level": "senior",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/f3b2371d-d1ca-4772-98bd-aa12cb82c6f4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-legal-senior-counsel-trading",
+      "keywords": [
+        "Staking",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "security",
+      "category": "other",
+      "position": "Member of Internal Audit",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/88177837-f1d7-4792-80d2-b047e5e0a9c1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-internal-audit",
+      "keywords": [
+        "Python",
+        "Staking",
+        "AWS",
+        "GCP",
+        "SQL",
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Global Risk Management, Quantitative Financial Risk",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/8804f457-a9a2-49b6-8ead-76d3f4ae98e5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-global-risk-management-quantitative-financial-risk",
+      "keywords": [
+        "Python",
+        "Staking",
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Anchorage Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Member of Global Risk Management, Financial Risk",
+      "level": "mid",
+      "location": "Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "At Anchorage Digital, we are building the world’s most advanced digital asset platform for institutions to participate i",
+      "link": "https://jobs.lever.co/anchorage/c487ec76-b911-471b-96ea-1224f6bef269",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "anchorage-digital||member-of-global-risk-management-financial-risk",
+      "keywords": [
+        "Staking",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Product Director (Pay & Card)",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"CM4YdssQqo9f9nxv314lAEcKgOe\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7641861003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-director-pay-card",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Product Director, Compliance (Transaction Monitoring & Case Management)",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"DO5kdcjnjoJTO3xqpcxuRvxLsfd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7702611003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-director-compliance-transaction-monitoring-case-management",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Product Director, Compliance",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"DO5kdcjnjoJTO3xqpcxuRvxLsfd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6481233003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-director-compliance",
+      "keywords": [
+        "Wallet",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "design",
+      "category": "exchange",
+      "position": "Product Design Manager",
+      "level": "mid",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"JAF7dFJcWoUusRx7RKkuM14BsYc\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6246528003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-design-manager",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "design",
+      "category": "exchange",
+      "position": "Product Design Director, Orbit",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7667755003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||product-design-director-orbit",
+      "keywords": [
+        "Wallet",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "设计/品牌",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Principal / Staff Engineer - Compliance",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR; Singapore, Singapore",
+      "region": [
+        "sg",
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7736921003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-staff-engineer-compliance",
+      "keywords": [
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Principal / Senior Product Manager, Local Market & Growth (Latin America)",
+      "level": "head",
+      "location": "Brazil; LATAM; Remote Roles - LATAM; São Paulo, Brazil",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7655633003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-senior-product-manager-local-market-growth-latin-america",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Principal / Senior Product Manager, Institution Onboarding Experience (KYB)",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"DO5kdcjnjoJTO3xqpcxuRvxLsfd\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6584031003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-senior-product-manager-institution-onboarding-experience-kyb",
+      "keywords": [
+        "Wallet",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Principal/Senior Product Manager, AI and Agent",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"heading-2 ace-line old-record-id-NfOLdQjhGo7wgcxriO8uJY64sSc\"><em><strong>OKX will be prioritising applicant",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7531921003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-senior-product-manager-ai-and-agent",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "数据分析",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Principal/Senior Product Manager, Advanced Trading Operations (Spot/Derivatives)",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"heading-2 ace-line old-record-id-NfOLdQjhGo7wgcxriO8uJY64sSc\"><em><strong>OKX will be prioritising applicant",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7693291003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-senior-product-manager-advanced-trading-operations-spot-derivatives",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Principal Product Manager, Growth",
+      "level": "head",
+      "location": "San Jose, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"NtpGdRw16oFqe9xW8Dnl7Aezg7d\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7713617003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-product-manager-growth",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Principal Product Manager, AI Infrastructure ",
+      "level": "head",
+      "location": "San Jose, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"doxusOiu3cwZgr9h4JMiwcAbGjv\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7634881003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-product-manager-ai-infrastructure",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "数据分析",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Principal Product Manager, AI Agent Infrastructure",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7710516003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-product-manager-ai-agent-infrastructure",
+      "keywords": [
+        "Wallet",
+        "Machine Learning",
+        "AI"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "product",
+      "category": "exchange",
+      "position": "Principal Product Manager, Affiliate Program & KOL",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"KgDDd1AYaowscRxaIZ1unda3sdb\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7710505003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-product-manager-affiliate-program-kol",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Principal Engineer, Agent Infrastructure & Memory Architecture",
+      "level": "head",
+      "location": "San Jose, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<h3 class=\"heading-3 ace-line old-record-id-LgPLdbHBpoytXax9JbZlBfsZgCY\"><strong>Who We Are</strong></h3>",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7671576003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-engineer-agent-infrastructure-memory-architecture",
+      "keywords": [
+        "Wallet",
+        "可观测性",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "部署发布",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Principal Business Development Manager, Affiliate Program & KOL",
+      "level": "head",
+      "location": "Hong Kong, Hong Kong SAR",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div data-page-id=\"KgDDd1AYaowscRxaIZ1unda3sdb\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7627584003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-business-development-manager-affiliate-program-kol",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Principal AIgorithm Engineer, Search and Recommendation",
+      "level": "head",
+      "location": "Singapore, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7687308003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-aigorithm-engineer-search-and-recommendation",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "性能/容量",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Principal AI Engineer, Chatbot Development",
+      "level": "head",
+      "location": "San Jose, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-Cfb8dvi9voxFkWxhNcmuJX50sZb\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7648781003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-ai-engineer-chatbot-development",
+      "keywords": [
+        "Wallet",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "data",
+      "category": "exchange",
+      "position": "Principal AI Engineer, AI Agent Development",
+      "level": "head",
+      "location": "San Jose, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/6690158003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||principal-ai-engineer-ai-agent-development",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "安全/审计",
+        "合规风控",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "OKX",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Paid Ads BD Manager",
+      "level": "mid",
+      "location": "Australia; Sydney, New South Wales, Australia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"ace-line ace-line old-record-id-doxuseysYUio6Qia64JLLAwE7dh\">",
+      "link": "https://job-boards.greenhouse.io/okx/jobs/7691611003",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "okx||paid-ads-bd-manager",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Customer Partner Success Manager",
+      "level": "senior",
+      "location": "South Africa",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7925163?gh_jid=7925163",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||senior-customer-partner-success-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "ga",
+      "category": "other",
+      "position": "Senior Corporate Counsel",
+      "level": "senior",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7859047?gh_jid=7859047",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||senior-corporate-counsel",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "design",
+      "category": "other",
+      "position": "Senior Brand Designer",
+      "level": "senior",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7462060?gh_jid=7462060",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||senior-brand-designer",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "设计/品牌",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "bd",
+      "category": "other",
+      "position": "Sales Operations Specialist",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7651754?gh_jid=7651754",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||sales-operations-specialist",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "数据分析",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "ga",
+      "category": "other",
+      "position": "Regulatory Compliance Manager",
+      "level": "mid",
+      "location": "Luxembourg, Luxembourg",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7789499?gh_jid=7789499",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||regulatory-compliance-manager",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "合规风控",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Project Manager",
+      "level": "mid",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7838065?gh_jid=7838065",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||project-manager",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "自动化",
+        "合规风控",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Professional Services Consultant (Technical)",
+      "level": "mid",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7651677?gh_jid=7651677",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||professional-services-consultant-technical",
+      "keywords": [
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Professional Services Consultant",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7831968?gh_jid=7831968",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||professional-services-consultant",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "产品规划",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "growth",
+      "category": "other",
+      "position": "Product Marketing Lead",
+      "level": "senior",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7927664?gh_jid=7927664",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||product-marketing-lead",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Principal Technical Program Manager",
+      "level": "head",
+      "location": "San Francisco, CA, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7904773?gh_jid=7904773",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||principal-technical-program-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "security",
+      "category": "other",
+      "position": "Physical Security Systems Specialist",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7818401?gh_jid=7818401",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||physical-security-systems-specialist",
+      "keywords": [
+        "Go",
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Payroll Manager – Europe (FTC)",
+      "level": "mid",
+      "location": "Dublin, Ireland",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7845963?gh_jid=7845963",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||payroll-manager-europe-ftc",
+      "keywords": [
+        "安全审计",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "data",
+      "category": "other",
+      "position": "Network & Strategic Partner Onboarding Analyst",
+      "level": "mid",
+      "location": "Toronto, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7797729?gh_jid=7797729",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||network-strategic-partner-onboarding-analyst",
+      "keywords": [
+        "Go",
+        "AI",
+        "AML/KYC",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Manager, Software Engineering (Platform Connectivity)",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7836523?gh_jid=7836523",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||manager-software-engineering-platform-connectivity",
+      "keywords": [
+        "On-call",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "ops",
+      "category": "other",
+      "position": "Manager, Software Engineering (Cloud Infrastructure)",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7842893?gh_jid=7842893",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||manager-software-engineering-cloud-infrastructure",
+      "keywords": [
+        "AWS",
+        "可观测性",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Manager, Software Engineering",
+      "level": "mid",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7944385?gh_jid=7944385",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||manager-software-engineering",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Manager, Client Support NAM",
+      "level": "mid",
+      "location": "Toronto, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7818899?gh_jid=7818899",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||manager-client-support-nam",
+      "keywords": [
+        "Go",
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "eng",
+      "category": "other",
+      "position": "Manager, Client Support",
+      "level": "mid",
+      "location": "Chicago, Illinois, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7818910?gh_jid=7818910",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||manager-client-support",
+      "keywords": [
+        "Go",
+        "SQL",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "ga",
+      "category": "other",
+      "position": "Lead Technical Recruiter (Quant Engineering)",
+      "level": "senior",
+      "location": "New York, NY, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7647372?gh_jid=7647372",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||lead-technical-recruiter-quant-engineering",
+      "keywords": [
+        "Machine Learning",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ripple",
+      "func": "product",
+      "category": "other",
+      "position": "Lead Product Manager, Settlement & Billing",
+      "level": "senior",
+      "location": "San Francisco, CA, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><span style=\"font-weight: 400;\">At Ripple, we’re building a world where value moves like i",
+      "link": "https://ripple.com/careers/all-jobs/job/7851613?gh_jid=7851613",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ripple||lead-product-manager-settlement-billing",
+      "keywords": [
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Frontend Development Engineer Intern",
+      "level": "mid",
+      "location": "APAC - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4868991101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||frontend-development-engineer-intern",
+      "keywords": [
+        "JavaScript",
+        "React",
+        "Validator/节点",
+        "Staking",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "节点运维",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Fraud Prevention Investigation Lead",
+      "level": "senior",
+      "location": "Abu Dhabi, UAE; APAC - Remote; Europe - Remote; Kuala Lumpur, Malaysia; Middle East - Remote; UK - Remote",
+      "region": [
+        "remote",
+        "eu",
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4856964101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||fraud-prevention-investigation-lead",
+      "keywords": [
+        "Staking",
+        "SQL",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "监控告警",
+        "部署发布",
+        "节点运维",
+        "合规风控",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "data",
+      "category": "exchange",
+      "position": "Financial Research Analyst",
+      "level": "mid",
+      "location": "Abu Dhabi, UAE",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4871371101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||financial-research-analyst",
+      "keywords": [
+        "Staking",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "节点运维",
+        "合规风控",
+        "数据分析",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "[EU] Product Lead ",
+      "level": "senior",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4871893101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-product-lead",
+      "keywords": [
+        "Staking",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "节点运维",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "data",
+      "category": "exchange",
+      "position": "[EU] Principal Database Development Engineer ",
+      "level": "head",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861142101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-principal-database-development-engineer",
+      "keywords": [
+        "Go",
+        "Staking",
+        "SLO/SLA",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "[EU] Payments Principle Product Specialist",
+      "level": "mid",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861011101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-payments-principle-product-specialist",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "AML/KYC",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "节点运维",
+        "协议/合约开发",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "[EU] Lead Quality Assurance Engineer",
+      "level": "senior",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861136101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-lead-quality-assurance-engineer",
+      "keywords": [
+        "Python",
+        "C++",
+        "Staking",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "[EU] IT Application Manager",
+      "level": "mid",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861140101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-it-application-manager",
+      "keywords": [
+        "Staking",
+        "AI",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "ops",
+      "category": "exchange",
+      "position": "[EU] DevOps Head",
+      "level": "head",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861022101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-devops-head",
+      "keywords": [
+        "Staking",
+        "AWS",
+        "CI/CD",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "[EU] Business Continuity Policy Manager ",
+      "level": "mid",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861018101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||eu-business-continuity-policy-manager",
+      "keywords": [
+        "Staking",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "ERM Director",
+      "level": "head",
+      "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4862163101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||erm-director",
+      "keywords": [
+        "Staking",
+        "安全审计",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "data",
+      "category": "exchange",
+      "position": "Digital Designer (AI & Figma)",
+      "level": "mid",
+      "location": "APAC - Remote; Europe - Remote; Middle East - Remote",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4870590101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||digital-designer-ai-figma",
+      "keywords": [
+        "Staking",
+        "AI",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "节点运维",
+        "设计/品牌",
+        "增长营销",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Digital Copywriter",
+      "level": "mid",
+      "location": "Abu Dhabi, UAE",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4862137101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||digital-copywriter",
+      "keywords": [
+        "Staking",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "节点运维",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "ops",
+      "category": "exchange",
+      "position": "Devops Leader",
+      "level": "mid",
+      "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4860240101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||devops-leader",
+      "keywords": [
+        "Staking",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Derivates Trader/Trading Expert ",
+      "level": "mid",
+      "location": "Vienna, Austria",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4857371101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||derivates-trader-trading-expert",
+      "keywords": [
+        "Staking",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Warehouse Engineer",
+      "level": "mid",
+      "location": "Kuala Lumpur, Malaysia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4866313101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||data-warehouse-engineer",
+      "keywords": [
+        "Python",
+        "Staking",
+        "Kafka",
+        "Flink",
+        "Spark",
+        "SQL",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "CRO, Bahrain",
+      "level": "mid",
+      "location": "Middle East - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4870599101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||cro-bahrain",
+      "keywords": [
+        "Staking",
+        "社区"
+      ],
+      "duties": [
+        "监控告警",
+        "节点运维",
+        "合规风控",
+        "数据分析",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Country Manager, Thailand",
+      "level": "mid",
+      "location": "APAC - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4862220101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||country-manager-thailand",
+      "keywords": [
+        "Staking",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Country Manager, Poland",
+      "level": "mid",
+      "location": "Poland - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4862573101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||country-manager-poland",
+      "keywords": [
+        "Staking",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Bybit",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Country Manager, Georgia",
+      "level": "mid",
+      "location": "Tbilisi, Georgia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>About Us</strong><br>Established in March 2018, Bybit is one of the fastest growin",
+      "link": "https://job-boards.eu.greenhouse.io/bybit/jobs/4861832101",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bybit||country-manager-georgia",
+      "keywords": [
+        "Staking",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "监控告警",
+        "节点运维",
+        "合规风控",
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "data",
+      "category": "exchange",
+      "position": "Finance & Strategy Senior Analyst",
+      "level": "senior",
+      "location": "Menlo Park, CA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7456663?t=gh_src=&gh_jid=7456663",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||finance-strategy-senior-analyst",
+      "keywords": [
+        "Spark",
+        "AI",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "数据分析",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Finance & Strategy Manager",
+      "level": "mid",
+      "location": "Chicago, IL; Menlo Park, CA; New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7927681?t=gh_src=&gh_jid=7927681",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||finance-strategy-manager",
+      "keywords": [
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Executive Sourcer",
+      "level": "mid",
+      "location": "Chicago, IL; Menlo Park, CA; New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7932082?t=gh_src=&gh_jid=7932082",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||executive-sourcer",
+      "keywords": [
+        "Spark",
+        "AI",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "社区运营",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Toronto",
+      "level": "mid",
+      "location": "Toronto, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7117648?t=gh_src=&gh_jid=7117648",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-toronto",
+      "keywords": [
+        "Go",
+        "Python",
+        "Wallet",
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Strategies & Cortex",
+      "level": "mid",
+      "location": "Menlo Park, CA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7489246?t=gh_src=&gh_jid=7489246",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-strategies-cortex",
+      "keywords": [
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Observability",
+      "level": "mid",
+      "location": "Toronto, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7684757?t=gh_src=&gh_jid=7684757",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-observability",
+      "keywords": [
+        "Kubernetes",
+        "Prometheus",
+        "Grafana",
+        "可观测性",
+        "Spark",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Equities ",
+      "level": "mid",
+      "location": "Menlo Park, CA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7489553?t=gh_src=&gh_jid=7489553",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-equities",
+      "keywords": [
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Derivatives",
+      "level": "mid",
+      "location": "Ljubljana, Slovenia",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7542975?t=gh_src=&gh_jid=7542975",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-derivatives",
+      "keywords": [
+        "Go",
+        "AWS",
+        "Spark",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Engineering Manager, Concierge ",
+      "level": "mid",
+      "location": "Menlo Park, CA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7542965?t=gh_src=&gh_jid=7542965",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||engineering-manager-concierge",
+      "keywords": [
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "security",
+      "category": "exchange",
+      "position": "Director of Internal Audit",
+      "level": "head",
+      "location": "Luxembourg, Luxembourg",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7490045?t=gh_src=&gh_jid=7490045",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||director-of-internal-audit",
+      "keywords": [
+        "Spark",
+        "安全审计",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "合规风控",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Director of Crypto Operations",
+      "level": "head",
+      "location": "New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7940165?t=gh_src=&gh_jid=7940165",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||director-of-crypto-operations",
+      "keywords": [
+        "Wallet",
+        "Spark",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Derivatives Risk Oversight Lead",
+      "level": "senior",
+      "location": "London, UK",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7539100?t=gh_src=&gh_jid=7539100",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||derivatives-risk-oversight-lead",
+      "keywords": [
+        "Spark",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "部署发布",
+        "合规风控",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "ga",
+      "category": "exchange",
+      "position": "Deputy MLRO / AML Lead",
+      "level": "senior",
+      "location": "Luxembourg, Luxembourg",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7592187?t=gh_src=&gh_jid=7592187",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||deputy-mlro-aml-lead",
+      "keywords": [
+        "Spark",
+        "Machine Learning",
+        "AML/KYC",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "监控告警",
+        "部署发布",
+        "安全/审计",
+        "合规风控",
+        "数据分析",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Deal Lead, Robinhood Ventures",
+      "level": "senior",
+      "location": "Menlo Park, CA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7685092?t=gh_src=&gh_jid=7685092",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||deal-lead-robinhood-ventures",
+      "keywords": [
+        "Spark",
+        "AI",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "data",
+      "category": "exchange",
+      "position": "Data Scientist, ML (Agentic, CX)",
+      "level": "mid",
+      "location": "Menlo Park, CA; New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7489476?t=gh_src=&gh_jid=7489476",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||data-scientist-ml-agentic-cx",
+      "keywords": [
+        "Python",
+        "Spark",
+        "SQL",
+        "Machine Learning",
+        "AI",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Experience Team Lead",
+      "level": "senior",
+      "location": "Denver, CO; Westlake, TX",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7729424?t=gh_src=&gh_jid=7729424",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||customer-experience-team-lead",
+      "keywords": [
+        "Spark",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Experience Specialist, RHF Executive Office",
+      "level": "mid",
+      "location": "Denver, CO",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7921699?t=gh_src=&gh_jid=7921699",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||customer-experience-specialist-rhf-executive-office",
+      "keywords": [
+        "Spark",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "部署发布",
+        "合规风控",
+        "设计/品牌",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Experience Representative, Core Services",
+      "level": "mid",
+      "location": "Chicago, IL; Denver, CO; Westlake, TX",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7958750?t=gh_src=&gh_jid=7958750",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||customer-experience-representative-core-services",
+      "keywords": [
+        "Spark",
+        "社区"
+      ],
+      "duties": [
+        "部署发布",
+        "社区运营",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Experience Representative, Concierge",
+      "level": "mid",
+      "location": "Chicago, IL; Denver, CO; Westlake, TX",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7958748?t=gh_src=&gh_jid=7958748",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||customer-experience-representative-concierge",
+      "keywords": [
+        "Spark",
+        "社区"
+      ],
+      "duties": [
+        "部署发布",
+        "社区运营",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Customer Experience Representative, Advanced Services",
+      "level": "mid",
+      "location": "Chicago, IL; Denver, CO; Westlake, TX",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><h2>Join us in building the future of finance.</h2>",
+      "link": "https://boards.greenhouse.io/robinhood/jobs/7958747?t=gh_src=&gh_jid=7958747",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "robinhood||customer-experience-representative-advanced-services",
+      "keywords": [
+        "Spark",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "部署发布",
+        "合规风控",
+        "数据分析",
+        "社区运营",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Chief Revenue Officer",
+      "level": "head",
+      "location": "USA - Remote",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/62c1ceed-d9b2-4ffa-adfb-0a08b6a413da",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||chief-revenue-officer",
+      "keywords": [
+        "Go",
+        "Wallet",
+        "AI",
+        "社区",
+        "营销/增长",
+        "出入金"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "多链/跨链",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "security",
+      "category": "chain",
+      "position": "Senior Application Security Engineer",
+      "level": "senior",
+      "location": "LATAM",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/a75ed568-af2a-4d5f-8c9c-71ccfc498d21",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||senior-application-security-engineer",
+      "keywords": [
+        "Solidity",
+        "Go",
+        "Python",
+        "TypeScript",
+        "Smart Contract",
+        "EVM",
+        "DeFi",
+        "CI/CD"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "ga",
+      "category": "chain",
+      "position": "Senior Counsel: Product, Payments & Compliance",
+      "level": "senior",
+      "location": "USA - Remote",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/59b2aae8-40bb-4a9b-91a7-c73b60eb5696",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||senior-counsel-product-payments-compliance",
+      "keywords": [
+        "AI",
+        "AML/KYC",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "协议/合约开发",
+        "安全/审计",
+        "合规风控",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Payroll Director",
+      "level": "head",
+      "location": "LATAM",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/02702a40-f098-4d44-b6bf-da330af129a2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||payroll-director",
+      "keywords": [
+        "Go",
+        "AI",
+        "合规",
+        "社区"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "协议/合约开发",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "growth",
+      "category": "chain",
+      "position": "Product Marketing Manager",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/897b111d-f8ae-4759-a58e-75238ec8196d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||product-marketing-manager",
+      "keywords": [
+        "Go",
+        "AI",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Tech Lead, Payments",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/a84362c9-bdf4-4a7e-ba16-783e1de36b28",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||tech-lead-payments",
+      "keywords": [
+        "Go",
+        "Smart Contract",
+        "Wallet",
+        "Ethereum",
+        "AWS",
+        "GCP",
+        "可观测性",
+        "Kafka"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Polygon Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Staff Protocol Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYGON LABS",
+      "link": "https://jobs.ashbyhq.com/polygon-labs/f039c3e6-d42d-4190-bdb6-1c78a199cf56",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polygon-labs||staff-protocol-engineer",
+      "keywords": [
+        "Go",
+        "EVM",
+        "MEV",
+        "Ethereum",
+        "可观测性",
+        "Machine Learning",
+        "AI",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Workplace & Employee Experience Manager",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4674379006?gh_jid=4674379006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||workplace-employee-experience-manager",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "ga",
+      "category": "other",
+      "position": "VP, Strategic Finance",
+      "level": "head",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4655974006?gh_jid=4655974006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||vp-strategic-finance",
+      "keywords": [
+        "Go",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Technical Integration Engineer",
+      "level": "mid",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4656817006?gh_jid=4656817006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||technical-integration-engineer",
+      "keywords": [
+        "Go",
+        "TypeScript"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "协议/合约开发",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "ops",
+      "category": "other",
+      "position": "Site Reliability Engineer",
+      "level": "mid",
+      "location": "United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4656035006?gh_jid=4656035006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||site-reliability-engineer",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "Validator/节点",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "GCP"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "ga",
+      "category": "other",
+      "position": "Senior Talent Acquisition Partner, GTM",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4650201006?gh_jid=4650201006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-talent-acquisition-partner-gtm",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "安全/审计",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Software Engineer, Trusted Platform",
+      "level": "senior",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4682123006?gh_jid=4682123006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-software-engineer-trusted-platform",
+      "keywords": [
+        "Rust",
+        "Python",
+        "C++",
+        "Wallet"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Software Engineer, Transaction Security",
+      "level": "senior",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4653827006?gh_jid=4653827006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-software-engineer-transaction-security",
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "React"
+      ],
+      "duties": [
+        "架构设计",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior QA Automation Engineer (Financial Apps)",
+      "level": "senior",
+      "location": "Belgrade, Belgrade, Serbia; Berlin, Berlin, Germany; Georgia; Praha, Prague, Czech Republic; United Kingdom; Warszawa, Masovian Voivodeship, Poland",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4682157006?gh_jid=4682157006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-qa-automation-engineer-financial-apps",
+      "keywords": [
+        "TypeScript",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "AI",
+        "出入金"
+      ],
+      "duties": [
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Program Manager, Strategic Initiatives",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4655528006?gh_jid=4655528006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-program-manager-strategic-initiatives",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "design",
+      "category": "other",
+      "position": "Senior Motion Designer",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4627883006?gh_jid=4627883006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-motion-designer",
+      "keywords": [
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Information Security Engineer",
+      "level": "senior",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4616044006?gh_jid=4616044006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-information-security-engineer",
+      "keywords": [
+        "Python",
+        "Linux",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "data",
+      "category": "other",
+      "position": "Senior Director, AI",
+      "level": "head",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4582767006?gh_jid=4582767006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-director-ai",
+      "keywords": [
+        "Machine Learning",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "自动化",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Fireblocks",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior C++ Engineer, Key Management",
+      "level": "senior",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>The world of digital assets is accelerating in speed, magnitude, and complexity, opening t",
+      "link": "https://www.fireblocks.com/careers/position/4666670006?gh_jid=4666670006",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fireblocks||senior-c-engineer-key-management",
+      "keywords": [
+        "C++",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Prometheus",
+        "SQL",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Trading Systems Developer",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5976669004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-trading-systems-developer",
+      "keywords": [
+        "C++",
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Strategy & Corporate Development",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5695082004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-strategy-corporate-development",
+      "keywords": [
+        "Staking",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "节点运维",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "security",
+      "category": "other",
+      "position": "VP, Senior Product Security Engineer",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5468524004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-senior-product-security-engineer",
+      "keywords": [
+        "Staking",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "节点运维",
+        "安全/审计",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Quantitative Developer - Risk Engineering",
+      "level": "head",
+      "location": "New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6000287004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-quantitative-developer-risk-engineering",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Quantitative Developer",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5830323004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-quantitative-developer",
+      "keywords": [
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Protocol Engineer (Validators)",
+      "level": "head",
+      "location": "Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5702952004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-protocol-engineer-validators",
+      "keywords": [
+        "Validator/节点",
+        "Staking",
+        "可观测性",
+        "On-call",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Java Electronic Trading Engineer",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5807026004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-java-electronic-trading-engineer",
+      "keywords": [
+        "Staking",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Linux",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Java Electronic Trading Developer",
+      "level": "head",
+      "location": "New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5353025004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-java-electronic-trading-developer",
+      "keywords": [
+        "Staking",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Linux",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, High Touch Trading, Server Side Developer",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5807126004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-high-touch-trading-server-side-developer",
+      "keywords": [
+        "Staking",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP/Director, Tech Lead – Operations Technology (Middle & Back Office Systems)",
+      "level": "head",
+      "location": "New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5696552004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-director-tech-lead-operations-technology-middle-back-office-systems",
+      "keywords": [
+        "Staking",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "VP, Algo/SOR Developer ",
+      "level": "head",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5793291004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vp-algo-sor-developer",
+      "keywords": [
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Vice President, Trading Systems Developer",
+      "level": "mid",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5829998004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-trading-systems-developer",
+      "keywords": [
+        "C++",
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Vice President, Software Engineer - Finance Engineering",
+      "level": "mid",
+      "location": "London",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5484662004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-software-engineer-finance-engineering",
+      "keywords": [
+        "Python",
+        "Staking",
+        "AWS",
+        "Spark",
+        "SQL",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "ops",
+      "category": "other",
+      "position": "Vice President Site Reliability Engineering (Data Centers)",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5997360004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-site-reliability-engineering-data-centers",
+      "keywords": [
+        "Go",
+        "Python",
+        "Staking",
+        "Terraform",
+        "Linux",
+        "可观测性",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Vice President, Senior Quality Engineer (Automation)",
+      "level": "senior",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5993013004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-senior-quality-engineer-automation",
+      "keywords": [
+        "Python",
+        "Staking",
+        "CI/CD",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Vice President, Senior Backend Developer - Lending/Commercial (Remote, Mumbai)",
+      "level": "senior",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5703841004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-senior-backend-developer-lending-commercial-remote-mumbai",
+      "keywords": [
+        "Staking",
+        "Bitcoin",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "eng",
+      "category": "other",
+      "position": "Vice President, Senior Backend Developer - Brokerage/Crypto (Remote, Mumbai)",
+      "level": "senior",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5703845004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-senior-backend-developer-brokerage-crypto-remote-mumbai",
+      "keywords": [
+        "Staking",
+        "Bitcoin",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "节点运维",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "security",
+      "category": "other",
+      "position": "Vice President Security Engineering (Data Centers)",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5984556004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-security-engineering-data-centers",
+      "keywords": [
+        "Python",
+        "Staking",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "节点运维"
+      ]
+    },
+    {
+      "company": "Galaxy Digital",
+      "func": "ga",
+      "category": "other",
+      "position": "Vice President, Legal and Compliance - CFTC Compliance",
+      "level": "mid",
+      "location": "New York, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who We Are:<br></strong>Galaxy is a global leader in digital assets and data cente",
+      "link": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/5991916004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "galaxy-digital||vice-president-legal-and-compliance-cftc-compliance",
+      "keywords": [
+        "Staking",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Lead Android Engineer",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/801b15fe-f6e8-4afc-8611-6976e6ff8e8a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||lead-android-engineer",
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "security",
+      "category": "defi",
+      "position": "Application Security Engineer",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/37b70253-b155-46b7-9349-b459e759c19f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||application-security-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Smart Contract",
+        "AWS",
+        "CI/CD"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Backend Engineer, API",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/0cdcc6a1-0187-4bde-9e26-55039517f5db",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-backend-engineer-api",
+      "keywords": [
+        "Rust",
+        "Go",
+        "EVM",
+        "Prometheus",
+        "Grafana",
+        "可观测性",
+        "On-call",
+        "Kafka"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "ga",
+      "category": "defi",
+      "position": "Executive Assistant, Legal",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "About Polymarket",
+      "link": "https://jobs.ashbyhq.com/polymarket/f7911669-be59-467e-b4ff-355faddafeda",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||executive-assistant-legal",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "监控告警",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "ga",
+      "category": "defi",
+      "position": "Senior Counsel, Corporate & Commercial",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/7e8ba3f0-14fe-4e57-932f-c28a110e5950",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-counsel-corporate-commercial",
+      "keywords": [],
+      "duties": [
+        "合规风控",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "security",
+      "category": "defi",
+      "position": "Cloud Security Engineer ",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/63670aac-6828-428c-8ddc-dd711d6f0ab2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||cloud-security-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Terraform",
+        "AWS",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Retention Strategy Manager ",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/54122c9f-f0fb-4ef9-9226-f3bea247502a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||retention-strategy-manager",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "增长营销",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior IT Specialist ",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/af8e7bc4-4051-44cc-9a13-031d9d55e478",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-it-specialist",
+      "keywords": [
+        "Go",
+        "Python",
+        "SLO/SLA"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班",
+        "自动化",
+        "安全/审计",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Advanced Support Specialist",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/6029835c-a306-4b92-a217-503b7e7995df",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||advanced-support-specialist",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "SLO/SLA"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "故障/值班",
+        "协议/合约开发",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Receptionist",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/6c2021cc-fa6d-40f0-bb30-4c3acdd36c70",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||receptionist",
+      "keywords": [],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "安全/审计",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "growth",
+      "category": "defi",
+      "position": "Partnership Marketing Manager, Sports",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/98bb8eda-ab7b-4952-8bf1-9394a8ae08e5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||partnership-marketing-manager-sports",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "growth",
+      "category": "defi",
+      "position": "Partnership Marketing Manager, Creators & Culture",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/01974c79-1fd0-459c-84e6-b891cc7b1266",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||partnership-marketing-manager-creators-culture",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "growth",
+      "category": "defi",
+      "position": "Head of Partnership Marketing",
+      "level": "head",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/14a715df-818a-47d4-a075-dd0a8210685f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||head-of-partnership-marketing",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Escalation Engineer, CX",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/d03ffef0-b8c6-4cf5-9e4a-cd73606be805",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||escalation-engineer-cx",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "DeFi",
+        "Wallet",
+        "SQL"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "自动化",
+        "协议/合约开发",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "bd",
+      "category": "defi",
+      "position": "Influencer Partnerships Manager (UGC)",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/c75645e2-50c9-4b04-8ffa-a1ab2f5b46cb",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||influencer-partnerships-manager-ugc",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "数据分析",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Web Engineer",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/80a2f94a-2c20-492a-8878-608671bd6c35",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-web-engineer",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "可观测性",
+        "AI"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Software Engineer, Dev Tools",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/6010bab5-8446-4834-a484-18e6a893230b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||software-engineer-dev-tools",
+      "keywords": [
+        "Rust",
+        "Go",
+        "TypeScript",
+        "JavaScript",
+        "C++",
+        "React",
+        "AI"
+      ],
+      "duties": []
+    },
+    {
+      "company": "Polymarket",
+      "func": "data",
+      "category": "defi",
+      "position": "Senior Data Engineer",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/6543f35a-ea78-4059-9075-6212130ab0f9",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-data-engineer",
+      "keywords": [
+        "Rust",
+        "Python",
+        "EVM",
+        "DeFi",
+        "Prometheus",
+        "可观测性",
+        "SLO/SLA",
+        "Kafka"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Senior Backend Engineer, Onchain",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/60272b87-2208-4d15-b253-d2af93fda849",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||senior-backend-engineer-onchain",
+      "keywords": [
+        "Rust",
+        "Go",
+        "C++",
+        "Smart Contract",
+        "EVM",
+        "L2/Rollup",
+        "Validator/节点",
+        "RPC"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Polymarket",
+      "func": "eng",
+      "category": "defi",
+      "position": "Creative Performance Strategist",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT POLYMARKET",
+      "link": "https://jobs.ashbyhq.com/polymarket/c90f542f-7734-40ef-a54c-08613460d658",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "polymarket||creative-performance-strategist",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "产品规划",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Blockchain.com",
+      "func": "eng",
+      "category": "exchange",
+      "position": "VIP Relationship Manager",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Blockchain</strong> is connecting the world to the future of finance. As the most ",
+      "link": "https://job-boards.greenhouse.io/blockchain/jobs/7636487",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockchain-com||vip-relationship-manager",
+      "keywords": [
+        "Wallet",
+        "合规",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "增长营销",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Blockchain.com",
+      "func": "design",
+      "category": "exchange",
+      "position": "UX/Product Design Intern",
+      "level": "mid",
+      "location": "Paris",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Blockchain</strong> is connecting the world to the future of finance. As the most ",
+      "link": "https://job-boards.greenhouse.io/blockchain/jobs/7961085",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockchain-com||ux-product-design-intern",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "设计/品牌",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "data",
+      "category": "infra",
+      "position": "Data Systems Operations Lead",
+      "level": "senior",
+      "location": "North America - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are looking for a Data Systems Operations Lead to architect and run mission-critical operations for Pyth's Price Feed",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/a9a582f2-8343-407d-9e59-29496f0dd505",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||data-systems-operations-lead",
+      "keywords": [
+        "DeFi",
+        "SLO/SLA",
+        "On-call",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "eng",
+      "category": "infra",
+      "position": "Quantitative Researcher ",
+      "level": "mid",
+      "location": "Europe - Remote",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "You will own the architecture of market infrastructure at its most fundamental level: designing the methodologies and da",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/cd45ea39-9a01-47fc-9b43-a714e383ceb3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||quantitative-researcher",
+      "keywords": [
+        "Python",
+        "DeFi",
+        "SQL",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "bd",
+      "category": "infra",
+      "position": "EMEA BD Lead ",
+      "level": "senior",
+      "location": "Europe - Remote",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We are looking for an elite EMEA BD Lead covering European hours to scale our ecosystem's liquidity and data footprint, ",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/c13e327c-6150-4afa-9a5f-4b1c8abbdf1b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||emea-bd-lead",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "合规风控",
+        "产品规划",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "eng",
+      "category": "infra",
+      "position": "The WildCard",
+      "level": "mid",
+      "location": "Worldwide - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Most job postings tell you what we need. This one asks what you can do.",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/2fb41cbd-cec9-4e81-9b2f-d7bcc01abe9e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||the-wildcard",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "协议/合约开发",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "bd",
+      "category": "infra",
+      "position": "APAC BD Lead",
+      "level": "senior",
+      "location": "Asia - Remote",
+      "region": [
+        "remote",
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "APAC BD LEAD (DATA)",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/a5935ef5-1d45-4286-b194-787cfe97055f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||apac-bd-lead",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "产品规划",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Douro Labs (Pyth)",
+      "func": "eng",
+      "category": "infra",
+      "position": "Rust Engineer, Defi ",
+      "level": "mid",
+      "location": "North America - Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "We're seeking superstar software engineers with a proven track record of shipping high-impact products, who are passiona",
+      "link": "https://jobs.ashbyhq.com/dourolabs.xyz/b7ba56be-b09c-49f5-bc54-059d4b6957cd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "douro-labs-pyth||rust-engineer-defi",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Python",
+        "TypeScript",
+        "C++",
+        "Smart Contract",
+        "DeFi",
+        "On-call"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "协议/合约开发",
+        "社区运营",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "FalconX",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Trading Systems Developer",
+      "level": "senior",
+      "location": "Bangalore, Karnataka, India; New York City, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who are we?</strong></p>",
+      "link": "https://job-boards.greenhouse.io/falconx/jobs/4608180005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "falconx||senior-trading-systems-developer",
+      "keywords": [
+        "Rust"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "部署发布"
+      ]
+    },
+    {
+      "company": "FalconX",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Quant Developer (PMS)",
+      "level": "senior",
+      "location": "Bangalore, Karnataka, India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who are we?</strong></p>",
+      "link": "https://job-boards.greenhouse.io/falconx/jobs/4620432005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "falconx||senior-quant-developer-pms",
+      "keywords": [
+        "Validator/节点"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "节点运维",
+        "数据分析",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "FalconX",
+      "func": "growth",
+      "category": "other",
+      "position": "Senior Marketing Associate",
+      "level": "senior",
+      "location": "New York City, NY",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p><strong>Who are we?</strong></p>",
+      "link": "https://job-boards.greenhouse.io/falconx/jobs/4679053005",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "falconx||senior-marketing-associate",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "数据分析",
+        "设计/品牌",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Staff Software Engineer, Money",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7951238&gh_jid=7951238",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||staff-software-engineer-money",
+      "keywords": [
+        "Go",
+        "AWS",
+        "GCP",
+        "CI/CD",
+        "On-call",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Staff Software Engineer, Invest/Trading (Frontend)",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7647319&gh_jid=7647319",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||staff-software-engineer-invest-trading-frontend",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "React"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "security",
+      "category": "exchange",
+      "position": "Staff Security Engineer, Threat Detection & Response",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7746479&gh_jid=7746479",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||staff-security-engineer-threat-detection-response",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "security",
+      "category": "exchange",
+      "position": "Staff Platform Security Engineer",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7905050&gh_jid=7905050",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||staff-platform-security-engineer",
+      "keywords": [
+        "Go",
+        "Python",
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "On-call"
+      ],
+      "duties": [
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "data",
+      "category": "exchange",
+      "position": "Staff Data Engineer",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7651740&gh_jid=7651740",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||staff-data-engineer",
+      "keywords": [
+        "Python",
+        "可观测性",
+        "Flink",
+        "Spark",
+        "SQL",
+        "Machine Learning",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Software Engineering Intern (Fall 2026)",
+      "level": "mid",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7875125&gh_jid=7875125",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||software-engineering-intern-fall-2026",
+      "keywords": [],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Gemini",
+      "func": "eng",
+      "category": "exchange",
+      "position": "Senior Software Engineer, Predictions (Mobile)",
+      "level": "senior",
+      "location": "New York, New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p><strong>About the Company</strong></p>",
+      "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7846814&gh_jid=7846814",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "gemini||senior-software-engineer-predictions-mobile",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "合规风控",
+        "数据分析",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Full Stack Engineer (Checkout)",
+      "level": "senior",
+      "location": "Remote EMEA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "A QUICK RUN-DOWN OF THE JOB",
+      "link": "https://jobs.ashbyhq.com/li.fi/f2424ea0-1b71-4a0a-93d9-55b64a7aae70",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||senior-full-stack-engineer-checkout",
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "React",
+        "Smart Contract",
+        "Validator/节点",
+        "Wallet",
+        "Kubernetes",
+        "Docker"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "ga",
+      "category": "infra",
+      "position": "Commercial Counsel",
+      "level": "mid",
+      "location": "Fully Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "A QUICK RUN-DOWN OF THE JOB",
+      "link": "https://jobs.ashbyhq.com/li.fi/b7273fb8-9e75-43bf-ad2b-8aa6496bf3ca",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||commercial-counsel",
+      "keywords": [
+        "DeFi",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "部署发布",
+        "协议/合约开发",
+        "多链/跨链",
+        "合规风控",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "ga",
+      "category": "infra",
+      "position": "Senior Finance Associate ",
+      "level": "senior",
+      "location": "Remote in Europe",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Are you precision focused and want to own financial operations at one of the most exciting crypto infrastructure compani",
+      "link": "https://jobs.ashbyhq.com/li.fi/6ae2c6c4-fbb6-4db0-9d69-2b14a59c30c5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||senior-finance-associate",
+      "keywords": [
+        "Go",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "自动化",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "eng",
+      "category": "infra",
+      "position": "Technical Account Manager - LATAM",
+      "level": "mid",
+      "location": "Remote LATAM",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "A QUICK RUN-DOWN OF THE JOB",
+      "link": "https://jobs.ashbyhq.com/li.fi/079eaee7-9a4c-4db5-a47a-4c719577d4c7",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||technical-account-manager-latam",
+      "keywords": [
+        "DeFi",
+        "RPC",
+        "Wallet",
+        "Grafana",
+        "可观测性"
+      ],
+      "duties": [
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "节点运维",
+        "多链/跨链",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "security",
+      "category": "infra",
+      "position": "Lead Security Architect ",
+      "level": "senior",
+      "location": "Remote EMEA",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "A QUICK RUN-DOWN OF THE JOB",
+      "link": "https://jobs.ashbyhq.com/li.fi/00f956a0-48b3-42ed-9490-6d6ffe7cc5e6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||lead-security-architect",
+      "keywords": [
+        "Smart Contract",
+        "Wallet",
+        "On-call",
+        "AI",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "监控告警",
+        "部署发布",
+        "自动化"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "design",
+      "category": "infra",
+      "position": "Marketing Designer ",
+      "level": "mid",
+      "location": "Fully Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Jumper is a user-facing app powered by LI.FI http://LI.FI that helps users move, earn, and manage capital across network",
+      "link": "https://jobs.ashbyhq.com/li.fi/164ffdf6-8b96-4bbe-ae24-755ff7636423",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||marketing-designer",
+      "keywords": [
+        "AI",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "设计/品牌",
+        "增长营销",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "LiFi",
+      "func": "eng",
+      "category": "infra",
+      "position": "VP of Engineering",
+      "level": "head",
+      "location": "Remote in Europe",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "A QUICK RUN-DOWN OF THE JOB",
+      "link": "https://jobs.ashbyhq.com/li.fi/34dfad03-10c7-4b4d-9cec-4abda1b6e4b1",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "lifi||vp-of-engineering",
+      "keywords": [
+        "Node.js",
+        "Validator/节点",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "节点运维",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Trust Officer",
+      "level": "mid",
+      "location": "Sioux Falls, South Dakota, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8428375002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||trust-officer",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer - Trade",
+      "level": "mid",
+      "location": "Toronto, Ontario, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8298001002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||software-engineer-trade",
+      "keywords": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Node.js",
+        "Validator/节点",
+        "Staking",
+        "Wallet",
+        "Bitcoin"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer – Frontend & Mobile",
+      "level": "mid",
+      "location": "San Francisco, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8515395002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||software-engineer-frontend-mobile",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "SQL"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer - Frontend and Mobile",
+      "level": "mid",
+      "location": "Toronto, Ontario, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8515398002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||software-engineer-frontend-and-mobile",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "SQL"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "data",
+      "category": "other",
+      "position": "SOC Analyst",
+      "level": "mid",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8531833002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||soc-analyst",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin"
+      ],
+      "duties": [
+        "故障/值班",
+        "监控告警",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Solutions Engineer",
+      "level": "senior",
+      "location": "Toronto, Ontario, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8391275002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||senior-solutions-engineer",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "Staking",
+        "Wallet",
+        "Bitcoin"
+      ],
+      "duties": [
+        "架构设计",
+        "节点运维",
+        "合规风控",
+        "产品规划",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Software Engineer - Post Trade",
+      "level": "senior",
+      "location": "Toronto, Ontario, Canada",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8500748002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||senior-software-engineer-post-trade",
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Node.js",
+        "Validator/节点",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "Kafka"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Offensive Security Engineer",
+      "level": "senior",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8526160002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||senior-offensive-security-engineer",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "CI/CD",
+        "AI",
+        "安全审计"
+      ],
+      "duties": [
+        "架构设计",
+        "部署发布",
+        "自动化",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Customer Success Manager - Fintech",
+      "level": "senior",
+      "location": "New York, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8555322002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||senior-customer-success-manager-fintech",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "ga",
+      "category": "other",
+      "position": "Senior Accountant (Contract to Hire)",
+      "level": "senior",
+      "location": "Palo Alto, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8540208002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||senior-accountant-contract-to-hire",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "自动化",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "bd",
+      "category": "other",
+      "position": "Sales Director- Pensions, Endowments, Foundations, and Family Offices",
+      "level": "head",
+      "location": "New York, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8340907002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||sales-director-pensions-endowments-foundations-and-family-offices",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "协议/合约开发",
+        "合规风控",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "bd",
+      "category": "other",
+      "position": "Sales Director",
+      "level": "head",
+      "location": "London, England, United Kingdom",
+      "region": [
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/7615928002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||sales-director",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "节点运维",
+        "协议/合约开发",
+        "合规风控",
+        "商务拓展",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "bd",
+      "category": "other",
+      "position": "Sales Associate - Fintech",
+      "level": "mid",
+      "location": "New York, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8341050002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||sales-associate-fintech",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "合规"
+      ],
+      "duties": [
+        "节点运维",
+        "协议/合约开发",
+        "合规风控",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "growth",
+      "category": "other",
+      "position": "Product Marketing Manager, Prime / OTC",
+      "level": "mid",
+      "location": "San Francisco, California, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8523884002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||product-marketing-manager-prime-otc",
+      "keywords": [
+        "Go",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "部署发布",
+        "节点运维",
+        "合规风控",
+        "数据分析",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "growth",
+      "category": "other",
+      "position": "Product Marketing Manager",
+      "level": "mid",
+      "location": "New York, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8523894002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||product-marketing-manager",
+      "keywords": [
+        "Go",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Privacy Manager",
+      "level": "mid",
+      "location": "New York, United States",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8421286002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||privacy-manager",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "安全审计"
+      ],
+      "duties": [
+        "故障/值班",
+        "节点运维",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Operations Associate",
+      "level": "mid",
+      "location": "Dubai, Dubai, United Arab Emirates",
+      "region": [
+        "dubai"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8483277002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||operations-associate",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "AML/KYC"
+      ],
+      "duties": [
+        "故障/值班",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Onboarding Associate",
+      "level": "mid",
+      "location": "Singapore, North West, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8040218002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||onboarding-associate",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "节点运维",
+        "合规风控",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Office Manager and IT Operations",
+      "level": "mid",
+      "location": "Singapore, North West, Singapore",
+      "region": [
+        "sg"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8530888002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||office-manager-and-it-operations",
+      "keywords": [
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "节点运维",
+        "安全/审计",
+        "合规风控",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "BitGo",
+      "func": "eng",
+      "category": "other",
+      "position": "Mobile Software Engineer E3 - (React Native)   ",
+      "level": "mid",
+      "location": "India",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<div class=\"content-intro\"><p>BitGo is the leading infrastructure provider of digital asset solutions, delivering custod",
+      "link": "https://job-boards.greenhouse.io/bitgo/jobs/8113483002",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "bitgo||mobile-software-engineer-e3-react-native",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Staking",
+        "Wallet",
+        "Bitcoin",
+        "SQL"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "合规风控",
+        "产品规划",
+        "设计/品牌",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "ga",
+      "category": "chain",
+      "position": "Legal Operations Lead",
+      "level": "senior",
+      "location": "Remote-US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/29affe58-f30e-43f3-b74a-2e2b6346645c",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||legal-operations-lead",
+      "keywords": [
+        "Go",
+        "Python",
+        "JavaScript",
+        "Solana",
+        "AI",
+        "安全审计",
+        "AML/KYC",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "data",
+      "category": "chain",
+      "position": "Senior Data Analyst",
+      "level": "senior",
+      "location": "Remote-International",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/7d7753a4-1620-4a43-8342-58e06dbb546d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||senior-data-analyst",
+      "keywords": [
+        "Rust",
+        "Python",
+        "Smart Contract",
+        "Validator/节点",
+        "Solana",
+        "ClickHouse",
+        "SQL",
+        "AI"
+      ],
+      "duties": [
+        "性能/容量",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计",
+        "数据分析",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "data",
+      "category": "chain",
+      "position": "Senior Data Engineer",
+      "level": "senior",
+      "location": "Remote-International",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/173cd3e1-7284-41b7-b270-6ac92f652f98",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||senior-data-engineer",
+      "keywords": [
+        "Rust",
+        "Smart Contract",
+        "Solana",
+        "AWS",
+        "GCP",
+        "Kafka",
+        "Spark",
+        "ClickHouse"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "data",
+      "category": "chain",
+      "position": "Head of Data",
+      "level": "head",
+      "location": "Remote (Global, no location restrictions)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/e452e6e3-7ef9-4be4-a049-94acd67e5bc4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||head-of-data",
+      "keywords": [
+        "Python",
+        "DeFi",
+        "Solana",
+        "ClickHouse",
+        "SQL"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计",
+        "数据分析"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "growth",
+      "category": "chain",
+      "position": "Director, Institutional Growth",
+      "level": "head",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/cb692853-04c1-4683-bb9a-8bb0783e2c1a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||director-institutional-growth",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "Wallet",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "eng",
+      "category": "chain",
+      "position": "Head of Stablecoins",
+      "level": "head",
+      "location": "Remote-International",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/ac770f7a-9fdd-4148-8904-d6ce38b9dda4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||head-of-stablecoins",
+      "keywords": [
+        "DeFi",
+        "L2/Rollup",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "协议/合约开发",
+        "多链/跨链",
+        "安全/审计",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "eng",
+      "category": "chain",
+      "position": "APAC - Lead Solutions Architect",
+      "level": "senior",
+      "location": "Asia",
+      "region": [
+        "asia"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/fa5d76c5-78df-44d5-92b4-b14bba9994f7",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||apac-lead-solutions-architect",
+      "keywords": [
+        "Rust",
+        "TypeScript",
+        "Solana",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "bd",
+      "category": "chain",
+      "position": "Institutional - Lead Solutions Architect",
+      "level": "senior",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/751db21f-5605-4f69-a9a5-be93450a6781",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||institutional-lead-solutions-architect",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Solana",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "产品规划"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "growth",
+      "category": "chain",
+      "position": "Institutional Growth Lead- Japan",
+      "level": "senior",
+      "location": "Japan",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/46720f41-a467-4787-bba4-1838884e8af8",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||institutional-growth-lead-japan",
+      "keywords": [
+        "DeFi",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "growth",
+      "category": "chain",
+      "position": "Institutional Growth Lead- Greater China",
+      "level": "senior",
+      "location": "Hong Kong",
+      "region": [
+        "hk"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/bf30f9d1-0ca5-4ebd-82ba-a9be712e9a89",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||institutional-growth-lead-greater-china",
+      "keywords": [
+        "Go",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "bd",
+      "category": "chain",
+      "position": "Business Development Lead – Payments & Fintech",
+      "level": "senior",
+      "location": "Remote-US",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/2cfd5005-2526-4fed-8a6b-2f0318f9e624",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||business-development-lead-payments-fintech",
+      "keywords": [
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "安全/审计",
+        "合规风控",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Solana Foundation",
+      "func": "eng",
+      "category": "chain",
+      "position": "Solana Program Engineer",
+      "level": "mid",
+      "location": "Remote-International",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "WHO WE ARE",
+      "link": "https://jobs.ashbyhq.com/Solana%20Foundation/6be29283-a2e0-48f4-b388-d06f48e240b3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "solana-foundation||solana-program-engineer",
+      "keywords": [
+        "Rust",
+        "Smart Contract",
+        "DeFi",
+        "Staking",
+        "Wallet",
+        "Solana",
+        "营销/增长"
+      ],
+      "duties": [
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "节点运维",
+        "协议/合约开发",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Ava Labs (Avalanche)",
+      "func": "growth",
+      "category": "chain",
+      "position": "Director of Growth, AvaCloud",
+      "level": "head",
+      "location": "Brooklyn, NY",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Looking to join a world-class blockchain development team? Ava Labs makes it simple to deploy high-performance solutions",
+      "link": "https://jobs.ashbyhq.com/ava-labs/13199a6c-763d-4012-bcf3-1cc3b9bd980a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ava-labs-avalanche||director-of-growth-avacloud",
+      "keywords": [
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "数据分析",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ava Labs (Avalanche)",
+      "func": "growth",
+      "category": "chain",
+      "position": "Director of Social Media",
+      "level": "head",
+      "location": "Brooklyn, NY",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Looking to join a world-class blockchain development team? Ava Labs makes it simple to deploy high-performance solutions",
+      "link": "https://jobs.ashbyhq.com/ava-labs/18933fc5-b393-4f28-835e-d348bec283c3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ava-labs-avalanche||director-of-social-media",
+      "keywords": [
+        "DeFi",
+        "L2/Rollup",
+        "社区",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Ava Labs (Avalanche)",
+      "func": "eng",
+      "category": "chain",
+      "position": "Executive Assistant",
+      "level": "mid",
+      "location": "New York",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Looking to join a world-class blockchain development team? Ava Labs makes it simple to deploy high-performance solutions",
+      "link": "https://jobs.ashbyhq.com/ava-labs/c735a2d2-b1e8-44cc-8924-d41ff4611cf6",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ava-labs-avalanche||executive-assistant",
+      "keywords": [
+        "React",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "安全/审计",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ava Labs (Avalanche)",
+      "func": "product",
+      "category": "chain",
+      "position": "Senior Product Manager, Fortary",
+      "level": "senior",
+      "location": "Remote (USA)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "Looking to join a world-class blockchain development team? Ava Labs makes it simple to deploy high-performance solutions",
+      "link": "https://jobs.ashbyhq.com/ava-labs/97608e4c-26fe-4861-b212-c7e4149189eb",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ava-labs-avalanche||senior-product-manager-fortary",
+      "keywords": [
+        "Go",
+        "DeFi",
+        "Wallet",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "协议/合约开发",
+        "合规风控",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Blockworks",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Backend Engineer",
+      "level": "senior",
+      "location": "New York ",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT US:",
+      "link": "https://jobs.ashbyhq.com/Blockworks/86416d5e-8ae0-453a-abf3-4ac369a14bb4",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockworks||senior-backend-engineer",
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Node.js",
+        "Validator/节点",
+        "AWS",
+        "CI/CD",
+        "可观测性",
+        "Machine Learning"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "Blockworks",
+      "func": "data",
+      "category": "infra",
+      "position": "Senior Data Engineer",
+      "level": "senior",
+      "location": "New York ",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT US:",
+      "link": "https://jobs.ashbyhq.com/Blockworks/6b0b650d-fae6-4cf1-b70f-8225eb7f77f3",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockworks||senior-data-engineer",
+      "keywords": [
+        "Rust",
+        "Go",
+        "Python",
+        "TypeScript",
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "GCP"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "协议/合约开发"
+      ]
+    },
+    {
+      "company": "Blockworks",
+      "func": "eng",
+      "category": "infra",
+      "position": "Senior Backend Engineer (Solana)",
+      "level": "senior",
+      "location": "New York ",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT US:",
+      "link": "https://jobs.ashbyhq.com/Blockworks/51e9d7e5-eef8-4b26-8442-7fd273b14421",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "blockworks||senior-backend-engineer-solana",
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Node.js",
+        "Validator/节点",
+        "Solana",
+        "AWS",
+        "CI/CD",
+        "可观测性"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "稳定性保障",
+        "故障/值班",
+        "监控告警",
+        "性能/容量"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Account Manager | Enterprise",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/f5cf4790-0b77-47be-b332-02ca6ec755fd",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||account-manager-enterprise",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "产品规划",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer, Argentina",
+      "level": "mid",
+      "location": "Remote (Buenos Aires, Argentina)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/9320454f-f2ca-4c19-82d2-b51b8d75fd3a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-argentina",
+      "keywords": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "AWS",
+        "可观测性",
+        "AI",
+        "合规"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "growth",
+      "category": "other",
+      "position": "Director, Performance Marketing",
+      "level": "head",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/0907ae2a-5334-4d64-9a76-cc9428224546",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||director-performance-marketing",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "数据分析",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "data",
+      "category": "other",
+      "position": "Senior Data Scientist | Growth ",
+      "level": "senior",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/41696f51-7b29-4e12-b528-46c2f6c4f5f7",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||senior-data-scientist-growth",
+      "keywords": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "性能/容量",
+        "自动化",
+        "数据分析",
+        "产品规划",
+        "设计/品牌"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "data",
+      "category": "other",
+      "position": "Software Engineer, AI Forward Deployed",
+      "level": "mid",
+      "location": "San Francisco, CA",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/deca582c-a1d0-4705-9975-60aed81ba89f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-ai-forward-deployed",
+      "keywords": [
+        "On-call",
+        "AI"
+      ],
+      "duties": [
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "产品规划",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "security",
+      "category": "other",
+      "position": "Security Engineer, Product",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/7c26780b-7923-42d5-8111-9825ff996966",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||security-engineer-product",
+      "keywords": [
+        "Python",
+        "AWS",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "增长营销",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "growth",
+      "category": "other",
+      "position": "Software Engineer, Product Growth",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/0c9e3e0f-54df-4252-a17b-b506e954225b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-product-growth",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "数据分析",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Director, Technical Consultant",
+      "level": "head",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/9d165e64-bf63-4b16-878f-b46188563ca2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||director-technical-consultant",
+      "keywords": [
+        "Go",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "growth",
+      "category": "other",
+      "position": "Software Engineer, Growth Platform",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/f5b60cf1-c0ec-42c1-89db-ece853e998ab",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-growth-platform",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "数据分析",
+        "增长营销",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Customer Experience Associate (Evening Shift)",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/40f43993-21e8-4db1-a9f4-7a3e6098a9ba",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||customer-experience-associate-evening-shift",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "故障/值班",
+        "性能/容量",
+        "自动化",
+        "产品规划",
+        "增长营销"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer, Banking",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/d818443f-d4c5-4eab-892d-3715a935c165",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-banking",
+      "keywords": [
+        "Wallet",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "架构设计",
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Customer Activation Manager | Public Sector",
+      "level": "mid",
+      "location": "Washington, D.C.",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/ab6902bd-544e-4107-bf3b-b2157ee84aee",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||customer-activation-manager-public-sector",
+      "keywords": [
+        "AI",
+        "合规",
+        "营销/增长"
+      ],
+      "duties": [
+        "故障/值班",
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "安全/审计",
+        "合规风控"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Account Executive, SMB | Canada",
+      "level": "mid",
+      "location": "Remote (Canada)",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/3f94674f-6af8-4e10-9631-77b1b0a410bf",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||account-executive-smb-canada",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Integrations Expert | Customer Experience",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/910f3de4-8492-47ca-b55c-6cea0ab64b1a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||integrations-expert-customer-experience",
+      "keywords": [
+        "SQL",
+        "AI"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "故障/值班",
+        "自动化",
+        "产品规划",
+        "商务拓展"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "University Grad | Software Engineer | Frontend",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/a1229aec-1105-4c47-8533-b912e732ed89",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||university-grad-software-engineer-frontend",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "AWS",
+        "AI",
+        "社区"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "社区运营",
+        "商务拓展",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Associate Manager | Customer Experience",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/2e47b59f-f68f-4266-80ff-eb92c8116f1a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||associate-manager-customer-experience",
+      "keywords": [
+        "SLO/SLA",
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "团队管理",
+        "稳定性保障",
+        "性能/容量",
+        "自动化",
+        "增长营销",
+        "招聘/HR"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "bd",
+      "category": "other",
+      "position": "Sales Development Representative",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/d2d32a6d-5f29-4708-83d0-03b4e44c031d",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||sales-development-representative",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Software Engineer Internship, Android ",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||software-engineer-internship-android",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "React",
+        "SQL",
+        "AI",
+        "社区",
+        "出入金"
+      ],
+      "duties": [
+        "架构设计",
+        "性能/容量",
+        "自动化",
+        "安全/审计",
+        "设计/品牌",
+        "社区运营"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "eng",
+      "category": "other",
+      "position": "Scaled Customer Activation Manager",
+      "level": "mid",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/94d79eed-34db-42c8-b47c-5edef335b7f2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||scaled-customer-activation-manager",
+      "keywords": [
+        "AI",
+        "营销/增长"
+      ],
+      "duties": [
+        "性能/容量",
+        "自动化",
+        "增长营销",
+        "商务拓展",
+        "招聘/HR",
+        "客户/机构对接"
+      ]
+    },
+    {
+      "company": "Ramp Network",
+      "func": "security",
+      "category": "other",
+      "position": "Senior Security Program Manager | Public Sector",
+      "level": "senior",
+      "location": "New York, NY (HQ)",
+      "region": [
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "ABOUT RAMP",
+      "link": "https://jobs.ashbyhq.com/ramp/8beb1735-ded2-4067-b982-fb0faed9038e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "ramp-network||senior-security-program-manager-public-sector",
+      "keywords": [
+        "AWS",
+        "AI",
+        "安全审计",
+        "合规"
+      ],
+      "duties": [
+        "团队管理",
+        "架构设计",
+        "监控告警",
+        "性能/容量",
+        "自动化",
+        "安全/审计"
+      ]
+    },
+    {
+      "company": "Eclipse",
+      "func": "data",
+      "category": "chain",
+      "position": "Data Scientist (AI Data & LLM Specialist)",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 0,
+      "requirements": "<p>Join the core team at Eclipse, where we’re building an AI agent-first marketplace that connects intelligence with rea",
+      "link": "https://job-boards.greenhouse.io/eclipse/jobs/4981191008",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "eclipse||data-scientist-ai-data-llm-specialist",
+      "keywords": [
+        "Python",
+        "L2/Rollup",
+        "Ethereum",
+        "Solana",
+        "Machine Learning",
+        "AI"
+      ],
+      "duties": [
+        "性能/容量",
+        "部署发布",
+        "自动化",
+        "数据分析",
+        "设计/品牌"
+      ]
+    },
+    {
       "company": "TRM Labs",
       "func": "data",
       "category": "infra",
