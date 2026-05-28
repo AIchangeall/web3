@@ -1,0 +1,261 @@
+[
+  {
+    "company": "1inch",
+    "category": "defi",
+    "ats": "lever",
+    "id": "1inch",
+    "count": 4
+  },
+  {
+    "company": "Anchorage Digital",
+    "category": "other",
+    "ats": "lever",
+    "id": "anchorage",
+    "count": 71
+  },
+  {
+    "company": "Animoca Brands",
+    "category": "other",
+    "ats": "lever",
+    "id": "animocabrands",
+    "count": 5
+  },
+  {
+    "company": "Aptos Labs",
+    "category": "chain",
+    "ats": "greenhouse",
+    "id": "aptoslabs",
+    "count": 4
+  },
+  {
+    "company": "Backpack Exchange",
+    "category": "exchange",
+    "ats": "ashby",
+    "id": "backpack",
+    "count": 8
+  },
+  {
+    "company": "BitGo",
+    "category": "other",
+    "ats": "greenhouse",
+    "id": "bitgo",
+    "count": 50
+  },
+  {
+    "company": "Bybit",
+    "category": "exchange",
+    "ats": "greenhouse",
+    "id": "bybit",
+    "count": 135
+  },
+  {
+    "company": "Celestia",
+    "category": "chain",
+    "ats": "lever",
+    "id": "celestia",
+    "count": 1
+  },
+  {
+    "company": "CertiK",
+    "category": "infra",
+    "ats": "lever",
+    "id": "certik",
+    "count": 22
+  },
+  {
+    "company": "Consensys (MetaMask)",
+    "category": "defi",
+    "ats": "greenhouse",
+    "id": "consensys",
+    "count": 11
+  },
+  {
+    "company": "Crypto.com",
+    "category": "exchange",
+    "ats": "lever",
+    "id": "crypto",
+    "count": 117
+  },
+  {
+    "company": "Dune Analytics",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "dune",
+    "count": 2
+  },
+  {
+    "company": "FalconX",
+    "category": "other",
+    "ats": "greenhouse",
+    "id": "falconx",
+    "count": 23
+  },
+  {
+    "company": "Figment",
+    "category": "infra",
+    "ats": "greenhouse",
+    "id": "figment",
+    "count": 1
+  },
+  {
+    "company": "Filecoin Foundation",
+    "category": "infra",
+    "ats": "greenhouse",
+    "id": "filecoinfoundation",
+    "count": 1
+  },
+  {
+    "company": "Fireblocks",
+    "category": "other",
+    "ats": "greenhouse",
+    "id": "fireblocks",
+    "count": 49
+  },
+  {
+    "company": "Galaxy Digital",
+    "category": "other",
+    "ats": "greenhouse",
+    "id": "galaxydigitalservices",
+    "count": 53
+  },
+  {
+    "company": "Gemini",
+    "category": "exchange",
+    "ats": "greenhouse",
+    "id": "gemini",
+    "count": 29
+  },
+  {
+    "company": "Helius",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "helius",
+    "count": 7
+  },
+  {
+    "company": "Hyperliquid Labs",
+    "category": "exchange",
+    "ats": "ashby",
+    "id": "Hyperliquid Labs",
+    "count": 2
+  },
+  {
+    "company": "Immutable",
+    "category": "infra",
+    "ats": "lever",
+    "id": "immutable",
+    "count": 1
+  },
+  {
+    "company": "Ledger",
+    "category": "other",
+    "ats": "ashby",
+    "id": "ledger",
+    "count": 12
+  },
+  {
+    "company": "Monad Foundation",
+    "category": "chain",
+    "ats": "ashby",
+    "id": "monad.foundation",
+    "count": 10
+  },
+  {
+    "company": "MoonPay",
+    "category": "other",
+    "ats": "lever",
+    "id": "moonpay",
+    "count": 21
+  },
+  {
+    "company": "Morpho",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "morpho",
+    "count": 10
+  },
+  {
+    "company": "NEAR Foundation",
+    "category": "chain",
+    "ats": "greenhouse",
+    "id": "nearfoundation",
+    "count": 2
+  },
+  {
+    "company": "OKX",
+    "category": "exchange",
+    "ats": "greenhouse",
+    "id": "okx",
+    "count": 259
+  },
+  {
+    "company": "Phantom",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "phantom",
+    "count": 13
+  },
+  {
+    "company": "Polymarket",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "polymarket",
+    "count": 44
+  },
+  {
+    "company": "Ramp Network",
+    "category": "other",
+    "ats": "ashby",
+    "id": "ramp",
+    "count": 122
+  },
+  {
+    "company": "Ripple",
+    "category": "other",
+    "ats": "greenhouse",
+    "id": "ripple",
+    "count": 127
+  },
+  {
+    "company": "Robinhood",
+    "category": "exchange",
+    "ats": "greenhouse",
+    "id": "robinhood",
+    "count": 133
+  },
+  {
+    "company": "Safe (Gnosis Safe)",
+    "category": "infra",
+    "ats": "lever",
+    "id": "safe",
+    "count": 14
+  },
+  {
+    "company": "Sky Mavis",
+    "category": "other",
+    "ats": "ashby",
+    "id": "skymavis",
+    "count": 6
+  },
+  {
+    "company": "TRM Labs",
+    "category": "infra",
+    "ats": "ashby",
+    "id": "trm-labs",
+    "count": 108
+  },
+  {
+    "company": "Trust Wallet",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "trust-wallet",
+    "count": 11
+  },
+  {
+    "company": "Uniswap Labs",
+    "category": "defi",
+    "ats": "ashby",
+    "id": "Uniswap",
+    "count": 10
+  }
+]

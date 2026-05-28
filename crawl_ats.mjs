@@ -61,19 +61,21 @@ const inferRegion = loc => { loc = (loc || "").toLowerCase(); const r = [];
   return r.length ? [...new Set(r)] : ["remote"];
 };
 
-// 公司 → 已有 category（用于新职位继承）
-const catOf = {}; for (const j of D.jobs) if (j.category && !catOf[j.company]) catOf[j.company] = j.category;
-
-// 从现有链接反推招聘板： {site/token/org -> company}
+// 招聘板 (id → {company, category})：①从现有链接反推 ②叠加 boards.json 的【人工策展清单】(后者优先)
 const boards = { lever: new Map(), greenhouse: new Map(), ashby: new Map() };
 for (const j of D.jobs) {
   try {
     const u = new URL(j.link), h = u.hostname.replace(/^www\./, ""), seg = u.pathname.split("/").filter(Boolean);
-    if (h.endsWith("lever.co") && seg[0]) boards.lever.set(seg[0], j.company);
-    else if (h.endsWith("greenhouse.io") && seg[0]) boards.greenhouse.set(seg[0], j.company);
-    else if (h.endsWith("ashbyhq.com") && seg[0]) boards.ashby.set(decodeURIComponent(seg[0]), j.company);
+    const info = { company: j.company, category: j.category };
+    if (h.endsWith("lever.co") && seg[0]) boards.lever.set(seg[0], info);
+    else if (h.endsWith("greenhouse.io") && seg[0]) boards.greenhouse.set(seg[0], info);
+    else if (h.endsWith("ashbyhq.com") && seg[0]) boards.ashby.set(decodeURIComponent(seg[0]), info);
   } catch (e) {}
 }
+try {
+  const curated = JSON.parse(fs.readFileSync(path.join(__dirname, "boards.json"), "utf-8"));
+  for (const b of curated) { const m = boards[b.ats]; if (m) m.set(b.id, { company: b.company, category: b.category || "other" }); }
+} catch (e) { /* boards.json 缺失则只用自动反推 */ }
 
 async function getJSON(url) { const res = await fetch(url, { signal: AbortSignal.timeout(TIMEOUT), headers: { "User-Agent": UA, "Accept": "application/json" } }); if (!res.ok) throw new Error("HTTP " + res.status); return res.json(); }
 
@@ -102,7 +104,8 @@ const DESC = loadDescs();
 let enriched = 0, added = 0, boardsOK = 0, boardsFail = 0;
 const report = [];
 
-async function processBoard(kind, id, company, fn) {
+async function processBoard(kind, id, info, fn) {
+  const company = info.company;
   let jobs;
   try { jobs = await fn(id); boardsOK++; } catch (e) { boardsFail++; report.push(`  ✗ ${kind}:${id} (${company}) — ${e.message}`); return; }
   report.push(`  ✓ ${kind}:${id} (${company}) — ${jobs.length} 个在招`);
@@ -122,7 +125,7 @@ async function processBoard(kind, id, company, fn) {
     } else {
       if (newThis >= NEW_CAP) continue;
       const job = {
-        company, func: inferFunc(c.position), category: catOf[company] || "other",
+        company, func: inferFunc(c.position), category: info.category || "other",
         position: c.position, level: inferLevel(c.position), location: c.location || "远程",
         region: inferRegion(c.location), salary: "面议", salaryNum: 0,
         requirements: (c.description || "").split("\n").map(s => s.trim()).filter(Boolean)[0]?.slice(0, 120) || c.position,
@@ -137,9 +140,9 @@ async function processBoard(kind, id, company, fn) {
 }
 
 const tasks = [];
-for (const [id, co] of boards.lever) tasks.push(processBoard("lever", id, co, crawlLever));
-for (const [id, co] of boards.greenhouse) tasks.push(processBoard("greenhouse", id, co, crawlGreenhouse));
-for (const [id, co] of boards.ashby) tasks.push(processBoard("ashby", id, co, crawlAshby));
+for (const [id, info] of boards.lever) tasks.push(processBoard("lever", id, info, crawlLever));
+for (const [id, info] of boards.greenhouse) tasks.push(processBoard("greenhouse", id, info, crawlGreenhouse));
+for (const [id, info] of boards.ashby) tasks.push(processBoard("ashby", id, info, crawlAshby));
 
 console.log(`招聘板：Lever ${boards.lever.size} | Greenhouse ${boards.greenhouse.size} | Ashby ${boards.ashby.size}（共 ${tasks.length}）${DRY ? " [DRY]" : ""}`);
 // 限并发
