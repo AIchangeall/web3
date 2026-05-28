@@ -20,9 +20,9 @@ window.WEB3_JOBS_DATA = {
   "changelog": [
     {
       "date": "2026-05-28",
-      "added": 52,
+      "added": 69,
       "removed": 0,
-      "note": "当日累计新增 52 个岗位。"
+      "note": "当日累计新增 69 个岗位。"
     },
     {
       "date": "2026-05-27",
@@ -38,6 +38,458 @@ window.WEB3_JOBS_DATA = {
     }
   ],
   "jobs": [
+    {
+      "company": "Aragon",
+      "func": "eng",
+      "category": "other",
+      "position": "Smart Contract Engineer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "3+ yrs Solidity; build custom integrations on Aragon OSx protocol for clients; expert smart contract security and open-source blockchain contributions.",
+      "link": "https://jobs.lever.co/aragon/09e50def-184c-433a-a94b-2c605fafd68b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aragon||smart-contract-engineer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Aragon",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior Smart Contract Developer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "$72k–$84k/yr",
+      "salaryNum": 78000,
+      "requirements": "5+ yrs Solidity; build and shape Aragon OSx protocol; mastery of Ethereum EIPs, ENS, account abstraction, L2 solutions.",
+      "link": "https://jobs.lever.co/aragon/fba68080-9e98-49d7-8ed7-ac05d047d4b0",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aragon||senior-smart-contract-developer",
+      "keywords": [
+        "Solidity",
+        "Smart Contract",
+        "L2/Rollup",
+        "Ethereum"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Aragon",
+      "func": "eng",
+      "category": "other",
+      "position": "Engineering Lead",
+      "level": "head",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Cross-functional engineering lead on Aragon Platform Team; senior depth in frontend (JS/TS/React) or backend (Node/TS); CI/CD, monitoring, prior tech lead experience.",
+      "link": "https://jobs.lever.co/aragon/71eadf1d-a1a7-427d-9b2c-f36f7f67f38b",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "aragon||engineering-lead",
+      "keywords": [
+        "React",
+        "Validator/节点",
+        "CI/CD"
+      ],
+      "duties": [
+        "监控告警",
+        "部署发布",
+        "节点运维"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Xsolla",
+      "func": "eng",
+      "category": "other",
+      "position": "Senior QA Engineer - Web3",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 120000,
+      "requirements": "Senior QA for Web3 gaming features; validate blockchain interactions, wallet flows (MetaMask, WalletConnect), smart contract events, on-chain/off-chain data sync.",
+      "link": "https://jobs.lever.co/xsolla/7a3f44b2-4792-4182-99b7-e00517859626",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "xsolla||senior-qa-engineer-web3",
+      "keywords": [
+        "Smart Contract",
+        "Wallet"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Xsolla",
+      "func": "bd",
+      "category": "other",
+      "position": "Ecosystem Partnerships Lead Web3",
+      "level": "senior",
+      "location": "Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 130000,
+      "requirements": "3+ yrs Web3 BD/ecosystem partnerships; drive adoption of Xsolla ZK gaming ecosystem; knowledge of zero-knowledge tech and token incentive models.",
+      "link": "https://jobs.lever.co/xsolla/cfe03957-2cec-4fa6-8e1a-4e9bf09bdb0f",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "xsolla||ecosystem-partnerships-lead-web3",
+      "keywords": [
+        "ZK"
+      ],
+      "duties": [
+        "商务拓展"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Xsolla",
+      "func": "bd",
+      "category": "other",
+      "position": "Ecosystem Partnership Lead Web3 (EMEA)",
+      "level": "senior",
+      "location": "Remote (Europe)",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "$111k–$130k/yr",
+      "salaryNum": 120000,
+      "requirements": "3+ yrs Web3 BD; lead Xsolla ZK ecosystem partnerships in EMEA region; deep knowledge of Web3 gaming, ZK infrastructure, token incentive models.",
+      "link": "https://jobs.lever.co/xsolla/7ecffabc-54a0-43cc-92ee-5d23085c7863",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "xsolla||ecosystem-partnership-lead-web3-emea",
+      "keywords": [
+        "ZK"
+      ],
+      "duties": [
+        "商务拓展"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "CoinTracker",
+      "func": "eng",
+      "category": "other",
+      "position": "Product Engineer (Full Stack)",
+      "level": "mid",
+      "location": "Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Full-stack engineer for crypto portfolio tracking and tax compliance platform; CoinTracker tracks $80B+ in crypto and has generated 1M+ tax forms.",
+      "link": "https://jobs.ashbyhq.com/cointracker/c039fbb9-2ed7-4a68-bc7a-c6f929d5d5e5",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "cointracker||product-engineer-full-stack",
+      "keywords": [
+        "合规"
+      ],
+      "duties": [
+        "合规风控"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "CoinTracker",
+      "func": "ga",
+      "category": "other",
+      "position": "Head of Finance",
+      "level": "head",
+      "location": "Remote (US)",
+      "region": [
+        "remote",
+        "us"
+      ],
+      "salary": "面议",
+      "salaryNum": 220000,
+      "requirements": "Lead CoinTracker through first financial audit; manage financial statement reporting for crypto portfolio tracking platform with $80B+ in assets tracked.",
+      "link": "https://jobs.ashbyhq.com/cointracker/7f41db90-6771-4cb0-85db-edd8dd8d354e",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "cointracker||head-of-finance",
+      "keywords": [
+        "安全审计"
+      ],
+      "duties": [
+        "团队管理",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Phantom",
+      "func": "design",
+      "category": "defi",
+      "position": "Product Design (Wallet Platform)",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 180000,
+      "requirements": "Design wallet platform UX for Phantom, the leading multi-chain crypto wallet used by millions; turn complex web3 concepts into simple, beautiful experiences.",
+      "link": "https://jobs.ashbyhq.com/phantom/46472615-c204-4f44-b466-5db14ea5bb39",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "phantom||product-design-wallet-platform",
+      "keywords": [
+        "Wallet"
+      ],
+      "duties": [
+        "多链/跨链",
+        "设计/品牌"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Immunefi",
+      "func": "security",
+      "category": "other",
+      "position": "Smart Contract Triager",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 100000,
+      "requirements": "Review and reproduce smart contract vulnerability reports on Immunefi's bug bounty platform; deep understanding of Solidity, DLTs, and common vulnerability patterns.",
+      "link": "https://job-boards.greenhouse.io/immunefi/jobs/5611187004",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "immunefi||smart-contract-triager",
+      "keywords": [
+        "Solidity",
+        "Smart Contract"
+      ],
+      "duties": [
+        "协议/合约开发",
+        "安全/审计"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Fuel Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Web3 Software Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 170000,
+      "requirements": "5+ yrs engineering, 2+ yrs Web3/blockchain; build high-performance dApps on Fuel VM; React/Next.js/TypeScript, ethers.js/viem/wagmi, on-chain integrations.",
+      "link": "https://jobs.lever.co/fuellabs/c0c2c414-46c4-4c74-8a4a-4ae8bc9af3ba",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fuel-labs||senior-web3-software-engineer",
+      "keywords": [
+        "TypeScript",
+        "React"
+      ],
+      "duties": [
+        "性能/容量"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Fuel Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Senior Front-End Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 160000,
+      "requirements": "Senior frontend engineer for Fuel Labs blockchain stack; React/TypeScript, Web3 libraries (ethers.js/viem/wagmi), DeFi product experience, 5+ yrs.",
+      "link": "https://jobs.lever.co/fuellabs/382ae917-4335-4b88-b0ad-8a726a81b533",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fuel-labs||senior-front-end-engineer",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "DeFi"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Fuel Labs",
+      "func": "ops",
+      "category": "chain",
+      "position": "Senior DevOps Engineer",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "$84k–$100k/yr",
+      "salaryNum": 92000,
+      "requirements": "Senior DevOps for Fuel Labs blockchain infrastructure; Terraform/Kubernetes/CI-CD; Solidity/Rust node operations experience required.",
+      "link": "https://jobs.lever.co/fuellabs/4e032fe5-2f5f-4a7e-aea3-06c129d04346",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fuel-labs||senior-devops-engineer",
+      "keywords": [
+        "Solidity",
+        "Rust",
+        "Validator/节点",
+        "Kubernetes",
+        "Terraform"
+      ],
+      "duties": [
+        "节点运维"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Fuel Labs",
+      "func": "eng",
+      "category": "chain",
+      "position": "Rust Engineer",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 140000,
+      "requirements": "Rust engineer for Fuel VM/Sway language tooling and blockchain core infrastructure; contribute to protocol development.",
+      "link": "https://jobs.lever.co/fuellabs/76d9fe44-58d5-4138-9e24-5504981ceb0a",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "fuel-labs||rust-engineer",
+      "keywords": [
+        "Rust"
+      ],
+      "duties": [
+        "协议/合约开发"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "growth",
+      "category": "defi",
+      "position": "DeFi Growth Lead",
+      "level": "senior",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "面议",
+      "salaryNum": 150000,
+      "requirements": "Crypto-native DeFi growth lead; strategist and executor deeply immersed in DeFi ecosystems; drive user acquisition and engagement for Trust Wallet's DeFi products.",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/362af2bc-a01c-4399-acaf-c9e1eac80c01",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trust-wallet||defi-growth-lead",
+      "keywords": [
+        "DeFi",
+        "Wallet",
+        "营销/增长"
+      ],
+      "duties": [
+        "增长营销"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "Trust Wallet",
+      "func": "product",
+      "category": "defi",
+      "position": "Product Manager - Web3 / DeFi",
+      "level": "mid",
+      "location": "Remote",
+      "region": [
+        "remote"
+      ],
+      "salary": "$63k–$110k/yr",
+      "salaryNum": 86000,
+      "requirements": "Shape and grow Trust Wallet's DeFi & Earn product suite (staking, yield farming, on-chain earn); 200M+ user base across 100+ blockchains.",
+      "link": "https://jobs.ashbyhq.com/trust-wallet/89299a41-a5f2-4ee7-b847-b3caaa54bcc2",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "trust-wallet||product-manager-web3-defi",
+      "keywords": [
+        "DeFi",
+        "Staking",
+        "Wallet"
+      ],
+      "duties": [
+        "节点运维",
+        "产品规划"
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
+    {
+      "company": "WhiteBIT",
+      "func": "bd",
+      "category": "exchange",
+      "position": "Developer Relations Manager (Whitechain)",
+      "level": "mid",
+      "location": "Remote / Europe",
+      "region": [
+        "remote",
+        "eu"
+      ],
+      "salary": "面议",
+      "salaryNum": 90000,
+      "requirements": "2-3 yrs blockchain industry; expand Whitechain (EVM) developer adoption; travel to hackathons and conferences; excellent soft skills and technical background.",
+      "link": "https://whitebit.com/m/careers",
+      "firstSeen": "2026-05-28",
+      "lastSeen": "2026-05-28",
+      "id": "whitebit||developer-relations-manager-whitechain",
+      "keywords": [
+        "EVM"
+      ],
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
+    },
     {
       "company": "Ethena Labs",
       "func": "design",
@@ -61,7 +513,8 @@ window.WEB3_JOBS_DATA = {
         "协议/合约开发",
         "产品规划",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Rain",
@@ -90,7 +543,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "协议/合约开发",
         "多链/跨链"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Rain",
@@ -112,7 +566,8 @@ window.WEB3_JOBS_DATA = {
       "keywords": [],
       "duties": [
         "产品规划"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Rain",
@@ -139,7 +594,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "合规风控",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Rain",
@@ -163,7 +619,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "数据分析",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Improbable",
@@ -190,7 +647,8 @@ window.WEB3_JOBS_DATA = {
       ],
       "duties": [
         "协议/合约开发"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Turnkey",
@@ -217,7 +675,8 @@ window.WEB3_JOBS_DATA = {
       ],
       "duties": [
         "稳定性保障"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Optimum",
@@ -242,7 +701,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Indodax",
@@ -264,7 +724,8 @@ window.WEB3_JOBS_DATA = {
       "keywords": [],
       "duties": [
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Blockworks",
@@ -289,7 +750,8 @@ window.WEB3_JOBS_DATA = {
       ],
       "duties": [
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Sui Foundation",
@@ -315,7 +777,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "InfStones",
@@ -341,7 +804,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Gate.io",
@@ -362,7 +826,8 @@ window.WEB3_JOBS_DATA = {
       "lastSeen": "2026-05-28",
       "id": "gate-io||web3-qa-engineer",
       "keywords": [],
-      "duties": []
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -388,7 +853,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "性能/容量",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -410,7 +876,8 @@ window.WEB3_JOBS_DATA = {
       "keywords": [],
       "duties": [
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -433,7 +900,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "性能/容量",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Binance",
@@ -460,7 +928,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "协议/合约开发",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Binance",
@@ -487,7 +956,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "协议/合约开发",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Binance",
@@ -515,7 +985,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Binance",
@@ -542,7 +1013,8 @@ window.WEB3_JOBS_DATA = {
         "协议/合约开发",
         "多链/跨链",
         "产品规划"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Binance",
@@ -569,7 +1041,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "合规风控",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "OKX",
@@ -598,7 +1071,8 @@ window.WEB3_JOBS_DATA = {
         "协议/合约开发",
         "安全/审计",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "MoonPay",
@@ -623,7 +1097,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "协议/合约开发",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Chainalysis",
@@ -651,7 +1126,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "部署发布",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Trust Wallet",
@@ -673,7 +1149,8 @@ window.WEB3_JOBS_DATA = {
       "keywords": [
         "Wallet"
       ],
-      "duties": []
+      "duties": [],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Trust Wallet",
@@ -702,7 +1179,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Animoca Brands",
@@ -727,7 +1205,8 @@ window.WEB3_JOBS_DATA = {
       ],
       "duties": [
         "协议/合约开发"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "BTSE",
@@ -753,7 +1232,8 @@ window.WEB3_JOBS_DATA = {
       ],
       "duties": [
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -789,7 +1269,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -825,7 +1306,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "部署发布",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -853,7 +1335,8 @@ window.WEB3_JOBS_DATA = {
         "设计/品牌",
         "增长营销",
         "社区运营"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -884,7 +1367,8 @@ window.WEB3_JOBS_DATA = {
         "数据分析",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -909,7 +1393,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "监控告警",
         "自动化"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -941,7 +1426,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "产品规划",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -972,7 +1458,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "产品规划",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1006,7 +1493,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "安全/审计",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1042,7 +1530,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1078,7 +1567,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1108,7 +1598,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "数据分析",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1141,7 +1632,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "合规风控",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1177,7 +1669,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1208,7 +1701,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1239,7 +1733,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "招聘/HR",
         "客户/机构对接"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1269,7 +1764,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "部署发布",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1300,7 +1796,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1332,7 +1829,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1358,7 +1856,8 @@ window.WEB3_JOBS_DATA = {
       "duties": [
         "性能/容量",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Crypto.com",
@@ -1392,7 +1891,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "增长营销",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1423,7 +1923,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1454,7 +1955,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1482,7 +1984,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "产品规划",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1511,7 +2014,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "社区运营",
         "商务拓展"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1542,7 +2046,8 @@ window.WEB3_JOBS_DATA = {
         "产品规划",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1571,7 +2076,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "数据分析",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1601,7 +2107,8 @@ window.WEB3_JOBS_DATA = {
         "增长营销",
         "商务拓展",
         "招聘/HR"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1634,7 +2141,8 @@ window.WEB3_JOBS_DATA = {
         "部署发布",
         "自动化",
         "安全/审计"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1666,7 +2174,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "数据分析",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1696,7 +2205,8 @@ window.WEB3_JOBS_DATA = {
         "自动化",
         "合规风控",
         "数据分析"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1726,7 +2236,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "自动化",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1759,7 +2270,8 @@ window.WEB3_JOBS_DATA = {
         "性能/容量",
         "安全/审计",
         "合规风控"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1790,7 +2302,8 @@ window.WEB3_JOBS_DATA = {
         "安全/审计",
         "合规风控",
         "设计/品牌"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1826,7 +2339,8 @@ window.WEB3_JOBS_DATA = {
         "监控告警",
         "性能/容量",
         "部署发布"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -1858,7 +2372,8 @@ window.WEB3_JOBS_DATA = {
         "合规风控",
         "设计/品牌",
         "增长营销"
-      ]
+      ],
+      "linkCheckedAt": "2026-05-28T10:18:10.652Z"
     },
     {
       "company": "Coins.ph",
@@ -53379,7 +53894,19 @@ window.WEB3_JOBS_DATA = {
     },
     "Celestia": {
       "intro": ""
+    },
+    "Aragon": {
+      "intro": ""
+    },
+    "Xsolla": {
+      "intro": ""
+    },
+    "CoinTracker": {
+      "intro": ""
+    },
+    "WhiteBIT": {
+      "intro": ""
     }
   },
-  "lastUpdatedAt": "2026-05-28T05:18:17.459Z"
+  "lastUpdatedAt": "2026-05-28T10:17:56.381Z"
 };
