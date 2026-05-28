@@ -19,6 +19,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractKeywords, extractDuties } from "./keywords.mjs";
 import { loadDescs, saveDescs } from "./descstore.mjs";
+import { readData, writeData } from "./gen_chunks.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -77,9 +78,7 @@ async function api(pathname, body) {
   return o.data;
 }
 
-const raw = fs.readFileSync(DATA_FILE, "utf-8");
-const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const D = readData();
 const existing = new Map(D.jobs.map(j => [keyOf(j), j]));
 const DESC = loadDescs();
 let enriched = 0, added = 0;
@@ -137,8 +136,7 @@ async function processSite(site) {
 for (const s of SITES) await processSite(s);
 console.log(report.join("\n"));
 
-const header = raw.slice(0, raw.indexOf("window.WEB3_JOBS_DATA"));
-fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
+writeData(D);
 const totalDesc = saveDescs(DESC);
 const pages = genJobPages(D);
 console.log(`✅ 富化 ${enriched} | 新增 ${added} | 岗位总数 ${D.jobs.length} | descriptions ${totalDesc} 条 | 静态页 ${pages}`);

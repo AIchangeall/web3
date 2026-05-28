@@ -143,9 +143,13 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <script src="widgets.js"></script>
 <script src="data.js"></script>
 <script>
-(function(){
+(async function(){
   const DATA=window.WEB3_JOBS_DATA;
-  if(!DATA||!Array.isArray(DATA.jobs)){document.getElementById("load-error").style.display="block";return;}
+  if(!DATA){document.getElementById("load-error").style.display="block";return;}
+  if(!Array.isArray(DATA.jobs) && Array.isArray(DATA.chunks)){
+    try{ const arrs=await Promise.all(DATA.chunks.map(c=>fetch(c).then(r=>r.ok?r.json():[]))); DATA.jobs=arrs.flat(); }catch(e){}
+  }
+  if(!Array.isArray(DATA.jobs) || !DATA.jobs.length){document.getElementById("load-error").style.display="block";return;}
   const data=DATA.jobs, lastUpdated=DATA.lastUpdated||"", COMP=DATA.companies||{}, lastUpdatedAt=DATA.lastUpdatedAt||"";
   const pad2=n=>String(n).padStart(2,"0");
   const fmtDT=iso=>{const d=new Date(iso);if(isNaN(d.getTime()))return iso||lastUpdated;return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;};

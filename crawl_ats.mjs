@@ -16,6 +16,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractKeywords, extractDuties } from "./keywords.mjs";
 import { loadDescs, saveDescs } from "./descstore.mjs";
+import { readData, writeData } from "./gen_chunks.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -27,9 +28,7 @@ const TIMEOUT = argN("--timeout", 15000);
 const TODAY = new Date().toISOString().slice(0, 10);
 const UA = "Mozilla/5.0 (compatible; ChainHireBot/1.0; +https://gmjobs.github.io/chainhire/)";
 
-const raw = fs.readFileSync(DATA_FILE, "utf-8");
-const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const D = readData();
 
 const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").replace(/(^-|-$)/g, "");
 const keyOf = j => slug(j.company) + "||" + slug(j.position);
@@ -152,8 +151,7 @@ console.log(report.sort().join("\n"));
 console.log(`\n板成功 ${boardsOK} / 失败 ${boardsFail}`);
 
 if (!DRY) {
-  const header = raw.slice(0, raw.indexOf("window.WEB3_JOBS_DATA"));
-  fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
+  writeData(D);
   const withDesc = saveDescs(DESC);
   const pages = genJobPages(D);
   console.log(`✅ 富化已有 ${enriched} | 新增 ${added} | 岗位总数 ${D.jobs.length} | descriptions.json 共 ${withDesc} 条 | 重建静态页 ${pages}`);

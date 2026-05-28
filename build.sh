@@ -17,6 +17,8 @@ cp index.html stats.html companies.html headhunter.html about.html \
    robots.txt sitemap.xml \
    dist/
 [ -f feed.xml ] && cp feed.xml dist/ || true
+# 分页岗位数据块（浏览器并行 fetch 拼成完整列表，描述存 descriptions.json 不发布）
+for f in data-jobs-*.json; do [ -e "$f" ] && cp "$f" dist/; done
 
 # 每岗位静态页（供 Google for Jobs / 社交分享落地）
 [ -d jobs ] && cp -r jobs dist/ || true
@@ -35,6 +37,8 @@ cat > dist/_headers <<'EOF'
 /*.html
   Cache-Control: no-cache
 /data.js
+  Cache-Control: no-cache
+/data-jobs-*.json
   Cache-Control: no-cache
 /i18n.js
   Cache-Control: no-cache

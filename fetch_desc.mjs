@@ -12,6 +12,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDescs, saveDescs } from "./descstore.mjs";
+import { readData } from "./gen_chunks.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -27,9 +28,7 @@ const TIMEOUT = Number(arg("--timeout", 12000));
 const FORCE = process.argv.includes("--force");
 const UA = "Mozilla/5.0 (compatible; ChainHireBot/1.0; +https://gmjobs.github.io/chainhire/)";
 
-const raw = fs.readFileSync(DATA_FILE, "utf-8");
-const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const D = readData();
 
 const decode = s => String(s || "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#0?39;|&apos;|&rsquo;/g, "'").replace(/&nbsp;/g, " ").replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n));
 const stripHtml = h => decode(String(h || "")

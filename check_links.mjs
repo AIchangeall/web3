@@ -20,6 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { readData, writeData } from "./gen_chunks.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -33,9 +34,7 @@ const TIMEOUT_MS = Number(arg("--timeout", 9000));
 const STRIKES = 2; // 连续两次死亡信号才判定下线
 const UA = "Mozilla/5.0 (compatible; ChainHireLinkBot/1.0; +https://gmjobs.github.io/chainhire/)";
 
-const raw = fs.readFileSync(DATA_FILE, "utf-8");
-const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const D = readData();
 
 const now = Date.now();
 const nowIso = new Date().toISOString();
@@ -94,8 +93,7 @@ async function run() {
 await run();
 
 // 写回 data.js（保留文件头注释）
-const header = raw.slice(0, raw.indexOf("window.WEB3_JOBS_DATA"));
-fs.writeFileSync(DATA_FILE, header + "window.WEB3_JOBS_DATA = " + JSON.stringify(D, null, 2) + ";\n");
+writeData(D);
 
 // 重建静态页 + sitemap（反映 linkDead）
 const pages = genJobPages(D);

@@ -340,9 +340,14 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <script src="widgets.js"></script>
 <script src="data.js"></script>
 <script>
-(function(){
+(async function(){
   const DATA = window.WEB3_JOBS_DATA;
-  if(!DATA || !Array.isArray(DATA.jobs)){ document.getElementById("load-error").style.display="block"; return; }
+  if(!DATA){ document.getElementById("load-error").style.display="block"; return; }
+  // 分页/懒加载架构：data.js 只含 manifest，岗位数组在 data-jobs-*.json，浏览器并行 fetch 后拼成完整列表
+  if(!Array.isArray(DATA.jobs) && Array.isArray(DATA.chunks)){
+    try{ const arrs = await Promise.all(DATA.chunks.map(c => fetch(c).then(r => r.ok ? r.json() : []))); DATA.jobs = arrs.flat(); }catch(e){}
+  }
+  if(!Array.isArray(DATA.jobs) || !DATA.jobs.length){ document.getElementById("load-error").style.display="block"; return; }
   const data = DATA.jobs;
   const lastUpdated = DATA.lastUpdated || "";
   const lastUpdatedAt = DATA.lastUpdatedAt || "";

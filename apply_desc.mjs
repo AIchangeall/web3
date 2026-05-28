@@ -10,6 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDescs, saveDescs } from "./descstore.mjs";
+import { readData } from "./gen_chunks.mjs";
 import { generate as genJobPages } from "./gen_job_pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,9 +22,7 @@ const slug = s => (s || "").toLowerCase().replace(/[^a-z0-9一-龥]+/g, "-").rep
 const keyOf = j => slug(j.company) + "||" + slug(j.position);
 const clean = s => String(s || "").replace(/\r\n/g, "\n").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim().slice(0, 4000);
 
-const raw = fs.readFileSync(DATA_FILE, "utf-8");
-const objStart = raw.indexOf("{", raw.indexOf("window.WEB3_JOBS_DATA"));
-const D = JSON.parse(raw.slice(objStart, raw.lastIndexOf("}") + 1));
+const D = readData();
 const validIds = new Set(D.jobs.map(j => j.id || keyOf(j)));
 
 const incoming = JSON.parse(fs.readFileSync(inFile, "utf-8"));
