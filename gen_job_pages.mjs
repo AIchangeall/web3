@@ -198,6 +198,7 @@ function pageHtml(j) {
     <p class="disc">数据来自公开渠道整理，薪资为公开 JD 或聚合估算，仅供参考，以面试谈薪为准。 <a href="../index.html">← 返回链聘 ChainHire 职位看板</a></p>
   </article>
 </main>
+<script src="../analytics.js" async></script>
 </body>
 </html>
 `;
