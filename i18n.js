@@ -10,7 +10,7 @@
 (function () {
   const DICT = {
     "nav.home":        ["行业资讯", "Industry News"],
-    "nav.jobs":        ["职位", "Jobs"],
+    "nav.jobs":        ["职位信息", "Jobs"],
     "nav.talent":      ["人才招聘", "Talent Hub"],
     "nav.academy":     ["Web3学院", "Web3 Academy"],
     "nav.stats":       ["数据洞察", "Insights"],
