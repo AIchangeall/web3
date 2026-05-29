@@ -1,6 +1,62 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T09:24:52.751Z",
+  "updatedAt": "2026-05-29T12:05:33.862Z",
+  "hiring": [
+    {
+      "type": "hiring",
+      "title": "Steve Chung Becomes The Block's New CEO",
+      "summary": "加密媒体与数据机构The Block任命前Azuki首席运营官、前高盛及Fox Corporation高管Steve Chung出任新任CEO，其交叉横跨华尔街、媒体与Web3的背景备受关注。",
+      "url": "https://www.thestreet.com/crypto/innovation/steve-chung-becomes-the-blocks-new-ceo",
+      "source": "TheStreet Crypto",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "BlackRock, JPMorgan and Morgan Stanley Open Dozens of New Crypto Job Positions",
+      "summary": "贝莱德、摩根大通、摩根士丹利同步开放数十个加密职位，薪酬高达35万美元，重点招募代币化工程师、ETF做市商及数字资产合规官员，华尔街加密人才争夺战全面升级。",
+      "url": "https://financefeeds.com/blackrock-jpmorgan-and-morgan-stanley-open-dozens-of-new-crypto-job-positions",
+      "source": "FinanceFeeds",
+      "publishedAt": "2026-05-10T00:00:00.000Z",
+      "tag": "扩招"
+    },
+    {
+      "type": "hiring",
+      "title": "Coinbase Cuts 14% of Staff as AI Reshapes How Crypto Companies Operate",
+      "summary": "Coinbase宣布裁员约14%（约660人），CEO Brian Armstrong表示AI已让小团队以同等效率取代大团队，公司将重组为扁平化「玩家-教练」架构并组建AI原生小组。",
+      "url": "https://www.coindesk.com/business/2026/05/05/coinbase-cuts-14-of-staff-as-ai-reshapes-how-crypto-companies-operate",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-05T00:00:00.000Z",
+      "tag": "裁员"
+    },
+    {
+      "type": "hiring",
+      "title": "More DeFi Casualties: Why Optimism Is Cutting Staff as Wall Street Ramps Up Crypto Hiring Spree",
+      "summary": "OP Labs（Optimism）以缩减内部复杂度为由裁减20名员工，与此同时摩根大通、贝莱德、摩根士丹利等传统金融机构正大举扩充加密团队，DeFi原生企业与华尔街的招聘走势呈现鲜明分化。",
+      "url": "https://www.dlnews.com/articles/defi/why-optimism-is-cutting-staff-as-wall-street-ramps-up-crypto-hiring-spree",
+      "source": "DL News",
+      "publishedAt": "2026-05-01T00:00:00.000Z",
+      "tag": "裁员"
+    },
+    {
+      "type": "hiring",
+      "title": "Crypto Layoff Season Has Begun: Algorand, Gemini, Crypto.com, OP Labs Among Firms Cutting Workforce",
+      "summary": "Algorand削减25%员工、Gemini裁约30%、Crypto.com裁12%、OP Labs裁20人，加密行业2026年裁员潮持续，企业普遍以宏观不确定性与AI整合为由精简团队。",
+      "url": "https://www.ccn.com/news/crypto/crypto-layoff-season-heres-the-list-of-firms-cutting-their-workforce",
+      "source": "CCN",
+      "publishedAt": "2026-03-21T00:00:00.000Z",
+      "tag": "裁员"
+    },
+    {
+      "type": "hiring",
+      "title": "Jack Dorsey Just Halved Block's Employee Base — And Says Your Company Is Next",
+      "summary": "Block（前Square）宣布裁员逾4,000人、砍掉近半员工规模，CEO Jack Dorsey表示AI驱动的组织精简将在一年内席卷大多数公司，公司股价盘后涨超24%。",
+      "url": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next",
+      "source": "TechCrunch",
+      "publishedAt": "2026-02-26T00:00:00.000Z",
+      "tag": "裁员"
+    }
+  ],
   "industry": [
     {
       "type": "industry",
@@ -66,60 +122,43 @@
       "tag": "安全"
     }
   ],
-  "hiring": [
+  "market": [
     {
-      "type": "hiring",
-      "title": "Steve Chung Becomes The Block's New CEO",
-      "summary": "加密媒体与数据机构The Block任命前Azuki首席运营官、前高盛及Fox Corporation高管Steve Chung出任新任CEO，其交叉横跨华尔街、媒体与Web3的背景备受关注。",
-      "url": "https://www.thestreet.com/crypto/innovation/steve-chung-becomes-the-blocks-new-ceo",
-      "source": "TheStreet Crypto",
-      "publishedAt": "2026-05-15T00:00:00.000Z",
-      "tag": "CXO变动"
-    },
-    {
-      "type": "hiring",
-      "title": "BlackRock, JPMorgan and Morgan Stanley Open Dozens of New Crypto Job Positions",
-      "summary": "贝莱德、摩根大通、摩根士丹利同步开放数十个加密职位，薪酬高达35万美元，重点招募代币化工程师、ETF做市商及数字资产合规官员，华尔街加密人才争夺战全面升级。",
-      "url": "https://financefeeds.com/blackrock-jpmorgan-and-morgan-stanley-open-dozens-of-new-crypto-job-positions",
-      "source": "FinanceFeeds",
-      "publishedAt": "2026-05-10T00:00:00.000Z",
-      "tag": "扩招"
-    },
-    {
-      "type": "hiring",
-      "title": "Coinbase Cuts 14% of Staff as AI Reshapes How Crypto Companies Operate",
-      "summary": "Coinbase宣布裁员约14%（约660人），CEO Brian Armstrong表示AI已让小团队以同等效率取代大团队，公司将重组为扁平化「玩家-教练」架构并组建AI原生小组。",
-      "url": "https://www.coindesk.com/business/2026/05/05/coinbase-cuts-14-of-staff-as-ai-reshapes-how-crypto-companies-operate",
+      "type": "market",
+      "title": "Bitcoin ETFs suffer record nine-day outflow streak as $2.8 billion exits funds",
+      "summary": "美国现货比特币ETF连续9日净流出，创2024年1月上市以来最长纪录，合计约28亿美元资金撤离；5月29日当天流出2.29亿美元（IBIT占1.78亿），BTC徘徊于7.35万美元，需求面降至2024年12月以来最低点。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
       "source": "CoinDesk",
-      "publishedAt": "2026-05-05T00:00:00.000Z",
-      "tag": "裁员"
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "ETF"
     },
     {
-      "type": "hiring",
-      "title": "More DeFi Casualties: Why Optimism Is Cutting Staff as Wall Street Ramps Up Crypto Hiring Spree",
-      "summary": "OP Labs（Optimism）以缩减内部复杂度为由裁减20名员工，与此同时摩根大通、贝莱德、摩根士丹利等传统金融机构正大举扩充加密团队，DeFi原生企业与华尔街的招聘走势呈现鲜明分化。",
-      "url": "https://www.dlnews.com/articles/defi/why-optimism-is-cutting-staff-as-wall-street-ramps-up-crypto-hiring-spree",
-      "source": "DL News",
-      "publishedAt": "2026-05-01T00:00:00.000Z",
-      "tag": "裁员"
+      "type": "market",
+      "title": "Bitcoin Hits 2026 Low Under $73K But Analyst Says It's Normal",
+      "summary": "比特币本周跌破7.3万美元，触及2026年年内最低价，月内累跌约8%，与美股同步承压；分析师指出此次下行属技术性回调，BTC已跌破50日及200日均线，但中长期结构并未根本改变。",
+      "url": "https://cointelegraph.com/news/bitcoin-loses-dollar73k-us-stocks-sell-off-analyst-says-btc-trading-is-normal",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "tag": "价格"
     },
     {
-      "type": "hiring",
-      "title": "Crypto Layoff Season Has Begun: Algorand, Gemini, Crypto.com, OP Labs Among Firms Cutting Workforce",
-      "summary": "Algorand削减25%员工、Gemini裁约30%、Crypto.com裁12%、OP Labs裁20人，加密行业2026年裁员潮持续，企业普遍以宏观不确定性与AI整合为由精简团队。",
-      "url": "https://www.ccn.com/news/crypto/crypto-layoff-season-heres-the-list-of-firms-cutting-their-workforce",
-      "source": "CCN",
-      "publishedAt": "2026-03-21T00:00:00.000Z",
-      "tag": "裁员"
+      "type": "market",
+      "title": "Toddlers learn by falling: Why DeFi's $20 billion TVL drop is just a market stress-test",
+      "summary": "5月加密市场回调致DeFi总锁仓价值（TVL）骤降约200亿美元至860亿美元，为今年最大单月跌幅；分析师认为此次下行属市场压力测试，稳定币规模仍超1500亿美元保持稳健，DeFi整体韧性依然存在。",
+      "url": "https://www.coindesk.com/business/2026/05/28/toddlers-learn-by-falling-why-defi-s-usd20-billion-tvl-drop-is-just-a-market-stress-test",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "tag": "链上"
     },
     {
-      "type": "hiring",
-      "title": "Jack Dorsey Just Halved Block's Employee Base — And Says Your Company Is Next",
-      "summary": "Block（前Square）宣布裁员逾4,000人、砍掉近半员工规模，CEO Jack Dorsey表示AI驱动的组织精简将在一年内席卷大多数公司，公司股价盘后涨超24%。",
-      "url": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next",
-      "source": "TechCrunch",
-      "publishedAt": "2026-02-26T00:00:00.000Z",
-      "tag": "裁员"
+      "type": "market",
+      "title": "Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps",
+      "summary": "追踪比特币卖压的链上指标5月27日进入「高风险」区间，现货ETF年初至今净积累量骤降至仅4,500枚BTC，5月整体转为净流出；宏观不确定性叠加美联储鹰派立场，机构买盘持续低迷。",
+      "url": "https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "tag": "机构"
     }
-  ]
+  ],
+  "geopolitics": []
 }
