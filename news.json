@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T12:07:43.532Z",
+  "updatedAt": "2026-05-29T15:07:46.706Z",
   "hiring": [
     {
       "type": "hiring",
@@ -134,6 +134,24 @@
     },
     {
       "type": "market",
+      "title": "Crypto and stocks go their separate ways as bitcoin's failed breakout continues to weigh",
+      "summary": "比特币跌至4月低点约7.35万美元，美股标普500同期逼近历史新高，加密市场与股市出现罕见背离，连续9天ETF净流出与买家持续匮乏被认为是核心原因。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-slides-to-april-lows-as-crypto-diverges-from-record-chasing-u-s-equities",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
+      "title": "Bitcoin's record holder supply hides a buyer drought, CryptoQuant says",
+      "summary": "CryptoQuant指出，比特币长期持有者供应量创纪录1580万BTC，但实为新买家严重匮乏的信号：短期持仓自12月减少220万BTC，鲸鱼与机构海豚余额同步停滞。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-s-record-holder-supply-hides-a-buyer-drought-cryptoquant-says",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "链上"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin Hits 2026 Low Under $73K But Analyst Says It's Normal",
       "summary": "比特币本周跌破7.3万美元，触及2026年年内最低价，月内累跌约8%，与美股同步承压；分析师指出此次下行属技术性回调，BTC已跌破50日及200日均线，但中长期结构并未根本改变。",
       "url": "https://cointelegraph.com/news/bitcoin-loses-dollar73k-us-stocks-sell-off-analyst-says-btc-trading-is-normal",
@@ -152,9 +170,27 @@
     },
     {
       "type": "market",
+      "title": "IBIT news: BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record",
+      "summary": "贝莱德IBIT单日净流出5.28亿美元创历史第二大单日记录，11只美国现货比特币ETF当日合计净流出7.33亿美元，比特币随即跌破7.3万美元关口。",
+      "url": "https://www.coindesk.com/markets/2026/05/28/blackrock-s-bitcoin-etf-sheds-usd528-million-the-second-largest-daily-outflow-on-record",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "tag": "ETF"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps",
       "summary": "追踪比特币卖压的链上指标5月27日进入「高风险」区间，现货ETF年初至今净积累量骤降至仅4,500枚BTC，5月整体转为净流出；宏观不确定性叠加美联储鹰派立场，机构买盘持续低迷。",
       "url": "https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "tag": "机构"
+    },
+    {
+      "type": "market",
+      "title": "Whale dumps $1.29 billion of BlackRock's bitcoin ETF in a dark pool trade",
+      "summary": "某大型机构通过暗池单笔抛售13亿美元贝莱德IBIT份额，为史上最大比特币ETF场外交易；此举随即触发IBIT连续大额净流出，并拖累比特币加速跌破7.3万美元。",
+      "url": "https://www.coindesk.com/markets/2026/05/27/whale-alert-someone-dumped-usd1-29-billion-of-blackrock-s-bitcoin-etf-in-a-dark-pool-trade",
       "source": "CoinDesk",
       "publishedAt": "2026-05-27T00:00:00.000Z",
       "tag": "机构"
