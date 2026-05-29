@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .res-icon{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;font-size:17px;flex:none;background:var(--bg)}
   .res-body strong{display:block;font-size:13px;font-weight:700;margin-bottom:1px}
   .res-body span{font-size:12px;color:var(--muted)}
+  .res-label{grid-column:1/-1;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:8px 2px 2px;border-bottom:1px solid var(--line);margin-bottom:2px}
   .res-cat{font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px;margin-left:4px;vertical-align:1px}
 
   @media(max-width:640px){
@@ -864,6 +865,93 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     <a href="index.html" class="res-item">
       <div class="res-icon">🌍</div>
       <div class="res-body"><strong>链聘 ChainHire</strong><span>Web3 岗位聚合看板</span></div>
+    </a>
+
+    <!-- 行情 & 交易所排名 -->
+    <div class="res-label">📈 行情 &amp; 交易所排名</div>
+    <a href="https://www.coingecko.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🦎</div>
+      <div class="res-body"><strong>CoinGecko</strong><span>代币行情 + 交易所排名</span></div>
+    </a>
+    <a href="https://coinmarketcap.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🏆</div>
+      <div class="res-body"><strong>CoinMarketCap</strong><span>全球最大加密货币数据平台</span></div>
+    </a>
+    <a href="https://www.tradingview.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📉</div>
+      <div class="res-body"><strong>TradingView</strong><span>专业 K 线图表 + 技术分析</span></div>
+    </a>
+    <a href="https://www.coinglass.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🔥</div>
+      <div class="res-body"><strong>Coinglass</strong><span>合约爆仓数据 + 资金费率</span></div>
+    </a>
+
+    <!-- 链上分析 -->
+    <div class="res-label">🔭 链上分析</div>
+    <a href="https://glassnode.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🪟</div>
+      <div class="res-body"><strong>Glassnode</strong><span>机构级链上数据与持仓分析</span></div>
+    </a>
+    <a href="https://nansen.ai/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🏷️</div>
+      <div class="res-body"><strong>Nansen</strong><span>智能钱包标签与资金流向</span></div>
+    </a>
+    <a href="https://platform.arkhamintelligence.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🕵️</div>
+      <div class="res-body"><strong>Arkham Intelligence</strong><span>链上实体身份识别追踪</span></div>
+    </a>
+    <a href="https://messari.io/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📋</div>
+      <div class="res-body"><strong>Messari</strong><span>加密协议研究与资产数据</span></div>
+    </a>
+
+    <!-- 媒体资讯 -->
+    <div class="res-label">📡 媒体资讯</div>
+    <a href="https://www.coindesk.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🗞️</div>
+      <div class="res-body"><strong>CoinDesk</strong><span>加密领域权威英文媒体</span></div>
+    </a>
+    <a href="https://cointelegraph.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📡</div>
+      <div class="res-body"><strong>CoinTelegraph</strong><span>全球加密新闻 + 行情分析</span></div>
+    </a>
+    <a href="https://www.theblock.co/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🧱</div>
+      <div class="res-body"><strong>The Block</strong><span>深度市场研究与行业数据</span></div>
+    </a>
+
+    <!-- 开发工具 -->
+    <div class="res-label">🛠️ 开发工具</div>
+    <a href="https://docs.ethers.org/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">⚡</div>
+      <div class="res-body"><strong>ethers.js Docs</strong><span>JS/TS 合约交互主流库</span></div>
+    </a>
+    <a href="https://wagmi.sh/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🪝</div>
+      <div class="res-body"><strong>Wagmi</strong><span>React Hooks for Web3 开发</span></div>
+    </a>
+    <a href="https://hardhat.org/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">⛑️</div>
+      <div class="res-body"><strong>Hardhat</strong><span>合约开发 + 本地测试网络</span></div>
+    </a>
+    <a href="https://remix.ethereum.org/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🧑‍💻</div>
+      <div class="res-body"><strong>Remix IDE</strong><span>浏览器内 Solidity 在线编辑器</span></div>
+    </a>
+
+    <!-- 安全 -->
+    <div class="res-label">🛡️ 安全</div>
+    <a href="https://immunefi.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🐛</div>
+      <div class="res-body"><strong>Immunefi</strong><span>Web3 最大漏洞赏金平台</span></div>
+    </a>
+    <a href="https://revoke.cash/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🔒</div>
+      <div class="res-body"><strong>Revoke.cash</strong><span>检查并撤销危险授权</span></div>
+    </a>
+    <a href="https://github.com/SunWeb3Sec/DeFiHackLabs" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📚</div>
+      <div class="res-body"><strong>DeFiHackLabs</strong><span>历史攻击事件 PoC 复现库</span></div>
     </a>
   </div>
 </div>
