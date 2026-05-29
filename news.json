@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T12:05:33.862Z",
+  "updatedAt": "2026-05-29T12:07:43.532Z",
   "hiring": [
     {
       "type": "hiring",
@@ -160,5 +160,51 @@
       "tag": "机构"
     }
   ],
-  "geopolitics": []
+  "geopolitics": [
+    {
+      "type": "geopolitics",
+      "title": "UniCredit警告：欧盟在MiCA框架下恐难有效处置加密银行业系统性危机",
+      "summary": "意大利最大银行UniCredit发布报告指出，与美国相比欧盟处置加密相关金融风险的危机工具更为有限，MiCA监管框架下一旦出现系统性风险，欧洲监管机构的应对能力可能不及美国，存在危机扩散隐患。",
+      "url": "https://www.coindesk.com/business/2026/05/28/unicredit-warns-europe-may-struggle-to-contain-crypto-bank-crisis-under-mica-rules",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T08:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "分析：GENIUS稳定币法实施后重塑比特币货币溢价逻辑",
+      "summary": "美国GENIUS稳定币监管框架落地后，分析人士认为该法为政府背书的数字美元提供了合规通道，在一定程度上替代了比特币在数字货币领域的部分功能，引发市场对两者长期竞争关系的重新评估。",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/05/27/crypto-long-and-short-how-the-genius-act-repriced-bitcoin-s-monetary-premium",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-27T12:00:00.000Z",
+      "tag": "稳定币"
+    },
+    {
+      "type": "geopolitics",
+      "title": "中国最高人民法院宣布将研究制定虚拟货币司法裁判规则",
+      "summary": "中国最高人民法院司法委员会委员刘贵祥表示，法院将就虚拟货币及跨境金融等新型案件开展深入研究，并计划尽快出台内幕交易与市场操纵的民事赔偿司法解释，以回应国内加密相关诉讼案件的持续增长。",
+      "url": "https://cointelegraph.com/news/china-supreme-court-formulate-rules-digital-currency-ai",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-05-27T06:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "英国制裁HTX（火币）等18家加密实体，指控其协助俄罗斯规避战争制裁",
+      "summary": "英国于5月26日宣布对包括HTX交易所（前身火币）在内的18个实体实施制裁，指控其参与俄罗斯A7影子支付网络、协助转移逾900亿美元战争资金；英国金融机构被要求冻结相关资产，且禁止与上述实体开展任何业务往来。",
+      "url": "https://cointelegraph.com/news/uk-sanctions-htx-huobi-russia-support",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-05-26T10:00:00.000Z",
+      "tag": "制裁"
+    },
+    {
+      "type": "geopolitics",
+      "title": "欧盟委员会启动MiCA框架评审公众咨询，征询期至2026年8月底",
+      "summary": "欧盟委员会5月20日正式开放MiCA加密监管框架公众咨询，评估2023年出台的规则是否需随市场演变而修订，重点议题包括稳定币利息禁令是否应予调整、资产分类边界模糊等问题，征询期截至2026年8月31日。",
+      "url": "https://www.theblock.co/post/402005/european-commission-launches-mica-review-as-global-crypto-regulatory-landscape-shifts",
+      "source": "The Block",
+      "publishedAt": "2026-05-20T09:00:00.000Z",
+      "tag": "立法"
+    }
+  ]
 }
