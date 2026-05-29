@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
   /* ---------- dashboard 卡片：左侧色条 + 主体 ---------- */
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px;display:flex;flex-direction:column;gap:18px}
-  .ds{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .ds{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;scroll-margin-top:72px}
   .ds::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--bar,var(--accent))}
   .ds.hiring{--bar:#f97316}
   .ds.industry{--bar:#ef4444}
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   <div class="nav-in">
     <a class="brand" href="home.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span><small data-i18n="brand.tag">专注 Web3 · 每日更新</small></span></a>
     <div class="nav-links">
-      <a href="home.html" class="active" data-i18n="nav.home">行业资讯</a>
+      <div class="nav-drop"><a href="home.html" class="active" data-i18n="nav.home">行业资讯</a><div class="nav-dropdown"><a href="#ds-hiring" data-i18n="news.hiring">招聘动态</a><a href="#ds-industry" data-i18n="news.industry">行业要闻</a><a href="#ds-market" data-i18n="news.market">行情数据</a><a href="#ds-geopolitics" data-i18n="news.geopolitics">地缘政治</a></div></div>
       <a href="index.html" data-i18n="nav.jobs">职位</a>
       <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
       <a href="companies.html" data-i18n="nav.companies">企业库</a>
@@ -271,6 +271,18 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   window.addEventListener("langchange", renderAll);
 
   load();
+
+  // 平滑滚动：dropdown 锚点点击 + 页面加载时 hash 定位
+  document.querySelectorAll('.nav-dropdown a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) { e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+  if (location.hash) {
+    const el = document.getElementById(location.hash.slice(1));
+    if (el) setTimeout(() => el.scrollIntoView({behavior:'smooth',block:'start'}), 200);
+  }
 })();
 </script>
 </body>
