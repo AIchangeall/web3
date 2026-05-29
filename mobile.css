@@ -201,15 +201,10 @@ html[data-theme="dark"] .themebtn{font-size:13px}
 }
 .nav-drop.open .nav-dropdown,.nav-drop:focus-within .nav-dropdown{display:block}
 .nav-dropdown a{
-  display:block;padding:8px 12px 8px 14px;border-radius:7px;
-  font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap;
-  border-left:3px solid transparent;margin-bottom:1px
+  display:block;padding:8px 14px;border-radius:7px;
+  font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap;margin-bottom:1px
 }
 .nav-dropdown a:hover{background:#f0f1f6;color:var(--ink)}
-.nav-dropdown a[href*="ds-hiring"]{border-left-color:#f97316}
-.nav-dropdown a[href*="ds-industry"]{border-left-color:#ef4444}
-.nav-dropdown a[href*="ds-market"]{border-left-color:#10b981}
-.nav-dropdown a[href*="ds-geopolitics"]{border-left-color:#3b82f6}
 html[data-theme="dark"] .nav-dropdown{background:#161d2e;border-color:var(--line);box-shadow:0 6px 24px rgba(0,0,0,.6)}
 html[data-theme="dark"] .nav-dropdown a:hover{background:#1f2740;color:var(--ink)}
 @media(max-width:640px){.nav-drop>a::after{display:none}.nav-dropdown{display:none!important}}
