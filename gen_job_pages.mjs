@@ -207,6 +207,7 @@ function genSitemap(items, lastUpdated) {
   const lm = lastUpdated || new Date().toISOString().slice(0, 10);
   const head = [
     { loc: `${SITE}/`, lm, cf: "daily", pr: "1.0" },
+    { loc: `${SITE}/home.html`, lm, cf: "hourly", pr: "0.9" },
     { loc: `${SITE}/stats.html`, lm, cf: "daily", pr: "0.7" },
     { loc: `${SITE}/companies.html`, lm, cf: "daily", pr: "0.7" },
     { loc: `${SITE}/headhunter.html`, lm, cf: "daily", pr: "0.6" },

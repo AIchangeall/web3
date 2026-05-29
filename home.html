@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function(){var d=document.documentElement;try{if(localStorage.getItem('cnh_theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}
+window.toggleTheme=function(){var dark=d.getAttribute('data-theme')==='dark';if(dark)d.removeAttribute('data-theme');else d.setAttribute('data-theme','dark');try{localStorage.setItem('cnh_theme',dark?'light':'dark');}catch(e){}document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=dark?'🌙':'☀️';});};
+document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-themebtn]').forEach(function(b){b.textContent=on?'☀️':'🌙';});});})();
+</script>
+<title>首页 · 链聘 ChainHire | Web3 行业要闻与招聘动态</title>
+<meta name="description" content="链聘 ChainHire 首页：Web3/Crypto 行业重大要闻与人才市场动态，每 5 小时自动抓取，覆盖监管、协议、安全、扩招、裁员、CXO 变动等。" />
+<meta name="keywords" content="Web3新闻,Crypto资讯,加密招聘动态,crypto layoff,行业要闻,人才市场" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://gmjobs.github.io/chainhire/home.html" />
+<meta name="theme-color" content="#6d5efc" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="链聘 ChainHire" />
+<meta property="og:title" content="首页 · 链聘 ChainHire" />
+<meta property="og:description" content="Web3 行业要闻与招聘动态，每 5 小时自动抓取与归并。" />
+<meta property="og:url" content="https://gmjobs.github.io/chainhire/home.html" />
+<meta property="og:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="首页 · 链聘 ChainHire" />
+<meta name="twitter:description" content="Web3 行业要闻 + 招聘动态自动看板。" />
+<meta name="twitter:image" content="https://gmjobs.github.io/chainhire/assets/og-cover.png" />
+<style>
+  :root{color-scheme:light;--accent:#6d5efc;--bg:#f4f5f9;--card:#fff;--ink:#0f1729;--muted:#6b7280;--line:#e8eaf0;--grad:linear-gradient(135deg,#6d5efc,#a855f7);--shadow:0 1px 2px rgba(15,23,41,.04),0 1px 3px rgba(15,23,41,.06);--shadow-lg:0 10px 30px rgba(15,23,41,.10);--orange:#f97316}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Inter,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:14px}
+  a{color:inherit;text-decoration:none}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
+  .brand .logo{width:34px;height:34px;background:url(assets/favicon.svg) center/contain no-repeat;flex:none}
+  .nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+  .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
+  .nav-links a.active{background:#efeaff;color:var(--accent)}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .upd{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#059669;background:#e6f6ef;border:1px solid #c8ebd9;padding:4px 10px;border-radius:999px}
+  .upd .dot{width:7px;height:7px;border-radius:50%;background:#10b981}
+  .upd.stale{color:#b45309;background:#fdf2e0;border-color:#f6e0bd}.upd.stale .dot{background:#f59e0b}
+  .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
+  .langbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- 页头：信息流总览 + 同步时间 ---------- */
+  .head{max-width:1180px;margin:0 auto;padding:30px 24px 18px}
+  .head h1{font-size:24px;margin:0 0 6px;letter-spacing:-.02em;font-weight:800;display:flex;align-items:center;gap:10px}
+  .head h1 .ico{width:24px;height:24px;display:inline-grid;place-items:center;background:linear-gradient(135deg,#7c6cf5,#a855f7);color:#fff;border-radius:7px;font-size:13px;line-height:1}
+  .head .summary{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:8px}
+  .head .summary b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+  .head .sep{color:#cbd0db}
+  .head .actions{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
+  .head .actions a,.head .actions button{color:var(--accent);font-weight:600;background:transparent;border:0;cursor:pointer;font-size:13px;padding:0;display:inline-flex;align-items:center;gap:4px}
+  .head .actions a:hover,.head .actions button:hover{text-decoration:underline}
+
+  /* ---------- dashboard 卡片：左侧色条 + 主体 ---------- */
+  .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px;display:flex;flex-direction:column;gap:18px}
+  .ds{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .ds::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--bar,var(--accent))}
+  .ds.industry{--bar:#ef4444}
+  .ds.hiring{--bar:#f97316}
+  .dsh{display:flex;align-items:center;gap:10px;padding:16px 22px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .dsh .dot{width:8px;height:8px;border-radius:99px;background:var(--bar,var(--accent));flex:none}
+  .dsh .title{font-weight:700;font-size:15px;letter-spacing:.01em}
+  .dsh .tag{font-size:11px;font-weight:700;color:#dc2626;background:#fef2f2;border:1px solid #fecaca;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
+  .ds.hiring .dsh .tag{color:#c2410c;background:#fff7ed;border-color:#fed7aa}
+  .dsh .lastrun{margin-left:auto;font-size:12px;color:var(--muted);font-weight:500;display:inline-flex;align-items:center;gap:6px}
+  .dsh .archive{font-size:12px;color:var(--accent);font-weight:600;cursor:pointer;background:transparent;border:0;padding:0;display:inline-flex;align-items:center;gap:4px}
+  .dsh .archive:hover{text-decoration:underline}
+
+  .dsl{list-style:none;margin:0;padding:0}
+  .dsi{display:flex;gap:16px;align-items:flex-start;padding:16px 22px;border-bottom:1px dashed rgba(15,23,41,.08)}
+  .dsi:last-child{border-bottom:0}
+  .dsi-m{flex:1;min-width:0}
+  .dsi-t{margin:0 0 6px;font-weight:700;font-size:14.5px;line-height:1.45;color:var(--ink);word-break:break-word}
+  .dsi-d{color:#4b5563;font-size:13px;line-height:1.65;word-break:break-word}
+  .dsi-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:7px;font-size:11.5px;color:var(--muted)}
+  .dsi-meta .src{font-weight:600;color:#475569}
+  .dsi-meta .tag{background:#f1f3f8;color:#64748b;border-radius:4px;padding:1px 7px;font-size:10.5px;font-weight:700}
+  .dsi-link{flex:none;color:var(--accent);font-size:12.5px;font-weight:600;white-space:nowrap;align-self:flex-start;padding-top:1px;display:inline-flex;align-items:center;gap:3px;transition:.12s}
+  .dsi-link:hover{text-decoration:underline}
+  .dsi-link .arr{font-size:11px}
+
+  .ds-empty{padding:30px 22px;text-align:center;color:var(--muted);font-size:13px}
+  .ds-empty b{color:var(--ink);font-weight:700}
+
+  .pagefoot{max-width:1180px;margin:0 auto 24px;padding:18px 24px 0;color:var(--muted);font-size:12px;line-height:1.7;border-top:1px solid var(--line)}
+  .pagefoot a{color:var(--accent);font-weight:600}
+
+  @media(max-width:760px){
+    .head{padding:22px 14px 12px}
+    .head h1{font-size:20px}
+    .head .actions{width:100%;margin-left:0;margin-top:6px;justify-content:flex-start}
+    .wrap{padding:0 14px;gap:14px}
+    .dsh{padding:13px 16px 11px}
+    .dsh .lastrun{font-size:11px}
+    .dsh .archive{font-size:11.5px}
+    .dsi{padding:14px 16px;gap:10px}
+    .dsi-t{font-size:14px}
+    .dsi-d{font-size:12.5px}
+    .dsi-link{font-size:11.5px}
+  }
+</style>
+<link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="home.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span></span></a>
+    <div class="nav-links">
+      <a href="home.html" class="active" data-i18n="nav.home">首页</a>
+      <a href="index.html" data-i18n="nav.jobs">职位</a>
+      <a href="stats.html" data-i18n="nav.stats">数据洞察</a>
+      <a href="companies.html" data-i18n="nav.companies">企业库</a>
+      <a href="headhunter.html" data-i18n="nav.leads">招聘线索</a>
+      <a href="heatmap.html" data-i18n="nav.heatmap">招聘热度</a>
+    </div>
+    <div class="nav-right">
+      <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
+      <button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button>
+      <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="head">
+  <h1><span class="ico">📰</span><span data-i18n="home.h1">资讯关注</span></h1>
+  <div class="summary">
+    <span><span data-i18n="home.summary.scope">routine 2 类 · </span><b id="sum-total">0</b><span data-i18n="home.summary.items"> 条</span></span>
+    <span class="sep">·</span>
+    <span><span data-i18n="home.summary.lastsync">同步 </span><b id="sum-time">—</b></span>
+    <div class="actions">
+      <button id="refresh" type="button"><span>↻</span><span data-i18n="home.refresh">刷新</span></button>
+      <a href="index.html" data-i18n="home.gotojobs">查看岗位看板 →</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="ds industry" id="ds-industry">
+    <div class="dsh">
+      <span class="dot"></span>
+      <span class="title" data-i18n="news.industry">行业要闻</span>
+      <span class="tag" data-i18n="home.tag.industry">资讯</span>
+      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-industry">—</span></span>
+      <button class="archive" data-archive="industry" data-i18n="home.archive">查看完整归档 →</button>
+    </div>
+    <ul class="dsl" id="list-industry"></ul>
+  </section>
+
+  <section class="ds hiring" id="ds-hiring">
+    <div class="dsh">
+      <span class="dot"></span>
+      <span class="title" data-i18n="news.hiring">招聘动态</span>
+      <span class="tag" data-i18n="home.tag.hiring">招聘</span>
+      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-hiring">—</span></span>
+      <button class="archive" data-archive="hiring" data-i18n="home.archive">查看完整归档 →</button>
+    </div>
+    <ul class="dsl" id="list-hiring"></ul>
+  </section>
+</div>
+
+<div class="pagefoot">
+  <span data-i18n="home.foot">数据由云端 routine 每 5 小时自动抓取自 CoinDesk / The Block / Cointelegraph / Decrypt / PANews / Foresight 等公开来源，仅供参考；以原文与官方渠道为准。</span>
+</div>
+
+<script src="i18n.js"></script>
+<script src="flags.js"></script>
+<script src="widgets.js"></script>
+<script src="data.js"></script>
+<script>
+(function(){
+  // 用 data.js 的 lastUpdatedAt 驱动顶部 upd 徽标（与其它页一致）
+  const DATA = window.WEB3_JOBS_DATA || {};
+  const lastUpdated = DATA.lastUpdated || "";
+  const lastUpdatedAt = DATA.lastUpdatedAt || "";
+  const pad2 = n => String(n).padStart(2,"0");
+  const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||lastUpdated; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
+  const updFresh = lastUpdatedAt ? ((Date.now()-new Date(lastUpdatedAt).getTime())/36e5 <= 6) : false;
+  const updEl = document.getElementById("upd"), updT = document.getElementById("upd-t");
+  if (updEl) { updEl.classList.toggle("stale", !updFresh); updT.textContent = (window.I18N?I18N.t("upd.label"):"更新") + " " + (lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated || "—"); }
+
+  // ---------- 资讯渲染 ----------
+  let NEWS = {industry:[], hiring:[], updated:"", updatedAt:""};
+  const DEFAULT_N = 6;
+  const expanded = {industry:false, hiring:false};
+
+  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function host(u){try{return new URL(u).hostname.replace(/^www\./,"");}catch{return "";}}
+  function fmtDate(iso){
+    if(!iso) return "—";
+    const t=Date.parse(iso); if(!t) return iso;
+    const d=new Date(t);
+    return d.getFullYear()+"-"+pad2(d.getMonth()+1)+"-"+pad2(d.getDate());
+  }
+  function rel(iso){
+    if(!iso) return "";
+    const t=Date.parse(iso); if(!t) return "";
+    const diff=Math.max(0,(Date.now()-t)/1000);
+    const z=(window.I18N&&I18N.lang||"zh")==="zh";
+    if(diff<60) return z?"刚刚":"just now";
+    if(diff<3600) return Math.floor(diff/60)+(z?" 分钟前":"m ago");
+    if(diff<86400) return Math.floor(diff/3600)+(z?" 小时前":"h ago");
+    if(diff<86400*7) return Math.floor(diff/86400)+(z?" 天前":"d ago");
+    return fmtDate(iso);
+  }
+  function langT(k, fallbackZh){ return (window.I18N&&I18N.t)?I18N.t(k)||fallbackZh:fallbackZh; }
+
+  function renderList(type){
+    const ul = document.getElementById("list-"+type); if(!ul) return;
+    const arr = NEWS[type] || [];
+    const n = expanded[type] ? arr.length : Math.min(DEFAULT_N, arr.length);
+    if (!arr.length) {
+      const z=(window.I18N&&I18N.lang||"zh")==="zh";
+      const msg = type==="industry" ? (z?"暂无行业要闻，等待下一次抓取":"No industry highlights yet — waiting for next sync")
+                                     : (z?"暂无招聘动态，等待下一次抓取":"No hiring updates yet — waiting for next sync");
+      ul.innerHTML = `<li class="ds-empty">${esc(msg)}</li>`;
+      return;
+    }
+    const linkT = langT("home.original", "原文 ↗");
+    ul.innerHTML = arr.slice(0,n).map(it=>{
+      const tag = it.tag ? `<span class="tag">${esc(it.tag)}</span>` : "";
+      const src = esc(it.source || host(it.url));
+      const meta = `<div class="dsi-meta"><span class="src">${src}</span><span>·</span><span>${esc(rel(it.publishedAt))}</span>${tag}</div>`;
+      const desc = it.summary ? `<div class="dsi-d">${esc(it.summary)}</div>` : "";
+      return `<li class="dsi">
+        <div class="dsi-m">
+          <h3 class="dsi-t">${esc(it.title)}</h3>
+          ${desc}
+          ${meta}
+        </div>
+        <a class="dsi-link" href="${esc(it.url)}" target="_blank" rel="noopener nofollow"><span>${esc(linkT.replace(/\s*↗\s*$/,""))}</span><span class="arr">↗</span></a>
+      </li>`;
+    }).join("");
+    // 切换按钮文案
+    const btn = document.querySelector(`[data-archive="${type}"]`);
+    if (btn) {
+      const z=(window.I18N&&I18N.lang||"zh")==="zh";
+      if (arr.length <= DEFAULT_N) btn.style.display="none";
+      else { btn.style.display=""; btn.textContent = expanded[type] ? (z?"收起 ↑":"Collapse ↑") : (z?"查看完整归档 →":"View archive →"); }
+    }
+  }
+
+  function renderAll(){
+    document.getElementById("sum-total").textContent = (NEWS.industry?.length||0) + (NEWS.hiring?.length||0);
+    document.getElementById("sum-time").textContent = NEWS.updatedAt ? fmtDT(NEWS.updatedAt) : (NEWS.updated || "—");
+    const newest = arr => arr.reduce((m,x)=>x.publishedAt&&(!m||x.publishedAt>m)?x.publishedAt:m,"");
+    document.getElementById("lr-industry").textContent = fmtDate(newest(NEWS.industry||[]) || NEWS.updatedAt);
+    document.getElementById("lr-hiring").textContent = fmtDate(newest(NEWS.hiring||[]) || NEWS.updatedAt);
+    renderList("industry");
+    renderList("hiring");
+  }
+
+  async function load(){
+    try{
+      const r = await fetch("news.json", {cache:"no-cache"});
+      if (!r.ok) { renderAll(); return; }
+      const j = await r.json();
+      NEWS.industry = Array.isArray(j.industry) ? j.industry : [];
+      NEWS.hiring = Array.isArray(j.hiring) ? j.hiring : [];
+      NEWS.updated = j.updated || "";
+      NEWS.updatedAt = j.updatedAt || "";
+    }catch{}
+    renderAll();
+  }
+
+  // 折叠 / 展开
+  document.addEventListener("click", e=>{
+    const t = e.target.closest("[data-archive]"); if(!t) return;
+    const k = t.dataset.archive; expanded[k] = !expanded[k]; renderList(k);
+  });
+  document.getElementById("refresh").onclick = ()=>load();
+  window.addEventListener("langchange", renderAll);
+
+  load();
+})();
+</script>
+</body>
+</html>

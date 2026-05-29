@@ -146,6 +146,30 @@ html[data-theme="dark"] .newsmeta .tag{background:#222b42;color:#aab2c8}
 html[data-theme="dark"] .newsempty{color:#7e8aa3}
 html[data-theme="dark"] .newsmore{color:#7e8aa3}
 html[data-theme="dark"] .newsmore:hover{background:rgba(124,108,245,.18);color:#c4b5fd}
+/* 首页 dashboard 暗色 */
+html[data-theme="dark"] .ds{background:var(--card);border-color:var(--line)}
+html[data-theme="dark"] .ds.industry{--bar:#ef4444}
+html[data-theme="dark"] .ds.hiring{--bar:#f97316}
+html[data-theme="dark"] .dsh{border-bottom-color:var(--line)}
+html[data-theme="dark"] .dsh .title{color:var(--ink)}
+html[data-theme="dark"] .dsh .lastrun{color:#7e8aa3}
+html[data-theme="dark"] .ds.industry .dsh .tag{color:#fca5a5;background:#2a1414;border-color:#5e2828}
+html[data-theme="dark"] .ds.hiring .dsh .tag{color:#fdba74;background:#2a1a0a;border-color:#5c3517}
+html[data-theme="dark"] .dsi{border-bottom-color:rgba(255,255,255,.06)}
+html[data-theme="dark"] .dsi-t{color:var(--ink)}
+html[data-theme="dark"] .dsi-d{color:#aab2c8}
+html[data-theme="dark"] .dsi-meta{color:#7e8aa3}
+html[data-theme="dark"] .dsi-meta .src{color:#aab2c8}
+html[data-theme="dark"] .dsi-meta .tag{background:#222b42;color:#aab2c8}
+html[data-theme="dark"] .dsi-link{color:#a5b4fc}
+html[data-theme="dark"] .ds-empty{color:#7e8aa3}
+html[data-theme="dark"] .ds-empty b{color:var(--ink)}
+html[data-theme="dark"] .head .summary{color:#9aa3b8}
+html[data-theme="dark"] .head .summary b{color:var(--ink)}
+html[data-theme="dark"] .head .sep{color:#3f4a66}
+html[data-theme="dark"] .head .actions a,html[data-theme="dark"] .head .actions button{color:#a5b4fc}
+html[data-theme="dark"] .pagefoot{color:#7e8aa3;border-top-color:var(--line)}
+html[data-theme="dark"] .pagefoot a{color:#a5b4fc}
 /* 招聘热度色阶暗色 */
 html[data-theme="dark"] .hm-l0{fill:#1f2740}
 html[data-theme="dark"] .hm-l1{fill:#26224a}

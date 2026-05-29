@@ -12,7 +12,7 @@ rm -rf dist
 mkdir -p dist/assets
 
 # 网站对外需要的文件
-cp index.html stats.html companies.html headhunter.html about.html heatmap.html \
+cp home.html index.html stats.html companies.html headhunter.html about.html heatmap.html \
    i18n.js flags.js widgets.js mobile.css data.js \
    robots.txt sitemap.xml \
    dist/

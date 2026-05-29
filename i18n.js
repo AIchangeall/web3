@@ -9,6 +9,7 @@
 // ============================================================================
 (function () {
   const DICT = {
+    "nav.home":        ["首页", "Home"],
     "nav.jobs":        ["职位", "Jobs"],
     "nav.stats":       ["数据洞察", "Insights"],
     "nav.companies":   ["企业库", "Companies"],
@@ -58,6 +59,18 @@
     "news.industry":   ["行业要闻", "Industry highlights"],
     "news.hiring":     ["招聘动态", "Hiring pulse"],
     "news.more":       ["展开全部", "Show all"],
+    "home.h1":             ["资讯关注", "News pulse"],
+    "home.summary.scope":  ["routine 2 类 · ", "2 streams · "],
+    "home.summary.items":  [" 条", " items"],
+    "home.summary.lastsync":["同步 ", "synced "],
+    "home.refresh":        ["刷新", "Refresh"],
+    "home.gotojobs":       ["查看岗位看板 →", "Browse job board →"],
+    "home.tag.industry":   ["资讯", "NEWS"],
+    "home.tag.hiring":     ["招聘", "HIRING"],
+    "home.lastrun":        ["最近运行", "Last run"],
+    "home.archive":        ["查看完整归档 →", "View archive →"],
+    "home.original":       ["原文 ↗", "Source ↗"],
+    "home.foot":           ["数据由云端 routine 每 5 小时自动抓取自 CoinDesk / The Block / Cointelegraph / Decrypt / PANews / Foresight 等公开来源，仅供参考；以原文与官方渠道为准。", "News is auto-collected every 5 hours from public sources (CoinDesk / The Block / Cointelegraph / Decrypt / PANews / Foresight) — for reference only; verify with the original publishers."],
     "card.apply":      ["查看职位 →", "View job →"],
     "card.posted":     ["上架", "Posted"],
     "card.remote":     ["远程友好", "Remote-friendly"],
