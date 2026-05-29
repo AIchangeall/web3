@@ -51,12 +51,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .head{max-width:1180px;margin:0 auto;padding:30px 24px 18px}
   .head h1{font-size:24px;margin:0 0 6px;letter-spacing:-.02em;font-weight:800;display:flex;align-items:center;gap:10px}
   .head h1 .ico{width:24px;height:24px;display:inline-grid;place-items:center;background:linear-gradient(135deg,#7c6cf5,#a855f7);color:#fff;border-radius:7px;font-size:13px;line-height:1}
-  .head .summary{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:8px}
-  .head .summary b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
-  .head .sep{color:#cbd0db}
-  .head .actions{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
-  .head .actions a,.head .actions button{color:var(--accent);font-weight:600;background:transparent;border:0;cursor:pointer;font-size:13px;padding:0;display:inline-flex;align-items:center;gap:4px}
-  .head .actions a:hover,.head .actions button:hover{text-decoration:underline}
 
   /* ---------- dashboard 卡片：左侧色条 + 主体 ---------- */
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px;display:flex;flex-direction:column;gap:18px}
@@ -95,8 +89,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   @media(max-width:760px){
     .head{padding:22px 14px 12px}
     .head h1{font-size:20px}
-    .head .actions{width:100%;margin-left:0;margin-top:6px;justify-content:flex-start}
-    .wrap{padding:0 14px;gap:14px}
+.wrap{padding:0 14px;gap:14px}
     .dsh{padding:13px 16px 11px}
     .dsh .lastrun{font-size:11px}
     .dsh .archive{font-size:11.5px}
@@ -122,7 +115,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <a href="heatmap.html" data-i18n="nav.heatmap">招聘热度</a>
     </div>
     <div class="nav-right">
-      <span id="upd" class="upd"><span class="dot"></span><span id="upd-t">—</span></span>
       <button class="langbtn themebtn" data-themebtn onclick="toggleTheme()" title="深色 / 浅色" aria-label="theme">🌙</button>
       <button class="langbtn" data-langbtn onclick="I18N.toggle()">EN</button>
     </div>
@@ -131,15 +123,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
 <header class="head">
   <h1><span class="ico">📰</span><span data-i18n="home.h1">资讯关注</span></h1>
-  <div class="summary">
-    <span><span data-i18n="home.summary.scope">共 </span><b id="sum-total">0</b><span data-i18n="home.summary.items"> 条</span></span>
-    <span class="sep">·</span>
-    <span><span data-i18n="home.summary.lastsync">同步 </span><b id="sum-time">—</b></span>
-    <div class="actions">
-      <button id="refresh" type="button"><span>↻</span><span data-i18n="home.refresh">刷新</span></button>
-      <a href="index.html" data-i18n="home.gotojobs">查看岗位看板 →</a>
-    </div>
-  </div>
 </header>
 
 <div class="wrap">
@@ -176,22 +159,9 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <script src="data.js"></script>
 <script>
 (function(){
-  // 用 data.js 的 lastUpdatedAt 驱动顶部 upd 徽标（与其它页一致）
-  const DATA = window.WEB3_JOBS_DATA || {};
-  const lastUpdated = DATA.lastUpdated || "";
-  const lastUpdatedAt = DATA.lastUpdatedAt || "";
+  // 资讯页独立维护：不读 data.js 的 lastUpdatedAt，只用 news.json 自己的时间戳
   const pad2 = n => String(n).padStart(2,"0");
-  const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||lastUpdated; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
-  const updFresh = lastUpdatedAt ? ((Date.now()-new Date(lastUpdatedAt).getTime())/36e5 <= 6) : false;
-  const updEl = document.getElementById("upd"), updT = document.getElementById("upd-t");
-  function paintUpd(){
-    if (!updEl) return;
-    updEl.classList.toggle("stale", !updFresh);
-    const pre = (window.I18N && I18N.t) ? (I18N.t("upd.prefix") || "更新") : "更新";
-    updT.textContent = pre + " " + (lastUpdatedAt ? fmtDT(lastUpdatedAt) : (lastUpdated || "—"));
-  }
-  paintUpd();
-  window.addEventListener("langchange", paintUpd);
+  const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||""; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
 
   // ---------- 资讯渲染 ----------
   let NEWS = {industry:[], hiring:[], updated:"", updatedAt:""};
@@ -255,8 +225,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   }
 
   function renderAll(){
-    document.getElementById("sum-total").textContent = (NEWS.industry?.length||0) + (NEWS.hiring?.length||0);
-    document.getElementById("sum-time").textContent = NEWS.updatedAt ? fmtDT(NEWS.updatedAt) : (NEWS.updated || "—");
     const newest = arr => arr.reduce((m,x)=>x.publishedAt&&(!m||x.publishedAt>m)?x.publishedAt:m,"");
     document.getElementById("lr-industry").textContent = fmtDate(newest(NEWS.industry||[]) || NEWS.updatedAt);
     document.getElementById("lr-hiring").textContent = fmtDate(newest(NEWS.hiring||[]) || NEWS.updatedAt);
@@ -282,7 +250,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const t = e.target.closest("[data-archive]"); if(!t) return;
     const k = t.dataset.archive; expanded[k] = !expanded[k]; renderList(k);
   });
-  document.getElementById("refresh").onclick = ()=>load();
   window.addEventListener("langchange", renderAll);
 
   load();
