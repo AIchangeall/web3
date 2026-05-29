@@ -275,8 +275,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   }
 
   function renderTop(){
-    const top = activeCells.slice().sort((a,b)=>b.count-a.count).slice(0,10);
-    const max = top[0]?.count || 1;
+    // 仍按"活跃度"取前 10，但展示时按日期降序排列（最近的在前）
+    const top10 = activeCells.slice().sort((a,b)=>b.count-a.count).slice(0,10);
+    const max = top10.reduce((m,c)=>c.count>m?c.count:m,0) || 1;
+    const top = top10.slice().sort((a,b)=>b.key.localeCompare(a.key));
     const html = top.map(c=>`<li><span class="hm-date">${c.key}</span><span class="hm-bar"><span style="width:${(c.count/max*100).toFixed(1)}%"></span></span><b>+${c.count}</b></li>`).join("");
     document.getElementById("hm-top-list").innerHTML = html || `<li style="border:0;color:var(--muted)">${I18N.t("empty.jobs")}</li>`;
   }
