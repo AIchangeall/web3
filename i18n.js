@@ -9,7 +9,7 @@
 // ============================================================================
 (function () {
   const DICT = {
-    "nav.home":        ["首页", "Home"],
+    "nav.home":        ["行业资讯", "Industry News"],
     "nav.jobs":        ["职位", "Jobs"],
     "nav.stats":       ["数据洞察", "Insights"],
     "nav.companies":   ["企业库", "Companies"],
@@ -181,7 +181,7 @@
     "hm.legend.less":  ["少", "Less"],
     "hm.legend.more":  ["多", "More"],
     "hm.top":          ["Top 10 活跃日", "Top 10 active days"],
-    "hm.top.sub":      ["新增岗位数最多的日期，点击跳到首页查看该日新增。", "Days with the most new postings — click to see that day's roles."],
+    "hm.top.sub":      ["新增岗位数最多的日期，点击跳到职位页查看该日新增。", "Days with the most new postings — click to see that day's roles."],
     "flt.savedonly":   ["仅看收藏", "Saved only"],
     "flt.paidonly":    ["仅看公开薪资", "Disclosed salary"],
     "flt.recent7":     ["近 7 天新增", "New in 7 days"],
