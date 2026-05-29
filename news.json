@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T15:07:46.706Z",
+  "updatedAt": "2026-05-29T15:16:26.657Z",
   "hiring": [
     {
       "type": "hiring",
@@ -10,6 +10,24 @@
       "source": "TheStreet Crypto",
       "publishedAt": "2026-05-15T00:00:00.000Z",
       "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Dune Analytics Slashes 25% of Workforce in AI, Institutional Pivot",
+      "summary": "链上数据平台Dune Analytics宣布裁减25%员工，联创Fredrik Haga表示公司全面押注「AI与机构上链」双引擎，旗下Dune MCP产品让用户无需SQL即可构建数据面板，本轮为近期加密数据行业又一重大AI驱动裁员。",
+      "url": "https://decrypt.co/367949/dune-analytics-slashes-25-of-workforce-in-ai-institutional-pivot",
+      "source": "Decrypt",
+      "publishedAt": "2026-05-14T15:00:00.000Z",
+      "tag": "裁员"
+    },
+    {
+      "type": "hiring",
+      "title": "Kraken Parent Payward Cuts 150 Staff Streamlining Business Ahead of Planned IPO",
+      "summary": "Kraken母公司Payward宣布裁员约150人（占员工总数8%），以AI系统部署和IPO前财务优化为由；此举可能将Kraken上市时间从2026年底推迟至2027年，是继Coinbase之后又一大型加密交易所以AI为由精简团队。",
+      "url": "https://www.coindesk.com/business/2026/05/14/kraken-parent-payward-cuts-150-staff-streamlining-business-ahead-of-planned-ipo",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-14T12:00:00.000Z",
+      "tag": "裁员"
     },
     {
       "type": "hiring",
@@ -49,6 +67,15 @@
     },
     {
       "type": "hiring",
+      "title": "Messari CEO Eric Turner Steps Down as CTO Diran Li Takes Charge Amid Layoffs, AI Pivot",
+      "summary": "加密数据研究平台Messari联创兼CEO Eric Turner辞职，CTO Diran Li接任，同步宣布裁员并向「AI优先」机构研究平台转型；公司此前已在2025年初裁减15%员工，此轮标志Messari进入第三次战略重组周期。",
+      "url": "https://www.theblock.co/post/393840/messari-ceo-steps-down-layoffs",
+      "source": "The Block",
+      "publishedAt": "2026-03-17T10:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
       "title": "Jack Dorsey Just Halved Block's Employee Base — And Says Your Company Is Next",
       "summary": "Block（前Square）宣布裁员逾4,000人、砍掉近半员工规模，CEO Jack Dorsey表示AI驱动的组织精简将在一年内席卷大多数公司，公司股价盘后涨超24%。",
       "url": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next",
@@ -58,6 +85,51 @@
     }
   ],
   "industry": [
+    {
+      "type": "industry",
+      "title": "CME Group Launches 24/7 Bitcoin and Ether Futures Trading, Ending the Iconic 'CME Gap'",
+      "summary": "CME集团于5月29日（周五）下午4点正式启动BTC/ETH及SOL、XRP等9种加密资产期货期权全天候24/7交易，终结了困扰多年的「周末CME缺口」价格信号，为机构提供全天候风险对冲工具。",
+      "url": "https://financefeeds.com/cme-group-to-launch-24-7-trading-for-crypto-futures-and-options-on-may-29",
+      "source": "FinanceFeeds",
+      "publishedAt": "2026-05-29T21:00:00.000Z",
+      "tag": "上市"
+    },
+    {
+      "type": "industry",
+      "title": "Kalshi Follows CFTC in Suing Minnesota Over Law Criminalizing Prediction Markets",
+      "summary": "预测市场平台Kalshi就明尼苏达州将于8月1日生效的预测市场入罪化新法提起联邦诉讼，主张该法侵犯CFTC专有联邦管辖权并违宪；CFTC本身已于5月19日提交类似诉状，特朗普政府亦明确支持联邦权威。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/kalshi-follows-cftc-in-suing-minnesota-over-law-criminalizing-prediction-markets",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
+      "title": "Paxos Wins SEC Approval to Clear and Settle U.S. Equities on Blockchain as First Registered Clearing Agency",
+      "summary": "Paxos证券结算公司成为首家获SEC注册的区块链原生清算机构，可在链上结算美国股票、支持T+0当日交割；这是七年与监管合作的里程碑，华尔街后台基础设施区块链化迈出历史性一步。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/paxos-is-first-blockchain-firm-to-provide-settlement-and-clearing-services-following-sec-approval",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T08:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
+      "title": "OKX Ventures, Korea Investment & Securities Each Take 19.6% Stake in Coinone for $53M",
+      "summary": "OKX Ventures与韩国投资证券各出资约5300万美元，共同收购韩国加密交易所Coinone各19.6%股权，双方将就AML合规、机构衍生品及稳定币业务展开合作，交易须待监管批准。",
+      "url": "https://cointelegraph.com/news/okx-ventures-korea-investment-securities-buy-196-stake-in-coinone",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-29T05:00:00.000Z",
+      "tag": "收购"
+    },
+    {
+      "type": "industry",
+      "title": "Hyperliquid's Pre-IPO SpaceX Contracts Suffer 45% Flash Crash, Liquidating $1.5 Million",
+      "summary": "Hyperliquid上SPACEX-USDH永续合约因链下预言机错误处理SpaceX 1拆5分股触发45%闪崩，30分钟内清算405名用户共1,393笔仓位计150万美元；Ventuals承诺48小时内赔付受损用户。",
+      "url": "https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T16:00:00.000Z",
+      "tag": "安全"
+    },
     {
       "type": "industry",
       "title": "Sui Blockchain Suffers Another Network Outage as Transactions Grind to a Halt",
@@ -75,6 +147,24 @@
       "source": "CryptoNews",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "市场"
+    },
+    {
+      "type": "industry",
+      "title": "DTCC Taps Stellar for Tokenized Securities Network, Plans to Bring Russell 1000 Stocks and Treasuries Onchain by 2027",
+      "summary": "美国金融市场基础设施巨头DTCC宣布将DTC托管的Russell 1000股票、ETF及国债于2027年上半年上链Stellar，这是DTCC多链代币化战略中首次选择公共区块链，XLM价格应声走强。",
+      "url": "https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-27T14:00:00.000Z",
+      "tag": "协议"
+    },
+    {
+      "type": "industry",
+      "title": "Circle Launches Native USDC and Cross-Chain Transfer Protocol on Injective",
+      "summary": "Circle在Injective上部署原生USDC及跨链转账协议CCTP，用户持有Circle直接发行的正版USDC而非桥接封装资产，约770亿美元USDC流动性向Injective DeFi开放，INJ价格上涨约5%。",
+      "url": "https://www.theblock.co/post/393956/injective-support-native-usdc-cross-chain-transfers-circle",
+      "source": "The Block",
+      "publishedAt": "2026-05-27T10:00:00.000Z",
+      "tag": "协议"
     },
     {
       "type": "industry",
@@ -102,24 +192,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-14T00:00:00.000Z",
       "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "SEC Chair Atkins Signals New Rules for Onchain Markets and AI-Driven Finance",
-      "summary": "SEC主席Paul Atkins宣布将对链上交易系统、加密托管、结算基础设施四大领域推进正式立法，采用通知-评论规则制定模式，标志着SEC监管风向从执法优先转向为行业制定规则。",
-      "url": "https://www.coindesk.com/policy/2026/05/08/sec-chair-atkins-signals-new-rules-for-onchain-markets-ai-driven-finance",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-08T00:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "Kelp DAO Hit for $292 Million in 2026's Biggest Crypto Exploit, rsETH Stranded Across 20 Chains",
-      "summary": "KelpDAO跨链桥遭北朝鲜黑客利用LayerZero验证漏洞攻击，约2.92亿美元rsETH被盗，成为2026年迄今最大DeFi安全事件，Aave、SparkLend等多协议紧急冻结，LayerZero承认运营安全责任。",
-      "url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
-      "source": "CoinDesk",
-      "publishedAt": "2026-04-19T00:00:00.000Z",
-      "tag": "安全"
     }
   ],
   "market": [
@@ -131,24 +203,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "tag": "ETF"
-    },
-    {
-      "type": "market",
-      "title": "Crypto and stocks go their separate ways as bitcoin's failed breakout continues to weigh",
-      "summary": "比特币跌至4月低点约7.35万美元，美股标普500同期逼近历史新高，加密市场与股市出现罕见背离，连续9天ETF净流出与买家持续匮乏被认为是核心原因。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-slides-to-april-lows-as-crypto-diverges-from-record-chasing-u-s-equities",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "tag": "价格"
-    },
-    {
-      "type": "market",
-      "title": "Bitcoin's record holder supply hides a buyer drought, CryptoQuant says",
-      "summary": "CryptoQuant指出，比特币长期持有者供应量创纪录1580万BTC，但实为新买家严重匮乏的信号：短期持仓自12月减少220万BTC，鲸鱼与机构海豚余额同步停滞。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-s-record-holder-supply-hides-a-buyer-drought-cryptoquant-says",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "tag": "链上"
     },
     {
       "type": "market",
@@ -170,27 +224,9 @@
     },
     {
       "type": "market",
-      "title": "IBIT news: BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record",
-      "summary": "贝莱德IBIT单日净流出5.28亿美元创历史第二大单日记录，11只美国现货比特币ETF当日合计净流出7.33亿美元，比特币随即跌破7.3万美元关口。",
-      "url": "https://www.coindesk.com/markets/2026/05/28/blackrock-s-bitcoin-etf-sheds-usd528-million-the-second-largest-daily-outflow-on-record",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "ETF"
-    },
-    {
-      "type": "market",
       "title": "Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps",
       "summary": "追踪比特币卖压的链上指标5月27日进入「高风险」区间，现货ETF年初至今净积累量骤降至仅4,500枚BTC，5月整体转为净流出；宏观不确定性叠加美联储鹰派立场，机构买盘持续低迷。",
       "url": "https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "tag": "机构"
-    },
-    {
-      "type": "market",
-      "title": "Whale dumps $1.29 billion of BlackRock's bitcoin ETF in a dark pool trade",
-      "summary": "某大型机构通过暗池单笔抛售13亿美元贝莱德IBIT份额，为史上最大比特币ETF场外交易；此举随即触发IBIT连续大额净流出，并拖累比特币加速跌破7.3万美元。",
-      "url": "https://www.coindesk.com/markets/2026/05/27/whale-alert-someone-dumped-usd1-29-billion-of-blackrock-s-bitcoin-etf-in-a-dark-pool-trade",
       "source": "CoinDesk",
       "publishedAt": "2026-05-27T00:00:00.000Z",
       "tag": "机构"
