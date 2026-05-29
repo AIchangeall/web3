@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const newest = arr => arr.reduce((m,x)=>x.publishedAt&&(!m||x.publishedAt>m)?x.publishedAt:m,"");
     for (const t of TYPES) {
       const el = document.getElementById("lr-"+t);
-      if (el) el.textContent = fmtDate(newest(NEWS[t]||[]) || NEWS.updatedAt);
+      if (el) el.textContent = fmtDate(NEWS.updatedAt);
       renderList(t);
     }
   }
