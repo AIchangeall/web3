@@ -151,3 +151,15 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", buildDOM);
   else buildDOM();
 })();
+
+// 导航下拉菜单 hover（CSS :hover 在部分页面不可靠，改用 JS class 切换）
+(function(){
+  function initNavDrop(){
+    document.querySelectorAll('.nav-drop').forEach(function(d){
+      d.addEventListener('mouseenter', function(){ d.classList.add('open'); });
+      d.addEventListener('mouseleave', function(){ d.classList.remove('open'); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initNavDrop);
+  else initNavDrop();
+})();
