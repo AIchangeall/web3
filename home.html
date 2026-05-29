@@ -48,9 +48,14 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .langbtn{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;cursor:pointer}
   .langbtn:hover{border-color:var(--accent);color:var(--accent)}
 
-  /* ---------- 页头：信息流总览 + 同步时间 ---------- */
-  .head{max-width:1180px;margin:0 auto;padding:30px 24px 18px}
-  .head h1{font-size:20px;margin:0 0 6px;letter-spacing:.04em;font-weight:600;color:var(--muted);text-transform:uppercase}
+  /* ---------- Hero ---------- */
+  .hero{background:var(--grad);color:#fff;padding:44px 24px 36px;text-align:center}
+  .hero h1{font-size:30px;font-weight:800;margin:0 0 10px;letter-spacing:-.02em}
+  .hero p{font-size:14.5px;opacity:.88;margin:0 auto;max-width:520px;line-height:1.75}
+  .hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px}
+  .hero-tag{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 16px;font-size:12.5px;font-weight:600;cursor:pointer;transition:background .15s;display:inline-flex;align-items:center;gap:5px}
+  .hero-tag:hover{background:rgba(255,255,255,.32)}
+  .hero-meta{margin-top:14px;font-size:12px;opacity:.7;letter-spacing:.02em}
 
   /* ---------- dashboard 卡片：左侧色条 + 主体 ---------- */
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px;display:flex;flex-direction:column;gap:18px}
@@ -120,9 +125,17 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   </div>
 </nav>
 
-<header class="head">
-  <h1 data-i18n="home.h1">资讯关注</h1>
-</header>
+<div class="hero">
+  <h1>行业资讯</h1>
+  <p>Web3 / Crypto 行业动态全景追踪，覆盖招聘趋势、协议要闻、市场行情与地缘政策，每 5 小时自动同步</p>
+  <div class="hero-tags">
+    <span class="hero-tag" onclick="scrollSec('ds-hiring')">🟠 招聘动态</span>
+    <span class="hero-tag" onclick="scrollSec('ds-industry')">🔴 行业要闻</span>
+    <span class="hero-tag" onclick="scrollSec('ds-market')">🟢 行情数据</span>
+    <span class="hero-tag" onclick="scrollSec('ds-geopolitics')">🔵 地缘政治</span>
+  </div>
+  <div class="hero-meta" id="hero-upd"></div>
+</div>
 
 <div class="wrap">
   <section class="ds hiring" id="ds-hiring">
@@ -258,7 +271,18 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       NEWS.updatedAt = j.updatedAt || "";
     }catch{}
     renderAll();
+    // 更新 hero 同步时间
+    const upd = document.getElementById("hero-upd");
+    if (upd && NEWS.updatedAt) {
+      upd.textContent = "上次同步：" + fmtDT(NEWS.updatedAt);
+    }
   }
+
+  // hero 标签快捷滚动
+  window.scrollSec = function(id){
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  };
 
   // 折叠 / 展开
   document.addEventListener("click", e=>{
