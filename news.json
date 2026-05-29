@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T15:16:26.657Z",
+  "updatedAt": "2026-05-29T15:19:06.997Z",
   "hiring": [
     {
       "type": "hiring",
@@ -235,11 +235,29 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "美财政部长贝森特明确反对CBDC，敦促国会加速通过清晰法案",
+      "summary": "美国财政部长斯科特·贝森特在白宫发布会上宣布特朗普政府不会推出中央银行数字货币（CBDC），并敦促国会尽快通过《数字资产市场清晰法案》，称美国必须巩固在数字资产领域的全球领先地位，私人稳定币将替代CBDC功能。",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52863201/scott-bessent-congress-crypto-bill-cbdc-off-table",
+      "source": "Benzinga",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "CBDC"
+    },
+    {
+      "type": "geopolitics",
       "title": "UniCredit警告：欧盟在MiCA框架下恐难有效处置加密银行业系统性危机",
       "summary": "意大利最大银行UniCredit发布报告指出，与美国相比欧盟处置加密相关金融风险的危机工具更为有限，MiCA监管框架下一旦出现系统性风险，欧洲监管机构的应对能力可能不及美国，存在危机扩散隐患。",
       "url": "https://www.coindesk.com/business/2026/05/28/unicredit-warns-europe-may-struggle-to-contain-crypto-bank-crisis-under-mica-rules",
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T08:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "白宫启动CFTC预测市场规则审查，特朗普力挺联邦独家管辖权",
+      "summary": "特朗普在Truth Social发文支持CFTC对预测市场享有联邦独家管辖权，白宫同步启动对CFTC拟议规则的正式审查，此举将影响包括加密货币相关事件合约在内的预测市场联邦监管走向。",
+      "url": "https://www.coindesk.com/policy/2026/05/28/white-house-reviews-cftc-prediction-market-rule-as-trump-backs-federal-control",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "立法"
     },
     {
@@ -268,6 +286,15 @@
       "source": "Cointelegraph",
       "publishedAt": "2026-05-26T10:00:00.000Z",
       "tag": "制裁"
+    },
+    {
+      "type": "geopolitics",
+      "title": "美众议院两党提出ARMA法案，拟将比特币战略储备写入永久立法",
+      "summary": "美国众议院两党议员Begich与Golden提出《美国储备现代化法案》（ARMA），拟将特朗普比特币战略储备行政令写入永久法律，规定政府持有比特币须锁仓20年禁止出售，并设立季度透明度审计与国会监督机制，目前获17名联署议员支持。",
+      "url": "https://www.theblock.co/post/402264/new-strategic-bitcoin-reserve-bill-drops-btc-purchase-target-adds-lockup",
+      "source": "The Block",
+      "publishedAt": "2026-05-21T00:00:00.000Z",
+      "tag": "储备"
     },
     {
       "type": "geopolitics",
