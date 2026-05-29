@@ -22,11 +22,12 @@
     (s && s.parentNode ? s.parentNode : document.head).insertBefore(hm, s || null);
   } catch (e) { /* 上报失败不影响页面 */ }
 
-  // ---------- Microsoft Clarity（等 ID 后取消注释） ----------
-  // var CLARITY_ID = "YOUR_CLARITY_ID";
-  // (function(c,l,a,r,i,t,y){
-  //   c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  //   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-  //   y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  // })(window, document, "clarity", "script", CLARITY_ID);
+  // ---------- Microsoft Clarity ----------
+  try {
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "wyn2o9yx0b");
+  } catch (e) { /* 上报失败不影响页面 */ }
 })();
