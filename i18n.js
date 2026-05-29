@@ -60,7 +60,7 @@
     "news.hiring":     ["招聘动态", "Hiring pulse"],
     "news.more":       ["展开全部", "Show all"],
     "home.h1":             ["资讯关注", "News pulse"],
-    "home.summary.scope":  ["routine 2 类 · ", "2 streams · "],
+    "home.summary.scope":  ["共 ", "Total "],
     "home.summary.items":  [" 条", " items"],
     "home.summary.lastsync":["同步 ", "synced "],
     "home.refresh":        ["刷新", "Refresh"],
