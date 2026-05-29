@@ -183,7 +183,14 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||lastUpdated; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
   const updFresh = lastUpdatedAt ? ((Date.now()-new Date(lastUpdatedAt).getTime())/36e5 <= 6) : false;
   const updEl = document.getElementById("upd"), updT = document.getElementById("upd-t");
-  if (updEl) { updEl.classList.toggle("stale", !updFresh); updT.textContent = (window.I18N?I18N.t("upd.label"):"更新") + " " + (lastUpdatedAt?fmtDT(lastUpdatedAt):lastUpdated || "—"); }
+  function paintUpd(){
+    if (!updEl) return;
+    updEl.classList.toggle("stale", !updFresh);
+    const pre = (window.I18N && I18N.t) ? (I18N.t("upd.prefix") || "更新") : "更新";
+    updT.textContent = pre + " " + (lastUpdatedAt ? fmtDT(lastUpdatedAt) : (lastUpdated || "—"));
+  }
+  paintUpd();
+  window.addEventListener("langchange", paintUpd);
 
   // ---------- 资讯渲染 ----------
   let NEWS = {industry:[], hiring:[], updated:"", updatedAt:""};
