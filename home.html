@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .ds.hiring .dsh .tag{color:#c2410c;background:#fff7ed;border-color:#fed7aa}
   .ds.market .dsh .tag{color:#047857;background:#ecfdf5;border-color:#a7f3d0}
   .ds.geopolitics .dsh .tag{color:#1d4ed8;background:#eff6ff;border-color:#bfdbfe}
-  .dsh .lastrun{margin-left:auto;font-size:12px;color:var(--muted);font-weight:500;display:inline-flex;align-items:center;gap:6px}
   .dsh .archive{font-size:12px;color:var(--accent);font-weight:600;cursor:pointer;background:transparent;border:0;padding:0;display:inline-flex;align-items:center;gap:4px}
   .dsh .archive:hover{text-decoration:underline}
 
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     .head h1{font-size:20px}
 .wrap{padding:0 14px;gap:14px}
     .dsh{padding:13px 16px 11px}
-    .dsh .lastrun{font-size:11px}
     .dsh .archive{font-size:11.5px}
     .dsi{padding:14px 16px;gap:10px}
     .dsi-t{font-size:14px}
@@ -136,7 +134,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <span class="dot"></span>
       <span class="title" data-i18n="news.hiring">招聘动态</span>
       <span class="tag" data-i18n="home.tag.hiring">招聘</span>
-      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-hiring">—</span></span>
       <button class="archive" data-archive="hiring" data-i18n="home.archive">查看完整归档 →</button>
     </div>
     <ul class="dsl" id="list-hiring"></ul>
@@ -147,7 +144,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <span class="dot"></span>
       <span class="title" data-i18n="news.industry">行业要闻</span>
       <span class="tag" data-i18n="home.tag.industry">资讯</span>
-      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-industry">—</span></span>
     </div>
     <ul class="dsl" id="list-industry"></ul>
   </section>
@@ -157,7 +153,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <span class="dot"></span>
       <span class="title" data-i18n="news.market">行情数据</span>
       <span class="tag" data-i18n="home.tag.market">行情</span>
-      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-market">—</span></span>
     </div>
     <ul class="dsl" id="list-market"></ul>
   </section>
@@ -167,7 +162,6 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       <span class="dot"></span>
       <span class="title" data-i18n="news.geopolitics">地缘政治</span>
       <span class="tag" data-i18n="home.tag.geopolitics">地缘</span>
-      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-geopolitics">—</span></span>
     </div>
     <ul class="dsl" id="list-geopolitics"></ul>
   </section>
@@ -255,12 +249,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   }
 
   function renderAll(){
-    const newest = arr => arr.reduce((m,x)=>x.publishedAt&&(!m||x.publishedAt>m)?x.publishedAt:m,"");
-    for (const t of TYPES) {
-      const el = document.getElementById("lr-"+t);
-      if (el) el.textContent = fmtDate(NEWS.updatedAt);
-      renderList(t);
-    }
+    for (const t of TYPES) renderList(t);
   }
 
   async function load(){
