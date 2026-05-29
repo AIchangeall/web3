@@ -6,6 +6,9 @@ html { -webkit-text-size-adjust: 100%; }
 body { -webkit-tap-highlight-color: rgba(0,0,0,0); }
 img, svg, table { max-width: 100%; }
 
+/* 品牌副标题（窄屏 @media 里再隐藏）*/
+.brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px;letter-spacing:0}
+
 @media (max-width: 640px) {
   /* ---- 顶部导航：压缩 + 链接横向可滑动 ---- */
   .nav-in { gap: 8px !important; padding: 0 12px !important; height: 54px !important; }

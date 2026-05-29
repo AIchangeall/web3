@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
   .brand .logo{width:34px;height:34px;background:url(assets/favicon.svg) center/contain no-repeat;flex:none}
+  .brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px}
   .nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
   .nav-links a{padding:7px 14px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
   .nav-links a:hover{background:#f0f1f6;color:var(--ink)}
@@ -56,13 +57,17 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .wrap{max-width:1180px;margin:0 auto 60px;padding:0 24px;display:flex;flex-direction:column;gap:18px}
   .ds{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
   .ds::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--bar,var(--accent))}
-  .ds.industry{--bar:#ef4444}
   .ds.hiring{--bar:#f97316}
+  .ds.industry{--bar:#ef4444}
+  .ds.market{--bar:#10b981}
+  .ds.geopolitics{--bar:#3b82f6}
   .dsh{display:flex;align-items:center;gap:10px;padding:16px 22px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
   .dsh .dot{width:8px;height:8px;border-radius:99px;background:var(--bar,var(--accent));flex:none}
   .dsh .title{font-weight:700;font-size:15px;letter-spacing:.01em}
   .dsh .tag{font-size:11px;font-weight:700;color:#dc2626;background:#fef2f2;border:1px solid #fecaca;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
   .ds.hiring .dsh .tag{color:#c2410c;background:#fff7ed;border-color:#fed7aa}
+  .ds.market .dsh .tag{color:#047857;background:#ecfdf5;border-color:#a7f3d0}
+  .ds.geopolitics .dsh .tag{color:#1d4ed8;background:#eff6ff;border-color:#bfdbfe}
   .dsh .lastrun{margin-left:auto;font-size:12px;color:var(--muted);font-weight:500;display:inline-flex;align-items:center;gap:6px}
   .dsh .archive{font-size:12px;color:var(--accent);font-weight:600;cursor:pointer;background:transparent;border:0;padding:0;display:inline-flex;align-items:center;gap:4px}
   .dsh .archive:hover{text-decoration:underline}
@@ -105,7 +110,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <body>
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="home.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span></span></a>
+    <a class="brand" href="home.html"><span class="logo"></span><span>链聘 <span style="color:var(--accent)">ChainHire</span><small data-i18n="brand.tag">专注 Web3 · 每日更新</small></span></a>
     <div class="nav-links">
       <a href="home.html" class="active" data-i18n="nav.home">行业资讯</a>
       <a href="index.html" data-i18n="nav.jobs">职位</a>
@@ -126,6 +131,17 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 </header>
 
 <div class="wrap">
+  <section class="ds hiring" id="ds-hiring">
+    <div class="dsh">
+      <span class="dot"></span>
+      <span class="title" data-i18n="news.hiring">招聘动态</span>
+      <span class="tag" data-i18n="home.tag.hiring">招聘</span>
+      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-hiring">—</span></span>
+      <button class="archive" data-archive="hiring" data-i18n="home.archive">查看完整归档 →</button>
+    </div>
+    <ul class="dsl" id="list-hiring"></ul>
+  </section>
+
   <section class="ds industry" id="ds-industry">
     <div class="dsh">
       <span class="dot"></span>
@@ -137,15 +153,26 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     <ul class="dsl" id="list-industry"></ul>
   </section>
 
-  <section class="ds hiring" id="ds-hiring">
+  <section class="ds market" id="ds-market">
     <div class="dsh">
       <span class="dot"></span>
-      <span class="title" data-i18n="news.hiring">招聘动态</span>
-      <span class="tag" data-i18n="home.tag.hiring">招聘</span>
-      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-hiring">—</span></span>
-      <button class="archive" data-archive="hiring" data-i18n="home.archive">查看完整归档 →</button>
+      <span class="title" data-i18n="news.market">行情数据</span>
+      <span class="tag" data-i18n="home.tag.market">行情</span>
+      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-market">—</span></span>
+      <button class="archive" data-archive="market" data-i18n="home.archive">查看完整归档 →</button>
     </div>
-    <ul class="dsl" id="list-hiring"></ul>
+    <ul class="dsl" id="list-market"></ul>
+  </section>
+
+  <section class="ds geopolitics" id="ds-geopolitics">
+    <div class="dsh">
+      <span class="dot"></span>
+      <span class="title" data-i18n="news.geopolitics">地缘政治</span>
+      <span class="tag" data-i18n="home.tag.geopolitics">地缘</span>
+      <span class="lastrun"><span data-i18n="home.lastrun">最近运行</span> <span id="lr-geopolitics">—</span></span>
+      <button class="archive" data-archive="geopolitics" data-i18n="home.archive">查看完整归档 →</button>
+    </div>
+    <ul class="dsl" id="list-geopolitics"></ul>
   </section>
 </div>
 
@@ -164,9 +191,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   const fmtDT = iso => { const d=new Date(iso); if(isNaN(d.getTime())) return iso||""; return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
 
   // ---------- 资讯渲染 ----------
-  let NEWS = {industry:[], hiring:[], updated:"", updatedAt:""};
+  const TYPES = ["hiring", "industry", "market", "geopolitics"];
+  let NEWS = {hiring:[], industry:[], market:[], geopolitics:[], updated:"", updatedAt:""};
   const DEFAULT_N = 6;
-  const expanded = {industry:false, hiring:false};
+  const expanded = {hiring:false, industry:false, market:false, geopolitics:false};
 
   function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
   function host(u){try{return new URL(u).hostname.replace(/^www\./,"");}catch{return "";}}
@@ -195,8 +223,13 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
     const n = expanded[type] ? arr.length : Math.min(DEFAULT_N, arr.length);
     if (!arr.length) {
       const z=(window.I18N&&I18N.lang||"zh")==="zh";
-      const msg = type==="industry" ? (z?"暂无行业要闻，等待下一次抓取":"No industry highlights yet — waiting for next sync")
-                                     : (z?"暂无招聘动态，等待下一次抓取":"No hiring updates yet — waiting for next sync");
+      const label = {
+        hiring: [z?"招聘动态":"hiring updates"],
+        industry: [z?"行业要闻":"industry highlights"],
+        market: [z?"行情数据":"market data"],
+        geopolitics: [z?"地缘政治":"geopolitical news"]
+      }[type] || [z?"内容":"items"];
+      const msg = z ? `暂无${label[0]}，等待下一次抓取` : `No ${label[0]} yet — waiting for next sync`;
       ul.innerHTML = `<li class="ds-empty">${esc(msg)}</li>`;
       return;
     }
@@ -226,10 +259,11 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 
   function renderAll(){
     const newest = arr => arr.reduce((m,x)=>x.publishedAt&&(!m||x.publishedAt>m)?x.publishedAt:m,"");
-    document.getElementById("lr-industry").textContent = fmtDate(newest(NEWS.industry||[]) || NEWS.updatedAt);
-    document.getElementById("lr-hiring").textContent = fmtDate(newest(NEWS.hiring||[]) || NEWS.updatedAt);
-    renderList("industry");
-    renderList("hiring");
+    for (const t of TYPES) {
+      const el = document.getElementById("lr-"+t);
+      if (el) el.textContent = fmtDate(newest(NEWS[t]||[]) || NEWS.updatedAt);
+      renderList(t);
+    }
   }
 
   async function load(){
@@ -237,8 +271,7 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
       const r = await fetch("news.json", {cache:"no-cache"});
       if (!r.ok) { renderAll(); return; }
       const j = await r.json();
-      NEWS.industry = Array.isArray(j.industry) ? j.industry : [];
-      NEWS.hiring = Array.isArray(j.hiring) ? j.hiring : [];
+      for (const t of TYPES) NEWS[t] = Array.isArray(j[t]) ? j[t] : [];
       NEWS.updated = j.updated || "";
       NEWS.updatedAt = j.updatedAt || "";
     }catch{}

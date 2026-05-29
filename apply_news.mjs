@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 /* ============================================================================
- * apply_news.mjs — 把抓取到的资讯（行业要闻 / 招聘动态）归并写入 news.json
+ * apply_news.mjs — 把抓取到的资讯归并写入 news.json
+ *   4 类：hiring（招聘动态）/ industry（行业要闻）/ market（行情数据）/ geopolitics（地缘政治）
  *
  * 输入：news_input.json (数组)
- *   [{ "type":"industry"|"hiring", "title", "summary", "url", "source",
+ *   [{ "type":"hiring"|"industry"|"market"|"geopolitics",
+ *      "title", "summary", "url", "source",
  *      "publishedAt":"ISO 时间", "tag":"(可选)分类标签" }, ...]
  *
  * 输出：news.json
- *   { "updated":"yyyy-mm-dd", "updatedAt":"ISO", "industry":[...], "hiring":[...] }
+ *   { "updated":"yyyy-mm-dd", "updatedAt":"ISO",
+ *     "hiring":[...], "industry":[...], "market":[...], "geopolitics":[...] }
  *
  * 规则：
  *   - 用 URL 去重（域名去 utm_* / fbclid / gclid 等追踪参数；末尾 / 归一）
@@ -21,6 +24,7 @@ import path from "node:path";
 
 const NEWS_FILE = path.resolve("./news.json");
 const PER_CATEGORY_CAP = 12;
+const TYPES = ["hiring", "industry", "market", "geopolitics"];
 
 function readInput(p) {
   const txt = fs.readFileSync(p, "utf8");
@@ -68,7 +72,7 @@ function clean(item) {
   const title = tidy(item.title);
   if (!title) return null;
   const type = (item.type || "").toLowerCase();
-  if (type !== "industry" && type !== "hiring") return null;
+  if (!TYPES.includes(type)) return null;
   return {
     type,
     title,
@@ -81,11 +85,12 @@ function clean(item) {
 }
 
 function loadExisting() {
-  if (!fs.existsSync(NEWS_FILE)) return { industry: [], hiring: [] };
+  const empty = Object.fromEntries(TYPES.map(t => [t, []]));
+  if (!fs.existsSync(NEWS_FILE)) return empty;
   try {
     const j = JSON.parse(fs.readFileSync(NEWS_FILE, "utf8"));
-    return { industry: Array.isArray(j.industry) ? j.industry : [], hiring: Array.isArray(j.hiring) ? j.hiring : [] };
-  } catch { return { industry: [], hiring: [] }; }
+    return Object.fromEntries(TYPES.map(t => [t, Array.isArray(j[t]) ? j[t] : []]));
+  } catch { return empty; }
 }
 
 function dedupeMerge(existing, incoming) {
@@ -118,25 +123,22 @@ function main() {
   }
   const raw = readInput(inputPath);
   const cleaned = raw.map(clean).filter(Boolean);
-
-  const incomingInd = cleaned.filter(x => x.type === "industry");
-  const incomingHir = cleaned.filter(x => x.type === "hiring");
-
   const existing = loadExisting();
-  const ind = dedupeMerge(existing.industry, incomingInd);
-  const hir = dedupeMerge(existing.hiring, incomingHir);
 
   const today = new Date().toISOString().slice(0, 10);
   const out = {
     updated: today,
-    updatedAt: new Date().toISOString(),
-    industry: sortAndCap(ind.merged),
-    hiring: sortAndCap(hir.merged)
+    updatedAt: new Date().toISOString()
   };
+  const LABEL = { hiring: "招聘动态", industry: "行业要闻", market: "行情数据", geopolitics: "地缘政治" };
+  const report = [];
+  for (const t of TYPES) {
+    const merged = dedupeMerge(existing[t], cleaned.filter(x => x.type === t));
+    out[t] = sortAndCap(merged.merged);
+    report.push(`${LABEL[t]} ${out[t].length}（本次新增 ${merged.added}）`);
+  }
   fs.writeFileSync(NEWS_FILE, JSON.stringify(out, null, 2) + "\n");
-  console.log(
-    `news.json 已更新：行业要闻 ${out.industry.length}（本次新增 ${ind.added}），招聘动态 ${out.hiring.length}（本次新增 ${hir.added}）`
-  );
+  console.log("news.json 已更新：" + report.join("，"));
 }
 
 main();
