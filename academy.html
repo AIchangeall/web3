@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   *{box-sizing:border-box}html,body{margin:0;padding:0}
   body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Inter,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:14px}
   a{color:inherit;text-decoration:none}
+  a.ext{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+  a.ext:hover{opacity:.8}
+
+  /* ---- Nav ---- */
   .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
   html[data-theme="dark"] .nav{background:rgba(13,17,23,.88)}
   .nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:24px}
@@ -47,33 +51,37 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   .hero h1{font-size:32px;font-weight:800;margin:0 0 10px;letter-spacing:-.02em}
   .hero p{font-size:15px;opacity:.88;margin:0 auto;max-width:560px;line-height:1.75}
   .hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px}
-  .hero-tag{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600}
+  .hero-tag{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;transition:background .15s}
+  .hero-tag:hover{background:rgba(255,255,255,.32)}
 
-  /* ---- Main layout ---- */
+  /* ---- Main ---- */
   main{max-width:1100px;margin:0 auto;padding:32px 24px 80px}
 
-  /* ---- Chapter nav ---- */
-  .chapters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
-  .chap-btn{padding:7px 16px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
-  .chap-btn:hover,.chap-btn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-
   /* ---- Section ---- */
-  .section{margin-bottom:40px}
+  .section{margin-bottom:44px;scroll-margin-top:72px}
   .section-hd{display:flex;align-items:center;gap:10px;margin-bottom:16px}
   .section-ico{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:18px;flex:none}
   .section-hd h2{font-size:18px;font-weight:800;margin:0;letter-spacing:-.01em}
-  .section-hd p{font-size:13px;color:var(--muted);margin:2px 0 0}
+  .section-hd .sub{font-size:13px;color:var(--muted);margin:2px 0 0}
 
   /* ---- Card grid ---- */
-  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s;position:relative;overflow:hidden}
-  .card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(109,94,252,.1)}
-  .card-accent{position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0}
-  .card h3{font-size:14.5px;font-weight:700;margin:8px 0 6px}
-  .card p{font-size:13px;color:var(--muted);margin:0 0 12px;line-height:1.65}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+
+  /* ---- Expandable card (details/summary) ---- */
+  details.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;transition:box-shadow .15s}
+  details.card[open]{box-shadow:0 4px 20px rgba(109,94,252,.12);border-color:var(--accent)}
+  details.card summary{list-style:none;cursor:pointer;padding:18px 20px 14px;position:relative;user-select:none}
+  details.card summary::-webkit-details-marker{display:none}
+  details.card summary::marker{display:none}
+  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:6px;margin-bottom:6px}
+  .card-top h3{font-size:14.5px;font-weight:700;margin:0;flex:1}
+  .card-arrow{font-size:11px;color:var(--muted);margin-top:2px;transition:transform .2s;flex:none}
+  details.card[open] .card-arrow{transform:rotate(180deg)}
+  .card-desc{font-size:13px;color:var(--muted);margin:0 0 10px;line-height:1.65}
   .card-tags{display:flex;flex-wrap:wrap;gap:5px}
   .tag{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;background:var(--bg);color:var(--muted);border:1px solid var(--line)}
-  .card-level{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px}
+  .card-accent-bar{position:absolute;top:0;left:0;right:0;height:3px}
+  .card-level{font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;flex:none;align-self:flex-start;margin-top:1px}
   .lv-start{background:#dcfce7;color:#16a34a}
   .lv-mid{background:#dbeafe;color:#2563eb}
   .lv-adv{background:#ede9fe;color:#7c3aed}
@@ -84,24 +92,41 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   html[data-theme="dark"] .lv-pro{background:#451a03;color:#fbbf24}
   html[data-theme="dark"] .tag{background:#1f2740;border-color:var(--line)}
 
-  /* ---- Road map ---- */
-  .roadmap{display:flex;flex-wrap:wrap;gap:0;margin-top:4px}
-  .road-step{display:flex;align-items:flex-start;gap:10px;flex:1;min-width:160px;padding:12px 14px;position:relative}
-  .road-step:not(:last-child)::after{content:'→';position:absolute;right:-2px;top:18px;color:var(--muted);font-size:13px}
+  /* ---- Card detail body ---- */
+  .card-body{padding:0 20px 18px;border-top:1px solid var(--line);margin-top:2px}
+  .card-body h4{font-size:12.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:14px 0 6px}
+  .card-body ul{margin:0;padding-left:16px;color:#374151}
+  html[data-theme="dark"] .card-body ul{color:var(--muted)}
+  .card-body li{font-size:13px;line-height:1.8;margin-bottom:1px}
+  .card-body p{font-size:13px;color:#475569;line-height:1.75;margin:6px 0 0}
+  html[data-theme="dark"] .card-body p{color:var(--muted)}
+  .card-body .links{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .card-body .links a{font-size:12px;font-weight:600;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--accent);display:inline-flex;align-items:center;gap:4px}
+  .card-body .links a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  /* ---- Roadmap ---- */
+  .roadmap-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px;box-shadow:var(--shadow)}
+  .roadmap-title{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .roadmap{display:flex;flex-wrap:wrap;gap:0}
+  .road-step{display:flex;align-items:flex-start;gap:10px;flex:1;min-width:150px;padding:10px 12px;position:relative}
+  .road-step:not(:last-child)::after{content:'→';position:absolute;right:-4px;top:16px;color:var(--muted);font-size:13px}
   .road-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;flex:none}
   .road-body h4{font-size:13px;font-weight:700;margin:0 0 2px}
-  .road-body p{font-size:12px;color:var(--muted);margin:0}
+  .road-body p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}
 
   /* ---- Resource list ---- */
-  .res-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
-  .res-item{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
-  .res-icon{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;font-size:16px;flex:none;background:var(--bg)}
+  .res-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+  .res-item{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+  .res-item:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(109,94,252,.1);border-color:var(--accent)}
+  .res-icon{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;font-size:17px;flex:none;background:var(--bg)}
   .res-body strong{display:block;font-size:13px;font-weight:700;margin-bottom:1px}
   .res-body span{font-size:12px;color:var(--muted)}
+  .res-cat{font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px;margin-left:4px;vertical-align:1px}
 
   @media(max-width:640px){
     .hero h1{font-size:24px}.hero{padding:32px 16px 28px}
-    main{padding:20px 14px 60px}.cards{grid-template-columns:1fr}
+    main{padding:20px 14px 60px}
+    .cards{grid-template-columns:1fr}
     .road-step:not(:last-child)::after{display:none}
     .res-list{grid-template-columns:1fr 1fr}
   }
@@ -125,17 +150,16 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
   </div>
 </nav>
 
-<!-- Hero -->
 <div class="hero">
   <h1>Web3 学院</h1>
   <p>从零基础到职业进阶，系统掌握区块链与 Web3 核心知识体系</p>
   <div class="hero-tags">
-    <span class="hero-tag">入门基础</span>
-    <span class="hero-tag">核心概念</span>
-    <span class="hero-tag">技术进阶</span>
-    <span class="hero-tag">生态版图</span>
-    <span class="hero-tag">职业路径</span>
-    <span class="hero-tag">精选资源</span>
+    <span class="hero-tag" onclick="scrollTo('ac-basics')">🌱 入门基础</span>
+    <span class="hero-tag" onclick="scrollTo('ac-concepts')">💡 核心概念</span>
+    <span class="hero-tag" onclick="scrollTo('ac-tech')">⚙️ 技术进阶</span>
+    <span class="hero-tag" onclick="scrollTo('ac-ecosystem')">🌐 生态版图</span>
+    <span class="hero-tag" onclick="scrollTo('ac-career')">🚀 职业路径</span>
+    <span class="hero-tag" onclick="scrollTo('ac-resources')">📚 精选资源</span>
   </div>
 </div>
 
@@ -145,40 +169,132 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-basics">
   <div class="section-hd">
     <div class="section-ico" style="background:#dcfce7">🌱</div>
-    <div>
-      <h2>入门基础</h2>
-      <p>零基础起步，理解区块链与加密世界的底层逻辑</p>
-    </div>
+    <div><h2>入门基础</h2><p class="sub">零基础起步，理解区块链与加密世界的底层逻辑</p></div>
   </div>
   <div class="cards">
-    <div class="card">
-      <div class="card-accent" style="background:#22c55e"></div>
-      <span class="card-level lv-start">入门</span>
-      <h3>什么是区块链</h3>
-      <p>分布式账本、共识机制、不可篡改性——用最简单的类比理解区块链的本质。</p>
-      <div class="card-tags"><span class="tag">分布式账本</span><span class="tag">共识机制</span><span class="tag">哈希</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#22c55e"></div>
-      <span class="card-level lv-start">入门</span>
-      <h3>加密货币基础</h3>
-      <p>比特币、以太坊的区别，代币与币的概念，Gas 费如何计算，交易所与链上交互。</p>
-      <div class="card-tags"><span class="tag">BTC</span><span class="tag">ETH</span><span class="tag">Gas</span><span class="tag">CEX/DEX</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#22c55e"></div>
-      <span class="card-level lv-start">入门</span>
-      <h3>钱包与私钥管理</h3>
-      <p>热钱包 vs 冷钱包，助记词安全保存，MetaMask 配置与使用，避免常见诈骗。</p>
-      <div class="card-tags"><span class="tag">MetaMask</span><span class="tag">助记词</span><span class="tag">硬件钱包</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#22c55e"></div>
-      <span class="card-level lv-start">入门</span>
-      <h3>Web1 → Web2 → Web3</h3>
-      <p>互联网三个时代的演进逻辑，为什么需要 Web3，数据主权与价值互联网的愿景。</p>
-      <div class="card-tags"><span class="tag">去中心化</span><span class="tag">数据主权</span><span class="tag">Token 经济</span></div>
-    </div>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#22c55e"></div>
+      <summary>
+        <div class="card-top"><h3>什么是区块链</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">分布式账本、共识机制、不可篡改性——用最简单的类比理解区块链的本质。</p>
+        <div class="card-tags"><span class="tag">分布式账本</span><span class="tag">共识机制</span><span class="tag">哈希</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>核心概念</h4>
+        <ul>
+          <li><b>区块</b>：每个区块存储一批交易数据，包含时间戳和上一区块的哈希值</li>
+          <li><b>链式结构</b>：通过哈希指针串联所有区块，篡改任一区块会破坏后续所有区块</li>
+          <li><b>去中心化</b>：数据由全球数千节点共同维护，无单一控制者</li>
+          <li><b>共识机制</b>：PoW（工作量证明）用算力竞争记账权；PoS（权益证明）用质押代币参与验证</li>
+          <li><b>不可篡改</b>：数据写入后理论上无法修改，除非控制超过 51% 的网络算力</li>
+        </ul>
+        <h4>类比理解</h4>
+        <p>把区块链想象成一本全球公开的账本，任何人都能看但没人能单独修改，每一页（区块）都盖了上一页的印章（哈希），撕掉任何一页都会被发现。</p>
+        <h4>延伸阅读</h4>
+        <div class="links">
+          <a href="https://ethereum.org/zh/what-is-ethereum/" target="_blank" rel="noopener">以太坊官方介绍 ↗</a>
+          <a href="https://bitcoin.org/zh_CN/bitcoin-for-individuals" target="_blank" rel="noopener">比特币白皮书 ↗</a>
+          <a href="https://andersbrownworth.com/blockchain/" target="_blank" rel="noopener">可视化区块链演示 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#22c55e"></div>
+      <summary>
+        <div class="card-top"><h3>加密货币基础</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">比特币、以太坊的区别，代币与币的概念，Gas 费如何计算。</p>
+        <div class="card-tags"><span class="tag">BTC</span><span class="tag">ETH</span><span class="tag">Gas</span><span class="tag">CEX/DEX</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>加密货币分类</h4>
+        <ul>
+          <li><b>原生币（Coin）</b>：运行在自己区块链上，如 BTC（比特币）、ETH（以太坊）、SOL（Solana）</li>
+          <li><b>代币（Token）</b>：运行在其他链上的智能合约，如 USDT、UNI、LINK</li>
+          <li><b>稳定币</b>：锚定法币的代币，分法币抵押（USDT/USDC）、加密超额抵押（DAI）和算法稳定币</li>
+        </ul>
+        <h4>Gas 费</h4>
+        <ul>
+          <li>以太坊上每笔交易需支付 Gas 费（以 ETH 计价），用于补偿验证节点</li>
+          <li>Gas = Gas Used × Gas Price（单位：Gwei，1 ETH = 10⁹ Gwei）</li>
+          <li>网络拥堵时 Gas 价格飙升；Layer2 可将费用降低 10～100 倍</li>
+        </ul>
+        <h4>交易所选择</h4>
+        <ul>
+          <li><b>CEX（中心化）</b>：Binance、OKX、Coinbase，体验好但需 KYC，资产托管给平台</li>
+          <li><b>DEX（去中心化）</b>：Uniswap、Curve，链上直接交易，自持私钥，但需懂钱包操作</li>
+        </ul>
+        <div class="links">
+          <a href="https://coinmarketcap.com/" target="_blank" rel="noopener">CoinMarketCap ↗</a>
+          <a href="https://etherscan.io/gastracker" target="_blank" rel="noopener">Gas 实时监测 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#22c55e"></div>
+      <summary>
+        <div class="card-top"><h3>钱包与私钥安全</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">热钱包 vs 冷钱包，助记词安全保存，MetaMask 配置与常见诈骗防范。</p>
+        <div class="card-tags"><span class="tag">MetaMask</span><span class="tag">助记词</span><span class="tag">硬件钱包</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>钱包类型</h4>
+        <ul>
+          <li><b>热钱包</b>（联网）：MetaMask、Phantom、Trust Wallet，方便但安全性相对低</li>
+          <li><b>冷钱包</b>（离线）：Ledger、Trezor，最高安全级别，大额资产推荐使用</li>
+          <li><b>多签钱包</b>：Safe（原 Gnosis），需多个签名才能转账，适合团队/DAO 资金管理</li>
+        </ul>
+        <h4>私钥与助记词</h4>
+        <ul>
+          <li>私钥 = 钱包唯一凭证，谁持有私钥谁拥有资产，永远不要上传至任何网站</li>
+          <li>助记词（12/24 词）是私钥的可读形式，<b>抄写在纸上离线保存</b>，不要截图/云存储</li>
+          <li>任何要求你输入助记词的网站/App 均为诈骗，包括假冒 MetaMask 客服</li>
+        </ul>
+        <h4>常见诈骗类型</h4>
+        <ul>
+          <li>钓鱼网站：假冒 Uniswap/OpenSea，抢注相似域名</li>
+          <li>Approve 陷阱：诱导授权恶意合约，可定期用 Revoke.cash 检查并撤销</li>
+          <li>空投诈骗：声称免费领取，实则引导签名恶意交易</li>
+        </ul>
+        <div class="links">
+          <a href="https://metamask.io/" target="_blank" rel="noopener">MetaMask 官网 ↗</a>
+          <a href="https://revoke.cash/" target="_blank" rel="noopener">Revoke.cash 授权检查 ↗</a>
+          <a href="https://www.ledger.com/" target="_blank" rel="noopener">Ledger 硬件钱包 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#22c55e"></div>
+      <summary>
+        <div class="card-top"><h3>Web1 → Web2 → Web3</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">互联网三个时代的演进逻辑，Web3 要解决什么问题。</p>
+        <div class="card-tags"><span class="tag">去中心化</span><span class="tag">数据主权</span><span class="tag">Token 经济</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>三个时代对比</h4>
+        <ul>
+          <li><b>Web1（1990s-2000s）</b>：只读互联网，静态网页，用户仅能消费内容</li>
+          <li><b>Web2（2000s-今）</b>：读写互联网，社交媒体、UGC；平台垄断数据和广告收益</li>
+          <li><b>Web3（构建中）</b>：读写拥有，用户通过代币真正拥有数字资产与平台份额</li>
+        </ul>
+        <h4>Web3 要解决的核心问题</h4>
+        <ul>
+          <li><b>数据主权</b>：你的数据归你，不被平台任意使用或出售</li>
+          <li><b>抗审查</b>：去中心化协议无法被单一机构关闭或屏蔽</li>
+          <li><b>价值流通</b>：互联网原生的价值转移（不依赖银行中介）</li>
+          <li><b>可组合性</b>：开放协议和智能合约可以像乐高积木一样互相组合</li>
+        </ul>
+        <h4>批判性视角</h4>
+        <p>Web3 仍面临性能、用户体验、监管不确定性等挑战，现有产品与 Web2 相比体验差距明显。理性看待技术潜力与炒作泡沫。</p>
+        <div class="links">
+          <a href="https://ethereum.org/zh/web3/" target="_blank" rel="noopener">以太坊关于 Web3 ↗</a>
+        </div>
+      </div>
+    </details>
+
   </div>
 </div>
 
@@ -186,40 +302,135 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-concepts">
   <div class="section-hd">
     <div class="section-ico" style="background:#dbeafe">💡</div>
-    <div>
-      <h2>核心概念</h2>
-      <p>掌握 Web3 世界的关键模块：DeFi、NFT、DAO 与智能合约</p>
-    </div>
+    <div><h2>核心概念</h2><p class="sub">掌握 DeFi、NFT、DAO 与智能合约的运作机制</p></div>
   </div>
   <div class="cards">
-    <div class="card">
-      <div class="card-accent" style="background:#3b82f6"></div>
-      <span class="card-level lv-mid">进阶</span>
-      <h3>智能合约原理</h3>
-      <p>代码即法律——什么是智能合约，EVM 如何执行代码，合约的部署、调用与升级模式。</p>
-      <div class="card-tags"><span class="tag">EVM</span><span class="tag">Solidity</span><span class="tag">ABI</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#3b82f6"></div>
-      <span class="card-level lv-mid">进阶</span>
-      <h3>DeFi 去中心化金融</h3>
-      <p>AMM 自动做市商、流动性池、借贷协议、稳定币设计，以及 DeFi 的核心风险。</p>
-      <div class="card-tags"><span class="tag">Uniswap</span><span class="tag">Aave</span><span class="tag">LP</span><span class="tag">无常损失</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#3b82f6"></div>
-      <span class="card-level lv-mid">进阶</span>
-      <h3>NFT 与数字所有权</h3>
-      <p>ERC-721 / ERC-1155 标准，铸造流程，版税机制，NFT 的真实价值与争议。</p>
-      <div class="card-tags"><span class="tag">ERC-721</span><span class="tag">OpenSea</span><span class="tag">版税</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#3b82f6"></div>
-      <span class="card-level lv-mid">进阶</span>
-      <h3>DAO 去中心化治理</h3>
-      <p>治理代币、提案投票、多签钱包，Compound、MakerDAO 的治理实践与挑战。</p>
-      <div class="card-tags"><span class="tag">治理代币</span><span class="tag">Snapshot</span><span class="tag">多签</span></div>
-    </div>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#3b82f6"></div>
+      <summary>
+        <div class="card-top"><h3>智能合约原理</h3><span class="card-level lv-mid">进阶</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">代码即法律——EVM 如何执行代码，合约的部署、调用与升级模式。</p>
+        <div class="card-tags"><span class="tag">EVM</span><span class="tag">Solidity</span><span class="tag">ABI</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>什么是智能合约</h4>
+        <p>部署在区块链上的自执行程序，满足预设条件时自动运行，无需第三方介入。以太坊用 Solidity 语言编写，编译成 EVM 字节码后部署。</p>
+        <h4>核心概念</h4>
+        <ul>
+          <li><b>EVM（以太坊虚拟机）</b>：所有节点运行同一段代码，确保执行结果完全一致</li>
+          <li><b>ABI（应用二进制接口）</b>：前端与合约交互的接口描述，定义函数签名和参数类型</li>
+          <li><b>事件（Event）</b>：合约执行时写入日志，前端通过 ethers.js 监听</li>
+          <li><b>代理模式（Proxy Pattern）</b>：逻辑合约与存储合约分离，实现合约"升级"</li>
+        </ul>
+        <h4>合约安全要点</h4>
+        <ul>
+          <li>重入攻击（Reentrancy）：转账前先更新状态，或使用 ReentrancyGuard</li>
+          <li>整数溢出：Solidity 0.8+ 默认检查溢出，老版本需用 SafeMath</li>
+          <li>访问控制：关键函数必须加 onlyOwner 或权限检查</li>
+        </ul>
+        <div class="links">
+          <a href="https://docs.soliditylang.org/" target="_blank" rel="noopener">Solidity 官方文档 ↗</a>
+          <a href="https://docs.openzeppelin.com/contracts/" target="_blank" rel="noopener">OpenZeppelin 合约库 ↗</a>
+          <a href="https://etherscan.io/solcbuginfo" target="_blank" rel="noopener">Solidity 漏洞列表 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#3b82f6"></div>
+      <summary>
+        <div class="card-top"><h3>DeFi 去中心化金融</h3><span class="card-level lv-mid">进阶</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">AMM 自动做市商、流动性池、借贷协议，以及 DeFi 的核心风险。</p>
+        <div class="card-tags"><span class="tag">AMM</span><span class="tag">Uniswap</span><span class="tag">Aave</span><span class="tag">无常损失</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>核心模块</h4>
+        <ul>
+          <li><b>DEX / AMM</b>：Uniswap 用 x×y=k 恒定乘积公式定价，LP 提供流动性赚手续费</li>
+          <li><b>借贷协议</b>：Aave / Compound，超额抵押借款，利率由算法动态调整</li>
+          <li><b>稳定币</b>：MakerDAO 的 DAI 用 ETH 超额抵押铸造；FRAX 部分算法稳定</li>
+          <li><b>收益聚合</b>：Yearn Finance 自动将资金在各协议间寻找最优收益</li>
+          <li><b>永续合约</b>：dYdX、GMX，链上去中心化衍生品交易</li>
+        </ul>
+        <h4>主要风险</h4>
+        <ul>
+          <li><b>无常损失（Impermanent Loss）</b>：LP 因价格波动损失相比单纯持币的收益</li>
+          <li><b>清算风险</b>：借款抵押比不足时，头寸被强制平仓</li>
+          <li><b>合约漏洞</b>：智能合约 Bug 导致资金被盗（如 Euler Finance 损失 2 亿美元）</li>
+          <li><b>预言机操控</b>：价格喂价被操纵导致错误清算或套利</li>
+        </ul>
+        <div class="links">
+          <a href="https://app.uniswap.org/" target="_blank" rel="noopener">Uniswap ↗</a>
+          <a href="https://aave.com/" target="_blank" rel="noopener">Aave ↗</a>
+          <a href="https://defillama.com/" target="_blank" rel="noopener">DeFiLlama TVL 数据 ↗</a>
+          <a href="https://dune.com/" target="_blank" rel="noopener">Dune Analytics ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#3b82f6"></div>
+      <summary>
+        <div class="card-top"><h3>NFT 与数字所有权</h3><span class="card-level lv-mid">进阶</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">ERC-721 / ERC-1155 标准，铸造流程，版税机制与价值讨论。</p>
+        <div class="card-tags"><span class="tag">ERC-721</span><span class="tag">OpenSea</span><span class="tag">版税</span><span class="tag">元数据</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>技术原理</h4>
+        <ul>
+          <li><b>ERC-721</b>：每个 Token ID 唯一，不可分割，标准接口含 transferFrom/approve/ownerOf</li>
+          <li><b>ERC-1155</b>：同一合约可发行多种代币（可同质化 + 非同质化混合），节省 Gas</li>
+          <li><b>元数据</b>：NFT 的图片/描述通常存在 IPFS，合约只存 tokenURI（指向 JSON）</li>
+          <li><b>版税</b>：EIP-2981 标准定义链上版税，但执行依赖交易平台配合</li>
+        </ul>
+        <h4>NFT 应用场景</h4>
+        <ul>
+          <li>数字艺术品与收藏品（CryptoPunks、BAYC）</li>
+          <li>游戏道具所有权（可跨平台转让）</li>
+          <li>会员资格与 Pass 卡（Proof of Attendance）</li>
+          <li>域名（ENS、Unstoppable Domains）</li>
+          <li>现实资产 Token 化（RWA：房产、债券）</li>
+        </ul>
+        <div class="links">
+          <a href="https://opensea.io/" target="_blank" rel="noopener">OpenSea ↗</a>
+          <a href="https://blur.io/" target="_blank" rel="noopener">Blur ↗</a>
+          <a href="https://eips.ethereum.org/EIPS/eip-721" target="_blank" rel="noopener">ERC-721 标准原文 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#3b82f6"></div>
+      <summary>
+        <div class="card-top"><h3>DAO 去中心化治理</h3><span class="card-level lv-mid">进阶</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">治理代币、提案投票、多签钱包，真实 DAO 的实践与挑战。</p>
+        <div class="card-tags"><span class="tag">治理代币</span><span class="tag">Snapshot</span><span class="tag">多签</span><span class="tag">提案</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>DAO 运作机制</h4>
+        <ul>
+          <li><b>治理代币</b>：持有者可对协议参数修改、基金使用等提案投票（1 Token = 1 票）</li>
+          <li><b>链下治理</b>：Snapshot 使用签名消息（不消耗 Gas），统计代币余额决定投票结果</li>
+          <li><b>链上执行</b>：Governor Bravo 合约：提案通过后自动执行，无法人为阻拦</li>
+          <li><b>多签钱包</b>：Safe（Gnosis）需 M/N 签名，是 DAO 财库管理的主流方案</li>
+        </ul>
+        <h4>典型案例</h4>
+        <ul>
+          <li><b>MakerDAO</b>：MKR 持有者管理 DAI 抵押参数，是成熟度最高的 DeFi DAO</li>
+          <li><b>Uniswap DAO</b>：UNI 持有超 10 亿美元资金，决策协议费用分配</li>
+          <li><b>ENS DAO</b>：管理以太坊域名系统的参数与基金</li>
+        </ul>
+        <h4>DAO 的现实挑战</h4>
+        <p>投票参与率低（通常 < 5%）、治理攻击（大户操控）、提案效率慢，是当前 DAO 治理的主要问题。</p>
+        <div class="links">
+          <a href="https://snapshot.org/" target="_blank" rel="noopener">Snapshot 投票平台 ↗</a>
+          <a href="https://app.safe.global/" target="_blank" rel="noopener">Safe 多签钱包 ↗</a>
+          <a href="https://tally.xyz/" target="_blank" rel="noopener">Tally 链上治理 ↗</a>
+        </div>
+      </div>
+    </details>
+
   </div>
 </div>
 
@@ -227,40 +438,134 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-tech">
   <div class="section-hd">
     <div class="section-ico" style="background:#ede9fe">⚙️</div>
-    <div>
-      <h2>技术进阶</h2>
-      <p>深入底层技术：Layer2、ZK 证明、跨链与合约安全</p>
-    </div>
+    <div><h2>技术进阶</h2><p class="sub">Layer2、ZK 证明、合约开发与跨链安全</p></div>
   </div>
   <div class="cards">
-    <div class="card">
-      <div class="card-accent" style="background:#7c3aed"></div>
-      <span class="card-level lv-adv">高级</span>
-      <h3>Layer2 扩容方案</h3>
-      <p>Optimistic Rollup vs ZK Rollup 的原理对比，Arbitrum、Optimism、zkSync、Starknet 主要差异。</p>
-      <div class="card-tags"><span class="tag">Rollup</span><span class="tag">Arbitrum</span><span class="tag">zkSync</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#7c3aed"></div>
-      <span class="card-level lv-adv">高级</span>
-      <h3>ZK 零知识证明</h3>
-      <p>zk-SNARK / zk-STARK 原理，为什么 ZK 是 Web3 隐私与扩容的核心技术，实际应用场景。</p>
-      <div class="card-tags"><span class="tag">zk-SNARK</span><span class="tag">隐私</span><span class="tag">证明系统</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#7c3aed"></div>
-      <span class="card-level lv-adv">高级</span>
-      <h3>Solidity 智能合约开发</h3>
-      <p>从 Hello World 到 ERC-20 实现，安全漏洞（重入攻击、整数溢出）防护，Hardhat 测试框架。</p>
-      <div class="card-tags"><span class="tag">Solidity</span><span class="tag">Hardhat</span><span class="tag">Foundry</span><span class="tag">审计</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#7c3aed"></div>
-      <span class="card-level lv-adv">高级</span>
-      <h3>跨链与互操作性</h3>
-      <p>跨链桥工作原理，Lock-and-Mint 模型，跨链桥安全风险（Ronin、Wormhole 攻击回顾）。</p>
-      <div class="card-tags"><span class="tag">跨链桥</span><span class="tag">IBC</span><span class="tag">LayerZero</span></div>
-    </div>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#7c3aed"></div>
+      <summary>
+        <div class="card-top"><h3>Layer2 扩容方案</h3><span class="card-level lv-adv">高级</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">Optimistic vs ZK Rollup 的原理对比，主流 L2 的差异与选择。</p>
+        <div class="card-tags"><span class="tag">Rollup</span><span class="tag">Arbitrum</span><span class="tag">zkSync</span><span class="tag">Starknet</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>为什么需要 Layer2</h4>
+        <p>以太坊主网 TPS 约 15-30，高峰期 Gas 费动辄数十美元，无法支撑大规模应用。Layer2 将交易计算搬离主链，仅将关键数据提交以太坊，继承其安全性。</p>
+        <h4>两种主流方案</h4>
+        <ul>
+          <li><b>Optimistic Rollup</b>（Arbitrum、Optimism）：假设交易有效，7 天挑战期内可提交欺诈证明；EVM 完全兼容，合约无缝迁移</li>
+          <li><b>ZK Rollup</b>（zkSync、Starknet、Polygon zkEVM）：每批交易附带零知识证明，数学上保证有效性；提款即时，但生成证明计算开销大</li>
+        </ul>
+        <h4>主流 L2 对比</h4>
+        <ul>
+          <li><b>Arbitrum One</b>：目前 TVL 最高的 L2，生态最丰富</li>
+          <li><b>Optimism / OP Stack</b>：Coinbase Base、Mode 等基于 OP Stack 构建</li>
+          <li><b>zkSync Era</b>：Native Account Abstraction，用户体验友好</li>
+          <li><b>Starknet</b>：Cairo 语言，性能极强但学习曲线陡</li>
+        </ul>
+        <div class="links">
+          <a href="https://l2beat.com/" target="_blank" rel="noopener">L2Beat TVL & 风险评估 ↗</a>
+          <a href="https://arbitrum.io/" target="_blank" rel="noopener">Arbitrum ↗</a>
+          <a href="https://zksync.io/" target="_blank" rel="noopener">zkSync ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#7c3aed"></div>
+      <summary>
+        <div class="card-top"><h3>ZK 零知识证明</h3><span class="card-level lv-adv">高级</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">zk-SNARK / zk-STARK 原理，Web3 隐私与扩容的核心技术。</p>
+        <div class="card-tags"><span class="tag">zk-SNARK</span><span class="tag">zk-STARK</span><span class="tag">隐私</span><span class="tag">证明系统</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>核心思想</h4>
+        <p>零知识证明允许证明者向验证者证明"我知道某个秘密"，而不泄露秘密本身。类比：证明你知道密码，但不说出密码。</p>
+        <h4>两种主流方案</h4>
+        <ul>
+          <li><b>zk-SNARK</b>（Succinct Non-Interactive Argument of Knowledge）：证明体积小，验证快，但需要可信设置（Trusted Setup）；用于 Zcash、Groth16</li>
+          <li><b>zk-STARK</b>（Scalable Transparent ARgument of Knowledge）：无需可信设置，抗量子，但证明体积更大；用于 Starknet</li>
+        </ul>
+        <h4>应用场景</h4>
+        <ul>
+          <li><b>隐私转账</b>：Tornado Cash（隐匿资金来源，已遭美国制裁）、Zcash</li>
+          <li><b>L2 扩容</b>：zkEVM 验证大批量交易正确性</li>
+          <li><b>身份验证</b>：证明你满足某条件（年龄≥18）而不暴露具体信息</li>
+          <li><b>链上游戏</b>：隐藏游戏状态（如黑暗森林 Dark Forest）</li>
+        </ul>
+        <div class="links">
+          <a href="https://zkproof.org/" target="_blank" rel="noopener">ZKProof 标准组织 ↗</a>
+          <a href="https://vitalik.eth.limo/general/2022/06/15/using_snarks.html" target="_blank" rel="noopener">Vitalik：使用 SNARKs ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#7c3aed"></div>
+      <summary>
+        <div class="card-top"><h3>Solidity 合约开发</h3><span class="card-level lv-adv">高级</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">从 Hello World 到 ERC-20，安全漏洞防护与测试框架实战。</p>
+        <div class="card-tags"><span class="tag">Solidity</span><span class="tag">Hardhat</span><span class="tag">Foundry</span><span class="tag">合约审计</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>学习路径</h4>
+        <ul>
+          <li><b>第一步</b>：Solidity 基础语法（变量类型、函数、修饰符、事件）—— CryptoZombies 游戏教程</li>
+          <li><b>第二步</b>：实现 ERC-20 / ERC-721，理解 OpenZeppelin 标准合约库</li>
+          <li><b>第三步</b>：Hardhat 或 Foundry 编写单元测试与集成测试</li>
+          <li><b>第四步</b>：学习常见漏洞（重入/闪贷攻击），在 Ethernaut 等平台实战练习</li>
+          <li><b>第五步</b>：阅读知名协议源码（Uniswap V3、Aave）</li>
+        </ul>
+        <h4>工具链</h4>
+        <ul>
+          <li><b>Hardhat</b>：JS/TS 生态，插件丰富，适合全栈开发</li>
+          <li><b>Foundry</b>：Rust 编写，测试运行极快，支持模糊测试，审计师首选</li>
+          <li><b>Remix IDE</b>：浏览器内 IDE，适合快速原型和学习</li>
+        </ul>
+        <div class="links">
+          <a href="https://cryptozombies.io/" target="_blank" rel="noopener">CryptoZombies 入门 ↗</a>
+          <a href="https://ethernaut.openzeppelin.com/" target="_blank" rel="noopener">Ethernaut 安全训练 ↗</a>
+          <a href="https://book.getfoundry.sh/" target="_blank" rel="noopener">Foundry Book ↗</a>
+          <a href="https://remix.ethereum.org/" target="_blank" rel="noopener">Remix IDE ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#7c3aed"></div>
+      <summary>
+        <div class="card-top"><h3>跨链与互操作性</h3><span class="card-level lv-adv">高级</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">跨链桥工作原理，安全风险与历史重大黑客事件回顾。</p>
+        <div class="card-tags"><span class="tag">跨链桥</span><span class="tag">LayerZero</span><span class="tag">IBC</span><span class="tag">桥接安全</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>跨链桥原理</h4>
+        <ul>
+          <li><b>Lock-and-Mint</b>：在源链锁定资产，在目标链铸造等额映射代币</li>
+          <li><b>Burn-and-Mint</b>：源链销毁，目标链铸造（需两链均有发行权）</li>
+          <li><b>原子交换</b>：两链用户通过哈希时间锁合约直接兑换，无需信任第三方</li>
+        </ul>
+        <h4>主要方案</h4>
+        <ul>
+          <li><b>LayerZero</b>：消息传递协议，应用层跨链，生态最广</li>
+          <li><b>Wormhole</b>：多链互通，Solana 生态核心桥</li>
+          <li><b>IBC（Cosmos）</b>：Cosmos 生态链原生互操作协议，安全性最高</li>
+          <li><b>Chainlink CCIP</b>：企业级跨链，Chainlink 节点背书</li>
+        </ul>
+        <h4>重大安全事故</h4>
+        <ul>
+          <li>Ronin Bridge（2022）：损失 6.25 亿美元，验证节点私钥被盗</li>
+          <li>Wormhole（2022）：损失 3.2 亿美元，签名验证漏洞</li>
+          <li>Nomad（2022）：损失 1.9 亿美元，初始化配置错误被批量盗取</li>
+        </ul>
+        <div class="links">
+          <a href="https://layerzero.network/" target="_blank" rel="noopener">LayerZero ↗</a>
+          <a href="https://rekt.news/" target="_blank" rel="noopener">Rekt News 黑客事件库 ↗</a>
+        </div>
+      </div>
+    </details>
+
   </div>
 </div>
 
@@ -268,40 +573,114 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-ecosystem">
   <div class="section-hd">
     <div class="section-ico" style="background:#fef3c7">🌐</div>
-    <div>
-      <h2>生态版图</h2>
-      <p>主流公链、核心赛道与头部协议全景图</p>
-    </div>
+    <div><h2>生态版图</h2><p class="sub">主流公链、核心赛道与头部协议全景图</p></div>
   </div>
   <div class="cards">
-    <div class="card">
-      <div class="card-accent" style="background:#f59e0b"></div>
-      <span class="card-level lv-pro">生态</span>
-      <h3>主流公链横向对比</h3>
-      <p>以太坊 / Solana / BNB Chain / Sui / Aptos / Ton——TPS、生态、开发者体验与代币经济对比。</p>
-      <div class="card-tags"><span class="tag">Ethereum</span><span class="tag">Solana</span><span class="tag">Sui</span><span class="tag">Move</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#f59e0b"></div>
-      <span class="card-level lv-pro">生态</span>
-      <h3>DeFi 头部协议图谱</h3>
-      <p>Uniswap V3 集中流动性，Aave V3 跨链借贷，Curve Wars，Pendle 收益代币化新范式。</p>
-      <div class="card-tags"><span class="tag">Uniswap V3</span><span class="tag">Curve</span><span class="tag">Pendle</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#f59e0b"></div>
-      <span class="card-level lv-pro">生态</span>
-      <h3>GameFi & SocialFi</h3>
-      <p>链游经济模型设计，Play-to-Earn 的兴衰，Lens Protocol 与去中心化社交图谱的未来。</p>
-      <div class="card-tags"><span class="tag">P2E</span><span class="tag">Lens</span><span class="tag">Farcaster</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#f59e0b"></div>
-      <span class="card-level lv-pro">生态</span>
-      <h3>Web3 基础设施层</h3>
-      <p>预言机（Chainlink）、去中心化存储（Filecoin/Arweave）、索引层（The Graph）的作用与价值。</p>
-      <div class="card-tags"><span class="tag">Chainlink</span><span class="tag">IPFS</span><span class="tag">The Graph</span></div>
-    </div>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#f59e0b"></div>
+      <summary>
+        <div class="card-top"><h3>主流公链横向对比</h3><span class="card-level lv-pro">生态</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">以太坊 / Solana / BNB Chain / Sui / Aptos / TON 生态差异对比。</p>
+        <div class="card-tags"><span class="tag">Ethereum</span><span class="tag">Solana</span><span class="tag">Sui</span><span class="tag">Move</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>六大公链速览</h4>
+        <ul>
+          <li><b>Ethereum</b>：最大生态，DeFi/NFT 基础设施，依赖 L2 扩容，TPS ~30</li>
+          <li><b>Solana</b>：高性能（65,000 TPS 理论值），低 Gas，Web3 消费应用首选；历史多次宕机</li>
+          <li><b>BNB Chain</b>：中心化程度高，Binance 背书，DeFi 和 Meme 活跃</li>
+          <li><b>Sui</b>：Move 语言，对象模型，并行处理，2023 年新起之秀</li>
+          <li><b>Aptos</b>：同为 Move 语言，Block-STM 并行执行，Meta Diem 团队出品</li>
+          <li><b>TON</b>：Telegram 生态，9 亿用户入口，小程序 + 链上结合</li>
+        </ul>
+        <h4>选链建议</h4>
+        <p>开发者入门推荐以太坊（最成熟工具链）；高频低费应用考虑 Solana；追求新兴生态机会可关注 Sui/TON。</p>
+        <div class="links">
+          <a href="https://defillama.com/chains" target="_blank" rel="noopener">各链 TVL 实时数据 ↗</a>
+          <a href="https://solana.com/" target="_blank" rel="noopener">Solana ↗</a>
+          <a href="https://sui.io/" target="_blank" rel="noopener">Sui ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#f59e0b"></div>
+      <summary>
+        <div class="card-top"><h3>DeFi 头部协议图谱</h3><span class="card-level lv-pro">生态</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">Uniswap V3 集中流动性，Curve Wars，Pendle 收益代币化新范式。</p>
+        <div class="card-tags"><span class="tag">Uniswap V3</span><span class="tag">Curve</span><span class="tag">Pendle</span><span class="tag">Lido</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>关键协议</h4>
+        <ul>
+          <li><b>Uniswap V3</b>：集中流动性，LP 可设置价格区间，资本效率大幅提升；V4 引入 Hooks</li>
+          <li><b>Curve Finance</b>：稳定资产兑换，veToken 模型，Curve Wars（各协议争 CRV 排放权）</li>
+          <li><b>Aave V3</b>：跨链借贷，隔离模式，效率模式（e-mode）支持稳定币低抵押率</li>
+          <li><b>Lido</b>：以太坊最大流动性质押，stETH 广泛用于 DeFi 抵押品</li>
+          <li><b>Pendle Finance</b>：收益代币化（PT/YT 拆分），利率衍生品，RWA 叙事受益</li>
+        </ul>
+        <div class="links">
+          <a href="https://app.uniswap.org/" target="_blank" rel="noopener">Uniswap ↗</a>
+          <a href="https://curve.fi/" target="_blank" rel="noopener">Curve ↗</a>
+          <a href="https://www.pendle.finance/" target="_blank" rel="noopener">Pendle ↗</a>
+          <a href="https://lido.fi/" target="_blank" rel="noopener">Lido ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#f59e0b"></div>
+      <summary>
+        <div class="card-top"><h3>GameFi & SocialFi</h3><span class="card-level lv-pro">生态</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">链游经济模型、P2E 的兴衰，以及去中心化社交图谱的未来。</p>
+        <div class="card-tags"><span class="tag">P2E</span><span class="tag">Lens</span><span class="tag">Farcaster</span><span class="tag">链游</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>GameFi 发展历程</h4>
+        <ul>
+          <li><b>Axie Infinity</b>：P2E 模式爆发（2021），月活峰值 270 万；双代币模型崩溃是经典案例</li>
+          <li><b>经济模型教训</b>：无限增发游戏代币、缺乏真实需求，导致通胀崩溃</li>
+          <li><b>新范式探索</b>：全链游戏（Dojo/MUD）、Free-to-Own 模型（Limit Break）</li>
+        </ul>
+        <h4>SocialFi 代表项目</h4>
+        <ul>
+          <li><b>Lens Protocol</b>：以太坊/Polygon 上的社交图谱，关注关系存在链上，可组合</li>
+          <li><b>Farcaster</b>：去中心化社交协议，Warpcast 客户端，Frame 小程序生态活跃</li>
+          <li><b>Friend.tech</b>：Base 上的社交代币实验，Key 价格机制引发热议</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.lens.xyz/" target="_blank" rel="noopener">Lens Protocol ↗</a>
+          <a href="https://www.farcaster.xyz/" target="_blank" rel="noopener">Farcaster ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#f59e0b"></div>
+      <summary>
+        <div class="card-top"><h3>Web3 基础设施层</h3><span class="card-level lv-pro">生态</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">预言机、去中心化存储、索引层构成 Web3 不可或缺的底层支撑。</p>
+        <div class="card-tags"><span class="tag">Chainlink</span><span class="tag">IPFS</span><span class="tag">The Graph</span><span class="tag">Alchemy</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>关键基础设施</h4>
+        <ul>
+          <li><b>预言机（Chainlink）</b>：将链外数据（价格、天气、随机数）安全引入链上，去中心化节点网络防止单点操控</li>
+          <li><b>去中心化存储</b>：IPFS（内容寻址，免费但不保证持久化）；Arweave（一次付费永久存储）；Filecoin（激励存储网络）</li>
+          <li><b>索引层（The Graph）</b>：GraphQL 查询链上数据，避免直接调用节点 RPC 的性能瓶颈</li>
+          <li><b>节点服务商</b>：Alchemy、Infura、QuickNode，提供托管 RPC 节点，前端开发必备</li>
+          <li><b>账户抽象（ERC-4337）</b>：智能合约钱包，支持 Gasless 交易、社交恢复，大幅降低用户门槛</li>
+        </ul>
+        <div class="links">
+          <a href="https://chain.link/" target="_blank" rel="noopener">Chainlink ↗</a>
+          <a href="https://thegraph.com/" target="_blank" rel="noopener">The Graph ↗</a>
+          <a href="https://www.alchemy.com/" target="_blank" rel="noopener">Alchemy ↗</a>
+          <a href="https://ipfs.tech/" target="_blank" rel="noopener">IPFS ↗</a>
+        </div>
+      </div>
+    </details>
+
   </div>
 </div>
 
@@ -309,47 +688,109 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-career">
   <div class="section-hd">
     <div class="section-ico" style="background:#fee2e2">🚀</div>
-    <div>
-      <h2>职业路径</h2>
-      <p>Web3 主要岗位方向与入行成长路线图</p>
-    </div>
+    <div><h2>职业路径</h2><p class="sub">Web3 主要岗位方向与入行成长路线图</p></div>
   </div>
 
   <!-- 开发者路径 -->
-  <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px;box-shadow:var(--shadow)">
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
-      <span style="font-size:15px">💻</span>
-      <strong style="font-size:14px">区块链开发者路径</strong>
-      <span class="card-level lv-adv" style="position:static;margin-left:auto">高需求</span>
+  <div class="roadmap-card">
+    <div class="roadmap-title">
+      <span style="font-size:16px">💻</span>
+      <strong style="font-size:14px">区块链开发者成长路线</strong>
+      <span class="card-level lv-adv" style="margin-left:auto">高需求</span>
     </div>
     <div class="roadmap">
-      <div class="road-step"><div class="road-num">1</div><div class="road-body"><h4>编程基础</h4><p>JavaScript / Python / Rust 任一</p></div></div>
-      <div class="road-step"><div class="road-num">2</div><div class="road-body"><h4>区块链原理</h4><p>以太坊黄皮书，EVM 机制</p></div></div>
-      <div class="road-step"><div class="road-num">3</div><div class="road-body"><h4>Solidity 合约</h4><p>ERC 标准，Hardhat/Foundry</p></div></div>
-      <div class="road-step"><div class="road-num">4</div><div class="road-body"><h4>DApp 全栈</h4><p>ethers.js，wagmi，Next.js</p></div></div>
-      <div class="road-step"><div class="road-num">5</div><div class="road-body"><h4>合约审计</h4><p>安全漏洞与形式化验证</p></div></div>
+      <div class="road-step"><div class="road-num">1</div><div class="road-body"><h4>编程基础</h4><p>JS / Python / Rust 任一，掌握数据结构与算法</p></div></div>
+      <div class="road-step"><div class="road-num">2</div><div class="road-body"><h4>区块链原理</h4><p>以太坊黄皮书，EVM、共识机制</p></div></div>
+      <div class="road-step"><div class="road-num">3</div><div class="road-body"><h4>Solidity 合约</h4><p>ERC 标准，安全漏洞，Foundry 测试</p></div></div>
+      <div class="road-step"><div class="road-num">4</div><div class="road-body"><h4>DApp 全栈</h4><p>ethers.js / wagmi，Next.js，Wallet 集成</p></div></div>
+      <div class="road-step"><div class="road-num">5</div><div class="road-body"><h4>合约审计</h4><p>安全竞赛（Code4rena），形式化验证</p></div></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">
+      <a class="card-body" style="padding:0" href="https://university.alchemy.com/" target="_blank" rel="noopener"><span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--accent)">Alchemy University 免费课 ↗</span></a>
+      <a href="https://www.cyfrin.io/updraft" target="_blank" rel="noopener"><span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--accent)">Cyfrin Updraft 安全课 ↗</span></a>
+      <a href="https://code4rena.com/" target="_blank" rel="noopener"><span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--accent)">Code4rena 审计竞赛 ↗</span></a>
     </div>
   </div>
 
   <div class="cards" style="margin-top:12px">
-    <div class="card">
-      <div class="card-accent" style="background:#ef4444"></div>
-      <h3>产品经理 / 研究员</h3>
-      <p>链上数据分析（Dune/Nansen），竞品研究，Token 经济设计，协议治理参与。</p>
-      <div class="card-tags"><span class="tag">Dune Analytics</span><span class="tag">Tokenomics</span><span class="tag">链上分析</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#ef4444"></div>
-      <h3>运营 / 市场 / BD</h3>
-      <p>社区运营（Discord/Telegram），KOL 合作，交易所上币资源，生态基金申请流程。</p>
-      <div class="card-tags"><span class="tag">Discord</span><span class="tag">CMC/CoinGecko</span><span class="tag">Grant</span></div>
-    </div>
-    <div class="card">
-      <div class="card-accent" style="background:#ef4444"></div>
-      <h3>Web3 猎头 / HR</h3>
-      <p>加密行业薪资结构（现金 + Token），远程分布式团队管理，寻访渠道与背调难点。</p>
-      <div class="card-tags"><span class="tag">Token 薪酬</span><span class="tag">远程团队</span><span class="tag">猎头费率</span></div>
-    </div>
+    <details class="card">
+      <div class="card-accent-bar" style="background:#ef4444"></div>
+      <summary>
+        <div class="card-top"><h3>产品经理 / 研究员</h3><span class="card-level lv-mid">进阶</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">链上数据分析，Token 经济设计，协议研究。</p>
+        <div class="card-tags"><span class="tag">Tokenomics</span><span class="tag">Dune</span><span class="tag">链上分析</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>核心技能</h4>
+        <ul>
+          <li>链上数据分析：Dune Analytics（SQL 查询）、Nansen（地址标签）、Arkham（实体识别）</li>
+          <li>Token 经济设计：理解通胀/通缩模型，激励机制，博弈论</li>
+          <li>行业研究：跟踪主流协议更新，撰写研究报告，参与治理讨论</li>
+          <li>竞品分析：对比协议参数、TVL 变化、用户行为</li>
+        </ul>
+        <h4>求职路径</h4>
+        <p>从输出研究报告（Mirror、Substack）开始建立影响力，活跃于 Crypto Twitter，投递基金/协议研究岗。</p>
+        <div class="links">
+          <a href="https://dune.com/" target="_blank" rel="noopener">Dune Analytics ↗</a>
+          <a href="https://nansen.ai/" target="_blank" rel="noopener">Nansen ↗</a>
+          <a href="https://mirror.xyz/" target="_blank" rel="noopener">Mirror 写作平台 ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#ef4444"></div>
+      <summary>
+        <div class="card-top"><h3>运营 / 市场 / BD</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">社区运营，KOL 合作，交易所上币资源，生态基金申请。</p>
+        <div class="card-tags"><span class="tag">Discord</span><span class="tag">Community</span><span class="tag">Grant</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>社区运营</h4>
+        <ul>
+          <li>Discord 服务器搭建与管理，MEE6/Carl-bot 等机器人配置</li>
+          <li>Telegram 群组运营，防诈骗机器人，AMA 活动组织</li>
+          <li>Twitter/X 内容矩阵，品牌声音，KOL 关系维护</li>
+        </ul>
+        <h4>BD 与市场</h4>
+        <ul>
+          <li>交易所上币谈判（CEX 关系、上市标准、做市商接入）</li>
+          <li>生态基金申请：各公链都有 Grant 计划，Grants.fyi 汇聚信息</li>
+          <li>合作伙伴开发：Integration、联合 Campaign、空投合作</li>
+        </ul>
+        <div class="links">
+          <a href="https://grants.fyi/" target="_blank" rel="noopener">Grants.fyi ↗</a>
+          <a href="https://www.gitcoin.co/" target="_blank" rel="noopener">Gitcoin Grants ↗</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <div class="card-accent-bar" style="background:#ef4444"></div>
+      <summary>
+        <div class="card-top"><h3>Web3 猎头 / HR</h3><span class="card-level lv-start">入门</span><span class="card-arrow">▼</span></div>
+        <p class="card-desc">加密行业薪资结构（现金 + Token），远程分布式团队管理要点。</p>
+        <div class="card-tags"><span class="tag">Token 薪酬</span><span class="tag">远程团队</span><span class="tag">猎头费率</span></div>
+      </summary>
+      <div class="card-body">
+        <h4>行业薪资特点</h4>
+        <ul>
+          <li>Top 协议开发薪资普遍高于传统互联网，基础薪资 + Token Vesting（归属期 2-4 年）</li>
+          <li>远程优先（Remote-first）是行业常态，雇主遍布全球，多以 USDC/USDT 发薪</li>
+          <li>早期项目 Token 比例高，风险大；成熟协议现金为主</li>
+        </ul>
+        <h4>猎头实践</h4>
+        <ul>
+          <li>寻访渠道：LinkedIn、Crypto Twitter、GitHub 贡献者、各链核心开发者社区</li>
+          <li>背调难点：匿名文化，部分候选人不公开简历，需建立信任关系</li>
+          <li>费率：一般为年薪的 15%～25%，高级岗位可达 30%</li>
+        </ul>
+        <div class="links">
+          <a href="https://web3.career/" target="_blank" rel="noopener">Web3.career 薪资参考 ↗</a>
+          <a href="https://cryptojobslist.com/" target="_blank" rel="noopener">Crypto Jobs List ↗</a>
+        </div>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -357,29 +798,84 @@ document.addEventListener('DOMContentLoaded',function(){var on=d.getAttribute('d
 <div class="section" id="ac-resources">
   <div class="section-hd">
     <div class="section-ico" style="background:#e0f2fe">📚</div>
-    <div>
-      <h2>精选资源</h2>
-      <p>经过筛选的高质量学习材料、社区与工具</p>
-    </div>
+    <div><h2>精选资源</h2><p class="sub">经过筛选的高质量学习材料、工具与社区</p></div>
   </div>
   <div class="res-list">
-    <div class="res-item"><div class="res-icon">📖</div><div class="res-body"><strong>以太坊官方文档</strong><span>ethereum.org/learn</span></div></div>
-    <div class="res-item"><div class="res-icon">🔨</div><div class="res-body"><strong>CryptoZombies</strong><span>Solidity 游戏化教程</span></div></div>
-    <div class="res-item"><div class="res-icon">📊</div><div class="res-body"><strong>Dune Analytics</strong><span>链上数据可视化</span></div></div>
-    <div class="res-item"><div class="res-icon">🔍</div><div class="res-body"><strong>Etherscan</strong><span>以太坊区块浏览器</span></div></div>
-    <div class="res-item"><div class="res-icon">🏫</div><div class="res-body"><strong>Alchemy University</strong><span>免费 Web3 开发课</span></div></div>
-    <div class="res-item"><div class="res-icon">🛡️</div><div class="res-body"><strong>OpenZeppelin Docs</strong><span>合约安全标准库</span></div></div>
-    <div class="res-item"><div class="res-icon">📰</div><div class="res-body"><strong>The Defiant</strong><span>DeFi 深度媒体</span></div></div>
-    <div class="res-item"><div class="res-icon">💬</div><div class="res-body"><strong>Bankless</strong><span>Web3 播客 + Newsletter</span></div></div>
-    <div class="res-item"><div class="res-icon">🗺️</div><div class="res-body"><strong>Web3 Career Map</strong><span>行业岗位全景图</span></div></div>
-    <div class="res-item"><div class="res-icon">⚗️</div><div class="res-body"><strong>Foundry Book</strong><span>合约测试框架文档</span></div></div>
-    <div class="res-item"><div class="res-icon">🧪</div><div class="res-body"><strong>DeFi Hacks</strong><span>历史安全事件分析库</span></div></div>
-    <div class="res-item"><div class="res-icon">🌍</div><div class="res-body"><strong>链聘 ChainHire</strong><span>Web3 岗位聚合看板</span></div></div>
+    <a href="https://ethereum.org/zh/learn/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📖</div>
+      <div class="res-body"><strong>以太坊 Learn</strong><span>官方中文学习门户</span></div>
+    </a>
+    <a href="https://cryptozombies.io/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🧟</div>
+      <div class="res-body"><strong>CryptoZombies</strong><span>Solidity 游戏化教程</span></div>
+    </a>
+    <a href="https://dune.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📊</div>
+      <div class="res-body"><strong>Dune Analytics</strong><span>链上数据 SQL 查询</span></div>
+    </a>
+    <a href="https://etherscan.io/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🔍</div>
+      <div class="res-body"><strong>Etherscan</strong><span>以太坊区块浏览器</span></div>
+    </a>
+    <a href="https://university.alchemy.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🏫</div>
+      <div class="res-body"><strong>Alchemy University</strong><span>免费 Web3 开发课程</span></div>
+    </a>
+    <a href="https://docs.openzeppelin.com/contracts/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🛡️</div>
+      <div class="res-body"><strong>OpenZeppelin Docs</strong><span>合约安全标准库</span></div>
+    </a>
+    <a href="https://defillama.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🦙</div>
+      <div class="res-body"><strong>DeFiLlama</strong><span>全链 TVL 实时数据</span></div>
+    </a>
+    <a href="https://l2beat.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🔬</div>
+      <div class="res-body"><strong>L2Beat</strong><span>L2 风险评估与数据</span></div>
+    </a>
+    <a href="https://book.getfoundry.sh/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">⚗️</div>
+      <div class="res-body"><strong>Foundry Book</strong><span>合约测试框架文档</span></div>
+    </a>
+    <a href="https://rekt.news/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">💀</div>
+      <div class="res-body"><strong>Rekt News</strong><span>DeFi 黑客事件分析</span></div>
+    </a>
+    <a href="https://www.bankless.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📻</div>
+      <div class="res-body"><strong>Bankless</strong><span>Web3 播客 + Newsletter</span></div>
+    </a>
+    <a href="https://thedefiant.io/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">📰</div>
+      <div class="res-body"><strong>The Defiant</strong><span>DeFi 深度资讯媒体</span></div>
+    </a>
+    <a href="https://vitalik.eth.limo/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">✍️</div>
+      <div class="res-body"><strong>Vitalik 博客</strong><span>以太坊创始人深度文章</span></div>
+    </a>
+    <a href="https://ethernaut.openzeppelin.com/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🎯</div>
+      <div class="res-body"><strong>Ethernaut</strong><span>合约安全实战练习</span></div>
+    </a>
+    <a href="https://snapshot.org/" target="_blank" rel="noopener" class="res-item">
+      <div class="res-icon">🗳️</div>
+      <div class="res-body"><strong>Snapshot</strong><span>DAO 链下治理投票</span></div>
+    </a>
+    <a href="index.html" class="res-item">
+      <div class="res-icon">🌍</div>
+      <div class="res-body"><strong>链聘 ChainHire</strong><span>Web3 岗位聚合看板</span></div>
+    </a>
   </div>
 </div>
 
 </main>
 
+<script>
+function scrollTo(id){
+  var el = document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
 <script src="i18n.js"></script>
 <script src="widgets.js"></script>
 </body>
