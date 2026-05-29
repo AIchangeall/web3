@@ -135,6 +135,17 @@ html[data-theme="dark"] .fpop .chip.active{background:#2a2350;color:#c4b5fd}
 html[data-theme="dark"] .fsep{background:#2a3550}
 html[data-theme="dark"] .freset{color:#9aa3b8}
 html[data-theme="dark"] .freset:hover{background:rgba(124,108,245,.18);color:#c4b5fd}
+/* 顶部资讯条暗色 */
+html[data-theme="dark"] .newscol{background:var(--card);border-color:var(--line)}
+html[data-theme="dark"] .newsh{color:var(--ink)}
+html[data-theme="dark"] .newsitem{color:#cbd3e6;border-bottom-color:rgba(255,255,255,.05)}
+html[data-theme="dark"] .newsitem:hover{color:#c4b5fd}
+html[data-theme="dark"] .newsmeta{color:#7e8aa3}
+html[data-theme="dark"] .newsmeta .src{color:#aab2c8}
+html[data-theme="dark"] .newsmeta .tag{background:#222b42;color:#aab2c8}
+html[data-theme="dark"] .newsempty{color:#7e8aa3}
+html[data-theme="dark"] .newsmore{color:#7e8aa3}
+html[data-theme="dark"] .newsmore:hover{background:rgba(124,108,245,.18);color:#c4b5fd}
 /* 招聘热度色阶暗色 */
 html[data-theme="dark"] .hm-l0{fill:#1f2740}
 html[data-theme="dark"] .hm-l1{fill:#26224a}
