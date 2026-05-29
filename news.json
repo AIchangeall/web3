@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T15:19:06.997Z",
+  "updatedAt": "2026-05-29T20:07:00.621Z",
   "hiring": [
     {
       "type": "hiring",
@@ -197,11 +197,47 @@
   "market": [
     {
       "type": "market",
+      "title": "Crypto and stocks go their separate ways as bitcoin's failed breakout continues to weigh",
+      "summary": "比特币跌至4月以来低点约7.35万美元，美股却持续刷历史高位，加密资产与传统风险资产出现罕见走势背离；BTC三周前失守8.3万美元突破高点后持续承压，宏观不确定性与中东紧张局势令机构买盘退缩，比特币或以月度跌幅收官。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-slides-to-april-lows-as-crypto-diverges-from-record-chasing-u-s-equities",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T14:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
+      "title": "Bitcoin's record holder supply hides a buyer drought, CryptoQuant says",
+      "summary": "CryptoQuant数据显示，比特币长期持有者供应量创历史新高，但这反映的是买家稀缺而非强烈看多情绪；鲸鱼及机构海豚钱包余额年内收缩速度为2026年最快，短期持有者供给减少220万枚，市场参与度持续放缓，或预示近期底部。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-s-record-holder-supply-hides-a-buyer-drought-cryptoquant-says",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "tag": "链上"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin ETFs suffer record nine-day outflow streak as $2.8 billion exits funds",
       "summary": "美国现货比特币ETF连续9日净流出，创2024年1月上市以来最长纪录，合计约28亿美元资金撤离；5月29日当天流出2.29亿美元（IBIT占1.78亿），BTC徘徊于7.35万美元，需求面降至2024年12月以来最低点。",
       "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "ETF"
+    },
+    {
+      "type": "market",
+      "title": "Why is Stellar's XLM up by Over 50% This Week?",
+      "summary": "华尔街清算巨头DTCC宣布计划将其代币化证券平台接入Stellar网络，消息刺激XLM周内累涨逾51%，最高触及0.224美元为年内新高，成为近期加密普跌行情中最强独立主线，24小时交易量近20亿美元。",
+      "url": "https://cointelegraph.com/markets/why-is-stellars-xlm-up-by-over-50-this-week",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-28T20:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
+      "title": "BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record",
+      "summary": "贝莱德旗下IBIT单日流出5.28亿美元，为上市以来第二大单日净流出纪录；其中一笔13亿美元暗池大宗交易为主因，叠加中东地缘风险升温与美债收益率走高，机构投资者正加速削减比特币ETF仓位。",
+      "url": "https://www.coindesk.com/markets/2026/05/28/blackrock-s-bitcoin-etf-sheds-usd528-million-the-second-largest-daily-outflow-on-record",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T16:00:00.000Z",
       "tag": "ETF"
     },
     {
