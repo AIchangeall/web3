@@ -70,7 +70,7 @@
     "home.lastrun":        ["最近运行", "Last run"],
     "home.archive":        ["查看完整归档 →", "View archive →"],
     "home.original":       ["原文 ↗", "Source ↗"],
-    "home.foot":           ["数据由云端 routine 每 5 小时自动抓取自 CoinDesk / The Block / Cointelegraph / Decrypt / PANews / Foresight 等公开来源，仅供参考；以原文与官方渠道为准。", "News is auto-collected every 5 hours from public sources (CoinDesk / The Block / Cointelegraph / Decrypt / PANews / Foresight) — for reference only; verify with the original publishers."],
+    "home.foot":           ["数据每 5 小时更新，来源于公开数据，仅供参考；以原文与官方渠道为准。", "Data refreshes every 5 hours from public sources — for reference only; verify with the original publishers."],
     "card.apply":      ["查看职位 →", "View job →"],
     "card.posted":     ["上架", "Posted"],
     "card.remote":     ["远程友好", "Remote-friendly"],
