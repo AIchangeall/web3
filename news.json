@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T20:14:15.120Z",
+  "updatedAt": "2026-05-29T20:18:02.682Z",
   "hiring": [
     {
       "type": "hiring",
@@ -307,6 +307,15 @@
     },
     {
       "type": "geopolitics",
+      "title": "美CFTC批准Kalshi上线首批美国本土比特币永续合约并向Coinbase发出无行动函",
+      "summary": "美国商品期货交易委员会5月28日正式批准预测市场平台Kalshi上线比特币永续合约（代号BTCPERP），同日向Coinbase旗下CFM子公司发出无行动函，允许其通过Coinbase百慕大以比特币、以太坊等数字资产作保证金连接外国永续合约，开创美国受监管加密永续合约先例。",
+      "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T12:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
       "title": "UniCredit警告：欧盟在MiCA框架下恐难有效处置加密银行业系统性危机",
       "summary": "意大利最大银行UniCredit发布报告指出，与美国相比欧盟处置加密相关金融风险的危机工具更为有限，MiCA监管框架下一旦出现系统性风险，欧洲监管机构的应对能力可能不及美国，存在危机扩散隐患。",
       "url": "https://www.coindesk.com/business/2026/05/28/unicredit-warns-europe-may-struggle-to-contain-crypto-bank-crisis-under-mica-rules",
@@ -320,6 +329,15 @@
       "summary": "特朗普在Truth Social发文支持CFTC对预测市场享有联邦独家管辖权，白宫同步启动对CFTC拟议规则的正式审查，此举将影响包括加密货币相关事件合约在内的预测市场联邦监管走向。",
       "url": "https://www.coindesk.com/policy/2026/05/28/white-house-reviews-cftc-prediction-market-rule-as-trump-backs-federal-control",
       "source": "CoinDesk",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "肯尼亚2026财政法案拟对加密平台征10%消费税并设高额牌照费，引发GenZ抗议",
+      "summary": "肯尼亚2026年财政法案提议对虚拟资产服务商收取的手续费征收10%消费税，并要求加密企业缴纳1.5亿肯先令一次性牌照费及200万肯先令年度续期费，消息引发GenZ群体重启街头抗议，法案仍在议会审议中。",
+      "url": "https://www.vatupdate.com/2026/05/28/kenya-proposes-10-vat-and-heavy-fees-on-crypto-firms",
+      "source": "VATUpdate",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "立法"
     },
@@ -349,6 +367,15 @@
       "source": "Cointelegraph",
       "publishedAt": "2026-05-26T10:00:00.000Z",
       "tag": "制裁"
+    },
+    {
+      "type": "geopolitics",
+      "title": "SEC无限期推迟代币化股票创新豁免计划，纳斯达克等三大交易所联合反对",
+      "summary": "美国证券交易委员会5月22日宣布无限期搁置原定于5月18日发布的代币化股票创新豁免草案，原因是纳斯达克、纽交所及芝加哥期权交易所强烈反对允许在发行方不知情下创建第三方代币的条款，Robinhood和Coinbase美国代币化股票业务随之推迟至2027年。",
+      "url": "https://decrypt.co/368855/sec-delays-tokenized-stocks-innovation-exemption-amid-concerns-bloomberg",
+      "source": "Decrypt",
+      "publishedAt": "2026-05-22T00:00:00.000Z",
+      "tag": "立法"
     },
     {
       "type": "geopolitics",
