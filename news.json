@@ -1,7 +1,34 @@
 {
   "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T20:07:00.621Z",
+  "updatedAt": "2026-05-29T20:14:15.120Z",
   "hiring": [
+    {
+      "type": "hiring",
+      "title": "Two More Ethereum Foundation Researchers Resign Amid Wave of Departures",
+      "summary": "以太坊基金会2026年已有8名核心研究员相继离职，Carl Beekhuizen（协助设计PoS系统，七年资历）和Julian Ma（抗审查研究，四年资历）于5月29日同日辞职，是5月内第5批离职；大规模人才流失被视为EF战略重组信号，Vitalik已承诺缩减规模。",
+      "url": "https://www.theblock.co/post/401718/two-more-ethereum-foundation-researchers-resign-amid-wave-of-departures",
+      "source": "The Block",
+      "publishedAt": "2026-05-29T10:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Ondo Finance Founder Nathan Allman Passes Away; President Ian De Bode Steps In as CEO",
+      "summary": "RWA代币化协议Ondo Finance创始人Nathan Allman意外去世，公司长期总裁Ian De Bode接任CEO；Allman是推动真实世界资产上链的先驱，其离世对Ondo及整个RWA赛道未来战略走向产生深远影响。",
+      "url": "https://www.coindesk.com/markets/2026/05/26/ondo-finance-founder-nathan-allman-passes-away",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Robinhood Crypto COO Tanya Denisova Is Leaving Company Amid Revenue Slowdown",
+      "summary": "Robinhood加密业务首席运营官Tanya Denisova宣布离职，其任职5年间公司加密营收在2026年Q1已同比骤降47%至1.34亿美元；公司随即宣布将降低对加密波动性收入的依赖并重新定位平台，是Robinhood在加密市场低迷期的又一高管调整。",
+      "url": "https://www.coindesk.com/business/2026/05/22/robinhood-crypto-coo-tanya-denisova-is-leaving-company-amid-revenue-slowdown",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-22T14:00:00.000Z",
+      "tag": "CXO变动"
+    },
     {
       "type": "hiring",
       "title": "Steve Chung Becomes The Block's New CEO",
@@ -123,6 +150,15 @@
     },
     {
       "type": "industry",
+      "title": "U.S. CFTC Opens Crypto 'Perp' Door With First Approvals at Kalshi, Coinbase",
+      "summary": "美国CFTC批准Kalshi上线美国史上首个合规比特币永续合约（BTCPERP），并允许Coinbase旗下CFM为用户接入海外永续期货，终结数十年来86万亿美元年交易量流向境外的局面；CFTC主席称此举是推动美国加密空间的重大一步。",
+      "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T18:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
       "title": "Hyperliquid's Pre-IPO SpaceX Contracts Suffer 45% Flash Crash, Liquidating $1.5 Million",
       "summary": "Hyperliquid上SPACEX-USDH永续合约因链下预言机错误处理SpaceX 1拆5分股触发45%闪崩，30分钟内清算405名用户共1,393笔仓位计150万美元；Ventuals承诺48小时内赔付受损用户。",
       "url": "https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million",
@@ -150,6 +186,15 @@
     },
     {
       "type": "industry",
+      "title": "Crypto's Biggest Exchanges Back Push for Token Disclosure Standards as Industry Courts Institutional Capital",
+      "summary": "逾40家加密机构包括Coinbase、Kraken、Binance.US联合发起Blockworks透明联盟，推出股票式代币信息披露标准框架（TTF），涵盖内部人分配、做市商协议及上市条款等18项关键指标，目标2026年底前覆盖200个协议，旨在赢得机构资本准入。",
+      "url": "https://www.coindesk.com/markets/2026/05/27/crypto-s-biggest-exchanges-back-push-for-token-disclosure-standards-as-industry-courts-institutional-capital",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
       "title": "DTCC Taps Stellar for Tokenized Securities Network, Plans to Bring Russell 1000 Stocks and Treasuries Onchain by 2027",
       "summary": "美国金融市场基础设施巨头DTCC宣布将DTC托管的Russell 1000股票、ETF及国债于2027年上半年上链Stellar，这是DTCC多链代币化战略中首次选择公共区块链，XLM价格应声走强。",
       "url": "https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push",
@@ -173,24 +218,6 @@
       "url": "https://www.coindesk.com/news-analysis/2026/05/27/crypto-cash-backs-potential-new-allies-in-congress-as-industry-pac-presence-widens",
       "source": "CoinDesk",
       "publishedAt": "2026-05-27T00:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "SEC Delays Tokenized Stock Innovation Exemption After Nasdaq, NYSE and Cboe Push Back",
-      "summary": "SEC原定5月18日发布的代币化股票创新豁免计划，遭纳斯达克、纽交所及CBOE联合抵制后宣布推迟，目前无新时间表，代币化证券监管框架再度悬而未决。",
-      "url": "https://www.coindesk.com/policy/2026/05/18/sec-to-propose-tokenized-stock-framework-as-wall-street-efforts-deepen-bloomberg",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-18T00:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "Clarity Act Clears U.S. Senate Banking Committee, on Its Way to a Final Test in Congress",
-      "summary": "美国《数字资产市场清晰法案》以15:9获参议院银行委员会两党支持通过，将正式划定SEC与CFTC对数字资产的监管边界，法案进入参议院全体投票程序。",
-      "url": "https://www.coindesk.com/policy/2026/05/14/clarity-act-clears-u-s-senate-committee-on-its-way-to-a-final-test-in-congress",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-14T00:00:00.000Z",
       "tag": "监管"
     }
   ],
