@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T05:17:07.186Z",
+  "updatedAt": "2026-05-30T05:19:39.228Z",
   "hiring": [
     {
       "type": "hiring",
@@ -67,12 +67,30 @@
     },
     {
       "type": "hiring",
+      "title": "Binance CMO Rachel Conlan Is Leaving the Crypto Exchange; Trust Wallet CEO Named Interim",
+      "summary": "任职三年的币安首席营销官Rachel Conlan宣布将于6月15日离职，前Trust Wallet CEO Eowyn Chen接任临时CMO；Conlan主导了与C·罗纳尔多、The Weeknd及Alpine F1车队等超十亿美元赞助组合，其离职标志加密行业消费级大规模营销时代全面退潮。",
+      "url": "https://www.coindesk.com/business/2026/05/12/binance-s-chief-marketing-officer-rachel-conlan-is-leaving-the-exchange",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-12T12:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
       "title": "BlackRock, JPMorgan and Morgan Stanley Open Dozens of New Crypto Job Positions",
       "summary": "贝莱德、摩根大通、摩根士丹利同步开放数十个加密职位，薪酬高达35万美元，重点招募代币化工程师、ETF做市商及数字资产合规官员，华尔街加密人才争夺战全面升级。",
       "url": "https://financefeeds.com/blackrock-jpmorgan-and-morgan-stanley-open-dozens-of-new-crypto-job-positions",
       "source": "FinanceFeeds",
       "publishedAt": "2026-05-10T00:00:00.000Z",
       "tag": "扩招"
+    },
+    {
+      "type": "hiring",
+      "title": "Crypto.com's High-Rolling Head of Marketing Taps Out After Almost Six Years",
+      "summary": "Crypto.com CMO Steven Kalifowitz宣布6月底离职转任CEO顾问，其近六年任期内主导超10亿美元营销投放——含斯台普斯球馆7亿美元冠名及马特·达蒙代言广告；公司正向AI驱动精简运营转型，是2026年加密行业CMO集体更迭潮的代表事件。",
+      "url": "https://www.coindesk.com/business/2026/05/05/crypto-com-s-high-rolling-head-of-marketing-taps-out-after-almost-six-years",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-05T10:00:00.000Z",
+      "tag": "CXO变动"
     },
     {
       "type": "hiring",
@@ -91,24 +109,6 @@
       "source": "DL News",
       "publishedAt": "2026-05-01T00:00:00.000Z",
       "tag": "裁员"
-    },
-    {
-      "type": "hiring",
-      "title": "Crypto Layoff Season Has Begun: Algorand, Gemini, Crypto.com, OP Labs Among Firms Cutting Workforce",
-      "summary": "Algorand削减25%员工、Gemini裁约30%、Crypto.com裁12%、OP Labs裁20人，加密行业2026年裁员潮持续，企业普遍以宏观不确定性与AI整合为由精简团队。",
-      "url": "https://www.ccn.com/news/crypto/crypto-layoff-season-heres-the-list-of-firms-cutting-their-workforce",
-      "source": "CCN",
-      "publishedAt": "2026-03-21T00:00:00.000Z",
-      "tag": "裁员"
-    },
-    {
-      "type": "hiring",
-      "title": "Messari CEO Eric Turner Steps Down as CTO Diran Li Takes Charge Amid Layoffs, AI Pivot",
-      "summary": "加密数据研究平台Messari联创兼CEO Eric Turner辞职，CTO Diran Li接任，同步宣布裁员并向「AI优先」机构研究平台转型；公司此前已在2025年初裁减15%员工，此轮标志Messari进入第三次战略重组周期。",
-      "url": "https://www.theblock.co/post/393840/messari-ceo-steps-down-layoffs",
-      "source": "The Block",
-      "publishedAt": "2026-03-17T10:00:00.000Z",
-      "tag": "CXO变动"
     }
   ],
   "industry": [
@@ -150,6 +150,15 @@
     },
     {
       "type": "industry",
+      "title": "Solana, Sui and Aptos Wallet Data Targeted in TrapDoor Package Attack",
+      "summary": "供应链攻击TrapDoor在npm/PyPI/Crates.io植入34+恶意包，伪装成钱包安全扫描工具专攻Solana、Sui、Aptos及DeFi/AI开发者；恶意代码窃取私钥、GitHub Token及云端凭证，并通过隐藏指令劫持Cursor、Claude等AI编码助手发起「安全扫描」来外泄机密。",
+      "url": "https://www.coindesk.com/tech/2026/05/29/solana-sui-and-aptos-wallet-data-targeted-in-trapdoor-package-attack",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T09:15:00.000Z",
+      "tag": "安全"
+    },
+    {
+      "type": "industry",
       "title": "Paxos Wins SEC Approval to Clear and Settle U.S. Equities on Blockchain as First Registered Clearing Agency",
       "summary": "Paxos证券结算公司成为首家获SEC注册的区块链原生清算机构，可在链上结算美国股票、支持T+0当日交割；这是七年与监管合作的里程碑，华尔街后台基础设施区块链化迈出历史性一步。",
       "url": "https://www.coindesk.com/policy/2026/05/29/paxos-is-first-blockchain-firm-to-provide-settlement-and-clearing-services-following-sec-approval",
@@ -186,39 +195,30 @@
     },
     {
       "type": "industry",
+      "title": "Crypto Trading Firm FalconX Confidentially Files with SEC for IPO, Hires Bankers",
+      "summary": "加密机构交易平台FalconX（2022年估值80亿美元）已向SEC秘密提交S-1注册草案，并聘请Cantor Fitzgerald等银行担任上市顾问，目标年底挂牌；FalconX加入Kraken、Consensys、Ledger的IPO推迟队列，显示加密上市窗口已明显收窄。",
+      "url": "https://www.coindesk.com/business/2026/05/28/crypto-trading-firm-falconx-confidentially-files-with-sec-for-ipo-hires-bankers",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T14:00:00.000Z",
+      "tag": "上市"
+    },
+    {
+      "type": "industry",
+      "title": "Asset Manager Grayscale Delays IPO Plans as Crypto Listing Boom Loses Steam",
+      "summary": "灰度资产管理（已于2025年11月秘密提交IPO文件）宣布搁置上市计划，预计2026年Q4前不会重启，与Kraken母公司Payward、Consensys、Ledger同步推迟；折射出比特币ETF资金连续9日净流出与市场情绪低迷对加密上市预期的全面打压。",
+      "url": "https://www.coindesk.com/business/2026/05/28/asset-manager-grayscale-delays-ipo-plans-as-crypto-listing-boom-loses-steam",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T12:00:00.000Z",
+      "tag": "上市"
+    },
+    {
+      "type": "industry",
       "title": "Sui Blockchain Suffers Another Network Outage as Transactions Grind to a Halt",
       "summary": "Sui主网因1.72版本gas计费逻辑崩溃漏洞于5月28日停机约6小时，为今年第二次断网事故；SUI价格应声下跌约8%，工程师约20分钟内识别问题并着手修复。",
       "url": "https://www.coindesk.com/tech/2026/05/28/sui-blockchain-suffers-another-network-outage-as-transactions-grind-to-a-halt",
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "协议"
-    },
-    {
-      "type": "industry",
-      "title": "Crypto Markets Plunge as IBIT ETF Posts Biggest-Ever Single-Day Outflow Amid Trump-Iran Tensions",
-      "summary": "受美伊军事紧张局势冲击，比特币短暂跌破7.3万美元；贝莱德IBIT ETF录得有史以来最大单日净流出，加密恐惧与贪婪指数降至28（恐惧）区间。",
-      "url": "https://cryptonews.com/news/crypto-news-may-28-why-is-crypto-down-ibit-etf-trump-iran",
-      "source": "CryptoNews",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "市场"
-    },
-    {
-      "type": "industry",
-      "title": "Crypto's Biggest Exchanges Back Push for Token Disclosure Standards as Industry Courts Institutional Capital",
-      "summary": "逾40家加密机构包括Coinbase、Kraken、Binance.US联合发起Blockworks透明联盟，推出股票式代币信息披露标准框架（TTF），涵盖内部人分配、做市商协议及上市条款等18项关键指标，目标2026年底前覆盖200个协议，旨在赢得机构资本准入。",
-      "url": "https://www.coindesk.com/markets/2026/05/27/crypto-s-biggest-exchanges-back-push-for-token-disclosure-standards-as-industry-courts-institutional-capital",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T16:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "United Texas Bank Completes OCC Charter Conversion, Launches UTB Atomic AI Payments Network",
-      "summary": "达拉斯联合德克萨斯银行完成《多德-弗兰克法》后首例州立转全国银行牌照转换，获联储直接结算通道；随即推出UTB Atomic——24/7 AI驱动的实时结算网络，填补Silvergate/Signature倒闭后机构流动性缺口，目前每月处理约100亿美元加密相关交易。",
-      "url": "https://www.coindesk.com/policy/2026/05/27/wall-street-gets-new-crypto-rival-after-texas-bank-completes-regulatory-pivot",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T16:00:00.000Z",
-      "tag": "监管"
     }
   ],
   "market": [
