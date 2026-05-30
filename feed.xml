@@ -5,7 +5,147 @@
     <link>https://gmjobs.github.io/chainhire/</link>
     <description>Web3 / crypto 行业全职能最新公开招聘，每日自动更新。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 29 May 2026 05:13:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 10:12:45 GMT</lastBuildDate>
+    <item>
+      <title>Software Engineer - Smart Contract · Bridge (Stripe)</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/bridge-stripe-software-engineer-smart-contract.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/bridge-stripe-software-engineer-smart-contract.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 资深/Staff · Remote · 面议。深厚的 Solidity/EVM 工程能力，有在多链（EVM/Solana/Stellar）发行稳定币智能合约及监控系统经验；熟悉安全最佳实践与测试方法论。</description>
+    </item>
+    <item>
+      <title>Security Engineer · Bridge (Stripe)</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/bridge-stripe-security-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/bridge-stripe-security-engineer.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 资深/Staff · Remote · 面议。有丰富的应用安全或区块链安全经验，熟悉智能合约安全审计、密码学和支付基础设施安全；具备威胁建模和渗透测试能力。</description>
+    </item>
+    <item>
+      <title>Senior Blockchain Engineer (Security) · Tenderly</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/tenderly-senior-blockchain-engineer-security.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/tenderly-senior-blockchain-engineer-security.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · Remote · 面议。2 年以上 Web3/区块链开发经验，具备 EVM 交易分析和智能合约安全检测能力；熟悉 Golang，有处理大规模链上数据的工程经验。</description>
+    </item>
+    <item>
+      <title>Senior Blockchain Engineer (VNets) · Tenderly</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/tenderly-senior-blockchain-engineer-vnets.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/tenderly-senior-blockchain-engineer-vnets.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · Remote · 面议。2 年以上 Web3 开发经验，熟悉以太坊节点和区块链基础设施；具备 Golang 生产开发经验，有构建高性能、高一致性分布式系统的能力。</description>
+    </item>
+    <item>
+      <title>Senior Distributed Systems Engineer (Node) · Tenderly</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/tenderly-senior-distributed-systems-engineer-node.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/tenderly-senior-distributed-systems-engineer-node.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · Remote · 面议。深厚的分布式系统工程经验，有区块链节点开发或 EVM 兼容客户端工作经验；熟悉 Golang/Rust，具备高可用大规模系统设计能力。</description>
+    </item>
+    <item>
+      <title>Security Researcher · Spearbit</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/spearbit-security-researcher.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/spearbit-security-researcher.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 资深/Staff · Remote · 面议。顶级智能合约安全研究能力，能独立开展 DeFi/桥接/ZK/治理漏洞审计；有 PoC 漏洞利用构建和发布公开安全报告经验。</description>
+    </item>
+    <item>
+      <title>AML Compliance Officer (Crypto) · Unlimit</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/unlimit-aml-compliance-officer-crypto.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/unlimit-aml-compliance-officer-crypto.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 中级 · Remote · 面议。3 年以上 AML/CTF 合规工作经验，有加密货币业务合规背景；熟悉区块链分析工具（Chainalysis/Elliptic）及相关监管框架。</description>
+    </item>
+    <item>
+      <title>Site Reliability Engineer (SRE) · Unlimit</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/unlimit-site-reliability-engineer-sre.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/unlimit-site-reliability-engineer-sre.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 中级 · Remote · 面议。3 年以上 SRE/DevOps 经验，熟悉 Kubernetes、AWS/GCP、Terraform 及可观测性工具；有金融或加密货币平台高可用架构经验优先。</description>
+    </item>
+    <item>
+      <title>Software Engineer - Rust - Backend · Kraken</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/kraken-software-engineer-rust-backend.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/kraken-software-engineer-rust-backend.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · Remote · 面议。具备扎实的 Rust 后端工程能力，有金融或加密货币平台后端开发经验；熟悉异步编程、微服务架构，有高并发系统构建经验。</description>
+    </item>
+    <item>
+      <title>Senior Backend Engineer - Solidity - Onchain · Kraken</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/kraken-senior-backend-engineer-solidity-onchain.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/kraken-senior-backend-engineer-solidity-onchain.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 资深/Staff · Remote · 面议。5 年以上后端工程经验，精通 Solidity 及 EVM 链上系统开发；有 DeFi 协议设计、智能合约集成和链上业务逻辑构建经验。</description>
+    </item>
+    <item>
+      <title>Software Engineer - Rust - Onchain · Kraken</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/kraken-software-engineer-rust-onchain.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/kraken-software-engineer-rust-onchain.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 中级 · Remote · 面议。具备 Rust 工程能力并有区块链/链上系统开发经验；熟悉 EVM 或 Solana 生态，能独立设计并实现高性能链上数据处理和集成方案。</description>
+    </item>
+    <item>
+      <title>Senior Rust Engineer, Agglayer · Polygon Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polygon-labs-senior-rust-engineer-agglayer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polygon-labs-senior-rust-engineer-agglayer.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 资深/Staff · Remote · 面议。5 年以上 Rust 开发经验，深入理解区块链协议和零知识证明（ZK）系统；有 L2/跨链聚合层开发经验，熟悉分布式系统设计。</description>
+    </item>
+    <item>
+      <title>Product Manager - Payments · Polygon Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polygon-labs-product-manager-payments.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polygon-labs-product-manager-payments.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 资深/Staff · Remote · 面议。5 年以上产品管理经验，有加密货币支付或稳定币产品经验；熟悉 Web3 用户行为和支付基础设施，具备数据驱动的产品决策能力。</description>
+    </item>
+    <item>
+      <title>Senior Partner Manager, Payments · Polygon Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polygon-labs-senior-partner-manager-payments.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polygon-labs-senior-partner-manager-payments.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 资深/Staff · Remote · 面议。5 年以上合作伙伴管理或 BD 经验，有加密货币或支付行业背景；具备构建和维护战略合作关系的能力，熟悉稳定币支付生态。</description>
+    </item>
+    <item>
+      <title>Business Development Manager (Chain Collaborations) · Polygon Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polygon-labs-business-development-manager-chain-collaborations.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polygon-labs-business-development-manager-chain-collaborations.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · Remote · 面议。3 年以上 Web3 BD 经验，熟悉公链生态系统和跨链协作；具备技术理解力，能与协议团队、L2 方和基础设施合作伙伴建立合作。</description>
+    </item>
+    <item>
+      <title>AP/AR Manager · Polygon Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/polygon-labs-ap-ar-manager.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/polygon-labs-ap-ar-manager.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>公链/L2 · 中级 · Remote · 面议。5 年以上应付/应收账款管理经验，有加密货币或 Web3 公司财务工作背景；熟悉多实体、多货币财务处理，具备自动化财务流程改进能力。</description>
+    </item>
+    <item>
+      <title>Senior Blockchain Engineer, EigenDA · Eigen Labs</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/eigen-labs-senior-blockchain-engineer-eigenda.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/eigen-labs-senior-blockchain-engineer-eigenda.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>节点/RPC基础设施 · 资深/Staff · Remote · 面议。5 年以上区块链/分布式系统工程经验，深入理解以太坊协议；有数据可用性层或 L2 基础设施开发经验，熟悉 Go/Rust。</description>
+    </item>
+    <item>
+      <title>Senior Site Reliability Engineer · MoonPay</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/moonpay-senior-site-reliability-engineer.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/moonpay-senior-site-reliability-engineer.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>合规/托管/其他 · 资深/Staff · Remote · 面议。5 年以上 SRE 工程经验，熟悉 Kubernetes、AWS 及可观测性工具（Datadog/Prometheus）；有加密货币或金融科技平台的高可用系统维护经验。</description>
+    </item>
+    <item>
+      <title>Global Financial Crime Counsel · Binance</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/binance-global-financial-crime-counsel.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-global-financial-crime-counsel.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 负责人/总监 · Remote · 面议。10 年以上金融犯罪法律经验，涵盖制裁、AML/CFT、反贿赂及市场操纵领域；有加密货币行业合规经验，能担任主要法律主题专家。</description>
+    </item>
+    <item>
+      <title>Talent Acquisition Lead · Binance</title>
+      <link>https://gmjobs.github.io/chainhire/jobs/binance-talent-acquisition-lead.html</link>
+      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/binance-talent-acquisition-lead.html</guid>
+      <pubDate>Sat, 30 May 2026 01:00:00 GMT</pubDate>
+      <description>交易所 · 负责人/总监 · Remote · 面议。8 年以上招聘经验，有加密货币或金融科技公司大规模招聘经验；具备团队领导能力，能制定并执行全球人才战略。</description>
+    </item>
     <item>
       <title>iOS Engineer (Web3) · Trust Wallet</title>
       <link>https://gmjobs.github.io/chainhire/jobs/trust-wallet-ios-engineer-web3.html</link>
@@ -145,146 +285,6 @@
       <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/0g-labs-community-manager.html</guid>
       <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
       <description>公链/L2 · 中级 · Remote · 面议。社区运营，2 年以上 Web3 社区管理经验，精通 Discord/Twitter，负责 0G Token Generation Event 前后社区增长与用户活跃。</description>
-    </item>
-    <item>
-      <title>Full Stack Engineer · 0G Labs</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/0g-labs-full-stack-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/0g-labs-full-stack-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 中级 · Remote · 面议。全栈工程师，3 年以上 React/Node.js 经验，负责开发 ITO Launchpad 及永续 DEX 产品，熟悉 Web3 合约集成优先。</description>
-    </item>
-    <item>
-      <title>Protocol Security Engineer · Monad Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/monad-foundation-protocol-security-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/monad-foundation-protocol-security-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 资深/Staff · Remote · 面议。协议安全工程师，精通 Rust，5 年以上安全研究经验，负责 Monad EVM 执行层与共识层漏洞检测与修复，CVE 发现经验优先。</description>
-    </item>
-    <item>
-      <title>Senior Protocol Engineer · Monad Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/monad-foundation-senior-protocol-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/monad-foundation-senior-protocol-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 资深/Staff · Remote · 面议。高性能 EVM 智能合约与系统级协议工程师，精通 Solidity/Rust，5 年以上区块链协议开发经验，参与架构设计与安全审查。</description>
-    </item>
-    <item>
-      <title>Head of Security · Monad Foundation</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/monad-foundation-head-of-security.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/monad-foundation-head-of-security.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 负责人/总监 · Remote · 面议。安全负责人，10 年以上安全工程经验，能组建团队，负责 Monad 协议全栈安全体系，包括智能合约审计、渗透测试与安全文化建设。</description>
-    </item>
-    <item>
-      <title>Legal Counsel · Pyth Data Association</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/pyth-data-association-legal-counsel.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/pyth-data-association-legal-counsel.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>节点/RPC基础设施 · 资深/Staff · Switzerland / Remote · 面议。法律顾问，5 年以上加密货币/金融科技法律经验，熟悉瑞士法律框架、DeFi 协议监管与链上 oracle 合规，英法德三语优先。</description>
-    </item>
-    <item>
-      <title>Legal Counsel · Arbitrum OpCo</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/arbitrum-opco-legal-counsel.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/arbitrum-opco-legal-counsel.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 资深/Staff · Remote · 面议。Arbitrum 运营公司首席法律资源，5 年以上加密/DAO 法律经验，负责国库运营、服务商合同及 OpCo 整体法律合规。</description>
-    </item>
-    <item>
-      <title>Senior Manager, Community Growth · MachineFi Lab</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/machinefi-lab-senior-manager-community-growth.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/machinefi-lab-senior-manager-community-growth.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>节点/RPC基础设施 · 资深/Staff · Remote · 面议。IoTeX DePIN 生态社区增长负责人，3 年以上 Web3 社区管理经验，负责 Discord/Twitter/Telegram 品牌建设及社区活动策划。</description>
-    </item>
-    <item>
-      <title>Senior Software Engineer, Backend · Berachain</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/berachain-senior-software-engineer-backend.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/berachain-senior-software-engineer-backend.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 资深/Staff · Remote · 面议。Golang 后端工程师，5 年以上分布式系统经验，为 Berachain 去中心化交易基础设施构建高性能交易引擎与 REST/WebSocket API。</description>
-    </item>
-    <item>
-      <title>Software Engineer, Frontend · Berachain</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/berachain-software-engineer-frontend.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/berachain-software-engineer-frontend.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 中级 · Remote · 面议。3 年以上前端工程经验，熟悉 React/TypeScript 与 Web3 集成，为 Berachain 生态 DApp 构建高质量用户界面。</description>
-    </item>
-    <item>
-      <title>DevOps Engineer · Berachain</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/berachain-devops-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/berachain-devops-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 中级 · Remote · 面议。DevOps 工程师，3 年以上经验，负责 Berachain 区块链平台可靠性与扩展性，熟悉云基础设施、Kubernetes 及 CI/CD 自动化部署。</description>
-    </item>
-    <item>
-      <title>Senior Software Engineer, Core · Berachain</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/berachain-senior-software-engineer-core.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/berachain-senior-software-engineer-core.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 资深/Staff · Remote · 面议。核心协议工程师，5 年以上 Go/Rust 高性能系统经验，深入理解共识机制与 P2P 网络，为 Berachain L1 公链构建核心底层系统。</description>
-    </item>
-    <item>
-      <title>Senior Full Stack Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-full-stack-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-full-stack-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 资深/Staff · Remote · 面议。构建 Web3 增长团队产品，负责可扩展后端（Golang）与前端集成，须具备 Web3 技术（钱包/链交互）经验。</description>
-    </item>
-    <item>
-      <title>Staff Smart Contract Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-staff-smart-contract-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-staff-smart-contract-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 资深/Staff · Remote · 面议。深入掌握 Solidity，在以太坊上设计与部署智能合约，有审计与安全意识，Staff 级别。</description>
-    </item>
-    <item>
-      <title>Blockchain Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-blockchain-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-blockchain-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 中级 · Remote · 面议。负责后端开发与智能合约设计，用于 DeFi 流动性质押产品，须有区块链工程经验。</description>
-    </item>
-    <item>
-      <title>Senior Full Stack Software Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-full-stack-software-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-full-stack-software-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 资深/Staff · Remote · 面议。全栈工程师，拥有后端架构所有权，负责核心交易处理与高可用系统。</description>
-    </item>
-    <item>
-      <title>Senior Backend Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-backend-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-senior-backend-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 资深/Staff · Remote · 面议。拥有核心后端架构组件，负责交易处理与高可用系统，有 DeFi/Web3 后端经验。</description>
-    </item>
-    <item>
-      <title>Smart Contract Engineer · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-smart-contract-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-smart-contract-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 中级 · Remote · 面议。编写、部署以太坊智能合约，参与 Ether.fi 流动质押协议核心开发，熟练掌握 Solidity。</description>
-    </item>
-    <item>
-      <title>Talent Partner · Ether.fi</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/ether-fi-talent-partner.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/ether-fi-talent-partner.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>钱包/DeFi · 中级 · Remote · 面议。负责 Ether.fi 工程与产品团队的全周期招聘，有 Web3/DeFi 行业招聘经验优先。</description>
-    </item>
-    <item>
-      <title>Backend Engineer · VALR</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/valr-backend-engineer.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/valr-backend-engineer.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>交易所 · 资深/Staff · Remote · 面议。6+ 年生产环境后端开发经验，设计并维护高性能后端系统，为南非最大加密货币交易所 VALR 提供基础设施支撑。</description>
-    </item>
-    <item>
-      <title>Community Manager (Korea) · Manta Network</title>
-      <link>https://gmjobs.github.io/chainhire/jobs/manta-network-community-manager-korea.html</link>
-      <guid isPermaLink="true">https://gmjobs.github.io/chainhire/jobs/manta-network-community-manager-korea.html</guid>
-      <pubDate>Fri, 29 May 2026 01:00:00 GMT</pubDate>
-      <description>公链/L2 · 中级 · Remote / Korea · 面议。管理 Manta Network 韩国社区，负责本地化运营与内容，有 Web3 社区管理及韩语沟通能力。</description>
     </item>
   </channel>
 </rss>
