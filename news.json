@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T10:33:43.642Z",
+  "updatedAt": "2026-05-30T15:14:18.844Z",
   "hiring": [
     {
       "type": "hiring",
@@ -260,6 +260,15 @@
     },
     {
       "type": "market",
+      "title": "比特币5月累跌约4.5%将终结两连涨，特朗普伊朗帖助BTC短暂反弹$1,000",
+      "summary": "比特币5月累跌约4.5%、以太坊月跌逾11%，均将以月度亏损结束此前两个月连涨；5月29日特朗普发帖暗示霍尔木兹海峡封锁即将解除，BTC从盘中低点短暂反弹近千美元至$73,500，但月末收跌格局未变。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/live-markets-bitcoin-slides-further-putting-two-month-winning-streak-in-jeopardy",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T20:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
       "title": "Crypto and stocks go their separate ways as bitcoin's failed breakout continues to weigh",
       "summary": "比特币跌至4月以来低点约7.35万美元，美股却持续刷历史高位，加密资产与传统风险资产出现罕见走势背离；BTC三周前失守8.3万美元突破高点后持续承压，宏观不确定性与中东紧张局势令机构买盘退缩，比特币或以月度跌幅收官。",
       "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-slides-to-april-lows-as-crypto-diverges-from-record-chasing-u-s-equities",
@@ -287,6 +296,15 @@
     },
     {
       "type": "market",
+      "title": "Strategy首次将411枚比特币转入Coinbase Prime，Polymarket卖出概率飙升至84%",
+      "summary": "最大企业比特币持仓方Strategy将411.48枚BTC（约3,030万美元）转入Coinbase Prime，为其2024年以来首次直接向交易所存款；Polymarket预测市场上其年内卖出比特币概率因此飙升至84%，市场担忧其或开启首次实质性清仓。",
+      "url": "https://news.bitcoin.com/strategy-moves-411-btc-coinbase-prime-polymarket-sell-odds-2026",
+      "source": "Bitcoin.com",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "tag": "机构"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin ETFs suffer record nine-day outflow streak as $2.8 billion exits funds",
       "summary": "美国现货比特币ETF连续9日净流出，创2024年1月上市以来最长纪录，合计约28亿美元资金撤离；5月29日当天流出2.29亿美元（IBIT占1.78亿），BTC徘徊于7.35万美元，需求面降至2024年12月以来最低点。",
       "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
@@ -311,24 +329,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T16:00:00.000Z",
       "tag": "ETF"
-    },
-    {
-      "type": "market",
-      "title": "Crypto Slides on Strait of Hormuz Shock as $897 Million in Long Liquidations Pile Up",
-      "summary": "美国对伊朗霍尔木兹海峡附近军事设施发动空袭，加密市场多头遭遇2026年最大规模单日爆仓：约8.97亿美元多头被强制平仓（占总清算93%），BTC清算3.86亿美元、ETH清算2.46亿美元，单笔最大清算为Hyperliquid上1534万美元BTC仓位，比特币跌破7.3万美元，市场恐慌情绪急剧升温。",
-      "url": "https://www.coindesk.com/markets/2026/05/28/crypto-slides-on-hormuz-airstrikes-as-usd897-million-in-long-liquidations-pile-up",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T10:00:00.000Z",
-      "tag": "清算"
-    },
-    {
-      "type": "market",
-      "title": "Bitcoin Hits 2026 Low Under $73K But Analyst Says It's Normal",
-      "summary": "比特币本周跌破7.3万美元，触及2026年年内最低价，月内累跌约8%，与美股同步承压；分析师指出此次下行属技术性回调，BTC已跌破50日及200日均线，但中长期结构并未根本改变。",
-      "url": "https://cointelegraph.com/news/bitcoin-loses-dollar73k-us-stocks-sell-off-analyst-says-btc-trading-is-normal",
-      "source": "CoinTelegraph",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "价格"
     }
   ],
   "geopolitics": [
