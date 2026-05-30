@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T15:20:26.173Z",
+  "updatedAt": "2026-05-30T20:14:43.581Z",
   "hiring": [
     {
       "type": "hiring",
@@ -224,6 +224,15 @@
   "market": [
     {
       "type": "market",
+      "title": "Bitcoin, ether, XRP, dogecoin lag a nine-week stocks rally as ETF demand cools",
+      "summary": "比特币本周跌2.6%至73,445美元、以太坊跌2.5%至2,011美元，标普500指数创下2023年以来最长周线连涨（9周）而大市值加密资产全面落后；Hyperliquid HYPE逆势周涨近20%成最强主线，ETF分化持续——XRP过去10日净流入3500万美元，比特币/以太坊ETF合计失血约20亿美元。",
+      "url": "https://www.coindesk.com/markets/2026/05/30/bitcoin-ether-xrp-dogecoin-lag-a-nine-week-stocks-rally-as-etf-demand-cools",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T16:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
       "title": "比特币ETF单周净流出12.6亿美元，以太坊ETF连续10日失血",
       "summary": "美国比特币现货ETF上周累计净流出12.6亿美元，为1月底以来最大单周失血；以太坊现货ETF同步录得连续10日净流出，机构资金持续撤离令市场承压。",
       "url": "https://www.theblock.co/post/402420/spot-bitcoin-etfs-shed-1-26-billion-in-worst-week-since-late-january-as-ether-funds-see-10-day-outflow-streak",
@@ -256,6 +265,15 @@
       "url": "https://beincrypto.com/bitcoin-ethereum-options-expiry-may-2026",
       "source": "BeInCrypto",
       "publishedAt": "2026-05-30T00:00:00.000Z",
+      "tag": "价格"
+    },
+    {
+      "type": "market",
+      "title": "BTC, ETH价格：比特币以太坊横盘，美股新高、油价下跌与停火利好均未奏效",
+      "summary": "美股标普500再创历史新高、油价回落至92美元/桶、美伊停火延长谈判取得进展，正面宏观组合下比特币与以太坊几乎毫无反应；机构买盘等待华盛顿《清晰法案》监管立法落地而非响应宏观利好，标志加密资产与传统风险资产的逻辑脱钩在5月底进一步加深。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-ether-little-changed-despite-record-stocks-falling-oil-and-easing-war-fears",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T22:00:00.000Z",
       "tag": "价格"
     },
     {
@@ -310,24 +328,6 @@
       "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T00:00:00.000Z",
-      "tag": "ETF"
-    },
-    {
-      "type": "market",
-      "title": "Why is Stellar's XLM up by Over 50% This Week?",
-      "summary": "华尔街清算巨头DTCC宣布计划将其代币化证券平台接入Stellar网络，消息刺激XLM周内累涨逾51%，最高触及0.224美元为年内新高，成为近期加密普跌行情中最强独立主线，24小时交易量近20亿美元。",
-      "url": "https://cointelegraph.com/markets/why-is-stellars-xlm-up-by-over-50-this-week",
-      "source": "CoinTelegraph",
-      "publishedAt": "2026-05-28T20:00:00.000Z",
-      "tag": "价格"
-    },
-    {
-      "type": "market",
-      "title": "BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record",
-      "summary": "贝莱德旗下IBIT单日流出5.28亿美元，为上市以来第二大单日净流出纪录；其中一笔13亿美元暗池大宗交易为主因，叠加中东地缘风险升温与美债收益率走高，机构投资者正加速削减比特币ETF仓位。",
-      "url": "https://www.coindesk.com/markets/2026/05/28/blackrock-s-bitcoin-etf-sheds-usd528-million-the-second-largest-daily-outflow-on-record",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T16:00:00.000Z",
       "tag": "ETF"
     }
   ],
