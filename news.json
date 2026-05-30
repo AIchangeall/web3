@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T15:17:38.998Z",
+  "updatedAt": "2026-05-30T15:20:26.173Z",
   "hiring": [
     {
       "type": "hiring",
@@ -114,6 +114,33 @@
   "industry": [
     {
       "type": "industry",
+      "title": "Hyperliquid could become a 'financial services juggernaut' as DeFi expands, says Grayscale",
+      "summary": "灰度资产管理研究报告指出Hyperliquid在2025年实现约8亿美元收入，随着DeFi持续扩张，其正从衍生品交易所升级为涵盖借贷、清算、RWA全栈服务的综合金融基础设施，灰度将其定位为潜在的去中心化金融巨舰级平台。",
+      "url": "https://www.coindesk.com/business/2026/05/30/hyperliquid-could-become-a-financial-services-juggernaut-as-defi-expands-says-grayscale",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T09:00:00.000Z",
+      "tag": "协议"
+    },
+    {
+      "type": "industry",
+      "title": "Ripple said to lead $1 billion XRP treasury raise: Report",
+      "summary": "Ripple Labs据报道正主导通过SPAC载体Evernorth筹集逾10亿美元用于大规模购买XRP，投资方含SBI（2亿美元）、Pantera Capital、Kraken及GSR，计划以代码XRPN在纳斯达克上市；是XRP生态迄今最大机构建仓行动，或推动XRP生态系统DeFi与稳定币扩展。",
+      "url": "https://www.coindesk.com/markets/2026/05/30/ripple-said-to-lead-usd1-billion-xrp-treasury-raise-report",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T08:00:00.000Z",
+      "tag": "融资"
+    },
+    {
+      "type": "industry",
+      "title": "Bitcoin's biggest quantum risk may not be wallet keys. An early investor fears something bigger",
+      "summary": "比特币早期投资人警告，量子计算对比特币最紧迫威胁并非私钥破解，而是机构间传输中已被截获的加密通信数据；攻击者采用「现在收割、未来解密」策略存储TLS流量等，比特币社区对此尚无协调应对机制，是2026年量子安全讨论的重要新视角。",
+      "url": "https://www.coindesk.com/tech/2026/05/30/bitcoin-s-biggest-quantum-risk-may-not-be-wallet-keys-an-early-investor-fears-something-bigger",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T06:00:00.000Z",
+      "tag": "安全"
+    },
+    {
+      "type": "industry",
       "title": "CME Group Launches 24/7 Bitcoin and Ether Futures Trading, Ending the Iconic 'CME Gap'",
       "summary": "CME集团于5月29日（周五）下午4点正式启动BTC/ETH及SOL、XRP等9种加密资产期货期权全天候24/7交易，终结了困扰多年的「周末CME缺口」价格信号，为机构提供全天候风险对冲工具。",
       "url": "https://financefeeds.com/cme-group-to-launch-24-7-trading-for-crypto-futures-and-options-on-may-29",
@@ -192,33 +219,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T18:00:00.000Z",
       "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "Hyperliquid's Pre-IPO SpaceX Contracts Suffer 45% Flash Crash, Liquidating $1.5 Million",
-      "summary": "Hyperliquid上SPACEX-USDH永续合约因链下预言机错误处理SpaceX 1拆5分股触发45%闪崩，30分钟内清算405名用户共1,393笔仓位计150万美元；Ventuals承诺48小时内赔付受损用户。",
-      "url": "https://www.coindesk.com/markets/2026/05/28/hyperliquid-s-pre-ipo-spacex-contracts-suffers-45-flash-crash-liquidating-usd1-5-million",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T16:00:00.000Z",
-      "tag": "安全"
-    },
-    {
-      "type": "industry",
-      "title": "Crypto Trading Firm FalconX Confidentially Files with SEC for IPO, Hires Bankers",
-      "summary": "加密机构交易平台FalconX（2022年估值80亿美元）已向SEC秘密提交S-1注册草案，并聘请Cantor Fitzgerald等银行担任上市顾问，目标年底挂牌；FalconX加入Kraken、Consensys、Ledger的IPO推迟队列，显示加密上市窗口已明显收窄。",
-      "url": "https://www.coindesk.com/business/2026/05/28/crypto-trading-firm-falconx-confidentially-files-with-sec-for-ipo-hires-bankers",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T14:00:00.000Z",
-      "tag": "上市"
-    },
-    {
-      "type": "industry",
-      "title": "Asset Manager Grayscale Delays IPO Plans as Crypto Listing Boom Loses Steam",
-      "summary": "灰度资产管理（已于2025年11月秘密提交IPO文件）宣布搁置上市计划，预计2026年Q4前不会重启，与Kraken母公司Payward、Consensys、Ledger同步推迟；折射出比特币ETF资金连续9日净流出与市场情绪低迷对加密上市预期的全面打压。",
-      "url": "https://www.coindesk.com/business/2026/05/28/asset-manager-grayscale-delays-ipo-plans-as-crypto-listing-boom-loses-steam",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T12:00:00.000Z",
-      "tag": "上市"
     }
   ],
   "market": [
