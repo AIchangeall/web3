@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T15:14:18.844Z",
+  "updatedAt": "2026-05-30T15:17:38.998Z",
   "hiring": [
     {
       "type": "hiring",
@@ -334,6 +334,24 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "Clarity Act Risks Regulation Without Oversight, Brookings Fellow Says",
+      "summary": "布鲁金斯学会研究员警告，《数字资产市场清晰法案》将加密市场监管职责大幅移交CFTC，但该机构2025财年员工已缩至556人（较峰值减少21%），预算仅约3.65亿美元不足SEC的六分之一；若在人员与经费未充分补充前推进法案，或造成有法无力执行的监管真空，损害投资者保护与市场诚信。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/clarity-act-risks-regulation-without-oversight-brookings-fellow-says",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "India RBI Plans Cross-Border Digital Rupee CBDC Pilots in 2026-27 With Singapore, UAE",
+      "summary": "印度央行（RBI）在2025-26年度报告中宣布将于2026-27财年启动双边及多边跨境数字卢比CBDC试点，已与新加坡金融管理局签署数字资产合作协议并与阿联酋央行展开磋商；同步扩大CBDC在国内社会福利直接支付场景的应用，是全球主要经济体公开推进CBDC跨境互联互通布局的重要里程碑。",
+      "url": "https://www.business-standard.com/finance/news/rbi-cross-border-cbdc-pilots-digital-currency-2026-27-126052900721_1.html",
+      "source": "Business Standard",
+      "publishedAt": "2026-05-29T06:00:00.000Z",
+      "tag": "CBDC"
+    },
+    {
+      "type": "geopolitics",
       "title": "美财政部长贝森特明确反对CBDC，敦促国会加速通过清晰法案",
       "summary": "美国财政部长斯科特·贝森特在白宫发布会上宣布特朗普政府不会推出中央银行数字货币（CBDC），并敦促国会尽快通过《数字资产市场清晰法案》，称美国必须巩固在数字资产领域的全球领先地位，私人稳定币将替代CBDC功能。",
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52863201/scott-bessent-congress-crypto-bill-cbdc-off-table",
@@ -421,24 +439,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-27T12:00:00.000Z",
       "tag": "稳定币"
-    },
-    {
-      "type": "geopolitics",
-      "title": "中国最高人民法院宣布将研究制定虚拟货币司法裁判规则",
-      "summary": "中国最高人民法院司法委员会委员刘贵祥表示，法院将就虚拟货币及跨境金融等新型案件开展深入研究，并计划尽快出台内幕交易与市场操纵的民事赔偿司法解释，以回应国内加密相关诉讼案件的持续增长。",
-      "url": "https://cointelegraph.com/news/china-supreme-court-formulate-rules-digital-currency-ai",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-05-27T06:00:00.000Z",
-      "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "英国制裁HTX（火币）等18家加密实体，指控其协助俄罗斯规避战争制裁",
-      "summary": "英国于5月26日宣布对包括HTX交易所（前身火币）在内的18个实体实施制裁，指控其参与俄罗斯A7影子支付网络、协助转移逾900亿美元战争资金；英国金融机构被要求冻结相关资产，且禁止与上述实体开展任何业务往来。",
-      "url": "https://cointelegraph.com/news/uk-sanctions-htx-huobi-russia-support",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-05-26T10:00:00.000Z",
-      "tag": "制裁"
     }
   ]
 }
