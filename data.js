@@ -15,10 +15,16 @@
 //  约定: 新岗位 firstSeen=当日(即被标 NEW); 每次扫描把仍在招岗位的 lastSeen 改为当日。
 // ============================================================================
 window.WEB3_JOBS_DATA = {
-  "lastUpdated": "2026-05-29",
-  "lastUpdatedAt": "2026-05-29T05:13:16.719Z",
+  "lastUpdated": "2026-05-30",
+  "lastUpdatedAt": "2026-05-30T00:13:51.747Z",
   "snapshotNote": "覆盖 web3/crypto 行业全职能公开招聘（工程研发 / 运维SRE / 产品 / 设计 / 数据AI / 安全 / 市场增长 / BD / 合规HR）。数据来自公司官网 / Lever / Ashby / Greenhouse / Web3.career / CryptoJobsList / CryptocurrencyJobs / V2EX / 登链社区。薪资为公开 JD 或聚合估算，仅供参考。",
   "changelog": [
+    {
+      "date": "2026-05-30",
+      "added": 33,
+      "removed": 0,
+      "note": "新增 33 个岗位，刷新 4 个在招岗位。"
+    },
     {
       "date": "2026-05-29",
       "added": 55,
@@ -731,9 +737,12 @@ window.WEB3_JOBS_DATA = {
     },
     "Berachain": {
       "intro": ""
+    },
+    "Uniswap Foundation": {
+      "intro": ""
     }
   },
-  "totalJobs": 2528,
+  "totalJobs": 2561,
   "chunks": [
     "data-jobs-1.json",
     "data-jobs-2.json",
