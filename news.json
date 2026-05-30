@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T20:21:54.421709Z",
+  "updatedAt": "2026-05-30T20:26:27.706Z",
   "hiring": [
     {
       "type": "hiring",
@@ -334,6 +334,15 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "摩根大通CEO戴蒙宣称银行业不会接受CLARITY Act稳定币收益条款，美国市场结构立法遭遇银企对立",
+      "summary": "摩根大通CEO杰米·戴蒙明确宣称银行业不会接受《数字资产市场清晰法案》中允许稳定币发行商向用户支付收益的条款，称此举使稳定币发行商实质行使银行职能却规避银行监管；Coinbase已因同一条款撤回支持，银企双方正面对立成为CLARITY Act完成全参院立法的最大障碍。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/the-banks-will-not-accept-it-dimon-escalates-battle-over-stablecoin-rewards-in-clarity-act-debate",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T14:00:00.000Z",
+      "tag": "稳定币"
+    },
+    {
+      "type": "geopolitics",
       "title": "Clarity Act Risks Regulation Without Oversight, Brookings Fellow Says",
       "summary": "布鲁金斯学会研究员警告，《数字资产市场清晰法案》将加密市场监管职责大幅移交CFTC，但该机构2025财年员工已缩至556人（较峰值减少21%），预算仅约3.65亿美元不足SEC的六分之一；若在人员与经费未充分补充前推进法案，或造成有法无力执行的监管真空，损害投资者保护与市场诚信。",
       "url": "https://www.coindesk.com/policy/2026/05/29/clarity-act-risks-regulation-without-oversight-brookings-fellow-says",
@@ -388,6 +397,15 @@
     },
     {
       "type": "geopolitics",
+      "title": "德克萨斯州正式组建比特币战略储备咨询委员会，6月15日截止征集合格托管机构提案",
+      "summary": "德克萨斯州代理财政长官汉考克依据SB21《战略比特币储备法》，任命含CleanSpark总裁、比特币矿企CEO及SMU法学教授在内的五名委员，委员会负责制定估值、风险管理及托管政策，并于6月15日前完成合格托管机构提案征集，标志美国首个州级比特币战略储备立法进入具体运营落地阶段。",
+      "url": "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224",
+      "source": "Texas Comptroller",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "储备"
+    },
+    {
+      "type": "geopolitics",
       "title": "美CFTC批准Kalshi上线首批美国本土比特币永续合约并向Coinbase发出无行动函",
       "summary": "美国商品期货交易委员会5月28日正式批准预测市场平台Kalshi上线比特币永续合约（代号BTCPERP），同日向Coinbase旗下CFM子公司发出无行动函，允许其通过Coinbase百慕大以比特币、以太坊等数字资产作保证金连接外国永续合约，开创美国受监管加密永续合约先例。",
       "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
@@ -421,24 +439,6 @@
       "source": "VATUpdate",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "CFTC首次批准美国境内比特币永续合约，Kalshi获上市资格",
-      "summary": "美国商品期货交易委员会（CFTC）于5月28日批准预测市场平台Kalshi上市并交易比特币永续合约（BTCPERP），标志着美国监管框架下首个合规比特币永续衍生品正式落地；同日，CFTC通过无异议函允许Coinbase旗下子公司面向美国客户提供相关永续合约服务。",
-      "url": "https://crypto.news/kalshi-wins-cftc-approval-to-launch-first-u-s-bitcoin-perps",
-      "source": "crypto.news",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "分析：GENIUS稳定币法实施后重塑比特币货币溢价逻辑",
-      "summary": "美国GENIUS稳定币监管框架落地后，分析人士认为该法为政府背书的数字美元提供了合规通道，在一定程度上替代了比特币在数字货币领域的部分功能，引发市场对两者长期竞争关系的重新评估。",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/05/27/crypto-long-and-short-how-the-genius-act-repriced-bitcoin-s-monetary-premium",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T12:00:00.000Z",
-      "tag": "稳定币"
     }
   ]
 }
