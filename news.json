@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-29",
-  "updatedAt": "2026-05-29T20:18:02.682Z",
+  "updated": "2026-05-30",
+  "updatedAt": "2026-05-30T00:16:11.526Z",
   "hiring": [
     {
       "type": "hiring",
@@ -343,6 +343,15 @@
     },
     {
       "type": "geopolitics",
+      "title": "CFTC首次批准美国境内比特币永续合约，Kalshi获上市资格",
+      "summary": "美国商品期货交易委员会（CFTC）于5月28日批准预测市场平台Kalshi上市并交易比特币永续合约（BTCPERP），标志着美国监管框架下首个合规比特币永续衍生品正式落地；同日，CFTC通过无异议函允许Coinbase旗下子公司面向美国客户提供相关永续合约服务。",
+      "url": "https://crypto.news/kalshi-wins-cftc-approval-to-launch-first-u-s-bitcoin-perps",
+      "source": "crypto.news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
       "title": "分析：GENIUS稳定币法实施后重塑比特币货币溢价逻辑",
       "summary": "美国GENIUS稳定币监管框架落地后，分析人士认为该法为政府背书的数字美元提供了合规通道，在一定程度上替代了比特币在数字货币领域的部分功能，引发市场对两者长期竞争关系的重新评估。",
       "url": "https://www.coindesk.com/coindesk-indices/2026/05/27/crypto-long-and-short-how-the-genius-act-repriced-bitcoin-s-monetary-premium",
@@ -370,6 +379,15 @@
     },
     {
       "type": "geopolitics",
+      "title": "Tether与格鲁吉亚政府合作，发行锚定拉里的官方稳定币GEL₮",
+      "summary": "5月25日，Tether宣布与格鲁吉亚政府合作推出官方稳定币GEL₮，1:1锚定格鲁吉亚拉里，依托格鲁吉亚国家银行3月颁布的专项稳定币监管框架运营，该框架参照美国GENIUS法案、欧盟MiCA及迪拜VARA规则制定，要求全额储备支持与反洗钱合规。",
+      "url": "https://tether.io/news/tether-and-the-government-of-georgia-to-launch-gelt-the-official-stablecoin-of-georgia",
+      "source": "Tether.io",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "tag": "稳定币"
+    },
+    {
+      "type": "geopolitics",
       "title": "SEC无限期推迟代币化股票创新豁免计划，纳斯达克等三大交易所联合反对",
       "summary": "美国证券交易委员会5月22日宣布无限期搁置原定于5月18日发布的代币化股票创新豁免草案，原因是纳斯达克、纽交所及芝加哥期权交易所强烈反对允许在发行方不知情下创建第三方代币的条款，Robinhood和Coinbase美国代币化股票业务随之推迟至2027年。",
       "url": "https://decrypt.co/368855/sec-delays-tokenized-stocks-innovation-exemption-amid-concerns-bloomberg",
@@ -379,21 +397,12 @@
     },
     {
       "type": "geopolitics",
-      "title": "美众议院两党提出ARMA法案，拟将比特币战略储备写入永久立法",
-      "summary": "美国众议院两党议员Begich与Golden提出《美国储备现代化法案》（ARMA），拟将特朗普比特币战略储备行政令写入永久法律，规定政府持有比特币须锁仓20年禁止出售，并设立季度透明度审计与国会监督机制，目前获17名联署议员支持。",
+      "title": "美两党议员提出ARMA法案，拟为财政部建立100万枚比特币战略储备",
+      "summary": "5月21日，共和党众议员贝吉奇与民主党众议员戈尔登联合提出《美国储备现代化法案》（ARMA），要求财政部在五年内购入约100万枚比特币并锁仓不少于20年，资金来源为重估美联储黄金证书至当前市价，法案还要求每季度公布储备证明并接受独立审计。",
       "url": "https://www.theblock.co/post/402264/new-strategic-bitcoin-reserve-bill-drops-btc-purchase-target-adds-lockup",
       "source": "The Block",
       "publishedAt": "2026-05-21T00:00:00.000Z",
       "tag": "储备"
-    },
-    {
-      "type": "geopolitics",
-      "title": "欧盟委员会启动MiCA框架评审公众咨询，征询期至2026年8月底",
-      "summary": "欧盟委员会5月20日正式开放MiCA加密监管框架公众咨询，评估2023年出台的规则是否需随市场演变而修订，重点议题包括稳定币利息禁令是否应予调整、资产分类边界模糊等问题，征询期截至2026年8月31日。",
-      "url": "https://www.theblock.co/post/402005/european-commission-launches-mica-review-as-global-crypto-regulatory-landscape-shifts",
-      "source": "The Block",
-      "publishedAt": "2026-05-20T09:00:00.000Z",
-      "tag": "立法"
     }
   ]
 }
