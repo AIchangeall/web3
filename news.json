@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T00:16:11.526Z",
+  "updatedAt": "2026-05-30T00:23:43.272Z",
   "hiring": [
     {
       "type": "hiring",
@@ -9,6 +9,15 @@
       "url": "https://www.theblock.co/post/401718/two-more-ethereum-foundation-researchers-resign-amid-wave-of-departures",
       "source": "The Block",
       "publishedAt": "2026-05-29T10:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Yi He Becomes First Crypto-Native Executive Named to Fortune's Most Powerful Women in Business List",
+      "summary": "币安联合创始人、联席CEO何一入选《财富》杂志2026年全球最具权势女性商界领袖榜（排名第64位），成为首位跻身该榜单的原生加密行业高管；她于2025年12月被任命为联席CEO，与Richard Teng组成双掌门格局，标志加密行业女性领导力正式获主流商业媒体认可。",
+      "url": "https://www.prnewswire.com/news-releases/yi-he-becomes-first-crypto-native-executive-named-to-fortunes-most-powerful-women-in-business-list-302783001.html",
+      "source": "PR Newswire",
+      "publishedAt": "2026-05-27T08:00:00.000Z",
       "tag": "CXO变动"
     },
     {
@@ -100,15 +109,6 @@
       "source": "The Block",
       "publishedAt": "2026-03-17T10:00:00.000Z",
       "tag": "CXO变动"
-    },
-    {
-      "type": "hiring",
-      "title": "Jack Dorsey Just Halved Block's Employee Base — And Says Your Company Is Next",
-      "summary": "Block（前Square）宣布裁员逾4,000人、砍掉近半员工规模，CEO Jack Dorsey表示AI驱动的组织精简将在一年内席卷大多数公司，公司股价盘后涨超24%。",
-      "url": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next",
-      "source": "TechCrunch",
-      "publishedAt": "2026-02-26T00:00:00.000Z",
-      "tag": "裁员"
     }
   ],
   "industry": [
@@ -120,6 +120,24 @@
       "source": "FinanceFeeds",
       "publishedAt": "2026-05-29T21:00:00.000Z",
       "tag": "上市"
+    },
+    {
+      "type": "industry",
+      "title": "Texas Names Bitcoin Reserve Advisory Committee, Eyes Direct BTC Custody",
+      "summary": "德克萨斯州代理财政长官Kelly Hancock于5月29日正式任命比特币战略储备咨询委员会五名成员（含CleanSpark总裁Gary Vecchiarelli和比特币矿企CEO Jamie McAvity），委员会将在SB21法律框架下建议储备管理、托管策略，并于6月15日截止RFP征求合格托管机构。",
+      "url": "https://www.theblock.co/post/403026/texas-cleanspark-exec-bitcoin-miner-ceo-strategic-bitcoin-reserve-committee",
+      "source": "The Block",
+      "publishedAt": "2026-05-29T18:00:00.000Z",
+      "tag": "储备"
+    },
+    {
+      "type": "industry",
+      "title": "'The Banks Will Not Accept It': Dimon Escalates Battle Over Stablecoin Rewards in CLARITY Act Debate",
+      "summary": "摩根大通CEO杰米·戴蒙公开宣称银行业不会接受《数字资产市场清晰法案》允许稳定币发行商向用户支付收益的条款，斥之「变成银行却无银行监管」；Coinbase曾因同一条款撤回对法案的支持，双方分歧成为CLARITY Act立法的最大阻碍。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/the-banks-will-not-accept-it-dimon-escalates-battle-over-stablecoin-rewards-in-clarity-act-debate",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T14:00:00.000Z",
+      "tag": "监管"
     },
     {
       "type": "industry",
@@ -195,29 +213,11 @@
     },
     {
       "type": "industry",
-      "title": "DTCC Taps Stellar for Tokenized Securities Network, Plans to Bring Russell 1000 Stocks and Treasuries Onchain by 2027",
-      "summary": "美国金融市场基础设施巨头DTCC宣布将DTC托管的Russell 1000股票、ETF及国债于2027年上半年上链Stellar，这是DTCC多链代币化战略中首次选择公共区块链，XLM价格应声走强。",
-      "url": "https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push",
+      "title": "United Texas Bank Completes OCC Charter Conversion, Launches UTB Atomic AI Payments Network",
+      "summary": "达拉斯联合德克萨斯银行完成《多德-弗兰克法》后首例州立转全国银行牌照转换，获联储直接结算通道；随即推出UTB Atomic——24/7 AI驱动的实时结算网络，填补Silvergate/Signature倒闭后机构流动性缺口，目前每月处理约100亿美元加密相关交易。",
+      "url": "https://www.coindesk.com/policy/2026/05/27/wall-street-gets-new-crypto-rival-after-texas-bank-completes-regulatory-pivot",
       "source": "CoinDesk",
-      "publishedAt": "2026-05-27T14:00:00.000Z",
-      "tag": "协议"
-    },
-    {
-      "type": "industry",
-      "title": "Circle Launches Native USDC and Cross-Chain Transfer Protocol on Injective",
-      "summary": "Circle在Injective上部署原生USDC及跨链转账协议CCTP，用户持有Circle直接发行的正版USDC而非桥接封装资产，约770亿美元USDC流动性向Injective DeFi开放，INJ价格上涨约5%。",
-      "url": "https://www.theblock.co/post/393956/injective-support-native-usdc-cross-chain-transfers-circle",
-      "source": "The Block",
-      "publishedAt": "2026-05-27T10:00:00.000Z",
-      "tag": "协议"
-    },
-    {
-      "type": "industry",
-      "title": "Crypto Cash Backs Potential New Allies in Congress as Industry PAC Presence Widens",
-      "summary": "加密货币行业政治行动委员会持续向国会潜在新盟友提供资金支持，随《数字资产市场清晰法案》临近参议院全体投票，行业游说力度明显升温。",
-      "url": "https://www.coindesk.com/news-analysis/2026/05/27/crypto-cash-backs-potential-new-allies-in-congress-as-industry-pac-presence-widens",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
       "tag": "监管"
     }
   ],
