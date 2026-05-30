@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T10:13:30.813Z",
+  "updatedAt": "2026-05-30T10:20:02.584Z",
   "hiring": [
     {
       "type": "hiring",
@@ -352,6 +352,24 @@
     },
     {
       "type": "geopolitics",
+      "title": "美CFTC发布24/7交易指引：加密市场适宜全天候交易，传统资产仍存额外风险",
+      "summary": "美国商品期货交易委员会5月29日向衍生品行业发布咨询函，认定区块链技术驱动下加密市场天然适合24/7全天候交易，同时警告对股票等传统资产类别推广24/7仍存在额外风险，该指引为CME当日正式启动24/7加密期货交易提供了官方监管框架背书。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/u-s-regulator-says-24-7-trading-is-great-for-crypto-may-not-be-fit-for-other-sectors",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
+      "title": "亚洲加密监管周报（5月22-29日）：日本强制储备金立法、韩国扩大AML合规范围",
+      "summary": "5月22-29日，日本金融厅推进立法要求加密交易所建立对应用户持仓的负债储备金；韩国扩大旅行规则适用范围至小额交易并强化VASP主要股东背景审查；中国最高法院就虚拟货币案件裁判规则展开研究；亚洲主要市场加密合规监管全面趋严。",
+      "url": "https://cointelegraph.com/news/from-beijing-to-tokyo-asian-nations-get-active-in-crypto-regulation-law-decoded-may-22-29",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
       "title": "美CFTC批准Kalshi上线首批美国本土比特币永续合约并向Coinbase发出无行动函",
       "summary": "美国商品期货交易委员会5月28日正式批准预测市场平台Kalshi上线比特币永续合约（代号BTCPERP），同日向Coinbase旗下CFM子公司发出无行动函，允许其通过Coinbase百慕大以比特币、以太坊等数字资产作保证金连接外国永续合约，开创美国受监管加密永续合约先例。",
       "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
@@ -421,24 +439,6 @@
       "source": "Cointelegraph",
       "publishedAt": "2026-05-26T10:00:00.000Z",
       "tag": "制裁"
-    },
-    {
-      "type": "geopolitics",
-      "title": "Tether与格鲁吉亚政府合作，发行锚定拉里的官方稳定币GEL₮",
-      "summary": "5月25日，Tether宣布与格鲁吉亚政府合作推出官方稳定币GEL₮，1:1锚定格鲁吉亚拉里，依托格鲁吉亚国家银行3月颁布的专项稳定币监管框架运营，该框架参照美国GENIUS法案、欧盟MiCA及迪拜VARA规则制定，要求全额储备支持与反洗钱合规。",
-      "url": "https://tether.io/news/tether-and-the-government-of-georgia-to-launch-gelt-the-official-stablecoin-of-georgia",
-      "source": "Tether.io",
-      "publishedAt": "2026-05-25T00:00:00.000Z",
-      "tag": "稳定币"
-    },
-    {
-      "type": "geopolitics",
-      "title": "SEC无限期推迟代币化股票创新豁免计划，纳斯达克等三大交易所联合反对",
-      "summary": "美国证券交易委员会5月22日宣布无限期搁置原定于5月18日发布的代币化股票创新豁免草案，原因是纳斯达克、纽交所及芝加哥期权交易所强烈反对允许在发行方不知情下创建第三方代币的条款，Robinhood和Coinbase美国代币化股票业务随之推迟至2027年。",
-      "url": "https://decrypt.co/368855/sec-delays-tokenized-stocks-innovation-exemption-amid-concerns-bloomberg",
-      "source": "Decrypt",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "tag": "立法"
     }
   ]
 }
