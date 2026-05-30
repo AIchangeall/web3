@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T05:19:39.228Z",
+  "updatedAt": "2026-05-30T10:13:30.813Z",
   "hiring": [
     {
       "type": "hiring",
@@ -269,6 +269,15 @@
     },
     {
       "type": "market",
+      "title": "Iran Pressure and US PCE Inflation Takes Bitcoin to Lowest Since Mid-April",
+      "summary": "美联储首选通胀指标4月PCE物价指数同比升至3.8%，创2023年以来最高水平，叠加伊朗地缘持续紧张，比特币当日下跌3.3%至约7.26万美元触及六周新低，市场对联储年内降息预期大幅后移，风险资产全线承压，加密总市值单日蒸发逾400亿美元。",
+      "url": "https://cointelegraph.com/markets/bitcoin-price-falls-to-six-week-lows-as-us-pce-inflation-hits-highest-since-2023",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-29T13:00:00.000Z",
+      "tag": "宏观"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin's record holder supply hides a buyer drought, CryptoQuant says",
       "summary": "CryptoQuant数据显示，比特币长期持有者供应量创历史新高，但这反映的是买家稀缺而非强烈看多情绪；鲸鱼及机构海豚钱包余额年内收缩速度为2026年最快，短期持有者供给减少220万枚，市场参与度持续放缓，或预示近期底部。",
       "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-s-record-holder-supply-hides-a-buyer-drought-cryptoquant-says",
@@ -305,30 +314,21 @@
     },
     {
       "type": "market",
+      "title": "Crypto Slides on Strait of Hormuz Shock as $897 Million in Long Liquidations Pile Up",
+      "summary": "美国对伊朗霍尔木兹海峡附近军事设施发动空袭，加密市场多头遭遇2026年最大规模单日爆仓：约8.97亿美元多头被强制平仓（占总清算93%），BTC清算3.86亿美元、ETH清算2.46亿美元，单笔最大清算为Hyperliquid上1534万美元BTC仓位，比特币跌破7.3万美元，市场恐慌情绪急剧升温。",
+      "url": "https://www.coindesk.com/markets/2026/05/28/crypto-slides-on-hormuz-airstrikes-as-usd897-million-in-long-liquidations-pile-up",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T10:00:00.000Z",
+      "tag": "清算"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin Hits 2026 Low Under $73K But Analyst Says It's Normal",
       "summary": "比特币本周跌破7.3万美元，触及2026年年内最低价，月内累跌约8%，与美股同步承压；分析师指出此次下行属技术性回调，BTC已跌破50日及200日均线，但中长期结构并未根本改变。",
       "url": "https://cointelegraph.com/news/bitcoin-loses-dollar73k-us-stocks-sell-off-analyst-says-btc-trading-is-normal",
       "source": "CoinTelegraph",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "价格"
-    },
-    {
-      "type": "market",
-      "title": "Toddlers learn by falling: Why DeFi's $20 billion TVL drop is just a market stress-test",
-      "summary": "5月加密市场回调致DeFi总锁仓价值（TVL）骤降约200亿美元至860亿美元，为今年最大单月跌幅；分析师认为此次下行属市场压力测试，稳定币规模仍超1500亿美元保持稳健，DeFi整体韧性依然存在。",
-      "url": "https://www.coindesk.com/business/2026/05/28/toddlers-learn-by-falling-why-defi-s-usd20-billion-tvl-drop-is-just-a-market-stress-test",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "链上"
-    },
-    {
-      "type": "market",
-      "title": "Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps",
-      "summary": "追踪比特币卖压的链上指标5月27日进入「高风险」区间，现货ETF年初至今净积累量骤降至仅4,500枚BTC，5月整体转为净流出；宏观不确定性叠加美联储鹰派立场，机构买盘持续低迷。",
-      "url": "https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "tag": "机构"
     }
   ],
   "geopolitics": [
