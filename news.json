@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T10:20:02.584Z",
+  "updatedAt": "2026-05-30T10:33:43.642Z",
   "hiring": [
     {
       "type": "hiring",
@@ -31,12 +31,30 @@
     },
     {
       "type": "hiring",
+      "title": "Vitalik Buterin Says Ethereum Foundation Will Be a 'Smaller Ship,' Sell Less ETH Amid Researcher Exodus",
+      "summary": "在2026年已有至少8名核心研究员相继离职的背景下，Vitalik Buterin宣布EF将大幅精简规模并减少ETH出售，未来更专注于核心协议研究而非广泛生态拓展；这是EF自成立以来最具实质意义的一次组织收缩宣言。",
+      "url": "https://www.theblock.co/post/402435/vitalik-buterin-says-ethereum-foundation-will-be-a-smaller-ship-sell-less-eth-amid-researcher-exodus",
+      "source": "The Block",
+      "publishedAt": "2026-05-25T14:00:00.000Z",
+      "tag": "裁员"
+    },
+    {
+      "type": "hiring",
       "title": "Robinhood Crypto COO Tanya Denisova Is Leaving Company Amid Revenue Slowdown",
       "summary": "Robinhood加密业务首席运营官Tanya Denisova宣布离职，其任职5年间公司加密营收在2026年Q1已同比骤降47%至1.34亿美元；公司随即宣布将降低对加密波动性收入的依赖并重新定位平台，是Robinhood在加密市场低迷期的又一高管调整。",
       "url": "https://www.coindesk.com/business/2026/05/22/robinhood-crypto-coo-tanya-denisova-is-leaving-company-amid-revenue-slowdown",
       "source": "CoinDesk",
       "publishedAt": "2026-05-22T14:00:00.000Z",
       "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "The Ethereum Foundation Is Facing a Wave of High-Profile Departures as Its Internal Shakeup Deepens",
+      "summary": "2026年5月以太坊基金会经历史上最密集的人才流失：Barnabé Monnot、Tim Beiko、Trent Van Epps等核心研究员相继离职，社区对EF的透明度与领导层走向产生强烈质疑，多位行业人士称这是以太坊发展的核心结构性风险。",
+      "url": "https://www.coindesk.com/tech/2026/05/18/the-ethereum-foundation-is-facing-a-wave-of-high-profile-departures-as-its-internal-shakeup-deepens",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-18T12:00:00.000Z",
+      "tag": "裁员"
     },
     {
       "type": "hiring",
@@ -85,30 +103,12 @@
     },
     {
       "type": "hiring",
-      "title": "Crypto.com's High-Rolling Head of Marketing Taps Out After Almost Six Years",
-      "summary": "Crypto.com CMO Steven Kalifowitz宣布6月底离职转任CEO顾问，其近六年任期内主导超10亿美元营销投放——含斯台普斯球馆7亿美元冠名及马特·达蒙代言广告；公司正向AI驱动精简运营转型，是2026年加密行业CMO集体更迭潮的代表事件。",
-      "url": "https://www.coindesk.com/business/2026/05/05/crypto-com-s-high-rolling-head-of-marketing-taps-out-after-almost-six-years",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-05T10:00:00.000Z",
-      "tag": "CXO变动"
-    },
-    {
-      "type": "hiring",
-      "title": "Coinbase Cuts 14% of Staff as AI Reshapes How Crypto Companies Operate",
-      "summary": "Coinbase宣布裁员约14%（约660人），CEO Brian Armstrong表示AI已让小团队以同等效率取代大团队，公司将重组为扁平化「玩家-教练」架构并组建AI原生小组。",
-      "url": "https://www.coindesk.com/business/2026/05/05/coinbase-cuts-14-of-staff-as-ai-reshapes-how-crypto-companies-operate",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-05T00:00:00.000Z",
-      "tag": "裁员"
-    },
-    {
-      "type": "hiring",
-      "title": "More DeFi Casualties: Why Optimism Is Cutting Staff as Wall Street Ramps Up Crypto Hiring Spree",
-      "summary": "OP Labs（Optimism）以缩减内部复杂度为由裁减20名员工，与此同时摩根大通、贝莱德、摩根士丹利等传统金融机构正大举扩充加密团队，DeFi原生企业与华尔街的招聘走势呈现鲜明分化。",
-      "url": "https://www.dlnews.com/articles/defi/why-optimism-is-cutting-staff-as-wall-street-ramps-up-crypto-hiring-spree",
-      "source": "DL News",
-      "publishedAt": "2026-05-01T00:00:00.000Z",
-      "tag": "裁员"
+      "title": "Ethereum Foundation Names Three New Co-Leads to Major Protocol Cluster",
+      "summary": "以太坊基金会宣布任命三名研究员担任协议集群联合负责人，以填补多位高级研究员相继离职后留下的核心岗位空缺；新的集体领导架构被视为EF应对人才流失、维持协议研发连续性的应急举措。",
+      "url": "https://www.theblock.co/post/400835/ethereum-foundation-names-three-new-co-leads-major-protocol-cluster",
+      "source": "The Block",
+      "publishedAt": "2026-05-09T00:00:00.000Z",
+      "tag": "扩招"
     }
   ],
   "industry": [
@@ -129,6 +129,15 @@
       "source": "The Block",
       "publishedAt": "2026-05-29T18:00:00.000Z",
       "tag": "储备"
+    },
+    {
+      "type": "industry",
+      "title": "U.S. Regulator Says 24/7 Trading Is Great for Crypto, May Not Be Fit for Other Sectors",
+      "summary": "CFTC发布咨询备忘录，明确指出加密行业全天候特性天然适合7x24交易模式，但警告其他资产类别若缺乏充分流动性与风险管理机制不宜效仿；声明与CME集团同日启动加密期货7x24交易形成政策呼应，是监管机构首次就全天候交易发表权威定性。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/u-s-regulator-says-24-7-trading-is-great-for-crypto-may-not-be-fit-for-other-sectors",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T15:00:00.000Z",
+      "tag": "监管"
     },
     {
       "type": "industry",
@@ -210,15 +219,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T12:00:00.000Z",
       "tag": "上市"
-    },
-    {
-      "type": "industry",
-      "title": "Sui Blockchain Suffers Another Network Outage as Transactions Grind to a Halt",
-      "summary": "Sui主网因1.72版本gas计费逻辑崩溃漏洞于5月28日停机约6小时，为今年第二次断网事故；SUI价格应声下跌约8%，工程师约20分钟内识别问题并着手修复。",
-      "url": "https://www.coindesk.com/tech/2026/05/28/sui-blockchain-suffers-another-network-outage-as-transactions-grind-to-a-halt",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "协议"
     }
   ],
   "market": [
