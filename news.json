@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T05:08:54.877Z",
+  "updatedAt": "2026-05-30T05:17:07.186Z",
   "hiring": [
     {
       "type": "hiring",
@@ -343,6 +343,15 @@
     },
     {
       "type": "geopolitics",
+      "title": "Paxos Wins SEC Approval as First Blockchain-Native Clearing Agency for U.S. Stock Settlement",
+      "summary": "美国SEC于5月29日批准Paxos证券结算公司成为首家区块链原生结算清算机构，可为美国股票提供T+0即日结算服务，与传统DTCC并列获得监管地位，标志区块链基础设施正式进入受监管证券市场核心体系。",
+      "url": "https://www.coindesk.com/policy/2026/05/29/paxos-is-first-blockchain-firm-to-provide-settlement-and-clearing-services-following-sec-approval",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
       "title": "美CFTC批准Kalshi上线首批美国本土比特币永续合约并向Coinbase发出无行动函",
       "summary": "美国商品期货交易委员会5月28日正式批准预测市场平台Kalshi上线比特币永续合约（代号BTCPERP），同日向Coinbase旗下CFM子公司发出无行动函，允许其通过Coinbase百慕大以比特币、以太坊等数字资产作保证金连接外国永续合约，开创美国受监管加密永续合约先例。",
       "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
@@ -430,15 +439,6 @@
       "source": "Decrypt",
       "publishedAt": "2026-05-22T00:00:00.000Z",
       "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "美两党议员提出ARMA法案，拟为财政部建立100万枚比特币战略储备",
-      "summary": "5月21日，共和党众议员贝吉奇与民主党众议员戈尔登联合提出《美国储备现代化法案》（ARMA），要求财政部在五年内购入约100万枚比特币并锁仓不少于20年，资金来源为重估美联储黄金证书至当前市价，法案还要求每季度公布储备证明并接受独立审计。",
-      "url": "https://www.theblock.co/post/402264/new-strategic-bitcoin-reserve-bill-drops-btc-purchase-target-adds-lockup",
-      "source": "The Block",
-      "publishedAt": "2026-05-21T00:00:00.000Z",
-      "tag": "储备"
     }
   ]
 }
