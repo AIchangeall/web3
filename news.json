@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T20:14:43.581Z",
+  "updatedAt": "2026-05-30T20:21:54.421709Z",
   "hiring": [
     {
       "type": "hiring",
@@ -9,6 +9,15 @@
       "url": "https://www.theblock.co/post/401718/two-more-ethereum-foundation-researchers-resign-amid-wave-of-departures",
       "source": "The Block",
       "publishedAt": "2026-05-29T10:00:00.000Z",
+      "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Why the Ethereum Foundation Is Suddenly Again at the Center of Crypto's Culture War",
+      "summary": "深度分析EF人才流失潮背后的治理危机：批评者认为EF既不持有足量ETH以与生态利益对齐，又缺乏问责机制，导致其成为加密文化战场核心争议；外部压力正倒逼EF加快明确自身在以太坊生态中的角色定位。",
+      "url": "https://www.coindesk.com/tech/2026/05/28/why-the-ethereum-foundation-is-suddenly-again-at-the-center-of-crypto-s-culture-war",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-28T10:00:00.000Z",
       "tag": "CXO变动"
     },
     {
@@ -46,6 +55,15 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-22T14:00:00.000Z",
       "tag": "CXO变动"
+    },
+    {
+      "type": "hiring",
+      "title": "Ethereum's Identity Crisis Is Deepening After High-Profile Brain Drain Frustrates Community",
+      "summary": "多名核心研究员接连出走令以太坊社区挫折感加剧，批评者直指EF长期摇摆于货币与世界计算机两大定位之间，核心人才流失所暴露的组织认同危机已开始威胁ETH的长期价值叙事与生态竞争力。",
+      "url": "https://www.coindesk.com/tech/2026/05/21/ethereum-s-identity-crisis-is-deepening-after-high-profile-brain-drain-frustrates-the-community",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-21T12:00:00.000Z",
+      "tag": "裁员"
     },
     {
       "type": "hiring",
@@ -91,27 +109,27 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-12T12:00:00.000Z",
       "tag": "CXO变动"
-    },
-    {
-      "type": "hiring",
-      "title": "BlackRock, JPMorgan and Morgan Stanley Open Dozens of New Crypto Job Positions",
-      "summary": "贝莱德、摩根大通、摩根士丹利同步开放数十个加密职位，薪酬高达35万美元，重点招募代币化工程师、ETF做市商及数字资产合规官员，华尔街加密人才争夺战全面升级。",
-      "url": "https://financefeeds.com/blackrock-jpmorgan-and-morgan-stanley-open-dozens-of-new-crypto-job-positions",
-      "source": "FinanceFeeds",
-      "publishedAt": "2026-05-10T00:00:00.000Z",
-      "tag": "扩招"
-    },
-    {
-      "type": "hiring",
-      "title": "Ethereum Foundation Names Three New Co-Leads to Major Protocol Cluster",
-      "summary": "以太坊基金会宣布任命三名研究员担任协议集群联合负责人，以填补多位高级研究员相继离职后留下的核心岗位空缺；新的集体领导架构被视为EF应对人才流失、维持协议研发连续性的应急举措。",
-      "url": "https://www.theblock.co/post/400835/ethereum-foundation-names-three-new-co-leads-major-protocol-cluster",
-      "source": "The Block",
-      "publishedAt": "2026-05-09T00:00:00.000Z",
-      "tag": "扩招"
     }
   ],
   "industry": [
+    {
+      "type": "industry",
+      "title": "U.S. Says It Seized About $1 Billion in Iranian Crypto as Pressure Campaign Expands",
+      "summary": "美国财政部长Bessent宣布「经济愤怒行动」已没收约10亿美元伊朗加密资产，Tether配合冻结与IRGC相关3.44亿USDT，旨在切断德黑兰每月借助加密渠道输送的数亿美元石油收益，是迄今最大规模国家级加密资产没收行动。",
+      "url": "https://www.coindesk.com/business/2026/05/30/u-s-says-it-seized-about-usd1-billion-in-iranian-crypto-as-pressure-campaign-expands",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T13:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
+      "title": "Bitcoin, Ether, XRP, Dogecoin Lag a Nine-Week Stocks Rally as ETF Demand Cools",
+      "summary": "标普500指数连续九周上涨之际，比特币、以太坊等主流加密资产同期下跌2%-6%，ETF持续净流出导致机构需求支撑减弱；加密资产与传统风险资产的罕见背离，被市场视为本轮行情结构性走弱的重要信号。",
+      "url": "https://www.coindesk.com/markets/2026/05/30/bitcoin-ether-xrp-dogecoin-lag-a-nine-week-stocks-rally-as-etf-demand-cools",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T10:00:00.000Z",
+      "tag": "上市"
+    },
     {
       "type": "industry",
       "title": "Hyperliquid could become a 'financial services juggernaut' as DeFi expands, says Grayscale",
@@ -147,6 +165,15 @@
       "source": "FinanceFeeds",
       "publishedAt": "2026-05-29T21:00:00.000Z",
       "tag": "上市"
+    },
+    {
+      "type": "industry",
+      "title": "Bitcoin ETF Outflows Reach Record 9-Day Streak as Investors Pull $2.8 Billion",
+      "summary": "美国现货比特币ETF连续9个交易日净流出，创2024年1月上市以来最长连跌纪录，累计赎回约28亿美元；以太坊ETF同步录得十连跌，仅XRP ETF小幅逆势流入3500万美元，加密市场机构需求明显降温。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-29T20:00:00.000Z",
+      "tag": "ETF"
     },
     {
       "type": "industry",
@@ -192,33 +219,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T09:15:00.000Z",
       "tag": "安全"
-    },
-    {
-      "type": "industry",
-      "title": "Paxos Wins SEC Approval to Clear and Settle U.S. Equities on Blockchain as First Registered Clearing Agency",
-      "summary": "Paxos证券结算公司成为首家获SEC注册的区块链原生清算机构，可在链上结算美国股票、支持T+0当日交割；这是七年与监管合作的里程碑，华尔街后台基础设施区块链化迈出历史性一步。",
-      "url": "https://www.coindesk.com/policy/2026/05/29/paxos-is-first-blockchain-firm-to-provide-settlement-and-clearing-services-following-sec-approval",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T08:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "OKX Ventures, Korea Investment & Securities Each Take 19.6% Stake in Coinone for $53M",
-      "summary": "OKX Ventures与韩国投资证券各出资约5300万美元，共同收购韩国加密交易所Coinone各19.6%股权，双方将就AML合规、机构衍生品及稳定币业务展开合作，交易须待监管批准。",
-      "url": "https://cointelegraph.com/news/okx-ventures-korea-investment-securities-buy-196-stake-in-coinone",
-      "source": "CoinTelegraph",
-      "publishedAt": "2026-05-29T05:00:00.000Z",
-      "tag": "收购"
-    },
-    {
-      "type": "industry",
-      "title": "U.S. CFTC Opens Crypto 'Perp' Door With First Approvals at Kalshi, Coinbase",
-      "summary": "美国CFTC批准Kalshi上线美国史上首个合规比特币永续合约（BTCPERP），并允许Coinbase旗下CFM为用户接入海外永续期货，终结数十年来86万亿美元年交易量流向境外的局面；CFTC主席称此举是推动美国加密空间的重大一步。",
-      "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T18:00:00.000Z",
-      "tag": "监管"
     }
   ],
   "market": [
