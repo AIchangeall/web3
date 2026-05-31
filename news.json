@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T00:20:53.764Z",
+  "updatedAt": "2026-05-31T05:16:24.526Z",
   "hiring": [
     {
       "type": "hiring",
@@ -334,6 +334,15 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "美财政部「经济愤怒行动」没收约10亿美元伊朗加密资产，伊朗制裁升级至史上最大规模",
+      "summary": "美国财政部长贝森特5月30日宣布「经济愤怒行动」已没收近10亿美元伊朗加密资产，Tether配合冻结约3.44亿USDT，旨在切断德黑兰每月通过加密渠道转移的逾4亿美元石油收益；贝森特指出伊朗通胀已超200%、军人薪酬无法发放，是迄今规模最大的国家级加密资产制裁没收行动。",
+      "url": "https://www.theblock.co/post/403075/us-has-seized-nearly-1-billion-in-crypto-from-iran-bessent-says",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T13:00:00.000Z",
+      "tag": "制裁"
+    },
+    {
+      "type": "geopolitics",
       "title": "摩根大通CEO戴蒙宣称银行业不会接受CLARITY Act稳定币收益条款，美国市场结构立法遭遇银企对立",
       "summary": "摩根大通CEO杰米·戴蒙明确宣称银行业不会接受《数字资产市场清晰法案》中允许稳定币发行商向用户支付收益的条款，称此举使稳定币发行商实质行使银行职能却规避银行监管；Coinbase已因同一条款撤回支持，银企双方正面对立成为CLARITY Act完成全参院立法的最大障碍。",
       "url": "https://www.coindesk.com/policy/2026/05/29/the-banks-will-not-accept-it-dimon-escalates-battle-over-stablecoin-rewards-in-clarity-act-debate",
@@ -428,15 +437,6 @@
       "summary": "特朗普在Truth Social发文支持CFTC对预测市场享有联邦独家管辖权，白宫同步启动对CFTC拟议规则的正式审查，此举将影响包括加密货币相关事件合约在内的预测市场联邦监管走向。",
       "url": "https://www.coindesk.com/policy/2026/05/28/white-house-reviews-cftc-prediction-market-rule-as-trump-backs-federal-control",
       "source": "CoinDesk",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "肯尼亚2026财政法案拟对加密平台征10%消费税并设高额牌照费，引发GenZ抗议",
-      "summary": "肯尼亚2026年财政法案提议对虚拟资产服务商收取的手续费征收10%消费税，并要求加密企业缴纳1.5亿肯先令一次性牌照费及200万肯先令年度续期费，消息引发GenZ群体重启街头抗议，法案仍在议会审议中。",
-      "url": "https://www.vatupdate.com/2026/05/28/kenya-proposes-10-vat-and-heavy-fees-on-crypto-firms",
-      "source": "VATUpdate",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "立法"
     }
