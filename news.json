@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T20:08:41.096Z",
+  "updatedAt": "2026-05-31T20:28:18.197Z",
   "hiring": [
     {
       "type": "hiring",
@@ -334,6 +334,15 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "美众议院金融委员会：代币化是清晰法案后的下一重大立法议程，CFTC与SEC将启动联合规则制定",
+      "summary": "众议院金融服务委员会主席弗伦奇·希尔宣布，在稳定币（GENIUS法案）与市场结构（清晰法案）推进后，代币化将成为委员会下一重大监管议题；法案通过后CFTC与SEC将展开约12个月联合规则制定，构建覆盖数字资产市场的统一合规框架。",
+      "url": "https://www.coindesk.com/policy/2026/05/31/how-the-house-financial-services-committee-is-taking-on-tokenization-state-of-crypto",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-31T13:00:00.000Z",
+      "tag": "立法"
+    },
+    {
+      "type": "geopolitics",
       "title": "美国联邦法院强制令迫使Circle冻结Zama cUSDC合约1260万美元，稳定币\"连坐式\"司法冻结引发广泛争议",
       "summary": "美国北加州联邦地区法院法官Casey Pitts于5月29日就Overnight Finance内部纠纷（Newton AC/DC Fund诉Ermilov）签发临时禁止令，Circle于5月30日执行冻结；由于被冻结资产存于Zama隐私USDC合约的共享资金池，无关第三方用户的约1260万美元USDC亦遭波及，六月一日将举行听证，此案引发业界对稳定币发行商服从法院命令时附带冻结无辜用户资产的制度性风险讨论。",
       "url": "https://www.theblock.co/post/403091/court-ordered-circle-freeze-traps-12-6-million-in-zama-cusdc-contract-amid-overnight-finance-suit",
@@ -429,15 +438,6 @@
       "url": "https://www.coindesk.com/policy/2026/05/28/u-s-cftc-opens-crypto-perp-door-with-approval-of-first-regulated-firm",
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T12:00:00.000Z",
-      "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "UniCredit警告：欧盟在MiCA框架下恐难有效处置加密银行业系统性危机",
-      "summary": "意大利最大银行UniCredit发布报告指出，与美国相比欧盟处置加密相关金融风险的危机工具更为有限，MiCA监管框架下一旦出现系统性风险，欧洲监管机构的应对能力可能不及美国，存在危机扩散隐患。",
-      "url": "https://www.coindesk.com/business/2026/05/28/unicredit-warns-europe-may-struggle-to-contain-crypto-bank-crisis-under-mica-rules",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T08:00:00.000Z",
       "tag": "立法"
     }
   ]
