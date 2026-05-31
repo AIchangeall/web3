@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T10:21:48.173Z",
+  "updatedAt": "2026-05-31T15:14:28.787Z",
   "hiring": [
     {
       "type": "hiring",
@@ -114,6 +114,15 @@
   "industry": [
     {
       "type": "industry",
+      "title": "SEC sues Privvy founder over $12.3 million crypto scheme as AI 'bots' turn out to be neither",
+      "summary": "SEC对德克萨斯州Nathan Fuller提起诉讼，指控其通过Privvy Investments以虚假AI套利机器人向约150名投资者募集1230万美元，实际仅3%资金入市、本人挪用620万美元，并用ChatGPT伪造审计函掩盖庞氏欺诈，是近期AI概念加密诈骗的典型监管执法案例。",
+      "url": "https://www.theblock.co/post/403118/sec-sues-privvy-founder-over-12-3-million-crypto-scheme-as-ai-bots-turn-out-to-be-neither",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T17:00:00.000Z",
+      "tag": "监管"
+    },
+    {
+      "type": "industry",
       "title": "U.S. Says It Seized About $1 Billion in Iranian Crypto as Pressure Campaign Expands",
       "summary": "美国财政部长Bessent宣布「经济愤怒行动」已没收约10亿美元伊朗加密资产，Tether配合冻结与IRGC相关3.44亿USDT，旨在切断德黑兰每月借助加密渠道输送的数亿美元石油收益，是迄今最大规模国家级加密资产没收行动。",
       "url": "https://www.coindesk.com/business/2026/05/30/u-s-says-it-seized-about-usd1-billion-in-iranian-crypto-as-pressure-campaign-expands",
@@ -195,29 +204,20 @@
     },
     {
       "type": "industry",
+      "title": "Base launches Azul on mainnet, pushing Coinbase's Ethereum L2 toward full decentralization",
+      "summary": "Coinbase旗下以太坊L2 Base于5月29日正式激活Azul主网升级，首次独立于Optimism Superchain推出TEE+ZK双证明系统，提款最快1天到账、空块数减少99%；这是Base自脱离Optimism后的首次独立升级，标志其向Stage 2完全去中心化迈出关键一步。",
+      "url": "https://www.theblock.co/post/403003/base-launches-azul-on-mainnet-pushing-coinbases-ethereum-l2-toward-full-decentralization",
+      "source": "The Block",
+      "publishedAt": "2026-05-29T18:00:00.000Z",
+      "tag": "协议"
+    },
+    {
+      "type": "industry",
       "title": "U.S. Regulator Says 24/7 Trading Is Great for Crypto, May Not Be Fit for Other Sectors",
       "summary": "CFTC发布咨询备忘录，明确指出加密行业全天候特性天然适合7x24交易模式，但警告其他资产类别若缺乏充分流动性与风险管理机制不宜效仿；声明与CME集团同日启动加密期货7x24交易形成政策呼应，是监管机构首次就全天候交易发表权威定性。",
       "url": "https://www.coindesk.com/policy/2026/05/29/u-s-regulator-says-24-7-trading-is-great-for-crypto-may-not-be-fit-for-other-sectors",
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T15:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "'The Banks Will Not Accept It': Dimon Escalates Battle Over Stablecoin Rewards in CLARITY Act Debate",
-      "summary": "摩根大通CEO杰米·戴蒙公开宣称银行业不会接受《数字资产市场清晰法案》允许稳定币发行商向用户支付收益的条款，斥之「变成银行却无银行监管」；Coinbase曾因同一条款撤回对法案的支持，双方分歧成为CLARITY Act立法的最大阻碍。",
-      "url": "https://www.coindesk.com/policy/2026/05/29/the-banks-will-not-accept-it-dimon-escalates-battle-over-stablecoin-rewards-in-clarity-act-debate",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T14:00:00.000Z",
-      "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "Kalshi Follows CFTC in Suing Minnesota Over Law Criminalizing Prediction Markets",
-      "summary": "预测市场平台Kalshi就明尼苏达州将于8月1日生效的预测市场入罪化新法提起联邦诉讼，主张该法侵犯CFTC专有联邦管辖权并违宪；CFTC本身已于5月19日提交类似诉状，特朗普政府亦明确支持联邦权威。",
-      "url": "https://www.coindesk.com/policy/2026/05/29/kalshi-follows-cftc-in-suing-minnesota-over-law-criminalizing-prediction-markets",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
       "tag": "监管"
     }
   ],
