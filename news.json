@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T10:19:05.103Z",
+  "updatedAt": "2026-05-31T10:21:48.173Z",
   "hiring": [
     {
       "type": "hiring",
@@ -334,6 +334,15 @@
   "geopolitics": [
     {
       "type": "geopolitics",
+      "title": "美国联邦法院强制令迫使Circle冻结Zama cUSDC合约1260万美元，稳定币\"连坐式\"司法冻结引发广泛争议",
+      "summary": "美国北加州联邦地区法院法官Casey Pitts于5月29日就Overnight Finance内部纠纷（Newton AC/DC Fund诉Ermilov）签发临时禁止令，Circle于5月30日执行冻结；由于被冻结资产存于Zama隐私USDC合约的共享资金池，无关第三方用户的约1260万美元USDC亦遭波及，六月一日将举行听证，此案引发业界对稳定币发行商服从法院命令时附带冻结无辜用户资产的制度性风险讨论。",
+      "url": "https://www.theblock.co/post/403091/court-ordered-circle-freeze-traps-12-6-million-in-zama-cusdc-contract-amid-overnight-finance-suit",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T18:00:00.000Z",
+      "tag": "稳定币"
+    },
+    {
+      "type": "geopolitics",
       "title": "美财政部「经济愤怒行动」没收约10亿美元伊朗加密资产，伊朗制裁升级至史上最大规模",
       "summary": "美国财政部长贝森特5月30日宣布「经济愤怒行动」已没收近10亿美元伊朗加密资产，Tether配合冻结约3.44亿USDT，旨在切断德黑兰每月通过加密渠道转移的逾4亿美元石油收益；贝森特指出伊朗通胀已超200%、军人薪酬无法发放，是迄今规模最大的国家级加密资产制裁没收行动。",
       "url": "https://www.theblock.co/post/403075/us-has-seized-nearly-1-billion-in-crypto-from-iran-bessent-says",
@@ -429,15 +438,6 @@
       "url": "https://www.coindesk.com/business/2026/05/28/unicredit-warns-europe-may-struggle-to-contain-crypto-bank-crisis-under-mica-rules",
       "source": "CoinDesk",
       "publishedAt": "2026-05-28T08:00:00.000Z",
-      "tag": "立法"
-    },
-    {
-      "type": "geopolitics",
-      "title": "白宫启动CFTC预测市场规则审查，特朗普力挺联邦独家管辖权",
-      "summary": "特朗普在Truth Social发文支持CFTC对预测市场享有联邦独家管辖权，白宫同步启动对CFTC拟议规则的正式审查，此举将影响包括加密货币相关事件合约在内的预测市场联邦监管走向。",
-      "url": "https://www.coindesk.com/policy/2026/05/28/white-house-reviews-cftc-prediction-market-rule-as-trump-backs-federal-control",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
       "tag": "立法"
     }
   ]
