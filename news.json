@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T05:16:24.526Z",
+  "updatedAt": "2026-05-31T10:14:36.684Z",
   "hiring": [
     {
       "type": "hiring",
@@ -224,6 +224,15 @@
   "market": [
     {
       "type": "market",
+      "title": "Bitcoin, Ethereum ETF Investments Flip Negative for 2026 as Crypto Funds Shed $1.7B",
+      "summary": "比特币和以太坊现货ETF 2026年累计净流入首次转为负值，在连续逾两周净流出后合计失血超17亿美元；加密ETF年度正收益全部抹平，标志机构资金信心降至ETF上市以来最低节点。",
+      "url": "https://decrypt.co/356622/bitcoin-ethereum-etf-investments-flip-negative-for-2026-as-crypto-funds-shed-1-7b",
+      "source": "Decrypt",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "tag": "ETF"
+    },
+    {
+      "type": "market",
       "title": "现货比特币ETF创纪录10连跌总失血近30亿美元，以太坊ETF连出14日，Santiment称或为逆向买入信号",
       "summary": "美国现货比特币ETF连续10个交易日净流出、合计近30亿美元，刷新上市以来最长流出纪录；以太坊ETF同步录得14连跌，总净资产5月11日至29日下滑26亿美元；加密情绪分析平台Santiment指出，历史数据显示极端ETF大额流出往往是逆向指标，预示价格可能已接近局部底部。",
       "url": "https://cointelegraph.com/news/spot-bitcoin-etfs-see-record-10-day-outflow-streak-analyst-calls-it-contrarian-indicator",
@@ -320,15 +329,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "tag": "链上"
-    },
-    {
-      "type": "market",
-      "title": "Strategy首次将411枚比特币转入Coinbase Prime，Polymarket卖出概率飙升至84%",
-      "summary": "最大企业比特币持仓方Strategy将411.48枚BTC（约3,030万美元）转入Coinbase Prime，为其2024年以来首次直接向交易所存款；Polymarket预测市场上其年内卖出比特币概率因此飙升至84%，市场担忧其或开启首次实质性清仓。",
-      "url": "https://news.bitcoin.com/strategy-moves-411-btc-coinbase-prime-polymarket-sell-odds-2026",
-      "source": "Bitcoin.com",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "tag": "机构"
     }
   ],
   "geopolitics": [
