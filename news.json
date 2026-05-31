@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-30",
-  "updatedAt": "2026-05-30T20:26:27.706Z",
+  "updated": "2026-05-31",
+  "updatedAt": "2026-05-31T00:20:53.764Z",
   "hiring": [
     {
       "type": "hiring",
@@ -224,6 +224,15 @@
   "market": [
     {
       "type": "market",
+      "title": "现货比特币ETF创纪录10连跌总失血近30亿美元，以太坊ETF连出14日，Santiment称或为逆向买入信号",
+      "summary": "美国现货比特币ETF连续10个交易日净流出、合计近30亿美元，刷新上市以来最长流出纪录；以太坊ETF同步录得14连跌，总净资产5月11日至29日下滑26亿美元；加密情绪分析平台Santiment指出，历史数据显示极端ETF大额流出往往是逆向指标，预示价格可能已接近局部底部。",
+      "url": "https://cointelegraph.com/news/spot-bitcoin-etfs-see-record-10-day-outflow-streak-analyst-calls-it-contrarian-indicator",
+      "source": "CoinTelegraph",
+      "publishedAt": "2026-05-30T22:00:00.000Z",
+      "tag": "ETF"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin, ether, XRP, dogecoin lag a nine-week stocks rally as ETF demand cools",
       "summary": "比特币本周跌2.6%至73,445美元、以太坊跌2.5%至2,011美元，标普500指数创下2023年以来最长周线连涨（9周）而大市值加密资产全面落后；Hyperliquid HYPE逆势周涨近20%成最强主线，ETF分化持续——XRP过去10日净流入3500万美元，比特币/以太坊ETF合计失血约20亿美元。",
       "url": "https://www.coindesk.com/markets/2026/05/30/bitcoin-ether-xrp-dogecoin-lag-a-nine-week-stocks-rally-as-etf-demand-cools",
@@ -320,15 +329,6 @@
       "source": "Bitcoin.com",
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "tag": "机构"
-    },
-    {
-      "type": "market",
-      "title": "Bitcoin ETFs suffer record nine-day outflow streak as $2.8 billion exits funds",
-      "summary": "美国现货比特币ETF连续9日净流出，创2024年1月上市以来最长纪录，合计约28亿美元资金撤离；5月29日当天流出2.29亿美元（IBIT占1.78亿），BTC徘徊于7.35万美元，需求面降至2024年12月以来最低点。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-etf-outflows-reach-record-nine-day-streak-as-investors-pull-usd2-8-billion",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "tag": "ETF"
     }
   ],
   "geopolitics": [
