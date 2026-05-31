@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T15:14:28.787Z",
+  "updatedAt": "2026-05-31T15:25:23.234Z",
   "hiring": [
     {
       "type": "hiring",
@@ -251,6 +251,15 @@
     },
     {
       "type": "market",
+      "title": "Global crypto ETP outflows deepen to $1.5B as bitcoin products post worst weekly redemptions of 2026: CoinShares",
+      "summary": "CoinShares周报显示全球数字资产ETP连续第二周净流出共约15亿美元，比特币单周失血13.15亿美元创2026年最大，伊朗地缘风险令恐慌性出逃从美国蔓延至瑞士、加拿大等全球市场；BTC年初累计净流入从39亿美元骤降至26亿，以太坊同期亦录得显著出逃，而XRP、SOL等仍获机构选择性增配。",
+      "url": "https://www.theblock.co/post/402528/global-crypto-etp-outflows-deepen-to-1-5b-as-bitcoin-products-post-worst-weekly-redemption-of-2026-coinshares",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T12:00:00.000Z",
+      "tag": "ETF"
+    },
+    {
+      "type": "market",
       "title": "比特币ETF单周净流出12.6亿美元，以太坊ETF连续10日失血",
       "summary": "美国比特币现货ETF上周累计净流出12.6亿美元，为1月底以来最大单周失血；以太坊现货ETF同步录得连续10日净流出，机构资金持续撤离令市场承压。",
       "url": "https://www.theblock.co/post/402420/spot-bitcoin-etfs-shed-1-26-billion-in-worst-week-since-late-january-as-ether-funds-see-10-day-outflow-streak",
@@ -314,21 +323,12 @@
     },
     {
       "type": "market",
-      "title": "Iran Pressure and US PCE Inflation Takes Bitcoin to Lowest Since Mid-April",
-      "summary": "美联储首选通胀指标4月PCE物价指数同比升至3.8%，创2023年以来最高水平，叠加伊朗地缘持续紧张，比特币当日下跌3.3%至约7.26万美元触及六周新低，市场对联储年内降息预期大幅后移，风险资产全线承压，加密总市值单日蒸发逾400亿美元。",
-      "url": "https://cointelegraph.com/markets/bitcoin-price-falls-to-six-week-lows-as-us-pce-inflation-hits-highest-since-2023",
-      "source": "CoinTelegraph",
-      "publishedAt": "2026-05-29T13:00:00.000Z",
-      "tag": "宏观"
-    },
-    {
-      "type": "market",
-      "title": "Bitcoin's record holder supply hides a buyer drought, CryptoQuant says",
-      "summary": "CryptoQuant数据显示，比特币长期持有者供应量创历史新高，但这反映的是买家稀缺而非强烈看多情绪；鲸鱼及机构海豚钱包余额年内收缩速度为2026年最快，短期持有者供给减少220万枚，市场参与度持续放缓，或预示近期底部。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-s-record-holder-supply-hides-a-buyer-drought-cryptoquant-says",
+      "title": "ICE CEO calls Hyperliquid bigger than NASDAQ, says he's met its founders",
+      "summary": "NYSE母公司ICE首席执行官Jeffrey Sprecher在伯恩斯坦会议上称Hyperliquid日交易量「比纳斯达克还大」，11人核心团队在24/7永续合约市场占据逾七成份额；受华尔街主流机构认可提振，HYPE代币5月底接连刷新历史高点至约$69，Bitwise与21Shares两只HYPE现货ETF上市11日累计流入超1.36亿美元，机构资金持续从BTC/ETH轮换至HYPE。",
+      "url": "https://www.coindesk.com/markets/2026/05/29/ice-ceo-calls-hyperliquid-bigger-than-nasdaq-says-he-s-met-its-founders",
       "source": "CoinDesk",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "tag": "链上"
+      "publishedAt": "2026-05-29T14:00:00.000Z",
+      "tag": "价格"
     }
   ],
   "geopolitics": [
