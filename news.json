@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T10:14:36.684Z",
+  "updatedAt": "2026-05-31T10:19:05.103Z",
   "hiring": [
     {
       "type": "hiring",
@@ -46,6 +46,15 @@
       "source": "The Block",
       "publishedAt": "2026-05-25T14:00:00.000Z",
       "tag": "裁员"
+    },
+    {
+      "type": "hiring",
+      "title": "OKX Taps Former Bybit VIP Executive Maxim Orlov to Lead CIS Region",
+      "summary": "OKX从Bybit挖角拥有逾15年高净值客户管理经验的Maxim Orlov出任独联体（CIS）地区总经理，负责机构VIP客户拓展并常驻区域出差；OKX同步开放CIS高级VIP关系经理职位，标志其在机构客户争夺战与东欧中亚市场扩张上持续加码。",
+      "url": "https://www.financemagnates.com/executives/moves/okx-taps-former-bybit-vip-executive-to-lead-cis-region",
+      "source": "Finance Magnates",
+      "publishedAt": "2026-05-25T08:00:00.000Z",
+      "tag": "扩招"
     },
     {
       "type": "hiring",
@@ -100,15 +109,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-14T12:00:00.000Z",
       "tag": "裁员"
-    },
-    {
-      "type": "hiring",
-      "title": "Binance CMO Rachel Conlan Is Leaving the Crypto Exchange; Trust Wallet CEO Named Interim",
-      "summary": "任职三年的币安首席营销官Rachel Conlan宣布将于6月15日离职，前Trust Wallet CEO Eowyn Chen接任临时CMO；Conlan主导了与C·罗纳尔多、The Weeknd及Alpine F1车队等超十亿美元赞助组合，其离职标志加密行业消费级大规模营销时代全面退潮。",
-      "url": "https://www.coindesk.com/business/2026/05/12/binance-s-chief-marketing-officer-rachel-conlan-is-leaving-the-exchange",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-12T12:00:00.000Z",
-      "tag": "CXO变动"
     }
   ],
   "industry": [
@@ -155,6 +155,15 @@
       "url": "https://www.coindesk.com/tech/2026/05/30/bitcoin-s-biggest-quantum-risk-may-not-be-wallet-keys-an-early-investor-fears-something-bigger",
       "source": "CoinDesk",
       "publishedAt": "2026-05-30T06:00:00.000Z",
+      "tag": "安全"
+    },
+    {
+      "type": "industry",
+      "title": "Circle Freezes $12.6M USDC Linked to Privacy Protocol Zama in Court-Ordered Blacklist",
+      "summary": "美联邦法院临时禁令促使Circle于5月30日冻结Zama隐私协议cUSDC合约中1260万美元USDC，波及与诉讼无关的普通用户资金；事件暴露中心化稳定币发行商在去中心化DeFi合约中可强制执法的风险，引发对USDC无审查设计假设的质疑。",
+      "url": "https://www.theblock.co/post/403091/court-ordered-circle-freeze-traps-12-6-million-in-zama-cusdc-contract-amid-overnight-finance-suit",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T01:08:00.000Z",
       "tag": "安全"
     },
     {
@@ -210,15 +219,6 @@
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "tag": "监管"
-    },
-    {
-      "type": "industry",
-      "title": "Solana, Sui and Aptos Wallet Data Targeted in TrapDoor Package Attack",
-      "summary": "供应链攻击TrapDoor在npm/PyPI/Crates.io植入34+恶意包，伪装成钱包安全扫描工具专攻Solana、Sui、Aptos及DeFi/AI开发者；恶意代码窃取私钥、GitHub Token及云端凭证，并通过隐藏指令劫持Cursor、Claude等AI编码助手发起「安全扫描」来外泄机密。",
-      "url": "https://www.coindesk.com/tech/2026/05/29/solana-sui-and-aptos-wallet-data-targeted-in-trapdoor-package-attack",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T09:15:00.000Z",
-      "tag": "安全"
     }
   ],
   "market": [
