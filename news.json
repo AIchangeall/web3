@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-31",
-  "updatedAt": "2026-05-31T15:25:23.234Z",
+  "updatedAt": "2026-05-31T20:08:41.096Z",
   "hiring": [
     {
       "type": "hiring",
@@ -242,6 +242,15 @@
     },
     {
       "type": "market",
+      "title": "美国财政部没收约10亿美元伊朗加密资产，地缘风险升温",
+      "summary": "美国财政部长贝森特5月30日宣布，美国通过「经济愤怒行动」没收约10亿美元伊朗加密资产，以切断德黑兰外汇与加密融资渠道；此举叠加中东军事紧张，持续压制加密市场风险偏好。",
+      "url": "https://www.coindesk.com/business/2026/05/30/u-s-says-it-seized-about-usd1-billion-in-iranian-crypto-as-pressure-campaign-expands",
+      "source": "CoinDesk",
+      "publishedAt": "2026-05-30T18:00:00.000Z",
+      "tag": "宏观"
+    },
+    {
+      "type": "market",
       "title": "Bitcoin, ether, XRP, dogecoin lag a nine-week stocks rally as ETF demand cools",
       "summary": "比特币本周跌2.6%至73,445美元、以太坊跌2.5%至2,011美元，标普500指数创下2023年以来最长周线连涨（9周）而大市值加密资产全面落后；Hyperliquid HYPE逆势周涨近20%成最强主线，ETF分化持续——XRP过去10日净流入3500万美元，比特币/以太坊ETF合计失血约20亿美元。",
       "url": "https://www.coindesk.com/markets/2026/05/30/bitcoin-ether-xrp-dogecoin-lag-a-nine-week-stocks-rally-as-etf-demand-cools",
@@ -257,6 +266,15 @@
       "source": "The Block",
       "publishedAt": "2026-05-30T12:00:00.000Z",
       "tag": "ETF"
+    },
+    {
+      "type": "market",
+      "title": "DeFi总锁仓量自KelpDAO事件后下滑14%，风险偏好持续收缩",
+      "summary": "自4月18日KelpDAO约2.92亿美元跨链桥漏洞被盗后，DeFi全链TVL持续下滑14%，从约1,720亿美元降至1,480亿美元；JPMorgan指出安全事件与停滞的TVL仍是限制机构进入DeFi的核心障碍。",
+      "url": "https://www.theblock.co/post/402641/defi-tvl-slides-14-since-kelpdao-exploit-as-risk-appetite-retreats",
+      "source": "The Block",
+      "publishedAt": "2026-05-30T10:00:00.000Z",
+      "tag": "链上"
     },
     {
       "type": "market",
@@ -310,24 +328,6 @@
       "url": "https://www.coindesk.com/markets/2026/05/29/live-markets-bitcoin-slides-further-putting-two-month-winning-streak-in-jeopardy",
       "source": "CoinDesk",
       "publishedAt": "2026-05-29T20:00:00.000Z",
-      "tag": "价格"
-    },
-    {
-      "type": "market",
-      "title": "Crypto and stocks go their separate ways as bitcoin's failed breakout continues to weigh",
-      "summary": "比特币跌至4月以来低点约7.35万美元，美股却持续刷历史高位，加密资产与传统风险资产出现罕见走势背离；BTC三周前失守8.3万美元突破高点后持续承压，宏观不确定性与中东紧张局势令机构买盘退缩，比特币或以月度跌幅收官。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/bitcoin-slides-to-april-lows-as-crypto-diverges-from-record-chasing-u-s-equities",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T14:00:00.000Z",
-      "tag": "价格"
-    },
-    {
-      "type": "market",
-      "title": "ICE CEO calls Hyperliquid bigger than NASDAQ, says he's met its founders",
-      "summary": "NYSE母公司ICE首席执行官Jeffrey Sprecher在伯恩斯坦会议上称Hyperliquid日交易量「比纳斯达克还大」，11人核心团队在24/7永续合约市场占据逾七成份额；受华尔街主流机构认可提振，HYPE代币5月底接连刷新历史高点至约$69，Bitwise与21Shares两只HYPE现货ETF上市11日累计流入超1.36亿美元，机构资金持续从BTC/ETH轮换至HYPE。",
-      "url": "https://www.coindesk.com/markets/2026/05/29/ice-ceo-calls-hyperliquid-bigger-than-nasdaq-says-he-s-met-its-founders",
-      "source": "CoinDesk",
-      "publishedAt": "2026-05-29T14:00:00.000Z",
       "tag": "价格"
     }
   ],
