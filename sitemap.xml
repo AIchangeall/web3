@@ -2,39 +2,267 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gmjobs.github.io/chainhire/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/home.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/stats.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/companies.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/headhunter.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/heatmap.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/uniswap-labs-application-security-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/uniswap-labs-backend-engineer-unichain.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/uniswap-labs-community-manager-latam.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/okx-web3-security-engineer-wallet-security.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/hyphen-connect-security-researcher-web3-cybersecurity.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/kraken-senior-database-platform-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/kraken-ai-ml-engineer-i.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/bybit-regional-sales-specialist-portuguese.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/serotonin-head-of-operations-web3.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/clearmatics-smart-contract-engineer-ethereum-solidity.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/hyphen-connect-product-designer-web3-shenzhen.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/hyphen-connect-uxui-designer-tech-web3.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/ift-application-security-engineer-web3.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/protocol-labs-backend-engineer-cryptoeconlab.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/crypto-com-senior-backend-engineer-golang-ruby-on-rails-kyc-onboarding.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/provable-senior-software-engineer-rust-zk-privacy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/bitgo-associate-product-manager.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/bitgo-senior-product-manager-institutional-custody.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/bitgo-frontend-engineer-growth.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/hyphen-connect-marketing-specialist-community-social-growth-web3-crypto.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/token-metrics-web3-head-of-marketing-and-communications-nigeria-remote.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/okx-web3-growth-manager.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/unlimit-aml-compliance-officer-crypto-project.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/crypto-com-compliance-analyst-fcm-futures-commission-merchant.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/movement-labs-protocol-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/babylon-labs-senior-software-engineer-babylon-core-europe-apac.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/babylon-labs-developer-relations-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/movement-labs-developer-relations-engineer-apac.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/babylon-labs-senior-backend-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/movement-labs-research-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/babylon-labs-senior-devops-engineer.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/babylon-labs-senior-software-engineer-integrations.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/movement-labs-senior-engineering-manager.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/0x-head-of-sales.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/offchain-labs-head-of-finance.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/consensys-design-director-metamask-transactions.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/fireblocks-sales-director-crypto-native-apac-hk.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gmjobs.github.io/chainhire/jobs/blockchain-com-senior-software-engineer-payments.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/trust-wallet-ios-engineer-web3.html</loc>
@@ -14972,235 +15200,235 @@
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/binance-senior-site-reliability-engineer-sre-rust-developer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/binance-big-data-sre-devops-leader.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/binance-senior-sre-trading-technologies-node-js.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/coinbase-staff-site-reliability-engineer-platform.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/coinbase-staff-sre-core-ai-infrastructure.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/coinbase-senior-sre-identity-platform.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/coinbase-site-reliability-engineer-it-infrastructure.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/okx-sre-工程师-cex-业务方向.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/okx-数据平台运维-大数据-sre.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/bybit-senior-sre-infrastructure-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/bybit-devops-platform-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/kraken-sre-devops-engineer-developer-experience.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/kraken-data-center-operations-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/crypto-com-senior-cloud-infrastructure-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/bitget-sre-业务运维负责人.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/gate-io-sre-devops-工程师.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/kucoin-infrastructure-cloud-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/ethereum-foundation-infrastructure-devops-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/ethereum-foundation-devops-intern-summer-2026.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/solana-foundation-infrastructure-engineer-product.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/aptos-labs-senior-infrastructure-sre-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/sui-foundation-mysten-labs-network-reliability-infrastructure-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/offchain-labs-arbitrum-senior-quality-sre-engineer-platform.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/polygon-labs-site-reliability-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/phantom-staff-sre-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/consensys-metamask-senior-staff-devops-engineer-metamask.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/uniswap-labs-infrastructure-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/debank-rabby-sre-后端-中文区.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/pharos-区块链初创-devops-sre-c-区块链.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/aws-区块链节点服务-中文招聘-区块链节点运维工程师-devops-sre.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/alchemy-director-of-engineering-infrastructure-platform.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/alchemy-senior-infrastructure-sre-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/quicknode-senior-infrastructure-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/chainstack-infrastructure-engineer-eu-latam-时区.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/blockdaemon-senior-sre-platform-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/ankr-infrastructure-sre-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/chainalysis-senior-infrastructure-engineer-investigations-gov.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/fireblocks-site-reliability-engineer-sre.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gmjobs.github.io/chainhire/jobs/ripple-infrastructure-reliability-engineer.html</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
